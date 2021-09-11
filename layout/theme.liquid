@@ -113,9 +113,18 @@
         }
       }
     {% endstyle %}
-
+    {% if template contains "index" %}
+    <style>{% render 'criticalcss-index' %}</style>
+    <link rel="preload" href="{{ 'mincss-index.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    {% elsif template contains "product" %}
+    <style>{% render 'criticalcss-product' %}</style>
+    <link rel="preload" href="{{ 'mincss-product.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    {% elsif template contains "collection" %}
+    <style>{% render 'criticalcss-collection' %}</style>
+    <link rel="preload" href="{{ 'mincss-collection.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    {% else %}
     {{ 'base.css' | asset_url | stylesheet_tag }}
-
+    {% endif %}
     {%- unless settings.type_body_font.system? -%}
       <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
     {%- endunless -%}
