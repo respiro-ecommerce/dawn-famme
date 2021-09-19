@@ -154,7 +154,12 @@
                   <p>{{ "products.model_height" | t }}{{ product.metafields.my_fields.model_height }}</p>
                 {% endif %}
 
-                {{ products.variants }}
+                {% for variant in product.variants %}
+                  <p>{{ "products.variants" | t }}{{ product.variants }}</p>
+                {% endfor %}
+
+
+
               </div>
             {%- endif -%}
           {%- when 'custom_liquid' -%}
