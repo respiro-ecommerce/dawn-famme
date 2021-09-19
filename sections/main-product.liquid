@@ -155,12 +155,12 @@
                 {% endif %}
 
 
-                {%- for variant in product.variants -%}
-                  {{ variant.option1 }}
-                  {% comment %}{%- if variant.option1 == value or variant.option2 == value or variant.option3 == value -%}{% endcomment %}
-                    {% comment %}{%- if variant.image -%}{{ variant.image | img_url: 'compact' | img_tag }}{%- break -%} {%- endif -%}{% endcomment %}
-                  {% comment %}{%- endif -%}{% endcomment %}
-                {%- endfor -%}
+                {% comment %}{%- for variant in product.variants -%}{% endcomment %}
+                  {% comment %}{{ variant.option1 }}{% endcomment %}
+                  {% comment %}{% comment %}{%- if variant.option1 == value or variant.option2 == value or variant.option3 == value -%}{% endcomment %}{% endcomment %}
+                    {% comment %}{% comment %}{%- if variant.image -%}{{ variant.image | img_url: 'compact' | img_tag }}{%- break -%} {%- endif -%}{% endcomment %}{% endcomment %}
+                  {% comment %}{% comment %}{%- endif -%}{% endcomment %}{% endcomment %}
+                {% comment %}{%- endfor -%}{% endcomment %}
 
 
 
