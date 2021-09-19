@@ -39,10 +39,10 @@
         "image": "shopify:\/\/shop_images\/VELVET_HEADER.png",
         "image_url": "shopify:\/\/products\/velvet-pants",
         "image2_url": "",
+        "adapt_height_first_image": true,
         "desktop_text_box_position": "center",
         "color_scheme": "background-1",
-        "stack_images_on_mobile": true,
-        "adapt_height_first_image": true
+        "stack_images_on_mobile": true
       }
     },
     "16272814882be6282b": {
@@ -267,7 +267,6 @@
         "7d7f20f2-c00b-4de6-96fe-33c1f846bfe6": {
           "type": "popup",
           "settings": {
-            "link_label": "Pop-up link text",
             "page": ""
           }
         }
