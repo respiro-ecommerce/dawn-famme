@@ -89,7 +89,7 @@
               {% if product.tags contains "pre-order" %}
                 {{ product.title | escape }} - Reserveringsvare
               {% else %}
-                {{ product.title | escape }}
+                {{ product.title | escape }} - test
               {% endif %}
             </h1>
 
@@ -153,6 +153,9 @@
                 {% if product.metafields.my_fields.model_height %}
                   <p>{{ "products.model_height" | t }}{{ product.metafields.my_fields.model_height }}</p>
                 {% endif %}
+                {{ product.variants }}
+
+
               </div>
             {%- endif -%}
           {%- when 'custom_liquid' -%}
@@ -165,6 +168,7 @@
                     {% render 'icon-accordion', icon: block.settings.icon %}
                     <h2 class="h4 accordion__title">
                       {{ block.settings.heading | default: block.settings.page.title }}
+
                     </h2>
                   </div>
                   {% render 'icon-caret' %}
