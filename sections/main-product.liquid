@@ -155,7 +155,7 @@
                 {% endif %}
                 {%- for variant in product.variants -%}
 
-                     <p>{{variant.option1}}</p>
+                  {%- if variant.option1 -%}<p>{{variant.option1}}</p>{%- break -%}{%- endif -%}
 
                 {%- endfor -%}
 
