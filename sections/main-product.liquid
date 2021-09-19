@@ -156,9 +156,8 @@
 
 
                 {%- for variant in product.variants -%}
-                  {{ variant.option1 }}
                   {%- if variant.option1 == value or variant.option2 == value or variant.option3 == value -%}
-                    {%- if variant.image -%}{{ variant.image | img_url: 'compact' | img_tag }}{%- break -%} {%- endif -%}
+                    {{ variant.option1 }}
                   {%- endif -%}
                 {%- endfor -%}
 
