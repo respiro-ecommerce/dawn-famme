@@ -154,9 +154,9 @@
                   <p>{{ "products.model_height" | t }}{{ product.metafields.my_fields.model_height }}</p>
                 {% endif %}
                 {%- for variant in product.variants -%}
-                    {%- if option.name contains 'olor' or option.name contains 'olour' or option.name contains 'COLOR' or option.name contains 'COLOUR' or option.name contains 'Far' -%}
-                     <p>{{product.variants}}</p>
-                  {%- endif -%}
+
+                     <p>{{product.variants.color}}</p>
+
                 {%- endfor -%}
 
               </div>
