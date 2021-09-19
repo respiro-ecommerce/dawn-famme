@@ -154,14 +154,7 @@
                   <p>{{ "products.model_height" | t }}{{ product.metafields.my_fields.model_height }}</p>
                 {% endif %}
 
-                {%- if option.name contains 'olor' or option.name contains 'olour' or option.name contains 'COLOR' or option.name contains 'COLOUR' or option.name contains 'Far' -%}
-                          <label class="color" for="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}">
-                            {%- for variant in product.variants -%}
-                              {%- if variant.option1 == value or variant.option2 == value or variant.option3 == value -%}
-                                {%- if variant.image -%}{{ variant.image | img_url: 'compact' | img_tag }}{%- break -%}{%- endif -%}
-                                Test
-                              {%- endif -%}
-                           {%- endfor -%}
+                Colour:
 
               </div>
             {%- endif -%}
@@ -291,7 +284,7 @@
                               {%- if variant.option1 == value or variant.option2 == value or variant.option3 == value -%}
                                 {%- if variant.image -%}{{ variant.image | img_url: 'compact' | img_tag }}{%- break -%}{%- endif -%}
                               {%- endif -%}
-                            {%- endfor -%}
+                            {%- endfor -%}¨
                           </label>
                         {%- else -%}
                           <label for="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}">{{ value }}</label>
