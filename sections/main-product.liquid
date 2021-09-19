@@ -157,7 +157,7 @@
 
                 {%- for variant in product.variants -%}
                   {%- if variant.option1 == value or variant.option2 == value or variant.option3 == value -%}
-                    {{ variant }}
+                    {{ variant.option1 }}
                   {%- endif -%}
                 {%- endfor -%}
 
