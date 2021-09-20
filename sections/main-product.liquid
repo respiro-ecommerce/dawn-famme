@@ -154,28 +154,27 @@
                   <p>{{ "products.model_height" | t }}{{ product.metafields.my_fields.model_height }}</p>
                 {% endif %}
 
-
-                {% assign colors = product.variants.options %}
-                {{ unique_colors |  split: ' ' | uniq | join: ' ' }}
+{% comment %}{% endcomment %}
+                {% comment %}{% assign colors = product.variants.options %}{% endcomment %}
+                {% comment %}{{ unique_colors |  split: ' ' | uniq | join: ' ' }}{% endcomment %}
                 {% comment %}{%- for variant in product.variants -%}{% endcomment %}
                   {% comment %}{%- if variant.option1 == value or variant.option2 == value or variant.option3 == value -%}{% endcomment %}
                     {% comment %}{{ variant.option1 }}{% endcomment %}
                   {% comment %}{%- endif -%}{% endcomment %}
                 {% comment %}{%- endfor -%}{% endcomment %}
-{% comment %}{% endcomment %}
-{% comment %}{% endcomment %}
-{% comment %}{% endcomment %}
-                {% comment %}{% comment %}Collect all colors into a string. This is not unique.{% endcomment %}{% endcomment %}
-{% comment %}{% endcomment %}
-                {% comment %}{% capture colors %}{% endcomment %}
-                    {% comment %}{% for variant in product.variants %}{% endcomment %}
-                        {% comment %}{% for option in variant.options %}{% endcomment %}
-                            {% comment %}{% if product.options[forloop.index0] == 'Color' %}{% endcomment %}
-                                    {% comment %}{{ option }}{% endcomment %}
-                            {% comment %}{% endif %}{% endcomment %}
-                        {% comment %}{% endfor %}{% endcomment %}
-                    {% comment %}{% endfor %}{% endcomment %}
-                {% comment %}{% endcapture %}{% endcomment %}
+
+                {% capture colors %}
+                    {% for variant in product.variants %}
+                        {% for option in variant.options %}
+                            {% if product.options[forloop.index0] == 'Color' %}
+                                   {% assign added_element = option %}
+                                  {% capture appended_array %}{{ existing_array | join: delim }}{{ delim }}{{ added_element }}{% endcapture %}
+                                  {% assign appended_array = appended_array | split: delim %}
+                            {% endif %}
+                        {% endfor %}
+                    {% endfor %}
+                  {{ fruits | split: ' ' | uniq | join: ' ' }}
+                {% endcapture %}
 
 
 
