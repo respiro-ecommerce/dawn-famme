@@ -155,11 +155,14 @@
                 {% endif %}
                 {%- for variant in product.variants -%}
                   {%- if variant.option1 == value or variant.option2 == value or variant.option3 == value -%}
+                   {%- if my_array contains variant.option1 -%}
+                      <p>{{ "hei" }}</p>
+                  {% else %}
                     {% assign my_array = variant.option1 | split:  '' %}
-                    {{ my_array | uniq | join: '' }}
+                    {{ my_array }}
+                {% endif %}
                   {%- endif -%}
                 {%- endfor -%}
-
               </div>
             {%- endif -%}
           {%- when 'custom_liquid' -%}
