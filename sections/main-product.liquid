@@ -13,7 +13,7 @@
 {%- assign variants_option1_arr = product.variants | map: 'option1' -%}
 {%- assign variants_option2_arr = product.variants | map: 'option2' -%}
 {%- assign variants_option3_arr = product.variants | map: 'option3' -%}
-{% assign my_array = ""  %}
+{% assign my_array = ""  | uniq %}
 
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 
@@ -158,12 +158,14 @@
                     {%- if variant.option1 == value or variant.option2 == value or variant.option3 == value -%}
                       {%- unless my_array contains variant.option1 -%}
                             {{ my_array | append: variant.option1 | append: ","  }}
-                      {% endunless %}
+                      {%- endunless %}
 
 
                     {%- endif -%}
                 {%- endfor -%}
                 <p>{{my_array}}</p>
+
+
 
 
 
