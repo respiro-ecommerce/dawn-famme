@@ -156,10 +156,10 @@
                 {%- for variant in product.variants -%}
                   {%- if variant.option1 == value or variant.option2 == value or variant.option3 == value -%}
                    {%- if my_array contains variant.option1 -%}
-                     <p>{{ "products.model_height" | t }}{{ product.metafields.my_fields.model_height }}</p>
+                     <p>{{ variant.option1 }}</p>
                   {% else %}
                     {% assign my_array = variant.option1 %}
-
+                    {{ my_array }}
                 {% endif %}
                   {%- endif -%}
                 {%- endfor -%}
