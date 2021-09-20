@@ -157,17 +157,14 @@
 
                 {% assign colors = '' | split: '' %}
 
-
-
                 {%- for variant in product.variants -%}
                   {%- if variant.option1 == value or variant.option2 == value or variant.option3 == value -%}
-                    {% unless colors contains variant.option1 %}
-                      {% assign colors = colors | append: variant.option1 | split: '' %}
+                    {% assign colors = colors | append: variant.option1 | split: '' %}
                       {{ colors }}
-                    {% endunless %}
-
                   {%- endif -%}
                 {%- endfor -%}
+
+                {{ colors | split: ' ' | uniq | join: ' ' }}
 
 
 
