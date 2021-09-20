@@ -154,27 +154,21 @@
                   <p>{{ "products.model_height" | t }}{{ product.metafields.my_fields.model_height }}</p>
                 {% endif %}
 
-{% comment %}{% endcomment %}
-                {% comment %}{% assign colors = product.variants.options %}{% endcomment %}
-                {% comment %}{{ unique_colors |  split: ' ' | uniq | join: ' ' }}{% endcomment %}
-                {% comment %}{%- for variant in product.variants -%}{% endcomment %}
-                  {% comment %}{%- if variant.option1 == value or variant.option2 == value or variant.option3 == value -%}{% endcomment %}
-                    {% comment %}{{ variant.option1 }}{% endcomment %}
-                  {% comment %}{%- endif -%}{% endcomment %}
-                {% comment %}{%- endfor -%}{% endcomment %}
 
-                {% capture colors %}
-                    {% for variant in product.variants %}
-                        {% for option in variant.options %}
-                            {% if product.options[forloop.index0] == 'Color' %}
-                                   {% assign added_element = option %}
-                                  {% capture appended_array %}{{ existing_array | join: delim }}{{ delim }}{{ added_element }}{% endcapture %}
-                                  {% assign appended_array = appended_array | split: delim %}
-                            {% endif %}
-                        {% endfor %}
-                    {% endfor %}
-                  {{ fruits | split: ' ' | uniq | join: ' ' }}
-                {% endcapture %}
+                {% assign colors = '' | split: '' %}
+
+
+
+                {%- for variant in product.variants -%}
+                  {%- if variant.option1 == value or variant.option2 == value or variant.option3 == value -%}
+                    {% unless colors contains variant.option1 %}
+                      {% assign colors = colors | append: variant.option1 | split: '' %}
+                      {{ colors }}
+                    {% endunless %}
+
+                  {%- endif -%}
+                {%- endfor -%}
+
 
 
 
