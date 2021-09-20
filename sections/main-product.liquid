@@ -13,6 +13,7 @@
 {%- assign variants_option1_arr = product.variants | map: 'option1' -%}
 {%- assign variants_option2_arr = product.variants | map: 'option2' -%}
 {%- assign variants_option3_arr = product.variants | map: 'option3' -%}
+{% assign my_array = "" %}
 
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 
@@ -155,8 +156,9 @@
                 {% endif %}
                 {%- for variant in product.variants -%}
                     {%- if variant.option1 == value or variant.option2 == value or variant.option3 == value -%}
+                       {{ my_array | push: variant }}
 
-                      <p>{{variant.option1 | uniq}}</p>
+                      <p>{{ my_array | uniq | join: ", " }}</p>
 
                 {%- endif -%}
 
