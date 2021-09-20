@@ -159,7 +159,7 @@
 
                 {%- for variant in product.variants -%}
                   {%- if variant.option1 == value or variant.option2 == value or variant.option3 == value -%}
-                    {% assign colors = colors | append: variant.option1 | split: '' %}
+                    {% assign colors = colors | append: variant.option1 %}
                       {{ colors }}
                   {%- endif -%}
                 {%- endfor -%}
