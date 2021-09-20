@@ -158,7 +158,11 @@
                 {%- for variant in product.variants -%}
                   {%- if variant.option1 == value or variant.option2 == value or variant.option3 == value -%}
                     {% unless colours contains variant.option1 %}
-                      {% assign colours = colours | append: variant.option1 | append: ', ' %}
+                      {% unless forloop.last %}
+                        {% assign colours = colours | append: variant.option1 | append: ', ' %}
+                        {% else %}
+                        {% assign colours = colours | append: variant.option1%}
+                    {% endunless %}
                     {% endunless %}
                 {% endif %}
                 {%- endfor -%}
