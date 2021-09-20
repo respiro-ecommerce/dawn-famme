@@ -160,7 +160,7 @@
                     {% unless colours contains variant.option1 %}
                       {% assign colours = colours | append: variant.option1 | append: ',' %}
 
-                      {{ colours }}
+                      {{ colours | uniq  }}
                     {% endunless %}
 
 
