@@ -159,6 +159,7 @@
                   {%- if variant.option1 == value or variant.option2 == value or variant.option3 == value -%}
                     {% unless x contains variant.option1 %}
                       {% assign x = x | append: variant.option1 | split: '' %}
+
                       {{ x }}
                     {% endunless %}
 
