@@ -100,6 +100,7 @@
     "product_description": "Dette området brukes til å beskrive produktets detaljer. Fortell kundene om hvordan produktet ser ut, føles og stilen. Legg til detaljer om farge, materialer brukt, størrelser og hvor det ble laget.",
     "product_title": "Eksempel på produkttittel",
     "collection_title": "Navnet på samlingen"
+
   },
   "products": {
     "notify_me_when_available": "Reserver - Få melding når varen er på lager",
@@ -113,7 +114,6 @@
     "model_sizes": "Modellstørrelse: ",
     "composition": "Stoffblanding: ",
     "model_height": "Modellhøyde: ",
-    "color": "Produktfarger: ",
     "bullets": {
       "bullet_1": "ALLTID FRI FRAKT OG BYTTE",
       "bullet_2": "POSTEN, HELTHJEM,PORTERBUDDY",
@@ -348,7 +348,8 @@
       "password": "Passord",
       "title": "Logg inn",
       "sign_in": "Logg inn",
-      "submit": "Send inn"
+      "submit": "Send inn",
+      "account_info": "Merk! du trenger å 'opprette konto' før du logger inn den første gangen, å legge inn en bestilling gjør ikke at du automatisk lager en bruker i vår butikk"
     },
     "order": {
       "title": "Bestilling {{ name }}",
