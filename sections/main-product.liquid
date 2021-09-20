@@ -159,7 +159,8 @@
                   {%- if variant.option1 == value or variant.option2 == value or variant.option3 == value -%}
                       {% assign x = variant.option1 | split: '' %}
                     {{ x }}
-                    {% assign colours = colours | concat: x %}
+                    {% unless colours contains variant.option1 %}{% assign colours = colours | concat: x %}{% endunless %}
+
 
                 {% endif %}
                 {%- endfor -%}
