@@ -13,7 +13,6 @@
 {%- assign variants_option1_arr = product.variants | map: 'option1' -%}
 {%- assign variants_option2_arr = product.variants | map: 'option2' -%}
 {%- assign variants_option3_arr = product.variants | map: 'option3' -%}
-{% assign my_array = ""  | uniq %}
 
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 
@@ -154,21 +153,18 @@
                 {% if product.metafields.my_fields.model_height %}
                   <p>{{ "products.model_height" | t }}{{ product.metafields.my_fields.model_height }}</p>
                 {% endif %}
+
+                {% assign colours = ''%}
+
                 {%- for variant in product.variants -%}
-                    {%- if variant.option1 == value or variant.option2 == value or variant.option3 == value -%}
-                      {%- unless my_array contains variant.option1 -%}
-                            {{ my_array | append: variant.option1 | append: ","  }}
-                      {%- endunless %}
-
-
-                    {%- endif -%}
+                    {% unless colours contains variant.option1  %}
+                      {% unless forloop.last or forloop.first %}
+                        {% assign colours = colours | append: ', ' %}
+                    {% endunless %}
+                      {% assign colours = colours | append: variant.option1%}
+                    {% endunless %}
                 {%- endfor -%}
-                <p>{{my_array}}</p>
-
-
-
-
-
+                <p>{{ "products.color" | t }}{{ colours}} </p>
 
               </div>
             {%- endif -%}
@@ -182,6 +178,7 @@
                     {% render 'icon-accordion', icon: block.settings.icon %}
                     <h2 class="h4 accordion__title">
                       {{ block.settings.heading | default: block.settings.page.title }}
+
                     </h2>
                   </div>
                   {% render 'icon-caret' %}
@@ -297,7 +294,7 @@
                               {%- if variant.option1 == value or variant.option2 == value or variant.option3 == value -%}
                                 {%- if variant.image -%}{{ variant.image | img_url: 'compact' | img_tag }}{%- break -%}{%- endif -%}
                               {%- endif -%}
-                            {%- endfor -%}
+                            {%- endfor -%}¨
                           </label>
                         {%- else -%}
                           <label for="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}">{{ value }}</label>
