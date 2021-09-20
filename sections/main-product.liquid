@@ -159,7 +159,7 @@
                   {%- if variant.option1 == value or variant.option2 == value or variant.option3 == value -%}
                     {% unless colours contains variant.option1 %}
                       {% unless forloop.last %}
-                        {% assign colours = colours | append: variant.option1 | append: ', ' %}
+                        {% assign colours = colours | append: ', ' %}
 
 
                     {% endunless %}
