@@ -160,7 +160,7 @@
                        {{ my_array | append: variant.option1 | append: ','  }}
                     {%- endif -%}
                 {%- endfor -%}
-                <p>{{ my_array | uniq | join: ", " }}</p>
+                <p>{{ my_array | uniq }}</p>
 
 
 
