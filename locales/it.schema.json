@@ -418,7 +418,7 @@
           "label": "Schema di colori"
         },
         "swipe_on_mobile": {
-          "label": "Abilita la banda magnetica su cellulare"
+          "label": "Abilita scorrimento su dispositivo mobile"
         },
         "image_padding": {
           "label": "Aggiungi spaziatura immagine"
@@ -527,7 +527,7 @@
           "label": "Abilita il pulsante \"Visualizza tutto\" se la collezione include più prodotti di quelli mostrati"
         },
         "swipe_on_mobile": {
-          "label": "Abilita la banda magnetica su cellulare"
+          "label": "Abilita scorrimento su dispositivo mobile"
         },
         "header": {
           "content": "Scheda prodotto"
@@ -1534,7 +1534,7 @@
           "label": "Link pulsante"
         },
         "swipe_on_mobile": {
-          "label": "Abilita la banda magnetica su cellulare"
+          "label": "Abilita scorrimento su dispositivo mobile"
         }
       },
       "blocks": {
