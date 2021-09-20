@@ -13,7 +13,7 @@
 {%- assign variants_option1_arr = product.variants | map: 'option1' -%}
 {%- assign variants_option2_arr = product.variants | map: 'option2' -%}
 {%- assign variants_option3_arr = product.variants | map: 'option3' -%}
-{% assign my_array = "" %}
+{% assign my_array = "" | split: ", " %}
 
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 
@@ -160,7 +160,7 @@
                        {{ my_array | append: variant.option1 | append: ','  }}
                     {%- endif -%}
                 {%- endfor -%}
-                <p>{{ my_array | uniq }}</p>
+                <p>{{ my_array | uniq | join: ", "  }}</p>
 
 
 
