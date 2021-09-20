@@ -160,9 +160,10 @@
                     {% unless colours contains variant.option1 %}
                       {% unless forloop.last %}
                         {% assign colours = colours | append: variant.option1 | append: ', ' %}
-                        {% else %}
-                        {% assign colours = colours | append: variant.option1%}
+
+
                     {% endunless %}
+                      {% assign colours = colours | append: variant.option1%}
                     {% endunless %}
                 {% endif %}
                 {%- endfor -%}
