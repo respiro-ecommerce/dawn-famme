@@ -154,13 +154,13 @@
                   <p>{{ "products.model_height" | t }}{{ product.metafields.my_fields.model_height }}</p>
                 {% endif %}
 
-                {% assign x = " " %}
+                {% assign colours = " " %}
                 {%- for variant in product.variants -%}
                   {%- if variant.option1 == value or variant.option2 == value or variant.option3 == value -%}
-                    {% unless x contains variant.option1 %}
-                      {% assign x = x | append: variant.option1 | split: '' %}
+                    {% unless colours contains variant.option1 %}
+                      {% assign colours = colours | append: variant.option1 | split: '' %}
 
-                      {{ x }}
+                      {{ colours }}
                     {% endunless %}
 
 
