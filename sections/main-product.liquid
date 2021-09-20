@@ -155,7 +155,7 @@
                 {% endif %}
 
                 {% comment %}{% assign color_array = product.variants.option1 |  split: "," %}{% endcomment %}
-                {{ product.variants.option1 }}
+                {{ product.title }}
                 {% comment %}{{ color_array | uniq | join: ", " }}{% endcomment %}
                 {% comment %}{% for color in color_array %}{% endcomment %}
                   {% comment %}{%- if variant.option1 == value or variant.option2 == value or variant.option3 == value -%}{% endcomment %}
