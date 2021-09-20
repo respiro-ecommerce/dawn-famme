@@ -157,22 +157,14 @@
                 {% assign colours = ''%}
 
                 {%- for variant in product.variants -%}
-                {% comment %}{%- if variant.option1 == value or variant.option2 == value or variant.option3 == value -%}{% endcomment %}
                     {% unless colours contains variant.option1  %}
                       {% unless forloop.last or forloop.first %}
                         {% assign colours = colours | append: ', ' %}
-
                     {% endunless %}
                       {% assign colours = colours | append: variant.option1%}
                     {% endunless %}
-               {% comment %} {% endif %}{% endcomment %}
                 {%- endfor -%}
-                <p>Produktfarger: {{ colours}} </p>
-
-
-
-
-
+                <p>{{ "products.color" | t }}{{ colours}} </p>
 
               </div>
             {%- endif -%}
