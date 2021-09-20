@@ -124,7 +124,7 @@
 
           {%- when 'description' -%}
             {% if product.tags contains "pre-order" %}
-              <p><b>NB! DET KOSTER 0 KR Å RESERVERE, DET ER IKKE PRISEN FOR VAREN</b></p>
+              <p><b>{{ "products.reserve" | t }}</b></p>
             {% endif %}
             {% render 'product-bullets' %}
             <p><b>{{ sizing_recommendation }}</b></p>
