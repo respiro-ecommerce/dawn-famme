@@ -100,6 +100,7 @@
     "product_description": "Dette området brukes til å beskrive produktets detaljer. Fortell kundene om hvordan produktet ser ut, føles og stilen. Legg til detaljer om farge, materialer brukt, størrelser og hvor det ble laget.",
     "product_title": "Eksempel på produkttittel",
     "collection_title": "Navnet på samlingen"
+
   },
   "products": {
     "notify_me_when_available": "Reserver - Få melding når varen er på lager",
@@ -107,13 +108,13 @@
     "sizing_recommendation_down": "Gå en størrelse ned",
     "sizing_recommendation_normal": "Velg din vanlige størrelse",
     "pre_order_information": "NB! Forhåndsbestillingsprodukter koster 10kr  å reservere og når det kommer på lager betaler du 50% av fullpris. Man får altså 50% rabatt for å forhåndsbestille produktet. Frakt er inkludert i prisen. Estimert ankomst:",
+    "reserve":"NB! DET KOSTER 0 KR Å RESERVERE, DET ER IKKE PRISEN FOR VAREN",
     "pre_order_information_price_reserving": "Det er gratis å reservere varen",
     "pre_order_information_estimated_arrival": "Estimert levering:",
     "pre_order_information_in_stock_items_seperated": "Lagervarer sendes i separat sending",
     "model_sizes": "Modellstørrelse: ",
     "composition": "Stoffblanding: ",
     "model_height": "Modellhøyde: ",
-    "color": "Produktfarger: ",
     "bullets": {
       "bullet_1": "ALLTID FRI FRAKT OG BYTTE",
       "bullet_2": "POSTEN, HELTHJEM,PORTERBUDDY",
@@ -348,7 +349,8 @@
       "password": "Passord",
       "title": "Logg inn",
       "sign_in": "Logg inn",
-      "submit": "Send inn"
+      "submit": "Send inn",
+      "account_info": "Merk! Å legge inn en bestilling gjør ikke at du automatisk lager en bruker i vår butikk. Opprett konto med samme e-post som du plasserte bestillingen med."
     },
     "order": {
       "title": "Bestilling {{ name }}",
