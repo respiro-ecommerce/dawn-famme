@@ -154,19 +154,24 @@
                   <p>{{ "products.model_height" | t }}{{ product.metafields.my_fields.model_height }}</p>
                 {% endif %}
 
-                {% comment %}{% assign color_array = product.variants.option1 |  split: "," %}{% endcomment %}
-                {% comment %}{{ color_array | uniq | join: ", " }}{% endcomment %}
-                {% comment %}{% for color in color_array %}{% endcomment %}
-                  {% comment %}{%- if variant.option1 == value or variant.option2 == value or variant.option3 == value -%}{% endcomment %}
-                    {% comment %}{{ variant.option1 }}{% endcomment %}
-                  {% comment %}{%- endif -%}{% endcomment %}
-                {% comment %}{%- endfor -%}{% endcomment %}
 
-                {% for option in product.options %}
-                  {% if option == 'Color' %}
-                    Color: {{ product.variants.first.options[forloop.index0] }}
-                  {% endif %}
-                {% endfor %}
+                {%- for variant in product.variants -%}
+                  {%- if variant.option1 == value or variant.option2 == value or variant.option3 == value -%}
+                    {{ variant.option1 }}
+                  {%- endif -%}
+                {%- endfor -%}
+
+                {% comment %}Collect all colors into a string. This is not unique.{% endcomment %}
+                {% capture colors %}
+                    {% for variant in product.variants %}
+                        {% for option in variant.options %}
+                            {% if product.options[forloop.index0] == 'Color' %}
+                                    {{ option }}
+                            {% endif %}
+                        {% endfor %}
+                    {% endfor %}
+                {% endcapture %}
+                {{ colors.size }}
 
 
 
