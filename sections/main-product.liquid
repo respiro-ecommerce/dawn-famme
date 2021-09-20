@@ -156,18 +156,15 @@
                 {% endif %}
                 {%- for variant in product.variants -%}
                     {%- if variant.option1 == value or variant.option2 == value or variant.option3 == value -%}
-                      {%- if my_array contains variant.option1 -%}
-                            {% break %}
-                      {% else %}
-                          {{ my_array | append: variant.option1 | append: ","  }}
-                      {%- endif -%}
+                      {%- unless my_array contains variant.option1 -%}
+                            {{ my_array | append: variant.option1 | append: ","  }}
+                      {% endunless %}
 
 
                     {%- endif -%}
                 {%- endfor -%}
-                {%- for item in my_array-%}
-                    <p>{{item}}</p>
-                {%- endfor -%}
+                <p>{{my_array}}</p>
+
 
 
 
