@@ -349,7 +349,7 @@
       "title": "Logg inn",
       "sign_in": "Logg inn",
       "submit": "Send inn",
-      "account_info": "Merk! du trenger å 'opprette konto' før du logger inn den første gangen, å legge inn en bestilling gjør ikke at du automatisk lager en bruker i vår butikk"
+      "account_info": "Merk! Å legge inn en bestilling gjør ikke at du automatisk lager en bruker i vår butikk. Opprett konto med samme e-post som du plasserte bestillingen med."
     },
     "order": {
       "title": "Bestilling {{ name }}",
