@@ -155,13 +155,18 @@
                 {% endif %}
 
                 {% comment %}{% assign color_array = product.variants.option1 |  split: "," %}{% endcomment %}
-                {{ halo }}
                 {% comment %}{{ color_array | uniq | join: ", " }}{% endcomment %}
                 {% comment %}{% for color in color_array %}{% endcomment %}
                   {% comment %}{%- if variant.option1 == value or variant.option2 == value or variant.option3 == value -%}{% endcomment %}
                     {% comment %}{{ variant.option1 }}{% endcomment %}
                   {% comment %}{%- endif -%}{% endcomment %}
                 {% comment %}{%- endfor -%}{% endcomment %}
+
+                {% for option in product.options %}
+                  {% if option == 'Color' %}
+                    Color: {{ product.variants.first.options[forloop.index0] }}
+                  {% endif %}
+                {% endfor %}
 
 
 
