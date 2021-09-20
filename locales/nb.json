@@ -100,6 +100,7 @@
     "product_description": "Dette området brukes til å beskrive produktets detaljer. Fortell kundene om hvordan produktet ser ut, føles og stilen. Legg til detaljer om farge, materialer brukt, størrelser og hvor det ble laget.",
     "product_title": "Eksempel på produkttittel",
     "collection_title": "Navnet på samlingen"
+
   },
   "products": {
     "notify_me_when_available": "Reserver - Få melding når varen er på lager",
@@ -347,7 +348,8 @@
       "password": "Passord",
       "title": "Logg inn",
       "sign_in": "Logg inn",
-      "submit": "Send inn"
+      "submit": "Send inn",
+      "account_info": "Merk! Å legge inn en bestilling gjør ikke at du automatisk lager en bruker i vår butikk. Opprett konto med samme e-post som du plasserte bestillingen med."
     },
     "order": {
       "title": "Bestilling {{ name }}",
