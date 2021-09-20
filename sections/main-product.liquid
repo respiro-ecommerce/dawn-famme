@@ -157,7 +157,7 @@
                               {%- if variant.option1 == value or variant.option2 == value or variant.option3 == value -%}
                                 {% assign my_array = variant.option1 | split: ", " %}
 
-                                {{ my_array | uniq | join: ", " }}
+                                {{ my_array }}
                               {%- endif -%}
                            {%- endfor -%}
 
