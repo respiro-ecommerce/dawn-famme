@@ -156,8 +156,8 @@
                 {% endif %}
                 {%- for variant in product.variants -%}
                     {%- if variant.option1 == value or variant.option2 == value or variant.option3 == value -%}
+                      <p>{{variant.option1}}</p>
                        {{ my_array | push: variant.option1 }}
-
                       <p>{{ my_array | uniq | join: ", " }}</p>
 
                 {%- endif -%}
