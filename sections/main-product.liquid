@@ -158,8 +158,8 @@
                     {%- if variant.option1 == value or variant.option2 == value or variant.option3 == value -%}
 
                        {{ my_array | push: variant.option1 }}
-                        {%- endif -%}
-                      {%- endfor -%}
+                    {%- endif -%}
+                {%- endfor -%}
                 <p>{{ my_array | uniq | join: ", " }}</p>
 
 
