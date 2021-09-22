@@ -32,6 +32,7 @@
     },
     "1627294046e0366cc1": {
       "type": "loox-carousel-reviews",
+      "disabled": true,
       "settings": {
         "max_width": 1920,
         "arrows_color": "",
