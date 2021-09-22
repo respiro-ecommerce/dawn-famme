@@ -47,8 +47,8 @@
     "1632292990ed8c143f": {
       "type": "featured-blog",
       "settings": {
-        "heading": "Les mer om ullundertøy her...",
-        "blog": "ullundertoy",
+        "heading": "Mer treningsøvelser her...",
+        "blog": "trening",
         "post_limit": 3,
         "show_image": true,
         "show_date": false,
