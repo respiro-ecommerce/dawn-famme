@@ -418,7 +418,7 @@
           "label": "Farbschema"
         },
         "swipe_on_mobile": {
-          "label": "Durchziehen für mobiles Gerät aktivieren"
+          "label": "Wischen auf Mobilgeräten aktivieren"
         },
         "image_padding": {
           "label": "Bild-Padding hinzufügen"
@@ -527,7 +527,7 @@
           "label": "Aktiviere die Schaltfläche \"Alle anzeigen\", wenn die Kategorie mehr Produkte enthält, als angezeigt werden"
         },
         "swipe_on_mobile": {
-          "label": "Durchziehen für mobiles Gerät aktivieren"
+          "label": "Wischen auf Mobilgeräten aktivieren"
         },
         "header": {
           "content": "Produktkarte"
@@ -1558,7 +1558,7 @@
           "label": "Schaltflächenlink"
         },
         "swipe_on_mobile": {
-          "label": "Durchziehen für mobiles Gerät aktivieren"
+          "label": "Wischen auf Mobilgeräten aktivieren"
         }
       },
       "blocks": {
