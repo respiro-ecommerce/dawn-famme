@@ -194,6 +194,12 @@
     "main": {
       "type": "main-article",
       "blocks": {
+        "featured_image": {
+          "type": "featured_image",
+          "settings": {
+            "image_height": "adapt"
+          }
+        },
         "title": {
           "type": "title",
           "settings": {
@@ -205,19 +211,12 @@
           "type": "content",
           "settings": {
           }
-        },
-        "featured_image": {
-          "type": "featured_image",
-          "disabled": true,
-          "settings": {
-            "image_height": "adapt"
-          }
         }
       },
       "block_order": [
+        "featured_image",
         "title",
-        "content",
-        "featured_image"
+        "content"
       ],
       "settings": {
       }
