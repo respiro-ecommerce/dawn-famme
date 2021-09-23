@@ -3,6 +3,12 @@
     "main": {
       "type": "main-article",
       "blocks": {
+        "featured_image": {
+          "type": "featured_image",
+          "settings": {
+            "image_height": "adapt"
+          }
+        },
         "title": {
           "type": "title",
           "settings": {
@@ -14,18 +20,12 @@
           "type": "content",
           "settings": {
           }
-        },
-        "featured_image": {
-          "type": "featured_image",
-          "settings": {
-            "image_height": "adapt"
-          }
         }
       },
       "block_order": [
+        "featured_image",
         "title",
-        "content",
-        "featured_image"
+        "content"
       ],
       "settings": {
       }
@@ -47,8 +47,8 @@
     "1632292990ed8c143f": {
       "type": "featured-blog",
       "settings": {
-        "heading": "Les mer om undertøy her...",
-        "blog": "undertoy",
+        "heading": "Les mer om nattøy her...",
+        "blog": "nattoy",
         "post_limit": 3,
         "show_image": true,
         "show_date": false,
