@@ -86,7 +86,6 @@
     },
     "product-recommendations": {
       "type": "product-recommendations",
-      "disabled": true,
       "settings": {
         "heading": "",
         "image_ratio": "adapt",
@@ -99,6 +98,7 @@
     },
     "1632484002e568d6ec": {
       "type": "featured-blog",
+      "disabled": true,
       "settings": {
         "heading": "Les mer om gaver og gavekort...",
         "blog": "gaver",
