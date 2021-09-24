@@ -86,6 +86,7 @@
     },
     "product-recommendations": {
       "type": "product-recommendations",
+      "disabled": true,
       "settings": {
         "heading": "",
         "image_ratio": "adapt",
@@ -95,10 +96,24 @@
         "show_vendor": false,
         "show_rating": false
       }
+    },
+    "16324845029f2f10a3": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Les mer om gaver og gavekort...",
+        "blog": "gaver",
+        "post_limit": 3,
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "soft_background": false,
+        "show_view_all": true
+      }
     }
   },
   "order": [
     "main",
-    "product-recommendations"
+    "product-recommendations",
+    "16324845029f2f10a3"
   ]
 }
