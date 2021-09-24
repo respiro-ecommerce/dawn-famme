@@ -110,7 +110,7 @@
       "on_sale": "Sale",
       "product_variants": "Product variants",
       "media": {
-        "open_featured_media": "Open featured media in gallery view",
+        "open_featured_media": "Open highlighted media in gallery view",
         "open_media": "Open media {{ index }} in gallery view",
         "play_model": "Play 3D Viewer",
         "play_video": "Play video"
