@@ -45,7 +45,6 @@
     },
     "share": {
       "copy_to_clipboard": "Kopier URL-adresse til utklippstavle",
-      "share": "Del",
       "share_url": "Del URL-adresse",
       "success_message": "Kopiert til utklippstavlen!"
     }
@@ -79,7 +78,6 @@
     "article": {
       "blog": "Blogg",
       "read_more_title": "Les mer: {{ title }}",
-      "read_more": "Les mer",
       "comments": {
         "one": "{{ count }} kommentar",
         "other": "{{ count }} kommentarer"
@@ -268,8 +266,7 @@
       }
     },
     "footer": {
-      "payment": "Betalingsmåter",
-      "social_placeholder": "Følg oss i sosiale medier!"
+      "payment": "Betalingsmåter"
     },
     "featured_blog": {
       "view_all": "Vis alle",
