@@ -1,0 +1,66 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "featured_image": {
+          "type": "featured_image",
+          "settings": {
+            "image_height": "adapt"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "blog_show_date": true,
+            "blog_show_author": false
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "featured_image",
+        "title",
+        "content"
+      ],
+      "settings": {
+      }
+    },
+    "1627294046e0366cc1": {
+      "type": "loox-carousel-reviews",
+      "disabled": true,
+      "settings": {
+        "max_width": 1920,
+        "arrows_color": "",
+        "dots_color": "",
+        "button_color": "",
+        "show_more": false,
+        "only_photos": true,
+        "use_widget_font": false,
+        "product_handle": "pace-rain-jacket"
+      }
+    },
+    "1632292990ed8c143f": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Les mer om nattøy her...",
+        "blog": "nattoy",
+        "post_limit": 3,
+        "show_image": true,
+        "show_date": false,
+        "show_author": false,
+        "soft_background": false,
+        "show_view_all": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1627294046e0366cc1",
+    "1632292990ed8c143f"
+  ]
+}

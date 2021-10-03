@@ -92,12 +92,28 @@
         "show_secondary_image": true,
         "add_image_padding": false,
         "show_image_outline": true,
-        "show_vendor": false
+        "show_vendor": false,
+        "show_rating": false
+      }
+    },
+    "1632484002e568d6ec": {
+      "type": "featured-blog",
+      "disabled": true,
+      "settings": {
+        "heading": "Les mer om gaver og gavekort...",
+        "blog": "gaver",
+        "post_limit": 3,
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "soft_background": false,
+        "show_view_all": true
       }
     }
   },
   "order": [
     "main",
-    "product-recommendations"
+    "product-recommendations",
+    "1632484002e568d6ec"
   ]
 }

@@ -148,7 +148,9 @@
         "play_model": "Afspil 3D-fremviser",
         "play_video": "Afspil video"
       },
-      "view_full_details": "Se komplette oplysninger"
+      "view_full_details": "Se komplette oplysninger",
+      "include_taxes": "Inklusive skat.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Levering</a> beregnes ved betaling."
     },
     "modal": {
       "label": "Mediegalleri"
@@ -403,8 +405,8 @@
       "total": "I alt",
       "fulfilled_at_html": "Klargjort den {{ date }}",
       "track_shipment": "Følg forsendelse",
-      "tracking_url": "Trackinglink",
-      "tracking_company": "Transportfirma",
+      "tracking_url": "Sporingslink",
+      "tracking_company": "Fragtfirma",
       "tracking_number": "Trackingnummer",
       "subtotal": "Subtotal"
     }

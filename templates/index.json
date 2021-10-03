@@ -1,5 +1,67 @@
 {
   "sections": {
+    "1632220249ff5aaab9": {
+      "type": "image-banner",
+      "blocks": {
+        "1632220249ff5aaab9-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Sjekk ut høst kolleksjonen her. Vi har alt fra jeans, turtlenecks og deilige gensere."
+          }
+        },
+        "1632220249ff5aaab9-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "SHOP HER",
+            "button_link_1": "shopify:\/\/collections\/hostmote",
+            "button_style_secondary_1": true,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        },
+        "5e57f410-657e-43c6-94bd-160862bde558": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "1632220249ff5aaab9-1",
+        "1632220249ff5aaab9-2",
+        "5e57f410-657e-43c6-94bd-160862bde558"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/1.jpg",
+        "image_m": "shopify:\/\/shop_images\/Mobil_banner_AUTUMN_COLLECTION_1.jpg",
+        "image_url": "shopify:\/\/collections\/hostmote",
+        "image2_url": "",
+        "adapt_height_first_image": false,
+        "desktop_text_box_position": "center",
+        "show_text_box": true,
+        "image_overlay_opacity": 0,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "1629993086223521d8": {
+      "type": "btns",
+      "settings": {
+        "menu": "test-meny",
+        "bg": "#8a9e93",
+        "color": "#ffffff",
+        "width": 150,
+        "padx": 10,
+        "pady": 7,
+        "radius": 49
+      }
+    },
     "1631091164538140ed": {
       "type": "image-banner",
       "blocks": {
@@ -84,18 +146,6 @@
       "settings": {
         "color_scheme": "background-1",
         "full_width": true
-      }
-    },
-    "1629993086223521d8": {
-      "type": "btns",
-      "settings": {
-        "menu": "test-meny",
-        "bg": "#8a9e93",
-        "color": "#ffffff",
-        "width": 150,
-        "padx": 10,
-        "pady": 7,
-        "radius": 49
       }
     },
     "1631094390263d97d1": {
@@ -593,41 +643,6 @@
         "full_width": true
       }
     },
-    "162765044288545c14": {
-      "type": "image-with-text",
-      "blocks": {
-        "162765044288545c14-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Spar penger og miljøet"
-          }
-        },
-        "162765044288545c14-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Vi innfører <strong>reservering av nyheter <\/strong>som vil føre til <strong>mindre sløsing<\/strong>. I denne kolleksjonen vil du snart finne masse plagg i <strong>XXS til XXL<\/strong>. Man vil også kunne spare en del på å reservere, alltid <strong>fri frakt og minst 50% rabatt på fullpris for de som reserverer<\/strong>. <\/p><p><\/p><p>En reservasjon på plaggene og fargene du ønsker vil telle som en \"stemme\" og kan påvirke hva vi vil produsere. <\/p>"
-          }
-        },
-        "162765044288545c14-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Les mer",
-            "button_link": "shopify:\/\/collections\/sustainable-clothes"
-          }
-        }
-      },
-      "block_order": [
-        "162765044288545c14-0",
-        "162765044288545c14-1",
-        "162765044288545c14-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/igjen_ebdre.png",
-        "height": "adapt",
-        "color_scheme": "background-1",
-        "layout": "image_first"
-      }
-    },
     "1627475873e3871985": {
       "type": "featured-blog",
       "settings": {
@@ -737,9 +752,10 @@
     }
   },
   "order": [
+    "1632220249ff5aaab9",
+    "1629993086223521d8",
     "1631091164538140ed",
     "1627975102451ca4ce",
-    "1629993086223521d8",
     "1631094390263d97d1",
     "16310987573101b9c4",
     "16252134879571dabc",
@@ -752,7 +768,6 @@
     "1631185614bd4a3575",
     "16311853465cfb015e",
     "16311858004f885fc1",
-    "162765044288545c14",
     "1627475873e3871985",
     "163017253755809ec3",
     "1629157352b193f90f",
