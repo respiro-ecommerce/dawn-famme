@@ -119,6 +119,7 @@
       "bullet_2": "POSTEN, HELTHJEM,PORTERBUDDY",
       "bullet_3": "VIPPS, KLARNA OG KORT"
     },
+    "color": "Farge: ",
     "product": {
       "add_to_cart": "Legg i handlekurv",
       "add_to_cart_pre_order": "Reserver (les beskrivelse)",
