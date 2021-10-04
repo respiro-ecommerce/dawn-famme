@@ -146,7 +146,7 @@
         "unit_price": "Enhetspris"
       },
       "share": "Del dette produktet",
-      "sold_out": "Utsolgt",
+      "sold_out": "sara",
       "unavailable": "Utilgjengelig",
       "vendor": "Selger",
       "video_exit_message": "{{ title }} åpner en fullskjermvideo i det samme vinduet.",
