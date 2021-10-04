@@ -283,6 +283,7 @@
                         >
                         {%- if option.name contains 'olor' or option.name contains 'olour' or option.name contains 'COLOR' or option.name contains 'COLOUR' or option.name contains 'Far' -%}
                           <label class="color" for="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}">
+                            hello
                             {%- for variant in product.variants -%}
                               {%- if variant.option1 == value or variant.option2 == value or variant.option3 == value -%}
                                 {%- if variant.image -%}{{ variant.image | img_url: 'compact' | img_tag }}{%- break -%}{%- endif -%}
