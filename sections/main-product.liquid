@@ -277,8 +277,7 @@
                         <input type="radio" id="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}"
                               name="{{ option.name }}"
                               value="{{ value | escape }}"
-                              form="product-form-{{ section.id }}"
-                               hello
+                              form="product-form-{{ section.id }}
                               {% if option.selected_value == value %}checked{% endif %}
                               {% if option_disabled %}class="disabled"{% endif %}
                         >
@@ -360,6 +359,7 @@
                         value="{{ variant.id }}"
                       >
                         {{ variant.title }}
+                        test
                         {%- if variant.available == false %} - {{ 'products.product.sold_out' | t }}{% endif %}
                         - {{ variant.price | money | strip_html }}
                       </option>
