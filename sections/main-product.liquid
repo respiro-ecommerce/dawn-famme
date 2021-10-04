@@ -363,6 +363,7 @@
                       >
                         {{ variant.title }}
                         {%- if variant.available == false %} - {{ 'products.product.sold_out' | t }}selma{% endif %}
+                        selma
                         - {{ variant.price | money | strip_html }}
                       </option>
                     {%- endfor -%}
