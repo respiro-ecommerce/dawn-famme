@@ -271,10 +271,10 @@
                             {% when 3 %}
                               {% if option1_name == product.selected_or_first_available_variant.option1 and variants_option2_arr[forloop.index0] == product.selected_or_first_available_variant.option2 and variants_option3_arr[forloop.index0] == value and variants_available_arr[forloop.index0] == true %}
                                 {%- assign option_disabled = false -%}
-                                hello
                               {% endif %}
                           {% endcase %}
                         {% endfor %}
+                        hello
                         <input type="radio" id="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}"
                               name="{{ option.name }}"
                               value="{{ value | escape }}"
