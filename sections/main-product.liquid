@@ -360,7 +360,7 @@
                         value="{{ variant.id }}"
                       >
                         {{ variant.title }}
-                        {%- if variant.available == false %} - {{ 'products.product.sold_out' | t }}{% endif %}
+                        {%- if variant.available == false %} - {{ 'products.product.share' | t }}{% endif %}
                         - {{ variant.price | money | strip_html }}
                       </option>
                     {%- endfor -%}
@@ -396,7 +396,7 @@
                             {{ 'products.product.add_to_cart' | t }}
 
                           {%- else -%}
-                            {{ 'products.product.share' | t }}
+                            {{ 'products.product.sold_out' | t }}
 
                           {%- endif -%}
                         </span>
