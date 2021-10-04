@@ -394,10 +394,9 @@
                         <span>
                           {%- if product.selected_or_first_available_variant.available -%}
                             {{ 'products.product.add_to_cart' | t }}
-                            ledig
 
                           {%- else -%}
-                            {{ 'products.product.sold_out' | t }}
+                            {{ 'products.product.share' | t }}
 
                           {%- endif -%}
                         </span>
