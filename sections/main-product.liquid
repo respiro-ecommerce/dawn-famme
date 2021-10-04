@@ -278,6 +278,7 @@
                               name="{{ option.name }}"
                               value="{{ value | escape }}"
                               form="product-form-{{ section.id }}"
+                               hello
                               {% if option.selected_value == value %}checked{% endif %}
                               {% if option_disabled %}class="disabled"{% endif %}
                         >
