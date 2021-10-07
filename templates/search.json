@@ -3,10 +3,38 @@
     "main": {
       "type": "main-search",
       "settings": {
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_filtering": true,
+        "enable_sorting": true,
+        "collapse_on_larger_devices": false,
+        "article_show_date": true,
+        "article_show_author": false
+      }
+    },
+    "16336042285b8638c0": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Finner du ikke det du leter etter? Kanskje du liker noe av dette.",
+        "collection": "bestsellers",
+        "products_to_show": 4,
+        "show_view_all": false,
+        "swipe_on_mobile": true,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "16336042285b8638c0"
   ]
 }
