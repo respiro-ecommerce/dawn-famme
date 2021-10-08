@@ -2,7 +2,6 @@
   "sections": {
     "16336882593877f2d6": {
       "type": "image-banner",
-      "disabled": true,
       "blocks": {
         "16336882593877f2d6-0": {
           "type": "heading",
@@ -36,7 +35,7 @@
         "16336882593877f2d6-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/2-tights-399-banner-desktop.jpg",
+        "image": "shopify:\/\/shop_images\/0Q0A4285.jpg",
         "image_url": "",
         "image2_url": "",
         "adapt_height_first_image": false,
