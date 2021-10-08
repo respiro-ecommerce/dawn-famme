@@ -2,7 +2,6 @@
   "sections": {
     "16336882593877f2d6": {
       "type": "image-banner",
-      "disabled": true,
       "blocks": {
         "16336882593877f2d6-0": {
           "type": "heading",
@@ -14,9 +13,8 @@
         },
         "16336882593877f2d6-1": {
           "type": "text",
-          "disabled": true,
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template."
+            "text": "2 Tights for 399 med koden : 2TIGHTS"
           }
         },
         "16336882593877f2d6-2": {
