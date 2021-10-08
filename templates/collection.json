@@ -2,6 +2,7 @@
   "sections": {
     "16336882593877f2d6": {
       "type": "image-banner",
+      "disabled": true,
       "blocks": {
         "16336882593877f2d6-0": {
           "type": "heading",
@@ -37,8 +38,6 @@
         "16336882593877f2d6-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/outlet-tights-desktop-banner.jpg",
-        "image_m": "shopify:\/\/shop_images\/outlet-tights-mobil-banner.jpg",
         "image_url": "",
         "image2_url": "",
         "adapt_height_first_image": false,
