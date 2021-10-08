@@ -2,6 +2,7 @@
   "sections": {
     "16336882593877f2d6": {
       "type": "image-banner",
+      "disabled": true,
       "blocks": {
         "16336882593877f2d6-0": {
           "type": "heading",
@@ -14,17 +15,16 @@
         "16336882593877f2d6-1": {
           "type": "text",
           "settings": {
-            "text": "2 Tights for 399 med koden : 2TIGHTS"
+            "text": "2 Tights for 399 med koden :"
           }
         },
         "16336882593877f2d6-2": {
           "type": "buttons",
-          "disabled": true,
           "settings": {
-            "button_label_1": "Button label",
+            "button_label_1": "",
             "button_link_1": "",
             "button_style_secondary_1": false,
-            "button_label_2": "Button label",
+            "button_label_2": "2TIGHTS",
             "button_link_2": "",
             "button_style_secondary_2": false
           }
