@@ -1,5 +1,55 @@
 {
   "sections": {
+    "16336882593877f2d6": {
+      "type": "image-banner",
+      "disabled": true,
+      "blocks": {
+        "16336882593877f2d6-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "medium"
+          }
+        },
+        "16336882593877f2d6-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template."
+          }
+        },
+        "16336882593877f2d6-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "16336882593877f2d6-0",
+        "16336882593877f2d6-1",
+        "16336882593877f2d6-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/2-tights-399-banner-desktop.jpg",
+        "image_url": "",
+        "image2_url": "",
+        "adapt_height_first_image": false,
+        "desktop_text_box_position": "center",
+        "show_text_box": true,
+        "image_overlay_opacity": 0,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
@@ -10,6 +60,7 @@
         "add_image_padding": false,
         "show_image_outline": true,
         "show_vendor": false,
+        "show_rating": false,
         "enable_filtering": true,
         "enable_sorting": true,
         "collapse_on_larger_devices": false
@@ -24,6 +75,7 @@
     }
   },
   "order": [
+    "16336882593877f2d6",
     "product-grid",
     "banner"
   ]
