@@ -103,7 +103,7 @@
   "products": {
     "bullets": {
       "bullet_1": "ALLTID FRI FRAKT",
-      "bullet_2": "POSTNORD, DHL",
+      "bullet_2": "POSTEN, HELTHJEM, PORTERBUDDY",
       "bullet_3": "PAYPAL, APPLE PAY OCH KORT"
     },
     "sizing_recommendation_up": "Gå en storlek upp",
@@ -150,10 +150,10 @@
       },
       "view_full_details": "Visa alla uppgifter",
       "include_taxes": "Skatt ingår.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Frakt</a> beräknas i kassan."
+      "shipping_policy_html": "<a href=\"{{ link }}\">Frakt<\/a> beräknas i kassan."
     },
     "modal": {
-      "label": "Mediagalleri"
+      "label": "Mediegalleri"
     }
   },
   "templates": {
