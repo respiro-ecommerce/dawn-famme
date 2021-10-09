@@ -144,8 +144,8 @@
       },
       "media": {
         "open_featured_media": "Öppna markerade medier i gallerivyn",
-        "open_media": "Öppna media {{ index }} i gallerivyn",
-        "play_model": "Spela 3D-visaren",
+        "open_media": "Öppna medier{{ index }} i gallerivyn",
+        "play_model": "Spela 3D -vy",
         "play_video": "Spela video"
       },
       "view_full_details": "Visa alla uppgifter",
