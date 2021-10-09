@@ -400,5 +400,17 @@
       "copy_code_success": "Koden kopierades",
       "print_gift_card": "Skriv ut"
     }
+  },
+  "shopify": {
+    "checkout": {
+      "payment": {
+        "paypal": {
+          "connect": "Klicka för att ansluta till ditt PayPal -konto"
+        }
+      },
+      "shipping_errors": {
+        "shipping_method_not_available": "Din kundvagn har uppdaterats, och tyvärr har vi inte de produkter du har lagt till i Norge för tillfället. Ta bort produkterna för att slutföra beställningen."
+      }
+    }
   }
 }
