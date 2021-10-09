@@ -148,7 +148,7 @@
         "play_model": "Spela 3D -vy",
         "play_video": "Spela video"
       },
-      "view_full_details": "Visa alla uppgifter",
+      "view_full_details": "Visa alla detaljer",
       "include_taxes": "Skatt ingår.",
       "shipping_policy_html": "<a href=\"{{ link }}\">Frakt<\/a> beräknas i kassan."
     },
