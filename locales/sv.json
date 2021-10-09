@@ -158,10 +158,10 @@
   },
   "templates": {
     "search": {
-      "no_results": "Inga resultat hittades för \"{{ terms }}\". Kontrollera stavningen eller använd ett annat ord eller fras.",
+      "no_results": "Inga resultat hittades för«{{ terms }}». Kontrollera stavningen, eller använd ett annat ord.",
       "results_with_count": {
-        "one": "hittat {{ count }} resultat för \"{{ terms }}\"",
-        "other": "hittat {{ count }} resultat för \"{{ terms }}\""
+        "one": "{{ count }} resultat",
+        "other": "{{ count }} resultat"
       },
       "title": "Sökresultat",
       "page": "Sida",
