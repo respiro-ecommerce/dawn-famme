@@ -145,8 +145,7 @@
       "xr_button": "View in your space",
       "xr_button_label": "View in your space, loads item in augmented reality window",
       "include_taxes": "Tax included.",
-      "shipping_policy_html":
-      "<a href=\"{{ link }}\">Shipping</a> calculated at checkout."
+      "shipping_policy_html": "<a href=\"{{ link }}\">Shipping<\/a> calculated at checkout."
     },
     "modal": {
       "label": "Media gallery"
@@ -400,6 +399,9 @@
     "checkout": {
       "shipping_errors": {
         "shipping_method_not_available": "Your shopping cart has been updated, and unfortunately we do not have the products you have added in Norway at the moment. Remove the products to complete the order."
+      },
+      "payment": {
+        "subscription_agreement_cancelled": "canceled"
       }
     }
   }
