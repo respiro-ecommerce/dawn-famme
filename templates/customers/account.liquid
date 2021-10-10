@@ -43,11 +43,12 @@
                     {% assign relative_url = routes.account_url | append: '/orders/' | append: order_number %}
 
 
-                    {{order.relative_url}}
 
 
-                    <a href="{{ order.relative_url }}" aria-label="{{ 'customer.orders.order_number_link' | t: number: order.name }}">
 
+                    <a href="{{relative_url }}" aria-label="{{ 'customer.orders.order_number_link' | t: number: order.name }}">
+
+                      {{ order.name }}
 
                     </a>
                   </td>
