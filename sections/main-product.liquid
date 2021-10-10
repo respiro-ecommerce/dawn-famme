@@ -208,7 +208,6 @@
               </quantity-input>
             </div>
           {%- when 'popup' -%}
-            test
               <modal-opener class="product-popup-modal__opener no-js-hidden" data-modal="#PopupModal-{{ block.id }}" {{ block.shopify_attributes }}>
                 <button id="ProductPopup-{{ block.id }}" class="product-popup-modal__button link" type="button" aria-haspopup="dialog">{{ block.settings.text | default: block.settings.page.title }}</button>
               </modal-opener>
@@ -381,7 +380,6 @@
                   </svg>
                   <span class="product-form__error-message"></span>
                 </div>
-
                 {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
                   <input type="hidden" disabled name="id" value="{{ product.selected_or_first_available_variant.id }}">
                   <div class="product-form__buttons">
@@ -394,10 +392,8 @@
                         <span>
                           {%- if product.selected_or_first_available_variant.available -%}
                             {{ 'products.product.add_to_cart' | t }}
-
                           {%- else -%}
                             {{ 'products.product.sold_out' | t }}
-
                           {%- endif -%}
                         </span>
                         <div class="loading-overlay__spinner hidden">
