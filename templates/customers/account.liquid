@@ -29,6 +29,7 @@
               </tr>
             </thead>
             <tbody role="rowgroup">
+
               {%- for order in customer.orders -%}
                 <tr role="row">
                   <td
@@ -37,7 +38,8 @@
                     headers="ColumnOrder"
                     data-label="{{ 'customer.orders.order_number' | t }}"
                   >
-                    <a href="{{ order.customer_url }}" aria-label="{{ 'customer.orders.order_number_link' | t: number: order.name }}">
+                          {% assign relative_url = routes.account_url | append: '/orders/' | append: order_number %}
+                    <a href="{{ order.relative_url }}" aria-label="{{ 'customer.orders.order_number_link' | t: number: order.name }}">
                       {{ order.name }}
                     </a>
                   </td>
