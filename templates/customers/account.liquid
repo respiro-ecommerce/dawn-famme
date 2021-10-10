@@ -37,19 +37,11 @@
                     role="cell"
                     headers="ColumnOrder"
                     data-label="{{ 'customer.orders.order_number' | t }}"
-
                   >
                     {% assign order_number = order.customer_url | split : '/' | last %}
                     {% assign relative_url = routes.account_url | append: '/orders/' | append: order_number %}
-
-
-
-
-
                     <a href="{{relative_url }}" aria-label="{{ 'customer.orders.order_number_link' | t: number: order.name }}">
-
                       {{ order.name }}
-
                     </a>
                   </td>
                   <td headers="RowOrder ColumnDate" role="cell" data-label="{{ 'customer.orders.date' | t }}">
