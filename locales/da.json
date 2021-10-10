@@ -103,7 +103,7 @@
   "products": {
     "bullets": {
       "bullet_1": "ALTID FRI FRAGT",
-      "bullet_2": "POSTNORD (4-10 DAGE) ELLER DHL EXPRESS (1-3 DAGE)",
+      "bullet_2": "POSTNORD (2-3 DAGE), DHL EXPRESS (1-3 DAGE)",
       "bullet_3": "MOBILEPAY, PAYPAL OG KORT"
     },
     "sizing_recommendation_up": "Gå en størrelse op",
@@ -150,7 +150,7 @@
       },
       "view_full_details": "Se komplette oplysninger",
       "include_taxes": "Inklusive skat.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Levering</a> beregnes ved betaling."
+      "shipping_policy_html": "<a href=\"{{ link }}\">Levering<\/a> beregnes ved betaling."
     },
     "modal": {
       "label": "Mediegalleri"
@@ -291,7 +291,7 @@
         "one": "{{ count }} produkt",
         "other": "{{ count }} produkter"
       },
-      "use_fewer_filters_html": "Brug færre filtre, eller <a class=\"{{ class }}\" href=\"{{ link }}\">ryd alt</a>"
+      "use_fewer_filters_html": "Brug færre filtre, eller <a class=\"{{ class }}\" href=\"{{ link }}\">ryd alt<\/a>"
     },
     "video": {
       "load_video": "Indlæs video: {{ description }}"

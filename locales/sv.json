@@ -103,7 +103,7 @@
   "products": {
     "bullets": {
       "bullet_1": "ALLTID FRI FRAKT",
-      "bullet_2": "POSTNORD, DHL",
+      "bullet_2": "POSTEN, HELTHJEM, PORTERBUDDY",
       "bullet_3": "PAYPAL, APPLE PAY OCH KORT"
     },
     "sizing_recommendation_up": "Gå en storlek upp",
@@ -143,25 +143,25 @@
         "refresh": "Uppdatera"
       },
       "media": {
-        "open_featured_media": "Öppna utvald media i gallerivyn",
-        "open_media": "Öppna media {{ index }} i gallerivyn",
-        "play_model": "Spela 3D-visaren",
+        "open_featured_media": "Öppna markerade medier i gallerivyn",
+        "open_media": "Öppna medier{{ index }} i gallerivyn",
+        "play_model": "Spela 3D -vy",
         "play_video": "Spela video"
       },
-      "view_full_details": "Visa alla uppgifter",
+      "view_full_details": "Visa alla detaljer",
       "include_taxes": "Skatt ingår.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Frakt</a> beräknas i kassan."
+      "shipping_policy_html": "<a href=\"{{ link }}\">Frakt<\/a> beräknas i kassan."
     },
     "modal": {
-      "label": "Mediagalleri"
+      "label": "Mediegalleri"
     }
   },
   "templates": {
     "search": {
-      "no_results": "Inga resultat hittades för \"{{ terms }}\". Kontrollera stavningen eller använd ett annat ord eller fras.",
+      "no_results": "Inga resultat hittades för«{{ terms }}». Kontrollera stavningen, eller använd ett annat ord.",
       "results_with_count": {
-        "one": "hittat {{ count }} resultat för \"{{ terms }}\"",
-        "other": "hittat {{ count }} resultat för \"{{ terms }}\""
+        "one": "{{ count }} resultat",
+        "other": "{{ count }} resultat"
       },
       "title": "Sökresultat",
       "page": "Sida",
@@ -399,6 +399,18 @@
       "expired": "Har gått ut",
       "copy_code_success": "Koden kopierades",
       "print_gift_card": "Skriv ut"
+    }
+  },
+  "shopify": {
+    "checkout": {
+      "payment": {
+        "paypal": {
+          "connect": "Klicka för att ansluta till ditt PayPal -konto"
+        }
+      },
+      "shipping_errors": {
+        "shipping_method_not_available": "Din kundvagn har uppdaterats, och tyvärr har vi inte de produkter du har lagt till i Norge för tillfället. Ta bort produkterna för att slutföra beställningen."
+      }
     }
   }
 }
