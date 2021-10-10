@@ -40,7 +40,7 @@
 
                   >
                     {% assign order_number = order.customer_url | split : '/' | last %}
-                    {% assign relative_url = routes.account_url | append: '/orders/' | append: order_number %}
+                    {% assign relative_url = 'fammestore.' | append: routes.account_url | append: '/orders/' | append: order_number %}
 
                     {{relative_url}}
 
