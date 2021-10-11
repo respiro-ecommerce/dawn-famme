@@ -277,7 +277,7 @@
                         <input type="radio" id="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}"
                               name="{{ option.name }}"
                               value="{{ value | escape }}"
-                              form="product-form-{{ section.id }}
+                              form="product-form-{{ section.id }}"
                               {% if option.selected_value == value %}checked{% endif %}
                               {% if option_disabled %}class="disabled"{% endif %}
                         >
