@@ -279,7 +279,11 @@
       "title": "Account",
       "details": "Account details",
       "view_addresses": "View addresses",
-      "return": "Return to Account details"
+      "return": "Return to Account details",
+      "return_form": "Go to return form",
+      "complaint_form": "Go to complaint form",
+      "return_header": "Return form",
+      "complaint_header": "Complaint form"
     },
     "account_fallback": "Account",
     "activate_account": {
