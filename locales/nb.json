@@ -301,7 +301,9 @@
       "view_addresses": "Vis adresser",
       "return": "Gå tilbake til kontodetaljer",
       "returnform": "Gå til returskjema",
-      "complaint_form": "Gå til reklamasjonsskjema"
+      "complaint_form": "Gå til reklamasjonsskjema",
+      "return_header": "Returskjema",
+      "complaint_header": "Reklamasjonsskjema"
 
     },
     "account_fallback": "Konto",
