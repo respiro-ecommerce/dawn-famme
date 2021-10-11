@@ -302,8 +302,8 @@
       "return": "Gå tilbake til kontodetaljer",
       "returskjema": "Gå til returskjema",
       "reklamasjonsform": "Gå til reklamasjonsskjema",
-      "complaintform": "Go to complaint form",
-      "returnform": "Go to return form"
+      "complaintform": "Reklamasjonsskjema",
+      "returnform": "Returskjema"
 
     },
     "account_fallback": "Konto",
