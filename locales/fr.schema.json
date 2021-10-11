@@ -64,6 +64,12 @@
         "type_body_font": {
           "label": "Police",
           "info": "La sélection d'une police différente peut influencer la vitesse de votre boutique. [En savoir plus sur les polices système.](https://help.shopify.com/en/manual/online-store/os/store-speed/improving-speed#fonts)"
+        },
+        "heading_scale": {
+          "label": "Échelle de taille de police"
+        },
+        "body_scale": {
+          "label": "Échelle de taille de police"
         }
       }
     },
@@ -117,21 +123,6 @@
     "social-media": {
       "name": "Médias sociaux",
       "settings": {
-        "share_facebook": {
-          "label": "Partager sur Facebook"
-        },
-        "share_twitter": {
-          "label": "Tweeter sur Twitter"
-        },
-        "share_pinterest": {
-          "label": "Épingler sur Pinterest"
-        },
-        "header__1": {
-          "content": "Options de partage social"
-        },
-        "header__2": {
-          "content": "Comptes sociaux"
-        },
         "social_twitter_link": {
           "label": "Twitter",
           "info": "https://twitter.com/shopify"
@@ -500,25 +491,6 @@
           "label": "Afficher l'auteur"
         }
       },
-      "blocks": {
-        "title": {
-          "name": "Titre",
-          "settings": {
-            "show_date": {
-              "label": "Afficher la date"
-            },
-            "show_author": {
-              "label": "Afficher l'auteur"
-            }
-          }
-        },
-        "summary": {
-          "name": "Extrait"
-        },
-        "link": {
-          "name": "Lien"
-        }
-      },
       "presets": {
         "name": "Articles de blog"
       }
@@ -763,7 +735,8 @@
           "label": "Empiler des images sur un mobile"
         },
         "adapt_height_first_image": {
-          "label": "Adapter la hauteur de la section à la taille de la première image"
+          "label": "Adapter la hauteur de la section à la taille de la première image",
+          "info": "Remplace le paramètre de hauteur de la bannière d'image lorsqu'il est activé."
         },
         "show_text_box": {
           "label": "Afficher la zone de texte sur le bureau"
@@ -776,6 +749,19 @@
         },
         "show_text_below": {
           "label": "Afficher le texte sous les images"
+        },
+        "image_height": {
+          "label": "Hauteur de la bannière de l'image",
+          "options__1": {
+            "label": "Petit"
+          },
+          "options__2": {
+            "label": "Moyen"
+          },
+          "options__3": {
+            "label": "Grand"
+          },
+          "info": "Pour optimiser vos résultats, utilisez une image ayant un rapport d'aspect de 2:3. [En savoir plus](https://help.shopify.com/en/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
         }
       },
       "blocks": {
@@ -953,9 +939,6 @@
         "content": {
           "name": "Contenu"
         },
-        "social_sharing": {
-          "name": "Boutons de partage social"
-        },
         "share": {
           "name": "Partager",
           "settings": {
@@ -1015,25 +998,6 @@
             "label": "Grand"
           },
           "info": "Pour optimiser vos résultats, utilisez une image ayant un rapport d'aspect de 2:3. [En savoir plus](https://help.shopify.com/en/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
-        }
-      },
-      "blocks": {
-        "title": {
-          "name": "Titre",
-          "settings": {
-            "show_date": {
-              "label": "Afficher la date"
-            },
-            "show_author": {
-              "label": "Afficher l'auteur"
-            }
-          }
-        },
-        "summary": {
-          "name": "Extrait"
-        },
-        "link": {
-          "name": "Lien"
         }
       }
     },
@@ -1122,9 +1086,6 @@
         },
         "show_image_outline": {
           "label": "Afficher la bordure de l'image"
-        },
-        "enable_sort": {
-          "label": "Activer le tri"
         },
         "collapse_on_larger_devices": {
           "label": "Réduire sur les écrans plus grands"
@@ -1662,9 +1623,6 @@
       "settings": {
         "heading": {
           "label": "Titre"
-        },
-        "header__1": {
-          "content": "Recommandations de produits"
         },
         "header__2": {
           "content": "Carte de produit"
