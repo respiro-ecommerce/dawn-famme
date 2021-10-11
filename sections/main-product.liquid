@@ -359,7 +359,6 @@
                         value="{{ variant.id }}"
                       >
                         {{ variant.title }}
-                        test
                         {%- if variant.available == false %} - {{ 'products.product.sold_out' | t }}{% endif %}
                         - {{ variant.price | money | strip_html }}
                       </option>
