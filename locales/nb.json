@@ -300,10 +300,9 @@
       "details": "Kontodetaljer",
       "view_addresses": "Vis adresser",
       "return": "Gå tilbake til kontodetaljer",
-      "returskjema": "Gå til returskjema",
+      "returnform": "Gå til returskjema",
       "reklamasjonsform": "Gå til reklamasjonsskjema",
-      "complaintform": "Go to complaint form",
-      "returnform": "Go to return form"
+      "complaintform": "Reklamasjonsskjema"
 
     },
     "account_fallback": "Konto",
