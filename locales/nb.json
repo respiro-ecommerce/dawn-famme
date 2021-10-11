@@ -301,7 +301,9 @@
       "view_addresses": "Vis adresser",
       "return": "Gå tilbake til kontodetaljer",
       "returnform": "Gå til returskjema",
-      "reklamasjonsform": "Gå til reklamasjonsskjema"
+      "reklamasjonsform": "Gå til reklamasjonsskjema",
+      "complaintform": "Reklamasjonsskjema"
+
     },
     "account_fallback": "Konto",
     "activate_account": {
