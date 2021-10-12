@@ -152,7 +152,7 @@
                 {% endif %}
                 {% assign colours = ''%}
                 {{ product.options[1] }}
-
+                {% if product.options contains "Far" or product.options contains "Col"  %}
                   {%- for variant in product.variants -%}
                     {% unless colours contains variant.option1  %}
 
