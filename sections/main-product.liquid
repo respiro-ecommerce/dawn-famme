@@ -168,7 +168,9 @@
                     {% endunless %}
                 {%- endfor -%}
                 {% endif %}
+                {{colours.size}}
                 {% if colours.size > 1 %}
+
                   <p>{{ "products.colors" | t }}{{ colours }} </p>
                 {% else %}
                   <p>{{ "products.color" | t }}{{ colours }} </p>
