@@ -153,12 +153,12 @@
                 {% assign colours = ''%}
                 {%- for variant in product.variants -%}
                     {% unless colours contains variant.option1  %}
-                      {% if variant.option1 contains "Far" or "col"  %}
+                      {% unless variant.option1 contains "Far" or "col"  %}
                         {% unless forloop.last or forloop.first %}
                           {% assign colours = colours | append: ', ' %}
                         {% endunless %}
                           {% assign colours = colours | append: variant.option1%}
-                      {% endif %}
+                      {% endunless %}
                     {% endunless %}
                 {%- endfor -%}
 
