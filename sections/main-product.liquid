@@ -152,7 +152,7 @@
                 {% endif %}
                 {% assign colours = ''%}
                 {{ product.options }}
-                {% unless product.options contains "Far" or "Col"  %}
+                {% if product.options contains "Far" or "Col"  %}
                   {%- for variant in product.variants -%}
                     {% unless colours contains variant.option1  %}
 
@@ -172,7 +172,7 @@
                       {% endif %}
                     {% endunless %}
                 {%- endfor -%}
-                {% endunless %}
+                {% endif %}
 
                 <p>{{ "products.color" | t }}{{ colours}} </p>
               </div>
