@@ -151,18 +151,17 @@
                   <p>{{ "products.model_height" | t }}{{ product.metafields.my_fields.model_height }}</p>
                 {% endif %}
                 {% assign colours = ''%}
+                 HELLO
                 {%- for variant in product.variants -%}
                     {% unless colours contains variant.option1  %}
+
+                      {{ product.options }}
+
                       {% if product.options[0] contains "Far" or "col"  %}
                         {% unless forloop.last or forloop.first %}
                           {% assign colours = colours | append: ', ' %}
                         {% endunless %}
                           {% assign colours = colours | append: variant.option1%}
-                        {% elseif product.options[1] contains "Far" or "col"  %}
-                          {% unless forloop.last or forloop.first %}
-                            {% assign colours = colours | append: ', ' %}
-                          {% endunless %}
-                            {% assign colours = colours | append: variant.option2%}
                       {% endif %}
                     {% endunless %}
                 {%- endfor -%}
