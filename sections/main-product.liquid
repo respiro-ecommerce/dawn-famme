@@ -169,9 +169,9 @@
 
                             {% assign colours = colours | append: variant.option2%}
                       {% endif %}
-
                     {% endunless %}
                 {%- endfor -%}
+                {% endif %}
 
                 <p>{{ "products.color" | t }}{{ colours}} </p>
               </div>
