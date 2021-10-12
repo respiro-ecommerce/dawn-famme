@@ -156,6 +156,7 @@
 
 
                 {% if split_options contains "Farge" or split_options contains "Color" %}
+                  inni forste if
 
                   {%- for variant in product.variants -%}
                     {% unless colours contains variant.option1  %}
