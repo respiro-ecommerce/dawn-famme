@@ -152,11 +152,11 @@
                 {% endif %}
                 {% assign colours = ''%}
                 {{ product.options }}
-                {% if product.options contains "Far" or "Col"  %}
+                {% if product.options contains "Far" or product.options contains "Col"  %}
                   {%- for variant in product.variants -%}
                     {% unless colours contains variant.option1  %}
 
-                      {% if product.options[0] contains "Far" or "Col"  %}
+                      {% if product.options[0] contains "Far" or product.options contains "Col"  %}
 
                           {% unless forloop.last or forloop.first %}
                           {% assign colours = colours | append: ', ' %}
