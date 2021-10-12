@@ -154,7 +154,7 @@
 
                 {% if product.options contains "Far" or product.options contains "Col"  %}
                   {% assign split_option = product.options | split: " " %}
-                  {{ split_option[1] }}
+                  {{ split_option }}
 
                   {%- for variant in product.variants -%}
                     {% unless colours contains variant.option1  %}
