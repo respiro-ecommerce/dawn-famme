@@ -152,18 +152,13 @@
                 {% endif %}
                 {% assign colours = ''%}
                  {% assign split_option = product.options | split: " " %}
-                 {{ product.options }}
-                 {{ product.options[0] }}
-
-
 
                 {% if product.options contains "Farge" or product.options contains "Color" %}
-                  inni forste if
 
                   {%- for variant in product.variants -%}
                     {% unless colours contains variant.option1  %}
 
-                      {% if split_option[0] contains "Farge" or split_option[0] contains "Color"  %}
+                      {% if product.options[0] contains "Farge" or product.options[0] contains "Color"  %}
 
 
                           {% unless forloop.last or forloop.first %}
