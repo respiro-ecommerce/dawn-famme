@@ -155,12 +155,12 @@
                  {{ split_option[0] }}
 
 
-                {%- if split_options contains "Far" or split_options contains "Col" -%}
+                {% if split_options contains "Farge" or split_options contains "Color" %}
 
                   {%- for variant in product.variants -%}
                     {% unless colours contains variant.option1  %}
 
-                      {%- if split_option[0] contains "Far" or split_option[0] contains "Col"  -%}
+                      {% if split_option[0] contains "Farge" or split_option[0] contains "Color"  %}
 
 
                           {% unless forloop.last or forloop.first %}
