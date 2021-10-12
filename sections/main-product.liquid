@@ -151,35 +151,28 @@
                   <p>{{ "products.model_height" | t }}{{ product.metafields.my_fields.model_height }}</p>
                 {% endif %}
                 {% assign colours = ''%}
-                 {% assign split_option = product.options | split: " " %}
-
                 {% if product.options contains "Farge" or product.options contains "Color" %}
-
                   {%- for variant in product.variants -%}
                     {% unless colours contains variant.option1  %}
-
                       {% if product.options[0] contains "Farge" or product.options[0] contains "Color"  %}
-
-
                           {% unless forloop.last or forloop.first %}
                           {% assign colours = colours | append: ', ' %}
                         {% endunless %}
                           {% assign colours = colours | append: variant.option1%}
-                          {{ colours }}tester her
-
                         {% else %}
                             {% unless forloop.last or forloop.first %}
                               {% assign colours = colours | append: ', ' %}
                            {% endunless %}
-
                             {% assign colours = colours | append: variant.option2%}
                       {% endif %}
                     {% endunless %}
                 {%- endfor -%}
                 {% endif %}
-
-
-                <p>{{ "products.color" | t }}{{ colours}} </p>
+                {% if colours.size > 1 %}
+                  <p>{{ "products.colors" | t }}{{ colours }} </p>
+                {% else %}
+                  <p>{{ "products.color" | t }}{{ colours }} </p>
+               {% endif %}
               </div>
             {%- endif -%}
           {%- when 'custom_liquid' -%}
