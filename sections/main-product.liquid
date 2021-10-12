@@ -157,7 +157,7 @@
                       {% if product.options[0] contains "Far" or "col"  %}
                           dette er forste
                           {{ variant.option1 }}
-                          {{ product.option[0] }}
+
                           {% unless forloop.last or forloop.first %}
                           {% assign colours = colours | append: ', ' %}
                         {% endunless %}
@@ -167,7 +167,7 @@
                         {% if product.options[1] contains "Far" or "col"  %}
                           dette er andre
                           {{ variant.option2 }}
-                          {{ product.option[1] }}
+
                             {% unless forloop.last or forloop.first %}
                               {% assign colours = colours | append: ', ' %}
                            {% endunless %}
