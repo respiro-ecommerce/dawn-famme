@@ -154,8 +154,6 @@
                 {%- for variant in product.variants -%}
                     {% unless colours contains variant.option1  %}
 
-                      {{ product.options }}
-
                       {% if product.options[0] contains "Far" or "col"  %}
                           dette er forste
                           {{ variant.option1 }}
