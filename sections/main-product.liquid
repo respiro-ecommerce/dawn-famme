@@ -170,8 +170,7 @@
                 {% endif %}
                 {{colours}}test
                 {{colours.size}}
-                {% if colours.size > 1 %}
-
+                {% if colours contains "," %}
                   <p>{{ "products.colors" | t }}{{ colours }} </p>
                 {% else %}
                   <p>{{ "products.color" | t }}{{ colours }} </p>
