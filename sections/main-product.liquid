@@ -162,6 +162,12 @@
                           {% assign colours = colours | append: ', ' %}
                         {% endunless %}
                           {% assign colours = colours | append: variant.option1%}
+                        {% endif %}
+                        {% if product.options[1] contains "Far" or "col"  %}
+                          {% unless forloop.last or forloop.first %}
+                            {% assign colours = colours | append: ', ' %}
+                          {% endunless %}
+                            {% assign colours = colours | append: variant.option2%}
                       {% endif %}
                     {% endunless %}
                 {%- endfor -%}
