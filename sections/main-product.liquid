@@ -156,7 +156,7 @@
 
                       {% if product.options[0] contains "Far" or "col"  %}
 
-                          {{ product.option[0] }}
+                          {{ variant.option1 }}
 
                           {% unless forloop.last or forloop.first %}
                           {% assign colours = colours | append: ', ' %}
