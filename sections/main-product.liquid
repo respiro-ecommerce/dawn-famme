@@ -160,7 +160,7 @@
                   {%- for variant in product.variants -%}
                     {% unless colours contains variant.option1  %}
 
-                      {% if product.options[0] contains "Far" or product.options contains "Col"  %}
+                      {% if split_option[0] contains "Far" or split_option[0] contains "Col"  %}
 
 
                           {% unless forloop.last or forloop.first %}
@@ -177,6 +177,7 @@
                       {% endif %}
                     {% endunless %}
                 {%- endfor -%}
+                {% endif %}
 
 
                 <p>{{ "products.color" | t }}{{ colours}} </p>
