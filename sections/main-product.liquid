@@ -153,9 +153,11 @@
                 {% assign colours = ''%}
                  {% assign split_option = product.options | split: " " %}
                  {{ product.options }}
+                 {{ product.options[0] }}
 
 
-                {% if split_options contains '"Farge"' or split_options contains '"Color"' %}
+
+                {% if product.options contains '"Farge"' or product.options contains '"Color"' %}
                   inni forste if
 
                   {%- for variant in product.variants -%}
