@@ -22,6 +22,7 @@
     {%- assign formatted_initial_value = gift_card.initial_value | money_without_trailing_zeros | strip_html -%}
 
     <title>{{ 'gift_cards.issued.title' | t: value: formatted_initial_value, shop: shop.name }}</title>
+    HELLO
 
     <meta name="description" content="{{ 'gift_cards.issued.subtext' | t }}">
 
