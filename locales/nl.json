@@ -132,17 +132,17 @@
         "refresh": "Vernieuwen"
       },
       "media": {
-        "open_featured_media": "Uitgelichte media openen in galerieweergave",
+        "open_featured_media": "Gemarkeerde media openen in galerijweergave",
         "open_media": "{{ index }} van media openen in galerieweergave",
         "play_model": "3D-viewer afspelen",
         "play_video": "Video afspelen"
       },
       "view_full_details": "Alle details bekijken",
       "include_taxes": "Inclusief btw.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Verzendkosten</a> worden berekend bij de checkout."
+      "shipping_policy_html": "<a href=\"{{ link }}\">Verzendkosten<\/a> worden berekend bij de checkout."
     },
     "modal": {
-      "label": "Mediagalerij"
+      "label": "Media galerij"
     },
     "facets": {
       "apply": "Toepassen",
