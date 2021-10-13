@@ -133,7 +133,7 @@
       },
       "media": {
         "open_featured_media": "Gemarkeerde media openen in galerijweergave",
-        "open_media": "{{ index }} van media openen in galerieweergave",
+        "open_media": "Media openen{{ index }} in galerijweergave",
         "play_model": "3D-viewer afspelen",
         "play_video": "Video afspelen"
       },
