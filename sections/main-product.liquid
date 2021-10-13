@@ -255,7 +255,7 @@
                 <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }} data-variant-picker>
                   {%- for option in product.options_with_values -%}
                     <fieldset class="js product-form__input">
-                      <legend class="form__label">{{ option.name }}</legend>
+                      <legend class="form__label">{{ option.name }} - <span>{{ option.selected_value }}</span></legend>
                       {%- for value in option.values -%}
                         {%- assign option_disabled = true -%}
                         {% for option1_name in variants_option1_arr %}
