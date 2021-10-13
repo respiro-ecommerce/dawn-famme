@@ -395,5 +395,15 @@
       "copy_code_success": "Code gekopieerd",
       "print_gift_card": "Afdrukken"
     }
+  },
+  "shopify": {
+    "checkout": {
+      "payment": {
+        "paypal": {
+          "connect": "Klik om verbinding te maken met uw PayPal-account"
+        },
+        "subscription_agreement_cancelled": "geannuleerd"
+      }
+    }
   }
 }
