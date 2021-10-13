@@ -406,6 +406,9 @@
       },
       "shipping_errors": {
         "shipping_method_not_available": "Uw winkelwagen is bijgewerkt en helaas hebben we op dit moment niet de producten die u heeft toegevoegd in Noorwegen. Verwijder de producten om de bestelling af te ronden."
+      },
+      "thank_you": {
+        "in_transit_description_days": "U zou uw bestelling binnen de volgende% moeten ontvangen{number} de dagen."
       }
     }
   }
