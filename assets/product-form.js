@@ -61,6 +61,8 @@ if (!customElements.get('product-form')) {
     }
   });
 }
+
+// Custom code for showing colors dynamically on product page
 if (document.querySelector('variant-radios')){
   document.querySelector('variant-radios').onmouseover=e=>{
     if (e.target.tagName == 'LABEL'){

@@ -150,16 +150,6 @@
                 {% if product.metafields.my_fields.model_height %}
                   <p>{{ "products.model_height" | t }}{{ product.metafields.my_fields.model_height }}</p>
                 {% endif %}
-                {% assign colours = ''%}
-                {%- for variant in product.variants -%}
-                    {% unless colours contains variant.option1  %}
-                      {% unless forloop.last or forloop.first %}
-                        {% assign colours = colours | append: ', ' %}
-                    {% endunless %}
-                      {% assign colours = colours | append: variant.option1%}
-                    {% endunless %}
-                {%- endfor -%}
-                <p>{{ "products.color" | t }}{{ colours}} </p>
               </div>
             {%- endif -%}
           {%- when 'custom_liquid' -%}
