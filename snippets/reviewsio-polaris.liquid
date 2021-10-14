@@ -282,17 +282,3 @@ styles: {
 });
 </script>
 
-
-<!-- when snippet is clicked, scroll to polaris -->
-<script
-  src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-  crossorigin="anonymous"></script>
-<script>
-	var snippet = document.querySelectorAll(".ruk_rating_snippet");
-	snippet[0].onclick = function(event) {
-		$('html, body').animate({
-			scrollTop: $("#ReviewsWidget").offset().top-50
-		}, 0);
-	}
-</script>
