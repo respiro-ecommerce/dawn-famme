@@ -93,7 +93,7 @@
               {% endif %}
             </h1>
 
-        <a href='#ReviewsWidget'>
+        <a style='text-decoration: none !important' href='#ReviewsWidget'>
           <div class="ruk_rating_snippet" data-sku="{{ product.handle }};{{ product.variants | map: 'sku' | join: ';' }};{{ product.variants | map: 'id' | join: ';' }}"></div>
         </a>
           {%- when 'price' -%}
