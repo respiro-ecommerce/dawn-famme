@@ -133,7 +133,6 @@
 
     <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
 
-	{{ shop.metafields.loox["global_html_head"] }}
 </head>
 
   <body class="gradient">
@@ -185,7 +184,6 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
-    {{ shop.metafields.loox["global_html_body"] }}
     
     {% render 'reviewsio-rating' %}
 </body>
