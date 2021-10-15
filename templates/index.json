@@ -653,6 +653,7 @@
     },
     "1627475873e3871985": {
       "type": "featured-blog",
+      "disabled": true,
       "settings": {
         "heading": "Alt om tights!",
         "blog": "tights",
