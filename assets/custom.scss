@@ -68,7 +68,7 @@ div#blogs {
     &:hover {background: rgb(243, 243, 243);}
   }
 }
-section.shopify-section.spaced-section.btns {
+section.shopify-section.spaced-section.btns, div#subcols {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -77,6 +77,21 @@ section.shopify-section.spaced-section.btns {
     margin: 0 5px 10px;
     text-decoration: none;
     text-align: center;
+  }
+}
+div#subcols {margin-bottom: 20px;
+  >a {
+    background: #8a9e93;
+    color: #ffffff;
+    flex: 0 1 200px;
+    border-radius: 49px;
+    padding: 7px 10px;
+  }
+  @media screen and (max-width:768px){
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    >a {flex: 1 0 auto;}
   }
 }
 a.banner__media.media {z-index: 2;}
