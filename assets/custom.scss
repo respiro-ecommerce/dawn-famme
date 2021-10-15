@@ -91,7 +91,10 @@ div#subcols {margin-bottom: 20px;
     justify-content: flex-start;
     flex-wrap: nowrap;
     overflow-x: auto;
-    >a {flex: 1 0 auto;}
+    >a {
+      flex: 1 0 auto;
+      min-width: 36%;
+    }
   }
 }
 a.banner__media.media {z-index: 2;}
