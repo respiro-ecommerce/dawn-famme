@@ -1,34 +1,90 @@
 {
   "sections": {
+    "163438960122f1937a": {
+      "type": "multicolumn",
+      "blocks": {
+        "163438960122f1937a-0": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "163438960122f1937a-1": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "163438960122f1937a-2": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "163438960122f1937a-0",
+        "163438960122f1937a-1",
+        "163438960122f1937a-2"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
+    },
+    "163438965009ed774b": {
+      "type": "video",
+      "settings": {
+        "heading": "Seamless treningsklær",
+        "cover_image": "shopify:\/\/shop_images\/mobil-banner-scrunch.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=RIlZf6vUPxk",
+        "description": "alphalete amplify tights alternativ med scrunch",
+        "full_width": false
+      }
+    },
     "main": {
       "type": "main-article",
       "blocks": {
-        "featured_image": {
-          "type": "featured_image",
-          "settings": {
-          }
-        },
         "title": {
           "type": "title",
           "settings": {
+            "blog_show_date": true,
+            "blog_show_author": false
           }
         },
         "content": {
           "type": "content",
           "settings": {
           }
+        },
+        "featured_image": {
+          "type": "featured_image",
+          "settings": {
+            "image_height": "adapt"
+          }
         }
       },
       "block_order": [
-        "featured_image",
         "title",
-        "content"
+        "content",
+        "featured_image"
       ],
       "settings": {
       }
     }
   },
   "order": [
+    "163438960122f1937a",
+    "163438965009ed774b",
     "main"
   ]
 }
