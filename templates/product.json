@@ -64,6 +64,11 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "loox-rating": {
+          "type": "shopify:\/\/apps\/loox-photo-reviews\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -71,6 +76,7 @@
         "title",
         "subtitle",
         "price",
+        "loox-rating",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
@@ -96,24 +102,30 @@
         "show_rating": false
       }
     },
-    "1632484002e568d6ec": {
-      "type": "featured-blog",
-      "disabled": true,
+    "loox-product-reviews-app-section": {
+      "type": "apps",
+      "blocks": {
+        "loox-product-reviews": {
+          "type": "shopify:\/\/apps\/loox-photo-reviews\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "aggregated": false,
+            "hide_thumbnails": false,
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "loox-product-reviews"
+      ],
       "settings": {
-        "heading": "Les mer om gaver og gavekort...",
-        "blog": "gaver",
-        "post_limit": 3,
-        "show_image": true,
-        "show_date": true,
-        "show_author": false,
-        "soft_background": false,
-        "show_view_all": true
+        "include_margins": false
       }
     }
   },
   "order": [
     "main",
     "product-recommendations",
-    "1632484002e568d6ec"
+    "loox-product-reviews-app-section"
   ]
 }
