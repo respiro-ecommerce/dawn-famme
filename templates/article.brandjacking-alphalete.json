@@ -6,6 +6,7 @@
         "163438960122f1937a-0": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/desktop-banner-scrunch.jpg",
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
           }
@@ -13,6 +14,7 @@
         "163438960122f1937a-1": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/desktop-banner-seamless.jpg",
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
           }
@@ -20,6 +22,7 @@
         "163438960122f1937a-2": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/MOBIL-BANNER-ENDORPHIN.jpg",
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
           }
@@ -31,13 +34,13 @@
         "163438960122f1937a-2"
       ],
       "settings": {
-        "title": "Multicolumn",
+        "title": "Bruk koden alphalete-50 for 50% rabatt på ordinære varer",
         "image_width": "full",
         "image_ratio": "adapt",
         "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "Button label",
-        "button_link": "",
+        "background_style": "secondary",
+        "button_label": "Se hele utvalget av treningsklær. Ikke glem rabatten!",
+        "button_link": "\/collections\/tights",
         "swipe_on_mobile": false
       }
     },
