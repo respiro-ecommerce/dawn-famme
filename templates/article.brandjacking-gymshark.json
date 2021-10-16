@@ -44,6 +44,42 @@
         "swipe_on_mobile": false
       }
     },
+    "1634409175ff664290": {
+      "type": "collection-list",
+      "blocks": {
+        "1634409175ff664290-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "bestsellers"
+          }
+        },
+        "1634409175ff664290-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "all"
+          }
+        },
+        "1634409175ff664290-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "accessories"
+          }
+        }
+      },
+      "block_order": [
+        "1634409175ff664290-0",
+        "1634409175ff664290-1",
+        "1634409175ff664290-2"
+      ],
+      "settings": {
+        "title": "De mest populære kategoriene",
+        "image_ratio": "portrait",
+        "color_scheme": "background-1",
+        "swipe_on_mobile": true,
+        "image_padding": false,
+        "show_view_all": false
+      }
+    },
     "163438965009ed774b": {
       "type": "video",
       "settings": {
@@ -87,6 +123,7 @@
   },
   "order": [
     "163438960122f1937a",
+    "1634409175ff664290",
     "163438965009ed774b",
     "main"
   ]
