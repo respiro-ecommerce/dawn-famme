@@ -4,7 +4,7 @@
       "type": "main-collection-product-grid",
       "settings": {
         "po": "sustainable-clothes",
-        "products_per_page": 48,
+        "products_per_page": 24,
         "image_ratio": "adapt",
         "show_secondary_image": true,
         "add_image_padding": false,
