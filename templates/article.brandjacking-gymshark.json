@@ -1,5 +1,56 @@
 {
   "sections": {
+    "163454564855e20815": {
+      "type": "image-banner",
+      "blocks": {
+        "163454564855e20815-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "medium"
+          }
+        },
+        "163454564855e20815-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template."
+          }
+        },
+        "163454564855e20815-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "163454564855e20815-0",
+        "163454564855e20815-1",
+        "163454564855e20815-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/gymshark-side-banner.jpg",
+        "image_m": "shopify:\/\/shop_images\/gymshark-side-banner-mobil.jpg",
+        "image_url": "",
+        "image2_url": "",
+        "image_height": "small",
+        "adapt_height_first_image": false,
+        "desktop_text_box_position": "center",
+        "show_text_box": true,
+        "image_overlay_opacity": 0,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "163438960122f1937a": {
       "type": "multicolumn",
       "blocks": {
@@ -34,7 +85,7 @@
         "163438960122f1937a-2"
       ],
       "settings": {
-        "title": "Bruk koden gymshark-50 for 50% rabatt på ordinære varer",
+        "title": "Bruk koden GS-50 for 50% rabatt på ordinære varer",
         "image_width": "full",
         "image_ratio": "adapt",
         "column_alignment": "left",
@@ -122,6 +173,7 @@
     }
   },
   "order": [
+    "163454564855e20815",
     "163438960122f1937a",
     "1634409175ff664290",
     "163438965009ed774b",
