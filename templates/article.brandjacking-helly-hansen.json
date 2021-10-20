@@ -37,8 +37,6 @@
         "163454564855e20815-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Helly Hansen-side-banner.jpg",
-        "image_m": "shopify:\/\/shop_images\/Helly Hansen-side-banner-mobil.jpg",
         "image_url": "",
         "image2_url": "",
         "image_height": "small",
@@ -59,7 +57,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/desktop-banner-seamless.jpg",
             "title": "Rask levering + gratis retur",
-            "text": "<p>Helly Hansen har ikke lager i Norge. Levering er ikke rask, og retur er enda verre. Hos Famme kan du kjøpe <strong>fraktfritt<\/strong> og bestiller du i dag har du også<strong> gratis retur<\/strong>! Du velger mellom Posten, Helthjem eller samme dags levering med Porterbuddy!<\/p>"
+            "text": "<p>Helly Hansen er et norsk selskap med hovedkvarter i Oslo. De har en levering på 2-6 dager, gratis frakt over 800kr og gratis åpen retur på 90 dager. Hos Famme derimot kan du kjøpe <strong>fraktfritt<\/strong> og bestiller du i dag har du også<strong> gratis retur<\/strong>! Du velger mellom Posten, Helthjem eller <strong>samme dags<\/strong> levering med Porterbuddy!<\/p>"
           }
         },
         "163438960122f1937a-0": {
