@@ -1,0 +1,182 @@
+{
+  "sections": {
+    "163454564855e20815": {
+      "type": "image-banner",
+      "blocks": {
+        "163454564855e20815-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "medium"
+          }
+        },
+        "163454564855e20815-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template."
+          }
+        },
+        "163454564855e20815-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "163454564855e20815-0",
+        "163454564855e20815-1",
+        "163454564855e20815-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/gymshark-side-banner.jpg",
+        "image_m": "shopify:\/\/shop_images\/gymshark-side-banner-mobil.jpg",
+        "image_url": "",
+        "image2_url": "",
+        "image_height": "small",
+        "adapt_height_first_image": false,
+        "desktop_text_box_position": "center",
+        "show_text_box": true,
+        "image_overlay_opacity": 0,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "163438960122f1937a": {
+      "type": "multicolumn",
+      "blocks": {
+        "163438960122f1937a-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/desktop-banner-seamless.jpg",
+            "title": "Rask levering + gratis retur",
+            "text": "<p>Reebok har ikke lager i Norge. Levering er ikke rask, og retur er enda verre. Hos Famme kan du kjøpe <strong>fraktfritt<\/strong> og bestiller du i dag har du også<strong> gratis retur<\/strong>! Du velger mellom Posten, Helthjem eller samme dags levering med Porterbuddy!<\/p>"
+          }
+        },
+        "163438960122f1937a-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/desktop-banner-scrunch.jpg",
+            "title": "Best på seamless",
+            "text": "<p>Reebok har for det meste seamless tights. Her er Famme <strong>best i norge<\/strong>. Vi har seamless tights i mange farger, lengder og passformer. Vi har seamless med og uten scrunch og seamless med og uten mønster. Match med treningstoppene våre!<\/p>"
+          }
+        },
+        "163438960122f1937a-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MOBIL-BANNER-ENDORPHIN.jpg",
+            "title": "Bredt utvalg",
+            "text": "<p>Reebok sitt utvalg er begrenset til tights og treningstopper for det meste. Hos Famme har du tights, treningstopper, løpejakker, sko og mye mer!<\/p><p><\/p><p>Vi har til og med <a href=\"\/products\/4flex-jeans\" title=\"\/products\/4flex-jeans\">jeans spesielt produsert for fitness damer<\/a> og andre hverdagsklær som er spesielt laget for de som er glad i å trene. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "163438960122f1937a-1",
+        "163438960122f1937a-0",
+        "163438960122f1937a-2"
+      ],
+      "settings": {
+        "title": "NYKUNDE-50 gir -50% på fullprisvarer",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "secondary",
+        "button_label": "Se hele utvalget av treningsklær. Ikke glem rabatten!",
+        "button_link": "\/collections\/tights",
+        "swipe_on_mobile": false
+      }
+    },
+    "1634409175ff664290": {
+      "type": "collection-list",
+      "blocks": {
+        "1634409175ff664290-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "bestsellers"
+          }
+        },
+        "1634409175ff664290-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "all"
+          }
+        },
+        "1634409175ff664290-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "accessories"
+          }
+        }
+      },
+      "block_order": [
+        "1634409175ff664290-0",
+        "1634409175ff664290-1",
+        "1634409175ff664290-2"
+      ],
+      "settings": {
+        "title": "De mest populære kategoriene",
+        "image_ratio": "portrait",
+        "color_scheme": "background-1",
+        "swipe_on_mobile": true,
+        "image_padding": false,
+        "show_view_all": false
+      }
+    },
+    "163438965009ed774b": {
+      "type": "video",
+      "settings": {
+        "heading": "Seamless treningsklær",
+        "cover_image": "shopify:\/\/shop_images\/mobil-banner-seamless.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=uXtendqbdcI",
+        "description": "Gymshark flex tights alternativ - seamless treningstights",
+        "full_width": false
+      }
+    },
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "blog_show_date": true,
+            "blog_show_author": false
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {
+          }
+        },
+        "featured_image": {
+          "type": "featured_image",
+          "settings": {
+            "image_height": "adapt"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "content",
+        "featured_image"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "163454564855e20815",
+    "163438960122f1937a",
+    "1634409175ff664290",
+    "163438965009ed774b",
+    "main"
+  ]
+}
