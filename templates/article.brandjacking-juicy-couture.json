@@ -6,32 +6,32 @@
         "163438960122f1937a-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/desktop-banner-seamless.jpg",
+            "image": "shopify:\/\/shop_images\/desktop-banner-host-oppdatert.jpg",
             "title": "Rask levering + gratis retur",
             "text": "<p>Juicy Couture har høyere priser i forhold til mange konkurrenter og tilbyr ikke levering samme dag med Porterbuddy. Hos Famme kan du kjøpe fraktfritt og bestiller du i dag har du også gratis retur! Du velger mellom Posten, Helthjem eller samme dags levering med Porterbuddy!<\/p>"
-          }
-        },
-        "163438960122f1937a-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/mobil-banner-loungewear.jpg",
-            "title": "Best på loungewear",
-            "text": "<p>Juicy Couture er populær for deres velur tracksuit, og nå har de også annet innen athleisure. Her er Famme <strong>best i norge<\/strong>. Vi har tilsvarende velur set, en hel kolleksjon for loungewear, og mye mer! Enten du skal ha et komfortabelt kosesett, eller mer tekniske treningstopper og tights. Høyt liv og squat-proof. Vi har alt.<\/p>"
           }
         },
         "163438960122f1937a-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/MOBIL-BANNER-ENDORPHIN.jpg",
+            "image": "shopify:\/\/shop_images\/tester2.jpg",
             "title": "Bredt utvalg",
             "text": "<p>Juicy Couture har kun tracksuits og annet loungewear. Hos Famme har du tights, treningstopper, løpejakker, sko og mye mer!<\/p><p><\/p><p>Vi har til og med <a href=\"\/products\/4flex-jeans\" title=\"\/products\/4flex-jeans\">jeans spesielt produsert for fitness damer<\/a> og andre hverdagsklær som er spesielt laget for de som er glad i å trene. <\/p>"
+          }
+        },
+        "163438960122f1937a-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/desktop-banner-loungewear.jpg",
+            "title": "Best på loungewear",
+            "text": "<p>Juicy Couture er populær for deres velur tracksuit, og nå har de også annet innen athleisure. Her er Famme <strong>best i norge<\/strong>. Vi har tilsvarende velur set, en hel kolleksjon for loungewear, og mye mer! Enten du skal ha et komfortabelt kosesett, eller mer tekniske treningstopper og tights. Høyt liv og squat-proof. Vi har alt.<\/p>"
           }
         }
       },
       "block_order": [
         "163438960122f1937a-1",
-        "163438960122f1937a-0",
-        "163438960122f1937a-2"
+        "163438960122f1937a-2",
+        "163438960122f1937a-0"
       ],
       "settings": {
         "title": "Bruk koden NYKUNDE-50 for 50% rabatt på ordinære varer",
