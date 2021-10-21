@@ -62,30 +62,30 @@
             "text": "<p>Lululemon har ikke lager i Norge. Leveringen er ikke rask, og retur er enda verre, du må fylle ut tollpapirer m.m for å gjennomføre returen. Hos Famme kan du kjøpe <strong>fraktfritt<\/strong> og bestiller du i dag har du også <strong>gratis retur<\/strong>! Du velger mellom Posten, Helthjem eller samme dags levering med Porterbuddy!<\/p>"
           }
         },
-        "163438960122f1937a-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/lululemon-yoga-tights-dame.jpg",
-            "title": "Best på treningsklær",
-            "text": "<p>Lululemon har kjempebra treningsklær! Vi produserer seamless treningstøy på samme fabrikk og Lululemon er en av våre kvalitetsreferanser. I norge er Famme<strong> best på treningsklær og til en mye rimeligere pris<\/strong>. Vi har alt av treningsklær enten du skal løpe, trene yoga eller styrketrening på treningsstudio.<\/p>"
-          }
-        },
         "163438960122f1937a-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/MOBIL-BANNER-ENDORPHIN.jpg",
+            "image": "shopify:\/\/shop_images\/lululemon-yoga-tights-dame.jpg",
             "title": "Bredt utvalg",
             "text": "<p>Lululemon har kun treningsklær. Hos Famme har du i tillegg til treningsklær også turklær, sko og hverdagsklær. <\/p><p><\/p><p>Vi har til og med <a href=\"\/products\/4flex-jeans\" title=\"\/products\/4flex-jeans\">jeans spesielt produsert for de som trener yoga <\/a> og andre hverdagsklær som er spesielt laget for de som er glad i å trene. <\/p>"
+          }
+        },
+        "163438960122f1937a-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/desktop-banner-scrunch.jpg",
+            "title": "Best på treningsklær",
+            "text": "<p>Lululemon har kjempebra treningsklær! Vi produserer seamless treningstøy på samme fabrikk og Lululemon er en av våre kvalitetsreferanser. I norge er Famme<strong> best på treningsklær og til en mye rimeligere pris<\/strong>. Vi har alt av treningsklær enten du skal løpe, trene yoga eller styrketrening på treningsstudio.<\/p>"
           }
         }
       },
       "block_order": [
         "163438960122f1937a-1",
-        "163438960122f1937a-0",
-        "163438960122f1937a-2"
+        "163438960122f1937a-2",
+        "163438960122f1937a-0"
       ],
       "settings": {
-        "title": "Bruk koden NYKUNDE-50 for 50% rabatt på ordinære varer",
+        "title": "NYKUNDE-50 for 50% rabatt på ordinære varer",
         "image_width": "full",
         "image_ratio": "adapt",
         "column_alignment": "left",
