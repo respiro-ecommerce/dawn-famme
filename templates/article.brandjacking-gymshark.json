@@ -57,17 +57,9 @@
         "163438960122f1937a-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/desktop-banner-seamless.jpg",
+            "image": "shopify:\/\/shop_images\/desktop-banner-scrunch.jpg",
             "title": "Rask levering + gratis retur",
             "text": "<p>Gymshark har ikke lager i Norge. Levering er ikke rask, og retur er enda verre. Hos Famme kan du kjøpe <strong>fraktfritt<\/strong> og bestiller du i dag har du også<strong> gratis retur<\/strong>! Du velger mellom Posten, Helthjem eller samme dags levering med Porterbuddy!<\/p>"
-          }
-        },
-        "163438960122f1937a-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/desktop-banner-scrunch.jpg",
-            "title": "Best på seamless",
-            "text": "<p>Gymshark har for det meste seamless tights. Her er Famme <strong>best i norge<\/strong>. Vi har seamless tights i mange farger, lengder og passformer. Vi har seamless med og uten scrunch og seamless med og uten mønster. Match med treningstoppene våre!<\/p>"
           }
         },
         "163438960122f1937a-2": {
@@ -77,12 +69,20 @@
             "title": "Bredt utvalg",
             "text": "<p>Gymshark sitt utvalg er begrenset til tights og treningstopper for det meste. Hos Famme har du tights, treningstopper, løpejakker, sko og mye mer!<\/p><p><\/p><p>Vi har til og med <a href=\"\/products\/4flex-jeans\" title=\"\/products\/4flex-jeans\">jeans spesielt produsert for fitness damer<\/a> og andre hverdagsklær som er spesielt laget for de som er glad i å trene. <\/p>"
           }
+        },
+        "163438960122f1937a-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/desktop-banner-seamless.jpg",
+            "title": "Best på seamless",
+            "text": "<p>Gymshark har for det meste seamless tights. Her er Famme <strong>best i norge<\/strong>. Vi har seamless tights i mange farger, lengder og passformer. Vi har seamless med og uten scrunch og seamless med og uten mønster. Match med treningstoppene våre!<\/p>"
+          }
         }
       },
       "block_order": [
         "163438960122f1937a-1",
-        "163438960122f1937a-0",
-        "163438960122f1937a-2"
+        "163438960122f1937a-2",
+        "163438960122f1937a-0"
       ],
       "settings": {
         "title": "NYKUNDE-50 gir -50% på fullprisvarer",
