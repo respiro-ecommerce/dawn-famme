@@ -57,17 +57,9 @@
         "163438960122f1937a-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/desktop-banner-seamless.jpg",
+            "image": "shopify:\/\/shop_images\/desktop-banner-host-oppdatert.jpg",
             "title": "Rask levering + gratis retur",
             "text": "<p><\/p><p>Doyoueven har høyere priser i forhold til mange konkurrenter og tilbyr ikke levering samme dag med Porterbuddy. Hos Famme kan du kjøpe <strong>fraktfritt <\/strong>og bestiller du i dag har du også <strong>gratis retur<\/strong>! Du velger mellom Posten, Helthjem eller samme dags levering med Porterbuddy!<br\/><\/p>"
-          }
-        },
-        "163438960122f1937a-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/desktop-banner-scrunch.jpg",
-            "title": "Best på seamless og trening",
-            "text": "<p>Doyoueven har for det meste seamless tights og annet treningsklær. Her er Famme <strong>best i norge<\/strong>. Vi har alt fra tights, topper, treningsstrikker og mye mer! Om du enten skal ha seamless tights, tights med lomme, høyt liv eller squat proof tights. Vi har alt. Også tights til ulike aktiviteter som yoga og løping.<br\/><br\/><\/p>"
           }
         },
         "163438960122f1937a-2": {
@@ -77,12 +69,20 @@
             "title": "Bredt utvalg",
             "text": "<p>Doyoueven sitt utvalg er begrenset til tights og treningstopper, og annet tilbehør som støtter treningen. Hos Famme har du tights, treningstopper, løpejakker, sko og mye mer!<\/p><p><\/p><p>Vi har til og med <a href=\"\/products\/4flex-jeans\" title=\"\/products\/4flex-jeans\">jeans spesielt produsert for fitness damer<\/a> og andre hverdagsklær som er spesielt laget for de som er glad i å trene. <\/p>"
           }
+        },
+        "163438960122f1937a-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/desktop-banner-seamless.jpg",
+            "title": "Best på seamless og trening",
+            "text": "<p>Doyoueven har for det meste seamless tights og annet treningsklær. Her er Famme <strong>best i norge<\/strong>. Vi har alt fra tights, topper, treningsstrikker og mye mer! Om du enten skal ha seamless tights, tights med lomme, høyt liv eller squat proof tights. Vi har alt. Også tights til ulike aktiviteter som yoga og løping.<br\/><br\/><\/p>"
+          }
         }
       },
       "block_order": [
         "163438960122f1937a-1",
-        "163438960122f1937a-0",
-        "163438960122f1937a-2"
+        "163438960122f1937a-2",
+        "163438960122f1937a-0"
       ],
       "settings": {
         "title": "NYKUNDE-50 gir -50% på fullprisvarer",
