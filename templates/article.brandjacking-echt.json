@@ -62,6 +62,14 @@
             "text": "<p>Echt har ikke lager i Norge. Levering er ikke rask, og retur er enda verre. Hos Famme kan du kjøpe <strong>fraktfritt<\/strong> og bestiller du i dag har du også<strong> gratis retur<\/strong>! Du velger mellom Posten, Helthjem eller samme dags levering med Porterbuddy!<\/p>"
           }
         },
+        "163438960122f1937a-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MOBIL-BANNER-ENDORPHIN.jpg",
+            "title": "Bredt utvalg",
+            "text": "<p>Echt sitt utvalg er til dels variert med ytterklær og badetøy, men er for det meste begrenset til treningstopper og tights. Hos Famme har du tights, treningstopper, løpejakker, <strong>sko<\/strong> og mye mer! Vi har til og med <a href=\"\/products\/4flex-jeans\" title=\"\/products\/4flex-jeans\">jeans spesielt produsert for fitness damer<\/a> og andre hverdagsklær som er spesielt laget for de som er glad i å trene. <\/p>"
+          }
+        },
         "163438960122f1937a-0": {
           "type": "column",
           "settings": {
@@ -69,20 +77,12 @@
             "title": "Best på treningsklær",
             "text": "<p>Echt har for det meste treningsklær. Her er Famme <strong>best i norge<\/strong>. Vi har alt fra tights, topper, treningsstrikker og mye mer! Om du enten skal ha seamless tights, tights med lomme, høyt liv eller squat proof tights. Vi har alt. Også tights til ulike aktiviteter som yoga og løping.<\/p>"
           }
-        },
-        "163438960122f1937a-2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/MOBIL-BANNER-ENDORPHIN.jpg",
-            "title": "Bredt utvalg",
-            "text": "<p>Echt sitt utvalg er til dels variert med ytterklær og badetøy, men er for det meste begrenset til treningstopper og tights. Hos Famme har du tights, treningstopper, løpejakker, <strong>sko<\/strong> og mye mer!<\/p><p><\/p><p>Vi har til og med <a href=\"\/products\/4flex-jeans\" title=\"\/products\/4flex-jeans\">jeans spesielt produsert for fitness damer<\/a> og andre hverdagsklær som er spesielt laget for de som er glad i å trene. <\/p>"
-          }
         }
       },
       "block_order": [
         "163438960122f1937a-1",
-        "163438960122f1937a-0",
-        "163438960122f1937a-2"
+        "163438960122f1937a-2",
+        "163438960122f1937a-0"
       ],
       "settings": {
         "title": "NYKUNDE-50 gir -50% på fullprisvarer",
