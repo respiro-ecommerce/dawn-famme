@@ -221,7 +221,7 @@
         "16310987573101b9c4-2": {
           "type": "button",
           "settings": {
-            "button_label": "Shop Scrunch",
+            "button_label": "Shop Scrunch nå",
             "button_link": "shopify:\/\/collections\/scrunch",
             "button_style_secondary": true
           }
