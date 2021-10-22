@@ -66,6 +66,11 @@
   {%- endif -%}
 
 
+  {%- if group.user_agent.value == '*' -%}
+    {{ 'Disallow: /pages/swym-share-wishlist' }}
+  {%- endif -%}
+
+
 
   {%- if group.sitemap != blank -%}
     {{ group.sitemap }}
