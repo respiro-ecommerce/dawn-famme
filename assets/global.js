@@ -6,6 +6,21 @@ function getFocusableElements(container) {
   );
 }
 
+document.querySelectorAll('[id^="Details-"] summary').forEach((summary) => {
+  summary.setAttribute('role', 'button');
+  summary.setAttribute('aria-expanded', 'false');
+
+  if(summary.nextElementSibling.getAttribute('id')) {
+    summary.setAttribute('aria-controls', summary.nextElementSibling.id);
+  }
+
+  summary.addEventListener('click', (event) => {
+    event.currentTarget.setAttribute('aria-expanded', !event.currentTarget.closest('details').hasAttribute('open'));
+  });
+
+  summary.parentElement.addEventListener('keyup', onKeyUpEscape);
+});
+
 const trapFocusHandlers = {};
 
 function trapFocus(container, elementToFocus = container) {
@@ -116,6 +131,7 @@ function onKeyUpEscape(event) {
 
   const summaryElement = openDetailsElement.querySelector('summary');
   openDetailsElement.removeAttribute('open');
+  summaryElement.setAttribute('aria-expanded', false);
   summaryElement.focus();
 }
 
@@ -271,8 +287,6 @@ class MenuDrawer extends HTMLElement {
     super();
 
     this.mainDetailsToggle = this.querySelector('details');
-    const summaryElements = this.querySelectorAll('summary');
-    this.addAccessibilityAttributes(summaryElements);
 
     if (navigator.platform === 'iPhone') document.documentElement.style.setProperty('--viewport-height', `${window.innerHeight}px`);
 
@@ -284,14 +298,6 @@ class MenuDrawer extends HTMLElement {
   bindEvents() {
     this.querySelectorAll('summary').forEach(summary => summary.addEventListener('click', this.onSummaryClick.bind(this)));
     this.querySelectorAll('button').forEach(button => button.addEventListener('click', this.onCloseButtonClick.bind(this)));
-  }
-
-  addAccessibilityAttributes(summaryElements) {
-    summaryElements.forEach(element => {
-      element.setAttribute('role', 'button');
-      element.setAttribute('aria-expanded', false);
-      element.setAttribute('aria-controls', element.nextElementSibling.id);
-    });
   }
 
   onKeyUp(event) {
@@ -316,6 +322,7 @@ class MenuDrawer extends HTMLElement {
 
       setTimeout(() => {
         detailsElement.classList.add('menu-opening');
+        summaryElement.setAttribute('aria-expanded', true);
       });
     }
   }
@@ -356,6 +363,7 @@ class MenuDrawer extends HTMLElement {
 
   closeSubmenu(detailsElement) {
     detailsElement.classList.remove('menu-opening');
+    detailsElement.querySelector('summary').setAttribute('aria-expanded', false);
     removeTrapFocus();
     this.closeAnimation(detailsElement);
   }
@@ -519,13 +527,13 @@ class SliderComponent extends HTMLElement {
     this.currentPage = Math.round(this.slider.scrollLeft / this.sliderLastItem.clientWidth) + 1;
 
     if (this.currentPage === 1) {
-      this.prevButton.setAttribute('disabled', true);
+      this.prevButton.setAttribute('disabled', 'disabled');
     } else {
       this.prevButton.removeAttribute('disabled');
     }
 
     if (this.currentPage === this.totalPages) {
-      this.nextButton.setAttribute('disabled', true);
+      this.nextButton.setAttribute('disabled', 'disabled');
     } else {
       this.nextButton.removeAttribute('disabled');
     }
@@ -599,7 +607,10 @@ class VariantSelects extends HTMLElement {
     if(this.stickyHeader) {
       this.stickyHeader.dispatchEvent(new Event('preventHeaderReveal'));
     }
-    window.setTimeout(() => { parent.querySelector('li.product__media-item').scrollIntoView({behavior: "smooth"}); });
+    window.setTimeout(() => {
+      parent.scrollLeft = 0;
+      parent.querySelector('li.product__media-item').scrollIntoView({behavior: 'smooth'});
+    });
   }
 
   updateURL() {
@@ -666,7 +677,7 @@ class VariantSelects extends HTMLElement {
     if (!addButton) return;
 
     if (disable) {
-      addButton.setAttribute('disabled', true);
+      addButton.setAttribute('disabled', 'disabled');
       if (text) addButtonText.textContent = text;
     } else {
       addButton.removeAttribute('disabled');

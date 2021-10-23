@@ -98,14 +98,6 @@
     "collection_title": "Namn på produktserien"
   },
   "products": {
-    "bullets": {
-      "bullet_1": "ALLTID FRI FRAKT",
-      "bullet_2": "POSTEN, HELTHJEM, PORTERBUDDY",
-      "bullet_3": "PAYPAL, APPLE PAY OCH KORT"
-    },
-    "sizing_recommendation_up": "Gå en storlek upp",
-    "sizing_recommendation_down": "Gå ner en storlek",
-    "sizing_recommendation_normal": "Välj din vanliga storlek",
     "product": {
       "add_to_cart": "Lägg i varukorgen",
       "description": "Beskrivning",
@@ -134,28 +126,55 @@
         "view_store_info": "Visa butiksinformation",
         "check_other_stores": "Kontrollerar tillgänglighet i andra butiker",
         "pick_up_available": "Hämtning tillgänglig",
-        "pick_up_available_at_html": "Hämtning tillgänglig på <span class=\"color-foreground\">{{ location_name }}<\/span>",
-        "pick_up_unavailable_at_html": "Det går för närvarande inte att få hämtning på <span class=\"color-foreground\">{{ location_name }}<\/span>",
+        "pick_up_available_at_html": "Hämtning tillgänglig på <span class=\"color-foreground\">{{ location_name }}</span>",
+        "pick_up_unavailable_at_html": "Det går för närvarande inte att få hämtning på <span class=\"color-foreground\">{{ location_name }}</span>",
         "unavailable": "Det gick inte att ladda hämtningstillgänglighet",
         "refresh": "Uppdatera"
       },
       "media": {
-        "open_featured_media": "Öppna markerade medier i gallerivyn",
-        "open_media": "Öppna medier{{ index }} i gallerivyn",
-        "play_model": "Spela 3D -vy",
+        "open_featured_media": "Öppna utvald media i gallerivyn",
+        "open_media": "Öppna media {{ index }} i gallerivyn",
+        "play_model": "Spela 3D-visaren",
         "play_video": "Spela video"
       },
-      "view_full_details": "Visa alla detaljer",
+      "view_full_details": "Visa alla uppgifter",
       "include_taxes": "Skatt ingår.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Frakt<\/a> beräknas i kassan."
+      "shipping_policy_html": "<a href=\"{{ link }}\">Frakt</a> beräknas i kassan."
     },
     "modal": {
-      "label": "Mediegalleri"
+      "label": "Mediagalleri"
+    },
+    "facets": {
+      "apply": "Tillämpa",
+      "clear": "Rensa",
+      "clear_all": "Rensa alla",
+      "from": "Från",
+      "filter_and_sort": "Filtrera och sortera",
+      "filter_by_label": "Filter:",
+      "filter_button": "Filter",
+      "filters_selected": {
+        "one": "{{ count }} har valts",
+        "other": "{{ count }} har valts"
+      },
+      "max_price": "Det högsta priset är {{ price }}",
+      "product_count": {
+        "one": "{{ product_count }} av {{ count }} produkt",
+        "other": "{{ product_count }} av {{ count }} produkter"
+      },
+      "product_count_simple": {
+        "one": "{{ count }} produkt",
+        "other": "{{ count }} produkter"
+      },
+      "reset": "Återställ",
+      "sort_button": "Sortera",
+      "sort_by_label": "Sortera efter:",
+      "to": "Till",
+      "clear_filter": "Rensa filter"
     }
   },
   "templates": {
     "search": {
-      "no_results": "Inga resultat hittades för«{{ terms }}». Kontrollera stavningen, eller använd ett annat ord.",
+      "no_results": "Inga resultat hittades för \"{{ terms }}\". Kontrollera stavningen eller använd ett annat ord eller fras.",
       "results_with_count": {
         "one": "{{ count }} resultat",
         "other": "{{ count }} resultat"
@@ -163,7 +182,11 @@
       "title": "Sökresultat",
       "page": "Sida",
       "products": "Produkter",
-      "search_for": "Sök efter \"{{ terms }}\""
+      "search_for": "Sök efter \"{{ terms }}\"",
+      "results_with_count_and_term": {
+        "one": "hittat {{ count }} resultat för \"{{ terms }}\"",
+        "other": "hittat {{ count }} resultat för \"{{ terms }}\""
+      }
     },
     "cart": {
       "cart": "Varukorg"
@@ -203,7 +226,7 @@
       "checkout": "Gå till kassan",
       "empty": "Din varukorg är tom",
       "cart_error": "Ett fel uppstod när du uppdaterade din varukorg. Försök igen.",
-      "cart_quantity_error_html": "Du kan endast lägga till [antal] av denna artikel i din varukorg.",
+      "cart_quantity_error_html": "Du kan endast lägga till {{ quantity }} av denna artikel i din varukorg.",
       "taxes_and_shipping_policy_at_checkout_html": "Skatt och <a href=\"{{ link }}\">frakt</a> beräknas i kassan",
       "taxes_included_but_shipping_at_checkout": "Skatt ingår och frakt beräknas i kassan",
       "taxes_included_and_shipping_policy_html": "Skatt ingår. <a href=\"{{ link }}\">Frakt</a> beräknas i kassan.",
@@ -237,42 +260,18 @@
     },
     "collection_template": {
       "title": "Produktserie",
-      "sort_by_label": "Sortera efter:",
-      "sort_button": "Sortera",
-      "product_count": {
-        "one": "{{ product_count }} av {{ count }} produkt",
-        "other": "{{ product_count }} av {{ count }} produkter"
-      },
       "empty": "Inga produkter hittades",
-      "apply": "Filtrera",
-      "clear": "Återställ filtret",
-      "clear_all": "Återställ filtret",
-      "from": "Från",
-      "filter_and_sort": "Filtrera och sortera",
-      "filter_by_label": "Filter:",
-      "filter_button": "Filtrera",
-      "filters_selected": {
-        "one": "{{ count }} har valts",
-        "other": "{{ count }} har valts"
-      },
-      "max_price": "Det högsta priset är {{ price }}",
-      "reset": "Återställa",
-      "to": "Till",
-      "use_fewer_filters_html": "Använd färre filter eller <a class=\"{{ class }}\" href=\"{{ link }}\">rensa alla<\/a>",
-      "product_count_simple": {
-        "one": "{{ count }} produkt",
-        "other": "{{ count }} produkter"
-      }
+      "use_fewer_filters_html": "Använd färre filter eller <a class=\"{{ class }}\" href=\"{{ link }}\">rensa alla</a>"
     },
     "video": {
       "load_video": "Ladda video: {{ description }}"
     }
   },
   "localization": {
-    "country_label": "Land\/Region",
+    "country_label": "Land/Region",
     "language_label": "Språk",
     "update_language": "Uppdatera språk",
-    "update_country": "Uppdatera land\/region"
+    "update_country": "Uppdatera land/region"
   },
   "customer": {
     "account": {
@@ -395,18 +394,6 @@
       "expired": "Har gått ut",
       "copy_code_success": "Koden kopierades",
       "print_gift_card": "Skriv ut"
-    }
-  },
-  "shopify": {
-    "checkout": {
-      "payment": {
-        "paypal": {
-          "connect": "Klicka för att ansluta till ditt PayPal -konto"
-        }
-      },
-      "shipping_errors": {
-        "shipping_method_not_available": "Din kundvagn har uppdaterats, och tyvärr har vi inte de produkter du har lagt till i Norge för tillfället. Ta bort produkterna för att slutföra beställningen."
-      }
     }
   }
 }

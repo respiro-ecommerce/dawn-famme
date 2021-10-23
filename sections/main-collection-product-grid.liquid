@@ -13,11 +13,6 @@
   <script src="{{ 'facets.js' | asset_url }}" defer="defer"></script>
 
   <div class="page-width" id="main-collection-filters" data-id="{{ section.id }}">
-    {%- if linklists[collection.handle].links.size > 0 -%}
-      <div id="subcols">
-        {%- for link in linklists[collection.handle].links -%}<a href="{{ link.url }}">{{ link.object.title }}</a>{%- endfor -%}
-      </div>
-    {%- endif -%}
     {% render 'facets', results: collection, enable_filtering: section.settings.enable_filtering, enable_sorting: section.settings.enable_sorting, collapse_on_larger_devices: section.settings.collapse_on_larger_devices %}
   </div>
 {%- endif -%}
