@@ -75,14 +75,6 @@
     "1627975102451ca4ce": {
       "type": "rich-text",
       "blocks": {
-        "1627975102451ca4ce-0": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "SEAMLESS COLLECTION",
-            "heading_size": "h2"
-          }
-        },
         "1627975102451ca4ce-1": {
           "type": "text",
           "settings": {
@@ -99,7 +91,6 @@
         }
       },
       "block_order": [
-        "1627975102451ca4ce-0",
         "1627975102451ca4ce-1",
         "1627975102451ca4ce-2"
       ],
@@ -110,40 +101,6 @@
     },
     "1631094390263d97d1": {
       "type": "image-banner",
-      "blocks": {
-        "1631094390263d97d1-0": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Scrunch",
-            "heading_size": "medium"
-          }
-        },
-        "1631094390263d97d1-1": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template."
-          }
-        },
-        "1631094390263d97d1-2": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "1631094390263d97d1-0",
-        "1631094390263d97d1-1",
-        "1631094390263d97d1-2"
-      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/scrunch-banner-desktop.jpg",
         "image_m": "shopify:\/\/shop_images\/scrunch-banner-mobil_c9aa217f-e490-4dff-8a0d-9a1e3037dabd.jpg",
@@ -162,14 +119,6 @@
     "16310987573101b9c4": {
       "type": "rich-text",
       "blocks": {
-        "16310987573101b9c4-0": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
-          }
-        },
         "16310987573101b9c4-1": {
           "type": "text",
           "settings": {
@@ -186,7 +135,6 @@
         }
       },
       "block_order": [
-        "16310987573101b9c4-0",
         "16310987573101b9c4-1",
         "16310987573101b9c4-2"
       ],
@@ -197,40 +145,6 @@
     },
     "16252134879571dabc": {
       "type": "image-banner",
-      "blocks": {
-        "16252134879571dabc-0": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Stort utvalg jeans",
-            "heading_size": "medium"
-          }
-        },
-        "16252134879571dabc-1": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": ""
-          }
-        },
-        "16252134879571dabc-2": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_label_1": "SHOP HER",
-            "button_link_1": "shopify:\/\/collections\/seamless-treningsklaer-dame",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "16252134879571dabc-0",
-        "16252134879571dabc-1",
-        "16252134879571dabc-2"
-      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/jeans-banner-disktop.jpg",
         "image_m": "shopify:\/\/shop_images\/mobil-banner-jeans.jpg",
@@ -249,14 +163,6 @@
     "1631100157d2b633af": {
       "type": "rich-text",
       "blocks": {
-        "1631100157d2b633af-0": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Stort utvalg jeans",
-            "heading_size": "h2"
-          }
-        },
         "1631100157d2b633af-1": {
           "type": "text",
           "settings": {
@@ -273,7 +179,6 @@
         }
       },
       "block_order": [
-        "1631100157d2b633af-0",
         "1631100157d2b633af-1",
         "1631100157d2b633af-2"
       ],
@@ -284,40 +189,6 @@
     },
     "1631014210939379e2": {
       "type": "image-banner",
-      "blocks": {
-        "16310142107afd40db-0": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "medium"
-          }
-        },
-        "16310142107afd40db-1": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template."
-          }
-        },
-        "16310142107afd40db-2": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "16310142107afd40db-0",
-        "16310142107afd40db-1",
-        "16310142107afd40db-2"
-      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/ESSENTIAL-LONGSLEEVE-SHOP_22eece60-0543-463f-95a3-fcf650decd1c.jpg",
         "image_url": "shopify:\/\/products\/essential-long-sleeve",
@@ -351,40 +222,6 @@
     },
     "1627381930323ba3ea": {
       "type": "image-banner",
-      "blocks": {
-        "1627381930323ba3ea-0": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Endorphin",
-            "heading_size": "medium"
-          }
-        },
-        "1627381930323ba3ea-1": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template."
-          }
-        },
-        "1627381930323ba3ea-2": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "1627381930323ba3ea-0",
-        "1627381930323ba3ea-1",
-        "1627381930323ba3ea-2"
-      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/endor_eng_deskp.jpg",
         "image_m": "shopify:\/\/shop_images\/Ny_test_71e772a3-ae05-4671-a924-ec905b9a95b6.jpg",
@@ -437,40 +274,6 @@
     },
     "163117812908a522c8": {
       "type": "image-banner",
-      "blocks": {
-        "163117812908a522c8-0": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "medium"
-          }
-        },
-        "163117812908a522c8-1": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template."
-          }
-        },
-        "163117812908a522c8-2": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "163117812908a522c8-0",
-        "163117812908a522c8-1",
-        "163117812908a522c8-2"
-      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/turklaer-banner.jpg",
         "image_m": "shopify:\/\/shop_images\/turklaer-banner-mobil.jpg",
@@ -489,14 +292,6 @@
     "1631185614bd4a3575": {
       "type": "rich-text",
       "blocks": {
-        "1631185614bd4a3575-0": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
-          }
-        },
         "1631185614bd4a3575-1": {
           "type": "text",
           "settings": {
@@ -513,7 +308,6 @@
         }
       },
       "block_order": [
-        "1631185614bd4a3575-0",
         "1631185614bd4a3575-1",
         "1631185614bd4a3575-2"
       ],
@@ -524,40 +318,6 @@
     },
     "16311853465cfb015e": {
       "type": "image-banner",
-      "blocks": {
-        "16311853465cfb015e-0": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "medium"
-          }
-        },
-        "16311853465cfb015e-1": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template."
-          }
-        },
-        "16311853465cfb015e-2": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "16311853465cfb015e-0",
-        "16311853465cfb015e-1",
-        "16311853465cfb015e-2"
-      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/LOUNGEWEAR.jpg",
         "image_m": "shopify:\/\/shop_images\/loungwear-banner-mobil.jpg",
@@ -576,14 +336,6 @@
     "16311858004f885fc1": {
       "type": "rich-text",
       "blocks": {
-        "16311858004f885fc1-0": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
-          }
-        },
         "16311858004f885fc1-1": {
           "type": "text",
           "settings": {
@@ -600,27 +352,12 @@
         }
       },
       "block_order": [
-        "16311858004f885fc1-0",
         "16311858004f885fc1-1",
         "16311858004f885fc1-2"
       ],
       "settings": {
         "color_scheme": "background-1",
         "full_width": true
-      }
-    },
-    "1627475873e3871985": {
-      "type": "featured-blog",
-      "disabled": true,
-      "settings": {
-        "heading": "Alt om tights!",
-        "blog": "tights",
-        "post_limit": 3,
-        "show_image": true,
-        "show_date": true,
-        "show_author": false,
-        "soft_background": false,
-        "show_view_all": true
       }
     },
     "163017253755809ec3": {
@@ -673,14 +410,6 @@
     "162567415706bdadcd": {
       "type": "image-banner",
       "blocks": {
-        "162567415706bdadcd-0": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "medium"
-          }
-        },
         "162567415706bdadcd-1": {
           "type": "text",
           "settings": {
@@ -700,7 +429,6 @@
         }
       },
       "block_order": [
-        "162567415706bdadcd-0",
         "162567415706bdadcd-1",
         "162567415706bdadcd-2"
       ],
@@ -736,7 +464,6 @@
     "1631185614bd4a3575",
     "16311853465cfb015e",
     "16311858004f885fc1",
-    "1627475873e3871985",
     "163017253755809ec3",
     "1629157352b193f90f",
     "162567415706bdadcd"
