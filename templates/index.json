@@ -2,40 +2,6 @@
   "sections": {
     "1632220249ff5aaab9": {
       "type": "image-banner",
-      "blocks": {
-        "1632220249ff5aaab9-1": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "Sjekk ut høst kolleksjonen her. Vi har alt fra jeans, turtlenecks og deilige gensere."
-          }
-        },
-        "1632220249ff5aaab9-2": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_label_1": "SHOP HER",
-            "button_link_1": "shopify:\/\/collections\/hostmote",
-            "button_style_secondary_1": true,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        },
-        "5e57f410-657e-43c6-94bd-160862bde558": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "medium"
-          }
-        }
-      },
-      "block_order": [
-        "1632220249ff5aaab9-1",
-        "1632220249ff5aaab9-2",
-        "5e57f410-657e-43c6-94bd-160862bde558"
-      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/1.jpg",
         "image_m": "shopify:\/\/shop_images\/Mobil_banner_AUTUMN_COLLECTION_1.jpg",
@@ -74,13 +40,6 @@
             "heading_size": "medium"
           }
         },
-        "1631091164538140ed-1": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "Sjekk ut vår seamless kolleksjon her. Vi har seamless tights, sports-bh, topper og undertøy."
-          }
-        },
         "1631091164538140ed-2": {
           "type": "buttons",
           "disabled": true,
@@ -96,7 +55,6 @@
       },
       "block_order": [
         "1631091164538140ed-0",
-        "1631091164538140ed-1",
         "1631091164538140ed-2"
       ],
       "settings": {
