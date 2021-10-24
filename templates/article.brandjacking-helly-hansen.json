@@ -2,40 +2,7 @@
   "sections": {
     "163454564855e20815": {
       "type": "image-banner",
-      "blocks": {
-        "163454564855e20815-0": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "medium"
-          }
-        },
-        "163454564855e20815-1": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template."
-          }
-        },
-        "163454564855e20815-2": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "163454564855e20815-0",
-        "163454564855e20815-1",
-        "163454564855e20815-2"
-      ],
+
       "settings": {
         "image_url": "",
         "image2_url": "",
