@@ -39,8 +39,8 @@
         "image_ratio": "adapt",
         "column_alignment": "left",
         "background_style": "secondary",
-        "button_label": "Se hele utvalget av jeans og klær. Ikke glem rabatten!",
-        "button_link": "\/collections\/tights",
+        "button_label": "Se hele utvalget av jeans. Ikke glem rabatten!",
+        "button_link": "shopify:\/\/collections\/jeans",
         "swipe_on_mobile": false
       }
     },
