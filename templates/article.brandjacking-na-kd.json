@@ -8,23 +8,23 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/desktop-banner-host-oppdatert.jpg",
             "title": "Rask levering + gratis retur",
-            "text": "<p>Levis har høyere priser i forhold til mange konkurrenter og tilbyr ikke levering samme dag med Porterbuddy. Hos Famme kan du kjøpe fraktfritt og bestiller du i dag har du også gratis retur! Du velger mellom Posten, Helthjem eller samme dags levering med Porterbuddy!<\/p>"
+            "text": "<p>NA-KD tilbyr ikke levering samme dag med Porterbuddy. Hos Famme kan du kjøpe fraktfritt og bestiller du i dag har du også gratis retur! Du velger mellom Posten, Helthjem eller samme dags levering med Porterbuddy!<\/p>"
           }
         },
         "4349053e-0c05-4576-b505-65b1de855a57": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/4flex-blue_26.jpg",
-            "title": "4FLEX Jeans",
-            "text": "<p>Nå til en rimeligere pris enn mange av Levis sine egne produkter.<strong> <\/strong><\/p><p><a href=\"\/products\/4flex-jeans\" target=\"_blank\" title=\"\/products\/4flex-jeans\"><strong>4FLEX jeans<\/strong><\/a> er skinny jeans med høyt liv produsert av ekte <strong>patentert denim teknologi<\/strong> for å oppnå et super-stretchy materiale og legger seg tett inntil kroppen din uten å stramme til eller ligge løst på feil steder. <\/p>"
+            "image": "shopify:\/\/shop_images\/casualwear-header.jpg",
+            "title": "Casualwear",
+            "text": "<p>Nå til en rimeligere pris med bedre kvalitet enn mange av NA-KD sine produkter. <\/p><p>Famme fokuserer på produkter av god kvalitet som skaper lengre holdbarhet på klesplaggene. Se vårt utvalg av casualwear <a href=\"\/collections\/casualwear\" target=\"_blank\" title=\"\/collections\/casualwear\">her<\/a>.<\/p>"
           }
         },
         "163438960122f1937a-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/desktop-banner-jeans.jpg",
-            "title": "Bredt utvalg",
-            "text": "<p>Levis sitt utvalg er begrenset til jeans og bukser for det meste. Hos Famme har vi<strong> jeans<\/strong> i tillegg til et stort utvalg av <strong>tights, treningstopper, løpejakker, sko og mye mer!<\/strong><\/p><p>Noen av Famme sine jeans er til og med <a href=\"\/products\/4flex-jeans\" title=\"\/products\/4flex-jeans\"><strong>jeans spesielt produsert for fitness damer<\/strong><\/a> og andre hverdagsklær som er spesielt laget for de som er glad i å trene. <\/p>"
+            "image": "shopify:\/\/shop_images\/brandjacking-turtights-banner.jpg",
+            "title": "Treningsklær",
+            "text": "<p>NA-KD tilbyr ikke treningsklær i sitt sortiment. Hos Famme har vi et bredt utvalg av treningsklær og tilbehør som passer til ulike aktiviteter. Enten du treninger tights med <a href=\"\/collections\/kompresjonstights\" target=\"_blank\" title=\"\/collections\/kompresjonstights\">kompresjon<\/a>,  <a href=\"\/collections\/lopejakker\" target=\"_blank\" title=\"\/collections\/lopejakker\">løpejakke<\/a>, eller <a href=\"\/collections\/shoes\" target=\"_blank\" title=\"\/collections\/shoes\">joggesko <\/a>- vi har det!<\/p>"
           }
         }
       },
@@ -39,8 +39,8 @@
         "image_ratio": "adapt",
         "column_alignment": "left",
         "background_style": "secondary",
-        "button_label": "Se hele utvalget av jeans. Ikke glem rabatten!",
-        "button_link": "shopify:\/\/collections\/jeans",
+        "button_label": "Se hele vårt sortiment her",
+        "button_link": "shopify:\/\/collections\/all",
         "swipe_on_mobile": false
       }
     },
@@ -92,6 +92,7 @@
     },
     "163514751724437e62": {
       "type": "featured-blog",
+      "disabled": true,
       "settings": {
         "heading": "Les mer om våre jeans her!",
         "blog": "jeans",
