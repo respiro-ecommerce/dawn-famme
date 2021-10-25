@@ -98,6 +98,7 @@
     },
     "163438965009ed774b": {
       "type": "video",
+      "disabled": true,
       "settings": {
         "heading": "Seamless treningsklær",
         "cover_image": "shopify:\/\/shop_images\/mobil-banner-seamless.jpg",
