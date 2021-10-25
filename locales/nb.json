@@ -11,11 +11,6 @@
       "powered_by_shopify_html": "Famme.no"
     },
     "social": {
-      "alt_text": {
-        "share_on_facebook": "Del på Facebook",
-        "share_on_twitter": "Tweet på Twitter",
-        "share_on_pinterest": "Pin på Pinterest"
-      },
       "links": {
         "twitter": "Twitter",
         "facebook": "Facebook",
@@ -62,8 +57,7 @@
     "error": "Feil",
     "refresh_page": "Ved å gjøre et valg vil hele siden lastes inn på nytt.",
     "link_messages": {
-      "new_window": "Åpner i et nytt vindu.",
-      "external": "Åpner eksternt nettsted."
+      "new_window": "Åpner i et nytt vindu."
     },
     "next_slide": "Bla til høyre",
     "previous_slide": "Bla til venstre",
@@ -76,7 +70,6 @@
   "blogs": {
     "article": {
       "blog": "Blogg",
-      "read_more_title": "Les mer: {{ title }}",
       "comments": {
         "one": "{{ count }} kommentar",
         "other": "{{ count }} kommentarer"
@@ -88,40 +81,18 @@
       "message": "Kommentar",
       "post": "Del en kommentar",
       "back_to_blog": "Tilbake til bloggen",
-      "share": "Del denne artikkelen",
       "success": "Kommentaren din ble delt! Takk!",
       "success_moderated": "Kommentaren din ble delt. Vi publiserer den om en liten stund, siden bloggen din er moderert."
     }
   },
   "onboarding": {
-    "product_description": "Dette området brukes til å beskrive produktets detaljer. Fortell kundene om hvordan produktet ser ut, føles og stilen. Legg til detaljer om farge, materialer brukt, størrelser og hvor det ble laget.",
     "product_title": "Eksempel på produkttittel",
     "collection_title": "Navnet på samlingen"
   },
   "products": {
-    "notify_me_when_available": "Reserver - Få melding når varen er på lager",
-    "sizing_recommendation_up": "Gå en størrelse opp",
-    "sizing_recommendation_down": "Gå en størrelse ned",
-    "sizing_recommendation_normal": "Velg din vanlige størrelse",
-    "pre_order_information": "NB! Forhåndsbestillingsprodukter koster 10kr  å reservere og når det kommer på lager betaler du 50% av fullpris. Man får altså 50% rabatt for å forhåndsbestille produktet. Frakt er inkludert i prisen. Estimert ankomst:",
-    "reserve": "NB! DET KOSTER 0 KR Å RESERVERE, DET ER IKKE PRISEN FOR VAREN.",
-    "pre_order_information_price_reserving": "Det er gratis å reservere varen",
-    "pre_order_information_estimated_arrival": "Estimert levering:",
-    "pre_order_information_in_stock_items_seperated": "Lagervarer sendes i separat sending",
-    "model_sizes": "Modellstørrelse: ",
-    "composition": "Stoffblanding: ",
-    "model_height": "Modellhøyde: ",
-    "bullets": {
-      "bullet_1": "ALLTID FRI FRAKT OG BYTTE",
-      "bullet_2": "POSTEN, HELTHJEM,PORTERBUDDY",
-      "bullet_3": "VIPPS, KLARNA OG KORT"
-    },
-    "color": "Farge: ",
     "product": {
       "add_to_cart": "Legg i handlekurv",
-      "add_to_cart_pre_order": "Reserver (les beskrivelse)",
       "description": "Beskrivelse",
-      "empty_product_title": "Navnet på produktet ditt",
       "on_sale": "Salg",
       "product_variants": "Produktvarianter",
       "quantity": {
@@ -136,7 +107,6 @@
         "sale_price": "Salgspris",
         "unit_price": "Enhetspris"
       },
-      "share": "Del dette produktet",
       "sold_out": "Utsolgt",
       "unavailable": "Utilgjengelig",
       "vendor": "Selger",
@@ -178,10 +148,6 @@
         "other": "{{ count }} valgte"
       },
       "max_price": "Den høyeste prisen er {{ price }}",
-      "product_count": {
-        "one": "{{ product_count }} av {{ count }} produkt",
-        "other": "{{ product_count }} av {{ count }} produkter"
-      },
       "product_count_simple": {
         "one": "{{ count }} produkt",
         "other": "{{ count }} produkter"
@@ -239,7 +205,6 @@
     },
     "cart": {
       "title": "Handlekurven din",
-      "caption": "Varer i handlekurven",
       "remove_title": "Fjern {{ title }}",
       "subtotal": "Delsum",
       "new_subtotal": "Ny delsum",
@@ -254,7 +219,6 @@
       "taxes_and_shipping_at_checkout": "Avgifter og frakt beregnes i kassen",
       "headings": {
         "product": "Produkt",
-        "price": "Pris",
         "total": "Totalt",
         "quantity": "Antall"
       },
@@ -299,11 +263,7 @@
       "title": "Konto",
       "details": "Kontodetaljer",
       "view_addresses": "Vis adresser",
-      "return": "Gå tilbake til kontodetaljer",
-      "return_form": "Gå til returskjema",
-      "complaint_form": "Gå til reklamasjonsskjema",
-      "return_header": "Returskjema",
-      "complaint_header": "Reklamasjonsskjema"
+      "return": "Gå tilbake til kontodetaljer"
     },
     "account_fallback": "Konto",
     "activate_account": {
@@ -349,8 +309,7 @@
       "password": "Passord",
       "title": "Logg inn",
       "sign_in": "Logg inn",
-      "submit": "Send inn",
-      "account_info": "Merk! Å legge inn en bestilling gjør ikke at du automatisk lager en bruker i vår butikk. Opprett konto med samme e-post som du plasserte bestillingen med."
+      "submit": "Send inn"
     },
     "order": {
       "title": "Bestilling {{ name }}",
@@ -371,9 +330,6 @@
       "total": "Totalt",
       "fulfilled_at_html": "Sluttført {{ date }}",
       "track_shipment": "Spor forsendelse",
-      "tracking_url": "Sporingskobling",
-      "tracking_company": "Transportør",
-      "tracking_number": "Sporingsnummer",
       "subtotal": "Delsum"
     },
     "orders": {
@@ -421,5 +377,32 @@
       "copy_code_success": "Koden er kopiert",
       "print_gift_card": "Skriv ut"
     }
+  },
+  "famme_text": {
+    "products": {
+      "sizing_recommendation_up": "Gå en størrelse opp",
+      "sizing_recommendation_down": "Gå en størrelse ned",
+      "sizing_recommendation_normal": "Velg din vanlige størrelse",
+      "reserve": "NB! DET KOSTER 0 KR Å RESERVERE, DET ER IKKE PRISEN FOR VAREN.",
+      "pre_order_information_price_reserving": "Det er gratis å reservere varen"
+    },
+    "customer": {
+      "account": {
+      "return_form": "Gå til returskjema",
+      "complaint_form": "Gå til reklamasjonsskjema",
+      "return_header": "Returskjema",
+      "complaint_header": "Reklamasjonsskjema"
+      },
+      "login_page": {
+        "account_info": "Merk! Å legge inn en bestilling gjør ikke at du automatisk lager en bruker i vår butikk. Opprett konto med samme e-post som du plasserte bestillingen med."
+      }
+    }
   }
 }
+
+
+
+
+
+
+

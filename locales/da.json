@@ -11,11 +11,6 @@
       "powered_by_shopify_html": "Denne butik vil blive drevet af {{ shopify }}"
     },
     "social": {
-      "alt_text": {
-        "share_on_facebook": "Del på Facebook",
-        "share_on_twitter": "Tweet på Twitter",
-        "share_on_pinterest": "Pin på Pinterest"
-      },
       "links": {
         "twitter": "Twitter",
         "facebook": "Facebook",
@@ -62,8 +57,7 @@
     "error": "Fejl",
     "refresh_page": "Hele siden bliver genindlæst, når du vælger et afsnit.",
     "link_messages": {
-      "new_window": "Åbner i et nyt vindue.",
-      "external": "Åbner eksternt website."
+      "new_window": "Åbner i et nyt vindue."
     },
     "next_slide": "Skub til højre",
     "previous_slide": "Skub til venstre",
@@ -76,7 +70,6 @@
   "blogs": {
     "article": {
       "blog": "Blog",
-      "read_more_title": "Læs mere: {{ title }}",
       "comments": {
         "one": "{{ count }} kommentar",
         "other": "{{ count }} kommentarer"
@@ -88,7 +81,6 @@
       "message": "Kommentar",
       "post": "Skriv kommentar",
       "back_to_blog": "Tilbage til blog",
-      "share": "Del denne artikel",
       "success": "Din kommentar er blevet offentliggjort! Tak!",
       "success_moderated": "Din kommentar er blevet offentliggjort. Den bliver offentliggjort om lidt, da vores blog er under opsyn."
     }
@@ -98,18 +90,6 @@
     "collection_title": "Navnet på din kollektion"
   },
   "products": {
-    "model_sizes": "Modelstørrelse: ",
-    "composition": "Stofblanding: ",
-    "model_height": "Modelhøjde: ",
-    "bullets": {
-      "bullet_1": "ALTID FRI FRAGT",
-      "bullet_2": "POSTNORD (5-10 DAGE), DHL EXPRESS (1-3 DAGE)",
-      "bullet_3": "MOBILEPAY, PAYPAL OG KORT"
-    },
-    "color": "Farve: ",
-    "sizing_recommendation_up": "Gå en størrelse op",
-    "sizing_recommendation_down": "Gå en størrelse ned",
-    "sizing_recommendation_normal": "Vælg din sædvanlige størrelse",
     "product": {
       "add_to_cart": "Læg i indkøbskurv",
       "description": "Beskrivelse",
@@ -127,7 +107,6 @@
         "sale_price": "Udsalgspris",
         "unit_price": "Stykpris"
       },
-      "share": "Del dette produkt",
       "sold_out": "Udsolgt",
       "unavailable": "Ikke tilgængelig",
       "vendor": "Forhandler",
@@ -169,10 +148,6 @@
         "other": "{{ count }} valgt"
       },
       "max_price": "Den højeste pris er {{ price }}",
-      "product_count": {
-        "one": "{{ product_count }} af {{ count }} produkt",
-        "other": "{{ product_count }} af {{ count }} produkter"
-      },
       "product_count_simple": {
         "one": "{{ count }} produkt",
         "other": "{{ count }} produkter"
@@ -187,12 +162,12 @@
   "templates": {
     "search": {
       "no_results": "Der blev ikke fundet nogen resultater for \"{{ terms }}\". Kontrollér stavemåden, eller brug et andet ord eller udtryk.",
+      "page": "Side",
       "results_with_count": {
         "one": "{{ count }} resultat",
         "other": "{{ count }} resultater"
       },
       "title": "Søgeresultater",
-      "page": "Side",
       "products": "Produkter",
       "search_for": "Søg efter \"{{ terms }}\"",
       "results_with_count_and_term": {
@@ -230,7 +205,6 @@
     },
     "cart": {
       "title": "Din indkøbskurv",
-      "caption": "Varer i indkøbskurv",
       "remove_title": "Fjern {{ title }}",
       "subtotal": "Subtotal",
       "new_subtotal": "Ny subtotal",
@@ -245,7 +219,6 @@
       "taxes_and_shipping_at_checkout": "Afgifter og levering beregnes ved betaling",
       "headings": {
         "product": "Produkt",
-        "price": "Pris",
         "total": "I alt",
         "quantity": "Antal"
       },
@@ -338,6 +311,27 @@
       "sign_in": "Log ind",
       "submit": "Indsend"
     },
+    "order": {
+      "title": "Ordre {{ name }}",
+      "date_html": "Afgivet den {{ date }}",
+      "cancelled_html": "Ordre annulleret den {{ date }}",
+      "cancelled_reason": "Årsag: {{ reason }}",
+      "billing_address": "Faktureringsadresse",
+      "payment_status": "Betalingsstatus",
+      "shipping_address": "Leveringsadresse",
+      "fulfillment_status": "Klargøringsstatus",
+      "discount": "Rabat",
+      "shipping": "Levering",
+      "tax": "Moms",
+      "product": "Produkt",
+      "sku": "SKU",
+      "price": "Pris",
+      "quantity": "Antal",
+      "total": "I alt",
+      "fulfilled_at_html": "Klargjort den {{ date }}",
+      "track_shipment": "Følg forsendelse",
+      "subtotal": "Subtotal"
+    },
     "orders": {
       "title": "Ordrehistorik",
       "order_number": "Ordre",
@@ -367,30 +361,6 @@
       "password": "Adgangskode",
       "password_confirm": "Bekræft adgangskode",
       "submit": "Nulstil adgangskode"
-    },
-    "order": {
-      "title": "Ordre {{ name }}",
-      "date_html": "Afgivet den {{ date }}",
-      "cancelled_html": "Ordre annulleret den {{ date }}",
-      "cancelled_reason": "Årsag: {{ reason }}",
-      "billing_address": "Faktureringsadresse",
-      "payment_status": "Betalingsstatus",
-      "shipping_address": "Leveringsadresse",
-      "fulfillment_status": "Klargøringsstatus",
-      "discount": "Rabat",
-      "shipping": "Levering",
-      "tax": "Moms",
-      "product": "Produkt",
-      "sku": "SKU",
-      "price": "Pris",
-      "quantity": "Antal",
-      "total": "I alt",
-      "fulfilled_at_html": "Klargjort den {{ date }}",
-      "track_shipment": "Følg forsendelse",
-      "tracking_url": "Sporingslink",
-      "tracking_company": "Fragtfirma",
-      "tracking_number": "Trackingnummer",
-      "subtotal": "Subtotal"
     }
   },
   "gift_cards": {
@@ -407,5 +377,29 @@
       "copy_code_success": "Koden er blevet kopieret",
       "print_gift_card": "Udskriv"
     }
+  },
+    "famme_text": {
+    "products": {
+      "sizing_recommendation_up": "Gå en størrelse op",
+      "sizing_recommendation_down": "Gå en størrelse ned",
+      "sizing_recommendation_normal": "Vælg din sædvanlige størrelse",
+      "reserve": "NB! DET KOSTER 0 kr at reservere, det er ikke varens pris.",
+      "pre_order_information_price_reserving": "Det er gratis at reservere varen"
+    },
+      "customer": {
+        "account": {
+          "return_form": "Gå til returformularen",
+          "complaint_form": "Gå til klageskemaet",
+          "return_header": "Returformularen",
+          "complaint_header": "Klageskemaet"
+        },
+        "login_page": {
+          "account_info": "Bemærk! afgivelse af en ordre opretter ikke automatisk en bruger i vores butik. Opret en konto med den samme e-mail, som du brugte til at afgive din ordre."
+
+        }
+      }
   }
 }
+
+
+
