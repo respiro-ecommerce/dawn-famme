@@ -1,0 +1,119 @@
+{
+  "sections": {
+    "163438960122f1937a": {
+      "type": "multicolumn",
+      "blocks": {
+        "163438960122f1937a-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/desktop-banner-host-oppdatert.jpg",
+            "title": "Rask levering + gratis retur",
+            "text": "<p>Levis har høyere priser i forhold til mange konkurrenter og tilbyr ikke levering samme dag med Porterbuddy. Hos Famme kan du kjøpe fraktfritt og bestiller du i dag har du også gratis retur! Du velger mellom Posten, Helthjem eller samme dags levering med Porterbuddy!<\/p>"
+          }
+        },
+        "4349053e-0c05-4576-b505-65b1de855a57": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4flex-blue_26.jpg",
+            "title": "4FLEX Jeans",
+            "text": "<p>Nå til en rimeligere pris enn mange av Levis sine egne produkter.<strong> <\/strong><\/p><p><a href=\"\/products\/4flex-jeans\" target=\"_blank\" title=\"\/products\/4flex-jeans\"><strong>4FLEX jeans<\/strong><\/a> er skinny jeans med høyt liv produsert av ekte <strong>patentert denim teknologi<\/strong> for å oppnå et super-stretchy materiale og legger seg tett inntil kroppen din uten å stramme til eller ligge løst på feil steder. <\/p>"
+          }
+        },
+        "163438960122f1937a-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/desktop-banner-jeans.jpg",
+            "title": "Bredt utvalg",
+            "text": "<p>Levis sitt utvalg er begrenset til jeans og bukser for det meste. Hos Famme har vi<strong> jeans<\/strong> i tillegg til et stort utvalg av <strong>tights, treningstopper, løpejakker, sko og mye mer!<\/strong><\/p><p>Noen av Famme sine jeans er til og med <a href=\"\/products\/4flex-jeans\" title=\"\/products\/4flex-jeans\"><strong>jeans spesielt produsert for fitness damer<\/strong><\/a> og andre hverdagsklær som er spesielt laget for de som er glad i å trene. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "163438960122f1937a-1",
+        "4349053e-0c05-4576-b505-65b1de855a57",
+        "163438960122f1937a-2"
+      ],
+      "settings": {
+        "title": "NYKUNDE-50 for 50% rabatt på ordinære varer",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "secondary",
+        "button_label": "Se hele utvalget av jeans. Ikke glem rabatten!",
+        "button_link": "shopify:\/\/collections\/jeans",
+        "swipe_on_mobile": false
+      }
+    },
+    "1634409175ff664290": {
+      "type": "collection-list",
+      "blocks": {
+        "1634409175ff664290-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "bestsellers"
+          }
+        },
+        "1634409175ff664290-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "high-straight-jeans"
+          }
+        },
+        "1634409175ff664290-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "jeans"
+          }
+        }
+      },
+      "block_order": [
+        "1634409175ff664290-0",
+        "1634409175ff664290-2",
+        "1634409175ff664290-1"
+      ],
+      "settings": {
+        "title": "De mest populære kategoriene",
+        "image_ratio": "portrait",
+        "color_scheme": "background-1",
+        "swipe_on_mobile": true,
+        "image_padding": false,
+        "show_view_all": false
+      }
+    },
+    "163438965009ed774b": {
+      "type": "video",
+      "settings": {
+        "heading": "De beste jeansene",
+        "cover_image": "shopify:\/\/shop_images\/mobil-banner-jeans_3d088831-539e-472f-8b0d-fafb2e4cc017.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=4XXRN43pN_M&t=1s",
+        "description": "Levis alternativ - jeans",
+        "full_width": false
+      }
+    },
+    "163514751724437e62": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Les mer om våre jeans her!",
+        "blog": "jeans",
+        "post_limit": 3,
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "soft_background": false,
+        "show_view_all": true
+      }
+    },
+    "main": {
+      "type": "main-article",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "163438960122f1937a",
+    "1634409175ff664290",
+    "163438965009ed774b",
+    "163514751724437e62",
+    "main"
+  ]
+}
