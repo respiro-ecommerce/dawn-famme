@@ -53,23 +53,23 @@
             "collection": "jeans"
           }
         },
+        "1634409175ff664290-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "skinny-jeans"
+          }
+        },
         "1634409175ff664290-1": {
           "type": "featured_collection",
           "settings": {
             "collection": "flare-jeans"
           }
-        },
-        "1634409175ff664290-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "high-straight-jeans"
-          }
         }
       },
       "block_order": [
         "1634409175ff664290-0",
-        "1634409175ff664290-1",
-        "1634409175ff664290-2"
+        "1634409175ff664290-2",
+        "1634409175ff664290-1"
       ],
       "settings": {
         "title": "De mest populære kategoriene",
