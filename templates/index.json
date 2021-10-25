@@ -3,11 +3,11 @@
     "1632220249ff5aaab9": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/1.jpg",
-        "image_m": "shopify:\/\/shop_images\/Mobil_banner_AUTUMN_COLLECTION_1.jpg",
+        "image": "shopify:\/\/shop_images\/desktop-host-banner.jpg",
+        "image_m": "shopify:\/\/shop_images\/mobil-host-banner.jpg",
         "image_url": "shopify:\/\/collections\/hostmote",
         "image2_url": "",
-        "image_height": "large",
+        "image_height": "small",
         "adapt_height_first_image": false,
         "desktop_text_box_position": "center",
         "show_text_box": true,
