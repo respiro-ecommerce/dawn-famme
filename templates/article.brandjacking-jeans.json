@@ -1,5 +1,52 @@
 {
   "sections": {
+    "163524400862e3a2b3": {
+      "type": "image-banner",
+      "blocks": {
+        "163524400862e3a2b3-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "medium"
+          }
+        },
+        "163524400862e3a2b3-1": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template."
+          }
+        },
+        "163524400862e3a2b3-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "163524400862e3a2b3-0",
+        "163524400862e3a2b3-1",
+        "163524400862e3a2b3-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/brandjacking-jeans.png",
+        "image_url": "",
+        "image2_url": "",
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_text_box_position": "center",
+        "show_text_box": true,
+        "image_overlay_opacity": 0,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "163438960122f1937a": {
       "type": "multicolumn",
       "blocks": {
@@ -122,6 +169,7 @@
     }
   },
   "order": [
+    "163524400862e3a2b3",
     "163438960122f1937a",
     "main",
     "1634409175ff664290",
