@@ -2,39 +2,9 @@
   "sections": {
     "163524400862e3a2b3": {
       "type": "image-banner",
-      "blocks": {
-        "163524400862e3a2b3-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "medium"
-          }
-        },
-        "163524400862e3a2b3-1": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template."
-          }
-        },
-        "163524400862e3a2b3-2": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "163524400862e3a2b3-0",
-        "163524400862e3a2b3-1",
-        "163524400862e3a2b3-2"
-      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/brandjacking-jeans.png",
+        "image_m": "shopify:\/\/shop_images\/brandjacking-jeans-mobil.png",
         "image_url": "",
         "image2_url": "",
         "image_height": "medium",
@@ -81,7 +51,7 @@
         "163438960122f1937a-2"
       ],
       "settings": {
-        "title": "NYKUNDE-50 for 50% rabatt på jeans",
+        "title": "NYKUNDE-15 for 15% rabatt på jeans",
         "image_width": "full",
         "image_ratio": "adapt",
         "column_alignment": "left",
