@@ -2,39 +2,9 @@
   "sections": {
     "16352521148bea06d0": {
       "type": "image-banner",
-      "blocks": {
-        "16352521148bea06d0-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "medium"
-          }
-        },
-        "16352521148bea06d0-1": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template."
-          }
-        },
-        "16352521148bea06d0-2": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "16352521148bea06d0-0",
-        "16352521148bea06d0-1",
-        "16352521148bea06d0-2"
-      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Brandjacking-fashion.jpg",
+        "image_m": "shopify:\/\/shop_images\/Brandjacking-fashion-mobil.png",
         "image_url": "",
         "image2_url": "",
         "image_height": "medium",
