@@ -25,14 +25,14 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/desktop-banner-host-oppdatert.jpg",
             "title": "Rask levering + gratis retur",
-            "text": "<p>NA-KD tilbyr ikke levering samme dag med Porterbuddy. Hos Famme kan du kjøpe fraktfritt og bestiller du i dag har du også gratis retur! Du velger mellom Posten, Helthjem eller samme dags levering med Porterbuddy!<\/p>"
+            "text": "<p>Bestill og få levert på døren i dag med Porterbuddy. Hos Famme kan du kjøpe fraktfritt og bestiller du i dag har du også gratis retur! Du velger mellom Posten, Helthjem eller samme dags levering med Porterbuddy!<\/p>"
           }
         },
         "4349053e-0c05-4576-b505-65b1de855a57": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/casualwear-header.jpg",
-            "title": "Casualwear",
+            "title": "Hverdagsklær",
             "text": "<p>Nå til en rimeligere pris med bedre kvalitet enn mange av NA-KD sine produkter. <\/p><p>Famme fokuserer på produkter av god kvalitet som skaper lengre holdbarhet på klesplaggene. Se vårt utvalg av casualwear <a href=\"\/collections\/casualwear\" target=\"_blank\" title=\"\/collections\/casualwear\">her<\/a>.<\/p>"
           }
         },
@@ -59,21 +59,6 @@
         "button_label": "Se hele vårt sortiment her",
         "button_link": "shopify:\/\/collections\/all",
         "swipe_on_mobile": false
-      }
-    },
-    "main": {
-      "type": "main-article",
-      "blocks": {
-        "396f5935-f2cb-434e-a6d1-d6a4e28c1079": {
-          "type": "content",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "396f5935-f2cb-434e-a6d1-d6a4e28c1079"
-      ],
-      "settings": {
       }
     },
     "1634409175ff664290": {
@@ -122,6 +107,21 @@
         "full_width": false
       }
     },
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "396f5935-f2cb-434e-a6d1-d6a4e28c1079": {
+          "type": "content",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "396f5935-f2cb-434e-a6d1-d6a4e28c1079"
+      ],
+      "settings": {
+      }
+    },
     "163514751724437e62": {
       "type": "featured-blog",
       "disabled": true,
@@ -154,9 +154,9 @@
   "order": [
     "16352521148bea06d0",
     "163438960122f1937a",
-    "main",
     "1634409175ff664290",
     "163438965009ed774b",
+    "main",
     "163514751724437e62",
     "1635152225421b2388"
   ]
