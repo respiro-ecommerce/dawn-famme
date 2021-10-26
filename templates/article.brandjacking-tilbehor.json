@@ -1,0 +1,111 @@
+{
+  "sections": {
+    "1634548339a9169b3a": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/lululemon-banner.jpg",
+        "image_m": "shopify:\/\/shop_images\/lululemon-banner-mobil.jpg",
+        "image_url": "",
+        "image2_url": "",
+        "image_height": "small",
+        "adapt_height_first_image": false,
+        "desktop_text_box_position": "center",
+        "show_text_box": true,
+        "image_overlay_opacity": 0,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "163438960122f1937a": {
+      "type": "multicolumn",
+      "blocks": {
+        "163438960122f1937a-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/desktop-banner-seamless.jpg",
+            "title": "Rask levering + gratis retur",
+            "text": "<p>Lululemon har ikke lager i Norge. Leveringen er ikke rask, og retur er enda verre, du må fylle ut tollpapirer m.m for å gjennomføre returen. Hos Famme kan du kjøpe <strong>fraktfritt<\/strong> og bestiller du i dag har du også <strong>gratis retur<\/strong>! Du velger mellom Posten, Helthjem eller samme dags levering med Porterbuddy!<\/p>"
+          }
+        },
+        "163438960122f1937a-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/lululemon-yoga-tights-dame.jpg",
+            "title": "Bredt utvalg",
+            "text": "<p>Lululemon har kun treningsklær. Hos Famme har du i tillegg til treningsklær også turklær, sko og hverdagsklær. <\/p><p><\/p><p>Vi har til og med <a href=\"\/products\/4flex-jeans\" title=\"\/products\/4flex-jeans\">jeans spesielt produsert for de som trener yoga <\/a> og andre hverdagsklær som er spesielt laget for de som er glad i å trene. <\/p>"
+          }
+        },
+        "163438960122f1937a-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/desktop-banner-scrunch.jpg",
+            "title": "Best på treningsklær",
+            "text": "<p>Lululemon har kjempebra treningsklær! Vi produserer seamless treningstøy på samme fabrikk og Lululemon er en av våre kvalitetsreferanser. I Norge er Famme<strong> best på treningsklær og til en mye rimeligere pris<\/strong>. Vi har alt av treningsklær enten du skal løpe, trene yoga eller styrketrening på treningsstudio.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "163438960122f1937a-1",
+        "163438960122f1937a-2",
+        "163438960122f1937a-0"
+      ],
+      "settings": {
+        "title": "NYKUNDE15 for -15% rabatt på ordinære varer",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "secondary",
+        "button_label": "Se hele utvalget av treningsklær. Ikke glem rabatten!",
+        "button_link": "\/collections\/tights",
+        "swipe_on_mobile": false
+      }
+    },
+    "163438965009ed774b": {
+      "type": "video",
+      "settings": {
+        "heading": "Yoga treningsklær",
+        "cover_image": "shopify:\/\/shop_images\/lululemon-yoga-tights-dame.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=4SwyyGlLe0A&list=TLGGv7maqE-uXlMxNjEwMjAyMQ&t=1s",
+        "description": "Tights som fungerer bra til yoga tilsvarende Lululemon sine align pants",
+        "full_width": false
+      }
+    },
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "blog_show_date": true,
+            "blog_show_author": false
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {
+          }
+        },
+        "featured_image": {
+          "type": "featured_image",
+          "settings": {
+            "image_height": "adapt"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "content",
+        "featured_image"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "1634548339a9169b3a",
+    "163438960122f1937a",
+    "163438965009ed774b",
+    "main"
+  ]
+}
