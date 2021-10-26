@@ -41,7 +41,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/casualwear-header.jpg",
             "title": "Hverdagsklær",
-            "text": "<p>Famme fokuserer på produkter av god kvalitet som skaper lengre holdbarhet på klesplaggene. Vi har et bredt utvalg av både hverdagsklær og treningsklær. Se vårt utvalg av casualwear <a href=\"\/collections\/casualwear\" target=\"_blank\" title=\"\/collections\/casualwear\">her<\/a>.<\/p>"
+            "text": "<p>Famme fokuserer på produkter av <strong>god kvalitet<\/strong> som skaper<strong> lengre holdbarhet<\/strong> på klesplaggene. Vi har et bredt utvalg av både <strong>hverdagsklær<\/strong> og <strong>treningsklær <\/strong>til dame. Se vårt utvalg av casualwear <a href=\"\/collections\/casualwear\" target=\"_blank\" title=\"\/collections\/casualwear\">her<\/a>.<\/p>"
           }
         }
       },
