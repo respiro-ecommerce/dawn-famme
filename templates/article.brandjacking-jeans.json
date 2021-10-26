@@ -44,6 +44,36 @@
         "swipe_on_mobile": false
       }
     },
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "blog_show_date": true,
+            "blog_show_author": false
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {
+          }
+        },
+        "featured_image": {
+          "type": "featured_image",
+          "settings": {
+            "image_height": "adapt"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "content",
+        "featured_image"
+      ],
+      "settings": {
+      }
+    },
     "1634409175ff664290": {
       "type": "collection-list",
       "blocks": {
@@ -89,42 +119,12 @@
         "description": "Fitjeans alternativ - denim jeans",
         "full_width": false
       }
-    },
-    "main": {
-      "type": "main-article",
-      "blocks": {
-        "title": {
-          "type": "title",
-          "settings": {
-            "blog_show_date": true,
-            "blog_show_author": false
-          }
-        },
-        "content": {
-          "type": "content",
-          "settings": {
-          }
-        },
-        "featured_image": {
-          "type": "featured_image",
-          "settings": {
-            "image_height": "adapt"
-          }
-        }
-      },
-      "block_order": [
-        "title",
-        "content",
-        "featured_image"
-      ],
-      "settings": {
-      }
     }
   },
   "order": [
     "163438960122f1937a",
+    "main",
     "1634409175ff664290",
-    "163438965009ed774b",
-    "main"
+    "163438965009ed774b"
   ]
 }
