@@ -51,7 +51,7 @@
         "9179918b-cff4-4c6a-8323-e0feee7ce5a6"
       ],
       "settings": {
-        "title": "NYKUNDE-50 gir -50% på fullprisvarer",
+        "title": "NYKUNDE15 gir -15% på fullprisvarer",
         "image_width": "full",
         "image_ratio": "adapt",
         "column_alignment": "left",
@@ -59,16 +59,6 @@
         "button_label": "Se hele utvalget av treningsklær. Ikke glem rabatten!",
         "button_link": "\/collections\/tights",
         "swipe_on_mobile": false
-      }
-    },
-    "163438965009ed774b": {
-      "type": "video",
-      "settings": {
-        "heading": "Perfekte sko til trening, jobb eller løping",
-        "cover_image": "shopify:\/\/shop_images\/MOBIL-BANNER-ENDORPHIN.jpg",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=SUVoJYlJCWw",
-        "description": "Hoka bondi alternativ - joggesko",
-        "full_width": false
       }
     },
     "1634409175ff664290": {
@@ -107,6 +97,16 @@
         "show_view_all": false
       }
     },
+    "163438965009ed774b": {
+      "type": "video",
+      "settings": {
+        "heading": "Perfekte sko til trening, jobb eller løping",
+        "cover_image": "shopify:\/\/shop_images\/MOBIL-BANNER-ENDORPHIN.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=SUVoJYlJCWw",
+        "description": "Hoka bondi alternativ - joggesko",
+        "full_width": false
+      }
+    },
     "main": {
       "type": "main-article",
       "blocks": {
@@ -141,8 +141,8 @@
   "order": [
     "163454564855e20815",
     "163438960122f1937a",
-    "163438965009ed774b",
     "1634409175ff664290",
+    "163438965009ed774b",
     "main"
   ]
 }
