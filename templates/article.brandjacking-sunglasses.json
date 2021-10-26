@@ -77,12 +77,21 @@
             "title": "Sportsbriller til trening og fritid",
             "text": "<p><strong>Sportsbriller<\/strong> er noe som kommer godt med i enhver trenings-garderobe. <strong>Raske briller<\/strong> får deg til å se fresh og sporty ut. Vi har sportsbriller som egner seg enten til løping, ski eller til fritiden. Våre raske briller er utstyrt med to glass som man kan skifte ut ved behov, og sportsbrillene har justerbar lengde slik at de enklere passer deg!<\/p>"
           }
+        },
+        "4d5425a2-d20d-4cbe-b08b-186ef830640e": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
         }
       },
       "block_order": [
         "163438960122f1937a-1",
         "163438960122f1937a-2",
-        "163438960122f1937a-0"
+        "163438960122f1937a-0",
+        "4d5425a2-d20d-4cbe-b08b-186ef830640e"
       ],
       "settings": {
         "title": "NYKUNDE-15 gir - 15% på fullprisvarer",
