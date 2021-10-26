@@ -67,19 +67,19 @@
         "1634409175ff664290-0": {
           "type": "featured_collection",
           "settings": {
-            "collection": "bestsellers"
+            "collection": "jacket"
           }
         },
         "1634409175ff664290-1": {
           "type": "featured_collection",
           "settings": {
-            "collection": "all"
+            "collection": "turbukser"
           }
         },
         "1634409175ff664290-2": {
           "type": "featured_collection",
           "settings": {
-            "collection": "jacket"
+            "collection": "hodeplagg"
           }
         }
       },
@@ -101,9 +101,9 @@
       "type": "video",
       "disabled": true,
       "settings": {
-        "heading": "Seamless treningsklær",
+        "heading": "Perfekte turklær for damer",
         "cover_image": "shopify:\/\/shop_images\/mobil-banner-seamless.jpg",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=uXtendqbdcI",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=xX-02q7rz_Q&list=PL5XQmokIQyy1I1Hngp01UqudacNUutPuy&index=7",
         "description": "Best på tur- og sportsklær",
         "full_width": false
       }
