@@ -107,16 +107,16 @@
     "1634409175ff664290": {
       "type": "collection-list",
       "blocks": {
-        "1634409175ff664290-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "accessories"
-          }
-        },
         "1634409175ff664290-0": {
           "type": "featured_collection",
           "settings": {
             "collection": "bestsellers"
+          }
+        },
+        "1634409175ff664290-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "accessories"
           }
         },
         "1634409175ff664290-1": {
@@ -134,8 +134,8 @@
         }
       },
       "block_order": [
-        "1634409175ff664290-2",
         "1634409175ff664290-0",
+        "1634409175ff664290-2",
         "1634409175ff664290-1",
         "b9bf0dbe-e184-45d6-8b8d-e81d5ddab8d1"
       ],
