@@ -1,0 +1,69 @@
+{
+  "sections": {
+    "16352452436102bf61": {
+      "type": "newsletter",
+      "blocks": {
+        "16352452436102bf61-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ikke gå glipp av tilbudene våre!"
+          }
+        },
+        "16352452436102bf61-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Vær først ute og få Black Friday tilbud sendt direkte til din innboks!<\/p>"
+          }
+        },
+        "16352452436102bf61-2": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "16352452436102bf61-0",
+        "16352452436102bf61-1",
+        "16352452436102bf61-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "featured_image": {
+          "type": "featured_image",
+          "settings": {
+            "image_height": "adapt"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "blog_show_date": true,
+            "blog_show_author": false
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "featured_image",
+        "title",
+        "content"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "16352452436102bf61",
+    "main"
+  ]
+}

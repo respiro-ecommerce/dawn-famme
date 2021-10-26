@@ -3,8 +3,8 @@
     "163454564855e20815": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/brandjacking-hellyhansen_479b36ba-2493-429e-a3f8-baed03bd8acd.png",
-        "image_m": "shopify:\/\/shop_images\/brandjacking-hellyhansen_5e15bdeb-4577-4230-a4b4-38cea7a4317f.png",
+        "image": "shopify:\/\/shop_images\/gymshark-side-banner.jpg",
+        "image_m": "shopify:\/\/shop_images\/gymshark-side-banner-mobil.jpg",
         "image_url": "",
         "image2_url": "",
         "image_height": "small",
@@ -23,9 +23,9 @@
         "163438960122f1937a-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/desktop-banner-host-oppdatert.jpg",
+            "image": "shopify:\/\/shop_images\/treningsklaer-dame.jpg",
             "title": "Rask levering + gratis retur",
-            "text": "<p>Helly Hansen er et norsk selskap med hovedkvarter i Oslo. De har en levering på 2-6 dager, gratis frakt over 800kr og gratis åpen retur på 90 dager. Hos Famme derimot kan du kjøpe <strong>fraktfritt<\/strong> og bestiller du i dag har du også<strong> gratis retur<\/strong>! Du velger mellom Posten, Helthjem eller <strong>samme dags<\/strong> levering med Porterbuddy!<\/p>"
+            "text": "<p>Hos Famme kan du kjøpe <strong>fraktfritt<\/strong> og bestiller du i dag har du også<strong> gratis retur<\/strong>! Du velger mellom Posten, Helthjem eller samme dags levering med Porterbuddy!<\/p>"
           }
         },
         "163438960122f1937a-2": {
@@ -33,15 +33,15 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/MOBIL-BANNER-ENDORPHIN.jpg",
             "title": "Bredt utvalg",
-            "text": "<p>Helly Hansen sitt utvalg er for det meste begrenset til tur- og sportsklær. Her hos Famme vil du oppleve et <strong>mangfold <\/strong>av muligheter. Vi har tights, treningstopper, løpejakker, sko og mye mer! Vi har til og med <a href=\"\/products\/4flex-jeans\" title=\"\/products\/4flex-jeans\">jeans spesielt produsert for fitness damer<\/a> og andre hverdagsklær som er spesielt laget for de som er glad i å trene. <\/p>"
+            "text": "<p>Hos Famme har du tights, treningstopper, løpejakker, sko og mye mer! Her finner du de beste <a href=\"\/collections\/seamless-tights\" title=\"\/collections\/seamless-tights\">seamless treningstights<\/a> til dame. Vi har til og med andre hverdagsklær som er spesielt laget for de som er glad i å trene. <\/p>"
           }
         },
         "163438960122f1937a-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/turklaer-banner.jpg",
-            "title": "Best på tur- og sportsklær",
-            "text": "<p>Helly Hansen er kjent for og har for det meste tur og annet sportsklær. I sortimentet vårt har vi turklær og mye annet til en <strong>rimeligere<\/strong> pris. Ullundertøy, tur shorts- og bukser og ulike tekniske jakker for forskjellige anledninger. <\/p>"
+            "image": "shopify:\/\/shop_images\/desktop-banner-seamless.jpg",
+            "title": "Best på seamless",
+            "text": "<p>Famme er <strong>best i Norge på seamless tights<\/strong>. Vi har seamless tights i mange farger, lengder og passformer. Vi har seamless med og uten scrunch og seamless med og uten mønster. Match med treningstoppene våre!<\/p>"
           }
         }
       },
@@ -51,7 +51,7 @@
         "163438960122f1937a-0"
       ],
       "settings": {
-        "title": "NYKUNDE-50 gir -50% på fullprisvarer",
+        "title": "NYKUNDE15 gir -15% på alle varer",
         "image_width": "full",
         "image_ratio": "adapt",
         "column_alignment": "left",
@@ -99,12 +99,11 @@
     },
     "163438965009ed774b": {
       "type": "video",
-      "disabled": true,
       "settings": {
         "heading": "Seamless treningsklær",
         "cover_image": "shopify:\/\/shop_images\/mobil-banner-seamless.jpg",
         "video_url": "https:\/\/www.youtube.com\/watch?v=uXtendqbdcI",
-        "description": "Helly Hansen flex tights alternativ - seamless treningstights",
+        "description": "Gymshark flex tights alternativ - seamless treningstights",
         "full_width": false
       }
     },

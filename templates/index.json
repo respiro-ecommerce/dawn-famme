@@ -242,22 +242,23 @@
       "blocks": {
         "162567093514930cfb-0": {
           "type": "heading",
+          "disabled": true,
           "settings": {
-            "heading": "Bestill i dag - Kun 998 kr",
+            "heading": "",
             "heading_size": "small"
           }
         },
         "162567093514930cfb-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Nye farger og størrelser på joggeskoene lansert. Sko du kan bruke til løping, jobb eller fritid!<\/p>"
+            "text": "<p>Lette løpesko med <strong>god demping<\/strong> og chunky såle. Sko du kan bruke til løping, jobb eller fritid! <\/p>"
           }
         },
         "162567093514930cfb-2": {
           "type": "button",
           "settings": {
-            "button_label": "Kjøp nå på introtilbud",
-            "button_link": "\/products\/endorphin-rx1-shoes",
+            "button_label": "Kjøp skoene nå",
+            "button_link": "shopify:\/\/products\/endorphin-rx1-shoes",
             "button_style_secondary": false
           }
         }
