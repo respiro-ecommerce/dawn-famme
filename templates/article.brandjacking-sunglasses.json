@@ -107,6 +107,12 @@
     "1634409175ff664290": {
       "type": "collection-list",
       "blocks": {
+        "1634409175ff664290-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "accessories"
+          }
+        },
         "1634409175ff664290-0": {
           "type": "featured_collection",
           "settings": {
@@ -116,20 +122,22 @@
         "1634409175ff664290-1": {
           "type": "featured_collection",
           "settings": {
-            "collection": "all"
+            "collection": "outerwear"
           }
         },
-        "1634409175ff664290-2": {
+        "b9bf0dbe-e184-45d6-8b8d-e81d5ddab8d1": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
-            "collection": "accessories"
+            "collection": ""
           }
         }
       },
       "block_order": [
+        "1634409175ff664290-2",
         "1634409175ff664290-0",
         "1634409175ff664290-1",
-        "1634409175ff664290-2"
+        "b9bf0dbe-e184-45d6-8b8d-e81d5ddab8d1"
       ],
       "settings": {
         "title": "De mest populære kategoriene",
