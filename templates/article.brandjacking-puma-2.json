@@ -79,7 +79,7 @@
         "1634409175ff664290-2": {
           "type": "featured_collection",
           "settings": {
-            "collection": "accessories"
+            "collection": "lopetights"
           }
         }
       },
@@ -101,7 +101,7 @@
       "type": "video",
       "settings": {
         "heading": "Seamless treningsklær",
-        "cover_image": "shopify:\/\/shop_images\/mobil-banner-seamless.jpg",
+        "cover_image": "shopify:\/\/shop_images\/lopetights-bannder.jpg",
         "video_url": "https:\/\/www.youtube.com\/watch?v=9H94y3SoyxI",
         "description": "Puma løpetights alternativ - treningstights med lommer",
         "full_width": false
