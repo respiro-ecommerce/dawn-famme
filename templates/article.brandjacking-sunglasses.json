@@ -133,6 +133,7 @@
     },
     "163438965009ed774b": {
       "type": "video",
+      "disabled": true,
       "settings": {
         "heading": "Ullundertøy i mykt merinoull",
         "cover_image": "shopify:\/\/shop_images\/ullundertoy.png",
