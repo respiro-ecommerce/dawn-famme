@@ -291,7 +291,9 @@
       "details": "Kontooplysninger",
       "view_addresses": "Se adresser",
       "return": "Tilbage til kontooplysninger",
-      "complaint_form": "Gå til klageformularen"
+      "complaint_form": "Gå til klageformularen",
+      "complaint_header": "Klageformular",
+      "return_form": "Gå til returformularen"
     },
     "account_fallback": "Konto",
     "activate_account": {
