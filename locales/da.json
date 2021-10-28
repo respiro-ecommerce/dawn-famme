@@ -290,7 +290,8 @@
       "title": "Konto",
       "details": "Kontooplysninger",
       "view_addresses": "Se adresser",
-      "return": "Tilbage til kontooplysninger"
+      "return": "Tilbage til kontooplysninger",
+      "complaint_form": "Gå til klageformularen"
     },
     "account_fallback": "Konto",
     "activate_account": {
