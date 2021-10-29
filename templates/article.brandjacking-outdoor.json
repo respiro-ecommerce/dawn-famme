@@ -25,23 +25,23 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/desktop-banner-host-oppdatert.jpg",
             "title": "Rask levering + gratis retur",
-            "text": "<p>tretornHos Famme får du kjøpe <strong>fri frakt <\/strong>og <strong>gratis retur <\/strong>på de nye turklærne dine! Du velger mellom Posten, Helthjem eller <strong>samme dags<\/strong> levering med Porterbuddy!<\/p>"
+            "text": "<p>Hos Famme får du kjøpe <strong>fri frakt <\/strong>og <strong>gratis retur <\/strong>på de nye turklærne dine! Du velger mellom Posten, Helthjem eller <strong>samme dags<\/strong> levering med Porterbuddy!<\/p>"
           }
         },
         "163438960122f1937a-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/MOBIL-BANNER-ENDORPHIN.jpg",
-            "title": "Bredt utvalg",
-            "text": "<p>Her hos Famme vil du oppleve et <strong>mangfold <\/strong>av muligheter. Vi har turbukser, hodeplagg, løpejakker, sko og mye mer! Vi har det perfekte turtøyet til deg som vil ha gode klær utendørs.<\/p>"
+            "image": "shopify:\/\/shop_images\/desktop-banner-outdoor.jpg",
+            "title": "Best på turklær",
+            "text": "<p>Famme tilbyr et bredt utvalg av turklær. Vi har jakker, turbukser, turshorts, ullundertøy, hodeplagg og mye mer! Vi har det perfekte turtøyet til deg som vil ha gode klær utendørs.<\/p>"
           }
         },
         "163438960122f1937a-0": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/turklaer-banner.jpg",
-            "title": "Best på tur- og sportsklær",
-            "text": "<p>Vi har et stort sortiment når det kommer til både turklær, sportsklær og mye annet til en <strong>rimelig<\/strong> pris. Ullundertøy, tur shorts- og bukser og ulike tekniske jakker for forskjellige anledninger. <\/p>"
+            "title": "Best på klær til all slags vær",
+            "text": "<p>Vi har et stort sortiment når det kommer til klær som tåler vind, regn og kulde. Hos Famme finner du skalljakker, regnjakker, <\/p><p>til en rimelig pris. <\/p>"
           }
         }
       },
