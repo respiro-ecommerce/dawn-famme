@@ -33,7 +33,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/desktop-banner-outdoor.jpg",
             "title": "Best på turklær",
-            "text": "<p>Famme tilbyr et bredt utvalg av turklær. Vi har jakker, turbukser, turshorts, ullundertøy, hodeplagg og mye mer! Vi har det perfekte turtøyet til deg som vil ha gode klær utendørs.<\/p>"
+            "text": "<p>Famme tilbyr et bredt utvalg av <strong>turklær<\/strong>. Vi har jakker, turbukser, turshorts, ullundertøy, hodeplagg og mye mer! Vi har det perfekte turtøyet til deg som vil ha <strong>gode klær utendørs<\/strong>.<\/p>"
           }
         },
         "163438960122f1937a-0": {
