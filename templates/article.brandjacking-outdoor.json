@@ -3,8 +3,8 @@
     "163454564855e20815": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/brandjacking-hellyhansen_479b36ba-2493-429e-a3f8-baed03bd8acd.png",
-        "image_m": "shopify:\/\/shop_images\/brandjacking-hellyhansen_5e15bdeb-4577-4230-a4b4-38cea7a4317f.png",
+        "image": "shopify:\/\/shop_images\/outdoor.collection.banner.jpg",
+        "image_m": "shopify:\/\/shop_images\/outdoor.collection.banner.jpg",
         "image_url": "",
         "image2_url": "",
         "image_height": "small",
@@ -39,7 +39,7 @@
         "163438960122f1937a-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/turklaer-banner.jpg",
+            "image": "shopify:\/\/shop_images\/waterproof.clothing.banner.jpg",
             "title": "Klær til all slags vær",
             "text": "<p>Vi har et stort sortiment når det kommer til klær som tåler <strong>vind<\/strong>, <strong>regn<\/strong> og <strong>kulde.<\/strong> Hos Famme finner du skalljakker, regnjakker, ulljakker, fleecejakker og mye mer til en <strong>rimelig<\/strong> pris. <\/p>"
           }
