@@ -41,7 +41,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/turklaer-banner.jpg",
             "title": "Best på klær til all slags vær",
-            "text": "<p>Vi har et stort sortiment når det kommer til klær som tåler vind, regn og kulde. Hos Famme finner du skalljakker, regnjakker, <\/p><p>til en rimelig pris. <\/p>"
+            "text": "<p>Vi har et stort sortiment når det kommer til klær som tåler <strong>vind<\/strong>, <strong>regn<\/strong> og <strong>kulde.<\/strong> Hos Famme finner du skalljakker, regnjakker, ulljakker, fleecejakker og mye mer til en <strong>rimelig<\/strong> pris. <\/p>"
           }
         }
       },
