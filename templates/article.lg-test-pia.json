@@ -84,117 +84,61 @@
         "16355051004a5ceefd-2"
       ],
       "settings": {
-        "title": "Multicolumn",
+        "title": "",
         "image_width": "full",
         "image_ratio": "circle",
         "column_alignment": "left",
         "background_style": "none",
-        "button_label": "Button label",
+        "button_label": "",
         "button_link": "",
         "swipe_on_mobile": false
       }
     },
-    "1635505017a6aff7b1": {
-      "type": "rich-text",
+    "16355051048117f4c8": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured collection",
+        "collection": "bestsellers",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    },
+    "1635505229ae372b2e": {
+      "type": "newsletter",
       "blocks": {
-        "1635505017a6aff7b1-0": {
+        "1635505229ae372b2e-0": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
+            "heading": "For flere gode tilbud i fremtiden"
           }
         },
-        "1635505017a6aff7b1-1": {
-          "type": "text",
+        "1635505229ae372b2e-1": {
+          "type": "paragraph",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
           }
         },
-        "1635505017a6aff7b1-2": {
-          "type": "button",
+        "1635505229ae372b2e-2": {
+          "type": "email_form",
           "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
           }
         }
       },
       "block_order": [
-        "1635505017a6aff7b1-0",
-        "1635505017a6aff7b1-1",
-        "1635505017a6aff7b1-2"
+        "1635505229ae372b2e-0",
+        "1635505229ae372b2e-1",
+        "1635505229ae372b2e-2"
       ],
       "settings": {
         "color_scheme": "background-1",
         "full_width": true
-      }
-    },
-    "1635505021b3c3a065": {
-      "type": "featured-product",
-      "blocks": {
-        "1635505021b3c3a065-0": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
-        "1635505021b3c3a065-1": {
-          "type": "title",
-          "settings": {
-          }
-        },
-        "1635505021b3c3a065-2": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
-          }
-        },
-        "1635505021b3c3a065-3": {
-          "type": "price",
-          "settings": {
-          }
-        },
-        "1635505021b3c3a065-4": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button"
-          }
-        },
-        "1635505021b3c3a065-5": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
-        "1635505021b3c3a065-6": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true
-          }
-        },
-        "1635505021b3c3a065-7": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
-        }
-      },
-      "block_order": [
-        "1635505021b3c3a065-0",
-        "1635505021b3c3a065-1",
-        "1635505021b3c3a065-2",
-        "1635505021b3c3a065-3",
-        "1635505021b3c3a065-4",
-        "1635505021b3c3a065-5",
-        "1635505021b3c3a065-6",
-        "1635505021b3c3a065-7"
-      ],
-      "settings": {
-        "product": "agility-wks-seamless-tights",
-        "secondary_background": false,
-        "hide_variants": false,
-        "enable_video_looping": false
       }
     },
     "main": {
@@ -232,8 +176,8 @@
   "order": [
     "16355047701a4d4584",
     "16355051004a5ceefd",
-    "1635505017a6aff7b1",
-    "1635505021b3c3a065",
+    "16355051048117f4c8",
+    "1635505229ae372b2e",
     "main"
   ]
 }
