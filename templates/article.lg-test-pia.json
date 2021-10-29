@@ -57,7 +57,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/brandjacking-bilde-solbriller.jpg",
-            "title": "Column",
+            "title": "Alltid fri frakt",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
           }
         },
@@ -65,7 +65,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Ready-Gym-Sack-Bag_1.jpg",
-            "title": "Column",
+            "title": "Stort utvalg",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
           }
         },
@@ -73,8 +73,8 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Knitted-Beanie-Beanie-2_1445x_65aa3179-b0b8-4ecb-99ff-61d78ccae2e2.jpg",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "title": "Gode tilbud",
+            "text": "<p><strong>Bruk rabattkoden KODE15 for 15% på ditt første kjøp.<\/strong> Bla bla bla<\/p>"
           }
         }
       },
