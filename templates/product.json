@@ -28,6 +28,11 @@
           "settings": {
           }
         },
+        "loox-rating": {
+          "type": "shopify:\/\/apps\/loox-photo-reviews\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -64,11 +69,6 @@
           "settings": {
             "share_label": "Share"
           }
-        },
-        "loox-rating": {
-          "type": "shopify:\/\/apps\/loox-photo-reviews\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
-          "settings": {
-          }
         }
       },
       "block_order": [
@@ -85,7 +85,7 @@
         "share"
       ],
       "settings": {
-        "enable_sticky_info": false,
+        "enable_sticky_info": true,
         "hide_variants": false,
         "enable_video_looping": false
       }
