@@ -31,32 +31,6 @@
     },
     "1631091164538140ed": {
       "type": "image-banner",
-      "blocks": {
-        "1631091164538140ed-0": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "medium"
-          }
-        },
-        "1631091164538140ed-2": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_label_1": "",
-            "button_link_1": "",
-            "button_style_secondary_1": true,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "1631091164538140ed-0",
-        "1631091164538140ed-2"
-      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/seamless-banner-desktop.jpg",
         "image_m": "shopify:\/\/shop_images\/seamless-mobil-banner_a7415265-2237-4512-b462-ae21a1aeb700.jpg",
@@ -240,14 +214,6 @@
     "162567093514930cfb": {
       "type": "rich-text",
       "blocks": {
-        "162567093514930cfb-0": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "",
-            "heading_size": "small"
-          }
-        },
         "162567093514930cfb-1": {
           "type": "text",
           "settings": {
@@ -264,7 +230,6 @@
         }
       },
       "block_order": [
-        "162567093514930cfb-0",
         "162567093514930cfb-1",
         "162567093514930cfb-2"
       ],
