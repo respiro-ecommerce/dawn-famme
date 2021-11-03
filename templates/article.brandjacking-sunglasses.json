@@ -33,7 +33,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/brandjacking-bilde-tilbehor_61507803-0118-4870-a5fc-9812ab94ebe6.jpg",
             "title": "Bredt utvalg av treningsartikler",
-            "text": "<p>Vi har løpejakker, sko, sportsbriller og en rekke andre sportsartikler! Vi har til og med <a href=\"\/products\/4flex-jeans\" title=\"\/products\/4flex-jeans\">jeans spesielt produsert for fitness damer<\/a> og andre hverdagsklær som er spesielt laget for de som er glad i å trene. <\/p>"
+            "text": "<p>Vi har tights, treningstopper, løpejakker, sko, sportsbriller og en rekke andre sportsartikler! Les mer om <a href=\"\/blogs\/merker\/raske-briller\" title=\"Raske briller - Dette må du vite\">utvalget vårt av raske briller<\/a>.<\/p>"
           }
         },
         "163438960122f1937a-0": {
@@ -41,7 +41,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/brandjacking-bilde-solbriller.jpg",
             "title": "Sportsbriller til trening og fritid",
-            "text": "<p>Vi har <strong>sportsbriller<\/strong> som egner seg enten til løping, ski eller til fritiden. Våre <strong>raske briller<\/strong> er utstyrt med to glass som man kan skifte ut ved behov, og sportsbrillene har justerbar lengde slik at de enklere passer deg!<\/p>"
+            "text": "<p>Vi har <strong>løpebriller<\/strong> som egner seg både til trening eller til hverdags. Våre <strong>raske briller<\/strong> er utstyrt med to glass som man kan skifte ut ved behov, og sportsbrillene har justerbar lengde slik at de enklere passer deg!<\/p>"
           }
         },
         "4d5425a2-d20d-4cbe-b08b-186ef830640e": {
@@ -60,7 +60,7 @@
         "4d5425a2-d20d-4cbe-b08b-186ef830640e"
       ],
       "settings": {
-        "title": "NYKUNDE15 gir - 15% på fullprisvarer",
+        "title": "NYKUNDE15 gir - 15% på sportsbriller",
         "image_width": "full",
         "image_ratio": "adapt",
         "column_alignment": "left",
@@ -73,7 +73,7 @@
     "1635254293ab48d8d3": {
       "type": "featured-collection",
       "settings": {
-        "title": "Sjekk ut tilbehør her",
+        "title": "Sjekk ut løpebrillene her",
         "collection": "accessories",
         "products_to_show": 4,
         "show_view_all": true,
