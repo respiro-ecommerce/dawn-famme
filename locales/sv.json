@@ -271,7 +271,7 @@
       "view_all": "Visa alla"
     },
     "collection_template": {
-      "title": "Produktserie",
+      "title": "Kollektion",
       "empty": "Inga produkter hittades",
       "use_fewer_filters_html": "Använd färre filter eller <a class=\"{{ class }}\" href=\"{{ link }}\">rensa alla<\/a>"
     },
