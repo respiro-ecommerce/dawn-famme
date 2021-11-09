@@ -170,6 +170,9 @@
       "sort_by_label": "Sortera efter:",
       "to": "Till",
       "clear_filter": "Rensa filter"
+    },
+    "bullets": {
+      "bullet_2": "POSTNORD, DHL"
     }
   },
   "templates": {
