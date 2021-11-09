@@ -281,7 +281,8 @@
       "return": "Återgå till kontouppgifter",
       "return_header": "Returformulär",
       "return_form": "Gå till returformuläret",
-      "complaint_header": "Klagomålsformulär"
+      "complaint_header": "Klagomålsformulär",
+      "complaint_form": "Gå till klagomålsformulär"
     },
     "account_fallback": "Konto",
     "activate_account": {
