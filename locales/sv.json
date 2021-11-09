@@ -278,7 +278,8 @@
       "title": "Konto",
       "details": "Kontouppgifter",
       "view_addresses": "Visa adresser",
-      "return": "Återgå till kontouppgifter"
+      "return": "Återgå till kontouppgifter",
+      "return_header": "Returformulär"
     },
     "account_fallback": "Konto",
     "activate_account": {
