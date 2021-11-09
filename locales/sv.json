@@ -178,7 +178,8 @@
     "model_sizes": "Modellstorlek:",
     "model_height": "Modellhöjd:",
     "composition": "Material:",
-    "color": "Färg"
+    "color": "Färg",
+    "sizing_recommendation_down": "Gå ner en storlek"
   },
   "templates": {
     "search": {
