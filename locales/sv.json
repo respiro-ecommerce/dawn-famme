@@ -177,7 +177,8 @@
     },
     "model_sizes": "Modellstorlek:",
     "model_height": "Modellhöjd:",
-    "composition": "Material:"
+    "composition": "Material:",
+    "color": "Färg:"
   },
   "templates": {
     "search": {
