@@ -51,12 +51,12 @@
         "4349053e-0c05-4576-b505-65b1de855a57"
       ],
       "settings": {
-        "title": "NYKUNDE15 for 15% rabatt på ordinære varer",
+        "title": "Fri frakt & retur, 100 dagers åpent kjøp",
         "image_width": "full",
         "image_ratio": "adapt",
         "column_alignment": "left",
         "background_style": "secondary",
-        "button_label": "Se hele vårt sortiment her",
+        "button_label": "Se hele vårt sortiment her!",
         "button_link": "shopify:\/\/collections\/all",
         "swipe_on_mobile": false
       }
