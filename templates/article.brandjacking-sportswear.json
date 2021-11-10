@@ -51,13 +51,13 @@
         "163438960122f1937a-0"
       ],
       "settings": {
-        "title": "NYKUNDE15 gir -15% på fullprisvarer",
+        "title": "Fri frakt & retur, 100 dagers åpent kjøp",
         "image_width": "full",
         "image_ratio": "adapt",
         "column_alignment": "left",
         "background_style": "secondary",
-        "button_label": "Se hele utvalget av treningsklær. Ikke glem rabatten!",
-        "button_link": "\/collections\/tights",
+        "button_label": "Se hele utvalget av treningsklær!",
+        "button_link": "shopify:\/\/collections\/all",
         "swipe_on_mobile": false
       }
     },
