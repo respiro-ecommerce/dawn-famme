@@ -57,7 +57,7 @@
         "column_alignment": "left",
         "background_style": "secondary",
         "button_label": "Se hele utvalget av treningsklær!",
-        "button_link": "shopify:\/\/collections\/all",
+        "button_link": "shopify:\/\/collections",
         "swipe_on_mobile": false
       }
     },
