@@ -3,8 +3,8 @@
     "1632220249ff5aaab9": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/desktop-host-banner.jpg",
-        "image_m": "shopify:\/\/shop_images\/mobil-host-banner.jpg",
+        "image": "shopify:\/\/shop_images\/singles-week-banner-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/singles-week-banner-mobil.jpg",
         "image_url": "shopify:\/\/collections\/hostmote",
         "image2_url": "",
         "image_height": "small",
