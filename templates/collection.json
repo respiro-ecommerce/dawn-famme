@@ -1,17 +1,5 @@
 {
   "sections": {
-    "1636629774a7d15456": {
-      "type": "btns",
-      "settings": {
-        "menu": "sports-bh-support",
-        "bg": "#8a9e93",
-        "color": "#fff",
-        "width": 182,
-        "padx": 10,
-        "pady": 0,
-        "radius": 15
-      }
-    },
     "16336882593877f2d6": {
       "type": "image-banner",
       "disabled": true,
@@ -87,7 +75,6 @@
     }
   },
   "order": [
-    "1636629774a7d15456",
     "16336882593877f2d6",
     "product-grid",
     "banner"
