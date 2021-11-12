@@ -1,5 +1,17 @@
 {
   "sections": {
+    "16367059392713d6ea": {
+      "type": "btns",
+      "settings": {
+        "menu": "treningstights",
+        "bg": "#8a9e93",
+        "color": "#fff",
+        "width": 165,
+        "padx": 10,
+        "pady": 0,
+        "radius": 15
+      }
+    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
@@ -38,6 +50,7 @@
     }
   },
   "order": [
+    "16367059392713d6ea",
     "product-grid",
     "1629364797037f49c2",
     "banner"
