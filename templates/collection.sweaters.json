@@ -5,7 +5,7 @@
       "settings": {
         "menu": "collection-sweaters",
         "bg": "#8a9e93",
-        "color": "#fff",
+        "color": "#ffffff",
         "width": 165,
         "padx": 10,
         "pady": 0,
@@ -34,11 +34,25 @@
         "show_collection_description": true,
         "show_collection_image": true
       }
+    },
+    "16367199067f470c8f": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Blog posts",
+        "blog": "gensere",
+        "post_limit": 3,
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "soft_background": false,
+        "show_view_all": true
+      }
     }
   },
   "order": [
     "1636718406c12749df",
     "product-grid",
-    "banner"
+    "banner",
+    "16367199067f470c8f"
   ]
 }
