@@ -1,5 +1,17 @@
 {
   "sections": {
+    "1636707364fb4b07e0": {
+      "type": "btns",
+      "settings": {
+        "menu": "collection-training-tops",
+        "bg": "#8a9e93",
+        "color": "#fff",
+        "width": 165,
+        "padx": 10,
+        "pady": 0,
+        "radius": 15
+      }
+    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
@@ -38,6 +50,7 @@
     }
   },
   "order": [
+    "1636707364fb4b07e0",
     "product-grid",
     "1629364797037f49c2",
     "banner"
