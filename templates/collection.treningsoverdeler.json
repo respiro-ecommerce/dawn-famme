@@ -1,9 +1,9 @@
 {
   "sections": {
-    "16367059392713d6ea": {
+    "1636707364fb4b07e0": {
       "type": "btns",
       "settings": {
-        "menu": "treningstights",
+        "menu": "collection-training-tops",
         "bg": "#8a9e93",
         "color": "#fff",
         "width": 165,
@@ -15,7 +15,7 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
-        "po": "sustainable-clothes",
+        "po": "treningsoverdeler",
         "products_per_page": 50,
         "image_ratio": "adapt",
         "show_secondary_image": true,
@@ -31,8 +31,8 @@
     "1629364797037f49c2": {
       "type": "featured-blog",
       "settings": {
-        "heading": "Alt om tights",
-        "blog": "tights",
+        "heading": "Les mer om treningstopper",
+        "blog": "treningstopper",
         "post_limit": 3,
         "show_image": true,
         "show_date": false,
@@ -50,7 +50,7 @@
     }
   },
   "order": [
-    "16367059392713d6ea",
+    "1636707364fb4b07e0",
     "product-grid",
     "1629364797037f49c2",
     "banner"
