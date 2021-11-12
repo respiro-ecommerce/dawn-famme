@@ -1,5 +1,17 @@
 {
   "sections": {
+    "1636715970222e9f6d": {
+      "type": "btns",
+      "settings": {
+        "menu": "collection-jeans",
+        "bg": "#8a9e93",
+        "color": "#fff",
+        "width": 165,
+        "padx": 10,
+        "pady": 0,
+        "radius": 15
+      }
+    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
@@ -10,6 +22,7 @@
         "add_image_padding": false,
         "show_image_outline": true,
         "show_vendor": false,
+        "show_rating": false,
         "enable_filtering": true,
         "enable_sorting": true,
         "collapse_on_larger_devices": false
@@ -37,6 +50,7 @@
     }
   },
   "order": [
+    "1636715970222e9f6d",
     "product-grid",
     "16293707771e417396",
     "banner"
