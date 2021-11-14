@@ -40,7 +40,7 @@
           {% endif %}">
           {%- for product in collection.products -%}
             {%- if product.tags contains 'pre-order' and collection.handle != section.settings.po -%}{%- continue -%}{%- endif -%}
-            {%- if product.tags contains 'hide-product' -%}{%- continue -%}{%- endif -%}
+            {%- if product.tags contains 'hide-product' and collection.handle != "vareprover" -%}{%- continue -%}{%- endif -%}
             <li class="grid__item">
               {% render 'product-card',
                 product_card_product: product,
