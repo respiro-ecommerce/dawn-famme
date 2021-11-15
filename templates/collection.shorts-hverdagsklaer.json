@@ -5,7 +5,7 @@
       "settings": {
         "menu": "collection-shorts",
         "bg": "#8a9e93",
-        "color": "#fff",
+        "color": "#ffffff",
         "width": 165,
         "padx": 10,
         "pady": 0,
@@ -38,7 +38,7 @@
     "1636719247bb1ac7bc": {
       "type": "featured-blog",
       "settings": {
-        "heading": "Blog posts",
+        "heading": "Les mer om våre shorts",
         "blog": "shorts",
         "post_limit": 3,
         "show_image": true,
