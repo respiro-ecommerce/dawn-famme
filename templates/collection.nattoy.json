@@ -10,6 +10,7 @@
         "add_image_padding": false,
         "show_image_outline": true,
         "show_vendor": false,
+        "show_rating": false,
         "enable_filtering": true,
         "enable_sorting": true,
         "collapse_on_larger_devices": false
@@ -18,7 +19,7 @@
     "16297271252dae16bd": {
       "type": "featured-blog",
       "settings": {
-        "heading": "Blogposts",
+        "heading": "Les mer om vårt nattøy",
         "blog": "nattoy",
         "post_limit": 3,
         "show_image": true,
