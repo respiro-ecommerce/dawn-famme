@@ -238,33 +238,6 @@
         "full_width": true
       }
     },
-    "1631185614bd4a3575": {
-      "type": "rich-text",
-      "blocks": {
-        "1631185614bd4a3575-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Se vårt utvalg av praktiske og allsidige turklær. Alt fra ullundertøy til funksjonelle ytterjakker med god passform. <\/p>"
-          }
-        },
-        "1631185614bd4a3575-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Shop turklær",
-            "button_link": "shopify:\/\/collections\/turklaer",
-            "button_style_secondary": true
-          }
-        }
-      },
-      "block_order": [
-        "1631185614bd4a3575-1",
-        "1631185614bd4a3575-2"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true
-      }
-    },
     "16311853465cfb015e": {
       "type": "image-banner",
       "settings": {
@@ -409,7 +382,6 @@
     "1626547460af5b6361",
     "1627381930323ba3ea",
     "162567093514930cfb",
-    "1631185614bd4a3575",
     "16311853465cfb015e",
     "16311858004f885fc1",
     "163017253755809ec3",
