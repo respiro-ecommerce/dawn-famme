@@ -3,11 +3,11 @@
     "163117812908a522c8": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/turklaer-banner.jpg",
-        "image_m": "shopify:\/\/shop_images\/turklaer-banner-mobil.jpg",
+        "image": "shopify:\/\/shop_images\/OUTDOOR-BANNER-DESKTOP.jpg",
+        "image_m": "shopify:\/\/shop_images\/OUTDOOR-MOBIL.jpg",
         "image_url": "shopify:\/\/collections\/turklaer",
         "image2_url": "",
-        "image_height": "large",
+        "image_height": "small",
         "adapt_height_first_image": false,
         "desktop_text_box_position": "center",
         "show_text_box": true,
@@ -362,7 +362,7 @@
         "162567415706bdadcd-1": {
           "type": "text",
           "settings": {
-            "text": "BLI MED I NORGES STØRSTE PRODUKTUTVIKLINGSGRUPPE MED FLERE TITUSENER MEDLEMMER I NORGE!"
+            "text": "BLI MED I NORGES STØRSTE PRODUKTUTVIKLINGSGRUPPE MED OVER 23.000 MEDLEMMER I NORGE!"
           }
         },
         "162567415706bdadcd-2": {
