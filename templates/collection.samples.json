@@ -1,5 +1,31 @@
 {
   "sections": {
+    "163708674325acc672": {
+      "type": "rich-text",
+      "blocks": {
+        "1637086743814ccfb2-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "1 produkt per kunde",
+            "heading_size": "h1"
+          }
+        },
+        "1637086743814ccfb2-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Du kan kun kjøpe vareprøvene om du <strong>aldri har handlet<\/strong> før hos Famme, det er kun ett produkt per kunde. Så om man legger en underdel i kurven kan man ikke samtidig legge en overdel. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1637086743814ccfb2-0",
+        "1637086743814ccfb2-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
@@ -22,24 +48,11 @@
         "show_collection_description": true,
         "show_collection_image": true
       }
-    },
-    "16370865790cdc6d22": {
-      "type": "loox-carousel-reviews",
-      "settings": {
-        "max_width": 1920,
-        "arrows_color": "",
-        "dots_color": "",
-        "button_color": "",
-        "show_more": false,
-        "only_photos": true,
-        "use_widget_font": false,
-        "product_handle": "vortex-seamless-tights"
-      }
     }
   },
   "order": [
+    "163708674325acc672",
     "product-grid",
-    "banner",
-    "16370865790cdc6d22"
+    "banner"
   ]
 }
