@@ -22,10 +22,24 @@
         "show_collection_description": true,
         "show_collection_image": true
       }
+    },
+    "16370865790cdc6d22": {
+      "type": "loox-carousel-reviews",
+      "settings": {
+        "max_width": 1920,
+        "arrows_color": "",
+        "dots_color": "",
+        "button_color": "",
+        "show_more": false,
+        "only_photos": true,
+        "use_widget_font": false,
+        "product_handle": "vortex-seamless-tights"
+      }
     }
   },
   "order": [
     "product-grid",
-    "banner"
+    "banner",
+    "16370865790cdc6d22"
   ]
 }
