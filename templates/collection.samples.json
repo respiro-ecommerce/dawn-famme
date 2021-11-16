@@ -42,6 +42,41 @@
         "collapse_on_larger_devices": false
       }
     },
+    "1637088881735715ca": {
+      "type": "rich-text",
+      "blocks": {
+        "16370888812cff5d04-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "25000 norske medlemmer",
+            "heading_size": "h1"
+          }
+        },
+        "16370888812cff5d04-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Bli med å utvikle fremtidens klær i vår norske Facebook-gruppe med over 25000 medlemmer<\/p>"
+          }
+        },
+        "16370888812cff5d04-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "BLI MED",
+            "button_link": "https:\/\/www.facebook.com\/groups\/fammeproduktutvikling",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "16370888812cff5d04-0",
+        "16370888812cff5d04-1",
+        "16370888812cff5d04-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
     "banner": {
       "type": "main-collection-banner",
       "settings": {
@@ -53,6 +88,7 @@
   "order": [
     "163708674325acc672",
     "product-grid",
+    "1637088881735715ca",
     "banner"
   ]
 }
