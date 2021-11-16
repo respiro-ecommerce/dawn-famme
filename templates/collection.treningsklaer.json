@@ -3,9 +3,9 @@
     "1637073829b37223e9": {
       "type": "btns",
       "settings": {
-        "menu": "",
+        "menu": "collection-training",
         "bg": "#8a9e93",
-        "color": "#fff",
+        "color": "#ffffff",
         "width": 165,
         "padx": 10,
         "pady": 0,
