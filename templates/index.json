@@ -17,6 +17,23 @@
         "show_text_below": true
       }
     },
+    "1631091164538140ed": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/seamless-banner-hvit-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/seamless-banner-hvit-mobil.jpg",
+        "image_url": "shopify:\/\/collections\/seamless-treningsklaer-dame",
+        "image2_url": "",
+        "image_height": "large",
+        "adapt_height_first_image": false,
+        "desktop_text_box_position": "center",
+        "show_text_box": true,
+        "image_overlay_opacity": 0,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "1626547460af5b6361": {
       "type": "featured-collection",
       "settings": {
@@ -106,50 +123,6 @@
         "full_width": true
       }
     },
-    "1631091164538140ed": {
-      "type": "image-banner",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/seamless-banner-hvit-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/seamless-banner-hvit-mobil.jpg",
-        "image_url": "shopify:\/\/collections\/seamless-treningsklaer-dame",
-        "image2_url": "",
-        "image_height": "large",
-        "adapt_height_first_image": false,
-        "desktop_text_box_position": "center",
-        "show_text_box": true,
-        "image_overlay_opacity": 0,
-        "color_scheme": "background-1",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
-    "1627975102451ca4ce": {
-      "type": "rich-text",
-      "blocks": {
-        "1627975102451ca4ce-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Sjekk ut vår seamless kolleksjon her. Vi har seamless tights, sports-bh, topper og undertøy.<\/p>"
-          }
-        },
-        "1627975102451ca4ce-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "SHOP HER",
-            "button_link": "shopify:\/\/collections\/seamless-treningsklaer-dame",
-            "button_style_secondary": true
-          }
-        }
-      },
-      "block_order": [
-        "1627975102451ca4ce-1",
-        "1627975102451ca4ce-2"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true
-      }
-    },
     "16252134879571dabc": {
       "type": "image-banner",
       "settings": {
@@ -196,6 +169,19 @@
     },
     "16311853465cfb015e": {
       "type": "image-banner",
+      "blocks": {
+        "ab5485eb-d85f-4880-a7e6-6fba94a75261": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "ab5485eb-d85f-4880-a7e6-6fba94a75261"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/LOUNGEWEAR.jpg",
         "image_m": "shopify:\/\/shop_images\/loungwear-banner-mobil.jpg",
@@ -321,13 +307,12 @@
   },
   "order": [
     "1627381930323ba3ea",
+    "1631091164538140ed",
     "1626547460af5b6361",
     "163117812908a522c8",
     "1629993086223521d8",
     "1631094390263d97d1",
     "16310987573101b9c4",
-    "1631091164538140ed",
-    "1627975102451ca4ce",
     "16252134879571dabc",
     "1631100157d2b633af",
     "16311853465cfb015e",
