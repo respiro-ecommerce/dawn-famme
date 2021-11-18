@@ -17,6 +17,18 @@
         "show_text_below": true
       }
     },
+    "1629993086223521d8": {
+      "type": "btns",
+      "settings": {
+        "menu": "test-meny",
+        "bg": "#8a9e93",
+        "color": "#ffffff",
+        "width": 150,
+        "padx": 10,
+        "pady": 7,
+        "radius": 49
+      }
+    },
     "1631091164538140ed": {
       "type": "image-banner",
       "settings": {
@@ -48,35 +60,6 @@
         "show_image_outline": true,
         "show_vendor": false,
         "show_rating": false
-      }
-    },
-    "163117812908a522c8": {
-      "type": "image-banner",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/OUTDOOR-BANNER-DESKTOP.jpg",
-        "image_m": "shopify:\/\/shop_images\/OUTDOOR-MOBIL.jpg",
-        "image_url": "shopify:\/\/collections\/turklaer",
-        "image2_url": "",
-        "image_height": "small",
-        "adapt_height_first_image": false,
-        "desktop_text_box_position": "center",
-        "show_text_box": true,
-        "image_overlay_opacity": 0,
-        "color_scheme": "background-1",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
-    "1629993086223521d8": {
-      "type": "btns",
-      "settings": {
-        "menu": "test-meny",
-        "bg": "#8a9e93",
-        "color": "#ffffff",
-        "width": 150,
-        "padx": 10,
-        "pady": 7,
-        "radius": 49
       }
     },
     "1631094390263d97d1": {
@@ -121,6 +104,23 @@
       "settings": {
         "color_scheme": "background-1",
         "full_width": true
+      }
+    },
+    "163117812908a522c8": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/OUTDOOR-BANNER-DESKTOP.jpg",
+        "image_m": "shopify:\/\/shop_images\/OUTDOOR-MOBIL.jpg",
+        "image_url": "shopify:\/\/collections\/turklaer",
+        "image2_url": "",
+        "image_height": "small",
+        "adapt_height_first_image": false,
+        "desktop_text_box_position": "center",
+        "show_text_box": true,
+        "image_overlay_opacity": 0,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
       }
     },
     "16252134879571dabc": {
@@ -307,12 +307,12 @@
   },
   "order": [
     "1627381930323ba3ea",
+    "1629993086223521d8",
     "1631091164538140ed",
     "1626547460af5b6361",
-    "163117812908a522c8",
-    "1629993086223521d8",
     "1631094390263d97d1",
     "16310987573101b9c4",
+    "163117812908a522c8",
     "16252134879571dabc",
     "1631100157d2b633af",
     "16311853465cfb015e",
