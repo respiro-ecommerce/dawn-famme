@@ -4,7 +4,7 @@
       "type": "image-banner",
       "settings": {
         "image": "shopify:\/\/shop_images\/499-sko-banner-desktop.jpg",
-        "image_url": "",
+        "image_url": "shopify:\/\/collections\/shoes",
         "image2_url": "",
         "image_height": "medium",
         "adapt_height_first_image": false,
