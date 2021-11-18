@@ -18,6 +18,7 @@
     },
     "1627292389ca72a7b5": {
       "type": "image-banner",
+      "disabled": true,
       "blocks": {
         "1627292389ca72a7b5-0": {
           "type": "heading",
@@ -212,7 +213,6 @@
       "blocks": {
         "title": {
           "type": "title",
-          "disabled": true,
           "settings": {
             "blog_show_date": true,
             "blog_show_author": false
