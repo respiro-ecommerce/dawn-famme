@@ -251,6 +251,57 @@
         "soft_background": false,
         "show_view_all": true
       }
+    },
+    "1637245732da5687c0": {
+      "type": "image-banner",
+      "blocks": {
+        "163724573283ae8b02-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "medium"
+          }
+        },
+        "163724573283ae8b02-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template."
+          }
+        },
+        "163724573283ae8b02-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Til salget",
+            "button_link_1": "shopify:\/\/collections\/shoes",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "163724573283ae8b02-0",
+        "163724573283ae8b02-1",
+        "163724573283ae8b02-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/499-sko-banner-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/499-sko-banner-mobil.jpg",
+        "image_url": "",
+        "image2_url": "",
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_text_box_position": "center",
+        "show_text_box": true,
+        "image_overlay_opacity": 0,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
     }
   },
   "order": [
@@ -262,6 +313,7 @@
     "1627375263297eafc8",
     "1627294046e0366cc1",
     "main",
-    "1632303734c1afc161"
+    "1632303734c1afc161",
+    "1637245732da5687c0"
   ]
 }
