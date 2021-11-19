@@ -1,5 +1,22 @@
 {
   "sections": {
+    "16373290891b389eea": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/treningsdagbok-banner.jpg",
+        "image_m": "shopify:\/\/shop_images\/treningsdagbok-banner.jpg",
+        "image_url": "",
+        "image2_url": "",
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_text_box_position": "center",
+        "show_text_box": true,
+        "image_overlay_opacity": 0,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "main": {
       "type": "main-page",
       "settings": {
@@ -7,6 +24,7 @@
     }
   },
   "order": [
+    "16373290891b389eea",
     "main"
   ]
 }
