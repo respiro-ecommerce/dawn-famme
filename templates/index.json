@@ -29,6 +29,56 @@
         "radius": 49
       }
     },
+    "1637318286d17c83bb": {
+      "type": "image-banner",
+      "blocks": {
+        "163731828688a1484d-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "medium"
+          }
+        },
+        "163731828688a1484d-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template."
+          }
+        },
+        "163731828688a1484d-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "163731828688a1484d-0",
+        "163731828688a1484d-1",
+        "163731828688a1484d-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/banner-giveaway-vinner.jpg",
+        "image_url": "",
+        "image2_url": "",
+        "image_height": "large",
+        "adapt_height_first_image": true,
+        "desktop_text_box_position": "center",
+        "show_text_box": true,
+        "image_overlay_opacity": 0,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "1631091164538140ed": {
       "type": "image-banner",
       "settings": {
@@ -308,6 +358,7 @@
   "order": [
     "1627381930323ba3ea",
     "1629993086223521d8",
+    "1637318286d17c83bb",
     "1631091164538140ed",
     "1626547460af5b6361",
     "1631094390263d97d1",
