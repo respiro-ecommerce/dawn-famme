@@ -2,38 +2,9 @@
   "sections": {
     "1637324195715585ab": {
       "type": "image-banner",
-      "blocks": {
-        "16373241957fcf4162-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "medium"
-          }
-        },
-        "16373241957fcf4162-1": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template."
-          }
-        },
-        "16373241957fcf4162-2": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "16373241957fcf4162-0",
-        "16373241957fcf4162-1",
-        "16373241957fcf4162-2"
-      ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/rabattkode-famme-banner.jpg",
+        "image_m": "shopify:\/\/shop_images\/rabattkode-famme-banner.jpg",
         "image_url": "",
         "image2_url": "",
         "image_height": "medium",
