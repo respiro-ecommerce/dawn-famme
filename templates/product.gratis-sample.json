@@ -1,5 +1,31 @@
 {
   "sections": {
+    "1637404915227d6812": {
+      "type": "rich-text",
+      "blocks": {
+        "1637404915955794cd-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Hvorfor gir vi ett produkt?",
+            "heading_size": "h1"
+          }
+        },
+        "1637404915955794cd-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Vi tror at du kommer til å handle igjen, og tar sjansen på å gi ett gratis produkt til hver nye kunde. Håper du gir oss en sjanse 🙌<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1637404915955794cd-0",
+        "1637404915955794cd-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -124,6 +150,7 @@
     }
   },
   "order": [
+    "1637404915227d6812",
     "main",
     "product-recommendations",
     "loox-product-reviews-app-section"
