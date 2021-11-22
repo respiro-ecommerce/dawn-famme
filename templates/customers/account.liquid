@@ -26,6 +26,10 @@
                 <th id="ColumnPayment" scope="col" role="columnheader">{{ 'customer.orders.payment_status' | t }}</th>
                 <th id="ColumnFulfillment" scope="col" role="columnheader">{{ 'customer.orders.fulfillment_status' | t }}</th>
                 <th id="ColumnTotal" scope="col" role="columnheader">{{ 'customer.orders.total' | t }}</th>
+<!--BeginOrderifyTh-->
+<th>Edit or Cancel</th>
+
+<!--EndOrderifyTh-->
               </tr>
             </thead>
             <tbody role="rowgroup">
@@ -52,6 +56,10 @@
                   </td>
                   <td headers="RowOrder ColumnTotal" role="cell" data-label="{{ 'customer.orders.total' | t }}">
                     {{ order.total_price | money_with_currency }}</td>
+<!--BeginOrderifyTd-->
+<td><a target="_blank" href="https://shopify-order-edit.herokuapp.com/order-editor/famme-international.myshopify.com/{{order.id}}">Edit or Cancel</a></td>
+
+<!--EndOrderifyTd-->
                 </tr>
               {%- endfor -%}
             </tbody>
