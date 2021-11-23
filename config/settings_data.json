@@ -91,7 +91,7 @@
             "type": "link_list",
             "settings": {
               "heading": "Produktblogg",
-              "menu": "blogg"
+              "menu": "produktblogg"
             }
           }
         },
