@@ -29,13 +29,14 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "Vipps & Klarna | Fri frakt* | 100 dagers åpent kjøp",
+              "text": "Vipps & Klarna | Fri frakt og levering samme dag* | 100 dagers åpent kjøp",
               "color_scheme": "accent-1",
               "link": ""
             }
           },
           "20b12512-f6e3-4849-b434-ee1b29812f58": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "Bestill nå, få levert i dag med Porterbuddy",
               "color_scheme": "accent-1",
