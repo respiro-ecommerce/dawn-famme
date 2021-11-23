@@ -5,8 +5,8 @@
       "settings": {
         "menu": "blogs",
         "bg": "#8a9e93",
-        "color": "#fff",
-        "width": 180,
+        "color": "#ffffff",
+        "width": 170,
         "padx": 16,
         "pady": 4,
         "radius": 18
