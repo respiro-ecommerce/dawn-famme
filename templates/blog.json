@@ -6,7 +6,7 @@
         "menu": "blogs",
         "bg": "#8a9e93",
         "color": "#ffffff",
-        "width": 166,
+        "width": 160,
         "padx": 16,
         "pady": 4,
         "radius": 18
