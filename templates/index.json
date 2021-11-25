@@ -173,6 +173,13 @@
         "show_text_below": true
       }
     },
+    "1637832590a0b9bb0a": {
+      "type": "rich-text",
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
     "16252134879571dabc": {
       "type": "image-banner",
       "settings": {
@@ -364,6 +371,7 @@
     "1631094390263d97d1",
     "16310987573101b9c4",
     "163117812908a522c8",
+    "1637832590a0b9bb0a",
     "16252134879571dabc",
     "1631100157d2b633af",
     "16311853465cfb015e",
