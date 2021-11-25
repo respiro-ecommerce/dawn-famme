@@ -3,11 +3,11 @@
     "1627381930323ba3ea": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/499-sko-banner-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/499-sko-banner-mobil.jpg",
-        "image_url": "shopify:\/\/products\/endorphin-rx1-shoes",
-        "image2_url": "shopify:\/\/products\/endorphin-rx1-shoes",
-        "image_height": "large",
+        "image": "shopify:\/\/shop_images\/black-friday-banner-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/black-friday-banner-mobil.jpg",
+        "image_url": "shopify:\/\/collections\/black-friday",
+        "image2_url": "",
+        "image_height": "small",
         "adapt_height_first_image": false,
         "desktop_text_box_position": "center",
         "show_text_box": true,
