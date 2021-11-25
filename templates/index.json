@@ -100,7 +100,7 @@
       "type": "featured-collection",
       "settings": {
         "title": "Bestselgere",
-        "collection": "black-friday",
+        "collection": "bestsellers",
         "products_to_show": 4,
         "show_view_all": false,
         "swipe_on_mobile": false,
