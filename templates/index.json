@@ -46,6 +46,43 @@
         "show_text_below": true
       }
     },
+    "16379195950265d473": {
+      "type": "rich-text",
+      "blocks": {
+        "163791959572b3c503-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP SCRUNCH",
+            "button_link": "shopify:\/\/collections\/scrunch",
+            "button_style_secondary": false
+          }
+        },
+        "163791959572b3c503-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "163791959572b3c503-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "163791959572b3c503-2",
+        "163791959572b3c503-0",
+        "163791959572b3c503-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
     "1631091164538140ed": {
       "type": "image-banner",
       "settings": {
@@ -371,49 +408,13 @@
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
-    },
-    "16379195950265d473": {
-      "type": "rich-text",
-      "blocks": {
-        "163791959572b3c503-0": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
-          }
-        },
-        "163791959572b3c503-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "SHOP SCRUNCH",
-            "button_link": "shopify:\/\/collections\/scrunch",
-            "button_style_secondary": false
-          }
-        },
-        "163791959572b3c503-1": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "163791959572b3c503-0",
-        "163791959572b3c503-2",
-        "163791959572b3c503-1"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true
-      }
     }
   },
   "order": [
     "1627381930323ba3ea",
     "1629993086223521d8",
     "1631094390263d97d1",
+    "16379195950265d473",
     "1631091164538140ed",
     "1626547460af5b6361",
     "163117812908a522c8",
@@ -426,7 +427,6 @@
     "1637919137a21e9a1a",
     "1637318286d17c83bb",
     "1629157352b193f90f",
-    "162567415706bdadcd",
-    "16379195950265d473"
+    "162567415706bdadcd"
   ]
 }
