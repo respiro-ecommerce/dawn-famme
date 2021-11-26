@@ -51,6 +51,42 @@
         "show_text_below": true
       }
     },
+    "1637922319419b6f6c": {
+      "type": "rich-text",
+      "blocks": {
+        "16379223194d1f9dbf-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "VINN EN IPHONE 13!",
+            "heading_size": "h2"
+          }
+        },
+        "16379223194d1f9dbf-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Black Friday er i gang og vi gir bort en iPhone 13. 🤩<br\/><br\/>Regler:<br\/>1. Følg <a href=\"https:\/\/www.instagram.com\/famme\/\">@famme<\/a><br\/>2. Like & kommenter \"black friday\"<br\/>3. Del denne posten på din story & tagg oss<br\/><br\/>Konkurransen avsluttes mandag 29.11 klokken 23:59.<\/p>"
+          }
+        },
+        "16379223194d1f9dbf-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "16379223194d1f9dbf-0",
+        "16379223194d1f9dbf-1",
+        "16379223194d1f9dbf-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
@@ -78,6 +114,7 @@
   },
   "order": [
     "16379217684b960450",
+    "1637922319419b6f6c",
     "product-grid",
     "banner"
   ]
