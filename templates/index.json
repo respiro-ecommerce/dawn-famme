@@ -90,6 +90,56 @@
         "show_rating": false
       }
     },
+    "1638543882705deea9": {
+      "type": "image-banner",
+      "blocks": {
+        "163854388249e51816-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "medium"
+          }
+        },
+        "163854388249e51816-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template."
+          }
+        },
+        "163854388249e51816-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "163854388249e51816-0",
+        "163854388249e51816-1",
+        "163854388249e51816-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/sko-banner-ny-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/sko-banner-ny-mobil.jpg",
+        "image_url": "",
+        "image2_url": "",
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_text_box_position": "center",
+        "show_text_box": true,
+        "image_overlay_opacity": 0,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "163117812908a522c8": {
       "type": "image-banner",
       "settings": {
@@ -315,57 +365,6 @@
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
-    },
-    "1638543882705deea9": {
-      "type": "image-banner",
-      "blocks": {
-        "163854388249e51816-0": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "medium"
-          }
-        },
-        "163854388249e51816-1": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template."
-          }
-        },
-        "163854388249e51816-2": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "163854388249e51816-0",
-        "163854388249e51816-1",
-        "163854388249e51816-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/sko-banner-ny-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/sko-banner-ny-mobil.jpg",
-        "image_url": "",
-        "image2_url": "",
-        "image_height": "medium",
-        "adapt_height_first_image": false,
-        "desktop_text_box_position": "center",
-        "show_text_box": true,
-        "image_overlay_opacity": 0,
-        "color_scheme": "background-1",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
     }
   },
   "order": [
@@ -374,6 +373,7 @@
     "1631094390263d97d1",
     "16379195950265d473",
     "1626547460af5b6361",
+    "1638543882705deea9",
     "163117812908a522c8",
     "1637832590a0b9bb0a",
     "16252134879571dabc",
@@ -382,7 +382,6 @@
     "16311858004f885fc1",
     "1637919137a21e9a1a",
     "1629157352b193f90f",
-    "162567415706bdadcd",
-    "1638543882705deea9"
+    "162567415706bdadcd"
   ]
 }
