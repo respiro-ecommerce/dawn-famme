@@ -95,6 +95,7 @@
       "blocks": {
         "163854388249e51816-0": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "",
             "heading_size": "medium"
