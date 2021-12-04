@@ -129,7 +129,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/sko-banner-ny-desktop.jpg",
         "image_m": "shopify:\/\/shop_images\/sko-banner-ny-mobil.jpg",
-        "image_url": "",
+        "image_url": "\/products\/endorphin-rx1-shoes",
         "image2_url": "",
         "image_height": "medium",
         "adapt_height_first_image": false,
