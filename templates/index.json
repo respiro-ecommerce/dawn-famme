@@ -110,8 +110,8 @@
     "163117812908a522c8": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/OUTDOOR-BANNER-DESKTOP.jpg",
-        "image_m": "shopify:\/\/shop_images\/OUTDOOR-MOBIL_1.jpg",
+        "image": "shopify:\/\/shop_images\/outdoor-banner-smal_1.jpg",
+        "image_m": "shopify:\/\/shop_images\/outdoor-banner-smal-mobil.jpg",
         "image_url": "shopify:\/\/collections\/turklaer",
         "image2_url": "",
         "image_height": "small",
