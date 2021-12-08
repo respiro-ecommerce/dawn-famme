@@ -134,6 +134,9 @@
     <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
 
 	{{ shop.metafields.loox["global_html_head"] }}
+    {% if template contains 'product' or template.suffix == 'okendo-reviews' %}
+    {{ 'okendo-reviews.js' | asset_url | script_tag }}
+    {% endif %}     
 </head>
 
   <body class="gradient">
