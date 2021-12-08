@@ -70,7 +70,7 @@
     "loading": "Laddar ...",
     "skip_to_product_info": "Gå vidare till produktinformation",
     "of": "av",
-    "total_reviews": "totalt antal recensioner",
+    "total_reviews": "totalt recensioner",
     "star_reviews_info": "{{ rating_value }} av {{ rating_max }} stjärnor"
   },
   "blogs": {
@@ -126,8 +126,8 @@
         "view_store_info": "Visa butiksinformation",
         "check_other_stores": "Kontrollerar tillgänglighet i andra butiker",
         "pick_up_available": "Hämtning tillgänglig",
-        "pick_up_available_at_html": "Hämtning tillgänglig på <span class=\"color-foreground\">{{ location_name }}<\/span>",
-        "pick_up_unavailable_at_html": "Det går för närvarande inte att få hämtning på <span class=\"color-foreground\">{{ location_name }}<\/span>",
+        "pick_up_available_at_html": "Hämtad från <span class = \"color-foreground\"> ​​​​{{location_name}} <\/span>",
+        "pick_up_unavailable_at_html": "Hämtning är för närvarande inte tillgänglig på <span class = \"color-foreground\"> ​​​​{{location_name}} <\/span>",
         "unavailable": "Det gick inte att ladda hämtningstillgänglighet",
         "refresh": "Uppdatera"
       },

@@ -1,17 +1,5 @@
 {
   "sections": {
-    "1636715970222e9f6d": {
-      "type": "btns",
-      "settings": {
-        "menu": "collection-jeans",
-        "bg": "#8a9e93",
-        "color": "#fff",
-        "width": 165,
-        "padx": 10,
-        "pady": 0,
-        "radius": 15
-      }
-    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
@@ -50,7 +38,6 @@
     }
   },
   "order": [
-    "1636715970222e9f6d",
     "product-grid",
     "16293707771e417396",
     "banner"
