@@ -87,11 +87,7 @@
             </p>
           {%- when 'title' -%}
             <h1 class="product__title" {{ block.shopify_attributes }}>
-              {% if product.tags contains "pre-order" %}
-                {{ product.title | escape }} - Reserveringsvare
-              {% else %}
-                {{ product.title | escape }}
-              {% endif %}
+              {{ product.title | escape }}
             </h1>
           {%- when 'price' -%}
             <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
@@ -119,19 +115,7 @@
           {% endfor %}
 
           {%- when 'description' -%}
-            {% if product.tags contains "pre-order" %}
-              <p><b>{{ "products.reserve" | t }}</b></p>
-            {% endif %}
-            {% render 'product-bullets' %}
-            <p><b>{{ sizing_recommendation }}</b></p>
-            {% if product.tags contains "pre-order" %}
-              <p><b>Dette er en  <a href="/blogs/baerekraft/pre-order">reserveringsvare</a></b></p>
-              <ul>
-                <li>{{ "products.pre_order_information_estimated_arrival" | t }} {{ product.metafields.my_fields.pre_order_arrival_date }} </li>
-                <li>{{ "products.pre_order_information_price_reserving" | t }}</li>
-                <li>{{ "products.pre_order_information_in_stock_items_seperated" | t }}  </li>
-              </ul>
-            {% endif %}
+                <p><b>{{ sizing_recommendation }}</b></p>
             {%- if product.description != blank -%}
               <div class="product__description rte">
                 {{ product.description }}
