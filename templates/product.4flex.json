@@ -16,6 +16,12 @@
           "settings": {
           }
         },
+        "a5f2d9f3-2080-48e0-845d-d983e084bdb0": {
+          "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/star-rating\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
         "subtitle": {
           "type": "text",
           "settings": {
@@ -69,6 +75,7 @@
       "block_order": [
         "vendor",
         "title",
+        "a5f2d9f3-2080-48e0-845d-d983e084bdb0",
         "subtitle",
         "price",
         "variant_picker",
@@ -123,6 +130,7 @@
         "image_url": "",
         "image_2": "shopify:\/\/shop_images\/4flex-blue_8_1f822290-512d-47eb-b52a-089a2353960c.jpg",
         "image2_url": "",
+        "image_height": "medium",
         "adapt_height_first_image": false,
         "desktop_text_box_position": "center",
         "show_text_box": true,
@@ -247,7 +255,9 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/4flex-svanemerket.jpg",
             "title": "Super stretchy",
-            "text": ""
+            "text": "",
+            "link_label": "",
+            "link": ""
           }
         },
         "1629375878e5f359bb-1": {
@@ -255,7 +265,9 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/solid-black-4flex-jeans-4_550x_76a8859b-a108-4f9d-be3b-f4f90d55e917.jpg",
             "title": "Fine detaljer",
-            "text": ""
+            "text": "",
+            "link_label": "",
+            "link": ""
           }
         },
         "1629375878e5f359bb-0": {
@@ -263,7 +275,9 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/solid-black-4flex-jeans-1_550x_0975a507-9acf-4e03-bf59-7923ffa4fa60.jpg",
             "title": "Perfekt passform",
-            "text": ""
+            "text": "",
+            "link_label": "",
+            "link": ""
           }
         }
       },
@@ -281,6 +295,24 @@
         "button_label": "",
         "button_link": "",
         "swipe_on_mobile": false
+      }
+    },
+    "1638934166e72cfed3": {
+      "type": "apps",
+      "blocks": {
+        "6b7485c1-3448-42e8-a295-6ee086dd2562": {
+          "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}",
+            "widget_type": "combined_widget"
+          }
+        }
+      },
+      "block_order": [
+        "6b7485c1-3448-42e8-a295-6ee086dd2562"
+      ],
+      "settings": {
+        "include_margins": true
       }
     },
     "product-recommendations": {
@@ -303,6 +335,7 @@
     "16293747423e70dd61",
     "1629378253d346ec00",
     "1629375878e5f359bb",
+    "1638934166e72cfed3",
     "product-recommendations"
   ]
 }
