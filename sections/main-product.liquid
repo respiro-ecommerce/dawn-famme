@@ -571,13 +571,6 @@
     "@context": "http://schema.org/",
     "@type": "Product",
     "name": {{ product.title | json }},
-    {% if product.metafields.loox.num_reviews %}
-      "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "{{ product.metafields.loox.avg_rating }}",
-            "reviewCount": "{{ product.metafields.loox.num_reviews }}"
-        },
-    {% endif %}
     "url": {{ shop.url | append: product.url | json }},
     {% if seo_media -%}
       {%- assign media_size = seo_media.preview_image.width | append: 'x' -%}
@@ -608,6 +601,21 @@
         }{% unless forloop.last %},{% endunless %}
       {%- endfor -%}
     ]
+    {% if product.metafields.okendo.summaryData.reviewCount > 0 %}
+    ,"aggregateRating": {
+       "@type": "AggregateRating",
+       "description": "Okendo Reviews",
+       "ratingValue": "{{ product.metafields.okendo.summaryData.reviewAverageValue }}",
+       "ratingCount": "{{ product.metafields.okendo.summaryData.reviewCount }}"
+    }
+    {% elsif product.metafields.okendo.ReviewCount > 0 %}
+    ,"aggregateRating": {
+       "@type": "AggregateRating",
+       "description": "Okendo Reviews",
+       "ratingValue": "{{ product.metafields.okendo.ReviewAverageValue }}",
+       "ratingCount": "{{ product.metafields.okendo.ReviewCount }}"
+    }
+    {% endif %}     
   }
 </script>
 
