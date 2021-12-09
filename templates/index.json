@@ -50,34 +50,6 @@
         "show_text_below": true
       }
     },
-    "16379195950265d473": {
-      "type": "rich-text",
-      "blocks": {
-        "163791959572b3c503-0": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
-          }
-        },
-        "163791959572b3c503-1": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "163791959572b3c503-0",
-        "163791959572b3c503-1"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true
-      }
-    },
     "1626547460af5b6361": {
       "type": "featured-collection",
       "settings": {
@@ -173,31 +145,11 @@
         "show_text_below": true
       }
     },
-    "1631100157d2b633af": {
-      "type": "rich-text",
-      "blocks": {
-        "1631100157d2b633af-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Sjekk ut vårt utvalg av jeans. Du finner jeansene våre i ulike farger og vask. <\/p>"
-          }
-        },
-        "1631100157d2b633af-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Shop jeans",
-            "button_link": "shopify:\/\/collections\/jeans",
-            "button_style_secondary": true
-          }
-        }
-      },
-      "block_order": [
-        "1631100157d2b633af-1",
-        "1631100157d2b633af-2"
-      ],
+    "16390444193b08dcb6": {
+      "type": "space",
       "settings": {
-        "color_scheme": "background-1",
-        "full_width": true
+        "dt": 5,
+        "mob": 0
       }
     },
     "16311853465cfb015e": {
@@ -230,64 +182,6 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
-      }
-    },
-    "16311858004f885fc1": {
-      "type": "rich-text",
-      "blocks": {
-        "16311858004f885fc1-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Shop loungewear",
-            "button_link": "shopify:\/\/collections\/loungewear",
-            "button_style_secondary": true
-          }
-        }
-      },
-      "block_order": [
-        "16311858004f885fc1-2"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true
-      }
-    },
-    "1637919137a21e9a1a": {
-      "type": "rich-text",
-      "blocks": {
-        "1637919137cfb5ca61-0": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
-          }
-        },
-        "1637919137cfb5ca61-1": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        },
-        "1637919137cfb5ca61-2": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "1637919137cfb5ca61-0",
-        "1637919137cfb5ca61-1",
-        "1637919137cfb5ca61-2"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true
       }
     },
     "1629157352b193f90f": {
@@ -368,7 +262,6 @@
     "1631091164538140ed",
     "1629993086223521d8",
     "1631094390263d97d1",
-    "16379195950265d473",
     "1626547460af5b6361",
     "1638543882705deea9",
     "16390366630568da6f",
@@ -376,10 +269,8 @@
     "16390366986baa3672",
     "1637832590a0b9bb0a",
     "16252134879571dabc",
-    "1631100157d2b633af",
+    "16390444193b08dcb6",
     "16311853465cfb015e",
-    "16311858004f885fc1",
-    "1637919137a21e9a1a",
     "1629157352b193f90f",
     "162567415706bdadcd"
   ]
