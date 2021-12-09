@@ -85,13 +85,6 @@
         "show_text_below": true
       }
     },
-    "16390366630568da6f": {
-      "type": "space",
-      "settings": {
-        "dt": 0,
-        "mob": 0
-      }
-    },
     "163117812908a522c8": {
       "type": "image-banner",
       "settings": {
@@ -109,13 +102,6 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
-      }
-    },
-    "16390366986baa3672": {
-      "type": "space",
-      "settings": {
-        "dt": 0,
-        "mob": 0
       }
     },
     "1637832590a0b9bb0a": {
@@ -264,9 +250,7 @@
     "1631094390263d97d1",
     "1626547460af5b6361",
     "1638543882705deea9",
-    "16390366630568da6f",
     "163117812908a522c8",
-    "16390366986baa3672",
     "1637832590a0b9bb0a",
     "16252134879571dabc",
     "16390444193b08dcb6",
