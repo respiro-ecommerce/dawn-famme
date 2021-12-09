@@ -119,12 +119,12 @@
             </a>
           </h2>
         </div>
-      {%- endif -%}
+      {%- endif -%}{%- comment -%}
 	  {%- for tag in product_card_product.tags -%}
         {%- if tag contains 'badge-' -%}
       	  {%- assign badge = tag | split: '-' -%}<div class="fwbadge" style="background:{{ badge[2] }}">{{ badge[1] }}</div>{%- break -%}
       	{%- endif -%}
-      {%- endfor -%}
+      {%- endfor -%}{%- endcomment -%}
       <div class="card__badge">
         {%- if product_card_product.available == false -%}
           <span class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}">{{ 'products.product.sold_out' | t }}</span>
