@@ -1,0 +1,33 @@
+<style>
+  @media screen and (min-width: 750px){section#shopify-section-{{ section.id }}{height: {{ section.settings.dt }}px;}}
+  @media screen and (max-width: 749px){section#shopify-section-{{ section.id }}{height: {{ section.settings.mob }}px;}}
+</style>
+{% schema %}
+{
+  "name": "Space",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "range",
+      "id": "dt",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 5,
+      "unit": "px",
+      "label": "Desktop height"
+    },
+    {
+      "type": "range",
+      "id": "mob",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 0,
+      "unit": "px",
+      "label": "Mobile height"
+    }
+  ],
+  "presets": [{"name": "Space"}]
+}
+{% endschema %}

@@ -155,6 +155,7 @@
                 <li class="grid__item{% unless item.object_type == 'product' %} grid__item--small{% endunless %}">
                   {%- case item.object_type -%}
                     {%- when 'product' -%}
+                  	  {%- if item.tags contains 'hide-product' -%}{%- continue -%}{%- endif -%}
                       {%- capture product_settings -%}{%- if section.settings.product_show_vendor -%}vendor,{%- endif -%}title,price{%- endcapture -%}
                       {% render 'product-card',
                         product_card_product: item,

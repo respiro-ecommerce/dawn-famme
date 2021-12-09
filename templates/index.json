@@ -6,13 +6,15 @@
         "image": "shopify:\/\/shop_images\/seamless-banner-bla-desktop.jpg",
         "image_m": "shopify:\/\/shop_images\/seamless-banner-bla-mobil.jpg",
         "image_url": "shopify:\/\/collections\/seamless-treningsklaer-dame",
+        "image_overlay_opacity": 0,
         "image2_url": "",
         "image_height": "large",
         "adapt_height_first_image": false,
-        "desktop_text_box_position": "center",
+        "desktop_content_position": "middle-center",
         "show_text_box": true,
-        "image_overlay_opacity": 0,
+        "desktop_content_alignment": "center",
         "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
@@ -35,15 +37,16 @@
         "image": "shopify:\/\/shop_images\/scrunch-banner-ferdig-desktop.jpg",
         "image_m": "shopify:\/\/shop_images\/scrunch-banner-ferdig-mobil.jpg",
         "image_url": "shopify:\/\/collections\/scrunch",
+        "image_overlay_opacity": 0,
         "image2_url": "",
         "image_height": "large",
         "adapt_height_first_image": false,
-        "desktop_text_box_position": "center",
-        "show_text_box": true,
-        "image_overlay_opacity": 0,
-        "color_scheme": "background-1",
-        "stack_images_on_mobile": true,
         "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
         "show_text_below": true
       }
     },
@@ -97,15 +100,24 @@
         "image": "shopify:\/\/shop_images\/sko-banner-ny-desktop.jpg",
         "image_m": "shopify:\/\/shop_images\/sko-banner-ny-mobil.jpg",
         "image_url": "\/products\/endorphin-rx1-shoes",
+        "image_overlay_opacity": 0,
         "image2_url": "",
         "image_height": "large",
         "adapt_height_first_image": false,
-        "desktop_text_box_position": "center",
+        "desktop_content_position": "middle-center",
         "show_text_box": true,
-        "image_overlay_opacity": 0,
+        "desktop_content_alignment": "center",
         "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
+      }
+    },
+    "16390366630568da6f": {
+      "type": "space",
+      "settings": {
+        "dt": 0,
+        "mob": 0
       }
     },
     "163117812908a522c8": {
@@ -114,19 +126,29 @@
         "image": "shopify:\/\/shop_images\/outdoor-banner-smal_1.jpg",
         "image_m": "shopify:\/\/shop_images\/outdoor-banner-smal-mobil.jpg",
         "image_url": "shopify:\/\/collections\/turklaer",
+        "image_overlay_opacity": 0,
         "image2_url": "",
         "image_height": "small",
         "adapt_height_first_image": false,
-        "desktop_text_box_position": "center",
+        "desktop_content_position": "middle-center",
         "show_text_box": true,
-        "image_overlay_opacity": 0,
+        "desktop_content_alignment": "center",
         "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
     },
+    "16390366986baa3672": {
+      "type": "space",
+      "settings": {
+        "dt": 0,
+        "mob": 0
+      }
+    },
     "1637832590a0b9bb0a": {
       "type": "rich-text",
+      "disabled": true,
       "settings": {
         "color_scheme": "background-1",
         "full_width": true
@@ -138,13 +160,15 @@
         "image": "shopify:\/\/shop_images\/jeans-banner-big.jpg",
         "image_m": "shopify:\/\/shop_images\/jeans-banner-mobil.jpg",
         "image_url": "shopify:\/\/collections\/jeans",
+        "image_overlay_opacity": 0,
         "image2_url": "",
         "image_height": "large",
         "adapt_height_first_image": false,
-        "desktop_text_box_position": "center",
+        "desktop_content_position": "middle-center",
         "show_text_box": true,
-        "image_overlay_opacity": 0,
+        "desktop_content_alignment": "center",
         "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
@@ -195,13 +219,15 @@
         "image": "shopify:\/\/shop_images\/Loungewear-banner-desktop.jpg",
         "image_m": "shopify:\/\/shop_images\/loungewear-banner-mobil.jpg",
         "image_url": "shopify:\/\/collections\/loungewear",
+        "image_overlay_opacity": 0,
         "image2_url": "",
         "image_height": "large",
         "adapt_height_first_image": false,
-        "desktop_text_box_position": "center",
+        "desktop_content_position": "middle-center",
         "show_text_box": true,
-        "image_overlay_opacity": 0,
+        "desktop_content_alignment": "center",
         "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
@@ -301,7 +327,8 @@
         "162567415706bdadcd-1": {
           "type": "text",
           "settings": {
-            "text": "BLI MED I NORGES STØRSTE PRODUKTUTVIKLINGSGRUPPE MED FLERE TITUSENER MEDLEMMER I NORGE."
+            "text": "BLI MED I NORGES STØRSTE PRODUKTUTVIKLINGSGRUPPE MED FLERE TITUSENER MEDLEMMER I NORGE.",
+            "text_style": "body"
           }
         },
         "162567415706bdadcd-2": {
@@ -323,13 +350,15 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Product_development_group.jpg",
         "image_url": "https:\/\/www.facebook.com\/groups\/fammeproduktutvikling",
+        "image_overlay_opacity": 0,
         "image2_url": "",
         "image_height": "medium",
         "adapt_height_first_image": false,
-        "desktop_text_box_position": "center",
+        "desktop_content_position": "middle-center",
         "show_text_box": true,
-        "image_overlay_opacity": 0,
+        "desktop_content_alignment": "center",
         "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
@@ -342,7 +371,9 @@
     "16379195950265d473",
     "1626547460af5b6361",
     "1638543882705deea9",
+    "16390366630568da6f",
     "163117812908a522c8",
+    "16390366986baa3672",
     "1637832590a0b9bb0a",
     "16252134879571dabc",
     "1631100157d2b633af",
