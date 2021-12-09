@@ -203,6 +203,16 @@
         ],
         "default": "text",
         "label": "t:settings_schema.styles.settings.accent_icons.label"
+      },
+      {
+        "type": "range",
+        "id": "bannerspace",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Space between 2 banners",
+        "default": 10
       }
     ]
   },
