@@ -30,11 +30,24 @@
       "settings": {
       }
     },
-
+    "1627294046e0366cc1": {
+      "type": "loox-carousel-reviews",
+      "disabled": true,
+      "settings": {
+        "max_width": 1920,
+        "arrows_color": "",
+        "dots_color": "",
+        "button_color": "",
+        "show_more": false,
+        "only_photos": true,
+        "use_widget_font": false,
+        "product_handle": "pace-rain-jacket"
+      }
+    },
     "1632292990ed8c143f": {
       "type": "featured-blog",
       "settings": {
-        "heading": "Les mer om ullundertøy her...",
+        "heading": "Les mer om undertøy og ullundertøy her...",
         "blog": "ullundertoy",
         "post_limit": 3,
         "show_image": true,
