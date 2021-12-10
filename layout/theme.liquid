@@ -133,7 +133,6 @@
 
     <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
 
-	{{ shop.metafields.loox["global_html_head"] }}
     {% if template contains 'product' or template.suffix == 'okendo-reviews' %}
     {{ 'okendo-reviews.js' | asset_url | script_tag }}
     {% endif %}     
@@ -189,7 +188,6 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
-    {{ shop.metafields.loox["global_html_body"] }}
 
 </body>
 </html>

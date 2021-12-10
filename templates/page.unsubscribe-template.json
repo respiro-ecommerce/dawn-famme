@@ -118,17 +118,6 @@
         "adapt_height_first_image": false
       }
     },
-    "1625867958e31ad2e8": {
-      "type": "loox-all-reviews",
-      "settings": {
-        "only_photos": true,
-        "hide_thumbnails": false,
-        "product_handle": "",
-        "aggregated": true,
-        "data-limit": 16,
-        "maxwidth": 1080
-      }
-    },
     "1625867591ad5821e5": {
       "type": "featured-collection",
       "settings": {
@@ -206,7 +195,6 @@
     "16258675811ced43e0",
     "main",
     "1626011786ec7a2990",
-    "1625867958e31ad2e8",
     "1625867591ad5821e5",
     "1625867422f8e88926"
   ]
