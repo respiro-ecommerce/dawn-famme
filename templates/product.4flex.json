@@ -104,7 +104,8 @@
         "1629375880536be307-1": {
           "type": "text",
           "settings": {
-            "text": "Skinny jeans med høyt liv som er laget med patentert denim teknologi for å oppnå super-stretch i alle retninger og en naturlig hold-in effekt. Dette er en stretchy jeans i ekte denim. Det er ikke jeggings."
+            "text": "Skinny jeans med høyt liv som er laget med patentert denim teknologi for å oppnå super-stretch i alle retninger og en naturlig hold-in effekt. Dette er en stretchy jeans i ekte denim. Det er ikke jeggings.",
+            "text_style": "body"
           }
         },
         "1629375880536be307-2": {
@@ -129,13 +130,15 @@
         "image": "shopify:\/\/shop_images\/4flex-bilde-om-4flex.jpg",
         "image_url": "",
         "image_2": "shopify:\/\/shop_images\/4flex-blue_8_1f822290-512d-47eb-b52a-089a2353960c.jpg",
+        "image_overlay_opacity": 0,
         "image2_url": "",
         "image_height": "medium",
         "adapt_height_first_image": false,
-        "desktop_text_box_position": "center",
+        "desktop_content_position": "middle-center",
         "show_text_box": true,
-        "image_overlay_opacity": 0,
+        "desktop_content_alignment": "center",
         "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
@@ -304,7 +307,7 @@
           "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
           "settings": {
             "product": "{{product}}",
-            "widget_type": "combined_widget"
+            "widget_type": "reviews_widget"
           }
         }
       },
