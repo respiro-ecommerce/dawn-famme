@@ -116,7 +116,7 @@
       "type": "image-banner",
       "settings": {
         "image": "shopify:\/\/shop_images\/jeans-banner-big.jpg",
-        "image_m": "shopify:\/\/shop_images\/jeans-banner-mobil.jpg",
+        "image_m": "shopify:\/\/shop_images\/jeans-banner-mobil_2.jpg",
         "image_url": "shopify:\/\/collections\/jeans",
         "image_overlay_opacity": 0,
         "image2_url": "",
