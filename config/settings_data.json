@@ -34,19 +34,18 @@
               "link": ""
             }
           },
-          "20b12512-f6e3-4849-b434-ee1b29812f58": {
+          "dd7a650d-0067-4ab3-bdf4-d5557c458557": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
-              "text": "Bestill nå, få levert i dag med Porterbuddy",
-              "color_scheme": "accent-1",
+              "text": "Siste bestillingsdato før jul: 16. desember",
+              "color_scheme": "inverse",
               "link": ""
             }
           }
         },
         "block_order": [
           "announcement-bar-0",
-          "20b12512-f6e3-4849-b434-ee1b29812f58"
+          "dd7a650d-0067-4ab3-bdf4-d5557c458557"
         ],
         "settings": {
         }
