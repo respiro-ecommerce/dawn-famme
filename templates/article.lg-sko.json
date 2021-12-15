@@ -1,26 +1,14 @@
 {
   "sections": {
-    "1627292389ca72a7b5": {
-      "type": "image-banner",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/endorpine.png",
-        "image_url": "shopify:\/\/products\/endorphin-rx1-shoes",
-        "image_overlay_opacity": 0,
-        "image2_url": "",
-        "image_height": "medium",
-        "adapt_height_first_image": true,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
     "main": {
       "type": "main-article",
       "blocks": {
+        "featured_image": {
+          "type": "featured_image",
+          "settings": {
+            "image_height": "adapt"
+          }
+        },
         "title": {
           "type": "title",
           "settings": {
@@ -32,19 +20,12 @@
           "type": "content",
           "settings": {
           }
-        },
-        "featured_image": {
-          "type": "featured_image",
-          "disabled": true,
-          "settings": {
-            "image_height": "adapt"
-          }
         }
       },
       "block_order": [
+        "featured_image",
         "title",
-        "content",
-        "featured_image"
+        "content"
       ],
       "settings": {
       }
@@ -99,7 +80,6 @@
     }
   },
   "order": [
-    "1627292389ca72a7b5",
     "main",
     "1632303734c1afc161",
     "1627292414345e6702"
