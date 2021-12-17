@@ -33,19 +33,10 @@
               "color_scheme": "accent-1",
               "link": ""
             }
-          },
-          "dd7a650d-0067-4ab3-bdf4-d5557c458557": {
-            "type": "announcement",
-            "settings": {
-              "text": "Siste bestillingsdato før jul: 16. desember",
-              "color_scheme": "inverse",
-              "link": ""
-            }
           }
         },
         "block_order": [
-          "announcement-bar-0",
-          "dd7a650d-0067-4ab3-bdf4-d5557c458557"
+          "announcement-bar-0"
         ],
         "settings": {
         }
