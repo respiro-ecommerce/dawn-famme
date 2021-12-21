@@ -3,14 +3,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
         "title": {
           "type": "title",
           "settings": {
@@ -20,13 +12,6 @@
           "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/star-rating\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
           "settings": {
             "product": "{{product}}"
-          }
-        },
-        "caption": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
           }
         },
         "price": {
@@ -40,12 +25,6 @@
             "picker_type": "button"
           }
         },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "disabled": true,
-          "settings": {
-          }
-        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -57,14 +36,6 @@
           "settings": {
           }
         },
-        "9914c038-811c-40c3-9a9b-9576c19431cf": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "Modell høyde: {{ product.metafields.my_fields.model_height.value }}",
-            "text_style": "body"
-          }
-        },
         "share": {
           "type": "share",
           "settings": {
@@ -73,20 +44,19 @@
         }
       },
       "block_order": [
-        "vendor",
         "title",
         "83a9ea71-8f00-4a5c-a8c2-ac4ef0d4603d",
-        "subtitle",
         "price",
         "variant_picker",
-        "quantity_selector",
         "buy_buttons",
         "description",
-        "9914c038-811c-40c3-9a9b-9576c19431cf",
         "share"
       ],
       "settings": {
         "enable_sticky_info": true,
+        "gallery_layout": "stacked",
+        "media_size": "large",
+        "mobile_thumbnails": "hide",
         "hide_variants": false,
         "enable_video_looping": false
       }
