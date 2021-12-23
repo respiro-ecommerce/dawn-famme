@@ -45,15 +45,6 @@
         "full_width": true
       }
     },
-    "16402877732395deeb": {
-      "type": "video",
-      "settings": {
-        "heading": "Plukk av vare på lager",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=qYZuVbJESxU",
-        "description": "Treningsklær på lager",
-        "full_width": false
-      }
-    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -148,6 +139,16 @@
         "enable_video_looping": false
       }
     },
+    "16402877732395deeb": {
+      "type": "video",
+      "settings": {
+        "heading": "Se hvordan produktet blir plukket",
+        "cover_image": "shopify:\/\/shop_images\/treningsklar-plukk-lager.png",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=qYZuVbJESxU",
+        "description": "Treningsklær på lager",
+        "full_width": false
+      }
+    },
     "16389341244247db1b": {
       "type": "apps",
       "blocks": {
@@ -182,8 +183,8 @@
   "order": [
     "163742290844ee696f",
     "1637404915227d6812",
-    "16402877732395deeb",
     "main",
+    "16402877732395deeb",
     "16389341244247db1b",
     "product-recommendations"
   ]
