@@ -168,6 +168,15 @@
         "show_vendor": false,
         "show_rating": false
       }
+    },
+    "16402877732395deeb": {
+      "type": "video",
+      "settings": {
+        "heading": "Plukk av vare på lager",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=qYZuVbJESxU",
+        "description": "Treningsklær på lager",
+        "full_width": false
+      }
     }
   },
   "order": [
@@ -175,6 +184,7 @@
     "1637404915227d6812",
     "main",
     "16389341244247db1b",
-    "product-recommendations"
+    "product-recommendations",
+    "16402877732395deeb"
   ]
 }
