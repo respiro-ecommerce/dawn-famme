@@ -89,7 +89,7 @@
         "enable_sticky_info": true,
         "gallery_layout": "thumbnail",
         "media_size": "large",
-        "mobile_thumbnails": "hide",
+        "mobile_thumbnails": "show",
         "hide_variants": false,
         "enable_video_looping": false
       }
