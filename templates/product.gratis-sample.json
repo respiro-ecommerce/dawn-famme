@@ -3,8 +3,8 @@
     "163742290844ee696f": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/499-sko-banner-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/499-sko-banner-mobil.jpg",
+        "image": "shopify:\/\/shop_images\/sko-banner-ny-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/sko-banner-ny-desktop.jpg",
         "image_url": "shopify:\/\/products\/endorphin-rx1-shoes",
         "image_overlay_opacity": 0,
         "image2_url": "",
@@ -43,6 +43,15 @@
       "settings": {
         "color_scheme": "background-1",
         "full_width": true
+      }
+    },
+    "16402877732395deeb": {
+      "type": "video",
+      "settings": {
+        "heading": "Plukk av vare på lager",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=qYZuVbJESxU",
+        "description": "Treningsklær på lager",
+        "full_width": false
       }
     },
     "main": {
@@ -168,23 +177,14 @@
         "show_vendor": false,
         "show_rating": false
       }
-    },
-    "16402877732395deeb": {
-      "type": "video",
-      "settings": {
-        "heading": "Plukk av vare på lager",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=qYZuVbJESxU",
-        "description": "Treningsklær på lager",
-        "full_width": false
-      }
     }
   },
   "order": [
     "163742290844ee696f",
     "1637404915227d6812",
+    "16402877732395deeb",
     "main",
     "16389341244247db1b",
-    "product-recommendations",
-    "16402877732395deeb"
+    "product-recommendations"
   ]
 }
