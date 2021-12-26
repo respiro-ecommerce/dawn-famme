@@ -217,6 +217,7 @@
           {% endfor %}
 
           {%- when 'description' -%}
+                {% render 'product-bullets' %}
                 <p><b>{{ sizing_recommendation }}</b></p>
             {%- if product.description != blank -%}
               <div class="product__description rte">
