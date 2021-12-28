@@ -31,7 +31,7 @@
     "featured-products": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured collection",
+        "title": "Shop bestselgere",
         "collection": "bestsellers",
         "products_to_show": 4,
         "show_view_all": true,
