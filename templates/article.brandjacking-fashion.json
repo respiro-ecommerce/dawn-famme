@@ -3,16 +3,18 @@
     "16352521148bea06d0": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Brandjacking-fashion.jpg",
-        "image_m": "shopify:\/\/shop_images\/Brandjacking-fashion-mobil.png",
+        "image": "shopify:\/\/shop_images\/Design_uten_navn_d7f2dffb-2102-47e3-bee1-4d1d57af66fa.png",
+        "image_m": "shopify:\/\/shop_images\/Design_uten_navn_d30445c9-0a04-4e1c-880c-130801d25a53.png",
         "image_url": "",
+        "image_overlay_opacity": 0,
         "image2_url": "",
         "image_height": "medium",
         "adapt_height_first_image": false,
-        "desktop_text_box_position": "center",
+        "desktop_content_position": "middle-center",
         "show_text_box": true,
-        "image_overlay_opacity": 0,
+        "desktop_content_alignment": "center",
         "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
@@ -25,7 +27,9 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/desktop-banner-host-oppdatert.jpg",
             "title": "Rask levering + gratis retur",
-            "text": "<p>Bestill og få levert på døren i dag med Porterbuddy. Hos Famme kan du kjøpe fraktfritt og bestiller du i dag har du også gratis retur! Du velger mellom Posten, Helthjem eller samme dags levering med Porterbuddy!<\/p>"
+            "text": "<p>Bestill og få levert på døren i dag med Porterbuddy. Hos Famme kan du kjøpe fraktfritt og bestiller du i dag har du også gratis retur! Du velger mellom Posten, Helthjem eller samme dags levering med Porterbuddy!<\/p>",
+            "link_label": "",
+            "link": ""
           }
         },
         "163438960122f1937a-2": {
@@ -33,15 +37,19 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Brandjacking-footwear-mobil.png",
             "title": "Bredt utvalg",
-            "text": "<p>Hos Famme har du tights, treningstopper, løpejakker, sko og mye mer! Vi har til og med <a href=\"\/products\/4flex-jeans\" title=\"\/products\/4flex-jeans\">jeans spesielt produsert for fitness damer<\/a> og andre hverdagsklær som er spesielt laget for de som er glad i å trene. <\/p>"
+            "text": "<p>Hos Famme har du tights, treningstopper, løpejakker, sko og mye mer! Vi har til og med <a href=\"\/products\/4flex-jeans\" title=\"\/products\/4flex-jeans\">jeans spesielt produsert for fitness damer<\/a> og andre hverdagsklær som er spesielt laget for de som er glad i å trene. <\/p>",
+            "link_label": "",
+            "link": ""
           }
         },
         "4349053e-0c05-4576-b505-65b1de855a57": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/casualwear-header.jpg",
-            "title": "Hverdagsklær",
-            "text": "<p>Famme fokuserer på produkter av <strong>god kvalitet<\/strong> som skaper<strong> lengre holdbarhet<\/strong> på klesplaggene. Vi har et bredt utvalg av både <strong>hverdagsklær<\/strong> og <strong>treningsklær <\/strong>til dame. Se vårt utvalg av behagelig casualwear <a href=\"\/collections\/casualwear\" target=\"_blank\" title=\"\/collections\/casualwear\">her<\/a>.<\/p>"
+            "title": "Velur sett til dame",
+            "text": "<p>Famme fokuserer på produkter av <strong>god kvalitet<\/strong> som skaper<strong> lengre holdbarhet<\/strong> på klesplaggene. Vi har et bredt utvalg av både <strong>hverdagsklær<\/strong> og <strong>treningsklær <\/strong>til dame. Se vårt utvalg av behagelig velur sett <a href=\"\/products\/velvet-pants\" title=\"\/products\/velvet-pants\">her!<\/a><\/p>",
+            "link_label": "",
+            "link": ""
           }
         }
       },
@@ -97,16 +105,6 @@
         "show_view_all": false
       }
     },
-    "163438965009ed774b": {
-      "type": "video",
-      "settings": {
-        "heading": "De mest komfortable hverdagsklærne!",
-        "cover_image": "shopify:\/\/shop_images\/Brandjacking-fashion-video-bilde.png",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=5patmTWeMQU",
-        "description": "Komfortable klær til hverdags",
-        "full_width": false
-      }
-    },
     "main": {
       "type": "main-article",
       "blocks": {
@@ -155,7 +153,6 @@
     "16352521148bea06d0",
     "163438960122f1937a",
     "1634409175ff664290",
-    "163438965009ed774b",
     "main",
     "163514751724437e62",
     "1635152225421b2388"
