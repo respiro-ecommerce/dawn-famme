@@ -222,7 +222,7 @@
             {%- if product.description != blank -%}
               <div class="product__description rte">
                 <p class="q current open">{{ section.settings.desc }}</p>
-                <div class="a current">
+                <div class="current">
                   {{ product.description }}
                   {% if product.metafields.my_fields.model_size %}
                     <p>{{ "products.model_sizes" | t }}{{ product.metafields.my_fields.model_size }}</p>
@@ -245,8 +245,8 @@
                 {%- endfor -%}
               </div>
         	  <script>
-                const qs = document.querySelectorAll('.q');
-                const answers = document.querySelectorAll('.a');
+                const qs = document.querySelectorAll('p.q');
+                const answers = document.querySelectorAll('p.q+div');
                 [].forEach.call(qs, elem=>{
                   elem.onclick = ()=>{
                     [].forEach.call(qs, e=>{e.classList.remove('open')});
