@@ -120,17 +120,18 @@
           </h2>
         </div>
       {%- endif -%}
-	  {%- for tag in product_card_product.tags -%}
-        {%- if tag contains 'badge-' -%}
-      	  {%- assign badge = tag | split: '-' -%}<div class="fwbadge" style="background:{{ badge[2] }}">{{ badge[1] }}</div>{%- break -%}
-      	{%- endif -%}
-      {%- endfor -%}
-      <div class="card__badge">
+	  <div class="card__badge">
         {%- if product_card_product.available == false -%}
           <span class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}">{{ 'products.product.sold_out' | t }}</span>
         {%- elsif product_card_product.compare_at_price > product_card_product.price and product_card_product.available -%}
           <span class="badge badge--bottom-left color-{{ settings.sale_badge_color_scheme }}">{{ 'products.product.on_sale' | t }}</span>
         {%- endif -%}
+        {%- for tag in product_card_product.tags -%}
+          {%- if tag contains 'badge-' -%}
+      	    {%- assign badge = tag | split: '-' -%}
+        	<span class="badge badge--bottom-left" style="background:{{ badge[2] }}">{{ badge[1] }}</span>
+      	  {%- endif -%}
+        {%- endfor -%}
       </div>
     </div>
   </div>
