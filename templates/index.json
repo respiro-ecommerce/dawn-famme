@@ -58,7 +58,7 @@
       "type": "btns",
       "settings": {
         "menu": "test-meny",
-        "bg": "#8a9e93",
+        "bg": "#383838",
         "color": "#ffffff",
         "width": 150,
         "padx": 10,
