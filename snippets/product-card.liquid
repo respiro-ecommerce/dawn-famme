@@ -129,7 +129,7 @@
         {%- for tag in product_card_product.tags -%}
           {%- if tag contains 'badge-' -%}
       	    {%- assign badge = tag | split: '-' -%}
-        	<span class="badge badge--bottom-left" style="background:{{ badge[2] }}">{{ badge[1] }}</span>
+        	<span class="badge badge--bottom-left color-{{ settings.sale_badge_color_scheme }}" style="background:{{ badge[2] }}">{{ badge[1] }}</span>
       	  {%- endif -%}
         {%- endfor -%}
       </div>
