@@ -221,7 +221,7 @@
                 <p><b>{{ sizing_recommendation }}</b></p>
             {%- if product.description != blank -%}
               <div class="product__description rte">
-                <!--p class="q">Description</p-->
+                <p class="q">Description</p>
                 <div class="a">
                   {{ product.description }}
                   {% if product.metafields.my_fields.model_size %}
@@ -237,6 +237,32 @@
                   {% endif %}
                 </div>
               </div>
+        	  <script>
+                const qs = document.querySelectorAll('.q');
+                const answers = document.querySelectorAll('.a');
+                [].forEach.call(qs, elem=>{
+                  elem.onclick = ()=>{
+                    [].forEach.call(qs, e=>{e.classList.remove('open')});
+                    if (elem.classList.contains('current')) {
+                      elem.classList.remove('open');
+                      [].forEach.call(qs, el=>{el.classList.remove('current')});
+                    } else {
+                      [].forEach.call(qs, el=>{el.classList.remove('current')});
+                      elem.classList.add('current');
+                      elem.classList.add('open');
+                    }
+                    [].forEach.call(answers, el=>{el.classList.add('a');});
+                    if (elem.nextElementSibling.classList.contains('current')) {
+                      elem.nextElementSibling.classList.add('a');
+                      [].forEach.call(answers, el=>{el.classList.remove('current')});
+                    } else {
+                      [].forEach.call(answers, el=>{el.classList.remove('current')});
+                      elem.nextElementSibling.classList.add('current');
+                      elem.nextElementSibling.classList.remove('a');
+                    }
+                  }
+                });
+        	  </script>
             {%- endif -%}
           {%- when 'custom_liquid' -%}
             {{ block.settings.custom_liquid }}

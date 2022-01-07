@@ -153,3 +153,30 @@ div.fwbadge {
 }
 .button {border-radius: 25px;}
 section.spaced-section--full-width+section.spaced-section--full-width {margin-top: {{ settings.bannerspace }}px;}
+div.accordion> {
+  .a {
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0 15px;
+    transition: .5s;
+  }
+  .current {
+    padding: 10px 15px;
+    height: auto;
+    transition: .5s;
+  }
+  .q {
+    cursor: pointer;
+    border-bottom: 1px solid black;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    &:after {
+      content: '+';
+      float: right;
+      font-size: 28px;
+      margin-top: -9px;
+    }
+    &.open:after {content: '‒';}
+  }
+}
