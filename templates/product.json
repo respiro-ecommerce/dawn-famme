@@ -51,7 +51,9 @@
         "media_size": "large",
         "mobile_thumbnails": "show",
         "hide_variants": false,
-        "enable_video_looping": false
+        "enable_video_looping": false,
+        "desc": "Description",
+        "bg": "#f5f5f5"
       }
     },
     "1638933924cc2996fe": {
