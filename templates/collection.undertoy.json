@@ -4,7 +4,7 @@
       "type": "btns",
       "settings": {
         "menu": "collection-underwear",
-        "bg": "#8a9e93",
+        "bg": "#4e4e4e",
         "color": "#ffffff",
         "width": 165,
         "padx": 10,

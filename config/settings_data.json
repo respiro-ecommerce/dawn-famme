@@ -1,10 +1,10 @@
 {
   "current": {
     "colors_solid_button_labels": "#ffffff",
-    "colors_accent_1": "#383838",
+    "colors_accent_1": "#119da4",
     "colors_accent_2": "#ffaa91",
     "colors_text": "#4e4e4e",
-    "colors_outline_button_labels": "#383838",
+    "colors_outline_button_labels": "#4e4e4e",
     "colors_background_1": "#ffffff",
     "colors_background_2": "#fafafa",
     "type_header_font": "roboto_n4",
@@ -20,8 +20,8 @@
     "checkout_logo_position": "left",
     "checkout_heading_font": "Roboto",
     "checkout_body_font": "Roboto",
-    "checkout_accent_color": "#8a9e93",
-    "checkout_button_color": "#8a9e93",
+    "checkout_accent_color": "#4e4e4e",
+    "checkout_button_color": "#119da4",
     "checkout_error_color": "#ec7a7a",
     "sections": {
       "announcement-bar": {
@@ -31,7 +31,7 @@
             "type": "announcement",
             "settings": {
               "text": "Vipps & Klarna | Fri frakt og levering samme dag* | 100 dagers åpent kjøp",
-              "color_scheme": "accent-1",
+              "color_scheme": "inverse",
               "link": ""
             }
           }
@@ -85,7 +85,7 @@
           "3e063503-3f13-4266-942b-f40c646c2175"
         ],
         "settings": {
-          "color_scheme": "accent-1",
+          "color_scheme": "inverse",
           "newsletter_enable": true,
           "newsletter_heading": "Meld deg på vårt nyhetsbrev!",
           "show_social": true,

@@ -4,7 +4,7 @@
       "type": "btns",
       "settings": {
         "menu": "collections-training-pants",
-        "bg": "#8a9e93",
+        "bg": "#4e4e4e",
         "color": "#ffffff",
         "width": 165,
         "padx": 10,
