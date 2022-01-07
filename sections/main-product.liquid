@@ -236,6 +236,13 @@
                     <p>{{ "products.model_height" | t }}{{ product.metafields.my_fields.model_height }}</p>
                   {% endif %}
                 </div>
+                {%- for i in (1..10) -%}
+                  {%- assign title = 'tab' | append: i -%}{%- assign tab = 'content' | append: i -%}
+                  {%- if product.metafields.global[title] != blank and product.metafields.global[tab] != blank -%}
+                	<p class="q">{{ product.metafields.global[title] }}</p>
+                	<div class="a">{{ product.metafields.global[tab] }}</div>
+                  {%- endif -%}
+                {%- endfor -%}
               </div>
         	  <script>
                 const qs = document.querySelectorAll('.q');
