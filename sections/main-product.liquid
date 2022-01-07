@@ -221,18 +221,21 @@
                 <p><b>{{ sizing_recommendation }}</b></p>
             {%- if product.description != blank -%}
               <div class="product__description rte">
-                {{ product.description }}
-                {% if product.metafields.my_fields.model_size %}
-                  <p>{{ "products.model_sizes" | t }}{{ product.metafields.my_fields.model_size }}</p>
-                {% endif %}
-                {% if product.metafields.my_fields.melange_color_composition %}
-                  <p>{{ "products.composition" | t }}{{ product.metafields.my_fields.melange_color_composition }}</p>
-                {% elsif product.metafields.my_fields.solid_color_composition %}
-                  <p> {{ "products.composition" | t }} {{ product.metafields.my_fields.solid_color_composition }} </p>
-                {% endif %}
-                {% if product.metafields.my_fields.model_height %}
-                  <p>{{ "products.model_height" | t }}{{ product.metafields.my_fields.model_height }}</p>
-                {% endif %}
+                <!--p class="q">Description</p-->
+                <div class="a">
+                  {{ product.description }}
+                  {% if product.metafields.my_fields.model_size %}
+                    <p>{{ "products.model_sizes" | t }}{{ product.metafields.my_fields.model_size }}</p>
+                  {% endif %}
+                  {% if product.metafields.my_fields.melange_color_composition %}
+                    <p>{{ "products.composition" | t }}{{ product.metafields.my_fields.melange_color_composition }}</p>
+                  {% elsif product.metafields.my_fields.solid_color_composition %}
+                    <p> {{ "products.composition" | t }} {{ product.metafields.my_fields.solid_color_composition }} </p>
+                  {% endif %}
+                  {% if product.metafields.my_fields.model_height %}
+                    <p>{{ "products.model_height" | t }}{{ product.metafields.my_fields.model_height }}</p>
+                  {% endif %}
+                </div>
               </div>
             {%- endif -%}
           {%- when 'custom_liquid' -%}
