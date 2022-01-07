@@ -221,8 +221,8 @@
                 <p><b>{{ sizing_recommendation }}</b></p>
             {%- if product.description != blank -%}
               <div class="product__description rte">
-                <p class="q">{{ section.settings.desc }}</p>
-                <div class="a">
+                <p class="q current open">{{ section.settings.desc }}</p>
+                <div class="a current">
                   {{ product.description }}
                   {% if product.metafields.my_fields.model_size %}
                     <p>{{ "products.model_sizes" | t }}{{ product.metafields.my_fields.model_size }}</p>
