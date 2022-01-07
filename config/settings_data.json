@@ -31,7 +31,7 @@
             "type": "announcement",
             "settings": {
               "text": "Vipps & Klarna | Fri frakt og levering samme dag* | 100 dagers åpent kjøp",
-              "color_scheme": "inverse",
+              "color_scheme": "accent-1",
               "link": ""
             }
           }
