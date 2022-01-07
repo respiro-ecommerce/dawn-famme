@@ -1,5 +1,5 @@
 <!-- snippets/product-bullets.liquid -->
-<ul class="product-bullets" style="list-style:dots;padding:10px 20px;background:{{ section.settings.bg }};">
+<ul class="product-bullets">
   <li>
     <span class="product-bullets__image">
       <img loading="lazy" src="{% if section.settings.img1 != blank %}{{ section.settings.img1 | asset_img_url: '200x' }}{% else %}{{ 'bullet_1.png' | asset_img_url: '200x' }}{% endif %}" alt="{{ 'products.bullets.bullet_1' | t }}">
@@ -22,11 +22,12 @@
 <style>
   ul.product-bullets {
     margin: 20px 0;
-    padding: 0;
+    padding: 10px 20px;
+    background: {{ section.settings.bg }};
   }
   ul.product-bullets li {
     margin: 10px 0;
-    list-style: none;
+    /*list-style: none;*/
   }
   .product-bullets__image img {
     width: 30px;
