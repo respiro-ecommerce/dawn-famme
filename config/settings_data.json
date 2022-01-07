@@ -1,12 +1,12 @@
 {
   "current": {
     "colors_solid_button_labels": "#ffffff",
-    "colors_accent_1": "#119da4",
+    "colors_accent_1": "#383838",
     "colors_accent_2": "#ffaa91",
     "colors_text": "#4e4e4e",
     "colors_outline_button_labels": "#383838",
     "colors_background_1": "#ffffff",
-    "colors_background_2": "#383838",
+    "colors_background_2": "#fafafa",
     "type_header_font": "roboto_n4",
     "type_body_font": "roboto_n4",
     "sale_badge_color_scheme": "accent-2",
