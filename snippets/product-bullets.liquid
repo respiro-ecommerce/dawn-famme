@@ -1,42 +1,30 @@
 <!-- snippets/product-bullets.liquid -->
 <ul class="product-bullets">
-  <li>
-    <span class="product-bullets__image">
-      <img loading="lazy" src="{% if section.settings.img1 != blank %}{{ section.settings.img1 | img_url: '200x' }}{% else %}{{ 'bullet_1.png' | asset_img_url: '200x' }}{% endif %}" alt="{{ 'products.bullets.bullet_1' | t }}">
-    </span>
-    <span class="product-bullets__text">{{ 'products.bullets.bullet_1' | t }}</span>	
-  </li>
-  <li>
-    <span class="product-bullets__image">
-      <img loading="lazy" src="{% if section.settings.img2 != blank %}{{ section.settings.img2 | img_url: '200x' }}{% else %}{{ 'bullet_2.png' | asset_img_url: '200x' }}{% endif %}" alt="{{ 'products.bullets.bullet_2' | t }}">
-    </span>
-    <span class="product-bullets__text">{{ 'products.bullets.bullet_2' | t }}</span>	
-  </li>
-  <li>
-    <span class="product-bullets__image">
-      <img loading="lazy" src="{% if section.settings.img3 != blank %}{{ section.settings.img3 | img_url: '200x' }}{% else %}{{ 'bullet_3.png' | asset_img_url: '200x' }}{% endif %}" alt="{{ 'products.bullets.bullet_3' | t }}">
-    </span>
-    <span class="product-bullets__text">{{ 'products.bullets.bullet_3' | t }}</span>	
-  </li>
+    <li>
+        <span class="product-bullets__text">{{ 'products.bullets.bullet_1' | t }}</span>
+    </li>
+    <li>
+        <span class="product-bullets__text">{{ 'products.bullets.bullet_2' | t }}</span>
+    </li>
+    <li>
+        <span class="product-bullets__text">{{ 'products.bullets.bullet_3' | t }}</span>
+    </li>
 </ul>
 <style>
-  ul.product-bullets {
-    margin: 20px 0;
-    padding: 10px 20px 10px 40px;
-    background: {{ section.settings.bg }};
-  }
-  ul.product-bullets li {
-    margin: 10px 0;
-    /*list-style: none;*/
-  }
-  .product-bullets__image img {
-    width: 30px;
-    margin-right: 15px;
-    vertical-align: middle;
-  }
-  .product-bullets__text {
-    font-weight: bold;
-    /*position: relative;
-    top: -5px;*/
-  }
+    ul.product-bullets {
+        margin: 20px 0;
+        padding: 10px 20px 10px 40px;
+        background: {{ section.settings.bg }};
+    }
+
+    ul.product-bullets li {
+        margin: 10px 0;
+        /*list-style: none;*/
+    }
+
+    .product-bullets__text {
+        font-weight: bold;
+        /*position: relative;
+        top: -5px;*/
+    }
 </style>
