@@ -53,6 +53,66 @@
         "show_text_below": true
       }
     },
+    "1641983278c21db4b2": {
+      "type": "rich-text",
+      "blocks": {
+        "1641983278bc1ad7e3-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Hvordan får jeg et gratis produkt?",
+            "heading_size": "h2"
+          }
+        },
+        "1641983278bc1ad7e3-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>For å få et gratis produkt må du legge til et gratis-produkt din som du finner <strong>nederst på denne siden<\/strong>, i handlekurven din. Er det utsolgt før du fikk tak i gratis produkt? Da bør du legge igjen eposten din her, så varsler vi deg neste gang vi gir bort gratis produkter.<\/p>"
+          }
+        },
+        "1641983278bc1ad7e3-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "1641983278bc1ad7e3-0",
+        "1641983278bc1ad7e3-1",
+        "1641983278bc1ad7e3-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
+    "164198328929a5fbaa": {
+      "type": "newsletter",
+      "blocks": {
+        "12f59427-e8fa-4d3a-905f-3c3cd85347f9": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Legg igjen e-posten din her for å få varsel neste gang vi gir bort gratis produkter.<\/p>"
+          }
+        },
+        "1641983289232ac25f-2": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "12f59427-e8fa-4d3a-905f-3c3cd85347f9",
+        "1641983289232ac25f-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
     "16419829100a373d4c": {
       "type": "multicolumn",
       "blocks": {
@@ -192,6 +252,8 @@
   },
   "order": [
     "16419794496648f4a4",
+    "1641983278c21db4b2",
+    "164198328929a5fbaa",
     "16419829100a373d4c",
     "main",
     "1638933924cc2996fe",
