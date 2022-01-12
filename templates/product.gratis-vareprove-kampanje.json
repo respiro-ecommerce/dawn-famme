@@ -128,12 +128,23 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "658d3e8c-5677-4b5e-b0db-2cb8a89a4535": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/grunn-4-bilde.jpg",
+            "title": "Grunn 4",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "164198291054030bfd-0",
         "164198291054030bfd-1",
-        "164198291054030bfd-2"
+        "164198291054030bfd-2",
+        "658d3e8c-5677-4b5e-b0db-2cb8a89a4535"
       ],
       "settings": {
         "title": "Hvorfor gir vi bort produkter gratis?",
@@ -143,7 +154,7 @@
         "background_style": "none",
         "button_label": "",
         "button_link": "",
-        "swipe_on_mobile": false
+        "swipe_on_mobile": true
       }
     },
     "16419879506b96617c": {
