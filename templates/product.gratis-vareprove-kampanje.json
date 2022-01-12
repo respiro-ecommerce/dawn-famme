@@ -1,24 +1,27 @@
 {
   "sections": {
-    "164198057306c573a0": {
+    "16419794496648f4a4": {
       "type": "image-banner",
       "blocks": {
-        "16419805733a4d01e6-0": {
+        "164197944954022001-0": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Image banner",
             "heading_size": "medium"
           }
         },
-        "16419805733a4d01e6-1": {
+        "164197944954022001-1": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "Give customers details about the banner image(s) or content on the template.",
             "text_style": "body"
           }
         },
-        "16419805733a4d01e6-2": {
+        "164197944954022001-2": {
           "type": "buttons",
+          "disabled": true,
           "settings": {
             "button_label_1": "Button label",
             "button_link_1": "",
@@ -30,9 +33,9 @@
         }
       },
       "block_order": [
-        "16419805733a4d01e6-0",
-        "16419805733a4d01e6-1",
-        "16419805733a4d01e6-2"
+        "164197944954022001-0",
+        "164197944954022001-1",
+        "164197944954022001-2"
       ],
       "settings": {
         "image_url": "",
@@ -49,53 +52,54 @@
         "show_text_below": true
       }
     },
-    "1641980597be4be675": {
-      "type": "image-banner",
+    "16419829100a373d4c": {
+      "type": "multicolumn",
       "blocks": {
-        "1641980597bdd6c2ea-0": {
-          "type": "heading",
+        "164198291054030bfd-0": {
+          "type": "column",
           "settings": {
-            "heading": "Image banner",
-            "heading_size": "medium"
+            "image": "shopify:\/\/shop_images\/Velvet_Pants-Grey-VPAS-GR_5_1859b095-f15a-4c21-b807-d4f15e5cf0c5.jpg",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
           }
         },
-        "1641980597bdd6c2ea-1": {
-          "type": "text",
+        "164198291054030bfd-1": {
+          "type": "column",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
+            "image": "shopify:\/\/shop_images\/Velvet_Pants-Grey-VPAS-GR_5_1859b095-f15a-4c21-b807-d4f15e5cf0c5.jpg",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
           }
         },
-        "1641980597bdd6c2ea-2": {
-          "type": "buttons",
+        "164198291054030bfd-2": {
+          "type": "column",
           "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "image": "shopify:\/\/shop_images\/Velvet_Pants-Grey-VPAS-GR_5_1859b095-f15a-4c21-b807-d4f15e5cf0c5.jpg",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "1641980597bdd6c2ea-0",
-        "1641980597bdd6c2ea-1",
-        "1641980597bdd6c2ea-2"
+        "164198291054030bfd-0",
+        "164198291054030bfd-1",
+        "164198291054030bfd-2"
       ],
       "settings": {
-        "image_url": "",
-        "image_overlay_opacity": 0,
-        "image2_url": "",
-        "image_height": "medium",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
+        "title": "Hvorfor gir vi bort produkter gratis?",
+        "image_width": "half",
+        "image_ratio": "circle",
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false
       }
     },
     "main": {
@@ -186,8 +190,8 @@
     }
   },
   "order": [
-    "164198057306c573a0",
-    "1641980597be4be675",
+    "16419794496648f4a4",
+    "16419829100a373d4c",
     "main",
     "1638933924cc2996fe",
     "product-recommendations"
