@@ -38,7 +38,7 @@
         "164197944954022001-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/gratis-produkter-banner.jpg",
+        "image": "shopify:\/\/shop_images\/gratis-produkt-banner-fri-frakt.jpg",
         "image_url": "",
         "image_overlay_opacity": 0,
         "image2_url": "",
@@ -102,7 +102,7 @@
         "164198291054030bfd-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Velvet_Pants-Grey-VPAS-GR_5_1859b095-f15a-4c21-b807-d4f15e5cf0c5.jpg",
+            "image": "shopify:\/\/shop_images\/grunn-1-bilde.jpg",
             "title": "Grunn 1",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
@@ -112,7 +112,7 @@
         "164198291054030bfd-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Velvet_Pants-Grey-VPAS-GR_5_1859b095-f15a-4c21-b807-d4f15e5cf0c5.jpg",
+            "image": "shopify:\/\/shop_images\/grunn-2-bilde.jpg",
             "title": "Grunn 2",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
@@ -122,7 +122,7 @@
         "164198291054030bfd-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Velvet_Pants-Grey-VPAS-GR_5_1859b095-f15a-4c21-b807-d4f15e5cf0c5.jpg",
+            "image": "shopify:\/\/shop_images\/grunn-3-bilde.jpg",
             "title": "Grunn 3",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
