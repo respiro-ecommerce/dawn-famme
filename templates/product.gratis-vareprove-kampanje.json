@@ -104,8 +104,8 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/grunn-1-bilde.jpg",
-            "title": "Grunn 1",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "For å inspirere",
+            "text": "<p>Målet vårt er å lage produkter du vil elske. I utvikling av plaggene kombinerer vi teknologi og mote for å lage fine og funksjonelle klær til trening og daglig bruk. Vi ønsker derfor din tilbakemelding på produktene våre.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -114,8 +114,8 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/grunn-2-bilde.jpg",
-            "title": "Grunn 2",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "For å bli bedre",
+            "text": "<p>Målet vårt er å lage produkter du vil elske. I utvikling av plaggene kombinerer vi teknologi og mote for å lage fine og funksjonelle klær til trening og daglig bruk. Vi ønsker derfor din tilbakemelding på produktene våre.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -124,18 +124,8 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/grunn-3-bilde.jpg",
-            "title": "Grunn 3",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "658d3e8c-5677-4b5e-b0db-2cb8a89a4535": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/grunn-4-bilde-no.jpg",
-            "title": "Grunn 4",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "For miljøet",
+            "text": "<p>Målet vårt er å lage produkter du vil elske. I utvikling av plaggene kombinerer vi teknologi og mote for å lage fine og funksjonelle klær til trening og daglig bruk. Vi ønsker derfor din tilbakemelding på produktene våre.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -144,8 +134,7 @@
       "block_order": [
         "164198291054030bfd-0",
         "164198291054030bfd-1",
-        "164198291054030bfd-2",
-        "658d3e8c-5677-4b5e-b0db-2cb8a89a4535"
+        "164198291054030bfd-2"
       ],
       "settings": {
         "title": "Hvorfor gir vi bort produkter gratis?",
