@@ -226,7 +226,7 @@
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
-        "heading": "Kanskje du liker noe av dette...",
+        "heading": "Vi tror du vil like..",
         "image_ratio": "adapt",
         "show_secondary_image": true,
         "add_image_padding": false,
