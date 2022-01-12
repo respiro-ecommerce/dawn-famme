@@ -38,8 +38,8 @@
         "164197944954022001-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/banner-gratis-produkter-desktop_1.jpg",
-        "image_m": "shopify:\/\/shop_images\/banner-gratis-produkter-mobil_1.jpg",
+        "image": "shopify:\/\/shop_images\/gratis-produkter-famme-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/gratis-produkter-famme-mobil.jpg",
         "image_url": "",
         "image_overlay_opacity": 0,
         "image2_url": "",
@@ -67,7 +67,7 @@
         "1641983278bc1ad7e3-1": {
           "type": "text",
           "settings": {
-            "text": "<p>For å få et gratis produkt må du legge til et gratis-produkt din som du finner <strong>nederst på denne siden<\/strong>, i handlekurven din. Er det utsolgt før du fikk tak i gratis produkt? Da bør du legge igjen eposten din her, så varsler vi deg neste gang vi gir bort gratis produkter<\/p>"
+            "text": "<p>For å få et gratis produkt må du fullføre en bestilling på ønsket produkt. Du finner gratis-produktene <strong>nederst på denne siden<\/strong>. Vær rask! Er det utsolgt? Vi legger ut et begrenset antall produkter regelmessig. Da legg igjen eposten din her, så varsler vi deg neste gang.<\/p>"
           }
         }
       },
