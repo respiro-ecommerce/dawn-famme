@@ -66,7 +66,7 @@
         "1641983278bc1ad7e3-1": {
           "type": "text",
           "settings": {
-            "text": "<p>For å få et gratis produkt må du legge til et gratis-produkt din som du finner <strong>nederst på denne siden<\/strong>, i handlekurven din. Er det utsolgt før du fikk tak i gratis produkt? Da bør du legge igjen eposten din her, så varsler vi deg neste gang vi gir bort gratis produkter.<\/p>"
+            "text": "<p>For å få et gratis produkt må du legge til et gratis-produkt din som du finner <strong>nederst på denne siden<\/strong>, i handlekurven din. Er det utsolgt før du fikk tak i gratis produkt? Da bør du legge igjen eposten din her, så varsler vi deg neste gang vi gir bort gratis produkter.<\/p>"
           }
         }
       },
@@ -146,19 +146,21 @@
         "swipe_on_mobile": false
       }
     },
-    "1638933924cc2996fe": {
+    "16419879506b96617c": {
       "type": "apps",
       "blocks": {
-        "45107f00-8bba-4c3c-acb2-87156f1ba1b8": {
-          "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+        "23ce13d8-b720-4413-88f0-6b05a362fc53": {
+          "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/reviews-carousel\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
           "settings": {
-            "product": "{{product}}",
-            "widget_type": "reviews_widget"
+            "show_heading": false,
+            "heading": "",
+            "badge_link": "",
+            "product": "{{product}}"
           }
         }
       },
       "block_order": [
-        "45107f00-8bba-4c3c-acb2-87156f1ba1b8"
+        "23ce13d8-b720-4413-88f0-6b05a362fc53"
       ],
       "settings": {
         "include_margins": true
@@ -223,7 +225,7 @@
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
-        "heading": "",
+        "heading": "Kanskje du liker noe av dette...",
         "image_ratio": "adapt",
         "show_secondary_image": true,
         "add_image_padding": false,
@@ -238,7 +240,7 @@
     "1641983278c21db4b2",
     "164198328929a5fbaa",
     "16419829100a373d4c",
-    "1638933924cc2996fe",
+    "16419879506b96617c",
     "main",
     "product-recommendations"
   ]
