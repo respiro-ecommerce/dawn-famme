@@ -39,11 +39,12 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/gratis-produkt-banner-fri-frakt.jpg",
+        "image_m": "shopify:\/\/shop_images\/famme-produkt-banner-gratis-mobil.jpg",
         "image_url": "",
         "image_overlay_opacity": 0,
         "image2_url": "",
         "image_height": "large",
-        "adapt_height_first_image": true,
+        "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",
@@ -132,7 +133,7 @@
         "658d3e8c-5677-4b5e-b0db-2cb8a89a4535": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/grunn-4-bilde.jpg",
+            "image": "shopify:\/\/shop_images\/grunn-4-bilde-no.jpg",
             "title": "Grunn 4",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
@@ -157,21 +158,21 @@
         "swipe_on_mobile": true
       }
     },
-    "16419879506b96617c": {
+    "16419899346c2e429f": {
       "type": "apps",
       "blocks": {
-        "23ce13d8-b720-4413-88f0-6b05a362fc53": {
+        "c430b9d7-e220-4735-8768-f36cf5e874b6": {
           "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/reviews-carousel\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
           "settings": {
             "show_heading": false,
             "heading": "",
-            "badge_link": "",
-            "product": "power-seamless-top"
+            "badge_link": "shopify:\/\/collections\/bestsellers",
+            "product": ""
           }
         }
       },
       "block_order": [
-        "23ce13d8-b720-4413-88f0-6b05a362fc53"
+        "c430b9d7-e220-4735-8768-f36cf5e874b6"
       ],
       "settings": {
         "include_margins": true
@@ -251,7 +252,7 @@
     "1641983278c21db4b2",
     "164198328929a5fbaa",
     "16419829100a373d4c",
-    "16419879506b96617c",
+    "16419899346c2e429f",
     "main",
     "product-recommendations"
   ]
