@@ -38,8 +38,8 @@
         "164197944954022001-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/gratis-produkter-famme-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/gratis-produkter-famme-mobil.jpg",
+        "image": "shopify:\/\/shop_images\/prove-famme-gratis-desktop-banner.png",
+        "image_m": "shopify:\/\/shop_images\/prove-famme-gratis-mobil-banner.png",
         "image_url": "",
         "image_overlay_opacity": 0,
         "image2_url": "",
@@ -97,13 +97,31 @@
         "full_width": true
       }
     },
+    "164207856546bb95ae": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/outdoor-banner-smal_1.jpg",
+        "image_url": "",
+        "image_overlay_opacity": 0,
+        "image2_url": "",
+        "image_height": "small",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "16419829100a373d4c": {
       "type": "multicolumn",
       "blocks": {
         "164198291054030bfd-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/grunn-1-bilde.jpg",
+            "image": "shopify:\/\/shop_images\/1_e3a29342-09f1-410f-bb70-1a8b7798f5ed.jpg",
             "title": "For å glede og motivere",
             "text": "<p>Vi ønsker å gi flere muligheten til å prøve treningsklær fra Famme. I tillegg til treningsklær av høy kvalitet har vi et <strong>bredt utvalg<\/strong> av turklær, loungewear og undertøy. Plaggene våre er suverene fordi vi bruker garn og stoff av <strong>høy kvalitet.<\/strong> Famme jobber med nøye utvalgte produsenter.<\/p>",
             "link_label": "",
@@ -113,7 +131,7 @@
         "164198291054030bfd-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/grunn-2-bilde.jpg",
+            "image": "shopify:\/\/shop_images\/2.jpg",
             "title": "En komplett garderobe i toppsjiktet",
             "text": "<p>Målet vårt er å lage produkter du vil elske. I utvikling av plaggene kombinerer vi teknologi og mote for å lage fine og funksjonelle klær til trening og daglig bruk. Vi ønsker også å høre <strong>din tilbakemelding<\/strong> på produktene våre.<\/p>",
             "link_label": "",
@@ -123,7 +141,7 @@
         "164198291054030bfd-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/grunn-3-bilde.jpg",
+            "image": "shopify:\/\/shop_images\/3.jpg",
             "title": "Bedre for miljøet",
             "text": "<p>Vi i Famme ønsker å lede veien innen <strong>bærekraft og miljøvennlig<\/strong> produksjon innen damemote og treningstøy. Våre produsenter er blant de mest miljøvennlige i bransjen. Famme har flere tiltak for bærekraftig for å redusere svinn o.l.<\/p>",
             "link_label": "",
@@ -145,26 +163,6 @@
         "button_label": "",
         "button_link": "",
         "swipe_on_mobile": false
-      }
-    },
-    "16419899346c2e429f": {
-      "type": "apps",
-      "blocks": {
-        "c430b9d7-e220-4735-8768-f36cf5e874b6": {
-          "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/reviews-carousel\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
-          "settings": {
-            "show_heading": false,
-            "heading": "",
-            "badge_link": "shopify:\/\/collections\/bestsellers",
-            "product": ""
-          }
-        }
-      },
-      "block_order": [
-        "c430b9d7-e220-4735-8768-f36cf5e874b6"
-      ],
-      "settings": {
-        "include_margins": true
       }
     },
     "main": {
@@ -223,6 +221,26 @@
         "bg": "#f5f5f5"
       }
     },
+    "16419899346c2e429f": {
+      "type": "apps",
+      "blocks": {
+        "c430b9d7-e220-4735-8768-f36cf5e874b6": {
+          "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/reviews-carousel\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "show_heading": false,
+            "heading": "",
+            "badge_link": "shopify:\/\/collections\/bestsellers",
+            "product": ""
+          }
+        }
+      },
+      "block_order": [
+        "c430b9d7-e220-4735-8768-f36cf5e874b6"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
@@ -240,9 +258,10 @@
     "16419794496648f4a4",
     "1641983278c21db4b2",
     "164198328929a5fbaa",
+    "164207856546bb95ae",
     "16419829100a373d4c",
-    "16419899346c2e429f",
     "main",
+    "16419899346c2e429f",
     "product-recommendations"
   ]
 }
