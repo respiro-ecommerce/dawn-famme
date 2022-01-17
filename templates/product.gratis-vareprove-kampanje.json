@@ -167,7 +167,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/camo-banner-desktop.jpg",
         "image_m": "shopify:\/\/shop_images\/camo-banner-mobil.jpg",
-        "image_url": "",
+        "image_url": "shopify:\/\/collections\/camo-klaer",
         "image_overlay_opacity": 0,
         "image2_url": "",
         "image_height": "small",
