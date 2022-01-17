@@ -236,24 +236,17 @@
     "16419899346c2e429f": {
       "type": "apps",
       "blocks": {
-        "d30cf0bf-894b-4cba-843c-3f28f39accb2": {
-          "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/media-grid\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
-          "settings": {
-            "product": "seamless-tights-vortex-2"
-          }
-        },
         "036b478b-e2bb-4eb4-a038-42bc617fb373": {
           "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/reviews-carousel\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
           "settings": {
             "show_heading": false,
             "heading": "",
             "badge_link": "",
-            "product": "seamless-tights-vortex-2"
+            "product": "anfrag-tights-2"
           }
         }
       },
       "block_order": [
-        "d30cf0bf-894b-4cba-843c-3f28f39accb2",
         "036b478b-e2bb-4eb4-a038-42bc617fb373"
       ],
       "settings": {
