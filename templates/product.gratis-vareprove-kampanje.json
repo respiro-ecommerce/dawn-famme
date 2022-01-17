@@ -98,7 +98,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/vintersalg-banner-desktop.jpg",
         "image_m": "shopify:\/\/shop_images\/vintersalg-banner-mobil.jpg",
-        "image_url": "",
+        "image_url": "shopify:\/\/collections\/vinterklaer",
         "image_overlay_opacity": 0,
         "image2_url": "",
         "image_height": "small",
