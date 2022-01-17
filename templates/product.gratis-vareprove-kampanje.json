@@ -187,8 +187,9 @@
         "1642414904d220bde8-0": {
           "type": "column",
           "settings": {
-            "title": "Følg insta",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify:\/\/shop_images\/025ED4D5-A650-4FCB-9324-180D92853017.jpg",
+            "title": "Følg oss på Instagram",
+            "text": "<p>Følg oss på Instagram for å få med deg nyheter og la deg inspirere av ulike antrekk. <\/p>",
             "link_label": "",
             "link": ""
           }
@@ -196,8 +197,9 @@
         "1642414904d220bde8-1": {
           "type": "column",
           "settings": {
-            "title": "Blir med i produktgruppen",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify:\/\/shop_images\/vortex-power-top.jpg",
+            "title": "Bli med i produktgruppen vår",
+            "text": "<p>Bli med i norges største produktutviklingsgruppe med flere titusener medlemmer i Norge. <\/p>",
             "link_label": "",
             "link": ""
           }
@@ -209,9 +211,9 @@
       ],
       "settings": {
         "title": "Må jeg gjøre noe før jeg kan bestille? (en av disse holder)",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "column_alignment": "left",
+        "image_width": "half",
+        "image_ratio": "circle",
+        "column_alignment": "center",
         "background_style": "primary",
         "button_label": "Button label",
         "button_link": "",
