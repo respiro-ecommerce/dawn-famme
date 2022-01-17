@@ -164,31 +164,13 @@
     },
     "164241410778f80e5d": {
       "type": "image-banner",
-      "blocks": {
-        "1642414107e0030745-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "medium"
-          }
-        },
-        "1642414107e0030745-1": {
-          "type": "text",
-          "settings": {
-            "text": "En til upsell av et tilbud vi har med banner over",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "1642414107e0030745-0",
-        "1642414107e0030745-1"
-      ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/camo-banner-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/camo-banner-mobil.jpg",
         "image_url": "",
         "image_overlay_opacity": 0,
         "image2_url": "",
-        "image_height": "medium",
+        "image_height": "small",
         "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",
         "show_text_box": true,
