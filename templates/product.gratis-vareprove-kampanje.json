@@ -85,6 +85,7 @@
       "blocks": {
         "518c74fb-71e4-400d-81bd-a6349b7fc406": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "Bilde over her burde være en upsell av et godt tilbud vi har nå. Eksempelvis sesong-vinter tilbud",
             "text_style": "body"
@@ -95,6 +96,8 @@
         "518c74fb-71e4-400d-81bd-a6349b7fc406"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/vintersalg-banner-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/vintersalg-banner-mobil.jpg",
         "image_url": "",
         "image_overlay_opacity": 0,
         "image2_url": "",
