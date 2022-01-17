@@ -67,7 +67,7 @@
         "1641983278bc1ad7e3-1": {
           "type": "text",
           "settings": {
-            "text": "<p>For å få et gratis produkt må du fullføre en bestilling på ønsket produkt. Du finner gratis-produktene <strong>nederst på denne siden<\/strong>. Vær rask! <\/p><p>Er det utsolgt? Vi legger ut et begrenset antall produkter regelmessig. Da legg igjen eposten din her, så varsler vi deg neste gang.<\/p>"
+            "text": "<p>Nederst på siden kan du legge en bestilling på et gratis produkt. Merk at det kun er <strong>nye kunder<\/strong>, som får produktet. <\/p>"
           }
         }
       },
@@ -80,25 +80,20 @@
         "full_width": true
       }
     },
-    "164198328929a5fbaa": {
-      "type": "newsletter",
+    "164207856546bb95ae": {
+      "type": "image-banner",
       "blocks": {
-        "1641983289232ac25f-2": {
-          "type": "email_form",
+        "518c74fb-71e4-400d-81bd-a6349b7fc406": {
+          "type": "text",
           "settings": {
+            "text": "Bilde over her burde være en upsell av et godt tilbud vi har nå. Eksempelvis sesong-vinter tilbud",
+            "text_style": "body"
           }
         }
       },
       "block_order": [
-        "1641983289232ac25f-2"
+        "518c74fb-71e4-400d-81bd-a6349b7fc406"
       ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true
-      }
-    },
-    "164207856546bb95ae": {
-      "type": "image-banner",
       "settings": {
         "image_url": "",
         "image_overlay_opacity": 0,
@@ -121,7 +116,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/1_e3a29342-09f1-410f-bb70-1a8b7798f5ed.jpg",
-            "title": "For å glede og motivere",
+            "title": "treningsklær & Sko",
             "text": "<p>Vi ønsker å gi flere muligheten til å prøve treningsklær fra Famme. I tillegg til treningsklær av høy kvalitet har vi et <strong>bredt utvalg<\/strong> av turklær, loungewear og undertøy. Plaggene våre er suverene fordi vi bruker garn og stoff av <strong>høy kvalitet.<\/strong> Famme jobber med nøye utvalgte produsenter.<\/p>",
             "link_label": "",
             "link": ""
@@ -131,7 +126,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/2.jpg",
-            "title": "En komplett garderobe i toppsjiktet",
+            "title": "Turklær",
             "text": "<p>Målet vårt er å lage produkter du vil elske. I utvikling av plaggene kombinerer vi teknologi og mote for å lage fine og funksjonelle klær til trening og daglig bruk. Vi ønsker også å høre <strong>din tilbakemelding<\/strong> på produktene våre.<\/p>",
             "link_label": "",
             "link": ""
@@ -141,7 +136,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/3.jpg",
-            "title": "Bedre for miljøet",
+            "title": "Jeans",
             "text": "<p>Vi i Famme ønsker å lede veien innen <strong>bærekraft og miljøvennlig<\/strong> produksjon innen damemote og treningstøy. Våre produsenter er blant de mest miljøvennlige i bransjen. Famme har flere tiltak for bærekraftig for å redusere svinn o.l.<\/p>",
             "link_label": "",
             "link": ""
@@ -154,7 +149,7 @@
         "164198291054030bfd-2"
       ],
       "settings": {
-        "title": "Hvorfor gir vi bort produkter gratis?",
+        "title": "Vi vet du kommer til å bli fornøyd og bestille igjen og derfor gir vi første produkt gratis, hva kun du få hos Famme?",
         "image_width": "half",
         "image_ratio": "circle",
         "column_alignment": "center",
@@ -162,6 +157,43 @@
         "button_label": "",
         "button_link": "",
         "swipe_on_mobile": false
+      }
+    },
+    "164241410778f80e5d": {
+      "type": "image-banner",
+      "blocks": {
+        "1642414107e0030745-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "medium"
+          }
+        },
+        "1642414107e0030745-1": {
+          "type": "text",
+          "settings": {
+            "text": "En til upsell av et tilbud vi har med banner over",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "1642414107e0030745-0",
+        "1642414107e0030745-1"
+      ],
+      "settings": {
+        "image_url": "",
+        "image_overlay_opacity": 0,
+        "image2_url": "",
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
       }
     },
     "main": {
@@ -220,6 +252,23 @@
         "bg": "#f5f5f5"
       }
     },
+    "164198328929a5fbaa": {
+      "type": "newsletter",
+      "blocks": {
+        "1641983289232ac25f-2": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "1641983289232ac25f-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
     "16419899346c2e429f": {
       "type": "apps",
       "blocks": {
@@ -256,10 +305,11 @@
   "order": [
     "16419794496648f4a4",
     "1641983278c21db4b2",
-    "164198328929a5fbaa",
     "164207856546bb95ae",
     "16419829100a373d4c",
+    "164241410778f80e5d",
     "main",
+    "164198328929a5fbaa",
     "16419899346c2e429f",
     "product-recommendations"
   ]
