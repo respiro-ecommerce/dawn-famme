@@ -233,6 +233,26 @@
         "swipe_on_mobile": false
       }
     },
+    "16419899346c2e429f": {
+      "type": "apps",
+      "blocks": {
+        "c430b9d7-e220-4735-8768-f36cf5e874b6": {
+          "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/reviews-carousel\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "show_heading": false,
+            "heading": "",
+            "badge_link": "shopify:\/\/collections\/bestsellers",
+            "product": ""
+          }
+        }
+      },
+      "block_order": [
+        "c430b9d7-e220-4735-8768-f36cf5e874b6"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "16424150538de758f1": {
       "type": "rich-text",
       "blocks": {
@@ -246,7 +266,7 @@
         "1642415053a4008607-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Du vil motta varen i løpet av få dager om du får bestilt, om det er tomt kan du få melding når det blir åpnet igjen for bestilling<\/p>"
+            "text": "<p>Du vil motta varen i løpet av få dager om du får bestilt, om det er tomt kan du få melding når det blir åpnet igjen for bestilling. Velg størrelsen som er tom og \"få melding når størrelsen er tilbake\".<\/p>"
           }
         }
       },
@@ -332,26 +352,6 @@
         "full_width": true
       }
     },
-    "16419899346c2e429f": {
-      "type": "apps",
-      "blocks": {
-        "c430b9d7-e220-4735-8768-f36cf5e874b6": {
-          "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/reviews-carousel\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
-          "settings": {
-            "show_heading": false,
-            "heading": "",
-            "badge_link": "shopify:\/\/collections\/bestsellers",
-            "product": ""
-          }
-        }
-      },
-      "block_order": [
-        "c430b9d7-e220-4735-8768-f36cf5e874b6"
-      ],
-      "settings": {
-        "include_margins": true
-      }
-    },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
@@ -372,10 +372,10 @@
     "16419829100a373d4c",
     "164241410778f80e5d",
     "1642414904f904648b",
+    "16419899346c2e429f",
     "16424150538de758f1",
     "main",
     "164198328929a5fbaa",
-    "16419899346c2e429f",
     "product-recommendations"
   ]
 }
