@@ -190,8 +190,8 @@
             "image": "shopify:\/\/shop_images\/025ED4D5-A650-4FCB-9324-180D92853017.jpg",
             "title": "Følg oss på Instagram",
             "text": "<p>Følg oss på Instagram for å få med deg nyheter og la deg inspirere av ulike antrekk. <\/p>",
-            "link_label": "",
-            "link": ""
+            "link_label": "Til Instagram",
+            "link": "https:\/\/www.instagram.com\/famme\/"
           }
         },
         "1642414904d220bde8-1": {
@@ -200,8 +200,8 @@
             "image": "shopify:\/\/shop_images\/vortex-power-top.jpg",
             "title": "Bli med i produktgruppen vår",
             "text": "<p>Bli med i norges største produktutviklingsgruppe med flere titusener medlemmer i Norge. <\/p>",
-            "link_label": "",
-            "link": ""
+            "link_label": "Til produktgruppen",
+            "link": "https:\/\/www.facebook.com\/groups\/fammeproduktutvikling"
           }
         }
       },
@@ -215,7 +215,7 @@
         "image_ratio": "circle",
         "column_alignment": "center",
         "background_style": "primary",
-        "button_label": "Button label",
+        "button_label": "",
         "button_link": "",
         "swipe_on_mobile": false
       }
