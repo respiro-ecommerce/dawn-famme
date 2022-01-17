@@ -242,23 +242,6 @@
             "product": "seamless-tights-vortex-2"
           }
         },
-        "d9c199a2-a4b2-493d-91f3-0e9398ba938d": {
-          "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/media-carousel\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
-          "disabled": true,
-          "settings": {
-            "product": "{{product}}"
-          }
-        },
-        "c430b9d7-e220-4735-8768-f36cf5e874b6": {
-          "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/reviews-carousel\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
-          "disabled": true,
-          "settings": {
-            "show_heading": false,
-            "heading": "",
-            "badge_link": "shopify:\/\/collections\/bestsellers",
-            "product": "anfrag-tights-2"
-          }
-        },
         "036b478b-e2bb-4eb4-a038-42bc617fb373": {
           "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/reviews-carousel\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
           "settings": {
@@ -271,8 +254,6 @@
       },
       "block_order": [
         "d30cf0bf-894b-4cba-843c-3f28f39accb2",
-        "d9c199a2-a4b2-493d-91f3-0e9398ba938d",
-        "c430b9d7-e220-4735-8768-f36cf5e874b6",
         "036b478b-e2bb-4eb4-a038-42bc617fb373"
       ],
       "settings": {
