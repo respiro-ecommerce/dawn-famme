@@ -196,6 +196,69 @@
         "show_text_below": true
       }
     },
+    "1642414904f904648b": {
+      "type": "multicolumn",
+      "blocks": {
+        "1642414904d220bde8-0": {
+          "type": "column",
+          "settings": {
+            "title": "Følg insta",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "1642414904d220bde8-1": {
+          "type": "column",
+          "settings": {
+            "title": "Blir med i produktgruppen",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1642414904d220bde8-0",
+        "1642414904d220bde8-1"
+      ],
+      "settings": {
+        "title": "Må jeg gjøre noe før jeg kan bestille? (en av disse holder)",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
+    },
+    "16424150538de758f1": {
+      "type": "rich-text",
+      "blocks": {
+        "1642415053a4008607-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Bestilling",
+            "heading_size": "h1"
+          }
+        },
+        "1642415053a4008607-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Du vil motta varen i løpet av få dager om du får bestilt, om det er tomt kan du få melding når det blir åpnet igjen for bestilling<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1642415053a4008607-0",
+        "1642415053a4008607-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -308,6 +371,8 @@
     "164207856546bb95ae",
     "16419829100a373d4c",
     "164241410778f80e5d",
+    "1642414904f904648b",
+    "16424150538de758f1",
     "main",
     "164198328929a5fbaa",
     "16419899346c2e429f",
