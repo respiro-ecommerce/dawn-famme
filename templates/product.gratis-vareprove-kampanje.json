@@ -2,41 +2,6 @@
   "sections": {
     "16419794496648f4a4": {
       "type": "image-banner",
-      "blocks": {
-        "164197944954022001-0": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "medium"
-          }
-        },
-        "164197944954022001-1": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "164197944954022001-2": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "164197944954022001-0",
-        "164197944954022001-1",
-        "164197944954022001-2"
-      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/prove-famme-gratis-desktop-banner.png",
         "image_m": "shopify:\/\/shop_images\/prove-famme-gratis-mobil-banner.png",
@@ -119,7 +84,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Endorphin_RX1_Shoes-EDRX-1_1_1.jpg",
-            "title": "treningsklær & Sko",
+            "title": "Treningsklær & Sko",
             "text": "<p>Vi ønsker å gi flere muligheten til å prøve treningsklær fra Famme. I tillegg til treningsklær av høy kvalitet har vi et <strong>bredt utvalg<\/strong> av turklær, loungewear og undertøy. Plaggene våre er suverene fordi vi bruker garn og stoff av <strong>høy kvalitet.<\/strong> Famme jobber med nøye utvalgte produsenter.<\/p>",
             "link_label": "Shop treningsklær og sko",
             "link": "shopify:\/\/collections\/treningsklaer"
