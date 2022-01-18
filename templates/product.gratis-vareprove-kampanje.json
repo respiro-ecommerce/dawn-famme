@@ -239,6 +239,7 @@
     },
     "164198328929a5fbaa": {
       "type": "newsletter",
+      "disabled": true,
       "blocks": {
         "1641983289232ac25f-2": {
           "type": "email_form",
