@@ -237,24 +237,6 @@
         "custom_liquid": "<div class=\"klaviyo-form-WntVpb\"><\/div>"
       }
     },
-    "164198328929a5fbaa": {
-      "type": "newsletter",
-      "disabled": true,
-      "blocks": {
-        "1641983289232ac25f-2": {
-          "type": "email_form",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "1641983289232ac25f-2"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true
-      }
-    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -334,7 +316,6 @@
     "16419899346c2e429f",
     "16424150538de758f1",
     "16425030734b9a1d7a",
-    "164198328929a5fbaa",
     "main",
     "product-recommendations"
   ]
