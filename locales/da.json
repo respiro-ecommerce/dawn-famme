@@ -386,7 +386,7 @@
       "password": "Adgangskode",
       "password_confirm": "Bekræft adgangskode",
       "submit": "Nulstil adgangskode",
-      "account_info": "Husk! At lægge en ordre betyder ikke, at du automatisk opretter en brugerkonto i vores butik. Opret en konto med den samme e-mailadresse, som du brugte til at afgive din ordre."
+      "account_info": "Husk! At lægge en ordre betyder ikke at du automatisk opretter en brugerkonto i vores butik. Opret en konto med den samme e-mailadresse, som du brugte til at afgive din ordre."
     },
     "order": {
       "title": "Ordre {{ name }}",
