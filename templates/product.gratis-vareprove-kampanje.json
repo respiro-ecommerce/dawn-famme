@@ -315,6 +315,12 @@
         "show_vendor": false,
         "show_rating": false
       }
+    },
+    "16425030734b9a1d7a": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "https:\/\/famme-international.myshopify.com\/admin\/themes\/124453716142\/editor?previewPath=%2Fproducts%2Ftreningsklaer%3Fview%3Dgratis-vareprove-kampanje"
+      }
     }
   },
   "order": [
@@ -328,6 +334,7 @@
     "16424150538de758f1",
     "164198328929a5fbaa",
     "main",
-    "product-recommendations"
+    "product-recommendations",
+    "16425030734b9a1d7a"
   ]
 }
