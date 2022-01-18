@@ -231,6 +231,12 @@
         "full_width": true
       }
     },
+    "16425030734b9a1d7a": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "https:\/\/famme-international.myshopify.com\/admin\/themes\/124453716142\/editor?previewPath=%2Fproducts%2Ftreningsklaer%3Fview%3Dgratis-vareprove-kampanje"
+      }
+    },
     "164198328929a5fbaa": {
       "type": "newsletter",
       "blocks": {
@@ -315,12 +321,6 @@
         "show_vendor": false,
         "show_rating": false
       }
-    },
-    "16425030734b9a1d7a": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "https:\/\/famme-international.myshopify.com\/admin\/themes\/124453716142\/editor?previewPath=%2Fproducts%2Ftreningsklaer%3Fview%3Dgratis-vareprove-kampanje"
-      }
     }
   },
   "order": [
@@ -332,9 +332,9 @@
     "1642414904f904648b",
     "16419899346c2e429f",
     "16424150538de758f1",
+    "16425030734b9a1d7a",
     "164198328929a5fbaa",
     "main",
-    "product-recommendations",
-    "16425030734b9a1d7a"
+    "product-recommendations"
   ]
 }
