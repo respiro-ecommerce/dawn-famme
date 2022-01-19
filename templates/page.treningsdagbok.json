@@ -4,10 +4,10 @@
       "type": "image-banner",
       "settings": {
         "image": "shopify:\/\/shop_images\/gratis-banner-ny.jpg",
-        "image_m": "shopify:\/\/shop_images\/treningsdagbok-banner.jpg",
+        "image_m": "shopify:\/\/shop_images\/gratis-banner-ny-mobil.jpg",
         "image_url": "shopify:\/\/products\/treningsklaer",
         "image_overlay_opacity": 0,
-        "image2_url": "",
+        "image2_url": "shopify:\/\/products\/treningsklaer",
         "image_height": "medium",
         "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",
