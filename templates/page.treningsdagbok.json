@@ -4,7 +4,7 @@
       "type": "image-banner",
       "settings": {
         "image": "shopify:\/\/shop_images\/gratis-banner-ny.jpg",
-        "image_m": "shopify:\/\/shop_images\/gratis-banner-ny-mobil.jpg",
+        "image_m": "shopify:\/\/shop_images\/gratis-banner-mobil-ny.jpg",
         "image_url": "shopify:\/\/products\/treningsklaer",
         "image_overlay_opacity": 0,
         "image2_url": "shopify:\/\/products\/treningsklaer",
