@@ -427,5 +427,10 @@
       "copy_code_success": "Koden er blevet kopieret",
       "print_gift_card": "Udskriv"
     }
+  },
+  "shopify": {
+    "challenge": {
+      "error": "Dit svar er ikke korrekt, prøv venligst igen."
+    }
   }
 }
