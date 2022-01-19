@@ -431,6 +431,11 @@
   "shopify": {
     "challenge": {
       "error": "Dit svar er ikke korrekt, prøv venligst igen."
+    },
+    "collections": {
+      "sorting": {
+        "best_selling": "Bestsellers"
+      }
     }
   }
 }
