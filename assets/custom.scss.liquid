@@ -144,37 +144,34 @@ button.product-form__submit.button--full-width {max-width: 550px;}
 {% comment %}Hide color options for disabled colors {% endcomment %}
 .product-form__input input[type="radio"][name="Color"].disabled+label,
 .product-form__input input[type="radio"][name="Color"]:disabled+label {display: none;}
-div.fwbadge {
-  position: absolute;
-  bottom: 50px;
-  left: 0;
-  width: 100%;
-  text-align: center;
-}
 .button {border-radius: 25px;}
 section.spaced-section--full-width+section.spaced-section--full-width {margin-top: {{ settings.bannerspace }}px;}
-div.product__description.rte> {
-  div.a {
-    height: 0;
-    overflow: hidden;
-    margin: 0;
-    transition: .5s;
+//buttons homepage section spacing
+.spaced-section {margin: 5rem auto;}
+//blog template articles layout fix
+div.card.article-card.card--standard>.card__content .card__information {
+  padding: 3rem;
+  background: #f8f8f8;
+}
+div.article-card__image-wrapper.card__media, div.article-card__image.media {position: static;
+  &+div.card__content {display: none;}
+}
+//collection swatches layout fix
+.card-wrapper {height: auto;}
+div.product-groups__images {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  >a.other-product-image {margin: 0 2px;}
+}
+//banner links and header submenus
+div.banner__content {z-index: 1;}
+//sold out styles fix
+.product-form__input input[type="radio"]:disabled, .product-form__input input[type="radio"].disabled {
+  &+label {
+    border-color: rgba(78, 78, 78, 0.4);
+    color: rgba(78, 78, 78, 0.4);
+    text-decoration: line-through;
   }
-  .current {
-    height: auto;
-    transition: .5s;
-  }
-  div.current {padding: 10px 0;}
-  p.q {
-    cursor: pointer;
-    border-bottom: 1px solid black;
-    margin-bottom: -1px;
-    &:after {
-      content: '+';
-      float: right;
-      font-size: 28px;
-      line-height: 1;
-    }
-    &.open:after {content: '‒';}
-  }
+  &:checked+label {color: #bfbfbf;}
 }

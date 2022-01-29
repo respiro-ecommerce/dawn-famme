@@ -4,8 +4,8 @@
       "type": "btns",
       "settings": {
         "menu": "treningstights",
-        "bg": "#8a9e93",
-        "color": "#fff",
+        "bg": "#4e4e4e",
+        "color": "#ffffff",
         "width": 165,
         "padx": 10,
         "pady": 0,

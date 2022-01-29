@@ -34,6 +34,34 @@
         "description": {
           "type": "description",
           "settings": {
+            "icon": "check_mark"
+          }
+        },
+        "eabf9557-eae1-4602-8216-a1fcf53adaa8": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Frakt",
+            "content": "<p><strong>Posten <\/strong>leverer pakken din direkte i postkassen, om pakken er for stor går den til <strong>nærmeste butikk<\/strong>. Alternativt kan du få pakken rett i en <strong>butikk<\/strong> eller <strong>pakkeboks<\/strong> du velger selv.  Om du ønsker pakken levert <strong>samme dag<\/strong> tilbyr vi dette med <strong>Porterbuddy<\/strong><\/p>",
+            "page": "",
+            "icon": "check_mark"
+          }
+        },
+        "576a2eb7-833f-45f5-a1ca-f507f429547d": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Produktdetaljer",
+            "content": "<p>{{ product.metafields.my_fields.composition.value }}<\/p>",
+            "page": "",
+            "icon": "check_mark"
+          }
+        },
+        "7ed2c020-6590-4a00-9d01-dbdd3590ee01": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Passform",
+            "content": "<p>Modellhøyde: {{ product.metafields.my_fields.model_height.value }}<\/p><p>Modellstørrelse: {{ product.metafields.my_fields.model_size.value }}<\/p>",
+            "page": "",
+            "icon": "check_mark"
           }
         }
       },
@@ -43,7 +71,10 @@
         "price",
         "variant_picker",
         "buy_buttons",
-        "description"
+        "description",
+        "eabf9557-eae1-4602-8216-a1fcf53adaa8",
+        "576a2eb7-833f-45f5-a1ca-f507f429547d",
+        "7ed2c020-6590-4a00-9d01-dbdd3590ee01"
       ],
       "settings": {
         "enable_sticky_info": false,

@@ -6,15 +6,47 @@
         "image": "shopify:\/\/shop_images\/de-beste-sportsbrillene-til-lopeturen_840c84d6-e15e-4b44-8799-45e5713e52c2.jpg",
         "image_m": "shopify:\/\/shop_images\/de-beste-sportsbrillene-til-lopeturen_840c84d6-e15e-4b44-8799-45e5713e52c2.jpg",
         "image_url": "shopify:\/\/collections\/sportsbriller",
+        "image_overlay_opacity": 0,
         "image2_url": "",
         "image_height": "small",
         "adapt_height_first_image": false,
-        "desktop_text_box_position": "center",
+        "desktop_content_position": "middle-center",
         "show_text_box": true,
-        "image_overlay_opacity": 0,
+        "desktop_content_alignment": "center",
         "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
+      }
+    },
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "blog_show_date": true,
+            "blog_show_author": false
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {
+          }
+        },
+        "featured_image": {
+          "type": "featured_image",
+          "settings": {
+            "image_height": "adapt"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "content",
+        "featured_image"
+      ],
+      "settings": {
       }
     },
     "163438960122f1937a": {
@@ -25,7 +57,9 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Brandjacking-fashion.png",
             "title": "Rask levering + gratis retur",
-            "text": "<p><\/p><p>Hos oss kan du kjøpe <strong>fraktfritt <\/strong>og bestiller du i dag har du også <strong>gratis retur<\/strong>! Du velger mellom Posten, Helthjem eller samme dags levering med Porterbuddy!<\/p><p><\/p>"
+            "text": "<p><\/p><p>Hos oss kan du kjøpe <strong>fraktfritt <\/strong>og bestiller du i dag har du også <strong>gratis retur<\/strong>! Du velger mellom Posten, Helthjem eller samme dags levering med Porterbuddy!<\/p><p><\/p>",
+            "link_label": "",
+            "link": ""
           }
         },
         "163438960122f1937a-2": {
@@ -33,7 +67,9 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/brandjacking-bilde-tilbehor_61507803-0118-4870-a5fc-9812ab94ebe6.jpg",
             "title": "Bredt utvalg av treningsartikler",
-            "text": "<p>Vi har tights, treningstopper, løpejakker, sko, sportsbriller og en rekke andre sportsartikler! <\/p><p>Les mer om <a href=\"\/blogs\/merker\/raske-briller\" title=\"Raske briller - Dette må du vite\">utvalget vårt av raske briller<\/a> og <a href=\"\/blogs\/treningsutstyr\/beste-treningsutstyr-2021\" title=\"Beste treningsutstyret 2021\">annet treningsutstyr vi anbefaler<\/a>.<\/p>"
+            "text": "<p>Vi har tights, treningstopper, løpejakker, sko, sportsbriller og en rekke andre sportsartikler! <\/p><p>Les mer om <a href=\"\/blogs\/merker\/raske-briller\" title=\"Raske briller - Dette må du vite\">utvalget vårt av raske briller<\/a> og <a href=\"\/blogs\/treningsutstyr\/beste-treningsutstyr-2021\" title=\"Beste treningsutstyret 2021\">annet treningsutstyr vi anbefaler<\/a>.<\/p>",
+            "link_label": "",
+            "link": ""
           }
         },
         "163438960122f1937a-0": {
@@ -41,7 +77,9 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/brandjacking-bilde-solbriller.jpg",
             "title": "Sportsbriller til trening og fritid",
-            "text": "<p>Vi har <strong>løpebriller<\/strong> som egner seg både til trening eller til hverdags. Våre <strong>raske briller<\/strong> er utstyrt med to glass som man kan skifte ut ved behov, og sportsbrillene har justerbar lengde slik at de enklere passer deg!<\/p>"
+            "text": "<p>Vi har <strong>løpebriller<\/strong> som egner seg både til trening eller til hverdags. Våre <strong>raske briller<\/strong> er utstyrt med to glass som man kan skifte ut ved behov, og sportsbrillene har justerbar lengde slik at de enklere passer deg!<\/p>",
+            "link_label": "",
+            "link": ""
           }
         },
         "4d5425a2-d20d-4cbe-b08b-186ef830640e": {
@@ -49,7 +87,9 @@
           "disabled": true,
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
           }
         }
       },
@@ -141,44 +181,14 @@
         "description": "Swix ullundertøy alternativ - ullundertøysett i myk merinoull",
         "full_width": false
       }
-    },
-    "main": {
-      "type": "main-article",
-      "blocks": {
-        "title": {
-          "type": "title",
-          "settings": {
-            "blog_show_date": true,
-            "blog_show_author": false
-          }
-        },
-        "content": {
-          "type": "content",
-          "settings": {
-          }
-        },
-        "featured_image": {
-          "type": "featured_image",
-          "settings": {
-            "image_height": "adapt"
-          }
-        }
-      },
-      "block_order": [
-        "title",
-        "content",
-        "featured_image"
-      ],
-      "settings": {
-      }
     }
   },
   "order": [
     "163454564855e20815",
+    "main",
     "163438960122f1937a",
     "1635254293ab48d8d3",
     "1634409175ff664290",
-    "163438965009ed774b",
-    "main"
+    "163438965009ed774b"
   ]
 }

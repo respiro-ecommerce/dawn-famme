@@ -6,15 +6,47 @@
         "image": "shopify:\/\/shop_images\/brandjacking-jeans.png",
         "image_m": "shopify:\/\/shop_images\/brandjacking-jeans-mobil.png",
         "image_url": "",
+        "image_overlay_opacity": 0,
         "image2_url": "",
         "image_height": "medium",
         "adapt_height_first_image": false,
-        "desktop_text_box_position": "center",
+        "desktop_content_position": "middle-center",
         "show_text_box": true,
-        "image_overlay_opacity": 0,
+        "desktop_content_alignment": "center",
         "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
+      }
+    },
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "blog_show_date": true,
+            "blog_show_author": false
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {
+          }
+        },
+        "featured_image": {
+          "type": "featured_image",
+          "settings": {
+            "image_height": "adapt"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "content",
+        "featured_image"
+      ],
+      "settings": {
       }
     },
     "163438960122f1937a": {
@@ -25,7 +57,9 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/brandjacking-4FLEX-jeans.jpg",
             "title": "Rask levering + gratis retur",
-            "text": "<p>Bestill jeans hos oss og få levert i dag med Porterbuddy eller om 1-4 dager med posten eller helthjem. Hos Famme kan du kjøpe fraktfritt og bestiller du i dag har du også gratis retur! Du velger mellom Posten, Helthjem eller samme dags levering med Porterbuddy!<\/p>"
+            "text": "<p>Bestill jeans hos oss og få levert i dag med Porterbuddy eller om 1-4 dager med posten eller helthjem. Hos Famme kan du kjøpe fraktfritt og bestiller du i dag har du også gratis retur! Du velger mellom Posten, Helthjem eller samme dags levering med Porterbuddy!<\/p>",
+            "link_label": "",
+            "link": ""
           }
         },
         "4349053e-0c05-4576-b505-65b1de855a57": {
@@ -33,7 +67,9 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/4flex-blue_26.jpg",
             "title": "Bredt utvalg",
-            "text": "<p>Hos Famme har vi<strong> jeans<\/strong> i tillegg til et stort utvalg av <strong>tights, treningstopper, løpejakker, sko og mye mer!<\/strong><\/p><p>Noen av Famme sine jeans er til og med <a href=\"\/products\/4flex-jeans\" title=\"\/products\/4flex-jeans\"><strong>jeans spesielt produsert for fitness damer<\/strong><\/a> og andre hverdagsklær som er spesielt laget for de som er glad i å trene. <\/p>"
+            "text": "<p>Hos Famme har vi<strong> jeans<\/strong> i tillegg til et stort utvalg av <strong>tights, treningstopper, løpejakker, sko og mye mer!<\/strong><\/p><p>Noen av Famme sine jeans er til og med <a href=\"\/products\/4flex-jeans\" title=\"\/products\/4flex-jeans\"><strong>jeans spesielt produsert for fitness damer<\/strong><\/a> og andre hverdagsklær som er spesielt laget for de som er glad i å trene. <\/p>",
+            "link_label": "",
+            "link": ""
           }
         },
         "163438960122f1937a-2": {
@@ -41,7 +77,9 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/desktop-banner-jeans.jpg",
             "title": "Jeans - 15% rabattkode",
-            "text": "<p>Du får 15% rabatt på alle våre jeans. Blant utvalget anbefaler vi blant annet vår bestselger <a href=\"\/products\/4flex-jeans\" target=\"_blank\" title=\"\/products\/4flex-jeans\"><strong>4FLEX jeans<\/strong><\/a>! En skinny jeans med høyt liv produsert av ekte <strong>patentert denim teknologi<\/strong> for å oppnå et super-stretchy materiale og legger seg tett inntil kroppen din uten å stramme til eller ligge løst på feil steder. <\/p>"
+            "text": "<p>Du får 15% rabatt på alle våre jeans. Blant utvalget anbefaler vi blant annet vår bestselger <a href=\"\/products\/4flex-jeans\" target=\"_blank\" title=\"\/products\/4flex-jeans\"><strong>4FLEX jeans<\/strong><\/a>! En skinny jeans med høyt liv produsert av ekte <strong>patentert denim teknologi<\/strong> for å oppnå et super-stretchy materiale og legger seg tett inntil kroppen din uten å stramme til eller ligge løst på feil steder. <\/p>",
+            "link_label": "",
+            "link": ""
           }
         }
       },
@@ -106,43 +144,13 @@
         "description": "Jeans med super-stretch for alle kroppsfasonger",
         "full_width": false
       }
-    },
-    "main": {
-      "type": "main-article",
-      "blocks": {
-        "title": {
-          "type": "title",
-          "settings": {
-            "blog_show_date": true,
-            "blog_show_author": false
-          }
-        },
-        "content": {
-          "type": "content",
-          "settings": {
-          }
-        },
-        "featured_image": {
-          "type": "featured_image",
-          "settings": {
-            "image_height": "adapt"
-          }
-        }
-      },
-      "block_order": [
-        "title",
-        "content",
-        "featured_image"
-      ],
-      "settings": {
-      }
     }
   },
   "order": [
     "163524400862e3a2b3",
+    "main",
     "163438960122f1937a",
     "1634409175ff664290",
-    "163438965009ed774b",
-    "main"
+    "163438965009ed774b"
   ]
 }

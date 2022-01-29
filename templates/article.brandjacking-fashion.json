@@ -19,6 +19,21 @@
         "show_text_below": true
       }
     },
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "396f5935-f2cb-434e-a6d1-d6a4e28c1079": {
+          "type": "content",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "396f5935-f2cb-434e-a6d1-d6a4e28c1079"
+      ],
+      "settings": {
+      }
+    },
     "163438960122f1937a": {
       "type": "multicolumn",
       "blocks": {
@@ -105,21 +120,6 @@
         "show_view_all": false
       }
     },
-    "main": {
-      "type": "main-article",
-      "blocks": {
-        "396f5935-f2cb-434e-a6d1-d6a4e28c1079": {
-          "type": "content",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "396f5935-f2cb-434e-a6d1-d6a4e28c1079"
-      ],
-      "settings": {
-      }
-    },
     "163514751724437e62": {
       "type": "featured-blog",
       "disabled": true,
@@ -151,9 +151,9 @@
   },
   "order": [
     "16352521148bea06d0",
+    "main",
     "163438960122f1937a",
     "1634409175ff664290",
-    "main",
     "163514751724437e62",
     "1635152225421b2388"
   ]

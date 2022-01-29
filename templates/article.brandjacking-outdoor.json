@@ -6,15 +6,47 @@
         "image": "shopify:\/\/shop_images\/brandjacking-hellyhansen_2000x_0329c904-b476-4562-ade6-da875956873d.png",
         "image_m": "shopify:\/\/shop_images\/brandjacking-hellyhansen_2000x_0329c904-b476-4562-ade6-da875956873d.png",
         "image_url": "",
+        "image_overlay_opacity": 0,
         "image2_url": "",
         "image_height": "small",
         "adapt_height_first_image": false,
-        "desktop_text_box_position": "center",
+        "desktop_content_position": "middle-center",
         "show_text_box": true,
-        "image_overlay_opacity": 0,
+        "desktop_content_alignment": "center",
         "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
+      }
+    },
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "blog_show_date": true,
+            "blog_show_author": false
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {
+          }
+        },
+        "featured_image": {
+          "type": "featured_image",
+          "settings": {
+            "image_height": "adapt"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "content",
+        "featured_image"
+      ],
+      "settings": {
       }
     },
     "163438960122f1937a": {
@@ -25,7 +57,9 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/desktop-banner-host-oppdatert.jpg",
             "title": "Rask levering + alltid gratis frakt",
-            "text": "<p>Hos Famme får du <strong>fri frakt <\/strong>på de nye turklærne dine! Du velger mellom Posten, Helthjem eller levering <strong>samme dag<\/strong> med Porterbuddy!<\/p>"
+            "text": "<p>Hos Famme får du <strong>fri frakt <\/strong>på de nye turklærne dine! Du velger mellom Posten, Helthjem eller levering <strong>samme dag<\/strong> med Porterbuddy!<\/p>",
+            "link_label": "",
+            "link": ""
           }
         },
         "163438960122f1937a-2": {
@@ -33,7 +67,9 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/desktop-banner-outdoor.jpg",
             "title": "Best på turklær",
-            "text": "<p>Famme tilbyr et bredt utvalg av <strong>turklær<\/strong>. Vi har jakker, turbukser, turshorts, ullundertøy, hodeplagg og mye mer! Vi har det perfekte turtøyet til deg som vil ha <strong>gode klær utendørs<\/strong>.<\/p>"
+            "text": "<p>Famme tilbyr et bredt utvalg av <strong>turklær<\/strong>. Vi har jakker, turbukser, turshorts, ullundertøy, hodeplagg og mye mer! Vi har det perfekte turtøyet til deg som vil ha <strong>gode klær utendørs<\/strong>.<\/p>",
+            "link_label": "",
+            "link": ""
           }
         },
         "163438960122f1937a-0": {
@@ -41,7 +77,9 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/waterproof.clothing.banner.jpg",
             "title": "Klær til all slags vær",
-            "text": "<p>Vi har et stort sortiment når det kommer til klær som tåler <strong>vind<\/strong>, <strong>regn<\/strong> og <strong>kulde.<\/strong> Hos Famme finner du skalljakker, regnjakker, ulljakker, fleecejakker og mye mer til en <strong>rimelig<\/strong> pris. <\/p>"
+            "text": "<p>Vi har et stort sortiment når det kommer til klær som tåler <strong>vind<\/strong>, <strong>regn<\/strong> og <strong>kulde.<\/strong> Hos Famme finner du skalljakker, regnjakker, ulljakker, fleecejakker og mye mer til en <strong>rimelig<\/strong> pris. <\/p>",
+            "link_label": "",
+            "link": ""
           }
         }
       },
@@ -106,43 +144,13 @@
         "description": "Best på tur- og sportsklær",
         "full_width": false
       }
-    },
-    "main": {
-      "type": "main-article",
-      "blocks": {
-        "title": {
-          "type": "title",
-          "settings": {
-            "blog_show_date": true,
-            "blog_show_author": false
-          }
-        },
-        "content": {
-          "type": "content",
-          "settings": {
-          }
-        },
-        "featured_image": {
-          "type": "featured_image",
-          "settings": {
-            "image_height": "adapt"
-          }
-        }
-      },
-      "block_order": [
-        "title",
-        "content",
-        "featured_image"
-      ],
-      "settings": {
-      }
     }
   },
   "order": [
     "163454564855e20815",
+    "main",
     "163438960122f1937a",
     "1634409175ff664290",
-    "163438965009ed774b",
-    "main"
+    "163438965009ed774b"
   ]
 }

@@ -9,7 +9,6 @@
     "colors_background_2": "#fafafa",
     "type_header_font": "roboto_n4",
     "type_body_font": "roboto_n4",
-    "sale_badge_color_scheme": "accent-2",
     "social_facebook_link": "https:\/\/www.facebook.com\/fammesportswear",
     "social_pinterest_link": "https:\/\/no.pinterest.com\/fammesportswear\/",
     "social_instagram_link": "https:\/\/www.instagram.com\/famme\/",
@@ -23,6 +22,7 @@
     "checkout_accent_color": "#4e4e4e",
     "checkout_button_color": "#119da4",
     "checkout_error_color": "#ec7a7a",
+    "sale_badge_color_scheme": "accent-2",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
