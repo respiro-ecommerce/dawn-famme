@@ -16,15 +16,7 @@
   }
 {%- endstyle -%}
 
-{%- if section.settings.bloglinks != blank -%}
-  <div id="blogs">
-    {% for link in linklists[section.settings.bloglinks].links %}
-      <a href="{{ link.url }}"{% if link.active %} class="active"{% endif %}>{{ link.title }}</a>
-    {% endfor %}
-  </div>
-{%- endif -%}
-
-{%- paginate blog.articles by 6 -%}
+{%- paginate blog.articles by 24 -%}
   <div class="main-blog page-width section-{{ section.id }}-padding">
     <h1 class="title--primary">{{ blog.title | escape }}</h1>
 
@@ -107,11 +99,6 @@
       "default": "medium",
       "label": "t:sections.main-blog.settings.image_height.label",
       "info": "t:sections.main-blog.settings.image_height.info"
-    },
-    {
-      "type": "link_list",
-      "id": "bloglinks",
-      "label": "Blogs linklist"
     },
     {
       "type": "checkbox",

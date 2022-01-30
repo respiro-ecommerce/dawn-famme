@@ -1,7 +1,7 @@
 {
   "sections": {
     "16367059392713d6ea": {
-      "type": "btns",
+      "type": "famme-spaced-button-links",
       "settings": {
         "menu": "treningstights",
         "bg": "#4e4e4e",
@@ -15,12 +15,9 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
-        "po": "sustainable-clothes",
         "products_per_page": 50,
         "image_ratio": "adapt",
         "show_secondary_image": true,
-        "add_image_padding": false,
-        "show_image_outline": true,
         "show_vendor": false,
         "show_rating": false,
         "enable_filtering": true,
@@ -37,7 +34,6 @@
         "show_image": true,
         "show_date": false,
         "show_author": false,
-        "soft_background": false,
         "show_view_all": true
       }
     },

@@ -2,41 +2,6 @@
   "sections": {
     "164138293938171117": {
       "type": "image-banner",
-      "blocks": {
-        "1641382939fecfa029-0": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "medium"
-          }
-        },
-        "1641382939fecfa029-1": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "1641382939fecfa029-2": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "1641382939fecfa029-0",
-        "1641382939fecfa029-1",
-        "1641382939fecfa029-2"
-      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/4.jpg",
         "image_m": "shopify:\/\/shop_images\/Winter-Sale-banner-mobil.jpg",
@@ -55,7 +20,7 @@
       }
     },
     "1629993086223521d8": {
-      "type": "btns",
+      "type": "famme-spaced-button-links",
       "settings": {
         "menu": "test-meny",
         "bg": "#4e4e4e",
@@ -159,16 +124,6 @@
         "show_text_below": true
       }
     },
-    "1637832590a0b9bb0a": {
-      "type": "rich-text",
-      "disabled": true,
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "16252134879571dabc": {
       "type": "image-banner",
       "settings": {
@@ -190,19 +145,6 @@
     },
     "16311853465cfb015e": {
       "type": "image-banner",
-      "blocks": {
-        "ab5485eb-d85f-4880-a7e6-6fba94a75261": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "medium"
-          }
-        }
-      },
-      "block_order": [
-        "ab5485eb-d85f-4880-a7e6-6fba94a75261"
-      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Loungewear-banner-desktop.jpg",
         "image_m": "shopify:\/\/shop_images\/loungewear-banner-mobil.jpg",
@@ -268,7 +210,7 @@
           "settings": {
             "button_label_1": "FÅ HJELP OG GI FEEDBACK",
             "button_link_1": "https:\/\/www.facebook.com\/groups\/fammeproduktutvikling",
-            "button_style_secondary_1": true,
+            "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
@@ -304,7 +246,6 @@
     "1631094390263d97d1",
     "1626547460af5b6361",
     "163117812908a522c8",
-    "1637832590a0b9bb0a",
     "16252134879571dabc",
     "16311853465cfb015e",
     "1629157352b193f90f",

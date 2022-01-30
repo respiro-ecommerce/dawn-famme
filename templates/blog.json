@@ -1,29 +1,32 @@
 {
   "sections": {
-    "163006741888846317": {
-      "type": "btns",
+    "16434886947f567e09": {
+      "type": "famme-spaced-button-links",
       "settings": {
         "menu": "blogs",
-        "bg": "#4e4e4e",
-        "color": "#ffffff",
+        "bg": "#8a9e93",
+        "color": "#fff",
         "width": 165,
-        "padx": 16,
-        "pady": 4,
-        "radius": 18
+        "padx": 10,
+        "pady": 0,
+        "radius": 15
       }
     },
     "main": {
-      "type": "BT-same-num-blogs-per-row",
+      "type": "main-blog",
       "settings": {
+        "layout": "grid",
         "show_image": true,
-        "bloglinks": "",
+        "image_height": "adapt",
         "show_date": true,
-        "show_author": false
+        "show_author": false,
+        "padding_top": 0,
+        "padding_bottom": 36
       }
     }
   },
   "order": [
-    "163006741888846317",
+    "16434886947f567e09",
     "main"
   ]
 }

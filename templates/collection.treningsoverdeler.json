@@ -1,7 +1,7 @@
 {
   "sections": {
     "1636707364fb4b07e0": {
-      "type": "btns",
+      "type": "famme-spaced-button-links",
       "settings": {
         "menu": "collection-training-tops",
         "bg": "#4e4e4e",
@@ -15,12 +15,9 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
-        "po": "treningsoverdeler",
         "products_per_page": 50,
         "image_ratio": "adapt",
         "show_secondary_image": true,
-        "add_image_padding": false,
-        "show_image_outline": true,
         "show_vendor": false,
         "show_rating": false,
         "enable_filtering": true,
@@ -37,7 +34,6 @@
         "show_image": true,
         "show_date": false,
         "show_author": false,
-        "soft_background": false,
         "show_view_all": true
       }
     },

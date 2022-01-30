@@ -830,9 +830,10 @@ class VariantSelects extends HTMLElement {
         const html = new DOMParser().parseFromString(responseText, 'text/html')
         const destination = document.getElementById(id);
         const source = html.getElementById(id);
+
+        // Custom: Part of the sold out UI: https://github.com/Shopify/dawn/pull/105
         const variantPickerDestination = document.querySelector('[data-variant-picker]')
         const variantPickerSource = html.querySelector('[data-variant-picker]');
-
         if (source && destination) destination.innerHTML = source.innerHTML;
         if (variantPickerSource && variantPickerDestination) variantPickerDestination.innerHTML = variantPickerSource.innerHTML;
 

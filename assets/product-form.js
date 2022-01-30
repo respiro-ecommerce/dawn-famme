@@ -63,7 +63,8 @@ if (!customElements.get('product-form')) {
   });
 }
 
-// Custom code for showing colors dynamically on product page
+// Custom: For showing color names dynamically on product page
+// above the images on the PDP for selecting variant
 if (document.querySelector('variant-radios')){
   document.querySelector('variant-radios').onmouseover=e=>{
     if (e.target.tagName == 'LABEL'){
