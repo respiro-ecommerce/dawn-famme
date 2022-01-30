@@ -703,7 +703,7 @@
           "priceValidUntil": "2025-01-01",
           "priceCurrency" : {{ cart.currency.iso_code | json }},
           "url" : {{ shop.url | append: variant.url | json }}
-        }{% unless forloop.last %}{% endunless %}
+        }{% unless forloop.last %},{% endunless %}
       {%- endfor -%}
     ]
     {% if product.metafields.okendo.summaryData.reviewCount > 0 %}
