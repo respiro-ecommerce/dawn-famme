@@ -20,7 +20,7 @@
       }
     },
     "1629993086223521d8": {
-      "type": "famme-spaced-button-links",
+      "type":  "famme-spaced-button-links",
       "settings": {
         "menu": "test-meny",
         "bg": "#4e4e4e",

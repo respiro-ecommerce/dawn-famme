@@ -1,7 +1,7 @@
 {
   "sections": {
     "1636713168ccea7b55": {
-      "type": "famme-spaced-button-links",
+      "type":  "famme-spaced-button-links",
       "settings": {
         "menu": "collection-underwear",
         "bg": "#4e4e4e",

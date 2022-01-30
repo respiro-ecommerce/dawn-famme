@@ -1,7 +1,7 @@
 {
   "sections": {
     "1636636693c105bc3f": {
-      "type": "famme-spaced-button-links",
+      "type":  "famme-spaced-button-links",
       "settings": {
         "menu": "sports-bh-support",
         "bg": "#4e4e4e",

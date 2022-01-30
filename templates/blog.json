@@ -1,7 +1,7 @@
 {
   "sections": {
     "16434886947f567e09": {
-      "type": "famme-spaced-button-links",
+      "type":  "famme-spaced-button-links",
       "settings": {
         "menu": "blogs",
         "bg": "#8a9e93",

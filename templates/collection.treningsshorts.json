@@ -1,7 +1,7 @@
 {
   "sections": {
     "163671095057a39335": {
-      "type": "famme-spaced-button-links",
+      "type":  "famme-spaced-button-links",
       "settings": {
         "menu": "collection-treningsshorts",
         "bg": "#4e4e4e",

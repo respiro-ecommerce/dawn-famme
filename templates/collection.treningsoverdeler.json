@@ -1,7 +1,7 @@
 {
   "sections": {
     "1636707364fb4b07e0": {
-      "type": "famme-spaced-button-links",
+      "type":  "famme-spaced-button-links",
       "settings": {
         "menu": "collection-training-tops",
         "bg": "#4e4e4e",

@@ -1,7 +1,7 @@
 {
   "sections": {
     "16367111882b1a5d4d": {
-      "type": "famme-spaced-button-links",
+      "type":  "famme-spaced-button-links",
       "settings": {
         "menu": "collection-jackets",
         "bg": "#4e4e4e",

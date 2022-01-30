@@ -1,7 +1,7 @@
 {
   "sections": {
     "16367191827b237cc8": {
-      "type": "famme-spaced-button-links",
+      "type":  "famme-spaced-button-links",
       "settings": {
         "menu": "collection-shorts",
         "bg": "#4e4e4e",

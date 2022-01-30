@@ -1,7 +1,7 @@
 {
   "sections": {
     "16367059392713d6ea": {
-      "type": "famme-spaced-button-links",
+      "type":  "famme-spaced-button-links",
       "settings": {
         "menu": "treningstights",
         "bg": "#4e4e4e",
