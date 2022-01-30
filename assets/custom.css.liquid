@@ -29,9 +29,6 @@ section.shopify-section.spaced-section.btns > a {
   text-align: center;
 }
 
-a.banner__media.media {
-  z-index: 2;
-}
 button.product-form__submit.button--full-width {
   max-width: 550px;
 }
@@ -69,10 +66,15 @@ div.product-groups__images {
 div.product-groups__images > a.other-product-image {
   margin: 0 2px;
 }
-/*banner links and header submenus*/
+/* Banner links and header submenus - NB! Seems suspicious that we should need to mess with z-indeces? What customization have we done that broke this? */
 div.banner__content {
   z-index: 1;
 }
+a.banner__media.media {
+  z-index: 2;
+}
+
+
 /*sold out styles fix*/
 .product-form__input input[type="radio"]:disabled + label, .product-form__input input[type="radio"].disabled + label {
   border-color: rgba(78, 78, 78, 0.4);
