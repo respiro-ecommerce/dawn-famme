@@ -19,36 +19,6 @@
         "show_text_below": true
       }
     },
-    "main": {
-      "type": "main-article",
-      "blocks": {
-        "title": {
-          "type": "title",
-          "settings": {
-            "blog_show_date": true,
-            "blog_show_author": false
-          }
-        },
-        "content": {
-          "type": "content",
-          "settings": {
-          }
-        },
-        "featured_image": {
-          "type": "featured_image",
-          "settings": {
-            "image_height": "adapt"
-          }
-        }
-      },
-      "block_order": [
-        "title",
-        "content",
-        "featured_image"
-      ],
-      "settings": {
-      }
-    },
     "163438960122f1937a": {
       "type": "multicolumn",
       "blocks": {
@@ -96,61 +66,46 @@
         "background_style": "secondary",
         "button_label": "Se hele utvalget av treningsklær!",
         "button_link": "\/collections\/tights",
-        "swipe_on_mobile": false
+        "swipe_on_mobile": false,
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
-    "1634409175ff664290": {
-      "type": "collection-list",
+    "main": {
+      "type": "main-article",
       "blocks": {
-        "1634409175ff664290-0": {
-          "type": "featured_collection",
+        "title": {
+          "type": "title",
           "settings": {
-            "collection": "bestsellers"
+            "blog_show_date": true,
+            "blog_show_author": false
           }
         },
-        "1634409175ff664290-1": {
-          "type": "featured_collection",
+        "content": {
+          "type": "content",
           "settings": {
-            "collection": "all"
           }
         },
-        "1634409175ff664290-2": {
-          "type": "featured_collection",
+        "featured_image": {
+          "type": "featured_image",
           "settings": {
-            "collection": "accessories"
+            "image_height": "adapt"
           }
         }
       },
       "block_order": [
-        "1634409175ff664290-0",
-        "1634409175ff664290-1",
-        "1634409175ff664290-2"
+        "title",
+        "content",
+        "featured_image"
       ],
       "settings": {
-        "title": "De mest populære kategoriene",
-        "image_ratio": "portrait",
-        "color_scheme": "background-1",
-        "swipe_on_mobile": true,
-        "image_padding": false,
-        "show_view_all": false
-      }
-    },
-    "163438965009ed774b": {
-      "type": "video",
-      "settings": {
-        "heading": "Seamless treningsklær",
-        "cover_image": "shopify:\/\/shop_images\/mobil-banner-seamless.jpg",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=uXtendqbdcI",
-        "description": "Gymshark flex tights alternativ - seamless treningstights",
-        "full_width": false
       }
     }
   },
   "order": [
     "163454564855e20815",
-    "main",
     "163438960122f1937a",
-    "1634409175ff664290",
-    "163438965009ed774b"
+    "main"
   ]
 }
