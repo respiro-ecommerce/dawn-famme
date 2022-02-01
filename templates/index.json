@@ -20,7 +20,7 @@
       }
     },
     "1629993086223521d8": {
-      "type":  "famme-spaced-button-links",
+      "type": "famme-spaced-button-links",
       "settings": {
         "menu": "test-meny",
         "bg": "#4e4e4e",
@@ -222,7 +222,7 @@
         "162567415706bdadcd-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Product_development_group.jpg",
+        "image": "shopify:\/\/shop_images\/Banner-hovedside.jpg",
         "image_url": "https:\/\/www.facebook.com\/groups\/fammeproduktutvikling",
         "image_overlay_opacity": 0,
         "image2_url": "",
@@ -252,4 +252,3 @@
     "162567415706bdadcd"
   ]
 }
-
