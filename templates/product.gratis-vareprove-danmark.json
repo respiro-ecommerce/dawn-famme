@@ -49,6 +49,7 @@
     },
     "164207856546bb95ae": {
       "type": "image-banner",
+      "disabled": true,
       "blocks": {
         "518c74fb-71e4-400d-81bd-a6349b7fc406": {
           "type": "text",
@@ -81,6 +82,7 @@
     },
     "16419829100a373d4c": {
       "type": "multicolumn",
+      "disabled": true,
       "blocks": {
         "164198291054030bfd-0": {
           "type": "column",
@@ -134,6 +136,7 @@
     },
     "164241410778f80e5d": {
       "type": "image-banner",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/camo-banner-desktop.jpg",
         "image_m": "shopify:\/\/shop_images\/camo-banner-mobil.jpg",
@@ -193,26 +196,6 @@
         "padding_bottom": 36
       }
     },
-    "16419899346c2e429f": {
-      "type": "apps",
-      "blocks": {
-        "036b478b-e2bb-4eb4-a038-42bc617fb373": {
-          "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/reviews-carousel\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
-          "settings": {
-            "show_heading": false,
-            "heading": "",
-            "badge_link": "",
-            "product": "anfrag-tights-2"
-          }
-        }
-      },
-      "block_order": [
-        "036b478b-e2bb-4eb4-a038-42bc617fb373"
-      ],
-      "settings": {
-        "include_margins": true
-      }
-    },
     "16424150538de758f1": {
       "type": "rich-text",
       "blocks": {
@@ -243,6 +226,7 @@
     },
     "16425030734b9a1d7a": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "<div class=\"klaviyo-form-WntVpb\"><\/div>",
         "color_scheme": "background-1",
@@ -327,6 +311,26 @@
         "include_margins": true
       }
     },
+    "16419899346c2e429f": {
+      "type": "apps",
+      "blocks": {
+        "036b478b-e2bb-4eb4-a038-42bc617fb373": {
+          "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/reviews-carousel\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "show_heading": false,
+            "heading": "",
+            "badge_link": "",
+            "product": "anfrag-tights-2"
+          }
+        }
+      },
+      "block_order": [
+        "036b478b-e2bb-4eb4-a038-42bc617fb373"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
@@ -348,11 +352,11 @@
     "16419829100a373d4c",
     "164241410778f80e5d",
     "1642414904f904648b",
-    "16419899346c2e429f",
     "16424150538de758f1",
     "16425030734b9a1d7a",
     "main",
     "1642515363382fdd21",
+    "16419899346c2e429f",
     "product-recommendations"
   ]
 }
