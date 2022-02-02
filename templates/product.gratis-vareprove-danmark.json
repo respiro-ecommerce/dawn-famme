@@ -209,7 +209,7 @@
         "1642415053a4008607-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Du vil modtage varen indenfor et par dage, når du får bestilt. <strong>Bemærk<\/strong> at hvis den begrænsede mængde er udsolgt, vil du få besked når der er opfyldt og genåbnet for bestillinger. Vælg den størrelse, der er udsolgt, og vælg \"få besked, når størrelsen er tilbage\".<\/p>"
+            "text": "<p>Du vil modtage varen indenfor 3-10 dage, når du får bestilt. <strong>Bemærk<\/strong> at hvis den begrænsede mængde er udsolgt, vil du få besked når der er opfyldt og genåbnet for bestillinger. Vælg den størrelse, der er udsolgt, og vælg \"få besked, når størrelsen er tilbage\".<\/p>"
           }
         }
       },
