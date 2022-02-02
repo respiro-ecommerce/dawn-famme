@@ -47,113 +47,6 @@
         "padding_bottom": 52
       }
     },
-    "164207856546bb95ae": {
-      "type": "image-banner",
-      "disabled": true,
-      "blocks": {
-        "518c74fb-71e4-400d-81bd-a6349b7fc406": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "Bilde over her burde være en upsell av et godt tilbud vi har nå. Eksempelvis sesong-vinter tilbud",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "518c74fb-71e4-400d-81bd-a6349b7fc406"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/vintersalg-banner-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/vintersalg-banner-mobil.jpg",
-        "image_url": "shopify:\/\/collections\/vinterklaer",
-        "image_overlay_opacity": 0,
-        "image2_url": "",
-        "image_height": "small",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
-    "16419829100a373d4c": {
-      "type": "multicolumn",
-      "disabled": true,
-      "blocks": {
-        "164198291054030bfd-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Endorphin_RX1_Shoes-EDRX-1_1_1.jpg",
-            "title": "Treningsklær & Sko",
-            "text": "<p>Vi ønsker å gi flere muligheten til å prøve treningsklær fra Famme. I tillegg til treningsklær av høy kvalitet har vi et <strong>bredt utvalg<\/strong> av turklær, loungewear og undertøy. Plaggene våre er suverene fordi vi bruker garn og stoff av <strong>høy kvalitet.<\/strong> Famme jobber med nøye utvalgte produsenter.<\/p>",
-            "link_label": "Shop treningsklær og sko",
-            "link": "shopify:\/\/collections\/treningsklaer"
-          }
-        },
-        "164198291054030bfd-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/outdoor.jpg",
-            "title": "Turklær",
-            "text": "<p>Målet vårt er å lage produkter du vil elske. I utvikling av plaggene kombinerer vi teknologi og mote for å lage fine og funksjonelle klær til trening og daglig bruk. Vi ønsker også å høre <strong>din tilbakemelding<\/strong> på produktene våre.<\/p>",
-            "link_label": "Shop turklær",
-            "link": "shopify:\/\/collections\/turklaer"
-          }
-        },
-        "164198291054030bfd-2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/4flex-blue_21_1d50b9f3-eb9d-47d1-a7ea-77b532033491.jpg",
-            "title": "Jeans",
-            "text": "<p>Vi i Famme ønsker å lede veien innen <strong>bærekraft og miljøvennlig<\/strong> produksjon innen damemote og treningstøy. Våre produsenter er blant de mest miljøvennlige i bransjen. Famme har flere tiltak for bærekraftig for å redusere svinn o.l.<\/p>",
-            "link_label": "Shop jeans",
-            "link": "shopify:\/\/collections\/jeans"
-          }
-        }
-      },
-      "block_order": [
-        "164198291054030bfd-0",
-        "164198291054030bfd-1",
-        "164198291054030bfd-2"
-      ],
-      "settings": {
-        "title": "Fammes kunder er loyale. Vi går meget op i at bevise for dig hvorfor. Prøv det selv nu!",
-        "image_width": "half",
-        "image_ratio": "circle",
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": false,
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "164241410778f80e5d": {
-      "type": "image-banner",
-      "disabled": true,
-      "settings": {
-        "image": "shopify:\/\/shop_images\/camo-banner-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/camo-banner-mobil.jpg",
-        "image_url": "shopify:\/\/collections\/camo-klaer",
-        "image_overlay_opacity": 0,
-        "image2_url": "",
-        "image_height": "small",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
     "1642414904f904648b": {
       "type": "multicolumn",
       "blocks": {
@@ -348,9 +241,6 @@
   "order": [
     "16419794496648f4a4",
     "1641983278c21db4b2",
-    "164207856546bb95ae",
-    "16419829100a373d4c",
-    "164241410778f80e5d",
     "1642414904f904648b",
     "16424150538de758f1",
     "16425030734b9a1d7a",
