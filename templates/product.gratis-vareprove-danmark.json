@@ -3,7 +3,7 @@
     "16419794496648f4a4": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/jhj.png",
+        "image": "shopify:\/\/shop_images\/djv.png",
         "image_m": "shopify:\/\/shop_images\/rwr.png",
         "image_url": "",
         "image_overlay_opacity": 0,
@@ -209,7 +209,7 @@
         "1642415053a4008607-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Du vil modtage varen indenfor 3-10 dage, når du får bestilt. <strong>Bemærk<\/strong> at hvis den begrænsede mængde er udsolgt, vil du få besked når der er opfyldt og genåbnet for bestillinger. Vælg den størrelse, der er udsolgt, og vælg \"få besked, når størrelsen er tilbage\".<\/p>"
+            "text": "<p>Du vil modtage varen indenfor et par dage, når du får bestilt. <strong>Bemærk<\/strong> at hvis den begrænsede mængde er udsolgt, vil du få besked når der er opfyldt og genåbnet for bestillinger. Vælg den størrelse, der er udsolgt, og vælg \"få besked, når størrelsen er tilbage\".<\/p>"
           }
         }
       },
@@ -334,7 +334,7 @@
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
-        "heading": "Vi tror, du vil kunne lide...",
+        "heading": "Vi tror du vil like..",
         "color_scheme": "background-1",
         "image_ratio": "adapt",
         "show_secondary_image": true,
