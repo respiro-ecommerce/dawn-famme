@@ -90,7 +90,7 @@
         "settings": {
           "color_scheme": "inverse",
           "newsletter_enable": true,
-          "newsletter_heading": "Meld deg på vårt nyhetsbrev!",
+          "newsletter_heading": "Tilmeld dig vores nyhedsbrev!",
           "show_social": true,
           "enable_country_selector": true,
           "enable_language_selector": true,
