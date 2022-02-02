@@ -3,7 +3,7 @@
     "16419794496648f4a4": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/dsd.png",
+        "image": "shopify:\/\/shop_images\/jhj.png",
         "image_m": "shopify:\/\/shop_images\/rwr.png",
         "image_url": "",
         "image_overlay_opacity": 0,
@@ -171,8 +171,8 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/vortex-power-top.jpg",
-            "title": "Bli med i produktgruppen vår",
-            "text": "<p>Bli med i norges største produktutviklingsgruppe med flere titusener medlemmer i Norge. <\/p>",
+            "title": "Bliv en del af vores produktgruppe",
+            "text": "<p>Bliv medlem af vores internationale produktudviklingsgruppe med mere end 3.000 medlemmer over hele verden.<\/p>",
             "link_label": "Til produktgruppen",
             "link": "https:\/\/www.facebook.com\/groups\/fammeproduktutvikling"
           }
