@@ -334,7 +334,7 @@
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
-        "heading": "Vi tror du vil like..",
+        "heading": "Vi tror, du vil kunne lide...",
         "color_scheme": "background-1",
         "image_ratio": "adapt",
         "show_secondary_image": true,
