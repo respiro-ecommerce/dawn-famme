@@ -161,8 +161,8 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/D18369AB-764A-4B58-B33C-E55479AC7890.jpg",
-            "title": "Følg oss på Instagram",
-            "text": "<p>På Instagram vil vi dele på story når vi gjør nye gratis-produkter tilgjengelig for bestilling. Følg oss på Instagram for å få med deg nyheter og la deg inspirere av ulike antrekk.<\/p>",
+            "title": "Følg os på Instagram",
+            "text": "<p>På Instagram vil vi dele på story, når vi gør nye gratis-produkter tilgængelige til bestilling. Følg os på Instagram for at nyheder og lad dig inspirere af forskellige outfits.<\/p>",
             "link_label": "Følg med når nye produkter annonseres",
             "link": "https:\/\/www.instagram.com\/famme\/"
           }
@@ -183,7 +183,7 @@
         "1642414904d220bde8-1"
       ],
       "settings": {
-        "title": "Må jeg gjøre noe før jeg kan bestille? (en av disse holder)",
+        "title": "Hvad skal jeg gøre, før jeg kan bestille? (mindst et af disse krav skal opfyldes)",
         "image_width": "half",
         "image_ratio": "circle",
         "column_alignment": "center",
