@@ -3,12 +3,12 @@
     "16419794496648f4a4": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/prove-famme-gratis-desktop-banner.png",
-        "image_m": "shopify:\/\/shop_images\/prove-famme-gratis-mobil-banner.png",
+        "image": "shopify:\/\/shop_images\/WEB_dfda45a1-c6b0-4c04-ac1b-73d9ee5cc796.png",
+        "image_m": "shopify:\/\/shop_images\/banner_nu.png",
         "image_url": "",
         "image_overlay_opacity": 0,
         "image2_url": "",
-        "image_height": "large",
+        "image_height": "medium",
         "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",
         "show_text_box": true,
@@ -42,7 +42,9 @@
       ],
       "settings": {
         "color_scheme": "background-1",
-        "full_width": true
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "164207856546bb95ae": {
@@ -124,7 +126,10 @@
         "background_style": "none",
         "button_label": "",
         "button_link": "",
-        "swipe_on_mobile": false
+        "swipe_on_mobile": false,
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "164241410778f80e5d": {
@@ -182,7 +187,10 @@
         "background_style": "primary",
         "button_label": "",
         "button_link": "",
-        "swipe_on_mobile": false
+        "swipe_on_mobile": false,
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "16419899346c2e429f": {
@@ -228,13 +236,18 @@
       ],
       "settings": {
         "color_scheme": "background-1",
-        "full_width": true
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "16425030734b9a1d7a": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"klaviyo-form-WntVpb\"><\/div>"
+        "custom_liquid": "<div class=\"klaviyo-form-WntVpb\"><\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "main": {
@@ -271,6 +284,7 @@
         "description": {
           "type": "description",
           "settings": {
+            "icon": "check_mark"
           }
         }
       },
@@ -289,6 +303,8 @@
         "mobile_thumbnails": "show",
         "hide_variants": false,
         "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
         "desc": "Description",
         "bg": "#f5f5f5"
       }
@@ -315,10 +331,13 @@
       "type": "product-recommendations",
       "settings": {
         "heading": "Vi tror du vil like..",
+        "color_scheme": "background-1",
         "image_ratio": "adapt",
         "show_secondary_image": true,
         "show_vendor": false,
-        "show_rating": false
+        "show_rating": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
