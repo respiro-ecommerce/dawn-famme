@@ -1133,7 +1133,21 @@
         "attempted_delivery_local_description_html": "We weren’t able to deliver your order. To schedule another delivery, %{contact_us}.",
         "attempted_delivery_local_title": "Missed delivery",
         "attempted_delivery_title": "An attempt was made to deliver your order",
-        "billing_address_title": "Billing address"
+        "billing_address_title": "Billing address",
+        "cancelled_description": "Your order was canceled on %{date}. Contact us if you have any questions.",
+        "cancelled_page_title": "Order canceled",
+        "cancelled_title": "Your order has been canceled",
+        "company_tracking_number": "%{company} tracking number:",
+        "confirmation_email_sent_text": "A confirmation email has been sent to %{email}",
+        "confirmed": "Confirmed",
+        "confirmed_description": "We’ve accepted your order, and we’re getting it ready. Come back to this page for updates on your shipment status.",
+        "contact_information_title": "Contact information",
+        "contact_us": "Contact us",
+        "contact_us_html": "Need help? %{contact_us}",
+        "contact_us_lowercase": "contact us",
+        "customer_information_hidden_fields_message": "Log in to view all customer information.",
+        "customer_information_title": "Customer information",
+        "customer_validation_error": "Enter a valid email or order number."
       }
     }
   }
