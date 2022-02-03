@@ -1266,7 +1266,23 @@
         "thank_you_confirmed_order_with_email_pick_up": "You’ll receive an email when your order is ready for pickup.",
         "thank_you_confirmed_order_with_missing": "Contact us by email or phone to receive an order confirmation.",
         "thank_you_confirmed_order_with_phone": "You’ll receive a confirmation text with your order number shortly.",
-        "thank_you_confirmed_order_with_phone_payment": "You made a payment on your order %{date}."
+        "thank_you_confirmed_order_with_phone_payment": "You made a payment on your order %{date}.",
+        "thank_you_confirmed_order_with_phone_pick_up": "You’ll receive a text when your order is ready for pickup.",
+        "thank_you_title": "Your order is confirmed",
+        "thank_you_title_payment": "Your payment is confirmed",
+        "title": "Thank you for your purchase!",
+        "tracking_number": "Tracking number:",
+        "track_shipment": "Track shipment",
+        "unfulfilled_items_description": "We are currently preparing these items for shipping.",
+        "unfulfilled_items_title": "Preparing for shipping",
+        "updated_time": "Updated %{time_ago} ago"
+      },
+      "tips": {
+        "add_tip": "Add tip",
+        "description": "Show your support for the team at %{shop_name}",
+        "message": "Thank you, we appreciate it",
+        "no_tip_label": "None",
+        "preset_label": "%{tip_percent}%"
       }
     }
   }
