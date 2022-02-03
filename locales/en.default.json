@@ -620,7 +620,9 @@
         "reduction_code_gift_card_code_invalid": "Enter a valid gift card",
         "shipping_line_phone_blank": "Enter a phone number to use this delivery method",
         "shipping_line_phone_invalid": "Enter a valid phone number to use this delivery method",
-        "sms_marketing_phone_invalid": "Enter a valid phone number"
+        "sms_marketing_phone_invalid": "Enter a valid phone number",
+        "subscription_agreement_blank": "To continue with your purchase, agree to the subscription terms",
+        "tips_invalid_tip_amount": "Enter a tip no more than %{amount}"
       }
     }
   }
