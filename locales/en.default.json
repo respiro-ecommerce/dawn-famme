@@ -1084,7 +1084,33 @@
         "items_unavailable_notice": "Some items are no longer available. Your cart has been updated.",
         "page_title": "Inventory issues",
         "price_column_header": "Price",
-        "product_column_header": "Products"
+        "product_column_header": "Products",
+        "quantity_column_header": "Quantity",
+        "reduced_label": "Reduced",
+        "reduced_with_quantity_label": "Only %{quantity_available} left",
+        "removed_from_cart_notice": "Removed from cart",
+        "remove_from_cart_button_label": "Remove from cart",
+        "sold_out_label": "Sold out",
+        "status_column_header": "Status"
+      },
+      "subscriptions": {
+        "recurring_total_intervals": {
+          "day": {
+            "one": "day",
+            "other": "%{count} days"
+          },
+          "month": {
+            "one": "month",
+            "other": "%{count} months"
+          },
+          "week": {
+            "one": "week",
+            "other": "%{count} weeks"
+          },
+          "year": {
+            "one": "year"
+          }
+        }
       }
     }
   }
