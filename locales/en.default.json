@@ -659,7 +659,26 @@
           "new_window": "Opens in a new window."
         },
         "page_title": "Checkout",
-        "pay_now_button_label": "Pay now"
+        "pay_now_button_label": "Pay now",
+        "print_policies_link_label": "Print",
+        "skip_to_content": "Skip to content",
+        "tooltip_accessibility_label": "More information"
+      },
+      "marketing": {
+        "accept_marketing_checkbox_label": "Email me with news and offers",
+        "accept_sms_checkbox_label": "Text me with news and offers",
+        "pending_accept_marketing_checkbox_label": "Check your email to confirm your subscription to news and offers",
+        "post_accept_marketing_checkbox_label": "You are subscribed to receive email news and offers",
+        "sms": {
+          "disclaimer": {
+            "description_html": "By signing up via text, you agree to receive recurring automated marketing messages, including cart reminders, at the phone number provided. Consent is not a condition of purchase. Reply STOP to unsubscribe. Reply HELP for help. Message frequency varies. Msg & data rates may apply. View our %{privacy_policy_link} and %{terms_of_service_link}.",
+            "description_html_transactional": "We’ll send you an order receipt and recurring shipping updates via text message. Reply STOP to unsubscribe. Reply HELP for help. Message frequency varies. Msg & data rates may apply. View our Privacy Policy and Terms of Service.",
+            "privacy_policy": "Privacy Policy"
+          }
+        },
+        "unsubscribe": {
+          "description": "You won’t receive any more cart reminders from us."
+        }
       }
     }
   }
