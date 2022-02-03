@@ -1147,7 +1147,26 @@
         "contact_us_lowercase": "contact us",
         "customer_information_hidden_fields_message": "Log in to view all customer information.",
         "customer_information_title": "Customer information",
-        "customer_validation_error": "Enter a valid email or order number."
+        "customer_validation_error": "Enter a valid email or order number.",
+        "customer_validation_error_phone": "Enter a valid phone or order number.",
+        "delivered": "Delivered",
+        "delivered_description_html": "Your order has been delivered to the address you provided. If you haven’t received it, or if you have any other problems, %{contact_us}.",
+        "delivered_local_description_html": "Haven’t received your order? %{let_us_know}.",
+        "delivered_local_title": "Your order has been delivered",
+        "delivered_title": "Your order has been delivered",
+        "delivery_information_label": "Delivery information:",
+        "estimated_arrival": "Estimated delivery date: ",
+        "failed_contact_merchant": "Contact %{company} to arrange delivery.",
+        "failed_contact_merchant_no_company": "Contact us to arrange delivery.",
+        "failed_title": "Your order couldn’t be delivered",
+        "failure": "Not delivered",
+        "fulfillment": {
+          "description_label": "Description",
+          "fulfilled_table_title": "Items in this shipment",
+          "product_image_label": "Product image",
+          "quantity_label": "Quantity",
+          "unfulfilled_table_title": "Items preparing for shipping"
+        }
       }
     }
   }
