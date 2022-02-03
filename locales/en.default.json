@@ -608,7 +608,19 @@
         "gift_card_expired": "This gift card has expired",
         "handle_email_invalid": "Enter a valid email",
         "handle_phone_invalid": "Enter a valid phone number",
-        "payment_gateway_incompatible_with_multi_currency": "To complete this checkout in your local currency, you need to pay by credit card."
+        "payment_gateway_incompatible_with_multi_currency": "To complete this checkout in your local currency, you need to pay by credit card.",
+        "payment_gateway_needs_paid_plan_error": "This payment method isn’t available on the store right now",
+        "payment_gateway_not_in_test_mode": "isn't setup to test orders. This store can't accept real orders or real payments.",
+        "payment_gateway_unsupported_for_subscriptions": "This payment method isn't available for subscription orders.",
+        "physical_gift_card_duplicate_code": "Physical gift card line item contains duplicate code.",
+        "physical_gift_card_invalid_code": "Physical gift card code is invalid.",
+        "physical_gift_card_invalid_quantity": "Physical gift card line items must have a quantity that matches the number of gift card codes.",
+        "reduction_code_code_not_found": "Enter a valid discount code or gift card",
+        "reduction_code_discount_not_found": "Enter a valid discount code",
+        "reduction_code_gift_card_code_invalid": "Enter a valid gift card",
+        "shipping_line_phone_blank": "Enter a phone number to use this delivery method",
+        "shipping_line_phone_invalid": "Enter a valid phone number to use this delivery method",
+        "sms_marketing_phone_invalid": "Enter a valid phone number"
       }
     }
   }
