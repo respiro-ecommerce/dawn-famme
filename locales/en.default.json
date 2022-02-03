@@ -1282,7 +1282,25 @@
         "description": "Show your support for the team at %{shop_name}",
         "message": "Thank you, we appreciate it",
         "no_tip_label": "None",
-        "preset_label": "%{tip_percent}%"
+        "preset_label": "%{tip_percent}%",
+        "presets_description": "Select a tip percentage",
+        "title": "Add tip",
+        "update_tip": "Update tip"
+      }
+    },
+    "checkpoint": {
+      "error": "Captcha validation failed",
+      "submit_button_text": "Submit"
+    },
+    "collections": {
+      "sorting": {
+        "az": "Alphabetically, A-Z",
+        "best_selling": "Best selling",
+        "date_ascending": "Date, old to new",
+        "manual": "Featured",
+        "price_ascending": "Price, low to high",
+        "price_descending": "Price, high to low",
+        "za": "Alphabetically, Z-A"
       }
     }
   }
