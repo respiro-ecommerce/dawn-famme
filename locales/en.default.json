@@ -1450,8 +1450,32 @@
           "expired": "Expired",
           "paid": "Paid",
           "partially_paid": "Partially paid",
-          "partially_refunded": "Partially refunded"
+          "partially_refunded": "Partially refunded",
+          "pending": "Pending",
+          "refunded": "Refunded",
+          "unpaid": "Unpaid",
+          "voided": "Voided"
+        },
+        "fulfillment_status": {
+          "complete": "Complete",
+          "partial": "Partial",
+          "restocked": "Restocked",
+          "unfulfilled": "Unfulfilled"
+        },
+        "not_available": "This order is not available",
+        "transaction_status": {
+          "error": "Error",
+          "failure": "Failure",
+          "pending": "Pending",
+          "success": "Success"
         }
+      },
+      "storefront": {
+        "invalid_password": "Password incorrect, please try again."
+      },
+      "tags": {
+        "add_articles": "Narrow search to articles also having tag %{tag}",
+        "add_products": "Narrow selection to products matching tag %{tag}"
       }
     }
   }
