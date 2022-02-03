@@ -703,6 +703,25 @@
         "order_review_and_pay": "Your order was updated. Review and pay to confirm your order.",
         "order_updated_on": "Your order was updated on %{last_edited_at}.",
         "pay_now": "Pay now"
+      },
+      "order_summary": {
+        "applied_discount_message": "%{amount} off total order price",
+        "applied_free_shipping_discount_label": "Applied",
+        "apply_discount_button_label": "Apply",
+        "calculating_shipping": "Calculating…",
+        "cart_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">%{code}<\/strong> discount code isn’t valid for the items in your cart",
+        "collapse_order_summary": "Hide order summary",
+        "confirmation_number_label": "Confirmation #%{confirmation_number}",
+        "cost_table_title": "Cost summary",
+        "customer_already_used_once_per_customer_discount_notice": "The <strong style=\"text-transform:uppercase\">%{code}<\/strong> discount code has already been used",
+        "customer_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">%{code}<\/strong> discount code isn’t available to you right now",
+        "description_label": "Description",
+        "discount_already_applied": "A discount has been applied to this order. You can’t add another discount.",
+        "discount_and_gift_card_savings_notice": "After %{discount_amount} in discounts and %{gift_card_amount} in gift cards",
+        "discount_has_been_applied": "Discount has been applied",
+        "discount_has_been_removed": "Discount has been removed",
+        "discount_label": "Discount code",
+        "discount_requires_customer_notice": "Enter your shipping information to apply the <strong style=\"text-transform:uppercase\">%{code}<\/strong> discount code"
       }
     }
   }
