@@ -1110,7 +1110,30 @@
           "year": {
             "one": "year"
           }
+        },
+        "recurring_totals": "%{total_price} every %{interval}",
+        "recurring_totals_with_initial_order_shipping_discount": "First payment %{total_price_with_discount}, then %{recurring_total}",
+        "recurring_totals_with_initial_order_shipping_discount_with_policies": {
+          "first_cycles": {
+            "one": ", then %{count} payment at %{total_price}",
+            "other": ", then %{count} payments at %{total_price} each"
+          }
+        },
+        "recurring_totals_with_policies": {
+          "first_cycles": {
+            "one": "First payment %{total_price}",
+            "other": "First %{count} payments %{total_price} each"
+          },
+          "following_cycles": ", then %{total_price} every %{interval}"
         }
+      },
+      "thank_you": {
+        "attempted_delivery": "Attempted delivery",
+        "attempted_delivery_description_html": "An attempt was made to deliver your order but it was unsuccessful. %{contact_us} to arrange another delivery attempt.",
+        "attempted_delivery_local_description_html": "We weren’t able to deliver your order. To schedule another delivery, %{contact_us}.",
+        "attempted_delivery_local_title": "Missed delivery",
+        "attempted_delivery_title": "An attempt was made to deliver your order",
+        "billing_address_title": "Billing address"
       }
     }
   }
