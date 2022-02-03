@@ -1376,7 +1376,45 @@
       "reset_password_html": "This email address is already associated with an account. If this account is yours, you can <a href=\"\/account\/login#recover\">reset your password<\/a>",
       "taken": "has already been taken",
       "too_long": "is too long (maximum is %{count} characters)",
-      "too_short": "is too short (minimum is %{count} characters)"
+      "too_short": "is too short (minimum is %{count} characters)",
+      "verify_email": "We have sent an email to %{customer_email}, please click the link included to verify your email address."
+    },
+    "feed": {
+      "more": "More"
+    },
+    "filters": {
+      "availability": {
+        "label": "Availability",
+        "value": {
+          "out_of_stock": "Out of stock"
+        }
+      },
+      "price": {
+        "label": "Price"
+      },
+      "product_type": {
+        "label": "Product type"
+      },
+      "vendor": {
+        "label": "Brand"
+      }
+    },
+    "links": {
+      "learn_more": "Learn more",
+      "powered_by_shopify": "Powered by Shopify"
+    },
+    "notices": {
+      "address": {
+        "created": "Successfully created address",
+        "deleted": "Successfully deleted address",
+        "error_creating": "Error creating address.",
+        "error_deleting": "Error deleting address.",
+        "error_updating": "Error updating address",
+        "updated": "Successfully updated address."
+      },
+      "cart": {
+        "all_items_in_cart": "All %{count} %{name} are in your cart."
+      }
     }
   }
 }
