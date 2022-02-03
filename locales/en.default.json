@@ -985,6 +985,26 @@
         "checkout_as_guest": "Checkout as guest",
         "review_title": "Review order",
         "title": "Review"
+      },
+      "shipping": {
+        "cheapest_rate_label": "Cheapest",
+        "estimated_delivery_date": {
+          "one": "%{count} business day",
+          "other": "%{count} business days"
+        },
+        "estimated_delivery_date_range": "%{minimum} to %{maximum} business days",
+        "estimated_delivery_time_range": "Estimated delivery %{min_time}–%{max_time}"
+      },
+      "shipping_errors": {
+        "shipping_method": "Your cart has been updated and the previous shipping rate isn’t valid. Select a new rate.",
+        "shipping_method_not_available": "Your cart has been updated and the items you added can’t be shipped to your address. Remove the items to complete your order.",
+        "shipping_method_not_available_generic": {
+          "one": "This order can’t be shipped to the address you entered. Review your address to ensure that all fields have been entered correctly and try again."
+        },
+        "shipping_method_not_available_updated": {
+          "one": "The item you added doesn’t ship to your location. Remove it to check out, or contact the store.",
+          "other": "One or more items you added don’t ship to your location. Remove them to check out, or contact the store."
+        }
       }
     }
   }
