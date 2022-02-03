@@ -623,6 +623,26 @@
         "sms_marketing_phone_invalid": "Enter a valid phone number",
         "subscription_agreement_blank": "To continue with your purchase, agree to the subscription terms",
         "tips_invalid_tip_amount": "Enter a tip no more than %{amount}"
+      },
+      "general": {
+        "all_rights_reserved": "All rights reserved %{shop_name}",
+        "authenticate_purchase_button_label": "Authenticate payment",
+        "autocomplete_close": "Close suggestions",
+        "autocomplete_multi_item": "{{number}} items available",
+        "autocomplete_selection": "{{number}} of {{total}}",
+        "autocomplete_single_item": "1 item available",
+        "autocomplete_title": "Suggestions",
+        "back_to_contact_information": "Return to information",
+        "back_to_payment_method": "Return to payment",
+        "back_to_shipping_method": "Return to shipping",
+        "breadcrumb": "Breadcrumb",
+        "cart": "Cart",
+        "checkout_context": {
+          "step_one": "%{shop_name} - Checkout"
+        },
+        "choose_billing_address": "Choose a billing address",
+        "choose_payment_method": "Choose a payment method",
+        "choose_shipping_method": "Choose a shipping method"
       }
     }
   }
