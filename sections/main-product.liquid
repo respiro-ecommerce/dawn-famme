@@ -388,7 +388,7 @@
               {%- else -%}
                 <variant-selects class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }} data-variant-picker>
                   {%- for option in product.options_with_values -%}
-                    {% if option.name contains 'ize' %}<p><b>{{ sizing_recommendation }}</b></p>{% endif %}
+                    {% if option.name contains 'ize' or option.name contains 'lse' %}<p><b>{{ sizing_recommendation }}</b></p>{% endif %}
                     <div class="product-form__input product-form__input--dropdown">
                       <label class="form__label" for="Option-{{ section.id }}-{{ forloop.index0 }}">
                         {{ option.name }}
