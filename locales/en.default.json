@@ -749,7 +749,17 @@
         "pickup_label": "Pickup",
         "price_label": "Price",
         "product_change_label": "Change",
-        "product_image_label": "Product image"
+        "product_image_label": "Product image",
+        "recurring_total_label": "Recurring total",
+        "remove_discount_label": "Remove discount",
+        "sale_price": "Sale price",
+        "scroll_order_summary": "Scroll for more items",
+        "shipping_default_value": "Calculated at next step",
+        "shipping_information_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">%{code}<\/strong> discount code isn’t available for your shipping address",
+        "shipping_label": "Shipping",
+        "shipping_pending_value": "—",
+        "shipping_policy_link": "Shipping costs",
+        "shopping_cart_label": "Shopping cart"
       }
     }
   }
