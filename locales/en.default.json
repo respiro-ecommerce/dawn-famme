@@ -540,7 +540,8 @@
           "success_message": "Your payment method has been successfully deleted"
         },
         "page_title": "Payment methods",
-        "title": "Payment methods"
+        "title": "Payment methods",
+        "update_card_button_label": "Update card"
       }
     }
   }
