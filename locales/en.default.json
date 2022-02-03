@@ -1345,7 +1345,22 @@
       "blocked_address": "This location isn't supported.",
       "contains_html_tags": "cannot contain HTML tags",
       "contains_spaces": "starts or ends with spaces.",
-      "customer_already_used_once_per_customer_discount_notice": "This discount has reached its usage limit"
+      "customer_already_used_once_per_customer_discount_notice": "This discount has reached its usage limit",
+      "discount_disabled": "This discount has been disabled",
+      "discount_expired": "This discount is not valid anymore",
+      "discount_limit_reached": "This discount has reached its usage limit",
+      "discount_not_found": "Unable to find a valid discount matching the code entered",
+      "email_domain_invalid": "provider is not supported",
+      "empty": "can't be empty",
+      "expired": "has expired",
+      "full_name_required": "Enter a first name and last name",
+      "gift_card_already_applied": "Code has already been applied to your checkout",
+      "gift_card_currency_mismatch": "%{gift_card_currency} gift cards can't be applied on %{checkout_currency} orders",
+      "gift_card_depleted": "There are no funds left on this gift card",
+      "gift_card_expired": "Gift card is expired",
+      "invalid": "is invalid",
+      "invalid_email": "must be a valid email address",
+      "invalid_expiry_year": "is not a valid expiration year"
     }
   }
 }
