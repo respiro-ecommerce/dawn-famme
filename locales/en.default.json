@@ -833,6 +833,23 @@
         "discount_button_action_label": "Apply Discount Code",
         "ends_with_label": "ending with %{last_digits}",
         "eps_label": "eps-Überweisung"
+      },
+      "payment_errors": {
+        "credit_card_processing": "Your payment can’t be processed for technical reasons. Try again in a few minutes or use a different payment method.",
+        "fraud_payment_errors": {
+          "address_mismatch": "Street address and postal code do not match.",
+          "cannot_process": "This transaction cannot be processed.",
+          "card_declined": "Your card was declined",
+          "no_match": "No Match",
+          "transaction_declined": "This transaction has been declined"
+        },
+        "generic_error": "There was an issue processing your payment. Try again or use a different payment method.",
+        "insufficient_funds": "Your payment was declined due to insufficient funds. Try again or use a different payment method.",
+        "order_total_changed": "Your payment couldn’t be processed because your order total has changed. Check your order total and try again.",
+        "pay_later_failed": "There was an error processing your payment with Pay later. Choose another payment method and try again.",
+        "payment_processing_no_retry": "Your payment can’t be processed for technical reasons. Please try a different payment method.",
+        "paypal_zero_amount": "You can’t use PayPal for %{amount} orders. Confirm your order is correct and check out without PayPal.",
+        "rejected_transaction": "Your payment was declined. Try again or use a different payment method."
       }
     }
   }
