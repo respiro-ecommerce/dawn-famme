@@ -1475,7 +1475,25 @@
       },
       "tags": {
         "add_articles": "Narrow search to articles also having tag %{tag}",
-        "add_products": "Narrow selection to products matching tag %{tag}"
+        "add_products": "Narrow selection to products matching tag %{tag}",
+        "remove_articles": "Widen search to articles that aren't tagged %{tag}",
+        "remove_products": "Remove tag %{tag}"
+      }
+    },
+    "page_titles": {
+      "addresses": "Addresses",
+      "blog_or_article_with_error": "Error - %{title}",
+      "challenge": "Challenge",
+      "checkpoint": "Checkpoint",
+      "collections": "Collections",
+      "create_account": "Create Account",
+      "not_found": "404 Not Found",
+      "order": "Order %{name}",
+      "products": "Products",
+      "reset_account": "Reset Account",
+      "search": "Search",
+      "search_results": {
+        "one": "Search: %{count} result found for \"%{terms}\""
       }
     }
   }
