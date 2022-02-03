@@ -479,6 +479,22 @@
         "currency_button_label": "%{currency} (%{currency_symbol})",
         "currency_not_supported_by_shop": "The currency you selected is no longer available. All prices are now in %{currency_code}.",
         "payment_total_label": "Payment total"
+      },
+      "contact": {
+        "address1_label": "Address",
+        "address2_label": "Apartment, suite, etc.",
+        "address_title": "Address",
+        "civic_number_warning": "Add a house number if you have one",
+        "company_label": "Company",
+        "contact_method_title": "Contact information",
+        "country_code": "Country\/Region code",
+        "country_label": "Country\/Region",
+        "county_label": "County",
+        "county_placeholder": "County",
+        "delivery_option_title": "Delivery method",
+        "email_label": "Email",
+        "email_or_phone_label": "Email or mobile phone number",
+        "email_placeholder": "Email"
       }
     }
   }
