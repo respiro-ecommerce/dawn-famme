@@ -32,7 +32,7 @@
         "1641983278bc1ad7e3-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Nederst på siden kan du lægge en bestilling på et gratis produkt. Bemærk at det kun er <strong>nye kunder<\/strong>, som kan købe et produkt. <\/p><p><strong>Betingelser:<\/strong><\/p><p>Dette tilbud er udelukkende lavet til nye kunder, der ikke har bestilt noget fra Famme.<\/p><p>Det er kun tilladt at bestille 1 produkt pr. husstand.<\/p>"
+            "text": "<p>Nederst på siden kan du lægge en bestilling på et gratis produkt. Bemærk at det kun er <strong>nye kunder<\/strong>, som kan købe et produkt. <\/p><p><strong>Betingelser:<\/strong><\/p><p>Dette tilbud er udelukkende lavet til nye kunder, der ikke har bestilt noget fra <a href=\"https:\/\/fammestore.dk\" title=\"https:\/\/fammestore.dk\">Famme<\/a><\/p><p>Det er kun tilladt at bestille 1 produkt pr. husstand.<\/p>"
           }
         }
       },
