@@ -494,7 +494,18 @@
         "delivery_option_title": "Delivery method",
         "email_label": "Email",
         "email_or_phone_label": "Email or mobile phone number",
-        "email_placeholder": "Email"
+        "email_placeholder": "Email",
+        "emirate_label": "Emirate",
+        "emirate_placeholder": "Emirate",
+        "first_name_label": "First name",
+        "governorate_label": "Governorate",
+        "governorate_placeholder": "Governorate",
+        "last_name_label": "Last name",
+        "optional_address2_label": "Apartment, suite, etc. (optional)",
+        "optional_company_label": "Company (optional)",
+        "optional_first_name_label": "First name (optional)",
+        "optional_phone_label": "Phone (optional)",
+        "phone_label": "Phone"
       }
     }
   }
