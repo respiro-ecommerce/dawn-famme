@@ -839,7 +839,23 @@
         "generic_incorrect_card_info": "Your payment details couldn’t be verified. Check your card details and try again.",
         "gift_card_code_label": "Gift card code",
         "ideal_label": "iDEAL",
-        "klarna_pay_later_label": "Pay later with Klarna"
+        "klarna_pay_later_label": "Pay later with Klarna",
+        "klarna_pay_now_label": "Pay now with Klarna",
+        "klarna_slice_it_label": "Finance with Klarna",
+        "masked_digits_label": "•••• %{last_digits}",
+        "maximum_vaulted_card_info": {
+          "one": "You can save up to %{count} credit card to your account.",
+          "other": "You can save up to %{count} credit cards to your account."
+        },
+        "missing_credit_card_error": "Enter your card details to complete the payment",
+        "name_on_card_label": "Name on card",
+        "no_js_credit_card_fields_redirect_hint": "You will be redirected to add your payment information.",
+        "no_method_error": "This store can’t accept payments right now.",
+        "no_real_orders_dev_store": "This store can't accept real orders or real payments.",
+        "no_taxes_banner_content": "Taxes won’t be charged on this order. Once you’ve collected payment, taxes can no longer be added.",
+        "not_configured_error": "This store can’t accept payments right now.",
+        "offsite_gateway_redirect_hint": "After clicking “%{button_label}”, you will be redirected to %{gateway_label} to complete your purchase securely.",
+        "offsite_gateway_redirect_hint_multi_currency_html": "%{gateway_label} total %{total_shop_price}"
       },
       "payment_errors": {
         "credit_card_processing": "Your payment can’t be processed for technical reasons. Try again in a few minutes or use a different payment method.",
