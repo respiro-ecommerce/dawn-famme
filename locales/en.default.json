@@ -738,7 +738,18 @@
         "gift_card_label": "Gift card",
         "gift_card_placeholder": "Gift card",
         "gift_card_savings_notice": "After %{gift_card_amount} in gift cards",
-        "gift_card_subscriptions_notice": "Gift cards will only apply to your first payment"
+        "gift_card_subscriptions_notice": "Gift cards will only apply to your first payment",
+        "higher_value_discount_already_applied": "A higher value discount has already been applied.",
+        "multiple_shipping_lines_label": "Shipping total",
+        "no_pickup_location": "Your order isn't available for pickup. Enter a shipping address.",
+        "order_total_updated_label": "Updated total",
+        "original_price": "Original price",
+        "partial_total_label": "Total",
+        "payment_due_label": "Payment due",
+        "pickup_label": "Pickup",
+        "price_label": "Price",
+        "product_change_label": "Change",
+        "product_image_label": "Product image"
       }
     }
   }
