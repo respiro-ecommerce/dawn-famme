@@ -1360,7 +1360,23 @@
       "gift_card_expired": "Gift card is expired",
       "invalid": "is invalid",
       "invalid_email": "must be a valid email address",
-      "invalid_expiry_year": "is not a valid expiration year"
+      "invalid_expiry_year": "is not a valid expiration year",
+      "invalid_for_card_type": "is not valid",
+      "invalid_for_country": "is not valid for %{country}",
+      "invalid_for_country_and_province": "is not valid for %{province} and %{country}",
+      "invalid_format": "format is not valid",
+      "invalid_province_in_country": "is not a valid province in %{country}",
+      "invalid_region_in_country": "is not a valid region in %{country}",
+      "invalid_start_date_or_issue_number_for_debit": "a valid start date or issue number is required",
+      "invalid_state_in_country": "is not a valid state in %{country}",
+      "invalid_type": "sorry, we do not accept cards of this type",
+      "less_than_or_equal_to": "must be less than or equal to %{count}",
+      "not_supported": "is not supported",
+      "password_mismatch": "must match the provided password",
+      "reset_password_html": "This email address is already associated with an account. If this account is yours, you can <a href=\"\/account\/login#recover\">reset your password<\/a>",
+      "taken": "has already been taken",
+      "too_long": "is too long (maximum is %{count} characters)",
+      "too_short": "is too short (minimum is %{count} characters)"
     }
   }
 }
