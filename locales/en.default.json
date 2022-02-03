@@ -1493,7 +1493,36 @@
       "reset_account": "Reset Account",
       "search": "Search",
       "search_results": {
-        "one": "Search: %{count} result found for \"%{terms}\""
+        "one": "Search: %{count} result found for \"%{terms}\"",
+        "other": "Search: %{count} results found for \"%{terms}\""
+      },
+      "shopping_cart": "Your Shopping Cart"
+    },
+    "pagination": {
+      "next": "Next",
+      "previous": "Previous"
+    },
+    "search": {
+      "sorting": {
+        "price_ascending": "Price, low to high",
+        "price_descending": "Price, high to low",
+        "relevance": "Relevance"
+      }
+    },
+    "sentence": {
+      "last_word_connector": ", and ",
+      "two_words_connector": " and ",
+      "words_connector": ", "
+    },
+    "store_availability": {
+      "pick_up_time": {
+        "five_or_more_days": "Usually ready in 5+ days",
+        "four_hours": "Usually ready in 4 hours",
+        "immediately": "Ready for pickup now",
+        "next_day": "Ready for pickup next day",
+        "one_hour": "Usually ready in 1 hour",
+        "twenty_four_hours": "Usually ready in 24 hours",
+        "two_hours": "Usually ready in 2 hours"
       }
     }
   }
