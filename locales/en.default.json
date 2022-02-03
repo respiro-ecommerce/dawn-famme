@@ -453,7 +453,33 @@
       "discounts_with_count": "%{count} discounts have been applied"
     },
     "challenge": {
-      "error": "Your answer wasn't correct, please try again."
+      "error": "Your answer wasn't correct, please try again.",
+      "message": "To continue, let us know you're not a robot.",
+      "submit_button_text": "Submit"
+    },
+    "checkout": {
+      "alternative_payment_method_banner": {
+        "express_checkout": "Express checkout",
+        "or": "OR"
+      },
+      "alternative_payment_method": {
+        "button_html": "Checkout with: %{method}",
+        "button_label": "Checkout with: %{method}"
+      },
+      "apple_pay": {
+        "button_html": "Buy with %{logo}"
+      },
+      "change_country": {
+        "cart_updated_based_on_country": "Your cart has been updated based on your shipping country."
+      },
+      "change_currency": {
+        "card_provider_fx_charges_warning": "Your card provider may charge fees on %{currency_code} transactions.",
+        "change_currency_link": "Change to %{currency_name}",
+        "credit_card_will_be_charged_html": "Your credit card will be charged %{amount}",
+        "currency_button_label": "%{currency} (%{currency_symbol})",
+        "currency_not_supported_by_shop": "The currency you selected is no longer available. All prices are now in %{currency_code}.",
+        "payment_total_label": "Payment total"
+      }
     }
   }
 }
