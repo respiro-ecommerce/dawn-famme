@@ -759,7 +759,20 @@
         "shipping_label": "Shipping",
         "shipping_pending_value": "—",
         "shipping_policy_link": "Shipping costs",
-        "shopping_cart_label": "Shopping cart"
+        "shopping_cart_label": "Shopping cart",
+        "taxes_label": "Taxes",
+        "title": "Order summary",
+        "total_already_paid_label": "Already paid",
+        "total_outstanding_label": "Amount to pay",
+        "unit_price": {
+          "accessible_separator": "per",
+          "content_html": "%{price}%{accessible_separator}%{per_unit}"
+        }
+      },
+      "payment": {
+        "account_connected": "Account connected",
+        "amazon_payments_abandoned_mfa_challenge": "Your payment couldn't be completed. Try a different payment method or contact your bank or card issuer.",
+        "amazon_payments_could_not_enqueue_authorize": "There was an issue processing your payment. Try again or use a different payment method."
       }
     }
   }
