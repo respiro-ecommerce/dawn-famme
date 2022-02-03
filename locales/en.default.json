@@ -576,7 +576,24 @@
         "address_city_too_long": "City is too long (maximum is 255 characters)",
         "address_company_blank": "Enter a company name",
         "address_company_too_long": "Company name is too long (maximum is 255 characters)",
-        "address_country_blank": "Select a country\/region"
+        "address_country_blank": "Select a country\/region",
+        "address_country_not_supported": "We don't currently ship to this country\/region. Enter a new shipping address and try again.",
+        "address_first_name_blank": "Enter a first name",
+        "address_first_name_contains_html_tags": "First name cannot contain HTML tags.",
+        "address_first_name_too_long": "First name is too long (maximum is 255 characters)",
+        "address_last_name_blank": "Enter a last name",
+        "address_last_name_contains_html_tags": "Last name cannot contain HTML tags.",
+        "address_last_name_too_long": "Last name is too long (maximum is 255 characters)",
+        "address_phone_blank": "Enter a valid phone number",
+        "address_province_blank": "Select a state \/ province",
+        "address_zip_blank": "Enter a ZIP \/ postal code",
+        "address_zip_invalid_for_country": "Enter a valid ZIP \/ postal code for %{country}",
+        "address_zip_invalid_for_country_and_province": "Enter a valid ZIP \/ postal code for %{province}, %{country}",
+        "credit_card_expiry_invalid": "Enter a valid card expiry date",
+        "credit_card_month_invalid": "Enter a valid card expiry month",
+        "credit_card_name_blank": "Enter your name exactly as it’s written on your card",
+        "credit_card_name_invalid": "Enter your name exactly as it’s written on your card",
+        "credit_card_number_invalid": "Enter a valid card number"
       }
     }
   }
