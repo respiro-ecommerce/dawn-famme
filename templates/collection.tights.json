@@ -1,18 +1,5 @@
 {
   "sections": {
-    "16367059392713d6ea": {
-      "type": "famme-spaced-button-links",
-      "disabled": true,
-      "settings": {
-        "menu": "treningstights",
-        "bg": "#4e4e4e",
-        "color": "#ffffff",
-        "width": 165,
-        "padx": 10,
-        "pady": 0,
-        "radius": 15
-      }
-    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
@@ -53,7 +40,6 @@
     }
   },
   "order": [
-    "16367059392713d6ea",
     "product-grid",
     "1629364797037f49c2",
     "banner"
