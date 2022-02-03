@@ -505,7 +505,22 @@
         "optional_company_label": "Company (optional)",
         "optional_first_name_label": "First name (optional)",
         "optional_phone_label": "Phone (optional)",
-        "phone_label": "Phone"
+        "phone_label": "Phone",
+        "phone_tooltip": "In case we need to contact you about your order",
+        "pincode_label": "PIN code",
+        "pincode_placeholder": "PIN code",
+        "postal_code_label": "Postal code",
+        "postal_code_placeholder": "Postal code",
+        "postcode_label": "Postcode",
+        "postcode_placeholder": "Postcode",
+        "prefecture_label": "Prefecture",
+        "prefecture_placeholder": "Prefecture",
+        "province_placeholder": "Province",
+        "region_label": "Region",
+        "region_none": "None selected",
+        "region_placeholder": "Region",
+        "shipping_address_title": "Shipping address",
+        "state_and_territory_label": "State\/territory"
       }
     }
   }
