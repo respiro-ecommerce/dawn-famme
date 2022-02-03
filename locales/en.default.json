@@ -817,7 +817,22 @@
         "card_verification_confirm": "For verification purposes, please enter your card's security code.",
         "card_verification_value_explanation": "3-digit security code usually found on the back of your card. American Express cards have a 4-digit code located on the front.",
         "card_verification_value_explanation_amex": "4-digit security code on the front of your card",
-        "card_verification_value_label": "Security code"
+        "card_verification_value_label": "Security code",
+        "change_currency_section_description": "Select a currency option",
+        "credit_card_start_month": "Start month",
+        "credit_card_start_year": "Start year",
+        "credit_card_vaulting_sign_in_banner_button_label": "Log in",
+        "credit_card_vaulting_sign_in_banner_info": "Log in or create an account to save your credit card for future purchases.",
+        "credit_card_vaulting_sign_in_banner_title": "Save your credit card",
+        "delete_customer_mandate_modal_body": "This can't be undone.",
+        "delete_customer_mandate_modal_confirm": "Remove",
+        "delete_customer_mandate_modal_title": "Remove this card?",
+        "detected_card_brand": "Detected card brand: {brand}",
+        "different_billing_address_label": "Use a different billing address",
+        "different_credit_card_label": "Use a different credit card",
+        "discount_button_action_label": "Apply Discount Code",
+        "ends_with_label": "ending with %{last_digits}",
+        "eps_label": "eps-Überweisung"
       }
     }
   }
