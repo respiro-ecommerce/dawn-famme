@@ -1224,7 +1224,27 @@
         "payment_information_title": "Payment information",
         "payment_method_title": "Payment method",
         "picked_up_description_html": "Your order was picked up at %{location_name} on %{date}.",
-        "picked_up_title": "Your order has been picked up"
+        "picked_up_title": "Your order has been picked up",
+        "pick_up_in_store_marker": {
+          "current": "Current shipment location",
+          "shipping": "Pickup location"
+        },
+        "print_link_label": "Print receipt",
+        "qr_code": {
+          "send_link_to_phone": "Or send a link to your phone",
+          "subtitle": "Scan the code with your phone’s camera to track with Shop.",
+          "title": "Track on your phone"
+        },
+        "ready_for_delivery_description": "We’ve prepared your order.",
+        "ready_for_delivery_title": "Your order is ready for delivery.",
+        "ready_for_pickup_description": "Your order is ready for pickup. Please bring your order confirmation when you pick up your order.",
+        "ready_for_pickup_title": "Your order is ready for pickup",
+        "re-order": "Re-order the same items",
+        "resend_gift_cards": "Resend gift cards",
+        "return_to_store_link_label": "Continue shopping",
+        "shipping_address_map_title": "Google map displaying pin point of shipping address: %{address}",
+        "shipping_address_title": "Shipping address",
+        "shipping_information_title": "Shipping information"
       }
     }
   }
