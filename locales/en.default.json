@@ -542,6 +542,20 @@
         "page_title": "Payment methods",
         "title": "Payment methods",
         "update_card_button_label": "Update card"
+      },
+      "delivery_options": {
+        "free_total_label": "Free",
+        "pick_up_immediately": "Ready for pickup now",
+        "pick_up_in_five_or_more_days": "Usually ready in 5+ days",
+        "pick_up_in_four_hours": "Usually ready in 4 hours",
+        "pick_up_in_one_hour": "Usually ready in 1 hour",
+        "pick_up_in_twenty_four_hours": "Usually ready in 24 hours",
+        "pick_up_in_two_hours": "Usually ready in 2 hours",
+        "pick_up_in_two_to_four_hours": "Ready for pickup in 4 hours",
+        "pick_up_locations": "Pickup locations",
+        "pick_up_next_day": "Ready for pickup next day",
+        "ship": "Ship",
+        "shipping_address": "Shipping address"
       }
     }
   }
