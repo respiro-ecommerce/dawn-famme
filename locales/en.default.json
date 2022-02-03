@@ -559,7 +559,24 @@
       },
       "failed_payment": {
         "page_title": "Payment couldn’t be processed",
-        "payment_not_processed_text": "You haven’t been charged. Return to your cart to complete your purchase."
+        "payment_not_processed_text": "You haven’t been charged. Return to your cart to complete your purchase.",
+        "payment_not_processed_title": "Your payment couldn’t be processed",
+        "return_to_cart_button_label": "Return to cart",
+        "title": "Payment couldn’t be processed"
+      },
+      "field_errors": {
+        "address_address1_blank": "Enter an address",
+        "address_address1_contains_html_tags": "Address1 cannot contain HTML tags.",
+        "address_address1_too_long": "The first address line is too long (maximum is 255 characters)",
+        "address_address2_blank": "Enter an apartment, suite, etc.",
+        "address_address2_contains_html_tags": "Address2 cannot contain HTML tags.",
+        "address_address2_too_long": "The second address line is too long (maximum is 255 characters)",
+        "address_city_blank": "Enter a city",
+        "address_city_contains_html_tags": "City cannot contain HTML tags.",
+        "address_city_too_long": "City is too long (maximum is 255 characters)",
+        "address_company_blank": "Enter a company name",
+        "address_company_too_long": "Company name is too long (maximum is 255 characters)",
+        "address_country_blank": "Select a country\/region"
       }
     }
   }
