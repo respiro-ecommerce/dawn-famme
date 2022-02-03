@@ -832,7 +832,11 @@
         "different_credit_card_label": "Use a different credit card",
         "discount_button_action_label": "Apply Discount Code",
         "ends_with_label": "ending with %{last_digits}",
-        "eps_label": "eps-Überweisung"
+        "eps_label": "eps-Überweisung",
+        "express_checkout_free_order": "You won't be charged for a free order",
+        "free_order_notice_html": "Your order is <strong>free<\/strong>. No payment is required.",
+        "ftd_vault_credit_card_label": "Save my credit card for a faster checkout",
+        "generic_incorrect_card_info": "Your payment details couldn’t be verified. Check your card details and try again."
       },
       "payment_errors": {
         "credit_card_processing": "Your payment can’t be processed for technical reasons. Try again in a few minutes or use a different payment method.",
@@ -849,7 +853,17 @@
         "pay_later_failed": "There was an error processing your payment with Pay later. Choose another payment method and try again.",
         "payment_processing_no_retry": "Your payment can’t be processed for technical reasons. Please try a different payment method.",
         "paypal_zero_amount": "You can’t use PayPal for %{amount} orders. Confirm your order is correct and check out without PayPal.",
-        "rejected_transaction": "Your payment was declined. Try again or use a different payment method."
+        "rejected_transaction": "Your payment was declined. Try again or use a different payment method.",
+        "subscription_agreement_blank": "To buy a subscription your payment details need to be saved. To continue, confirm that you agree or remove subscription items from you order.",
+        "three_d_secure_failed": "Your payment couldn’t be verified. Try again or use a different payment method.",
+        "three_d_secure_failed_duplicate": "The credit card's 3D Secure authentication failed because another is already in progress.",
+        "three_d_secure_throttled": "Too many attempts; please wait before trying again"
+      },
+      "payment_gateway": {
+        "bank_deposit_label": "Bank Deposit",
+        "cash_on_delivery_label": "Cash on Delivery (COD)",
+        "credit_card_label": "Credit card",
+        "money_order_label": "Money Order"
       }
     }
   }
