@@ -1197,7 +1197,20 @@
         "order_status_confirmed_order_with_email_and_phone": "You’ll receive an email and text when your order is ready.",
         "order_status_confirmed_order_with_email_and_phone_payment": "You made a payment on your order %{date}.",
         "order_status_confirmed_order_with_email_and_phone_pick_up": "You’ll receive an email and text when your order is ready for pickup.",
-        "order_status_confirmed_order_with_email_payment": "You made a payment on your order %{date}."
+        "order_status_confirmed_order_with_email_payment": "You made a payment on your order %{date}.",
+        "order_status_confirmed_order_with_email_pick_up": "You’ll receive an email when your order is ready for pickup.",
+        "order_status_confirmed_order_with_phone_payment": "You made a payment on your order %{date}.",
+        "order_status_confirmed_order_with_phone_pick_up": "You’ll receive a text when your order is ready for pickup.",
+        "order_status_updates_with_email": "You’ll get shipping and delivery updates by email.",
+        "order_status_updates_with_missing": "Choose how you want to get shipping updates.",
+        "order_status_updates_with_phone": "You’ll get shipping and delivery updates by text.",
+        "order_updates_current_step_prefix": "Current step: ",
+        "order_updates_description_html": "Updates will be sent to %{customer_contact}",
+        "order_updates_description_missing": "You are not receiving shipping updates.",
+        "order_updates_past_step_prefix": "Past step: ",
+        "order_updates_submit_subscription": "Submit",
+        "order_updates_subscribe_to_email_notifications": "Get shipping updates by email",
+        "order_updates_subscribe_to_email_or_phone_notifications": "Get shipping updates by email or text"
       }
     }
   }
