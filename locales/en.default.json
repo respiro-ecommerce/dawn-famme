@@ -679,6 +679,30 @@
         "unsubscribe": {
           "description": "You won’t receive any more cart reminders from us."
         }
+      },
+      "notifications": {
+        "title": "Notifications"
+      },
+      "open_graph_meta_tag": {
+        "title_with_products": {
+          "other": "Purchase %{product_name} and %{count} other items",
+          "zero": "Purchase %{product_name}"
+        }
+      },
+      "order_payment_collection": {
+        "additional_payment_requested": "Payment of %{total_outstanding} is needed",
+        "changes_summary": {
+          "added": {
+            "one": "Added",
+            "other": "%{count} added"
+          },
+          "removed": "Removed",
+          "subtracted": "%{count} removed"
+        },
+        "checkout_review_and_pay": "Your order %{order_name} was updated. Review these changes, then pay to confirm your order.",
+        "order_review_and_pay": "Your order was updated. Review and pay to confirm your order.",
+        "order_updated_on": "Your order was updated on %{last_edited_at}.",
+        "pay_now": "Pay now"
       }
     }
   }
