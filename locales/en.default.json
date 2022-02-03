@@ -426,5 +426,14 @@
       "copy_code_success": "Code copied successfully",
       "print_gift_card": "Print"
     }
+  },
+  "shopify": {
+    "addresses": {
+      "county": "County",
+      "emirate": "Emirate",
+      "governorate": "Governorate",
+      "pincode": "Pincode",
+      "postal_code": "Postal code"
+    }
   }
 }
