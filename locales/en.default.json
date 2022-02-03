@@ -593,7 +593,22 @@
         "credit_card_month_invalid": "Enter a valid card expiry month",
         "credit_card_name_blank": "Enter your name exactly as it’s written on your card",
         "credit_card_name_invalid": "Enter your name exactly as it’s written on your card",
-        "credit_card_number_invalid": "Enter a valid card number"
+        "credit_card_number_invalid": "Enter a valid card number",
+        "credit_card_start_invalid": "Enter a valid card start date",
+        "credit_card_start_month_invalid": "Enter a valid card start month",
+        "credit_card_start_year_invalid": "Enter a valid card start year",
+        "credit_card_verification_value_blank": "Enter the CVV or security code on your card",
+        "credit_card_year_invalid": "Enter a valid card expiry year",
+        "email_invalid": "Enter a valid email",
+        "email_or_phone_blank": "Enter an email or mobile phone number",
+        "email_or_phone_invalid": "Enter a valid email or a mobile phone number",
+        "gift_card_currency_mismatch": "Only gift cards in %{checkout_currency} can be used with this order",
+        "gift_card_depleted": "This gift card has no funds left",
+        "gift_card_disabled": "This gift card is no longer available",
+        "gift_card_expired": "This gift card has expired",
+        "handle_email_invalid": "Enter a valid email",
+        "handle_phone_invalid": "Enter a valid phone number",
+        "payment_gateway_incompatible_with_multi_currency": "To complete this checkout in your local currency, you need to pay by credit card."
       }
     }
   }
