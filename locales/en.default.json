@@ -1522,7 +1522,8 @@
         "next_day": "Ready for pickup next day",
         "one_hour": "Usually ready in 1 hour",
         "twenty_four_hours": "Usually ready in 24 hours",
-        "two_hours": "Usually ready in 2 hours"
+        "two_hours": "Usually ready in 2 hours",
+        "two_to_four_hours": "Usually ready in 4 hours"
       }
     }
   }
