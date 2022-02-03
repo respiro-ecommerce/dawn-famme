@@ -1329,7 +1329,23 @@
           "status_html": "<b>Email open tracking is reported.<\/b>",
           "visibility": "We have updated our policy, and now track emails opens. Email open rates will be reported anonymously. We will only see if you’ve opened an email as part of the total email open rate."
         }
+      },
+      "subscribed": {
+        "confirmation": "Thank you for subscribing to our mailing list.",
+        "disclaimer": "You can unsubscribe at any time.",
+        "unsubscribe": "Unsubscribe"
+      },
+      "unsubscribed": {
+        "disclaimer": "You won’t receive any more marketing updates from us. You can subscribe again at any time.",
+        "preview": "You're previewing what customers will see when they unsubscribe."
       }
+    },
+    "errors": {
+      "blank": "can't be blank",
+      "blocked_address": "This location isn't supported.",
+      "contains_html_tags": "cannot contain HTML tags",
+      "contains_spaces": "starts or ends with spaces.",
+      "customer_already_used_once_per_customer_discount_notice": "This discount has reached its usage limit"
     }
   }
 }
