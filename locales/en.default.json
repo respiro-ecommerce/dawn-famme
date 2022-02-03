@@ -1052,7 +1052,11 @@
               "other": "every %{count} years"
             }
           }
-        }
+        },
+        "subscription_shipping": "Subscription shipping",
+        "title": "Shipping",
+        "waiting_on_pickup_location_notice": "Getting available pick up locations…",
+        "waiting_on_rate_notice": "Getting available shipping rates…"
       },
       "shipping_errors": {
         "shipping_method": "Your cart has been updated and the previous shipping rate isn’t valid. Select a new rate.",
@@ -1064,6 +1068,23 @@
           "one": "The item you added doesn’t ship to your location. Remove it to check out, or contact the store.",
           "other": "One or more items you added don’t ship to your location. Remove them to check out, or contact the store."
         }
+      },
+      "shop_policies": {
+        "legal_notice": "Legal notice",
+        "privacy_policy": "Privacy policy",
+        "refund_policy": "Refund policy",
+        "shipping_policy": "Shipping policy",
+        "subscription_policy": "Subscription policy",
+        "terms_of_sale": "Terms of sale",
+        "terms_of_service": "Terms of service"
+      },
+      "stock": {
+        "continue_shopping_button_label": "Continue",
+        "go_back_to_cart_button_label": "Go back to my cart",
+        "items_unavailable_notice": "Some items are no longer available. Your cart has been updated.",
+        "page_title": "Inventory issues",
+        "price_column_header": "Price",
+        "product_column_header": "Products"
       }
     }
   }
