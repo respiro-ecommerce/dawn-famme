@@ -869,7 +869,12 @@
         "subscription_agreement_cancelled": "canceled",
         "subscription_agreement_label": "I understand that I'm agreeing to a subscription. It will renew at the price and frequency listed until it ends or is %{cancelled}.",
         "subscription_agreement_label_html": "I understand that I'm agreeing to a subscription. It will renew at the price and frequency listed until it ends or is\n<a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{subscription_policy}\" href=\"%{policy_href}\">cancelled<\/a>.\n",
-        "subscription_card_update_agreement_label": "Changing the payment method will update your subscription and future recurring payments."
+        "subscription_card_update_agreement_label": "Changing the payment method will update your subscription and future recurring payments.",
+        "supported_card_brands_more_label": "and more…",
+        "taxes_not_included": "Taxes not included",
+        "technical_error": "Payments can’t be processed right now because of a technical issue. Try again in a few minutes.",
+        "title": "Payment",
+        "waiting_on_payment_methods": "Getting available payment methods..."
       },
       "payment_errors": {
         "credit_card_processing": "Your payment can’t be processed for technical reasons. Try again in a few minutes or use a different payment method.",
@@ -902,7 +907,28 @@
         "billing_address_title": "Billing address",
         "credit_card_expires_on_notice": "Expires on %{month}\/%{year}",
         "express_payment_gateway_label": "Express",
-        "free_label": "Free"
+        "free_label": "Free",
+        "gift_card_current_balance_notice": "Current balance %{amount}",
+        "manual_payment_gateway_label": "Manual"
+      },
+      "paypal": {
+        "button_html": "Checkout with %{logo}"
+      },
+      "post_purchase": {
+        "components": {
+          "close": "Close",
+          "expand": "View more",
+          "processing": "Processing…",
+          "submit": "Submit"
+        },
+        "escape_action": "View order confirmation ›",
+        "escape_confirmation": "You’ve paid for your order.",
+        "page_title": "Post-purchase",
+        "title": "Post-purchase"
+      },
+      "processing": {
+        "complete_your_purchase_title_error": "Correct your payment information",
+        "continue_to_payment_gateway_button_label": "Continue to payment"
       }
     }
   }
