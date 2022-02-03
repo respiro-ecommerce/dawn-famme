@@ -802,8 +802,22 @@
         "card_fields_container_prefix": "Field container for:",
         "card_fields_processing_error": "There was a problem processing the payment. Try refreshing this page or check your internet connection.",
         "card_fields_unavailable_html": {
-          "one": "Credit and debit card payments aren’t available right now.<br><a href=\"%{current_url}\">Refresh this page<\/a> or try again later."
-        }
+          "one": "Credit and debit card payments aren’t available right now.<br><a href=\"%{current_url}\">Refresh this page<\/a> or try again later.",
+          "other": "Credit and debit card payments aren’t available right now.<br><a href=\"%{current_url}\">Refresh this page<\/a> or try a different payment method."
+        },
+        "card_issue_number_label": "Issue number",
+        "card_number_label": "Card number",
+        "card_number_placeholder": "Card number",
+        "card_pay_with": "Pay with:",
+        "card_security_notice": "All transactions are secure and encrypted.",
+        "card_security_vault_notice": "We need your details for future payments. All transactions are secure and encrypted.",
+        "card_start_label": "Issue date (MM \/ YY)",
+        "card_start_placeholder": "Issue date (MM \/ YY)",
+        "card_update_label": "Update card",
+        "card_verification_confirm": "For verification purposes, please enter your card's security code.",
+        "card_verification_value_explanation": "3-digit security code usually found on the back of your card. American Express cards have a 4-digit code located on the front.",
+        "card_verification_value_explanation_amex": "4-digit security code on the front of your card",
+        "card_verification_value_label": "Security code"
       }
     }
   }
