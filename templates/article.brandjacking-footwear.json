@@ -22,20 +22,10 @@
     "163438960122f1937a": {
       "type": "multicolumn",
       "blocks": {
-        "163438960122f1937a-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/desktop-banner-host-oppdatert.jpg",
-            "title": "Rask levering + gratis retur",
-            "text": "<p>Bestill og få varene <strong>hjemlevert  på samme dag<\/strong> med Porterbuddy! Hos Famme kan du kjøpe <strong>fraktfritt<\/strong> og bestiller du i dag har du også<strong> gratis retur<\/strong>! Du velger mellom Posten, Helthjem eller samme dags levering med Porterbuddy!<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "df9bbf83-151f-48c0-936d-2458ff996a30": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/MOBIL-BANNER-ENDORPHIN.jpg",
+            "image": "shopify:\/\/shop_images\/brandjacking-footwear-multicoloumn.png",
             "title": "Komfort + sikkerhet",
             "text": "<p><em>\"Du får det du betaler for\"<\/em>. Ikke nødvendigvis. Noen ganger får du mer, ofte får du mye mindre. <strong>Endorphin RX1 gir deg mer.<\/strong> Komforten og sikkerheten av et plagg, utstyr, eller fottøy skal ikke ofres for å kunne gi kunden en god og rettferdig pris på produkt. Derfor gir vi deg <strong>Endorphin RX1:<\/strong> en mye rimeligere joggesko, men enda like bra og enda litt til.  <\/p>",
             "link_label": "",
@@ -51,12 +41,22 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "163438960122f1937a-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vippsklarna.jpg",
+            "title": "Rask levering + gratis retur",
+            "text": "<p>Bestill og få varene <strong>hjemlevert  på samme dag<\/strong> med Porterbuddy! Hos Famme kan du kjøpe <strong>fraktfritt<\/strong> og bestiller du i dag har du også<strong> gratis retur<\/strong>! Du velger mellom Posten, Helthjem eller samme dags levering med Porterbuddy!<\/p>",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
-        "163438960122f1937a-1",
         "df9bbf83-151f-48c0-936d-2458ff996a30",
-        "9179918b-cff4-4c6a-8323-e0feee7ce5a6"
+        "9179918b-cff4-4c6a-8323-e0feee7ce5a6",
+        "163438960122f1937a-1"
       ],
       "settings": {
         "title": "Fri frakt & retur, 100 dagers åpent kjøp",
