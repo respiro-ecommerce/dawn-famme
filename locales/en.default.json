@@ -721,7 +721,24 @@
         "discount_has_been_applied": "Discount has been applied",
         "discount_has_been_removed": "Discount has been removed",
         "discount_label": "Discount code",
-        "discount_requires_customer_notice": "Enter your shipping information to apply the <strong style=\"text-transform:uppercase\">%{code}<\/strong> discount code"
+        "discount_requires_customer_notice": "Enter your shipping information to apply the <strong style=\"text-transform:uppercase\">%{code}<\/strong> discount code",
+        "discount_savings_notice": "After %{discount_amount} in discounts",
+        "discount_title": "Discount",
+        "estimated_taxes_label": "Taxes (estimated)",
+        "estimated_tax_label": "Estimated tax",
+        "expand_order_summary": "Show order summary",
+        "free_shipping_discount_label": "Free shipping",
+        "free_total_label": "Free",
+        "gift_card_and_discount_label": "Gift card or discount code",
+        "gift_card_and_discount_placeholder": "Gift card or discount code",
+        "gift_card_and_discount_title": "Gift card or discount code",
+        "gift_card_ending": "Gift card ending with %{last_characters}",
+        "gift_card_has_been_applied": "Gift card has been applied",
+        "gift_card_has_been_removed": "Gift card has been removed",
+        "gift_card_label": "Gift card",
+        "gift_card_placeholder": "Gift card",
+        "gift_card_savings_notice": "After %{gift_card_amount} in gift cards",
+        "gift_card_subscriptions_notice": "Gift cards will only apply to your first payment"
       }
     }
   }
