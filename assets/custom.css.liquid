@@ -29,6 +29,9 @@ section.shopify-section.spaced-section.btns > a {
   text-align: center;
 }
 
+a.banner__media.media {
+  z-index: 2;
+}
 button.product-form__submit.button--full-width {
   max-width: 550px;
 }
@@ -47,13 +50,13 @@ button.product-form__submit.button--full-width {
 .product-form__input input[type="radio"][name="Color"].disabled+label,
 .product-form__input input[type="radio"][name="Color"]:disabled+label {display: none;}
 .button {border-radius: 25px;}
-.button:after {inset: unset;} 
+.button:after {inset: unset;}
 section.spaced-section--full-width+section.spaced-section--full-width {margin-top: {{ settings.bannerspace }}px;}
 /*buttons homepage section spacing*/
 .spaced-section {margin: 5rem auto;}
 
 /*collection swatches layout fix*/
-ul#product-grid .card-wrapper {height: auto;}
+ul.product-grid div.card-wrapper {height: auto;}
 {% comment %}This is some styling for the variant images under each product used on collection pages and search{% endcomment %}
 .product-groups__images img {width: 60px;}
 .product-groups__images a:hover img {border:  solid 1px black;}
@@ -66,15 +69,10 @@ div.product-groups__images {
 div.product-groups__images > a.other-product-image {
   margin: 0 2px;
 }
-/* Banner links and header submenus - NB! Seems suspicious that we should need to mess with z-indeces? What customization have we done that broke this? */
+/*banner links and header submenus*/
 div.banner__content {
   z-index: 1;
 }
-a.banner__media.media {
-  z-index: 2;
-}
- 
-
 /*sold out styles fix*/
 .product-form__input input[type="radio"]:disabled + label, .product-form__input input[type="radio"].disabled + label {
   border-color: rgba(78, 78, 78, 0.4);
@@ -84,3 +82,4 @@ a.banner__media.media {
 .product-form__input input[type="radio"]:disabled:checked + label, .product-form__input input[type="radio"].disabled:checked + label {
   color: #bfbfbf;
 }
+img.cart-item__image {object-fit: contain;}
