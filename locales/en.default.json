@@ -642,7 +642,24 @@
         },
         "choose_billing_address": "Choose a billing address",
         "choose_payment_method": "Choose a payment method",
-        "choose_shipping_method": "Choose a shipping method"
+        "choose_shipping_method": "Choose a shipping method",
+        "close_modal_label": "Close",
+        "close_notice_label": "Close",
+        "complete_purchase_button_label": "Complete order",
+        "contact_us_html": "Contact us for more information",
+        "continue_button_label": "Continue",
+        "continue_to_review": "Review order",
+        "continue_to_shipping_method": "Continue to shipping",
+        "edit_link_label": "Edit",
+        "error_page_title": "Error",
+        "expand_notice_label": "View more",
+        "forwarding_indicator": {
+          "external": "Opens external website.",
+          "external_and_new_window": "Opens external website in a new window.",
+          "new_window": "Opens in a new window."
+        },
+        "page_title": "Checkout",
+        "pay_now_button_label": "Pay now"
       }
     }
   }
