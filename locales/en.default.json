@@ -855,7 +855,21 @@
         "no_taxes_banner_content": "Taxes won’t be charged on this order. Once you’ve collected payment, taxes can no longer be added.",
         "not_configured_error": "This store can’t accept payments right now.",
         "offsite_gateway_redirect_hint": "After clicking “%{button_label}”, you will be redirected to %{gateway_label} to complete your purchase securely.",
-        "offsite_gateway_redirect_hint_multi_currency_html": "%{gateway_label} total %{total_shop_price}"
+        "offsite_gateway_redirect_hint_multi_currency_html": "%{gateway_label} total %{total_shop_price}",
+        "order_covered_by_gift_cards_notice": {
+          "one": "Your order is covered by your gift card.",
+          "other": "Your order is covered by your gift cards."
+        },
+        "paypal": {
+          "connect": "Click to connect your PayPal account"
+        },
+        "same_billing_address_label": "Same as shipping address",
+        "saved_by_payment_method": "Saved by %{payment_method}",
+        "sofort_label": "Sofort bank transfer",
+        "subscription_agreement_cancelled": "canceled",
+        "subscription_agreement_label": "I understand that I'm agreeing to a subscription. It will renew at the price and frequency listed until it ends or is %{cancelled}.",
+        "subscription_agreement_label_html": "I understand that I'm agreeing to a subscription. It will renew at the price and frequency listed until it ends or is\n<a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{subscription_policy}\" href=\"%{policy_href}\">cancelled<\/a>.\n",
+        "subscription_card_update_agreement_label": "Changing the payment method will update your subscription and future recurring payments."
       },
       "payment_errors": {
         "credit_card_processing": "Your payment can’t be processed for technical reasons. Try again in a few minutes or use a different payment method.",
@@ -883,6 +897,12 @@
         "cash_on_delivery_label": "Cash on Delivery (COD)",
         "credit_card_label": "Credit card",
         "money_order_label": "Money Order"
+      },
+      "payment_summary": {
+        "billing_address_title": "Billing address",
+        "credit_card_expires_on_notice": "Expires on %{month}\/%{year}",
+        "express_payment_gateway_label": "Express",
+        "free_label": "Free"
       }
     }
   }
