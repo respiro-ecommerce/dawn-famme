@@ -1428,7 +1428,30 @@
         "stock_problems_html": "One or more items are no longer available. We've provided an <a href='%{link}'>updated cart<\/a>.",
         "too_many_items_in_cart": "You can't add more %{name} to the cart.",
         "too_many_line_items_error": "Your cart can't contain more than %{max} items.",
-        "variant_not_found": "Cannot find variant"
+        "variant_not_found": "Cannot find variant",
+        "variant_requires_selling_plan": "Variant can only be purchased with a selling plan."
+      },
+      "customer": {
+        "denylisted_reset_password": "Your account couldn't be accessed because the current password is not secure. You will receive an email to update your password.",
+        "invalid_credentials": "Incorrect email or password.",
+        "password_reset_error": "Password reset error"
+      },
+      "order": {
+        "cancel_reason": {
+          "customer": "Customer changed\/cancelled order",
+          "declined": "Payment declined",
+          "fraud": "Fraudulent order",
+          "inventory": "Items unavailable",
+          "other": "Other"
+        },
+        "cash_on_delivery": "Cash on Delivery (COD)",
+        "financial_status": {
+          "authorized": "Authorized",
+          "expired": "Expired",
+          "paid": "Paid",
+          "partially_paid": "Partially paid",
+          "partially_refunded": "Partially refunded"
+        }
       }
     }
   }
