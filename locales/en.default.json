@@ -1178,7 +1178,26 @@
         "in_transit_title": "Your order is on its way",
         "let_us_know": "Let us know",
         "login_description": "You can find your order number in the receipt you received via email.",
-        "login_description_phone": "You can find your order number in the receipt you received via text message."
+        "login_description_phone": "You can find your order number in the receipt you received via text message.",
+        "login_not_customer_html": "Not %{name}? You can %{link}",
+        "login_reorder_link_text": {
+          "one": "buy this product too",
+          "other": "buy these products too"
+        },
+        "login_title": "Log in to view all order details",
+        "marker": {
+          "current": "Current shipment location",
+          "shipping": "Shipping address"
+        },
+        "non_shippable_title": "Your order is complete",
+        "no_tracking_number": "There is no tracking number for this order.",
+        "opt_in_message_html": "Your information was successfully saved with %{shopify_pay}",
+        "order_number_label": "Order number",
+        "order_status_confirmed_order_local": "We’re getting your order ready for delivery.",
+        "order_status_confirmed_order_with_email_and_phone": "You’ll receive an email and text when your order is ready.",
+        "order_status_confirmed_order_with_email_and_phone_payment": "You made a payment on your order %{date}.",
+        "order_status_confirmed_order_with_email_and_phone_pick_up": "You’ll receive an email and text when your order is ready for pickup.",
+        "order_status_confirmed_order_with_email_payment": "You made a payment on your order %{date}."
       }
     }
   }
