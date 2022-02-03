@@ -993,7 +993,19 @@
           "other": "%{count} business days"
         },
         "estimated_delivery_date_range": "%{minimum} to %{maximum} business days",
-        "estimated_delivery_time_range": "Estimated delivery %{min_time}–%{max_time}"
+        "estimated_delivery_time_range": "Estimated delivery %{min_time}–%{max_time}",
+        "local_delivery": "Local delivery",
+        "no_pickup_location_notice": "At least one of your products is not available for pick up",
+        "no_rates_for_cart_or_destination_notice": "There are no shipping methods available for your cart or address",
+        "one_time_purchase_shipping": "One-time shipping",
+        "optional_shipping_line_delivery_instructions_label": "Delivery instructions (optional)",
+        "other_method": {
+          "one": "%{count} other method available at ",
+          "zero": "No other methods available"
+        },
+        "shipping_line_delivery_instructions": "Enter necessary information like door codes or drop-off instructions.",
+        "shipping_line_delivery_phone": "We may use this number to call or text you about your delivery.",
+        "shipping_line_delivery_phone_label": "Mobile phone number"
       },
       "shipping_errors": {
         "shipping_method": "Your cart has been updated and the previous shipping rate isn’t valid. Select a new rate.",
