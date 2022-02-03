@@ -1210,7 +1210,21 @@
         "order_updates_past_step_prefix": "Past step: ",
         "order_updates_submit_subscription": "Submit",
         "order_updates_subscribe_to_email_notifications": "Get shipping updates by email",
-        "order_updates_subscribe_to_email_or_phone_notifications": "Get shipping updates by email or text"
+        "order_updates_subscribe_to_email_or_phone_notifications": "Get shipping updates by email or text",
+        "order_updates_title": "Order updates",
+        "order_updates_upcoming_step_prefix": "Upcoming step: ",
+        "other_options": "Other options",
+        "out_for_delivery": "Out for delivery",
+        "out_for_delivery_description_html": "Your order is on its way and should arrive today. If it’s not delivered in the next 2 days, %{contact_us}.",
+        "out_for_delivery_local_description_html": "Your order will arrive soon.",
+        "out_for_delivery_local_title": "Your order is out for delivery",
+        "out_for_delivery_title": "Your order is out for delivery",
+        "page_title": "Thank you %{display_name}!",
+        "page_title_no_name": "Thank you!",
+        "payment_information_title": "Payment information",
+        "payment_method_title": "Payment method",
+        "picked_up_description_html": "Your order was picked up at %{location_name} on %{date}.",
+        "picked_up_title": "Your order has been picked up"
       }
     }
   }
