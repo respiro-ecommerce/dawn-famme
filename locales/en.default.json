@@ -1413,7 +1413,22 @@
         "updated": "Successfully updated address."
       },
       "cart": {
-        "all_items_in_cart": "All %{count} %{name} are in your cart."
+        "all_items_in_cart": "All %{count} %{name} are in your cart.",
+        "changed": "Cart changed",
+        "empty_update": "cannot update empty cart",
+        "generic_error": "Cart Error",
+        "items_changed": "One or more items have changed.",
+        "link_expired": "Link expired",
+        "link_no_longer_exists": "Link no longer exists.",
+        "missing_parameters": "no valid id or line parameter",
+        "only_n_items_available": "You can only add %{count} %{name} to the cart.",
+        "product_sold_out": "The product '%{name}' is already sold out.",
+        "shipping_address_invalid": "There was a problem calculating your shipping rates. Continue to checkout to choose a shipping rate before you complete your order.",
+        "shipping_address_not_required": "This cart does not require shipping",
+        "stock_problems_html": "One or more items are no longer available. We've provided an <a href='%{link}'>updated cart<\/a>.",
+        "too_many_items_in_cart": "You can't add more %{name} to the cart.",
+        "too_many_line_items_error": "Your cart can't contain more than %{max} items.",
+        "variant_not_found": "Cannot find variant"
       }
     }
   }
