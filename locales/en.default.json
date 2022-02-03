@@ -772,7 +772,26 @@
       "payment": {
         "account_connected": "Account connected",
         "amazon_payments_abandoned_mfa_challenge": "Your payment couldn't be completed. Try a different payment method or contact your bank or card issuer.",
-        "amazon_payments_could_not_enqueue_authorize": "There was an issue processing your payment. Try again or use a different payment method."
+        "amazon_payments_could_not_enqueue_authorize": "There was an issue processing your payment. Try again or use a different payment method.",
+        "amazon_payments_failed_mfa_challenge": "The selected payment method could not be used. Select a different method or contact your bank or card issuer.",
+        "amazon_payments_label": "Amazon Pay",
+        "amazon_payments_login_hint": "You will be asked to login with Amazon.",
+        "amazon_payments_logout": "Log out from Amazon Pay",
+        "amount_left_to_pay_label": "Payment due:",
+        "apple": {
+          "connect": "Click to connect your Apple Pay account",
+          "email_connected": "Account connected: ",
+          "not_available": "Apple Pay is not available in this browser. To connect your Apple Pay account you'll need to use Safari on an Apple device."
+        },
+        "apple_pay_payment_error": "Your payment couldn't be completed. Try again or use a different payment method.",
+        "apply_gift_card_button_label": "Apply",
+        "bancontact_label": "Bancontact",
+        "bank_picker_label": "Bank",
+        "billing_address_associated_with_mandate": "Use address associated with payment method",
+        "billing_address_associated_with_mandate_info": "If you wish to change your billing address, please remove and re-enter your credit card details",
+        "billing_address_description": "Select the address that matches your card or payment method.",
+        "billing_address_description_no_shipping_address": "Enter the address that matches your card or payment method.",
+        "billing_address_not_supported_for_payment_method_error": "This payment method isn't available for your billing address and currency. Please try a different payment method."
       }
     }
   }
