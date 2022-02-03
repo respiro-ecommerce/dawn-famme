@@ -1302,6 +1302,34 @@
         "price_descending": "Price, high to low",
         "za": "Alphabetically, Z-A"
       }
+    },
+    "email_marketing": {
+      "open_tracking": {
+        "no_longer_track": {
+          "privacy_policy": "After this email was sent, we updated our privacy policy and we no longer track opens.",
+          "status_html": "<b>We no longer track any email opens.<\/b>"
+        },
+        "opt_in": {
+          "opted_in_html": "<b>You’ve opted in to email open tracking.<\/b>",
+          "opt_out_html": "You can <a style='text-decoration:underline;' href='%{link}'>opt out<\/a> of email open tracking if you do not want to share this information.",
+          "preview_bar": "You're previewing what customers will see when they opt in to email open tracking.",
+          "visibility": "Email open rates will be reported anonymously. We will only see if you’ve opened an email as part of an aggregated email open rate."
+        },
+        "opt_out": {
+          "opt_in_html": "<a style='text-decoration:underline;' href='%{link}'>Opt in<\/a> to email open tracking.",
+          "preview_bar": "You're previewing what customers will see when they opt out of email open tracking.",
+          "visibility": "We will not see if you’ve opened our emails."
+        },
+        "track": {
+          "status_html": "<b>Email open tracking is reported.<\/b>",
+          "visibility": "We will only see if you’ve opened the email, as part of the total email open rate."
+        },
+        "updated_policy": {
+          "opt_out_html": "If you do not want to share this information, you can <a style='text-decoration:underline;' href='%{link}'>unsubscribe.<\/a>",
+          "status_html": "<b>Email open tracking is reported.<\/b>",
+          "visibility": "We have updated our policy, and now track emails opens. Email open rates will be reported anonymously. We will only see if you’ve opened an email as part of the total email open rate."
+        }
+      }
     }
   }
 }
