@@ -928,7 +928,22 @@
       },
       "processing": {
         "complete_your_purchase_title_error": "Correct your payment information",
-        "continue_to_payment_gateway_button_label": "Continue to payment"
+        "continue_to_payment_gateway_button_label": "Continue to payment",
+        "continue_to_payment_gateway_button_label_error": "Update payment information",
+        "continue_to_payment_gateway_notice_error": "Your payment information couldn’t be verified.",
+        "redirecting_notice": "Wait while we redirect you.",
+        "redirecting_page_title": "Redirecting…",
+        "redirecting_title": "Redirecting…",
+        "title": "Processing order",
+        "wait": {
+          "long": "You’ll receive an email as soon as your order’s processed. There’s currently a high volume of orders.",
+          "medium": {
+            "one": "Your order’s being processed. Estimated wait time is %{count} minute.",
+            "other": "Your order’s being processed. Estimated wait time is %{count} minutes."
+          },
+          "no_auto_refresh_html": "If you’re not automatically redirected, %{link}.",
+          "refresh_this_page": "refresh this page"
+        }
       }
     }
   }
