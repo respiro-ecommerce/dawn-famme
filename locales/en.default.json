@@ -1005,7 +1005,30 @@
         },
         "shipping_line_delivery_instructions": "Enter necessary information like door codes or drop-off instructions.",
         "shipping_line_delivery_phone": "We may use this number to call or text you about your delivery.",
-        "shipping_line_delivery_phone_label": "Mobile phone number"
+        "shipping_line_delivery_phone_label": "Mobile phone number",
+        "shipping_line_phone_label": "Mobile phone number (required)",
+        "shipping_method_one_time_purchase_group_title": "One-time purchase",
+        "shipping_method_subscription_group_title": "Subscription",
+        "shipping_method_title": "Shipping method",
+        "shipping_rate_discounted_amount": "Was: %{original_amount}. Now: %{amount}",
+        "subscription_delivery_description": {
+          "first_n_order_free": {
+            "one": "First order free",
+            "other": "First %{count} orders free"
+          },
+          "first_order_different_shipping_price": "%{first_order_shipping_price} (%{per_delivery_price} per delivery), followed by %{recurring_order_shipping_price}",
+          "first_order_shipping_price_included": "First order included, followed by %{recurring_order_shipping_price}",
+          "free_for_first_n_order": {
+            "one": "For first order",
+            "other": "For first %{count} orders"
+          },
+          "initial_order_discounted": "First shipping cost %{discounted_shipping_cost}, then %{frequency_description}",
+          "multiple_subscriptions_shipping_price_label": "%{shipping_price} per delivery",
+          "prepaid_delivery_frequency": {
+            "one": "for %{count} delivery",
+            "other": "for %{count} deliveries"
+          }
+        }
       },
       "shipping_errors": {
         "shipping_method": "Your cart has been updated and the previous shipping rate isn’t valid. Select a new rate.",
