@@ -1244,7 +1244,29 @@
         "return_to_store_link_label": "Continue shopping",
         "shipping_address_map_title": "Google map displaying pin point of shipping address: %{address}",
         "shipping_address_title": "Shipping address",
-        "shipping_information_title": "Shipping information"
+        "shipping_information_title": "Shipping information",
+        "shipping_method_title": "Shipping method",
+        "shopify_pay": {
+          "learn_more_label": "Learn more about Shop Pay",
+          "order_completed_html": "Order completed with %{shopify_pay}"
+        },
+        "shop_phone_description": "You'll receive a text with a link to the Shop app to help track your order.",
+        "shop_qr_with_sms_upsell": {
+          "qr_code": {
+            "description": "Shop will send you real-time delivery updates once your order is shipped.",
+            "title": "Scan with your phone"
+          },
+          "sms": {
+            "title": "Or send a link to your phone"
+          }
+        },
+        "thank_you_confirmed_order_with_email": "You’ll receive a confirmation email with your order number shortly.",
+        "thank_you_confirmed_order_with_email_and_phone_payment": "You made a payment on your order %{date}.",
+        "thank_you_confirmed_order_with_email_and_phone_pick_up": "You’ll receive an email when your order is ready for pickup.",
+        "thank_you_confirmed_order_with_email_pick_up": "You’ll receive an email when your order is ready for pickup.",
+        "thank_you_confirmed_order_with_missing": "Contact us by email or phone to receive an order confirmation.",
+        "thank_you_confirmed_order_with_phone": "You’ll receive a confirmation text with your order number shortly.",
+        "thank_you_confirmed_order_with_phone_payment": "You made a payment on your order %{date}."
       }
     }
   }
