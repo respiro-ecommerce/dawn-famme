@@ -556,6 +556,10 @@
         "pick_up_next_day": "Ready for pickup next day",
         "ship": "Ship",
         "shipping_address": "Shipping address"
+      },
+      "failed_payment": {
+        "page_title": "Payment couldn’t be processed",
+        "payment_not_processed_text": "You haven’t been charged. Return to your cart to complete your purchase."
       }
     }
   }
