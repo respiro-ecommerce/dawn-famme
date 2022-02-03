@@ -433,7 +433,27 @@
       "emirate": "Emirate",
       "governorate": "Governorate",
       "pincode": "Pincode",
-      "postal_code": "Postal code"
+      "postal_code": "Postal code",
+      "postcode": "Postcode",
+      "prefecture": "Prefecture",
+      "province": "Province",
+      "region": "Region",
+      "state": "State",
+      "zip_code": "ZIP code"
+    },
+    "attributes": {
+      "email": "email",
+      "first_name": "first name",
+      "last_name": "last name",
+      "password": "password",
+      "password_confirmation": "The password confirmation",
+      "signature": "Address"
+    },
+    "cart": {
+      "discounts_with_count": "%{count} discounts have been applied"
+    },
+    "challenge": {
+      "error": "Your answer wasn't correct, please try again."
     }
   }
 }
