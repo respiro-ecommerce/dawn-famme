@@ -520,7 +520,27 @@
         "region_none": "None selected",
         "region_placeholder": "Region",
         "shipping_address_title": "Shipping address",
-        "state_and_territory_label": "State\/territory"
+        "state_and_territory_label": "State\/territory",
+        "state_and_territory_placeholder": "State\/territory",
+        "state_label": "State",
+        "state_placeholder": "State",
+        "stored_addresses_label": "Saved addresses",
+        "title": "Information",
+        "zip_code_placeholder": "ZIP code"
+      },
+      "customer_account": {
+        "have_an_account_label": "Already have an account?",
+        "not_user_label": "Not %{first_name}?",
+        "save_my_information_label": "Save this information for next time",
+        "sign_out_link_label": "Log out"
+      },
+      "customer_payment_methods": {
+        "delete_customer_mandate": {
+          "generic_error": "There was an issue processing your request.",
+          "success_message": "Your payment method has been successfully deleted"
+        },
+        "page_title": "Payment methods",
+        "title": "Payment methods"
       }
     }
   }
