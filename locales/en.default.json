@@ -942,8 +942,28 @@
             "other": "Your order’s being processed. Estimated wait time is %{count} minutes."
           },
           "no_auto_refresh_html": "If you’re not automatically redirected, %{link}.",
-          "refresh_this_page": "refresh this page"
-        }
+          "refresh_this_page": "refresh this page",
+          "short": "Your order’s being processed."
+        },
+        "your_order_has_been_received_title": "Thanks for your order",
+        "you_will_not_be_charged": "You won't be charged yet",
+        "you_will_receive_confirmation": "We’re getting a lot of orders right now. You should receive confirmation by email or text soon. If you don't receive it in the next hour, let us know."
+      },
+      "remember_me": {
+        "description_html": "Next time you check out here or on other stores powered by Shopify, you’ll receive a code by text message to securely purchase with Shop Pay.",
+        "errors": {
+          "optin": "Shop Pay isn’t available"
+        },
+        "installments": {
+          "paid_in_installments": "Paid in installments with Shop Pay.",
+          "view_schedule": "View Schedule"
+        },
+        "mobile_phone_icon_alt": "Mobile phone",
+        "mobile_phone_number": "Mobile phone number",
+        "privacy_policy": "Privacy Policy",
+        "save": "Save",
+        "shopify_pay_label": "Shop Pay",
+        "terms_and_privacy_html": "By continuing, you agree to Shop Pay’s %{privacy_href} and %{terms_href}."
       }
     }
   }
