@@ -963,7 +963,28 @@
         "privacy_policy": "Privacy Policy",
         "save": "Save",
         "shopify_pay_label": "Shop Pay",
-        "terms_and_privacy_html": "By continuing, you agree to Shop Pay’s %{privacy_href} and %{terms_href}."
+        "terms_and_privacy_html": "By continuing, you agree to Shop Pay’s %{privacy_href} and %{terms_href}.",
+        "terms_of_service": "Terms of Service",
+        "title": "Remember me"
+      },
+      "review": {
+        "blocks": {
+          "billing_address_title": "Billing",
+          "change_billing_address_link_label": "Change billing address",
+          "change_contact_method_link_label": "Change contact information",
+          "change_link_label": "Change",
+          "change_payment_method_link_label": "Change payment method",
+          "change_shipping_address_link_label": "Change shipping address",
+          "change_shipping_method_link_label": "Change shipping method",
+          "contact_method_title": "Contact",
+          "payment_method_title": "Payment",
+          "pick_up_in_store_shipping_method_html": "Pick up in store · %{location_name}",
+          "shipping_address_title": "Ship to",
+          "shipping_method_title": "Method"
+        },
+        "checkout_as_guest": "Checkout as guest",
+        "review_title": "Review order",
+        "title": "Review"
       }
     }
   }
