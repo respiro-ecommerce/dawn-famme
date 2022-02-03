@@ -791,7 +791,19 @@
         "billing_address_associated_with_mandate_info": "If you wish to change your billing address, please remove and re-enter your credit card details",
         "billing_address_description": "Select the address that matches your card or payment method.",
         "billing_address_description_no_shipping_address": "Enter the address that matches your card or payment method.",
-        "billing_address_not_supported_for_payment_method_error": "This payment method isn't available for your billing address and currency. Please try a different payment method."
+        "billing_address_not_supported_for_payment_method_error": "This payment method isn't available for your billing address and currency. Please try a different payment method.",
+        "card_change_label": "Change",
+        "card_expiration_month_label": "Expiration month",
+        "card_expiration_year_label": "Expiration year",
+        "card_expired": "Expired",
+        "card_expiry_date_explanation": "Card expiration date in format: month, month, year, year",
+        "card_expiry_label": "Expiration date (MM \/ YY)",
+        "card_expiry_placeholder": "Expiration date (MM \/ YY)",
+        "card_fields_container_prefix": "Field container for:",
+        "card_fields_processing_error": "There was a problem processing the payment. Try refreshing this page or check your internet connection.",
+        "card_fields_unavailable_html": {
+          "one": "Credit and debit card payments aren’t available right now.<br><a href=\"%{current_url}\">Refresh this page<\/a> or try again later."
+        }
       }
     }
   }
