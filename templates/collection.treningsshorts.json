@@ -1,17 +1,5 @@
 {
   "sections": {
-    "163671095057a39335": {
-      "type":  "famme-spaced-button-links",
-      "settings": {
-        "menu": "collection-treningsshorts",
-        "bg": "#4e4e4e",
-        "color": "#ffffff",
-        "width": 165,
-        "padx": 10,
-        "pady": 0,
-        "radius": 15
-      }
-    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
@@ -22,14 +10,17 @@
         "show_rating": false,
         "enable_filtering": true,
         "enable_sorting": true,
-        "collapse_on_larger_devices": false
+        "collapse_on_larger_devices": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "banner": {
       "type": "main-collection-banner",
       "settings": {
         "show_collection_description": true,
-        "show_collection_image": true
+        "show_collection_image": true,
+        "color_scheme": "background-1"
       }
     },
     "1636719880f4c194fb": {
@@ -38,15 +29,17 @@
         "heading": "Les mer om våre treningsshorts",
         "blog": "shorts",
         "post_limit": 3,
+        "color_scheme": "background-1",
         "show_image": true,
         "show_date": true,
         "show_author": false,
-        "show_view_all": true
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
   "order": [
-    "163671095057a39335",
     "product-grid",
     "banner",
     "1636719880f4c194fb"

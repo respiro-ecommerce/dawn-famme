@@ -22,16 +22,6 @@
     "163438960122f1937a": {
       "type": "multicolumn",
       "blocks": {
-        "163438960122f1937a-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/desktop-banner-host-oppdatert.jpg",
-            "title": "Rask levering + alltid gratis frakt",
-            "text": "<p>Hos Famme får du <strong>fri frakt <\/strong>på de nye turklærne dine! Du velger mellom Posten, Helthjem eller levering <strong>samme dag<\/strong> med Porterbuddy!<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "163438960122f1937a-2": {
           "type": "column",
           "settings": {
@@ -51,12 +41,22 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "163438960122f1937a-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vippsklarna.jpg",
+            "title": "Rask levering + alltid gratis frakt",
+            "text": "<p>Hos Famme får du <strong>fri frakt <\/strong>på de nye turklærne dine! Du velger mellom Posten, Helthjem eller levering <strong>samme dag<\/strong> med Porterbuddy!<\/p>",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
-        "163438960122f1937a-1",
         "163438960122f1937a-2",
-        "163438960122f1937a-0"
+        "163438960122f1937a-0",
+        "163438960122f1937a-1"
       ],
       "settings": {
         "title": "Fri frakt & retur, 100 dagers åpent kjøp",

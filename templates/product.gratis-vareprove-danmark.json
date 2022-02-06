@@ -172,7 +172,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/vortex-power-top.jpg",
             "title": "Bliv en del af vores produktgruppe",
-            "text": "<p>Bliv medlem af vores internationale produktudviklingsgruppe med mere end 3.000 medlemmer over hele verden.<\/p>",
+            "text": "<p>Bliv medlem af vores produktudviklingsgruppe med mere end 26.000 medlemmer.<\/p>",
             "link_label": "Til produktgruppen",
             "link": "https:\/\/www.facebook.com\/groups\/fammeproduktutvikling"
           }
@@ -209,7 +209,7 @@
         "1642415053a4008607-1": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Bemærk<\/strong> at det er 'først til mølle'-princippet. Vi tilbyder et begrænset udvalg af gratis produkter. Jo hurtigere du laver din bestilling, jo højere vil din placering være i køen til at modtage et gratis produkt. <\/p>"
+            "text": "<p><strong>Bemærk<\/strong> at vi sender <strong>1<\/strong> gratis produkt om dagen efter 'først til mølle'-princippet. Dvs. jo hurtigere du laver din bestilling, jo højere vil din placering være i køen til at modtage et gratis produkt. <\/p><p>Vi tilbyder et begrænset udvalg af gratis produkter.<\/p>"
           }
         }
       },

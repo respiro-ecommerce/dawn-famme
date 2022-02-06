@@ -3,11 +3,11 @@
     "163454564855e20815": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/gratis-banner-ny.jpg",
-        "image_m": "shopify:\/\/shop_images\/gratis-banner-mobil-ny.jpg",
-        "image_url": "shopify:\/\/products\/treningsklaer",
+        "image": "shopify:\/\/shop_images\/Brandjacking-banner-bara-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/Brandjacking-banner-bara-mobil.jpg",
+        "image_url": "shopify:\/\/collections\/bara",
         "image_overlay_opacity": 0,
-        "image2_url": "shopify:\/\/products\/treningsklaer",
+        "image2_url": "",
         "image_height": "small",
         "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",
@@ -25,7 +25,7 @@
         "163438960122f1937a-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Brandjacking-2XU-banner.jpg",
+            "image": "shopify:\/\/shop_images\/gymshark-side-banner.jpg",
             "title": "Best på treningsklær",
             "text": "<p>Vi har treningsklær i mange farger, lengder og passformer. Vi har løpetights med og uten scrunch og løpetights med og uten mønster. Vi har også kompresjonstights perfekt til styrketrening og løpeturer. Match med treningstoppene våre!<\/p>",
             "link_label": "",
@@ -64,8 +64,8 @@
         "image_ratio": "adapt",
         "column_alignment": "left",
         "background_style": "secondary",
-        "button_label": "Se hele utvalget av treningsklær!",
-        "button_link": "shopify:\/\/collections",
+        "button_label": "Se alt vi anbefaler til Bara fans!",
+        "button_link": "shopify:\/\/collections\/bara",
         "swipe_on_mobile": false,
         "color_scheme": "background-1",
         "padding_top": 36,
