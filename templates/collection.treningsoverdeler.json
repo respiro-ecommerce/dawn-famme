@@ -1,7 +1,7 @@
 {
   "sections": {
     "1636707364fb4b07e0": {
-      "type":  "famme-spaced-button-links",
+      "type": "famme-spaced-button-links",
       "settings": {
         "menu": "collection-training-tops",
         "bg": "#4e4e4e",
@@ -22,7 +22,9 @@
         "show_rating": false,
         "enable_filtering": true,
         "enable_sorting": true,
-        "collapse_on_larger_devices": false
+        "collapse_on_larger_devices": false,
+        "padding_top": 0,
+        "padding_bottom": 36
       }
     },
     "1629364797037f49c2": {
@@ -31,17 +33,21 @@
         "heading": "Les mer om våre treningstopper",
         "blog": "treningstopper",
         "post_limit": 3,
+        "color_scheme": "background-1",
         "show_image": true,
         "show_date": false,
         "show_author": false,
-        "show_view_all": true
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "banner": {
       "type": "main-collection-banner",
       "settings": {
         "show_collection_description": true,
-        "show_collection_image": true
+        "show_collection_image": true,
+        "color_scheme": "background-1"
       }
     }
   },
