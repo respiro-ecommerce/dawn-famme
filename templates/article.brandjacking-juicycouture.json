@@ -26,8 +26,8 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/gymshark-side-banner.jpg",
-            "title": "Best på treningsklær",
-            "text": "<p>Vi har treningsklær i mange farger, lengder og passformer. Vi har løpetights med og uten scrunch og løpetights med og uten mønster. Vi har også kompresjonstights perfekt til styrketrening og løpeturer. Match med treningstoppene våre!<\/p>",
+            "title": "Loungewear",
+            "text": "<p>Vi har loungewear i mange ulike farger, lengder og passformer. Vi har tettsittende joggedresser, eller mer loose fit joggedresser. Finn dine favoritter!<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -64,8 +64,8 @@
         "image_ratio": "adapt",
         "column_alignment": "left",
         "background_style": "secondary",
-        "button_label": "Se alt vi anbefaler til Wearefit fans!",
-        "button_link": "\/collections\/wearefit",
+        "button_label": "Se alt vi anbefaler til Juicy Couture fans!",
+        "button_link": "\/collections\/juicy-couture",
         "swipe_on_mobile": false,
         "color_scheme": "background-1",
         "padding_top": 36,
