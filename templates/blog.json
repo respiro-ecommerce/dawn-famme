@@ -1,11 +1,11 @@
 {
   "sections": {
     "16434886947f567e09": {
-      "type":  "famme-spaced-button-links",
+      "type": "famme-spaced-button-links",
       "settings": {
         "menu": "blogs",
-        "bg": "#8a9e93",
-        "color": "#fff",
+        "bg": "#4e4e4e",
+        "color": "#ffffff",
         "width": 165,
         "padx": 10,
         "pady": 0,
@@ -30,4 +30,3 @@
     "main"
   ]
 }
-
