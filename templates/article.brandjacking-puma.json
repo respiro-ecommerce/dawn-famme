@@ -5,9 +5,9 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Brandjacking-banner-puma-desktop_4f4ff40e-47c7-43b1-b9b0-304c62379556.jpg",
         "image_m": "shopify:\/\/shop_images\/Brandjacking-banner-puma-mobil_1_58be95c8-9493-46f0-8a2e-43d27e6861ad.jpg",
-        "image_url": "shopify:\/\/collections\/levity",
+        "image_url": "shopify:\/\/collections\/puma",
         "image_overlay_opacity": 0,
-        "image2_url": "",
+        "image2_url": "shopify:\/\/collections\/puma",
         "image_height": "small",
         "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",
