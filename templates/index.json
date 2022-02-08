@@ -1,14 +1,14 @@
 {
   "sections": {
-    "164138293938171117": {
+    "16443152962ab70d07": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/4.jpg",
-        "image_m": "shopify:\/\/shop_images\/Winter-Sale-banner-mobil.jpg",
-        "image_url": "shopify:\/\/collections\/vinterklaer",
+        "image": "shopify:\/\/shop_images\/Valentines-morsdag-banner-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/Valentines-morsdag-banner-mobil.jpg",
+        "image_url": "shopify:\/\/collections\/bestsellers",
         "image_overlay_opacity": 0,
         "image2_url": "",
-        "image_height": "large",
+        "image_height": "small",
         "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",
         "show_text_box": true,
@@ -29,6 +29,25 @@
         "padx": 10,
         "pady": 7,
         "radius": 100
+      }
+    },
+    "164138293938171117": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/4.jpg",
+        "image_m": "shopify:\/\/shop_images\/Winter-Sale-banner-mobil.jpg",
+        "image_url": "shopify:\/\/collections\/vinterklaer",
+        "image_overlay_opacity": 0,
+        "image2_url": "",
+        "image_height": "large",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
       }
     },
     "1638543882705deea9": {
@@ -239,8 +258,9 @@
     }
   },
   "order": [
-    "164138293938171117",
+    "16443152962ab70d07",
     "1629993086223521d8",
+    "164138293938171117",
     "1638543882705deea9",
     "1631091164538140ed",
     "1631094390263d97d1",
