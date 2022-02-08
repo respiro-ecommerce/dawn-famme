@@ -219,6 +219,7 @@
       "blocks": {
         "162567415706bdadcd-1": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "BLI MED I NORGES STØRSTE PRODUKTUTVIKLINGSGRUPPE MED FLERE TITUSENER MEDLEMMER I NORGE.",
             "text_style": "body"
@@ -226,6 +227,7 @@
         },
         "162567415706bdadcd-2": {
           "type": "buttons",
+          "disabled": true,
           "settings": {
             "button_label_1": "FÅ HJELP OG GI FEEDBACK",
             "button_link_1": "https:\/\/www.facebook.com\/groups\/fammeproduktutvikling",
