@@ -3,8 +3,8 @@
     "16419794496648f4a4": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/djv.png",
-        "image_m": "shopify:\/\/shop_images\/rwr.png",
+        "image": "shopify:\/\/shop_images\/dk-gratis-kampagne-webpage.png",
+        "image_m": "shopify:\/\/shop_images\/dk-gratis-kampagne-mobil.png",
         "image_url": "",
         "image_overlay_opacity": 0,
         "image2_url": "",
@@ -139,7 +139,6 @@
       "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/camo-banner-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/camo-banner-mobil.jpg",
         "image_url": "shopify:\/\/collections\/camo-klaer",
         "image_overlay_opacity": 0,
         "image2_url": "",
