@@ -5,9 +5,9 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Brandjacking-banner-jerf-desktop.jpg",
         "image_m": "shopify:\/\/shop_images\/Brandjacking-banner-jerf-mobil_1.jpg",
-        "image_url": "shopify:\/\/collections\/levity",
+        "image_url": "shopify:\/\/collections\/jerf",
         "image_overlay_opacity": 0,
-        "image2_url": "",
+        "image2_url": "shopify:\/\/collections\/jerf",
         "image_height": "small",
         "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",
