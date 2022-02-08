@@ -4,57 +4,44 @@
       "type": "video",
       "settings": {
         "heading": "",
-        "cover_image": "shopify:\/\/shop_images\/tester.jpg",
+        "cover_image": "shopify:\/\/shop_images\/brandjacking-footwear-multicoloumn.png",
         "video_url": "https:\/\/youtu.be\/SUVoJYlJCWw",
         "description": "",
-        "full_width": true
+        "full_width": true,
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "main": {
       "type": "main-page",
       "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "1629961534e8e4222a": {
       "type": "collage",
       "blocks": {
-        "1629961534e8e4222a-0": {
-          "type": "video",
-          "settings": {
-            "cover_image": "shopify:\/\/shop_images\/tester2.jpg",
-            "video_url": "https:\/\/youtu.be\/IuTYugDgMv0",
-            "description": "Describe the video for customers using screen readers",
-            "image_padding": false
-          }
-        },
         "1629961534e8e4222a-1": {
           "type": "product",
           "disabled": true,
           "settings": {
             "product": "",
-            "secondary_background": false,
-            "second_image": false,
-            "image_padding": false
-          }
-        },
-        "1629961534e8e4222a-2": {
-          "type": "collection",
-          "settings": {
-            "collection": "sustainable-clothes",
-            "image_padding": false,
-            "color_scheme": "accent-1"
+            "second_image": false
           }
         }
       },
       "block_order": [
-        "1629961534e8e4222a-0",
-        "1629961534e8e4222a-1",
-        "1629961534e8e4222a-2"
+        "1629961534e8e4222a-1"
       ],
       "settings": {
         "heading": "",
         "desktop_layout": "left",
-        "mobile_layout": "collage"
+        "mobile_layout": "collage",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
