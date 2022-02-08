@@ -3,9 +3,9 @@
     "163454564855e20815": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Brandjacking-banner-adidas-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/Brandjacking-banner-adidas-desktop_6608cef3-afc5-4783-ba49-4eeb7b2fb283.jpg",
-        "image_url": "shopify:\/\/collections\/adidas",
+        "image": "shopify:\/\/shop_images\/Brandjacking-banner-ronisch-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/Brandjacking-banner-ronisch-mobil.jpg",
+        "image_url": "shopify:\/\/collections\/rohnisch",
         "image_overlay_opacity": 0,
         "image2_url": "",
         "image_height": "small",
