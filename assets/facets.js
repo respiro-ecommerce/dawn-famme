@@ -17,6 +17,7 @@ class FacetFiltersForm extends HTMLElement {
     const onHistoryChange = (event) => {
       const searchParams = event.state ? event.state.searchParams : FacetFiltersForm.searchParamsInitial;
       if (searchParams === FacetFiltersForm.searchParamsPrev) return;
+      console.log(searchParams);
       FacetFiltersForm.renderPage(searchParams, null, false);
     }
     window.addEventListener('popstate', onHistoryChange);
