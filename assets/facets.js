@@ -17,7 +17,6 @@ class FacetFiltersForm extends HTMLElement {
     const onHistoryChange = (event) => {
       const searchParams = event.state ? event.state.searchParams : FacetFiltersForm.searchParamsInitial;
       if (searchParams === FacetFiltersForm.searchParamsPrev) return;
-      console.log(searchParams);
       FacetFiltersForm.renderPage(searchParams, null, false);
     }
     window.addEventListener('popstate', onHistoryChange);
@@ -144,6 +143,7 @@ class FacetFiltersForm extends HTMLElement {
   }
 
   static updateURLHash(searchParams) {
+    console.log(searchParams);
     history.pushState({ searchParams }, '', `${window.location.pathname}${searchParams && '?'.concat(searchParams)}`);
   }
 
