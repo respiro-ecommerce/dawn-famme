@@ -32,7 +32,7 @@
       {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
       {%- if template.name == 'collection' -%}
       	{%- for filter in collection.filters -%}
-      	  {%- if forloop.first -%} &ndash; {%- endif -%}
+      	  {%- if forloop.first -%} | {%- endif -%}
           {%- for value in filter.active_values -%}{{ value.label | escape }}, {%- endfor -%}
       	{%- endfor -%}
       {%- endif -%}
