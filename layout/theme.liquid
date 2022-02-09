@@ -33,7 +33,7 @@
       {%- if template.name == 'collection' -%}
       	{%- for filter in collection.filters -%}
       	  {% if forloop.first %} | {% endif %}
-          {%- for value in filter.active_values -%}{{ value.label | escape }}{% unless forloop.last %}, {% endunless %}{%- endfor -%}
+          {% for value in filter.active_values %}{{ value.label | escape }} {% endfor %}
       	{%- endfor -%}
       {%- endif -%}
     </title>
