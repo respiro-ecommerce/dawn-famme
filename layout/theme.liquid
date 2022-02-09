@@ -219,6 +219,10 @@
     </script>
 
     {% if template contains 'product' or template.suffix == 'okendo-reviews' %}
+    {{ shop.metafields.okendo.ReviewsWidgetStyleTag }}
+    {{ shop.metafields.okendo.StyleCustomizations }}
+    {% render 'okendo-reviews-json-ld' %}
+    
     {{ 'okendo-reviews.js' | asset_url | script_tag }}
     {% endif %}
 </head>
