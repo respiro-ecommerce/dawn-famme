@@ -1,5 +1,17 @@
 {
   "sections": {
+    "1644408232b8dd7279": {
+      "type": "famme-spaced-button-links",
+      "settings": {
+        "menu": "collection-shorts",
+        "bg": "#8a9e93",
+        "color": "#fff",
+        "width": 165,
+        "padx": 10,
+        "pady": 0,
+        "radius": 15
+      }
+    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
@@ -40,6 +52,7 @@
     }
   },
   "order": [
+    "1644408232b8dd7279",
     "product-grid",
     "banner",
     "1636719880f4c194fb"
