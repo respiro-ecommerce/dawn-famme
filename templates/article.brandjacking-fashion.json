@@ -3,12 +3,12 @@
     "16352521148bea06d0": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/gratis-banner-ny.jpg",
-        "image_m": "shopify:\/\/shop_images\/gratis-banner-mobil-ny.jpg",
-        "image_url": "shopify:\/\/products\/treningsklaer",
+        "image": "shopify:\/\/shop_images\/Brandjacking-banner-calvin-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/Brandjacking-banner-calvin-mobil.jpg",
+        "image_url": "shopify:\/\/collections\/calvin-klein",
         "image_overlay_opacity": 0,
         "image2_url": "",
-        "image_height": "medium",
+        "image_height": "small",
         "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",
         "show_text_box": true,
