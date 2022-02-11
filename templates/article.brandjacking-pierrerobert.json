@@ -3,9 +3,9 @@
     "163454564855e20815": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/myprotein-banner-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/myprotein-banner-mobil.jpg",
-        "image_url": "shopify:\/\/collections\/myprotein",
+        "image": "shopify:\/\/shop_images\/Brandjacking-banner-pierrerobert-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/Brandjacking-banner-pierrerobert-mobil.jpg",
+        "image_url": "shopify:\/\/collections\/pierre-og-robert",
         "image_overlay_opacity": 0,
         "image2_url": "",
         "image_height": "small",
@@ -64,8 +64,8 @@
         "image_ratio": "adapt",
         "column_alignment": "left",
         "background_style": "secondary",
-        "button_label": "Se alt vi anbefaler til Myprotein fans!",
-        "button_link": "shopify:\/\/collections\/myprotein",
+        "button_label": "Se alt vi anbefaler til Pierre Robert fans!",
+        "button_link": "shopify:\/\/collections\/pierre-og-robert",
         "swipe_on_mobile": false,
         "color_scheme": "background-1",
         "padding_top": 36,
