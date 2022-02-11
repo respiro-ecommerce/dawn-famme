@@ -3,9 +3,9 @@
     "163454564855e20815": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/runandrelax-banner-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/runandrelax-banner-mobil.jpg",
-        "image_url": "shopify:\/\/collections\/run-and-relax",
+        "image": "shopify:\/\/shop_images\/doyoueven-banner-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/doyoueven-banner-mobil.jpg",
+        "image_url": "shopify:\/\/collections\/doyoueven",
         "image_overlay_opacity": 0,
         "image2_url": "",
         "image_height": "small",
@@ -64,8 +64,8 @@
         "image_ratio": "adapt",
         "column_alignment": "left",
         "background_style": "secondary",
-        "button_label": "Se alt vi anbefaler til Run & Relax fans her!",
-        "button_link": "shopify:\/\/collections\/run-and-relax",
+        "button_label": "Se alt vi anbefaler til Doyoueven fans her!",
+        "button_link": "shopify:\/\/collections\/doyoueven",
         "swipe_on_mobile": false,
         "color_scheme": "background-1",
         "padding_top": 36,
