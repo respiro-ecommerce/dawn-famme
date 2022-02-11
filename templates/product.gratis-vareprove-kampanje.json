@@ -21,6 +21,7 @@
     },
     "1641983278c21db4b2": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "1641983278bc1ad7e3-0": {
           "type": "heading",
@@ -42,39 +43,108 @@
       ],
       "settings": {
         "color_scheme": "background-1",
-        "full_width": true
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
-    "164207856546bb95ae": {
-      "type": "image-banner",
+    "16424150538de758f1": {
+      "type": "rich-text",
+      "disabled": true,
       "blocks": {
-        "518c74fb-71e4-400d-81bd-a6349b7fc406": {
-          "type": "text",
-          "disabled": true,
+        "1642415053a4008607-0": {
+          "type": "heading",
           "settings": {
-            "text": "Bilde over her burde være en upsell av et godt tilbud vi har nå. Eksempelvis sesong-vinter tilbud",
-            "text_style": "body"
+            "heading": "Bestilling",
+            "heading_size": "h1"
+          }
+        },
+        "1642415053a4008607-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Du vil motta varen i løpet av få dager om du får bestilt, om det er tomt kan du få melding når det blir åpnet igjen for bestilling. Velg størrelsen som er tom og \"få melding når størrelsen er tilbake\".<\/p>"
           }
         }
       },
       "block_order": [
-        "518c74fb-71e4-400d-81bd-a6349b7fc406"
+        "1642415053a4008607-0",
+        "1642415053a4008607-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/vintersalg-banner-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/vintersalg-banner-mobil.jpg",
-        "image_url": "shopify:\/\/collections\/vinterklaer",
-        "image_overlay_opacity": 0,
-        "image2_url": "",
-        "image_height": "small",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
         "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "16425030734b9a1d7a": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "<div class=\"klaviyo-form-WntVpb\"><\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "83a9ea71-8f00-4a5c-a8c2-ac4ef0d4603d": {
+          "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/star-rating\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "disabled": true,
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "icon": "check_mark"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "83a9ea71-8f00-4a5c-a8c2-ac4ef0d4603d",
+        "price",
+        "variant_picker",
+        "buy_buttons",
+        "description"
+      ],
+      "settings": {
+        "enable_sticky_info": false,
+        "gallery_layout": "thumbnail",
+        "media_size": "large",
+        "mobile_thumbnails": "show",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "desc": "Description",
+        "bg": "#f5f5f5"
       }
     },
     "16419829100a373d4c": {
@@ -124,15 +194,31 @@
         "background_style": "none",
         "button_label": "",
         "button_link": "",
-        "swipe_on_mobile": false
+        "swipe_on_mobile": false,
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
-    "164241410778f80e5d": {
+    "164207856546bb95ae": {
       "type": "image-banner",
+      "blocks": {
+        "518c74fb-71e4-400d-81bd-a6349b7fc406": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Bilde over her burde være en upsell av et godt tilbud vi har nå. Eksempelvis sesong-vinter tilbud",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "518c74fb-71e4-400d-81bd-a6349b7fc406"
+      ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/camo-banner-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/camo-banner-mobil.jpg",
-        "image_url": "shopify:\/\/collections\/camo-klaer",
+        "image": "shopify:\/\/shop_images\/vintersalg-banner-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/vintersalg-banner-mobil.jpg",
+        "image_url": "shopify:\/\/collections\/vinterklaer",
         "image_overlay_opacity": 0,
         "image2_url": "",
         "image_height": "small",
@@ -175,14 +261,17 @@
         "1642414904d220bde8-1"
       ],
       "settings": {
-        "title": "Må jeg gjøre noe før jeg kan bestille? (en av disse holder)",
+        "title": "Bli en del av #fammely",
         "image_width": "half",
         "image_ratio": "circle",
         "column_alignment": "center",
         "background_style": "primary",
         "button_label": "",
         "button_link": "",
-        "swipe_on_mobile": false
+        "swipe_on_mobile": false,
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "16419899346c2e429f": {
@@ -205,96 +294,9 @@
         "include_margins": true
       }
     },
-    "16424150538de758f1": {
-      "type": "rich-text",
-      "blocks": {
-        "1642415053a4008607-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Bestilling",
-            "heading_size": "h1"
-          }
-        },
-        "1642415053a4008607-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Du vil motta varen i løpet av få dager om du får bestilt, om det er tomt kan du få melding når det blir åpnet igjen for bestilling. Velg størrelsen som er tom og \"få melding når størrelsen er tilbake\".<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "1642415053a4008607-0",
-        "1642415053a4008607-1"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true
-      }
-    },
-    "16425030734b9a1d7a": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<div class=\"klaviyo-form-WntVpb\"><\/div>"
-      }
-    },
-    "main": {
-      "type": "main-product",
-      "blocks": {
-        "title": {
-          "type": "title",
-          "settings": {
-          }
-        },
-        "83a9ea71-8f00-4a5c-a8c2-ac4ef0d4603d": {
-          "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/star-rating\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
-          "settings": {
-            "product": "{{product}}"
-          }
-        },
-        "price": {
-          "type": "price",
-          "settings": {
-          }
-        },
-        "variant_picker": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button"
-          }
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": false
-          }
-        },
-        "description": {
-          "type": "description",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "title",
-        "83a9ea71-8f00-4a5c-a8c2-ac4ef0d4603d",
-        "price",
-        "variant_picker",
-        "buy_buttons",
-        "description"
-      ],
-      "settings": {
-        "enable_sticky_info": false,
-        "gallery_layout": "thumbnail",
-        "media_size": "large",
-        "mobile_thumbnails": "show",
-        "hide_variants": false,
-        "enable_video_looping": false,
-        "desc": "Description",
-        "bg": "#f5f5f5"
-      }
-    },
     "1642515363382fdd21": {
       "type": "apps",
+      "disabled": true,
       "blocks": {
         "2801232c-3f58-4655-b21f-7bc2e0cc5a17": {
           "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
@@ -315,26 +317,26 @@
       "type": "product-recommendations",
       "settings": {
         "heading": "Vi tror du vil like..",
+        "color_scheme": "background-1",
         "image_ratio": "adapt",
         "show_secondary_image": true,
-        "add_image_padding": false,
-        "show_image_outline": true,
         "show_vendor": false,
-        "show_rating": false
+        "show_rating": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
   "order": [
     "16419794496648f4a4",
     "1641983278c21db4b2",
-    "164207856546bb95ae",
-    "16419829100a373d4c",
-    "164241410778f80e5d",
-    "1642414904f904648b",
-    "16419899346c2e429f",
     "16424150538de758f1",
     "16425030734b9a1d7a",
     "main",
+    "16419829100a373d4c",
+    "164207856546bb95ae",
+    "1642414904f904648b",
+    "16419899346c2e429f",
     "1642515363382fdd21",
     "product-recommendations"
   ]
