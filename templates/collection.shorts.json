@@ -62,7 +62,7 @@
           "settings": {
             "heading": "Sport",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>Typisk aktiviteter som shortsene passer til: Håndball, fotball, yoga, styrketrening, løping, turgåing, sykling.<\/p>",
             "page": ""
           }
         }
