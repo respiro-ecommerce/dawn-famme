@@ -35,7 +35,7 @@
           "settings": {
             "heading": "Lengder",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p><strong>Biker lengde:<\/strong><\/p><p><\/p><p><strong>Kort lengde:<\/strong><\/p>",
             "page": ""
           }
         },
