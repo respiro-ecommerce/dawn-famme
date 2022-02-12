@@ -30,6 +30,15 @@
     "164467012808d191f5": {
       "type": "collapsible-content",
       "blocks": {
+        "987d02e7-8a84-4b18-9510-f99660c7b953": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Shorts typer",
+            "icon": "check_mark",
+            "row_content": "<p>Vi har shorts til alle formål: <strong>Trenings, tur og hverdag<\/strong>. Les hele shorts guiden vår <a href=\"\/blogs\/shorts\/shorts-guide\" target=\"_blank\" title=\"Shorts guide\">her<\/a>. <\/p>",
+            "page": ""
+          }
+        },
         "1644670127b3bf2e47-0": {
           "type": "collapsible_row",
           "settings": {
@@ -44,7 +53,7 @@
           "settings": {
             "heading": "Materiale",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>Seamless:<\/p>",
             "page": ""
           }
         },
@@ -59,6 +68,7 @@
         }
       },
       "block_order": [
+        "987d02e7-8a84-4b18-9510-f99660c7b953",
         "1644670127b3bf2e47-0",
         "1644670127b3bf2e47-1",
         "1644670127b3bf2e47-2"
