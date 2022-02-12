@@ -1,18 +1,80 @@
 {
   "sections": {
+    "1644670150545c5d29": {
+      "type": "famme-spaced-button-links",
+      "settings": {
+        "menu": "collection-shorts",
+        "bg": "#8a9e93",
+        "color": "#fff",
+        "width": 165,
+        "padx": 10,
+        "pady": 0,
+        "radius": 15
+      }
+    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
-        "po": "sustainable-clothes",
         "products_per_page": 50,
         "image_ratio": "adapt",
         "show_secondary_image": true,
-        "add_image_padding": false,
-        "show_image_outline": true,
         "show_vendor": false,
+        "show_rating": false,
         "enable_filtering": true,
         "enable_sorting": true,
-        "collapse_on_larger_devices": false
+        "collapse_on_larger_devices": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "164467012808d191f5": {
+      "type": "collapsible-content",
+      "blocks": {
+        "1644670127b3bf2e47-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Lengder",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "1644670127b3bf2e47-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Materiale",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "1644670127b3bf2e47-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Sport",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "1644670127b3bf2e47-0",
+        "1644670127b3bf2e47-1",
+        "1644670127b3bf2e47-2"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Shorts guide",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 32,
+        "padding_bottom": 0
       }
     },
     "1629364797037f49c2": {
@@ -21,23 +83,28 @@
         "heading": "Les mer om shorts",
         "blog": "shorts",
         "post_limit": 3,
+        "color_scheme": "background-1",
         "show_image": true,
         "show_date": false,
         "show_author": false,
-        "soft_background": false,
-        "show_view_all": true
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "banner": {
       "type": "main-collection-banner",
       "settings": {
         "show_collection_description": true,
-        "show_collection_image": true
+        "show_collection_image": true,
+        "color_scheme": "background-1"
       }
     }
   },
   "order": [
+    "1644670150545c5d29",
     "product-grid",
+    "164467012808d191f5",
     "1629364797037f49c2",
     "banner"
   ]
