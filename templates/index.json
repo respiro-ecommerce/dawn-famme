@@ -1,14 +1,14 @@
 {
   "sections": {
-    "16443152962ab70d07": {
+    "16311853465cfb015e": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Valentines-morsdag-banner-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/Valentines-morsdag-banner-mobil.jpg",
-        "image_url": "shopify:\/\/collections\/bestsellers",
+        "image": "shopify:\/\/shop_images\/Loungewear-banner-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/loungewear-banner-mobil.jpg",
+        "image_url": "shopify:\/\/collections\/loungewear",
         "image_overlay_opacity": 0,
         "image2_url": "",
-        "image_height": "small",
+        "image_height": "large",
         "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",
         "show_text_box": true,
@@ -162,25 +162,6 @@
         "show_text_below": true
       }
     },
-    "16311853465cfb015e": {
-      "type": "image-banner",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Loungewear-banner-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/loungewear-banner-mobil.jpg",
-        "image_url": "shopify:\/\/collections\/loungewear",
-        "image_overlay_opacity": 0,
-        "image2_url": "",
-        "image_height": "large",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
     "1629157352b193f90f": {
       "type": "newsletter",
       "blocks": {
@@ -260,7 +241,7 @@
     }
   },
   "order": [
-    "16443152962ab70d07",
+    "16311853465cfb015e",
     "1629993086223521d8",
     "164138293938171117",
     "1638543882705deea9",
@@ -269,7 +250,6 @@
     "1626547460af5b6361",
     "163117812908a522c8",
     "16252134879571dabc",
-    "16311853465cfb015e",
     "1629157352b193f90f",
     "162567415706bdadcd"
   ]
