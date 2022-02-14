@@ -29,6 +29,10 @@
     {{ 'Disallow: /collections/types' }}
   {%- endif -%}
 
+  {%- if group.user_agent.value == '*' -%}
+    {{ 'Disallow: /products/*pr_prod_stat=*' }}
+  {%- endif -%}
+
 
   {%- if group.sitemap != blank -%}
     {{ group.sitemap }}
