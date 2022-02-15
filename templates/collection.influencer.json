@@ -6,7 +6,7 @@
         "164486988682155a12-0": {
           "type": "heading",
           "settings": {
-            "heading": "@{{ collection.metafields.influencer[\"instagram-username\"].value }}",
+            "heading": "@{{ collection.metafields.influencer[\"instagram-username\"].value }} {{ collection.metafields.my_fields.influencer_image_desktop }}",
             "heading_size": "h2"
           }
         }
@@ -24,8 +24,8 @@
     "1644926378e9015469": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/1-Heleneceline-2000x600.jpg",
-        "image_m": "shopify:\/\/shop_images\/Heleneceline-banner-1200x900.jpg",
+        "image": "{{ collection.metafields.my_fields.influencer_image_desktop | img_url:\"master\" }}",
+        "image_m": "{{ collection.metafields.my_fields.influencer_image_mobile | img_url:\"master\" }}",
         "image_url": "",
         "image_overlay_opacity": 0,
         "image2_url": "",
