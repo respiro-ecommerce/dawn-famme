@@ -24,8 +24,8 @@
     "1644926378e9015469": {
       "type": "image-banner",
       "settings": {
-        "image": "{{ collection.metafields.my_fields.influencer_image_desktop | img_url:\"master\" }}",
-        "image_m": "{{ collection.metafields.my_fields.influencer_image_mobile | img_url:\"master\" }}",
+        "image": "{{ collection.metafields.my_fields.influencer_image_desktop }}",
+        "image_m": "{{ collection.metafields.my_fields.influencer_image_mobile }}",
         "image_url": "",
         "image_overlay_opacity": 0,
         "image2_url": "",
