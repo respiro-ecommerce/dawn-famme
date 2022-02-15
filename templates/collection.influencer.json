@@ -6,20 +6,13 @@
         "164486988682155a12-0": {
           "type": "heading",
           "settings": {
-            "heading": "@heleneceline",
+            "heading": "@{{ collection.metafields.influencer[\"instagram-username\"].value }}",
             "heading_size": "h2"
-          }
-        },
-        "164486988682155a12-1": {
-          "type": "text",
-          "settings": {
-            "text": ""
           }
         }
       },
       "block_order": [
-        "164486988682155a12-0",
-        "164486988682155a12-1"
+        "164486988682155a12-0"
       ],
       "settings": {
         "color_scheme": "background-1",
@@ -53,7 +46,7 @@
         "16448713894e87d09a-0": {
           "type": "heading",
           "settings": {
-            "heading": "Helene's favoritter",
+            "heading": "Influencer-favorittene",
             "heading_size": "h2"
           }
         }
