@@ -6,7 +6,7 @@
         "164486988682155a12-0": {
           "type": "heading",
           "settings": {
-            "heading": "@heleneceline",
+            "heading": "{{ collection.metafields.influencer.instagram-username }}",
             "heading_size": "h2"
           }
         },
