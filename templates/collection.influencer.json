@@ -25,7 +25,7 @@
       "type": "image-banner",
       "settings": {
         "image": "{{ collection.metafields.my_fields[\"influencer_image_desktop\"].value }}",
-        "image_m": "shopify:\/\/shop_images\/Heleneceline-banner-1200x900.jpg",
+        "image_m": "{{ collection.metafields.my_fields[\"influencer_image_mobile\"].value }}",
         "image_url": "",
         "image_overlay_opacity": 0,
         "image2_url": "",
