@@ -64,6 +64,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/1-Heleneceline-2000x600.jpg",
+        "image_m": "shopify:\/\/shop_images\/Heleneceline-banner-1200x900.jpg",
         "image_url": "",
         "image_overlay_opacity": 0,
         "image2_url": "",
@@ -155,6 +156,7 @@
     },
     "product-grid": {
       "type": "main-collection-product-grid",
+      "disabled": true,
       "settings": {
         "products_per_page": 50,
         "image_ratio": "adapt",
