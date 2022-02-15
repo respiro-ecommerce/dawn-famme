@@ -89,7 +89,7 @@
         ],
         "settings": {
           "color_scheme": "inverse",
-          "newsletter_enable": true,
+          "newsletter_enable": false,
           "newsletter_heading": "Tilmeld dig vores nyhedsbrev!",
           "show_social": true,
           "enable_country_selector": true,
