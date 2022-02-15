@@ -33,6 +33,7 @@
       "blocks": {
         "16449263788dee7f89-0": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Image banner",
             "heading_size": "medium"
@@ -40,6 +41,7 @@
         },
         "16449263788dee7f89-1": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "Give customers details about the banner image(s) or content on the template.",
             "text_style": "body"
@@ -47,6 +49,7 @@
         },
         "16449263788dee7f89-2": {
           "type": "buttons",
+          "disabled": true,
           "settings": {
             "button_label_1": "Button label",
             "button_link_1": "",
