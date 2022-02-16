@@ -4,7 +4,7 @@
       "type": "image-banner",
       "settings": {
         "image": "{{ article.metafields.global.brand_image_mobile.value }}",
-        "image_m": "{{ article.metafields.global.brand_image_desktop..value }}",
+        "image_m": "{{ article.metafields.global.brand_image_desktop.value }}",
         "image_url": "shopify:\/\/collections\/tufte",
         "image_overlay_opacity": 0,
         "image2_url": "",
