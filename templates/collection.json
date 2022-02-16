@@ -1,30 +1,43 @@
 {
   "sections": {
+    "16450051533c912259": {
+      "type": "famme-spaced-button-links",
+      "settings": {
+        "menu": "collection-tilbeh-r",
+        "bg": "#8a9e93",
+        "color": "#fff",
+        "width": 165,
+        "padx": 10,
+        "pady": 0,
+        "radius": 15
+      }
+    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
-        "po": "sustainable-clothes",
         "products_per_page": 50,
         "image_ratio": "adapt",
         "show_secondary_image": true,
-        "add_image_padding": false,
-        "show_image_outline": true,
         "show_vendor": false,
         "show_rating": false,
         "enable_filtering": true,
         "enable_sorting": true,
-        "collapse_on_larger_devices": false
+        "collapse_on_larger_devices": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "banner": {
       "type": "main-collection-banner",
       "settings": {
         "show_collection_description": true,
-        "show_collection_image": true
+        "show_collection_image": true,
+        "color_scheme": "background-1"
       }
     }
   },
   "order": [
+    "16450051533c912259",
     "product-grid",
     "banner"
   ]
