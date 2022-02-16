@@ -1,17 +1,5 @@
 {
   "sections": {
-    "16450051533c912259": {
-      "type": "famme-spaced-button-links",
-      "settings": {
-        "menu": "collection-tilbeh-r",
-        "bg": "#4e4e4e",
-        "color": "#fff",
-        "width": 165,
-        "padx": 10,
-        "pady": 0,
-        "radius": 15
-      }
-    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
@@ -37,7 +25,6 @@
     }
   },
   "order": [
-    "16450051533c912259",
     "product-grid",
     "banner"
   ]
