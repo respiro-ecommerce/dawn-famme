@@ -1,7 +1,7 @@
 {
   "sections": {
     "163454564855e20815": {
-      "type": "image-banner",{{ article.metafields.global.brand_image_mobile.value }}
+      "type": "image-banner",
       "settings": {
         "image": "{{ collection.metafields.global[\"brand_image_mobile\"].value }}",
         "image_m": "{{ collection.metafields.global[\"brand_image_desktop\"].value }}",
