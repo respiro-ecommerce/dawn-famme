@@ -4,7 +4,7 @@
       "type": "famme-spaced-button-links",
       "settings": {
         "menu": "collection-tilbeh-r",
-        "bg": "#8a9e93",
+        "bg": "#4e4e4e",
         "color": "#fff",
         "width": 165,
         "padx": 10,
