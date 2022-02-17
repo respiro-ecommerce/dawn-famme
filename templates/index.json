@@ -1,14 +1,14 @@
 {
   "sections": {
-    "16311853465cfb015e": {
+    "164138293938171117": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Loungewear-banner-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/loungewear-banner-mobil.jpg",
-        "image_url": "shopify:\/\/collections\/loungewear",
+        "image": "shopify:\/\/shop_images\/wintersale-banner-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/wintersale-banner-mobil.jpg",
+        "image_url": "shopify:\/\/collections\/vinterklaer",
         "image_overlay_opacity": 0,
         "image2_url": "",
-        "image_height": "large",
+        "image_height": "small",
         "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",
         "show_text_box": true,
@@ -31,12 +31,12 @@
         "radius": 100
       }
     },
-    "164138293938171117": {
+    "1638543882705deea9": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/4.jpg",
-        "image_m": "shopify:\/\/shop_images\/Winter-Sale-banner-mobil.jpg",
-        "image_url": "shopify:\/\/collections\/vinterklaer",
+        "image": "shopify:\/\/shop_images\/sko-banner-ny-desktop_18a24daf-d5fc-403c-9698-42d156eb4c43.jpg",
+        "image_m": "shopify:\/\/shop_images\/sko-banner-ny-mobil_fd6e3fa7-16bf-40d0-a805-9da3e9645fb5.jpg",
+        "image_url": "\/products\/endorphin-rx1-shoes",
         "image_overlay_opacity": 0,
         "image2_url": "",
         "image_height": "large",
@@ -50,12 +50,12 @@
         "show_text_below": true
       }
     },
-    "1638543882705deea9": {
+    "16311853465cfb015e": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/sko-banner-ny-desktop_18a24daf-d5fc-403c-9698-42d156eb4c43.jpg",
-        "image_m": "shopify:\/\/shop_images\/sko-banner-ny-mobil_fd6e3fa7-16bf-40d0-a805-9da3e9645fb5.jpg",
-        "image_url": "\/products\/endorphin-rx1-shoes",
+        "image": "shopify:\/\/shop_images\/Loungewear-banner-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/loungewear-banner-mobil.jpg",
+        "image_url": "shopify:\/\/collections\/loungewear",
         "image_overlay_opacity": 0,
         "image2_url": "",
         "image_height": "large",
@@ -241,10 +241,10 @@
     }
   },
   "order": [
-    "16311853465cfb015e",
-    "1629993086223521d8",
     "164138293938171117",
+    "1629993086223521d8",
     "1638543882705deea9",
+    "16311853465cfb015e",
     "1631091164538140ed",
     "1631094390263d97d1",
     "1626547460af5b6361",
