@@ -3,11 +3,11 @@
     "163454564855e20815": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Brandjacking-banner-betterbodies-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/Brandjacking-banner-betterbodies-mobil.jpg",
-        "image_url": "shopify:\/\/collections\/better-bodies",
+        "image": "shopify:\/\/shop_images\/Brandjacking-under-Armour-banner-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/Brandjacking-under-Armour-banner-mobil.jpg",
+        "image_url": "shopify:\/\/collections\/under-armour",
         "image_overlay_opacity": 0,
-        "image2_url": "shopify:\/\/blogs\/tights\/better-bodies",
+        "image2_url": "",
         "image_height": "small",
         "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",
