@@ -3,8 +3,8 @@
     "163454564855e20815": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Brandjacking-banner-lululemon-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/Brandjacking-banner-lululemon-mobil.jpg",
+        "image": "shopify:\/\/shop_images\/Brandjacking-banner-aybl-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/Brandjacking-banner-aybl-mobil.jpg",
         "image_url": "shopify:\/\/collections\/lululemon",
         "image_overlay_opacity": 0,
         "image2_url": "",
@@ -62,6 +62,7 @@
         "title": "Fri frakt & retur, 100 dagers åpent kjøp",
         "image_width": "full",
         "image_ratio": "adapt",
+        "columns_desktop": 4,
         "column_alignment": "left",
         "background_style": "secondary",
         "button_label": "Se alt vi anbefaler til Lululemon fans!",
