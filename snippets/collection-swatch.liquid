@@ -25,7 +25,7 @@
                     {% if variant.image %}
                         <a href="{{ variant.url }}" data-toggle="toggle{{ itemID }}" class="other-product-image">
                             <img loading="lazy" src="{{ variant.image | image_url: width: '60x98', crop: 'center' }}"
-                                 alt="{{ variant.title }}" width="{{ variant.image.width }}" height="{{ variant.image.height }}">
+                                 alt="{{ variant.title }}">
                         </a>
                     {% endif %}
                 {% endunless %}
