@@ -82,7 +82,7 @@
             </div>
             <script>
               window.onscroll = function(){
-                if (document.querySelector('div.more>a').getBoundingClientRect().bottom < 3000 && document.querySelector('div.more>a').innerHTML != '{{ 'accessibility.loading' | t }}'){
+                if (document.querySelector('div.more>a').getBoundingClientRect().bottom < 3500 && document.querySelector('div.more>a').innerHTML != '{{ 'accessibility.loading' | t }}'){
                   document.querySelector('div.more>a').innerHTML = '{{ 'accessibility.loading' | t }}';
                   fetch(document.querySelector('div.more>a').href, {method: 'get', credentials: 'include'}).then(response=>response.text()).then(res=>{
                     document.querySelector('ul#product-grid').innerHTML += new DOMParser().parseFromString(res, "text/html").body.querySelector('ul#product-grid').innerHTML;
