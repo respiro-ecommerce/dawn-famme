@@ -77,33 +77,27 @@
           </ul>
   
           {%- if paginate.pages > 1 -%}
-            {% comment %} <div class="pagination-wrapper more">
-               <a href="{{ collection.url }}?page={{ paginate.current_page | plus: 1 }}" id="{{ paginate.pages }}" Class="button button--primary">{{ 'shopify.checkout.general.expand_notice_label' | t }}</a>
-               </div>
-               <script>
-               document.querySelector('div.more>a').onclick = function(e){
-                 e.preventDefault();
-                 this.style.pointerEvents = 'none';
-                 this.innerHTML = '{{ 'accessibility.loading' | t }}';
-                 fetch(this.href, {method: 'get', credentials: 'include'}).then(response=>response.text()).then(res=>{
-                   document.querySelector('ul#product-grid').innerHTML += new DOMParser().parseFromString(res, "text/html").body.querySelector('ul#product-grid').innerHTML;
-                   //window.history.replaceState('', '', this.href);
-                   if (this.href.slice(-1) < parseInt(this.id)){
-                     this.href = this.href.slice(0, -1) + (parseInt(this.href.slice(-1)) + 1);
-                     this.removeAttribute('style');
-                     this.innerHTML = '{{ 'shopify.checkout.general.expand_notice_label' | t }}';
-                   } else {
-                     this.remove();
-                   }
-                 });
-               }
-               window.onscroll=()=>{
-                 if (document.querySelector('div.more>a').getBoundingClientRect().bottom < 2000 && document.querySelector('div.more>a').innerHTML != '{{ 'accessibility.loading' | t }}'){
-                   document.querySelector('div.more>a').dispatchEvent(new Event('click',{bubbles:true}));
-                 }
-               }
-             </script>{% endcomment %}
-            {% render 'pagination', paginate: paginate, anchor: '' %}
+            <div class="pagination-wrapper more">
+              <a href="{{ collection.url }}?page={{ paginate.current_page | plus: 1 }}" id="{{ paginate.pages }}" Class="button button--primary">{{ 'shopify.checkout.general.expand_notice_label' | t }}</a>
+            </div>
+            <script>
+              window.onscroll = function(){
+                if (document.querySelector('div.more>a').getBoundingClientRect().bottom < 2000 && document.querySelector('div.more>a').innerHTML != '{{ 'accessibility.loading' | t }}'){
+                  document.querySelector('div.more>a').innerHTML = '{{ 'accessibility.loading' | t }}';
+                  fetch(document.querySelector('div.more>a').href, {method: 'get', credentials: 'include'}).then(response=>response.text()).then(res=>{
+                    document.querySelector('ul#product-grid').innerHTML += new DOMParser().parseFromString(res, "text/html").body.querySelector('ul#product-grid').innerHTML;
+                    //window.history.replaceState('', '', document.querySelector('div.more>a').href);
+                    if (document.querySelector('div.more>a').href.slice(-1) < parseInt(document.querySelector('div.more>a').id)){
+                      document.querySelector('div.more>a').href = document.querySelector('div.more>a').href.slice(0, -1) + (parseInt(document.querySelector('div.more>a').href.slice(-1)) + 1);
+                      document.querySelector('div.more>a').innerHTML = '{{ 'shopify.checkout.general.expand_notice_label' | t }}';
+                    } else {
+                      document.querySelector('div.more>a').remove();
+                    }
+                  });
+                }
+              }
+            </script>
+            {% comment %}{% render 'pagination', paginate: paginate, anchor: '' %}{% endcomment %}
           {%- endif -%}
         </div>
       {%- endif -%}
