@@ -4,10 +4,10 @@
       "type": "image-banner",
       "settings": {
         "image": "shopify:\/\/shop_images\/Brandjacking-noodles-banner-desktopp.jpg",
-        "image_m": "shopify:\/\/shop_images\/Brandjacking-banner-betterbodies-mobil.jpg",
+        "image_m": "shopify:\/\/shop_images\/Brandjacking-noodles-banner-mobil.jpg",
         "image_url": "shopify:\/\/products\/endorphin-rx1-shoes",
         "image_overlay_opacity": 0,
-        "image2_url": "shopify:\/\/blogs\/tights\/better-bodies",
+        "image2_url": "shopify:\/\/products\/endorphin-rx1-shoes",
         "image_height": "small",
         "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",
