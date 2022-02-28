@@ -98,7 +98,7 @@
                 });
               }
               window.onscroll=()=>{
-                if (document.querySelector('div.more>a').getBoundingClientRect().bottom < 4000 && document.querySelector('div.more>a').innerHTML != '{{ 'accessibility.loading' | t }}'){
+                if (document.querySelector('div.more>a').getBoundingClientRect().bottom < 2000 && document.querySelector('div.more>a').innerHTML != '{{ 'accessibility.loading' | t }}'){
                   document.querySelector('div.more>a').dispatchEvent(new Event('click',{bubbles:true}));
                 }
               }
