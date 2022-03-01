@@ -3,9 +3,9 @@
     "163454564855e20815": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Brandjacking-banner-aybl-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/Brandjacking-banner-aybl-mobil.jpg",
-        "image_url": "shopify:\/\/collections\/aybl",
+        "image": "shopify:\/\/shop_images\/Brandjacking-banner-eyda-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/brandjacking-banner-eyda-mobil.jpg",
+        "image_url": "shopify:\/\/collections\/eyda",
         "image_overlay_opacity": 0,
         "image2_url": "",
         "image_height": "small",
@@ -65,7 +65,7 @@
         "columns_desktop": 4,
         "column_alignment": "left",
         "background_style": "secondary",
-        "button_label": "Se alt vi anbefaler til Aybl fans!",
+        "button_label": "Se alt vi anbefaler til EYDA fans!",
         "button_link": "shopify:\/\/collections\/lululemon",
         "swipe_on_mobile": false,
         "color_scheme": "background-1",
