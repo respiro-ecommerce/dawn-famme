@@ -4,10 +4,10 @@
       "type": "image-banner",
       "settings": {
         "image": "shopify:\/\/shop_images\/brandjacking-pursue-fitness-2000x600.jpg",
-        "image_m": "shopify:\/\/shop_images\/Brandjacking-banner-bumpro-mobil.jpg",
+        "image_m": "shopify:\/\/shop_images\/brandjacking-pursue-fitness-1200x900.jpg",
         "image_url": "shopify:\/\/collections\/pursue-fitness",
         "image_overlay_opacity": 0,
-        "image2_url": "",
+        "image2_url": "shopify:\/\/blogs\/merker\/pursue-fitness-alternativ-i-norge",
         "image_height": "small",
         "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",
