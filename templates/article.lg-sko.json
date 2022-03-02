@@ -36,11 +36,14 @@
         "heading": "Les alt om våre sko her...",
         "blog": "treningssko",
         "post_limit": 3,
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
         "show_image": true,
         "show_date": true,
         "show_author": false,
-        "soft_background": false,
-        "show_view_all": true
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "1627292414345e6702": {
@@ -49,20 +52,22 @@
         "1627292414345e6702-0": {
           "type": "heading",
           "settings": {
-            "heading": "Endorphin RX1 Shoes"
+            "heading": "Endorphin RX1 Shoes",
+            "heading_size": "h1"
           }
         },
         "1627292414345e6702-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Endorphin RX1 Shoes gir deg all den støtten og komforten du trenger for å nå nye nivåer. Med teknologier som: <\/p><p>•Ortholite-såle<\/p><p>•Pustende Mesh <\/p><p>•Foam paddet støtte<\/p><p><\/p>"
+            "text": "<p>Endorphin RX1 Shoes gir deg all den støtten og komforten du trenger for å nå nye nivåer. Med teknologier som: <\/p><p>•Ortholite-såle<\/p><p>•Pustende Mesh <\/p><p>•Foam paddet støtte<\/p><p><\/p>",
+            "text_style": "body"
           }
         },
         "1627292414345e6702-2": {
           "type": "button",
           "settings": {
             "button_label": "SHOP HER",
-            "button_link": "shopify:\/\/products\/endorphin-rx1-shoes"
+            "button_link": "shopify:\/\/products\/endorphin-rx1-shoes-b-vare"
           }
         }
       },
@@ -72,10 +77,17 @@
         "1627292414345e6702-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Endorphin_RX1_Shoes-EDRX-BLU_5.jpg",
+        "image": "shopify:\/\/shop_images\/blogg-hvordan-vaske-sko-nederste-bilde.jpg",
         "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
         "color_scheme": "background-1",
-        "layout": "image_first"
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
