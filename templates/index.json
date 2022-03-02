@@ -85,8 +85,7 @@
           "disabled": true,
           "settings": {
             "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body",
-            "heading_size": "h0"
+            "text_style": "body"
           }
         },
         "1646126984b913e87a-2": {
