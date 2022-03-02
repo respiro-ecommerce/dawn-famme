@@ -3,9 +3,9 @@
     "163454564855e20815": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/tufte-banner-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/tufte-banner-mobil.jpg",
-        "image_url": "shopify:\/\/collections\/tufte",
+        "image": "shopify:\/\/shop_images\/Brandjacking-banner-johaug-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/Brandjacking-banner-johaug-mobil.jpg",
+        "image_url": "shopify:\/\/collections\/johaug",
         "image_overlay_opacity": 0,
         "image2_url": "",
         "image_height": "small",
@@ -25,7 +25,6 @@
         "163438960122f1937a-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/outdoor.collection.banner.jpg",
             "title": "Best på turklær",
             "text": "<p>Famme tilbyr et bredt utvalg av <a href=\"\/collections\/turklaer\" target=\"_blank\" title=\"Turklær\"><strong>turklær<\/strong><\/a>. Vi har jakker, turbukser, turshorts, ullundertøy, hodeplagg og mye mer! Vi har det perfekte turtøyet til deg som vil ha <a href=\"\/collections\/vinterklaer\" target=\"_blank\" title=\"Vinterklær\"><strong>gode klær utendørs<\/strong>.<\/a><\/p>",
             "link_label": "",
@@ -62,6 +61,7 @@
         "title": "Fri frakt & retur, 100 dagers åpent kjøp",
         "image_width": "full",
         "image_ratio": "adapt",
+        "columns_desktop": 4,
         "column_alignment": "left",
         "background_style": "secondary",
         "button_label": "Se alt vi anbefaler til Tufte fans her!",
