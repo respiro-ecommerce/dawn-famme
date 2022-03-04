@@ -3,11 +3,11 @@
     "16373290891b389eea": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/gratis-banner-ny.jpg",
-        "image_m": "shopify:\/\/shop_images\/gratis-banner-mobil-ny.jpg",
-        "image_url": "shopify:\/\/products\/treningsklaer",
+        "image": "shopify:\/\/shop_images\/lagertomming-banner-desktop-2.jpg",
+        "image_m": "shopify:\/\/shop_images\/lagertomming-banner-mobil.jpg",
+        "image_url": "https:\/\/famme.no\/collections\/must-haves",
         "image_overlay_opacity": 0,
-        "image2_url": "shopify:\/\/products\/treningsklaer",
+        "image2_url": "https:\/\/famme.no\/collections\/must-haves",
         "image_height": "medium",
         "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",
@@ -22,6 +22,8 @@
     "main": {
       "type": "main-page",
       "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
