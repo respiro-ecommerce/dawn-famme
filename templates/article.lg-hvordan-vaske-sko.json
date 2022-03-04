@@ -33,18 +33,11 @@
           "type": "content",
           "settings": {
           }
-        },
-        "featured_image": {
-          "type": "featured_image",
-          "settings": {
-            "image_height": "adapt"
-          }
         }
       },
       "block_order": [
         "title",
-        "content",
-        "featured_image"
+        "content"
       ],
       "settings": {
       }
