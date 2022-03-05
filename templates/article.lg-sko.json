@@ -1,10 +1,30 @@
 {
   "sections": {
+    "1646394963e3b2a1bf": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/lagertomming-sko-banner-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/lagertomming-sko-banner-mobile.jpg",
+        "image_url": "shopify:\/\/collections\/must-haves",
+        "image_overlay_opacity": 0,
+        "image2_url": "",
+        "image_height": "small",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "main": {
       "type": "main-article",
       "blocks": {
         "featured_image": {
           "type": "featured_image",
+          "disabled": true,
           "settings": {
             "image_height": "adapt"
           }
@@ -34,6 +54,7 @@
       "type": "featured-blog",
       "settings": {
         "heading": "Les alt om våre sko her...",
+        "heading_size": "h1",
         "blog": "treningssko",
         "post_limit": 3,
         "columns_desktop": 3,
@@ -92,6 +113,7 @@
     }
   },
   "order": [
+    "1646394963e3b2a1bf",
     "main",
     "1632303734c1afc161",
     "1627292414345e6702"
