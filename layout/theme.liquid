@@ -8,7 +8,7 @@
     {%- if template.name == 'collection' -%}
       {% comment %} Try to remove canonical for collection so that faceted filter urls are indexed {% endcomment %}
     {% else %}
-      <link rel="canonical" href="{{ canonical_url }}">
+      {% comment %}<link rel="canonical" href="{{ canonical_url }}">{% endcomment %}
     {% endif %}
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
 
