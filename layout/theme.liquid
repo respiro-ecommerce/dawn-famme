@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="">
-    <link rel="canonical" href="{{ canonical_url }}">
+    {%- if template.name == 'collection' -%}
+      {% comment %} Try to remove canonical for collection so that faceted filter urls are indexed {% endcomment %}
+    {% else %}
+      <link rel="canonical" href="{{ canonical_url }}">
+    {% endif %}
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
 
 
