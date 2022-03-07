@@ -80,7 +80,12 @@
                 if (document.querySelector('div.pagination-wrapper.more') && document.querySelector('div.more>a').getBoundingClientRect().bottom < 2500 && document.querySelector('div.more>a').innerHTML != '{{ 'accessibility.loading' | t }}'){
                   document.querySelector('div.more>a').innerHTML = '{{ 'accessibility.loading' | t }}';
                   fetch(document.querySelector('div.more>a').href, {method: 'get', credentials: 'include'}).then(response=>response.text()).then(res=>{
-                    document.querySelector('ul#product-grid').innerHTML += new DOMParser().parseFromString(res, "text/html").body.querySelector('ul#product-grid').innerHTML;
+                    var prods = new DOMParser().parseFromString(res, "text/html").body.querySelector('ul#product-grid');
+                    if (prods){
+                      document.querySelector('ul#product-grid').innerHTML += prods.innerHTML;
+                    } else {
+                      document.querySelector('div.pagination-wrapper.more').remove();
+                    }
                     //window.history.replaceState('', '', document.querySelector('div.more>a').href);
                     if (document.querySelector('div.more>a').href.slice(-1) < parseInt(document.querySelector('div.more>a').id)){
                       document.querySelector('div.more>a').href = document.querySelector('div.more>a').href.slice(0, -1) + (parseInt(document.querySelector('div.more>a').href.slice(-1)) + 1);
