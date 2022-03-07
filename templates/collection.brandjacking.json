@@ -1,9 +1,60 @@
 {
   "sections": {
+    "1646646972f831fd48": {
+      "type": "image-banner",
+      "blocks": {
+        "16466469724a857da6-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h2"
+          }
+        },
+        "16466469724a857da6-1": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "16466469724a857da6-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "16466469724a857da6-0",
+        "16466469724a857da6-1",
+        "16466469724a857da6-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/lagertomming-banner-desktop-2_b4937a36-7474-473d-a441-cf90e9bd7610.jpg",
+        "image_url": "\/collections\/must-haves",
+        "image_overlay_opacity": 0,
+        "image2_url": "",
+        "image_height": "small",
+        "adapt_height_first_image": true,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
         "products_per_page": 20,
+        "columns_desktop": 4,
         "image_ratio": "adapt",
         "show_secondary_image": true,
         "show_vendor": false,
@@ -11,6 +62,7 @@
         "enable_filtering": true,
         "enable_sorting": true,
         "collapse_on_larger_devices": false,
+        "columns_mobile": "2",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -25,6 +77,7 @@
     }
   },
   "order": [
+    "1646646972f831fd48",
     "product-grid",
     "banner"
   ]
