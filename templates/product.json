@@ -34,7 +34,7 @@
         "description": {
           "type": "description",
           "settings": {
-            "icon": "heart",
+            "icon": "check_mark",
             "content": ""
           }
         },
