@@ -35,7 +35,7 @@
           "type": "description",
           "settings": {
             "icon": "heart",
-            "content": "<p>{{ product.metafields.my_fields.pre_order_date | metafield_tag }}<\/p>"
+            "content": ""
           }
         },
         "eabf9557-eae1-4602-8216-a1fcf53adaa8": {
