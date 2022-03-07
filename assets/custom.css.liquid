@@ -59,7 +59,10 @@ ul.product-grid div.card-wrapper {height: auto;}
 {% comment %}This is some styling for the variant images under each product used on collection pages and search{% endcomment %}
 .product-groups__images img {width: 60px;}
 .product-groups__images a:hover img {border:  solid 1px black;}
-@media screen and (max-width: 798px){.product-groups__images img {width: 40px;}}
+@media screen and (max-width: 798px){
+  .spaced-section {margin: 2rem auto;}
+  .product-groups__images img {width: 40px;}
+}
 div.product-groups__images {
   display: flex;
   justify-content: space-evenly;
