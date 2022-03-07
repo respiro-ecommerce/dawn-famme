@@ -1,8 +1,10 @@
+{%- if section.settings.pw -%}<div class="page-width">{%- endif -%}
 {%- for link in section.settings.menu.links -%}
   <a href="{{ link.url }}" style="background:{{ section.settings.bg }};color:{{ section.settings.color }};min-width:{{ section.settings.width }}px;border-radius:{{ section.settings.radius }}px;padding:{{ section.settings.pady }}px {{ section.settings.padx }}px">
     {{ link.title }}
   </a>
 {%- endfor -%}
+{%- if section.settings.pw -%}</div>{%- endif -%}
 {% schema %}
 {
   "name": "Buttons",
@@ -13,6 +15,11 @@
       "type": "link_list",
       "id": "menu",
       "label": "Menu to list its links as buttons"
+    },
+	{
+      "type": "checkbox",
+      "id": "pw",
+      "label": "Enable page container"
     },
 	{
       "type": "color",
