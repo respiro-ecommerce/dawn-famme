@@ -6,6 +6,8 @@
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
+  .section-{{ section.id }}-padding div.multicolumn-card__info>h3 {font-size:{{ section.settings.sizet }}px;}
+  .section-{{ section.id }}-padding div.multicolumn-card__info>div.rte {font-size:{{ section.settings.size }}px;}
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
