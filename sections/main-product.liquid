@@ -209,14 +209,6 @@
             <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
               {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
             </div>
-
-            <div {{ block.shopify_attributes }}>
-              {%- form 'product', product, id: 'product-form-installment', class: 'installment caption-large' -%}
-                <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-                {{ form | payment_terms }}
-              {%- endform -%}
-            </div>
-
           {%- when 'description' -%}
             {% render 'product-bullets' %}
             {%- if product.description != blank -%}
@@ -495,6 +487,12 @@
                     {%- endif -%}
                   </div>
                 {%- endform -%}
+                <div {{ block.shopify_attributes }}>
+                  {%- form 'product', product, id: 'product-form-installment', class: 'installment caption-large' -%}
+                    <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+                    {{ form | payment_terms }}
+                  {%- endform -%}
+                </div>
               </product-form>
 
               {{ 'component-pickup-availability.css' | asset_url | stylesheet_tag }}
