@@ -223,7 +223,10 @@
                   </summary>
                   <div class="accordion__content rte" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
                     {{ product.description }}
-                    {% if block.settings.content != blank %}{{ 'products.shipping' | t }} {{ block.settings.content }}{% endif %}
+                    {% if block.settings.content != blank %}
+                      {%- assign ship = 'products.shipping' | t -%}{%- assign ship = '<p>' | append: ship -%}
+                      {{ block.settings.content | replace: '<p>', ship }}
+                    {% endif %}
                   </div>
                 </details>
         	  </div>
