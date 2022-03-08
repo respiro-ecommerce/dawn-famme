@@ -226,7 +226,7 @@
                   </summary>
                   <div class="accordion__content rte" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
                     {{ product.description }}
-                    {% if block.settings.content != blank %}
+                    {% if product.metafields.my_fields.refill_date != blank %}
                       {%- assign ship = 'products.shipping' | t | prepend: '<p>' | append: ' ' -%}
                       {{ block.settings.content | replace: '<p>', ship }}
                     {% endif %}
