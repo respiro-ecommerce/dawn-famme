@@ -35,7 +35,7 @@
           "type": "description",
           "settings": {
             "icon": "check_mark",
-            "content": "<p>{{ product.metafields.my_fields.refill_date | metafield_tag }}<\/p>"
+            "content": "<p><strong>{{ product.metafields.my_fields.refill_date | metafield_tag }}<\/strong><\/p>"
           }
         },
         "eabf9557-eae1-4602-8216-a1fcf53adaa8": {
