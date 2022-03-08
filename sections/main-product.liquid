@@ -223,7 +223,7 @@
                   </summary>
                   <div class="accordion__content rte" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
                     {{ product.description }}
-                    {% if block.settings.content != blank %}{{ block.settings.content }}{% endif %}
+                    {% if block.settings.content != blank %}{{ 'products.shipping' | t }}: {{ block.settings.content }}{% endif %}
                   </div>
                 </details>
         	  </div>
