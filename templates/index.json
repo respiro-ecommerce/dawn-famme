@@ -317,63 +317,6 @@
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
-    },
-    "1646626948f90c5e95": {
-      "type": "multicolumn",
-      "disabled": true,
-      "blocks": {
-        "1646626948d169fb37-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/brandjacking-gym-glamour-banner-mobil.jpg",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "1646626948d169fb37-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/brandjacking-gym-glamour-banner-mobil.jpg",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "1646626948d169fb37-2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/brandjacking-gym-glamour-banner-mobil.jpg",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "1646626948d169fb37-0",
-        "1646626948d169fb37-1",
-        "1646626948d169fb37-2"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "Button label",
-        "button_link": "",
-        "color_scheme": "inverse",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
@@ -389,7 +332,6 @@
     "163117812908a522c8",
     "16252134879571dabc",
     "1629157352b193f90f",
-    "162567415706bdadcd",
-    "1646626948f90c5e95"
+    "162567415706bdadcd"
   ]
 }
