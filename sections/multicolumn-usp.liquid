@@ -8,6 +8,9 @@
   }
   .section-{{ section.id }}-padding div.multicolumn-card__info>h3 {font-size:{{ section.settings.sizet }}px;}
   .section-{{ section.id }}-padding div.multicolumn-card__info>div.rte {font-size:{{ section.settings.size }}px;}
+  {%- if section.settings.image_max > 0 -%}
+	section#shopify-section-{{ section.id }} .section-{{ section.id }}-padding img.multicolumn-card__image {max-width:{{ section.settings.image_max }}px;}
+  {%- endif -%}
   @media screen and (max-width: 749px) {section#shopify-section-{{ section.id }} .section-{{ section.id }}-padding div.multicolumn-card__info {padding: 15px 5px;}}
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
@@ -159,6 +162,17 @@
       ],
       "default": "full",
       "label": "t:sections.multicolumn.settings.image_width.label"
+    },
+    {
+      "type": "range",
+      "id": "image_max",
+      "min": 0,
+      "max": 400,
+      "step": 4,
+      "default": 100,
+	  "unit": "px",
+      "label": "Image max width",
+	  "info": "set to 0 to disable this setting"
     },
     {
       "type": "select",
