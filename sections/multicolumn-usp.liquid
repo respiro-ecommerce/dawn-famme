@@ -9,7 +9,10 @@
   .section-{{ section.id }}-padding div.multicolumn-card__info>h3 {font-size:{{ section.settings.sizet }}px;}
   .section-{{ section.id }}-padding div.multicolumn-card__info>div.rte {font-size:{{ section.settings.size }}px;}
   {%- if section.settings.image_max > 0 -%}
-	section#shopify-section-{{ section.id }} .section-{{ section.id }}-padding div.media {max-width:{{ section.settings.image_max }}px;}
+	section#shopify-section-{{ section.id }} .section-{{ section.id }}-padding div.media {
+	  max-width:{{ section.settings.image_max }}px;
+	  margin: auto;
+	}
   {%- endif -%}
   @media screen and (max-width: 749px) {section#shopify-section-{{ section.id }} .section-{{ section.id }}-padding div.multicolumn-card__info {padding: 15px 5px;}}
   @media screen and (min-width: 750px) {
@@ -56,11 +59,10 @@
                 {% endif %}
                 <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--{{ section.settings.image_width }}-width{% if section.settings.image_width != 'full' or spaced_image %} multicolumn-card-spacing{% endif %}">
                   <div class="media media--transparent media--{{ section.settings.image_ratio }}"
-                    {% if section.settings.image_ratio == 'adapt' %}
+                    {% if section.settings.image_ratio == 'adapt' and section.settings.image_max < 3 %}
                       style="padding-bottom: {{ 1 | divided_by: highest_ratio | times: 100 }}%;"
                     {% endif %}>
-                    <img
-                      class="multicolumn-card__image"
+                    <img class="multicolumn-card__image"
                       srcset="{%- if block.settings.image.width >= 275 -%}{{ block.settings.image | image_url: width: 275 }} 275w,{%- endif -%}
                         {%- if block.settings.image.width >= 550 -%}{{ block.settings.image | image_url: width: 550 }} 550w,{%- endif -%}
                         {%- if block.settings.image.width >= 710 -%}{{ block.settings.image | image_url: width: 710 }} 710w,{%- endif -%}
@@ -69,9 +71,9 @@
                       src="{{ block.settings.image | image_url: width: 550 }}"
                       sizes="(min-width: 990px) {% if section.blocks.size <= 2 %}710px{% else %}550px{% endif %},
                         (min-width: 750px) {% if section.blocks.size == 1 %}710px{% else %}550px{% endif %},
-                        calc(100vw - 30px)"
-                      alt="{{ block.settings.image.alt }}" height="{{ block.settings.image.height }}"
-                      width="{{ block.settings.image.width }}" loading="lazy">
+                        calc(100vw - 30px)" alt="{{ block.settings.image.alt }}" height="{{ block.settings.image.height }}"
+                      width="{{ block.settings.image.width }}" loading="lazy"
+                      {% if section.settings.image_max > 0 %}style="position:static"{% endif %}>
                   </div>
                 </div>
               {%- endif -%}
