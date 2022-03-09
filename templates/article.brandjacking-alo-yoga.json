@@ -3,9 +3,9 @@
     "163454564855e20815": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Brandjacking-banner-eyda-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/brandjacking-banner-eyda-mobil.jpg",
-        "image_url": "shopify:\/\/collections\/eyda",
+        "image": "shopify:\/\/shop_images\/Brandjacking-banner-alo-yoga-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/Brandjacking-banner-alo-yoga-mobil.jpg",
+        "image_url": "shopify:\/\/collections\/alo-yoga",
         "image_overlay_opacity": 0,
         "image2_url": "",
         "image_height": "small",
@@ -66,7 +66,7 @@
         "columns_desktop": 3,
         "column_alignment": "left",
         "background_style": "secondary",
-        "button_label": "Se alt vi anbefaler til EYDA fans!",
+        "button_label": "Se alt vi anbefaler til Alo Yoga fans!",
         "button_link": "shopify:\/\/collections\/eyda",
         "color_scheme": "background-1",
         "columns_mobile": "1",
