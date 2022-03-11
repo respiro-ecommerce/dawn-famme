@@ -3,9 +3,9 @@
     "163454564855e20815": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Brandjacking-banner-alo-yoga-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/Brandjacking-banner-alo-yoga-mobil.jpg",
-        "image_url": "shopify:\/\/collections\/alo-yoga",
+        "image": "shopify:\/\/shop_images\/brandjacking-womensbest-banner-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/brandjacking-womensbest-banner-mobil.jpg",
+        "image_url": "shopify:\/\/collections\/womens-best",
         "image_overlay_opacity": 0,
         "image2_url": "",
         "image_height": "small",
@@ -66,8 +66,8 @@
         "columns_desktop": 3,
         "column_alignment": "left",
         "background_style": "secondary",
-        "button_label": "Se alt vi anbefaler til Alo Yoga fans!",
-        "button_link": "shopify:\/\/collections\/alo-yoga",
+        "button_label": "Se alt vi anbefaler til Women's Best fans!",
+        "button_link": "shopify:\/\/collections\/womens-best",
         "color_scheme": "background-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
