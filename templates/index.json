@@ -159,12 +159,12 @@
     "164138293938171117": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/wintersale-banner-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/wintersale-banner-mobil.jpg",
-        "image_url": "shopify:\/\/collections\/vinterklaer",
+        "image": "shopify:\/\/shop_images\/new-products-banner.jpg",
+        "image_m": "shopify:\/\/shop_images\/new-products-banner-mobil.jpg",
+        "image_url": "shopify:\/\/collections\/new-releases",
         "image_overlay_opacity": 0,
         "image2_url": "",
-        "image_height": "small",
+        "image_height": "large",
         "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",
         "show_text_box": true,
