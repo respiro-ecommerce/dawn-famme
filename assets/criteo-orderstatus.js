@@ -11,7 +11,7 @@
         var item = c.line_items[i];
         if (item.product_id) {
             products.push({
-                id: "shopify_DK_" + item.product_id + "_" + item.variant_id,
+                id: "shopify_NO_" + item.product_id + "_" + item.variant_id,
                 price: 0,
                 quantity: item.quantity
             });
@@ -28,7 +28,7 @@
     });
     window.criteo_q = window.criteo_q || [];
     window.criteo_q.push(
-        { event: "setAccount", account: 94682 },
+        { event: "setAccount", account: 94683 },
         { event: "setEmail", email: crto_md5(c.email), hash_method: "md5" },
         { event: "setEmail", email: crto_sha256(c.email), hash_method: "sha256" },
         { event: "setSiteType", type: deviceType },

@@ -3,7 +3,7 @@
     var deviceType = /iPad/.test(navigator.userAgent) ? "t" : /Mobile|iP(hone|od)|Android|BlackBerry|IEMobile|Silk/.test(navigator.userAgent) ? "m" : "d";
     window.criteo_q = window.criteo_q || [];
     window.criteo_q.push(
-      { event: "setAccount", account: 94682 },
+      { event: "setAccount", account: 94683 },
       { event: "setEmail", email: "{{ customer.email | remove: ' ' | strip_newlines | downcase | sha256 }}", hash_method: "sha256" },
       { event: "setEmail", email: "{{ customer.email | remove: ' ' | strip_newlines | downcase | md5 }}", hash_method: "md5" },
       { event: "setSiteType", type: deviceType },
@@ -11,7 +11,7 @@
         {% assign template-type = template | split: '.' | first %}
         {% if template-type == 'cart' or template-type == 'collection' or template-type == 'index' or template-type == 'product' or template-type == 'search' %}
         {% unless template-type == 'cart' and cart.item_count < 1 %}
-        {% assign id_prefix = "shopify_DK" %}
+        {% assign id_prefix = "shopify_NO" %}
           {% case template-type %}
             {% when 'cart' %}{ event: "viewBasket", ecpplugin: "shopify-mc", item: [{% for item in cart.items %}{% unless forloop.index0 == 0 %}, {% endunless %}{ id: "{{ id_prefix }}_{{ item.product.id }}_{{ item.variant.id }}", price: (typeof({{ item.price }}) != "number") ? {{ item.price }} : ({{ item.price }}/100), quantity: {{ item.quantity }} }{% endfor %}]}
             {% when 'search' %}{ event: "viewSearchResult", ecpplugin: "shopify-mc", "keyword":"{{search.terms}}", item: [{% for product in search.results limit:3 %}{% if forloop.index0 != 0 %},{% endif %}"{{product.id}}"{% endfor %}]}
