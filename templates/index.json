@@ -1,10 +1,10 @@
 {
   "sections": {
-    "16469875862fb89bda": {
+    "1638543882705deea9": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/lagertomming-banner-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/lagertomming-banner-mobil_05e88db5-02ce-4092-b541-a4b7e97da3c1.jpg",
+        "image": "shopify:\/\/shop_images\/lagertomming-sko-banner-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/lagertomming-sko-banner-mobile.jpg",
         "image_url": "shopify:\/\/collections\/must-haves",
         "image_overlay_opacity": 0,
         "image2_url": "",
@@ -30,6 +30,25 @@
         "padx": 10,
         "pady": 7,
         "radius": 100
+      }
+    },
+    "16311853465cfb015e": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/loungewear-salg-banner-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/loungewear-salg-banner-mobil.jpg",
+        "image_url": "shopify:\/\/collections\/loungewear",
+        "image_overlay_opacity": 0,
+        "image2_url": "",
+        "image_height": "large",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
       }
     },
     "16467164645aa70328": {
@@ -92,25 +111,6 @@
         "padding_bottom": 0
       }
     },
-    "1638543882705deea9": {
-      "type": "image-banner",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/lagertomming-sko-banner-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/lagertomming-sko-banner-mobile.jpg",
-        "image_url": "shopify:\/\/collections\/must-haves",
-        "image_overlay_opacity": 0,
-        "image2_url": "",
-        "image_height": "small",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
     "16463038447a5cbd60": {
       "type": "featured-collection",
       "settings": {
@@ -135,25 +135,6 @@
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "16311853465cfb015e": {
-      "type": "image-banner",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/loungewear-salg-banner-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/loungewear-salg-banner-mobil.jpg",
-        "image_url": "shopify:\/\/collections\/loungewear",
-        "image_overlay_opacity": 0,
-        "image2_url": "",
-        "image_height": "large",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
       }
     },
     "164138293938171117": {
@@ -411,12 +392,11 @@
     }
   },
   "order": [
-    "16469875862fb89bda",
-    "1629993086223521d8",
-    "16467164645aa70328",
     "1638543882705deea9",
-    "16463038447a5cbd60",
+    "1629993086223521d8",
     "16311853465cfb015e",
+    "16467164645aa70328",
+    "16463038447a5cbd60",
     "164138293938171117",
     "164612698482e306bb",
     "1631091164538140ed",
