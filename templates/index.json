@@ -22,7 +22,7 @@
     "1629993086223521d8": {
       "type": "famme-spaced-button-links",
       "settings": {
-        "menu": "test-meny",
+        "menu": "header2-produktkategorier",
         "pw": false,
         "bg": "#4e4e4e",
         "color": "#ffffff",
