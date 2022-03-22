@@ -463,7 +463,7 @@
           {%- when 'buy_buttons' -%}
             <div {{ block.shopify_attributes }}>
               {% if product.metafields.my_fields.refill_date != blank %}
-                <p>{{ 'products.shipping' | t }} <b>{{ product.metafields.my_fields.refill_date }}</b></p>
+                <p class="rdt{% if product.selected_or_first_available_variant.inventory_quantity > 0 or product.selected_or_first_available_variant.available != true %} hidden{% endif %}">{{ 'products.shipping' | t }} <b>{{ product.metafields.my_fields.refill_date }}</b></p>
               {% endif %}
               <product-form class="product-form">
                 <div class="product-form__error-message-wrapper" role="alert" hidden>
