@@ -747,7 +747,15 @@ class VariantSelects extends HTMLElement {
     this.toggleAddButton(true, '', false);
     this.updatePickupAvailability();
     this.removeErrorMessage();
-
+    if (document.querySelector('p.rd') && document.querySelector('p.rdt')){
+      if (document.querySelector('li#id'+ document.querySelector('input[name="id"]').value) && document.querySelector('li#id'+ document.querySelector('input[name="id"]').value).innerHTML == 'continue' && document.querySelector('li#id'+ document.querySelector('input[name="id"]').value).getAttribute('qty') < 1){
+        document.querySelector('p.rd').classLIst.remove('hidden');
+        document.querySelector('p.rdt').classLIst.remove('hidden');
+      } else {
+        document.querySelector('p.rd').classLIst.add('hidden');
+        document.querySelector('p.rdt').classLIst.add('hidden');
+      }
+    }
     if (!this.currentVariant) {
       this.toggleAddButton(true, '', true);
       this.setUnavailable();
@@ -767,7 +775,6 @@ class VariantSelects extends HTMLElement {
   updateMasterId() {
     this.currentVariant = this.getVariantData().find((variant) => {
       return !variant.options.map((option, index) => {
-        console.log(option);
         return this.options[index] === option;
       }).includes(false);
     });
