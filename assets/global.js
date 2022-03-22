@@ -748,7 +748,7 @@ class VariantSelects extends HTMLElement {
     this.updatePickupAvailability();
     this.removeErrorMessage();
     if (document.querySelector('p.rd') && document.querySelector('p.rdt') && document.querySelector('li#id'+ document.querySelector('input[name="id"]').value)){
-      if (document.querySelector('li#id'+ document.querySelector('input[name="id"]').value).innerHTML == 'continue' && document.querySelector('li#id'+ document.querySelector('input[name="id"]').value).getAttribute('qty') < 1){
+      if (document.querySelector('li#id'+ document.querySelector('input[name="id"]').value).innerHTML == 'continue' && parseInt(document.querySelector('li#id'+ document.querySelector('input[name="id"]').value).getAttribute('qty')) < 1){
         document.querySelector('p.rd').classList.remove('hidden');
         document.querySelector('p.rdt').classList.remove('hidden');
       } else {
