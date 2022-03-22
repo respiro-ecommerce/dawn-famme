@@ -476,6 +476,9 @@
 
                 {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
                   <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled>
+                  <ul class="inv hidden">
+                    {%- for v in product.variants -%}<li id="id{{ v.id }}" qty="{{ v.inventory_quantity }}">{{ v.inventory_policy }}</li>{%- endfor -%}
+                  </ul>
                   <div class="product-form__buttons">
                     <button
                       type="submit"
