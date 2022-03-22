@@ -88,7 +88,7 @@
             <button type="button" class="slider-button slider-button--next" name="next" aria-label="{{ 'general.slider.next_slide' | t }}">{% render 'icon-caret' %}</button>
           </div>
           {% if product.metafields.my_fields.refill_date != blank %}
-            <p id="rd">{{ 'products.shipping' | t }}: <b>{{ product.metafields.my_fields.refill_date }}</b></p>
+            <p class="rd">{{ 'products.shipping' | t }}: <b>{{ product.metafields.my_fields.refill_date }}</b></p>
           {% endif %}
         </slider-component>
         {%- if first_3d_model -%}
