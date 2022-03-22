@@ -747,17 +747,6 @@ class VariantSelects extends HTMLElement {
     this.toggleAddButton(true, '', false);
     this.updatePickupAvailability();
     this.removeErrorMessage();
-    if (document.querySelector('p.rd') && document.querySelector('p.rdt') && document.querySelector('li#id'+ document.querySelector('input[name="id"]').value)){
-console.log(document.querySelector('li#id'+ document.querySelector('input[name="id"]').value).innerHTML);
-console.log(document.querySelector('li#id'+ document.querySelector('input[name="id"]').value).getAttribute('qty'));
-      if (document.querySelector('li#id'+ document.querySelector('input[name="id"]').value).innerHTML == 'continue' && parseInt(document.querySelector('li#id'+ document.querySelector('input[name="id"]').value).getAttribute('qty')) < 1){
-        document.querySelector('p.rd').classList.remove('hidden');
-        document.querySelector('p.rdt').classList.remove('hidden');
-      } else {
-        document.querySelector('p.rd').classList.add('hidden');
-        document.querySelector('p.rdt').classList.add('hidden');
-      }
-    }
     if (!this.currentVariant) {
       this.toggleAddButton(true, '', true);
       this.setUnavailable();
@@ -767,6 +756,15 @@ console.log(document.querySelector('li#id'+ document.querySelector('input[name="
       this.updateVariantInput();
       this.renderProductInfo();
       this.updateShareUrl();
+    }
+    if (document.querySelector('p.rd') && document.querySelector('p.rdt') && document.querySelector('li#id'+ document.querySelector('input[name="id"]').value)){
+      if (document.querySelector('li#id'+ document.querySelector('input[name="id"]').value).innerHTML == 'continue' && document.querySelector('li#id'+ document.querySelector('input[name="id"]').value).getAttribute('qty') < 1){
+        document.querySelector('p.rd').classList.remove('hidden');
+        document.querySelector('p.rdt').classList.remove('hidden');
+      } else {
+        document.querySelector('p.rd').classList.add('hidden');
+        document.querySelector('p.rdt').classList.add('hidden');
+      }
     }
   }
 
