@@ -285,5 +285,9 @@
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
+    <!----- YOU MUST INCLUDE THIS STATEMENT OR CRITEO TAGS WILL BREAK ---------->
+    {% include 'criteo-datalayer' %}
+    <!----- YOU MUST INCLUDE THIS STATEMENT OR CRITEO TAGS WILL BREAK ---------->
+
 </body>
 </html>
