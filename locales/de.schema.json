@@ -593,6 +593,10 @@
           "label": "Schaltfläche zum schnellen Hinzufügen aktivieren",
           "info": "Optimal bei Warenkörben des Typs Pop-up oder Einschub."
         },
+        "enable_quick_buy": {
+          "label": "Schaltfläche zum schnellen Hinzufügen aktivieren",
+          "info": "Optimal bei Warenkörben des Typs Pop-up oder Einschub."
+        },
         "columns_desktop": {
           "label": "Anzahl der Spalten auf dem Desktop"
         },
@@ -1278,6 +1282,10 @@
         "show_rating": {
           "label": "Produktbewertung anzeigen",
           "info": "Um eine Bewertung anzuzeigen, musst du eine Produktbewertungs-App hinzufügen. [Mehr Informationen](https://help.shopify.com/manual/online-store/themes/theme-structure/page-types#product-grid-section-settings)"
+        },
+        "enable_quick_buy": {
+          "label": "Schaltfläche zum schnellen Hinzufügen aktivieren",
+          "info": "Optimal bei Warenkörben des Typs Pop-up oder Einschub."
         },
         "enable_quick_buy": {
           "label": "Schaltfläche zum schnellen Hinzufügen aktivieren",

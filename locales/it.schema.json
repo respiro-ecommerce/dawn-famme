@@ -593,6 +593,10 @@
           "label": "Abilita il pulsante di aggiunta rapida",
           "info": "L'ideale in caso di pop up o di tipo di carrello a finestra."
         },
+        "enable_quick_buy": {
+          "label": "Abilita il pulsante di aggiunta rapida",
+          "info": "L'ideale in caso di pop up o di tipo di carrello a finestra."
+        },
         "columns_desktop": {
           "label": "Numero di colonne su desktop"
         },
@@ -1278,6 +1282,10 @@
         "show_rating": {
           "label": "Mostra valutazione del prodotto",
           "info": "Per mostrare una valutazione, aggiungi un'app di valutazione del prodotto. [Maggiori informazioni](https://help.shopify.com/manual/online-store/themes/theme-structure/page-types#product-grid-section-settings)"
+        },
+        "enable_quick_buy": {
+          "label": "Abilita il pulsante di aggiunta rapida",
+          "info": "L'ideale in caso di pop up o di tipo di carrello a finestra."
         },
         "enable_quick_buy": {
           "label": "Abilita il pulsante di aggiunta rapida",

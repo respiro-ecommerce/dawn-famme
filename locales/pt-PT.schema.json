@@ -593,6 +593,10 @@
           "label": "Ativar botão para adicionar rapidamente",
           "info": "Ideal para o tipo de carrinho deslizante ou pop-up."
         },
+        "enable_quick_buy": {
+          "label": "Ativar botão para adicionar rapidamente",
+          "info": "Ideal para o tipo de carrinho deslizante ou pop-up."
+        },
         "columns_desktop": {
           "label": "Número de colunas no ambiente de trabalho"
         },
@@ -1278,6 +1282,10 @@
         "show_rating": {
           "label": "Mostrar classificação do produto",
           "info": "Para mostrar uma classificação, adicione uma aplicação de classificação de produto. [Saber mais](https://help.shopify.com/manual/online-store/themes/theme-structure/page-types#product-grid-section-settings)"
+        },
+        "enable_quick_buy": {
+          "label": "Ativar botão para adicionar rapidamente",
+          "info": "Ideal para o tipo de carrinho deslizante ou pop-up."
         },
         "enable_quick_buy": {
           "label": "Ativar botão para adicionar rapidamente",

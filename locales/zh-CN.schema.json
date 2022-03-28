@@ -593,6 +593,10 @@
           "label": "启用快速添加按钮",
           "info": "通过弹出窗口或抽屉式购物车类型实现优化。"
         },
+        "enable_quick_buy": {
+          "label": "启用快速添加按钮",
+          "info": "通过弹出窗口或抽屉式购物车类型实现优化。"
+        },
         "columns_desktop": {
           "label": "桌面上的列数"
         },
@@ -1278,6 +1282,10 @@
         "show_rating": {
           "label": "显示产品评分",
           "info": "若要显示评分，请添加产品评分应用。[了解详细信息](https://help.shopify.com/manual/online-store/themes/theme-structure/page-types#product-grid-section-settings)"
+        },
+        "enable_quick_buy": {
+          "label": "启用快速添加按钮",
+          "info": "通过弹出窗口或抽屉式购物车类型实现优化。"
         },
         "enable_quick_buy": {
           "label": "启用快速添加按钮",

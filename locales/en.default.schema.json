@@ -643,6 +643,10 @@
           "label": "Enable quick add button",
           "info": "Optimal with popup or drawer cart type."
         },
+        "enable_quick_buy": {
+          "label": "Enable quick add button",
+          "info": "Optimal with popup or drawer cart type."
+        },
         "header_mobile": {
           "content": "Mobile Layout"
         },

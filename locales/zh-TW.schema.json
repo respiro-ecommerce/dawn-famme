@@ -593,6 +593,10 @@
           "label": "啟用「快速新增」按鈕",
           "info": "最適合彈出式視窗或購物車導覽匣類型。"
         },
+        "enable_quick_buy": {
+          "label": "啟用「快速新增」按鈕",
+          "info": "最適合彈出式視窗或購物車導覽匣類型。"
+        },
         "columns_desktop": {
           "label": "桌面版的欄數"
         },
@@ -1278,6 +1282,10 @@
         "show_rating": {
           "label": "顯示產品評等",
           "info": "新增產品評等應用程式，即可顯示評等。[瞭解詳情](https://help.shopify.com/manual/online-store/themes/theme-structure/page-types#product-grid-section-settings)"
+        },
+        "enable_quick_buy": {
+          "label": "啟用「快速新增」按鈕",
+          "info": "最適合彈出式視窗或購物車導覽匣類型。"
         },
         "enable_quick_buy": {
           "label": "啟用「快速新增」按鈕",

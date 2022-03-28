@@ -593,6 +593,10 @@
           "label": "Włącz przycisk szybkiego dodawania",
           "info": "Optymalny dla wózków w wyskakującym okienku lub wysuwanych."
         },
+        "enable_quick_buy": {
+          "label": "Włącz przycisk szybkiego dodawania",
+          "info": "Optymalny dla wózków w wyskakującym okienku lub wysuwanych."
+        },
         "columns_desktop": {
           "label": "Liczba kolumn na komputerze"
         },
@@ -1278,6 +1282,10 @@
         "show_rating": {
           "label": "Pokaż ocenę produktu",
           "info": "Aby wyświetlić ocenę, dodaj aplikację do oceny produktów. [Dowiedz się więcej](https://help.shopify.com/manual/online-store/themes/theme-structure/page-types#product-grid-section-settings)"
+        },
+        "enable_quick_buy": {
+          "label": "Włącz przycisk szybkiego dodawania",
+          "info": "Optymalny dla wózków w wyskakującym okienku lub wysuwanych."
         },
         "enable_quick_buy": {
           "label": "Włącz przycisk szybkiego dodawania",

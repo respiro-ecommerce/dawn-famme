@@ -593,6 +593,10 @@
           "label": "Aktivera knapp för snabb tilläggning",
           "info": "Optimal med varukorg av popup- eller lådtyp."
         },
+        "enable_quick_buy": {
+          "label": "Aktivera knapp för snabb tilläggning",
+          "info": "Optimal med varukorg av popup- eller lådtyp."
+        },
         "columns_desktop": {
           "label": "Antalet kolumner på skrivbordet"
         },
@@ -1278,6 +1282,10 @@
         "show_rating": {
           "label": "Visa produktbetyg",
           "info": "Lägg till en produktbedömningsapp för att visa ett betyg. [Mer information](https://help.shopify.com/manual/online-store/themes/theme-structure/page-types#product-grid-section-settings)"
+        },
+        "enable_quick_buy": {
+          "label": "Aktivera knapp för snabb tilläggning",
+          "info": "Optimal med varukorg av popup- eller lådtyp."
         },
         "enable_quick_buy": {
           "label": "Aktivera knapp för snabb tilläggning",

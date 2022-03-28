@@ -593,6 +593,10 @@
           "label": "Aktivér knap til hurtig tilføjelse",
           "info": "Optimal med indkøbskurv som pop op-vindue eller skuffe."
         },
+        "enable_quick_buy": {
+          "label": "Aktivér knap til hurtig tilføjelse",
+          "info": "Optimal med indkøbskurv som pop op-vindue eller skuffe."
+        },
         "columns_desktop": {
           "label": "Antallet af kolonner på computer"
         },
@@ -1278,6 +1282,10 @@
         "show_rating": {
           "label": "Vis produktbedømmelser",
           "info": "Hvis du vil vise bedømmelser, skal du tilføje en app til produktbedømmelse. [Få mere at vide](https://help.shopify.com/manual/online-store/themes/theme-structure/page-types#product-grid-section-settings)"
+        },
+        "enable_quick_buy": {
+          "label": "Aktivér knap til hurtig tilføjelse",
+          "info": "Optimal med indkøbskurv som pop op-vindue eller skuffe."
         },
         "enable_quick_buy": {
           "label": "Aktivér knap til hurtig tilføjelse",
