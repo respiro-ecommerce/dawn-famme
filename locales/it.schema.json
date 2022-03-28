@@ -593,10 +593,6 @@
           "label": "Abilita il pulsante di aggiunta rapida",
           "info": "L'ideale in caso di pop up o di tipo di carrello a finestra."
         },
-        "enable_quick_buy": {
-          "label": "Abilita il pulsante di aggiunta rapida",
-          "info": "L'ideale in caso di pop up o di tipo di carrello a finestra."
-        },
         "columns_desktop": {
           "label": "Numero di colonne su desktop"
         },
@@ -1287,10 +1283,6 @@
           "label": "Abilita il pulsante di aggiunta rapida",
           "info": "L'ideale in caso di pop up o di tipo di carrello a finestra."
         },
-        "enable_quick_buy": {
-          "label": "Abilita il pulsante di aggiunta rapida",
-          "info": "L'ideale in caso di pop up o di tipo di carrello a finestra."
-        },
         "columns_desktop": {
           "label": "Numero di colonne su desktop"
         },
@@ -1305,19 +1297,6 @@
           "options__2": {
             "label": "2 colonne"
           }
-        },
-        "filter_type": {
-          "label": "Layout dei filtri desktop",
-          "options__1": {
-            "label": "Orizzontale"
-          },
-          "options__2": {
-            "label": "Verticale"
-          },
-          "options__3": {
-            "label": "Finestra"
-          },
-          "info": "Il layout predefinito per dispositivi mobili prevede la finestra."
         }
       }
     },

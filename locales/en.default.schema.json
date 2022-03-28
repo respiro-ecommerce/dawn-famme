@@ -643,10 +643,6 @@
           "label": "Enable quick add button",
           "info": "Optimal with popup or drawer cart type."
         },
-        "enable_quick_buy": {
-          "label": "Enable quick add button",
-          "info": "Optimal with popup or drawer cart type."
-        },
         "header_mobile": {
           "content": "Mobile Layout"
         },
@@ -1369,19 +1365,6 @@
         "enable_filtering": {
           "label": "Enable filtering",
           "info": "Customize [filters](/admin/menus)"
-        },
-        "filter_type": {
-          "label": "Desktop filter layout",
-          "options__1": {
-            "label": "Horizontal"
-          },
-          "options__2": {
-            "label": "Vertical"
-          },
-          "options__3": {
-            "label": "Drawer"
-          },
-          "info": "Drawer is the default mobile layout."
         },
         "enable_sorting": {
           "label": "Enable sorting"

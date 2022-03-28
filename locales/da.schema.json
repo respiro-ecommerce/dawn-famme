@@ -593,10 +593,6 @@
           "label": "Aktivér knap til hurtig tilføjelse",
           "info": "Optimal med indkøbskurv som pop op-vindue eller skuffe."
         },
-        "enable_quick_buy": {
-          "label": "Aktivér knap til hurtig tilføjelse",
-          "info": "Optimal med indkøbskurv som pop op-vindue eller skuffe."
-        },
         "columns_desktop": {
           "label": "Antallet af kolonner på computer"
         },
@@ -1287,10 +1283,6 @@
           "label": "Aktivér knap til hurtig tilføjelse",
           "info": "Optimal med indkøbskurv som pop op-vindue eller skuffe."
         },
-        "enable_quick_buy": {
-          "label": "Aktivér knap til hurtig tilføjelse",
-          "info": "Optimal med indkøbskurv som pop op-vindue eller skuffe."
-        },
         "columns_desktop": {
           "label": "Antallet af kolonner på computer"
         },
@@ -1305,19 +1297,6 @@
           "options__2": {
             "label": "2 kolonner"
           }
-        },
-        "filter_type": {
-          "label": "Layout til computerfilter",
-          "options__1": {
-            "label": "Vandret"
-          },
-          "options__2": {
-            "label": "Lodret"
-          },
-          "options__3": {
-            "label": "Skuffe"
-          },
-          "info": "Skuffe er standardlayoutet til mobil."
         }
       }
     },

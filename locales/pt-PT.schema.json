@@ -593,10 +593,6 @@
           "label": "Ativar botão para adicionar rapidamente",
           "info": "Ideal para o tipo de carrinho deslizante ou pop-up."
         },
-        "enable_quick_buy": {
-          "label": "Ativar botão para adicionar rapidamente",
-          "info": "Ideal para o tipo de carrinho deslizante ou pop-up."
-        },
         "columns_desktop": {
           "label": "Número de colunas no ambiente de trabalho"
         },
@@ -1287,10 +1283,6 @@
           "label": "Ativar botão para adicionar rapidamente",
           "info": "Ideal para o tipo de carrinho deslizante ou pop-up."
         },
-        "enable_quick_buy": {
-          "label": "Ativar botão para adicionar rapidamente",
-          "info": "Ideal para o tipo de carrinho deslizante ou pop-up."
-        },
         "columns_desktop": {
           "label": "Número de colunas no ambiente de trabalho"
         },
@@ -1305,19 +1297,6 @@
           "options__2": {
             "label": "2 colunas"
           }
-        },
-        "filter_type": {
-          "label": "Esquema de filtro para desktop",
-          "options__1": {
-            "label": "Horizontal"
-          },
-          "options__2": {
-            "label": "Vertical"
-          },
-          "options__3": {
-            "label": "Gaveta"
-          },
-          "info": "A gaveta é o esquema padrão para dispositivos móveis."
         }
       }
     },

@@ -593,10 +593,6 @@
           "label": "Aktivera knapp för snabb tilläggning",
           "info": "Optimal med varukorg av popup- eller lådtyp."
         },
-        "enable_quick_buy": {
-          "label": "Aktivera knapp för snabb tilläggning",
-          "info": "Optimal med varukorg av popup- eller lådtyp."
-        },
         "columns_desktop": {
           "label": "Antalet kolumner på skrivbordet"
         },
@@ -1287,10 +1283,6 @@
           "label": "Aktivera knapp för snabb tilläggning",
           "info": "Optimal med varukorg av popup- eller lådtyp."
         },
-        "enable_quick_buy": {
-          "label": "Aktivera knapp för snabb tilläggning",
-          "info": "Optimal med varukorg av popup- eller lådtyp."
-        },
         "columns_desktop": {
           "label": "Antalet kolumner på skrivbordet"
         },
@@ -1305,19 +1297,6 @@
           "options__2": {
             "label": "2 kolumner"
           }
-        },
-        "filter_type": {
-          "label": "Filterlayout för dator",
-          "options__1": {
-            "label": "Liggande"
-          },
-          "options__2": {
-            "label": "Stående"
-          },
-          "options__3": {
-            "label": "Låda"
-          },
-          "info": "Låda är standardlayouten för mobil."
         }
       }
     },

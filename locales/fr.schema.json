@@ -593,10 +593,6 @@
           "label": "Activer le bouton d'ajout rapide",
           "info": "Optimal avec un type de panier pop-up ou à tiroir."
         },
-        "enable_quick_buy": {
-          "label": "Activer le bouton d'ajout rapide",
-          "info": "Optimal avec un type de panier pop-up ou à tiroir."
-        },
         "columns_desktop": {
           "label": "Nombre de colonnes sur ordinateur"
         },
@@ -1287,10 +1283,6 @@
           "label": "Activer le bouton d'ajout rapide",
           "info": "Optimal avec un type de panier pop-up ou à tiroir."
         },
-        "enable_quick_buy": {
-          "label": "Activer le bouton d'ajout rapide",
-          "info": "Optimal avec un type de panier pop-up ou à tiroir."
-        },
         "columns_desktop": {
           "label": "Nombre de colonnes sur ordinateur"
         },
@@ -1305,19 +1297,6 @@
           "options__2": {
             "label": "2 colonnes"
           }
-        },
-        "filter_type": {
-          "label": "Mise en page des filtres sur ordinateur",
-          "options__1": {
-            "label": "Horizontale"
-          },
-          "options__2": {
-            "label": "Verticale"
-          },
-          "options__3": {
-            "label": "Tiroir"
-          },
-          "info": "Le tiroir correspond à la mise en page par défaut sur les appareils mobiles."
         }
       }
     },
