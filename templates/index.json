@@ -133,7 +133,7 @@
     "16463038447a5cbd60": {
       "type": "featured-collection",
       "settings": {
-        "title": "Lagersalg ut Mars - Vi flytter lager til nytt og større lager",
+        "title": "Lagersalg til 7 April - Vi flytter lager til nytt og større lager",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
@@ -150,6 +150,7 @@
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
+        "enable_quick_add": false,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 36,
@@ -268,6 +269,7 @@
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
+        "enable_quick_add": false,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 36,
