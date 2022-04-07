@@ -5,6 +5,7 @@
       "blocks": {
         "16466469724a857da6-0": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Image banner",
             "heading_size": "h2"
@@ -12,6 +13,7 @@
         },
         "16466469724a857da6-1": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "Give customers details about the banner image(s) or content on the template.",
             "text_style": "body"
@@ -19,6 +21,7 @@
         },
         "16466469724a857da6-2": {
           "type": "buttons",
+          "disabled": true,
           "settings": {
             "button_label_1": "Button label",
             "button_link_1": "",
@@ -35,12 +38,13 @@
         "16466469724a857da6-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/lagertomming-banner-desktop-2_b4937a36-7474-473d-a441-cf90e9bd7610.jpg",
-        "image_url": "\/collections\/must-haves",
+        "image": "shopify:\/\/shop_images\/varsalg-banner-brandjacking-dekstop.jpg",
+        "image_m": "shopify:\/\/shop_images\/varsalg-banner-brandjacking-mobil.jpg",
+        "image_url": "shopify:\/\/collections\/must-haves",
         "image_overlay_opacity": 0,
         "image2_url": "",
         "image_height": "small",
-        "adapt_height_first_image": true,
+        "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",
@@ -59,9 +63,10 @@
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
+        "enable_quick_add": false,
         "enable_filtering": true,
+        "filter_type": "horizontal",
         "enable_sorting": true,
-        "collapse_on_larger_devices": false,
         "columns_mobile": "2",
         "padding_top": 36,
         "padding_bottom": 36
