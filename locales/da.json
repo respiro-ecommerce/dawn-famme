@@ -193,7 +193,8 @@
       "filter_selected_accessibility": "{{ type }} ({{ count }} filtre er valgt)",
       "show_more": "Vis mere",
       "show_less": "Vis mindre"
-    }
+    },
+    "shipping": "Estimeret afsendelsesdato:"
   },
   "templates": {
     "search": {
