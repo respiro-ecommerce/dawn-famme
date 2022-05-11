@@ -32,25 +32,6 @@
         "radius": 100
       }
     },
-    "1638543882705deea9": {
-      "type": "image-banner",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/lagertomming-sko-banner-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/lagertomming-sko-banner-mobile.jpg",
-        "image_url": "shopify:\/\/collections\/must-haves",
-        "image_overlay_opacity": 0,
-        "image2_url": "",
-        "image_height": "small",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
     "16311853465cfb015e": {
       "type": "image-banner",
       "settings": {
@@ -301,7 +282,6 @@
   "order": [
     "1647875727c189611d",
     "1629993086223521d8",
-    "1638543882705deea9",
     "16311853465cfb015e",
     "16463038447a5cbd60",
     "164138293938171117",
