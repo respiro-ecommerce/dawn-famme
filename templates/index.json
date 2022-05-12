@@ -99,6 +99,7 @@
     },
     "164612698482e306bb": {
       "type": "image-banner",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/acid-scrunch-tights-i-farger_e7f7b2f6-fc4a-4364-b1ad-61b1b4936c3d.jpg",
         "image_m": "shopify:\/\/shop_images\/acid-scrunch-tights-i-farger_1.jpg",
@@ -118,6 +119,7 @@
     },
     "1631094390263d97d1": {
       "type": "image-banner",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/peachy-scrunch-banner-desktop.jpg",
         "image_m": "shopify:\/\/shop_images\/peachy-scrunch-banner-mobil.jpg",
