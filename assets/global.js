@@ -755,17 +755,16 @@ class VariantSelects extends HTMLElement {
     this.toggleAddButton(true, '', false);
     this.updatePickupAvailability();
     this.removeErrorMessage();
-    if (!!this.currentVariant) {
+    if (!this.currentVariant) {
+      this.toggleAddButton(true, '', true);
+      this.setUnavailable();
+    } else {
       this.updateMedia();
       this.updateURL();
       this.updateVariantInput();
-      //this.renderProductInfo();
+      this.renderProductInfo();
       this.updateShareUrl();
-    } else {
-      this.toggleAddButton(true, '', true);
-      this.setUnavailable();
     }
-    this.renderProductInfo();
     if (document.querySelector('p.rd') && document.querySelector('p.rdt') && document.querySelector('li#id'+ document.querySelector('input[name="id"]').value)){
       if (document.querySelector('li#id'+ document.querySelector('input[name="id"]').value).innerHTML == 'continue' && document.querySelector('li#id'+ document.querySelector('input[name="id"]').value).getAttribute('qty') < 1){
         document.querySelector('p.rd').classList.remove('hidden');
