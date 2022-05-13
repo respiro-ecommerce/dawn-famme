@@ -32,8 +32,28 @@
         "radius": 100
       }
     },
+    "16311853465cfb015e": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/loungewear-salg-banner-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/loungewear-salg-banner-mobil.jpg",
+        "image_url": "shopify:\/\/collections\/loungewear",
+        "image_overlay_opacity": 0,
+        "image2_url": "",
+        "image_height": "large",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "164138293938171117": {
       "type": "image-banner",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/elevate-wave-leggings2-banner-desktop.jpg",
         "image_m": "shopify:\/\/shop_images\/elevate-wave-leggings2-banner-mobil.jpg",
@@ -76,25 +96,6 @@
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "16311853465cfb015e": {
-      "type": "image-banner",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/loungewear-salg-banner-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/loungewear-salg-banner-mobil.jpg",
-        "image_url": "shopify:\/\/collections\/loungewear",
-        "image_overlay_opacity": 0,
-        "image2_url": "",
-        "image_height": "large",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
       }
     },
     "164612698482e306bb": {
@@ -284,9 +285,9 @@
   "order": [
     "1647875727c189611d",
     "1629993086223521d8",
+    "16311853465cfb015e",
     "164138293938171117",
     "16463038447a5cbd60",
-    "16311853465cfb015e",
     "164612698482e306bb",
     "1631094390263d97d1",
     "1626547460af5b6361",
