@@ -3,12 +3,12 @@
     "1647875727c189611d": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/workout-essentials-banner-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/workout-essentials-banner-mobil_7661337d-27b5-47cc-8426-70a2be46781d.jpg",
-        "image_url": "shopify:\/\/collections\/bestsellers",
+        "image": "shopify:\/\/shop_images\/17-mai-banner-2.jpg",
+        "image_m": "shopify:\/\/shop_images\/17-mai-banner-2-mobil.jpg",
+        "image_url": "shopify:\/\/collections\/sale",
         "image_overlay_opacity": 0,
         "image2_url": "",
-        "image_height": "small",
+        "image_height": "large",
         "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",
         "show_text_box": true,
@@ -55,8 +55,6 @@
       "type": "image-banner",
       "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/elevate-wave-leggings2-banner-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/elevate-wave-leggings2-banner-mobil.jpg",
         "image_url": "shopify:\/\/products\/elevate-wave-leggings-2",
         "image_overlay_opacity": 0,
         "image2_url": "",
