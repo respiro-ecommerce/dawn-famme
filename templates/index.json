@@ -77,7 +77,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "sale",
+        "collection": "bestsellers",
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
@@ -134,33 +134,6 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
-      }
-    },
-    "1626547460af5b6361": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Bestselgere",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "bestsellers",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "background-1",
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "163117812908a522c8": {
@@ -288,7 +261,6 @@
     "16463038447a5cbd60",
     "164612698482e306bb",
     "1631094390263d97d1",
-    "1626547460af5b6361",
     "163117812908a522c8",
     "16252134879571dabc",
     "1629157352b193f90f",
