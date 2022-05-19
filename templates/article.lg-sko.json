@@ -2,6 +2,7 @@
   "sections": {
     "1646394963e3b2a1bf": {
       "type": "image-banner",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/lagertomming-sko-banner-desktop.jpg",
         "image_m": "shopify:\/\/shop_images\/lagertomming-sko-banner-mobile.jpg",
