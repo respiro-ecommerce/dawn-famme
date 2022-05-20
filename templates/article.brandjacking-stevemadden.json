@@ -3,8 +3,8 @@
     "163454564855e20815": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Brandjacking-banner-hoka-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/Brandjacking-banner-hoka-mobil.jpg",
+        "image": "shopify:\/\/shop_images\/steve-madden-banner-dekstop.jpg",
+        "image_m": "shopify:\/\/shop_images\/steve-madden-banners-mobil.jpg",
         "image_url": "shopify:\/\/collections\/hoka",
         "image_overlay_opacity": 0,
         "image2_url": "",
@@ -60,13 +60,16 @@
       ],
       "settings": {
         "title": "Fri frakt & retur, 100 dagers åpent kjøp",
+        "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
+        "columns_desktop": 3,
         "column_alignment": "left",
         "background_style": "secondary",
         "button_label": "Se alt vi anbefaler til Hoka fans!",
         "button_link": "shopify:\/\/collections\/hoka",
         "color_scheme": "background-1",
+        "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
