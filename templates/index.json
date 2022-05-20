@@ -35,8 +35,8 @@
     "16311853465cfb015e": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/loungewear-salg-banner-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/loungewear-salg-banner-mobil.jpg",
+        "image": "shopify:\/\/shop_images\/loungewear-banners-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/loungewear-banners-mobil.jpg",
         "image_url": "shopify:\/\/collections\/loungewear",
         "image_overlay_opacity": 0,
         "image2_url": "",
