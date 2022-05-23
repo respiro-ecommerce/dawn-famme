@@ -1,11 +1,11 @@
 {
   "sections": {
-    "1647875727c189611d": {
+    "164612698482e306bb": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/vortex-banner-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/vortex-banner-mobil.jpg",
-        "image_url": "shopify:\/\/collections\/bestsellers",
+        "image": "shopify:\/\/shop_images\/Ribbed-collection-banner-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/Ribbed-collection-banner-mobil.jpg",
+        "image_url": "shopify:\/\/collections\/ribbed",
         "image_overlay_opacity": 0,
         "image2_url": "",
         "image_height": "large",
@@ -32,6 +32,25 @@
         "radius": 100
       }
     },
+    "1647875727c189611d": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/vortex-banner-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/vortex-banner-mobil.jpg",
+        "image_url": "shopify:\/\/collections\/bestsellers",
+        "image_overlay_opacity": 0,
+        "image2_url": "",
+        "image_height": "large",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "16311853465cfb015e": {
       "type": "image-banner",
       "settings": {
@@ -56,25 +75,6 @@
       "disabled": true,
       "settings": {
         "image_url": "shopify:\/\/products\/elevate-wave-leggings-2",
-        "image_overlay_opacity": 0,
-        "image2_url": "",
-        "image_height": "large",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
-    "164612698482e306bb": {
-      "type": "image-banner",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Ribbed-collection-banner-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/Ribbed-collection-banner-mobil.jpg",
-        "image_url": "shopify:\/\/collections\/ribbed",
         "image_overlay_opacity": 0,
         "image2_url": "",
         "image_height": "large",
@@ -252,11 +252,11 @@
     }
   },
   "order": [
-    "1647875727c189611d",
+    "164612698482e306bb",
     "1629993086223521d8",
+    "1647875727c189611d",
     "16311853465cfb015e",
     "164138293938171117",
-    "164612698482e306bb",
     "16463038447a5cbd60",
     "1631094390263d97d1",
     "163117812908a522c8",
