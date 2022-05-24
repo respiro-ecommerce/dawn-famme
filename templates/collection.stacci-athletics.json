@@ -38,11 +38,11 @@
         "16466469724a857da6-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/varsalg-banner-brandjacking-dekstop.jpg",
-        "image_m": "shopify:\/\/shop_images\/varsalg-banner-brandjacking-mobil.jpg",
-        "image_url": "shopify:\/\/collections\/must-haves",
+        "image": "shopify:\/\/shop_images\/brandjacking-Stacci.jpg",
+        "image_m": "shopify:\/\/shop_images\/brandjacking-Stacci-mobil.jpg",
+        "image_url": "shopify:\/\/collections\/stacci-athletics",
         "image_overlay_opacity": 0,
-        "image2_url": "",
+        "image2_url": "shopify:\/\/collections\/stacci-athletics",
         "image_height": "small",
         "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",
