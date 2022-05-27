@@ -3,9 +3,9 @@
     "163454564855e20815": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/steve-madden-banner-dekstop.jpg",
-        "image_m": "shopify:\/\/shop_images\/steve-madden-banners-mobil.jpg",
-        "image_url": "shopify:\/\/collections\/steve-madden",
+        "image": "shopify:\/\/shop_images\/newbalance-banner-dekstop.jpg",
+        "image_m": "shopify:\/\/shop_images\/newbalance-banners-mobil.jpg",
+        "image_url": "shopify:\/\/collections\/new-balance",
         "image_overlay_opacity": 0,
         "image2_url": "",
         "image_height": "small",
@@ -66,8 +66,8 @@
         "columns_desktop": 3,
         "column_alignment": "left",
         "background_style": "secondary",
-        "button_label": "Se alt vi anbefaler til Steve Madden fans!",
-        "button_link": "shopify:\/\/collections\/steve-madden",
+        "button_label": "Se alt vi anbefaler til New Balance fans!",
+        "button_link": "shopify:\/\/collections\/new-balance",
         "color_scheme": "background-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
