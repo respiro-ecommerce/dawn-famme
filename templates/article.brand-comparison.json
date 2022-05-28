@@ -3,8 +3,8 @@
     "163454564855e20815": {
       "type": "image-banner",
       "settings": {
-        "image": "",
-        "image_m": "",
+        "image": "{{ article.metafields.my_fields.brand_comparison_image_desktop.value }}",
+        "image_m": "{{ article.metafields.my_fields.brand_comparison_image_mobile.value }}",
         "image_url": "shopify:\/\/collections\/new-balance",
         "image_overlay_opacity": 0,
         "image2_url": "",
