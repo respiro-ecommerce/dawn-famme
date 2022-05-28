@@ -19,62 +19,6 @@
         "show_text_below": true
       }
     },
-    "163438960122f1937a": {
-      "type": "multicolumn",
-      "blocks": {
-        "163438960122f1937a-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/gymshark-side-banner.jpg",
-            "title": "Best på treningsklær",
-            "text": "<p>Vi har treningsklær i mange farger, lengder og passformer. Vi har løpetights med og uten scrunch og løpetights med og uten mønster. Vi har også kompresjonstights perfekt til styrketrening og løpeturer. <\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "163438960122f1937a-2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Brandjacking-outwear.png",
-            "title": "Bredt utvalg",
-            "text": "<p>Hos Famme har du tights, treningstopper, løpejakker, sko og mye mer! Vi har <a href=\"\/products\/endorphin-rx1-shoes\" target=\"_blank\" title=\"\/products\/endorphin-rx1-shoes\">behagelige sko med god støtte<\/a>, hverdagsklær og annen treningsklærsom er spesielt laget for de som er glad i å trene. <\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "163438960122f1937a-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/vippsklarna.jpg",
-            "title": "Rask levering + gratis retur",
-            "text": "<p>Famme tilbyr hjemlevering samme dag med Porterbuddy. Hos oss kan du kjøpe <strong>fraktfritt <\/strong>og bestiller du i dag har du også <strong>gratis retur<\/strong>! Du velger mellom Posten, Helthjem eller samme dags levering med Porterbuddy!<\/p><p><\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "163438960122f1937a-0",
-        "163438960122f1937a-2",
-        "163438960122f1937a-1"
-      ],
-      "settings": {
-        "title": "Fri frakt & retur, 100 dagers åpent kjøp",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "secondary",
-        "button_label": "Se alt vi anbefaler til New Balance fans!",
-        "button_link": "shopify:\/\/collections\/new-balance",
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "main": {
       "type": "main-article",
       "blocks": {
