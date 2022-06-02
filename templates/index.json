@@ -54,12 +54,12 @@
     "16311853465cfb015e": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/loungewear-banner-desktop_0cfc4e2c-8a85-480d-8e68-c2bb9652e62f.jpg",
-        "image_m": "shopify:\/\/shop_images\/loungewear-banner-mobil_bef81d16-fc07-4766-84fb-fd48e248a0aa.jpg",
+        "image": "shopify:\/\/shop_images\/Loungewear-banner-ny-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/Loungewear-banner-ny-mobil.jpg",
         "image_url": "shopify:\/\/collections\/loungewear",
         "image_overlay_opacity": 0,
         "image2_url": "",
-        "image_height": "small",
+        "image_height": "large",
         "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",
         "show_text_box": true,
@@ -137,12 +137,12 @@
     "163117812908a522c8": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/ny-outdoor-banner-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/outdoor-banner-mobil.jpg",
+        "image": "shopify:\/\/shop_images\/Outdoor-banner-ny-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/Outdoor-banner-ny-mobil.jpg",
         "image_url": "shopify:\/\/collections\/turklaer",
         "image_overlay_opacity": 0,
         "image2_url": "",
-        "image_height": "small",
+        "image_height": "large",
         "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",
         "show_text_box": true,
@@ -156,12 +156,12 @@
     "16252134879571dabc": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/shop-jeans-banner-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/shop-jeans-banner-mobil.jpg",
+        "image": "shopify:\/\/shop_images\/jeans-banner-ny-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/jeans-banner-ny-mobil.jpg",
         "image_url": "shopify:\/\/collections\/jeans",
         "image_overlay_opacity": 0,
         "image2_url": "",
-        "image_height": "small",
+        "image_height": "large",
         "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",
         "show_text_box": true,
