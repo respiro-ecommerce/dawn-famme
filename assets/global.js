@@ -758,7 +758,9 @@ class VariantSelects extends HTMLElement {
     if (!this.currentVariant) {
       this.toggleAddButton(true, '', true);
       this.setUnavailable();
+      if (document.querySelector('a.klaviyo-bis-trigger')){document.querySelector('a.klaviyo-bis-trigger').style.display = 'block';}
     } else {
+      if (document.querySelector('a.klaviyo-bis-trigger')){document.querySelector('a.klaviyo-bis-trigger').style.display = 'none';}
       this.updateMedia();
       this.updateURL();
       this.updateVariantInput();
