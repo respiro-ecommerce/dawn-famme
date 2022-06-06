@@ -1,5 +1,18 @@
+{%- if section.settings.imageno != blank and request.locale.iso_code == 'nb' -%}
+  {%- assign img = section.settings.imageno -%}
+  {%- if section.settings.image_nom != blank -%}{%- assign imgm = section.settings.image_nom -%}{%- endif -%}
+{%- else -%}
+  {%- assign img = section.settings.image %}
+  {%- if section.settings.image_m != blank -%}{%- assign imgm = section.settings.image_m -%}{%- endif -%}
+{%- endif -%}
+{%- if section.settings.image2no != blank and request.locale.iso_code == 'nb' -%}
+  {%- assign img2 = section.settings.image2no -%}
+  {%- if section.settings.image2_nom != blank -%}{%- assign img2m = section.settings.image2_nom -%}{%- endif -%}
+{%- else -%}
+  {%- assign img2 = section.settings.image_2 -%}
+  {%- if section.settings.image_m != blank -%}{%- assign img2m = section.settings.image_2m -%}{%- endif -%}
+{%- endif -%}
 {{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
-
 {%- if section.settings.adapt_height_first_image and section.settings.image != blank -%}
   {%- style -%}
   @media screen and (max-width: 749px) {
