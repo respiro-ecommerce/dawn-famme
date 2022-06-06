@@ -10,7 +10,7 @@
   {%- if section.settings.image2_nom != blank -%}{%- assign img2m = section.settings.image2_nom -%}{%- endif -%}
 {%- else -%}
   {%- assign img2 = section.settings.image_2 -%}
-  {%- if section.settings.image_m != blank -%}{%- assign img2m = section.settings.image_2m -%}{%- endif -%}
+  {%- if section.settings.image_m != blank -%}{%- assign img2m = section.settings.image2_m -%}{%- endif -%}
 {%- endif -%}
 {{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
 {%- if section.settings.adapt_height_first_image and section.settings.image != blank -%}
