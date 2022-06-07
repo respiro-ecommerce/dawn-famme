@@ -1,0 +1,30 @@
+{
+  "sections": {
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 20,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_filtering": true,
+        "enable_sorting": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": true,
+        "color_scheme": "background-1"
+      }
+    }
+  },
+  "order": [
+    "product-grid",
+    "banner"
+  ]
+}
