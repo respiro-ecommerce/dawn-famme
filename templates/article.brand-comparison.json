@@ -3,6 +3,10 @@
     "163454564855e20815": {
       "type": "image-banner",
       "settings": {
+        "image": "shopify:\/\/shop_images\/EN-brand-comparison-banner-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/EN-brand-comparison-banner-mobil_jpg.jpg",
+        "imageno": "shopify:\/\/shop_images\/NO-brand-comparison-banner-desktop.jpg",
+        "image_nom": "shopify:\/\/shop_images\/NO-brand-comparison-banner-mobil.jpg",
         "image_url": "shopify:\/\/collections\/new-balance",
         "image_overlay_opacity": 0,
         "image2_url": "",
