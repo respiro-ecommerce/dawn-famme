@@ -87,7 +87,7 @@
           "settings": {
             "heading": "Toll",
             "icon": "check_mark",
-            "row_content": "<p>Det er ingen toll eller ekstra kostnader når du bestiller fra oss og du får fri frakt når du bestiller varer for over 400 kroner. Ved kjøp under dette beløpet vil det påløpe en fraktkostnad avhengig av leveringsalternativ du ønsker å benytte deg av. <\/p>",
+            "row_content": "<p>Det er ingen toll eller ekstra kostnader når du bestiller fra oss og du får fri frakt når du bestiller varer for over 400 kroner. Ved kjøp under dette beløpet vil det påløpe en fraktkostnad avhengig av leveringsalternativet du ønsker å benytte deg av. <\/p>",
             "page": ""
           }
         }
