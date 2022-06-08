@@ -3,10 +3,12 @@
     "1653303341b702d9de": {
       "type": "image-banner",
       "settings": {
+        "image": "shopify:\/\/shop_images\/ribbed-kolleksjon-banner-large-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/ribbed-kolleksjon-banner-large-mobil.jpg",
         "image_url": "",
         "image_overlay_opacity": 0,
         "image2_url": "",
-        "image_height": "medium",
+        "image_height": "large",
         "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",
         "show_text_box": true,
@@ -20,10 +22,134 @@
     "16533034072f022e1d": {
       "type": "image-banner",
       "settings": {
+        "image": "shopify:\/\/shop_images\/ribbed-kolleksjon-tekst-2-banner-large-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/ribbed-kolleksjon-tekst-2-banner-large-mobil_15656b5d-1271-43a5-997b-2d109cc8a11a.jpg",
         "image_url": "",
         "image_overlay_opacity": 0,
         "image2_url": "",
-        "image_height": "medium",
+        "image_height": "small",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "16546828983a2aef66": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/ribbed-kolleksjon-banner-desktop-4_dff1c5d0-b259-44a6-b5e7-8dee7540c72f.jpg",
+        "image_m": "shopify:\/\/shop_images\/ribbed-kolleksjon-banner-mobil-4.jpg",
+        "image_url": "",
+        "image_overlay_opacity": 0,
+        "image2_url": "",
+        "image_height": "small",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "1654682946e73d02cd": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/ribbed-kolleksjon-banner-desktop-4.jpg",
+        "image_m": "shopify:\/\/shop_images\/ribbed-kolleksjon-banner-mobil-5.jpg",
+        "image_url": "",
+        "image_overlay_opacity": 0,
+        "image2_url": "",
+        "image_height": "large",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "1654682951c7a5f9bd": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "ribbed",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "16546831172b58a65b": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/ribbed-kolleksjon-banner-desktop-7_d8dabfdc-2dff-4aaf-8561-fbdeb5e4f810.jpg",
+        "image_m": "shopify:\/\/shop_images\/ribbed-kolleksjon-banner-mobil-6.jpg",
+        "image_url": "",
+        "image_overlay_opacity": 0,
+        "image2_url": "",
+        "image_height": "large",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "16546831605b7ab647": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/ribbed-kolleksjon-tekst-2-banner-large-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/ribbed-kolleksjon-tekst-2-banner-large-mobil_15656b5d-1271-43a5-997b-2d109cc8a11a.jpg",
+        "image_url": "",
+        "image_overlay_opacity": 0,
+        "image2_url": "",
+        "image_height": "small",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "1654683195d38303ec": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/ribbed-kolleksjon-banner-desktop-7.jpg",
+        "image_m": "shopify:\/\/shop_images\/ribbed-kolleksjon-banner-mobil-7.jpg",
+        "image_url": "",
+        "image_overlay_opacity": 0,
+        "image2_url": "",
+        "image_height": "large",
         "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",
         "show_text_box": true,
@@ -64,6 +190,12 @@
   "order": [
     "1653303341b702d9de",
     "16533034072f022e1d",
+    "16546828983a2aef66",
+    "1654682946e73d02cd",
+    "1654682951c7a5f9bd",
+    "16546831172b58a65b",
+    "16546831605b7ab647",
+    "1654683195d38303ec",
     "product-grid",
     "banner"
   ]
