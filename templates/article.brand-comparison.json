@@ -64,15 +64,6 @@
             "page": ""
           }
         },
-        "1654670636b4de431f-2": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Frakt & levering",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": "frakt"
-          }
-        },
         "1654670636b4de431f-3": {
           "type": "collapsible_row",
           "settings": {
@@ -80,6 +71,15 @@
             "icon": "check_mark",
             "row_content": "<p>I enkelte perioder har vi salg på deler av sortimentet - følg med! Følg oss på <a href=\"https:\/\/www.instagram.com\/famme\/\" target=\"_blank\" title=\"https:\/\/www.instagram.com\/famme\/\">Instagram <\/a>eller meld deg på vårt nyhetsbrev for å få oppdatering om eventuelle salg og tilbud hos oss.<\/p>",
             "page": ""
+          }
+        },
+        "1654670636b4de431f-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Frakt & levering",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": "frakt"
           }
         },
         "1654670636b4de431f-1": {
@@ -94,8 +94,8 @@
       },
       "block_order": [
         "1654670636b4de431f-0",
-        "1654670636b4de431f-2",
         "1654670636b4de431f-3",
+        "1654670636b4de431f-2",
         "1654670636b4de431f-1"
       ],
       "settings": {
