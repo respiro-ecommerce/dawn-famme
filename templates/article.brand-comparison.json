@@ -3,9 +3,11 @@
     "163454564855e20815": {
       "type": "image-banner",
       "settings": {
-        "image": "{{ article.metafields.my_fields[\"brand_comparison_image_desktop\"].value }}",
-        "image_m": "{{ article.metafields.my_fields[\"brand_comparison_image_mobile\"].value }}",
-        "image_url": "shopify:\/\/collections\/new-balance",
+        "image": "shopify:\/\/shop_images\/EN-brand-comparison-banner-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/EN-brand-comparison-banner-mobil_jpg.jpg",
+        "imageno": "shopify:\/\/shop_images\/NO-brand-comparison-banner-desktop.jpg",
+        "image_nom": "shopify:\/\/shop_images\/NO-brand-comparison-banner-mobil.jpg",
+        "image_url": "shopify:\/\/collections\/bestsellers",
         "image_overlay_opacity": 0,
         "image2_url": "",
         "image_height": "small",
@@ -36,6 +38,7 @@
         },
         "featured_image": {
           "type": "featured_image",
+          "disabled": true,
           "settings": {
             "image_height": "adapt"
           }
@@ -48,10 +51,72 @@
       ],
       "settings": {
       }
+    },
+    "1654670636a3f38c10": {
+      "type": "collapsible-content",
+      "blocks": {
+        "1654670636b4de431f-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Rabattkode",
+            "icon": "check_mark",
+            "row_content": "<p>Er du ny kunde hos oss? Vi ønsker alltid å tilby våre kunder gode priser og rabatter. Som ny kunde kan du bruke rabattkoden du finner <a href=\"\/pages\/rabattkode-pa-famme-no\" title=\"\/pages\/rabattkode-pa-famme-no\">her<\/a>. Rabattkoden fungerer på allerede rabatterere produkter.<\/p>",
+            "page": ""
+          }
+        },
+        "1654670636b4de431f-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Salg & tilbud",
+            "icon": "check_mark",
+            "row_content": "<p>I enkelte perioder har vi salg på deler av sortimentet - følg med! Følg oss på <a href=\"https:\/\/www.instagram.com\/famme\/\" target=\"_blank\" title=\"https:\/\/www.instagram.com\/famme\/\">Instagram <\/a>eller meld deg på vårt nyhetsbrev for å få oppdatering om eventuelle salg og tilbud hos oss.<\/p>",
+            "page": ""
+          }
+        },
+        "1654670636b4de431f-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Frakt & levering",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": "frakt"
+          }
+        },
+        "1654670636b4de431f-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Toll",
+            "icon": "check_mark",
+            "row_content": "<p>Det er ingen toll eller ekstra kostnader når du bestiller fra oss og du får fri frakt når du bestiller varer for over 400 kroner. Ved kjøp under dette beløpet vil det påløpe en fraktkostnad avhengig av leveringsalternativet du ønsker å benytte deg av. <\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "1654670636b4de431f-0",
+        "1654670636b4de431f-3",
+        "1654670636b4de431f-2",
+        "1654670636b4de431f-1"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "FAQ",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "163454564855e20815",
-    "main"
+    "main",
+    "1654670636a3f38c10"
   ]
 }

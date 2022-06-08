@@ -10,7 +10,7 @@
     "type_header_font": "roboto_n4",
     "type_body_font": "roboto_n4",
     "page_width": 1400,
-    "spacing_sections": 8,
+    "spacing_sections": 4,
     "sale_badge_color_scheme": "accent-2",
     "social_facebook_link": "https:\/\/www.facebook.com\/fammesportswear",
     "social_pinterest_link": "https:\/\/no.pinterest.com\/fammesportswear\/",
@@ -52,6 +52,7 @@
           "logo_width": 120,
           "logo_position": "middle-left",
           "menu": "long-horizontal-menu",
+          "menu_type_desktop": "dropdown",
           "show_line_separator": true,
           "enable_sticky_header": true,
           "margin_bottom": 0

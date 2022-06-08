@@ -1,11 +1,11 @@
 {
   "sections": {
-    "164612698482e306bb": {
+    "1654610090b599dcf0": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Ribbed-collection-banner-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/Ribbed-collection-banner-mobil.jpg",
-        "image_url": "shopify:\/\/collections\/ribbed",
+        "image": "shopify:\/\/shop_images\/sommer-banner-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/sommer-banner-mobil.jpg",
+        "image_url": "shopify:\/\/collections\/summer",
         "image_overlay_opacity": 0,
         "image2_url": "",
         "image_height": "large",
@@ -30,6 +30,25 @@
         "padx": 10,
         "pady": 7,
         "radius": 100
+      }
+    },
+    "164612698482e306bb": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Ribbed-collection-banner-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/Ribbed-collection-banner-mobil.jpg",
+        "image_url": "shopify:\/\/collections\/ribbed",
+        "image_overlay_opacity": 0,
+        "image2_url": "",
+        "image_height": "large",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
       }
     },
     "1647875727c189611d": {
@@ -252,8 +271,9 @@
     }
   },
   "order": [
-    "164612698482e306bb",
+    "1654610090b599dcf0",
     "1629993086223521d8",
+    "164612698482e306bb",
     "1647875727c189611d",
     "16311853465cfb015e",
     "164138293938171117",
