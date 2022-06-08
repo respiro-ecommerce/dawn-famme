@@ -60,16 +60,7 @@
           "settings": {
             "heading": "Rabattkode",
             "icon": "check_mark",
-            "row_content": "<p>Du kan bruke rabattkoden du finner <a href=\"\/pages\/rabattkode-pa-famme-no\" title=\"\/pages\/rabattkode-pa-famme-no\">her<\/a>.<\/p>",
-            "page": ""
-          }
-        },
-        "1654670636b4de431f-1": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Toll",
-            "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>Er du ny kunde hos oss? Vi ønsker alltid å tilby våre kunder gode priser og rabatter. Som ny kunde kan du bruke rabattkoden du finner <a href=\"\/pages\/rabattkode-pa-famme-no\" title=\"\/pages\/rabattkode-pa-famme-no\">her<\/a>. Rabattkoden fungerer på allerede rabatterere produkter.<\/p>",
             "page": ""
           }
         },
@@ -79,7 +70,7 @@
             "heading": "Frakt & levering",
             "icon": "check_mark",
             "row_content": "",
-            "page": ""
+            "page": "frakt"
           }
         },
         "1654670636b4de431f-3": {
@@ -87,16 +78,25 @@
           "settings": {
             "heading": "Salg & tilbud",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>I enkelte perioder har vi salg på deler av sortimentet - følg med! Følg oss på <a href=\"https:\/\/www.instagram.com\/famme\/\" target=\"_blank\" title=\"https:\/\/www.instagram.com\/famme\/\">Instagram <\/a>eller meld deg på vårt nyhetsbrev for å få oppdatering om eventuelle salg og tilbud hos oss.<\/p>",
+            "page": ""
+          }
+        },
+        "1654670636b4de431f-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Toll",
+            "icon": "check_mark",
+            "row_content": "<p>Det er ingen toll eller ekstra kostnader når du bestiller fra oss og du får fri frakt når du bestiller varer for over 400 kroner. Ved kjøp under dette beløpet vil det påløpe en fraktkostnad avhengig av leveringsalternativ du ønsker å benytte deg av. <\/p>",
             "page": ""
           }
         }
       },
       "block_order": [
         "1654670636b4de431f-0",
-        "1654670636b4de431f-1",
         "1654670636b4de431f-2",
-        "1654670636b4de431f-3"
+        "1654670636b4de431f-3",
+        "1654670636b4de431f-1"
       ],
       "settings": {
         "caption": "",
