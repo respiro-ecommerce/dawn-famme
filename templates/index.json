@@ -254,11 +254,14 @@
         "162567415706bdadcd-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Banner-hovedside.jpg",
+        "image": "shopify:\/\/shop_images\/EN-produktutviklingsgruppen-banner-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/EN-produktutviklingsgruppen-banner-mobil.jpg",
+        "imageno": "shopify:\/\/shop_images\/NO-produktutviklingsgruppen-banner-desktop.jpg",
+        "image_nom": "shopify:\/\/shop_images\/NO-produktutviklingsgruppen-banner-mobil.jpg",
         "image_url": "https:\/\/www.facebook.com\/groups\/fammeproduktutvikling",
         "image_overlay_opacity": 0,
         "image2_url": "",
-        "image_height": "medium",
+        "image_height": "small",
         "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",
         "show_text_box": true,
