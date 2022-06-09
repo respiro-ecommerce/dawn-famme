@@ -89,7 +89,7 @@
           "type": "button",
           "settings": {
             "button_label": "SHOP HER",
-            "button_link": "shopify:\/\/products\/endorphin-rx1-shoes-b-vare"
+            "button_link": "shopify:\/\/products\/endorphin-rx1-shoes"
           }
         }
       },
@@ -99,7 +99,7 @@
         "1627292414345e6702-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/blogg-hvordan-vaske-sko-nederste-bilde.jpg",
+        "image": "shopify:\/\/shop_images\/Endorphin-rx1-sko-blogg-bilde.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
