@@ -2,6 +2,7 @@
   "sections": {
     "16373290891b389eea": {
       "type": "image-banner",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/lagertomming-banner-desktop-2.jpg",
         "image_m": "shopify:\/\/shop_images\/lagertomming-banner-mobil.jpg",
