@@ -22,12 +22,12 @@
     "16533034072f022e1d": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/ribbed-kolleksjon-tekst-2-banner-large-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/ribbed-kolleksjon-tekst-2-banner-large-mobil_15656b5d-1271-43a5-997b-2d109cc8a11a.jpg",
+        "image": "shopify:\/\/shop_images\/ribbed-kolleksjon-tekst-banner-large-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/ribbed-kolleksjon-tekst-1-banners-large-mobil.jpg",
         "image_url": "",
         "image_overlay_opacity": 0,
         "image2_url": "",
-        "image_height": "medium",
+        "image_height": "small",
         "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",
         "show_text_box": true,
