@@ -191,7 +191,8 @@
     "color": "Farbe:",
     "composition": "Stoffgemisch:",
     "model_height": "Modellhöhe:",
-    "model_sizes": "Modellgröße:"
+    "model_sizes": "Modellgröße:",
+    "shipping": "Geschätztes Versanddatum:"
   },
   "templates": {
     "search": {
