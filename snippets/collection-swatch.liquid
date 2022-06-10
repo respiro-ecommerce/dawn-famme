@@ -6,7 +6,7 @@
     {% assign counter = 0 %}
     <div class="product-groups__images">
       {% for variant in product.variants %}
-        {% if variant.available %}
+        
       	  {%- assign value = variant.options[option_index] -%}
       	  {% comment %} The first variant is in feature image, no need to display thumbnail {% endcomment %}
       	  {% if counter == 0  %}
@@ -22,12 +22,12 @@
       		{% assign values = values | append: ',' | append: value %}
       		{% assign values = values | split: ',' %}
       		{% if variant.image %}
-      		  <a href="{{ variant.url }}" data-toggle="toggle{{ itemID }}" class="other-product-image">
+      		  <a href="{{ variant.url }}" data-toggle="toggle{{ itemID }}" class="other-product-image{% if variant.available %} instock{% endif %}">
                 <img loading="lazy" src="{{ variant.image | image_url: width: '60x98', crop: 'center' }}" alt="{{ variant.title }}">
       		  </a>
       	    {% endif %}
       	  {% endunless %}
-      	{% endif %}
+      	
       {% endfor %}
 	</div>
   {% endif %}
