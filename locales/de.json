@@ -192,7 +192,8 @@
     "composition": "Stoffgemisch:",
     "model_height": "Modellhöhe:",
     "model_sizes": "Modellgröße:",
-    "shipping": "Geschätztes Versanddatum:"
+    "shipping": "Geschätztes Versanddatum:",
+    "sizing_recommendation_down": "Gehen Sie eine Nummer kleiner"
   },
   "templates": {
     "search": {
