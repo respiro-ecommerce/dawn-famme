@@ -306,7 +306,8 @@
       "view_addresses": "Adressen anzeigen",
       "return": "Zurück zu Kontodetails",
       "complaint_form": "Gehen Sie zum Beschwerdeformular",
-      "complaint_header": "Beschwerdeformular"
+      "complaint_header": "Beschwerdeformular",
+      "return_form": "Gehen Sie zum Rücksendeformular"
     },
     "account_fallback": "Konto",
     "activate_account": {
