@@ -190,7 +190,8 @@
     },
     "color": "Farbe:",
     "composition": "Stoffgemisch:",
-    "model_height": "Modellhöhe:"
+    "model_height": "Modellhöhe:",
+    "model_sizes": "Modellgröße:"
   },
   "templates": {
     "search": {
