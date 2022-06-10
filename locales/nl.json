@@ -307,7 +307,8 @@
       "return": "Terug naar Accountgegevens",
       "complaint_form": "Ga naar het klachtenformulier",
       "complaint_header": "Klachten formulier",
-      "return_form": "Ga naar het retourformulier"
+      "return_form": "Ga naar het retourformulier",
+      "return_header": "Retourformulier"
     },
     "account_fallback": "Account",
     "activate_account": {
