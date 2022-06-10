@@ -182,6 +182,9 @@
       "filter_selected_accessibility": "{{ type }} ({{ count }} Filter ausgewählt)",
       "show_more": "Mehr anzeigen",
       "show_less": "Weniger anzeigen"
+    },
+    "bullets": {
+      "bullet_1": "Kostenloser Versand (ab 400 NOK) & 100 Tage offener Kauf"
     }
   },
   "templates": {
