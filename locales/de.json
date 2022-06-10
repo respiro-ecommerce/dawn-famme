@@ -189,7 +189,8 @@
       "bullet_3": "Vipps, Klarna & Rechnung"
     },
     "color": "Farbe:",
-    "composition": "Stoffgemisch:"
+    "composition": "Stoffgemisch:",
+    "model_height": "Modellhöhe:"
   },
   "templates": {
     "search": {
