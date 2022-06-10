@@ -189,7 +189,11 @@
       "bullet_3": "Vipps, Klarna & factuur"
     },
     "composition": "Stof mengsel:",
-    "model_sizes": "Modelgrootte:"
+    "model_sizes": "Modelgrootte:",
+    "shipping": "Verwachtte Verzend datum:",
+    "sizing_recommendation_down": "Ga een maat kleiner",
+    "sizing_recommendation_normal": "Kies je gebruikelijke maat",
+    "sizing_recommendation_up": "Ga een maat groter"
   },
   "templates": {
     "search": {
