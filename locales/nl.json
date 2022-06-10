@@ -182,6 +182,9 @@
       "filter_selected_accessibility": "{{ type }} ({{ count }} filters geselecteerd)",
       "show_more": "Meer weergeven",
       "show_less": "Minder weergeven"
+    },
+    "bullets": {
+      "bullet_1": "Gratis verzending (NOK 400 +) & 100 dagen open aankoop"
     }
   },
   "templates": {
