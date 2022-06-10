@@ -306,7 +306,8 @@
       "view_addresses": "Adressen bekijken",
       "return": "Terug naar Accountgegevens",
       "complaint_form": "Ga naar het klachtenformulier",
-      "complaint_header": "Klachten formulier"
+      "complaint_header": "Klachten formulier",
+      "return_form": "Ga naar het retourformulier"
     },
     "account_fallback": "Account",
     "activate_account": {
