@@ -3,11 +3,10 @@
     {% if downcased_option contains 'color' or downcased_option contains 'colour' or downcased_option contains 'far' or downcased_option contains 'fär' %}
         {%- assign option_index = forloop.index0 -%}
         {%- assign values = '' -%}
-
         {% assign counter = 0 %}
         <div class="product-groups__images">
             {% for variant in product.variants %}
-
+          	  {% if variant.available %}
                 {%- assign value = variant.options[option_index] -%}
                 {% comment %} The first variant is in feature image, no need to display thumbnail {% endcomment %}
                 {% if counter == 0  %}
@@ -29,6 +28,7 @@
                         </a>
                     {% endif %}
                 {% endunless %}
+          	  {% endif %}
             {% endfor %}
         </div>
     {% endif %}
