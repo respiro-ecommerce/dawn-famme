@@ -3,10 +3,10 @@
     "163454564855e20815": {
       "type": "image-banner",
       "settings": {
-        "image": "article.metafields.my_fields[\"brand_comparison_image_mobile\"].value",
-        "image_m": "article.metafields.my_fields[\"brand_comparison_image_mobile\"].value",
-        "imageno": "article.metafields.my_fields[\"brand_comparison_image_mobile\"].value",
-        "image_nom": "article.metafields.my_fields[\"brand_comparison_image_mobile\"].value",
+        "image": "{{ article.metafields.my_fields[\"brand_comparison_image_mobile\"].value }}",
+        "image_m": "{{ article.metafields.my_fields[\"brand_comparison_image_mobile\"].value }}",
+        "imageno": "{{ article.metafields.my_fields[\"brand_comparison_image_mobile\"].value }}",
+        "image_nom": "{{ article.metafields.my_fields[\"brand_comparison_image_mobile\"].value }}",
         "image_url": "shopify:\/\/collections\/bestsellers",
         "image_overlay_opacity": 0,
         "image2_url": "",
