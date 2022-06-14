@@ -3,10 +3,10 @@
     "163454564855e20815": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/EN-brand-comparison-banner-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/EN-brand-comparison-banner-mobil_jpg.jpg",
-        "imageno": "shopify:\/\/shop_images\/NO-brand-comparison-banner-desktop.jpg",
-        "image_nom": "shopify:\/\/shop_images\/NO-brand-comparison-banner-mobil.jpg",
+        "image": "article.metafields.my_fields[\"brand_comparison_image_mobile\"].value",
+        "image_m": "article.metafields.my_fields[\"brand_comparison_image_mobile\"].value",
+        "imageno": "article.metafields.my_fields[\"brand_comparison_image_mobile\"].value",
+        "image_nom": "article.metafields.my_fields[\"brand_comparison_image_mobile\"].value",
         "image_url": "shopify:\/\/collections\/bestsellers",
         "image_overlay_opacity": 0,
         "image2_url": "",
