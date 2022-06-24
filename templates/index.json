@@ -271,6 +271,25 @@
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
+    },
+    "165607326399458504": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/matching-set-banner-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/matching-set-banner-mobil.jpg",
+        "image_url": "shopify:\/\/collections\/treningssett",
+        "image_overlay_opacity": 0,
+        "image2_url": "",
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
     }
   },
   "order": [
@@ -285,6 +304,7 @@
     "163117812908a522c8",
     "16252134879571dabc",
     "1629157352b193f90f",
-    "162567415706bdadcd"
+    "162567415706bdadcd",
+    "165607326399458504"
   ]
 }
