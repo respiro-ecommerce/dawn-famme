@@ -457,7 +457,8 @@
         "error_page_title": "Error."
       },
       "post_purchase": {
-        "escape_confirmation": "Du har betalt for bestillingen. "
+        "escape_confirmation": "Du har betalt for bestillingen. ",
+        "escape_action": "Vis bestillingsbekreftelse."
       }
     }
   }
