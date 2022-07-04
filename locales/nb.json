@@ -554,7 +554,8 @@
       },
       "delivery_options": {
         "ship": "Send",
-        "pick_up": "Henting"
+        "pick_up": "Henting",
+        "pick_up_in_two_hours": "Vanligvis klar på fire timer"
       }
     },
     "sentence": {
