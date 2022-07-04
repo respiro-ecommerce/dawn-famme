@@ -497,6 +497,9 @@
         "autocomplete_selection": "{{number}} av {{total}}",
         "autocomplete_close": "Lukk forslag",
         "tooltip_accessibility_label": "Mer informasjon"
+      },
+      "delivery_options": {
+        "ship": "Send"
       }
     },
     "sentence": {
