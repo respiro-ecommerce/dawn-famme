@@ -443,5 +443,14 @@
       "copy_code_success": "Koden er kopiert",
       "print_gift_card": "Skriv ut"
     }
+  },
+  "shopify": {
+    "notices": {
+      "order": {
+        "transaction_status": {
+          "success": "Vellykket!"
+        }
+      }
+    }
   }
 }
