@@ -460,7 +460,10 @@
         "breadcrumb": "Søkebane",
         "continue_button_label": "Fortsett",
         "complete_purchase_button_label": "Fullfør bestilling",
-        "pay_now_button_label": "Betal nå"
+        "pay_now_button_label": "Betal nå",
+        "authenticate_purchase_button_label": "Godkjenn betaling",
+        "edit_link_label": "Rediger",
+        "all_rights_reserved": "Alle rettigheter forbeholdt {{ shop_name }}"
       }
     },
     "sentence": {
