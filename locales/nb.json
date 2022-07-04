@@ -508,7 +508,17 @@
         "email_placeholder": "E-postadresse",
         "email_or_phone_label": "E-postadresse eller mobiltelefonnummer",
         "email_or_phone_placeholder": "E-postadresse eller mobiltelefonnummer",
-        "stored_addresses_label": "Lagrede adresser"
+        "stored_addresses_label": "Lagrede adresser",
+        "new_address_label": "Bruk en ny adresse",
+        "first_name_label": "Fornavn",
+        "optional_first_name_label": "Fornavn (valgfritt)",
+        "last_name_label": "Etternavn",
+        "company_label": "Bedrift",
+        "optional_company_label": "Bedrift (valgfritt)",
+        "address1_label": "Adresse",
+        "address2_label": "Leilighet, etasje, osv. (valgfritt)",
+        "optional_address2_label": "Leilighet, etasje, osv. (valgfritt)",
+        "city_label": "By"
       },
       "delivery_options": {
         "ship": "Send",
