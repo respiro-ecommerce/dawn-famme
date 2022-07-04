@@ -501,7 +501,7 @@
       "post_purchase": {
         "page_title": "Etter Kjøpet",
         "title": "Etter kjøpet",
-        "escape_confirmation": "Du har betalt for bestillingen!",
+        "escape_confirmation": "Du har betalt for bestillingen! ",
         "escape_action": "Vis bestillingsbekreftelse"
       }
     },
