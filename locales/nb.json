@@ -455,34 +455,17 @@
     "checkout": {
       "general": {
         "error_page_title": "Error."
-      }
-    }
-  },
-  "customer_accounts": {
-    "navigation_and_structure": {
-      "account_menu": {
-        "hide_accessibility_label": "Skjul kontomeny",
-        "label": "Konto",
-        "show_accessibility_label": "Vis kontomeny"
       },
-      "action_menu_accessibility_label": "Flere handlinger",
-      "close_menu_accessibility_label": "Lukk hovednavigasjon",
-      "contact_email_subject": "Kontakt fra nettbutikken {{shopName}}",
-      "contact_link": "Kontakt oss",
-      "dismiss_toast": "Avvis",
-      "document_title": "{{sectionName}} – {{shopName}} – Konto",
-      "generic_accessibility_label": "{{label}}: {{value}}",
-      "go_to_store_link": "Gå til butikk",
-      "loading_message": "Laster inn",
-      "log_out_link": "Logg av",
-      "logout_overlay_label": "Logger deg av …",
-      "nav_label_accessibility_label": "Hovednavigasjon",
-      "navigation_accessibility_message": "Du navigerte til {{sectionName}}",
-      "open_menu_accessibility_label": "Åpne hovednavigasjon"
-    },
-    "account_information": {
-      "profile_card": {
-        "cancel": "Avbryt"
+      "payment_summary": {
+        "credit_card_expires_on_notice": "Utløper den {{ month }}\/{{ year }}",
+        "express_payment_gateway_label": "Ekspress",
+        "manual_payment_gateway_label": "Manuell",
+        "billing_address_title": "Faktureringsadresse",
+        "free_label": "Gratis"
+      },
+      "post_purchase": {
+        "escape_confirmation": "Du har betalt for bestillingen.",
+        "escape_action": "Vis bestillingsbekreftelse."
       }
     }
   }
