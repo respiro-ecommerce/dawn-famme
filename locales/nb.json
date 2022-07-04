@@ -499,7 +499,8 @@
         "tooltip_accessibility_label": "Mer informasjon"
       },
       "delivery_options": {
-        "ship": "Send"
+        "ship": "Send",
+        "pick_up": "Henting"
       }
     },
     "sentence": {
