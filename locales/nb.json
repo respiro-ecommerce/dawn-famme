@@ -455,7 +455,12 @@
     "checkout": {
       "general": {
         "error_page_title": "Error.",
-        "page_title": "Utsjekking"
+        "page_title": "Utsjekking",
+        "skip_to_content": "Gå videre til innholdet",
+        "breadcrumb": "Søkebane",
+        "continue_button_label": "Fortsett",
+        "complete_purchase_button_label": "Fullfør bestilling",
+        "pay_now_button_label": "Betal nå"
       }
     },
     "sentence": {
