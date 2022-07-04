@@ -498,9 +498,11 @@
         "autocomplete_close": "Lukk forslag",
         "tooltip_accessibility_label": "Mer informasjon"
       },
-      "delivery_options": {
-        "ship": "Send",
-        "pick_up": "Henting"
+      "post_purchase": {
+        "page_title": "Etter Kjøpet",
+        "title": "Etter kjøpet",
+        "escape_confirmation": "Du har betalt for bestillingen!",
+        "escape_action": "Vis bestillingsbekreftelse"
       }
     },
     "sentence": {
