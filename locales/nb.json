@@ -474,7 +474,9 @@
         "continue_to_review": "Gjennomgå bestilling",
         "back_to_cart": "Gå tilbake til handlekurv",
         "back_to_contact_information": "Gå tilbake til informasjon",
-        "back_to_shipping_method": "Gå tilbake til frakt"
+        "back_to_shipping_method": "Gå tilbake til frakt",
+        "back_to_payment_method": "Gå tilbake til betaling",
+        "choose_shipping_method": "Velg en leveringsmetode"
       }
     },
     "sentence": {
