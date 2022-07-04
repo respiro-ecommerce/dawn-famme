@@ -546,7 +546,11 @@
         "postal_code_label": "Postnummer",
         "postal_code_placeholder": "Postnummer",
         "postcode_label": "Postnummer",
-        "postcode_placeholder": "Postnummer"
+        "postcode_placeholder": "Postnummer",
+        "pincode_label": "PIN-code",
+        "pincode_placeholder": "PIN-code",
+        "region_none": "Ingen er valgt",
+        "civic_number_warning": "Legg til husnummer hvis du har et"
       },
       "delivery_options": {
         "ship": "Send",
