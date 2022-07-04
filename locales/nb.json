@@ -463,7 +463,18 @@
         "pay_now_button_label": "Betal nå",
         "authenticate_purchase_button_label": "Godkjenn betaling",
         "edit_link_label": "Rediger",
-        "all_rights_reserved": "Alle rettigheter forbeholdt {{ shop_name }}"
+        "all_rights_reserved": "Alle rettigheter forbeholdt {{ shop_name }}",
+        "print_policies_link_label": "Skriv ut",
+        "cart": "Handlekurv",
+        "close_modal_label": "Lukk",
+        "close_notice_label": "Lukk",
+        "expand_notice_label": "Vis mer",
+        "continue_to_shipping_method": "Fortsett til frakt",
+        "continue_to_payment_method": "Fortsett til betaling",
+        "continue_to_review": "Gjennomgå bestilling",
+        "back_to_cart": "Gå tilbake til handlekurv",
+        "back_to_contact_information": "Gå tilbake til informasjon",
+        "back_to_shipping_method": "Gå tilbake til frakt"
       }
     },
     "sentence": {
