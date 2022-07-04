@@ -451,6 +451,11 @@
           "success": "Vellykket!"
         }
       }
+    },
+    "checkout": {
+      "general": {
+        "error_page_title": "Error."
+      }
     }
   }
 }
