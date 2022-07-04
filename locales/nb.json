@@ -487,7 +487,9 @@
         },
         "errors": {
           "session_identifier_not_unique_error": "Det oppsto en feil med bestillingen, prøv å betale på nytt."
-        }
+        },
+        "choose_payment_method": "Velg en betalingsmetode",
+        "choose_billing_address": "Velg faktureringsadresse"
       }
     },
     "sentence": {
