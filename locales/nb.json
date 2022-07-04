@@ -455,6 +455,9 @@
     "checkout": {
       "general": {
         "error_page_title": "Error."
+      },
+      "post_purchase": {
+        "escape_confirmation": "Du har betalt for bestillingen. "
       }
     }
   }
