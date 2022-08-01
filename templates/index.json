@@ -73,8 +73,8 @@
     "1647875727c189611d": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/vortex-banner-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/vortex-banner-mobil.jpg",
+        "image": "shopify:\/\/shop_images\/vortex-tights-banner-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/vortex-tights-banner-mobil.jpg",
         "image_url": "shopify:\/\/collections\/bestsellers",
         "image_overlay_opacity": 0,
         "image2_url": "",
