@@ -3,9 +3,9 @@
     "1654610090b599dcf0": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/sommer-banner-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/sommer-banner-mobil.jpg",
-        "image_url": "shopify:\/\/collections\/summer",
+        "image": "shopify:\/\/shop_images\/summer-sale-desktop-banner.jpg",
+        "image_m": "shopify:\/\/shop_images\/summer-sale-mobil-banner.jpg",
+        "image_url": "shopify:\/\/collections\/sale",
         "image_overlay_opacity": 0,
         "image2_url": "",
         "image_height": "large",
