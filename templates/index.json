@@ -89,12 +89,12 @@
         "show_text_below": true
       }
     },
-    "16311853465cfb015e": {
+    "164138293938171117": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Loungewear-banner-ny-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/Loungewear-banner-ny-mobil.jpg",
-        "image_url": "shopify:\/\/collections\/loungewear",
+        "image": "shopify:\/\/shop_images\/Scrunch-banner-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/Scrunch-banner-mobil.jpg",
+        "image_url": "shopify:\/\/collections\/scrunch",
         "image_overlay_opacity": 0,
         "image2_url": "",
         "image_height": "large",
@@ -108,11 +108,12 @@
         "show_text_below": true
       }
     },
-    "164138293938171117": {
+    "16311853465cfb015e": {
       "type": "image-banner",
-      "disabled": true,
       "settings": {
-        "image_url": "shopify:\/\/products\/elevate-wave-leggings-2",
+        "image": "shopify:\/\/shop_images\/Loungewear-banner-ny-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/Loungewear-banner-ny-mobil.jpg",
+        "image_url": "shopify:\/\/collections\/loungewear",
         "image_overlay_opacity": 0,
         "image2_url": "",
         "image_height": "large",
@@ -279,8 +280,8 @@
     "165607326399458504",
     "164612698482e306bb",
     "1647875727c189611d",
-    "16311853465cfb015e",
     "164138293938171117",
+    "16311853465cfb015e",
     "16463038447a5cbd60",
     "163117812908a522c8",
     "16252134879571dabc",
