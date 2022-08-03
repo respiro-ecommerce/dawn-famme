@@ -5,6 +5,8 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/summer-sale-desktop-banner.jpg",
         "image_m": "shopify:\/\/shop_images\/summer-sale-mobil-banner.jpg",
+        "imageno": "shopify:\/\/shop_images\/sommersalg-banner-norsk-desktop.jpg",
+        "image_nom": "shopify:\/\/shop_images\/sommersalg-banner-norsk-mobil.jpg",
         "image_url": "shopify:\/\/collections\/sale",
         "image_overlay_opacity": 0,
         "image2_url": "",
