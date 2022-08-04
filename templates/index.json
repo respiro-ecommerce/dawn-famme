@@ -37,8 +37,10 @@
     "165607326399458504": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/matching-set-banner-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/matching-set-banner-mobil.jpg",
+        "image": "shopify:\/\/shop_images\/matching-sets-banner-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/matching-sets-banner-mobil.jpg",
+        "imageno": "shopify:\/\/shop_images\/matchende-sett-banner-norsk-desktop.jpg",
+        "image_nom": "shopify:\/\/shop_images\/matchende-sett-banner-norsk-mobil.jpg",
         "image_url": "shopify:\/\/collections\/treningssett",
         "image_overlay_opacity": 0,
         "image2_url": "",
