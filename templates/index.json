@@ -112,6 +112,7 @@
     },
     "16311853465cfb015e": {
       "type": "image-banner",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/Loungewear-banner-ny-desktop.jpg",
         "image_m": "shopify:\/\/shop_images\/Loungewear-banner-ny-mobil.jpg",
