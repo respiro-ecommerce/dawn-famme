@@ -91,6 +91,33 @@
         "show_text_below": true
       }
     },
+    "16463038447a5cbd60": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Shop Bestselgere!",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "bestsellers",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "164138293938171117": {
       "type": "image-banner",
       "settings": {
@@ -130,33 +157,6 @@
         "show_text_below": true
       }
     },
-    "16463038447a5cbd60": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Shop Bestselgere!",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "bestsellers",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "background-1",
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "163117812908a522c8": {
       "type": "image-banner",
       "settings": {
@@ -178,23 +178,31 @@
         "show_text_below": true
       }
     },
-    "16252134879571dabc": {
-      "type": "image-banner",
+    "16595957042e07d409": {
+      "type": "featured-collection",
       "settings": {
-        "image": "shopify:\/\/shop_images\/jeans-banner-ny-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/jeans-banner-ny-mobil.jpg",
-        "image_url": "shopify:\/\/collections\/jeans",
-        "image_overlay_opacity": 0,
-        "image2_url": "",
-        "image_height": "large",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
+        "title": "Shop jeans",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "jeans",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
         "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "1629157352b193f90f": {
@@ -285,11 +293,11 @@
     "165607326399458504",
     "164612698482e306bb",
     "1647875727c189611d",
+    "16463038447a5cbd60",
     "164138293938171117",
     "16311853465cfb015e",
-    "16463038447a5cbd60",
     "163117812908a522c8",
-    "16252134879571dabc",
+    "16595957042e07d409",
     "1629157352b193f90f",
     "162567415706bdadcd"
   ]
