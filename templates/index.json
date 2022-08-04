@@ -81,6 +81,8 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/vortex-tights-banner-desktop.jpg",
         "image_m": "shopify:\/\/shop_images\/vortex-tights-banner-mobil.jpg",
+        "imageno": "shopify:\/\/shop_images\/vortex-tights-2-banner-norsk-desktop.jpg",
+        "image_nom": "shopify:\/\/shop_images\/vortex-tights-2-banner-norsk-mobil.jpg",
         "image_url": "shopify:\/\/collections\/bestsellers",
         "image_overlay_opacity": 0,
         "image2_url": "",
