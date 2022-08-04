@@ -58,8 +58,10 @@
     "164612698482e306bb": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Ribbed-collection-banner-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/Ribbed-collection-banner-mobil.jpg",
+        "image": "shopify:\/\/shop_images\/ribbed-collection-banner-engelsk-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/ribbed-collection-banner-engelsk-mobil.jpg",
+        "imageno": "shopify:\/\/shop_images\/ribbed-kolleksjon-banner-norsk-desktop.jpg",
+        "image_nom": "shopify:\/\/shop_images\/ribbed-kolleksjon-banner-norsk-mobil.jpg",
         "image_url": "shopify:\/\/collections\/ribbed",
         "image_overlay_opacity": 0,
         "image2_url": "",
