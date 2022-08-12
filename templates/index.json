@@ -293,6 +293,12 @@
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
+    },
+    "social_widget_45713": {
+      "type": "social-widget",
+      "settings": {
+        "social_widget_id": "45713"
+      }
     }
   },
   "order": [
@@ -307,6 +313,7 @@
     "163117812908a522c8",
     "16595957042e07d409",
     "1629157352b193f90f",
-    "162567415706bdadcd"
+    "162567415706bdadcd",
+    "social_widget_45713"
   ]
 }
