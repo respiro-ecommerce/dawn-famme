@@ -186,33 +186,6 @@
         "show_text_below": true
       }
     },
-    "16595957042e07d409": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Shop jeans",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "jeans",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "background-1",
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "1629157352b193f90f": {
       "type": "newsletter",
       "blocks": {
@@ -245,6 +218,61 @@
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
+      }
+    },
+    "16595957042e07d409": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Shop jeans",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "jeans",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "16602879286b7eef4a": {
+      "type": "apps",
+      "blocks": {
+        "8cc4873d-cdc4-46a9-9624-2e324ff53607": {
+          "type": "shopify:\/\/apps\/covet-pics-instagram-feed\/blocks\/app-block-standard\/577480e8-b5be-4890-968c-06ccfb458c74",
+          "settings": {
+            "gallery_embed_id": 230022,
+            "show_text": true,
+            "title_text": "Shop from Instagram",
+            "title_color": "#000000",
+            "title_size": 22,
+            "subtitle_text": "@famme #fammely",
+            "subtitle_color": "#000000",
+            "subtitle_size": 14,
+            "text_alignment": "center",
+            "margin": 22,
+            "custom_html_above": "",
+            "custom_html_below": ""
+          }
+        }
+      },
+      "block_order": [
+        "8cc4873d-cdc4-46a9-9624-2e324ff53607"
+      ],
+      "settings": {
+        "include_margins": true
       }
     },
     "162567415706bdadcd": {
@@ -301,34 +329,6 @@
         "social_product_id": "none",
         "social_widget_type": "none"
       }
-    },
-    "16602879286b7eef4a": {
-      "type": "apps",
-      "blocks": {
-        "8cc4873d-cdc4-46a9-9624-2e324ff53607": {
-          "type": "shopify:\/\/apps\/covet-pics-instagram-feed\/blocks\/app-block-standard\/577480e8-b5be-4890-968c-06ccfb458c74",
-          "settings": {
-            "gallery_embed_id": 230022,
-            "show_text": true,
-            "title_text": "Shop from Instagram",
-            "title_color": "#000000",
-            "title_size": 22,
-            "subtitle_text": "@famme #fammely",
-            "subtitle_color": "#000000",
-            "subtitle_size": 14,
-            "text_alignment": "center",
-            "margin": 22,
-            "custom_html_above": "",
-            "custom_html_below": ""
-          }
-        }
-      },
-      "block_order": [
-        "8cc4873d-cdc4-46a9-9624-2e324ff53607"
-      ],
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
@@ -341,10 +341,10 @@
     "164138293938171117",
     "16311853465cfb015e",
     "163117812908a522c8",
-    "16595957042e07d409",
     "1629157352b193f90f",
+    "16595957042e07d409",
+    "16602879286b7eef4a",
     "162567415706bdadcd",
-    "social_widget_45713",
-    "16602879286b7eef4a"
+    "social_widget_45713"
   ]
 }
