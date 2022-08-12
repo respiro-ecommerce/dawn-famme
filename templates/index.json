@@ -310,14 +310,14 @@
           "settings": {
             "gallery_embed_id": 230022,
             "show_text": true,
-            "title_text": "Covet.pics gallery",
+            "title_text": "Shop from Instagram",
             "title_color": "#000000",
             "title_size": 22,
-            "subtitle_text": "",
+            "subtitle_text": "@famme #fammely",
             "subtitle_color": "#000000",
             "subtitle_size": 14,
             "text_alignment": "center",
-            "margin": 6,
+            "margin": 22,
             "custom_html_above": "",
             "custom_html_below": ""
           }
