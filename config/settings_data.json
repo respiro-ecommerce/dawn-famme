@@ -112,12 +112,6 @@
         "settings": {
           "show_preview_data": false
         }
-      },
-      "7ba60ade-3d1c-4e2e-a0f3-4fc613c20f16": {
-        "type": "shopify:\/\/apps\/instagram-feed-story-tiktok\/blocks\/social-widget\/508b8d5b-b176-4dc6-a0ba-2b222db6eb79",
-        "disabled": false,
-        "settings": {
-        }
       }
     }
   }
