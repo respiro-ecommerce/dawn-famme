@@ -1,20 +1,18 @@
 {{ 'video-section.css' | asset_url | stylesheet_tag }}
 {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
-
 {%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
-
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+  {% if section.settings.videom != blank %}@media screen and (max-width: 749px) {deferred-media.video-section__media.deferred-media {padding: 0;}}{% endif %}
 {%- endstyle -%}
-
 <div class="color-{{ section.settings.color_scheme }} gradient">
   <div class="video-section isolate{% unless section.settings.full_width %} page-width{% endunless %} section-{{ section.id }}-padding">
     <div{% if section.settings.full_width %} class="page-width"{% endif %}>
