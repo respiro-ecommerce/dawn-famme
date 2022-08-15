@@ -56,6 +56,22 @@
     <deferred-media class="video-section__media deferred-media no-js-hidden gradient global-media-settings{% if section.settings.full_width %} global-media-settings--full-width{% endif %}" data-media-id="{{ section.settings.video_url.id }}"
       {% if section.settings.cover_image != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.cover_image.aspect_ratio | times: 100 }}%;"{% endif %}
     >
+     {% if section.settings.auto %}
+       {%- if section.settings.url != blank -%}<a href="{{ section.settings.url }}" class="video-section__poster deferred-media__poster media--landscape">{%- endif -%}
+       {%- if section.settings.video != blank -%}
+         {%- if section.settings.videom != blank -%}
+           <video class="js-youtube dt" src="{{ section.settings.video }}" autoplay muted loop></video>
+           <video class="js-youtube mob" src="{{ section.settings.videom }}" autoplay muted loop></video>
+         {%- else -%}
+           <video class="js-youtube" src="{{ section.settings.video }}" autoplay muted loop></video>
+         {%- endif -%}
+       {%- elsif section.settings.video_url.type == 'youtube' -%}
+         <iframe src="https://www.youtube.com/embed/{{ section.settings.video_url.id }}?enablejsapi=1&controls=0&showinfo=0&rel=0&autohide=1&modestbranding=1&origin={{ shop.secure_url }}&autoplay=1&mute=1&loop=1&playlist={{ section.settings.video_url.id }}" class="js-youtube" allow="autoplay; encrypted-media" allowfullscreen title="{{ section.settings.description | escape }}"></iframe>
+       {%- else -%}
+         <iframe src="https://player.vimeo.com/video/{{ section.settings.video_url.id }}?title=0&byline=0&portrait=0&autoplay=1&background=1&loop=1" class="js-vimeo" allow="autoplay; encrypted-media" allowfullscreen title="{{ section.settings.description | escape }}"></iframe>
+       {%- endif -%}
+       {%- if section.settings.url != blank -%}</a>{%- endif -%}
+     {% else %}
       <button
         id="Deferred-Poster-Modal-{{ section.settings.video_url.id }}"
         class="video-section__poster media deferred-media__poster media--landscape"
@@ -88,12 +104,15 @@
         </span>
       </button>
       <template>
-        {%- if section.settings.video_url.type == 'youtube' -%}
+        {%- if section.settings.video != blank -%}
+          <video class="js-youtube" src="{{ section.settings.video }}"></video>
+        {%- elsif section.settings.video_url.type == 'youtube' -%}
           <iframe src="https://www.youtube.com/embed/{{ section.settings.video_url.id }}?enablejsapi=1" class="js-youtube" allow="autoplay; encrypted-media" allowfullscreen title="{{ section.settings.description | escape }}"></iframe>
         {%- else -%}
           <iframe src="https://player.vimeo.com/video/{{ section.settings.video_url.id }}" class="js-vimeo" allow="autoplay; encrypted-media" allowfullscreen title="{{ section.settings.description | escape }}"></iframe>
         {%- endif -%}
       </template>
+     {% endif %}
     </deferred-media>
   </div>
 </div>
@@ -146,6 +165,29 @@
       "label": "t:sections.video.settings.video_url.label",
       "placeholder": "t:sections.video.settings.video_url.placeholder",
       "info": "t:sections.video.settings.video_url.info"
+    },
+    {
+      "type": "text",
+      "id": "video",
+      "label": "Shopify video link",
+      "info": "Replaces the main video if set"
+    },
+    {
+      "type": "text",
+      "id": "videom",
+      "label": "Mobile video link",
+      "info": "Only works when Autoplay setting is enabled"
+    },
+    {
+      "type": "checkbox",
+      "id": "auto",
+      "label": "Autoplay video"
+    },
+    {
+      "type": "url",
+      "id": "url",
+      "label": "Video overlay link",
+      "info": "Only works when Autoplay setting is enabled"
     },
     {
       "type": "text",
