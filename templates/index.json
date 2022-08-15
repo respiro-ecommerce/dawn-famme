@@ -329,6 +329,24 @@
         "social_product_id": "none",
         "social_widget_type": "none"
       }
+    },
+    "1660568529e048dd59": {
+      "type": "video",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/8506362b3ed24e6bb524845b0d0a9c4e.mp4",
+        "videom": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/abc1ef40f7f94afaba4ceceb367fa746.mp4",
+        "auto": true,
+        "url": "shopify:\/\/collections\/treningsklaer",
+        "description": "",
+        "full_width": true,
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
@@ -345,6 +363,7 @@
     "16595957042e07d409",
     "16602879286b7eef4a",
     "162567415706bdadcd",
-    "social_widget_45713"
+    "social_widget_45713",
+    "1660568529e048dd59"
   ]
 }
