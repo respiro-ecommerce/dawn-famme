@@ -5,7 +5,8 @@ a.klaviyo-bis-trigger {color: #4E4E4E; line-height: 47px;}
 @media screen and (min-width: 750px) {a.banner__media.media>img.mob, video.js-youtube.mob {display: none;}}
 @media screen and (max-width: 749px) {a.banner__media.media>img.dt, video.js-youtube.dt {display: none;}
   deferred-media.video-section__media.deferred-media {padding: 0;}
-  deferred-media.video-section__media.deferred-media * {position: static!important;}
+  deferred-media.video-section__media.deferred-media>a.video-section__poster.deferred-media__poster.media--landscape,
+  deferred-media.video-section__media.deferred-media video.js-youtube.mob {position: static!important;}
 }
 {% comment %}Used for showing variant images instead of buttons for choosing color variant{% endcomment %}
 .product-form__input input[type='radio'] + label.color {
