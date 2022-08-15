@@ -1,7 +1,27 @@
 {
   "sections": {
+    "16605713784607d5ea": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/summer-sale-desktop-banner.jpg",
+        "image_m": "shopify:\/\/shop_images\/summer-sale-mobil-banner.jpg",
+        "image_url": "",
+        "image_overlay_opacity": 0,
+        "image2_url": "",
+        "image_height": "large",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "1660568529e048dd59": {
       "type": "video",
+      "disabled": true,
       "settings": {
         "heading": "",
         "heading_size": "h2",
@@ -396,6 +416,7 @@
     }
   },
   "order": [
+    "16605713784607d5ea",
     "1660568529e048dd59",
     "1629993086223521d8",
     "166057046086c544fd",
