@@ -1,20 +1,22 @@
 {
   "sections": {
-    "1660568529e048dd59": {
-      "type": "video",
+    "165607326399458504": {
+      "type": "image-banner",
       "settings": {
-        "heading": "",
-        "heading_size": "h2",
-        "video_url": "",
-        "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/8506362b3ed24e6bb524845b0d0a9c4e.mp4",
-        "videom": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/abc1ef40f7f94afaba4ceceb367fa746.mp4",
-        "auto": true,
-        "url": "shopify:\/\/collections\/bestsellers",
-        "description": "",
-        "full_width": true,
+        "image": "shopify:\/\/shop_images\/back-to-school-banner-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/back-to-school-banner-mobil.jpg",
+        "image_url": "shopify:\/\/collections\/bestsellers",
+        "image_overlay_opacity": 0,
+        "image2_url": "",
+        "image_height": "large",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
         "color_scheme": "background-1",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
       }
     },
     "166057046086c544fd": {
@@ -96,27 +98,6 @@
         "padx": 10,
         "pady": 7,
         "radius": 100
-      }
-    },
-    "165607326399458504": {
-      "type": "image-banner",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/matching-sets-banner-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/matching-sets-banner-mobil.jpg",
-        "imageno": "shopify:\/\/shop_images\/matchende-sett-norsk-banner-mobil.jpg",
-        "image_nom": "shopify:\/\/shop_images\/matchende-sett-banner-norsk-mobil.jpg",
-        "image_url": "shopify:\/\/collections\/treningssett",
-        "image_overlay_opacity": 0,
-        "image2_url": "",
-        "image_height": "large",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
       }
     },
     "164612698482e306bb": {
@@ -396,10 +377,9 @@
     }
   },
   "order": [
-    "1660568529e048dd59",
+    "165607326399458504",
     "166057046086c544fd",
     "1629993086223521d8",
-    "165607326399458504",
     "164612698482e306bb",
     "1647875727c189611d",
     "16463038447a5cbd60",
