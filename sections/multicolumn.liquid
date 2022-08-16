@@ -62,12 +62,12 @@
                   {% assign spaced_image = true %}
                 {% endif %}
                 <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--{{ section.settings.image_width }}-width{% if section.settings.image_width != 'full' or spaced_image %} multicolumn-card-spacing{% endif %}">
-                  <div class="media media--transparent media--{{ section.settings.image_ratio }}"
+                  <{% if block.settings.url != blank %}a href="{{ block.settings.url }}"{% else %}div{% endif %}
+                    class="media media--transparent media--{{ section.settings.image_ratio }}"
                     {% if section.settings.image_ratio == 'adapt' %}
                       style="padding-bottom: {{ 1 | divided_by: highest_ratio | times: 100 }}%;"
                     {% endif %}>
-                    <img
-                      class="multicolumn-card__image"
+                    <img class="multicolumn-card__image"
                       srcset="{%- if block.settings.image.width >= 275 -%}{{ block.settings.image | image_url: width: 275 }} 275w,{%- endif -%}
                         {%- if block.settings.image.width >= 550 -%}{{ block.settings.image | image_url: width: 550 }} 550w,{%- endif -%}
                         {%- if block.settings.image.width >= 710 -%}{{ block.settings.image | image_url: width: 710 }} 710w,{%- endif -%}
@@ -82,7 +82,7 @@
                       width="{{ block.settings.image.width }}"
                       loading="lazy"
                     >
-                  </div>
+                  </{% if block.settings.url == blank %}div{% else %}a{% endif %}>
                 </div>
               {%- endif -%}
               <div class="multicolumn-card__info">
@@ -340,6 +340,11 @@
           "type": "image_picker",
           "id": "image",
           "label": "t:sections.multicolumn.blocks.column.settings.image.label"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Image link"
         },
         {
           "type": "text",
