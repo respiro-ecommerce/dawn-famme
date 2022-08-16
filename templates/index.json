@@ -90,6 +90,65 @@
         "padding_bottom": 4
       }
     },
+    "1660654738369bfdd0": {
+      "type": "multicolumn-usp",
+      "blocks": {
+        "16606547378d6748fc-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/levering-ikon_d8192b31-f292-4824-85ac-36da86a4b1f8.png",
+            "title": "Kort leveringstid",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "16606547378d6748fc-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/frifrakt-ikon.png",
+            "title": "Fri frakt over 400kr",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "16606547378d6748fc-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/kundeservice-ikon_67b5249b-439e-4d52-a127-2b9dcbd7cc95.png",
+            "title": "Rask kundeservice",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16606547378d6748fc-0",
+        "16606547378d6748fc-1",
+        "16606547378d6748fc-2"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_max": 68,
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "sizet": 13,
+        "size": 10,
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "inverse",
+        "columns_mobile": "3",
+        "swipe_on_mobile": false,
+        "padding_top": 16,
+        "padding_bottom": 0
+      }
+    },
     "1629993086223521d8": {
       "type": "famme-spaced-button-links",
       "disabled": true,
@@ -106,6 +165,7 @@
     },
     "164612698482e306bb": {
       "type": "image-banner",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/ribbed-collection-banner-engelsk-desktop.jpg",
         "image_m": "shopify:\/\/shop_images\/ribbed-collection-banner-engelsk-mobil.jpg",
@@ -127,6 +187,7 @@
     },
     "1647875727c189611d": {
       "type": "image-banner",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/vortex-tights-banner-desktop.jpg",
         "image_m": "shopify:\/\/shop_images\/vortex-tights-banner-mobil.jpg",
@@ -149,7 +210,7 @@
     "16463038447a5cbd60": {
       "type": "featured-collection",
       "settings": {
-        "title": "Shop bestselgere",
+        "title": "Kjøp bestselgere",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
@@ -175,6 +236,7 @@
     },
     "164138293938171117": {
       "type": "image-banner",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/Scrunch-banner-desktop.jpg",
         "image_m": "shopify:\/\/shop_images\/Scrunch-banner-mobil.jpg",
@@ -216,6 +278,7 @@
     },
     "163117812908a522c8": {
       "type": "image-banner",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/outdoor-banners-desktop.jpg",
         "image_m": "shopify:\/\/shop_images\/outdoor-banners-mobil.jpg",
@@ -267,33 +330,6 @@
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
-      }
-    },
-    "16595957042e07d409": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Shop jeans",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "jeans",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "background-1",
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "16602879286b7eef4a": {
@@ -383,6 +419,7 @@
   "order": [
     "165607326399458504",
     "166057046086c544fd",
+    "1660654738369bfdd0",
     "1629993086223521d8",
     "164612698482e306bb",
     "1647875727c189611d",
@@ -391,7 +428,6 @@
     "16311853465cfb015e",
     "163117812908a522c8",
     "1629157352b193f90f",
-    "16595957042e07d409",
     "16602879286b7eef4a",
     "162567415706bdadcd",
     "social_widget_45713"

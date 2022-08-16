@@ -3,10 +3,10 @@
     "colors_solid_button_labels": "#ffffff",
     "colors_accent_1": "#119da4",
     "colors_accent_2": "#ffaa91",
-    "colors_text": "#4e4e4e",
+    "colors_text": "#252525",
     "colors_outline_button_labels": "#4e4e4e",
     "colors_background_1": "#ffffff",
-    "colors_background_2": "#fafafa",
+    "colors_background_2": "#252525",
     "type_header_font": "roboto_n4",
     "type_body_font": "roboto_n4",
     "page_width": 1400,
@@ -55,7 +55,9 @@
           "menu_type_desktop": "dropdown",
           "show_line_separator": true,
           "enable_sticky_header": true,
-          "margin_bottom": 0
+          "margin_bottom": 0,
+          "padding_top": 20,
+          "padding_bottom": 20
         }
       },
       "footer": {
