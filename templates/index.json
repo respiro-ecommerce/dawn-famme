@@ -176,6 +176,34 @@
         "padding_bottom": 36
       }
     },
+    "16602879286b7eef4a": {
+      "type": "apps",
+      "blocks": {
+        "8cc4873d-cdc4-46a9-9624-2e324ff53607": {
+          "type": "shopify:\/\/apps\/covet-pics-instagram-feed\/blocks\/app-block-standard\/577480e8-b5be-4890-968c-06ccfb458c74",
+          "settings": {
+            "gallery_embed_id": 230022,
+            "show_text": true,
+            "title_text": "Shop from Instagram",
+            "title_color": "#4e4e4e",
+            "title_size": 22,
+            "subtitle_text": "@famme #fammely",
+            "subtitle_color": "#959595",
+            "subtitle_size": 14,
+            "text_alignment": "center",
+            "margin": 22,
+            "custom_html_above": "",
+            "custom_html_below": ""
+          }
+        }
+      },
+      "block_order": [
+        "8cc4873d-cdc4-46a9-9624-2e324ff53607"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "1629157352b193f90f": {
       "type": "newsletter",
       "blocks": {
@@ -208,34 +236,6 @@
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
-      }
-    },
-    "16602879286b7eef4a": {
-      "type": "apps",
-      "blocks": {
-        "8cc4873d-cdc4-46a9-9624-2e324ff53607": {
-          "type": "shopify:\/\/apps\/covet-pics-instagram-feed\/blocks\/app-block-standard\/577480e8-b5be-4890-968c-06ccfb458c74",
-          "settings": {
-            "gallery_embed_id": 230022,
-            "show_text": true,
-            "title_text": "Shop from Instagram",
-            "title_color": "#4e4e4e",
-            "title_size": 22,
-            "subtitle_text": "@famme #fammely",
-            "subtitle_color": "#959595",
-            "subtitle_size": 14,
-            "text_alignment": "center",
-            "margin": 22,
-            "custom_html_above": "",
-            "custom_html_below": ""
-          }
-        }
-      },
-      "block_order": [
-        "8cc4873d-cdc4-46a9-9624-2e324ff53607"
-      ],
-      "settings": {
-        "include_margins": true
       }
     },
     "162567415706bdadcd": {
@@ -273,8 +273,8 @@
     "166057046086c544fd",
     "1660654738369bfdd0",
     "16463038447a5cbd60",
-    "1629157352b193f90f",
     "16602879286b7eef4a",
+    "1629157352b193f90f",
     "162567415706bdadcd",
     "social_widget_45713"
   ]
