@@ -149,68 +149,10 @@
         "padding_bottom": 0
       }
     },
-    "1629993086223521d8": {
-      "type": "famme-spaced-button-links",
-      "disabled": true,
-      "settings": {
-        "menu": "header2-produktkategorier",
-        "pw": false,
-        "bg": "#4e4e4e",
-        "color": "#ffffff",
-        "width": 150,
-        "padx": 10,
-        "pady": 7,
-        "radius": 100
-      }
-    },
-    "164612698482e306bb": {
-      "type": "image-banner",
-      "disabled": true,
-      "settings": {
-        "image": "shopify:\/\/shop_images\/ribbed-collection-banner-engelsk-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/ribbed-collection-banner-engelsk-mobil.jpg",
-        "imageno": "shopify:\/\/shop_images\/ribbed-kolleksjon-banner-norsk-desktop.jpg",
-        "image_nom": "shopify:\/\/shop_images\/ribbed-kolleksjon-banner-norsk-mobil.jpg",
-        "image_url": "shopify:\/\/collections\/ribbed",
-        "image_overlay_opacity": 0,
-        "image2_url": "",
-        "image_height": "large",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
-    "1647875727c189611d": {
-      "type": "image-banner",
-      "disabled": true,
-      "settings": {
-        "image": "shopify:\/\/shop_images\/vortex-tights-banner-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/vortex-tights-banner-mobil.jpg",
-        "imageno": "shopify:\/\/shop_images\/vortex-tights-2-banner-norsk-desktop.jpg",
-        "image_nom": "shopify:\/\/shop_images\/vortex-tights-2-banner-norsk-mobil.jpg",
-        "image_url": "shopify:\/\/collections\/bestsellers",
-        "image_overlay_opacity": 0,
-        "image2_url": "",
-        "image_height": "large",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
     "16463038447a5cbd60": {
       "type": "featured-collection",
       "settings": {
-        "title": "Kjøp bestselgere",
+        "title": "Shop bestselgere",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
@@ -234,78 +176,14 @@
         "padding_bottom": 36
       }
     },
-    "164138293938171117": {
-      "type": "image-banner",
-      "disabled": true,
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Scrunch-banner-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/Scrunch-banner-mobil.jpg",
-        "imageno": "shopify:\/\/shop_images\/scrunch-banner-norsk-desktop.jpg",
-        "image_nom": "shopify:\/\/shop_images\/scrunch-banner-norsk-mobil.jpg",
-        "image_url": "shopify:\/\/collections\/scrunch",
-        "image_overlay_opacity": 0,
-        "image2_url": "",
-        "image_height": "large",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
-    "16311853465cfb015e": {
-      "type": "image-banner",
-      "disabled": true,
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Loungewear-banner-ny-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/Loungewear-banner-ny-mobil.jpg",
-        "image_url": "shopify:\/\/collections\/loungewear",
-        "image_overlay_opacity": 0,
-        "image2_url": "",
-        "image_height": "large",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
-    "163117812908a522c8": {
-      "type": "image-banner",
-      "disabled": true,
-      "settings": {
-        "image": "shopify:\/\/shop_images\/outdoor-banners-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/outdoor-banners-mobil.jpg",
-        "imageno": "shopify:\/\/shop_images\/tuklaer-banner-norsk-desktop.jpg",
-        "image_nom": "shopify:\/\/shop_images\/turklaer-banner-norsk-mobil.jpg",
-        "image_url": "shopify:\/\/collections\/turklaer",
-        "image_overlay_opacity": 0,
-        "image2_url": "",
-        "image_height": "large",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
     "1629157352b193f90f": {
       "type": "newsletter",
       "blocks": {
         "1629157352b193f90f-0": {
           "type": "heading",
           "settings": {
-            "heading": "Neste lansering?",
-            "heading_size": "h1"
+            "heading": "Meld deg på vårt nyhetsbrev!",
+            "heading_size": "h2"
           }
         },
         "1629157352b193f90f-1": {
@@ -362,32 +240,6 @@
     },
     "162567415706bdadcd": {
       "type": "image-banner",
-      "blocks": {
-        "162567415706bdadcd-1": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "BLI MED I NORGES STØRSTE PRODUKTUTVIKLINGSGRUPPE MED FLERE TITUSENER MEDLEMMER I NORGE.",
-            "text_style": "body"
-          }
-        },
-        "162567415706bdadcd-2": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_label_1": "FÅ HJELP OG GI FEEDBACK",
-            "button_link_1": "https:\/\/www.facebook.com\/groups\/fammeproduktutvikling",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "162567415706bdadcd-1",
-        "162567415706bdadcd-2"
-      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/EN-produktutviklingsgruppen-banner-desktop.jpg",
         "image_m": "shopify:\/\/shop_images\/EN-produktutviklingsgruppen-banner-mobil.jpg",
@@ -420,13 +272,7 @@
     "165607326399458504",
     "166057046086c544fd",
     "1660654738369bfdd0",
-    "1629993086223521d8",
-    "164612698482e306bb",
-    "1647875727c189611d",
     "16463038447a5cbd60",
-    "164138293938171117",
-    "16311853465cfb015e",
-    "163117812908a522c8",
     "1629157352b193f90f",
     "16602879286b7eef4a",
     "162567415706bdadcd",
