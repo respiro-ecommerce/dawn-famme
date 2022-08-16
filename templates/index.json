@@ -21,22 +21,23 @@
     },
     "166057046086c544fd": {
       "type": "multicolumn",
-      "disabled": true,
       "blocks": {
         "1660570459ecdaf28d-0": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/3_fc02e552-898f-41ce-9b26-0064e0fa1a71.jpg",
+            "url": "shopify:\/\/collections\/treningstights",
             "title": "",
             "text": "",
             "link_label": "",
-            "link": "shopify:\/\/collections\/treningstights"
+            "link": ""
           }
         },
         "1660570459ecdaf28d-1": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/1_89ce98ca-e51f-4cdb-8f05-b16167a6e3bb.jpg",
+            "url": "shopify:\/\/collections\/sports-bh",
             "title": "",
             "text": "",
             "link_label": "",
@@ -47,16 +48,18 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/2_090da4e9-533f-44b9-a31a-3aece10f4315.jpg",
+            "url": "shopify:\/\/collections\/treningsoverdeler",
             "title": "",
             "text": "",
             "link_label": "",
-            "link": "shopify:\/\/collections\/treningsoverdeler"
+            "link": ""
           }
         },
         "10a7abb5-b911-417a-bfa8-44d013a16de9": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/4_ebe03277-63ae-4488-8a9a-f7b28d658fb8.jpg",
+            "url": "shopify:\/\/collections\/shoes",
             "title": "",
             "text": "",
             "link_label": "",
@@ -83,12 +86,13 @@
         "color_scheme": "background-1",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
-        "padding_top": 0,
-        "padding_bottom": 0
+        "padding_top": 4,
+        "padding_bottom": 4
       }
     },
     "1629993086223521d8": {
       "type": "famme-spaced-button-links",
+      "disabled": true,
       "settings": {
         "menu": "header2-produktkategorier",
         "pw": false,
