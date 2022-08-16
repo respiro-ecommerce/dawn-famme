@@ -241,10 +241,10 @@
     "162567415706bdadcd": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/EN-produktutviklingsgruppen-banner-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/EN-produktutviklingsgruppen-banner-mobil.jpg",
-        "imageno": "shopify:\/\/shop_images\/NO-produktutviklingsgruppen-banner-desktop.jpg",
-        "image_nom": "shopify:\/\/shop_images\/NO-produktutviklingsgruppen-banner-mobil.jpg",
+        "image": "shopify:\/\/shop_images\/produktgruppe-banner-engelsk-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/produktgruppe-banner-engelsk-mobil.jpg",
+        "imageno": "shopify:\/\/shop_images\/produktgruppe-banner-norsk-dekstop.jpg",
+        "image_nom": "shopify:\/\/shop_images\/produktgruppe-banner-norsk-mobil.jpg",
         "image_url": "https:\/\/www.facebook.com\/groups\/fammeproduktutvikling\/",
         "image_overlay_opacity": 0,
         "image2_url": "",
