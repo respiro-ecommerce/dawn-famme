@@ -152,8 +152,8 @@ class FacetFiltersForm extends HTMLElement {
 
   static updateURLHash(searchParams) {
     history.pushState({ searchParams }, '', `${window.location.pathname}${searchParams && '?'.concat(searchParams)}`);
-    if (document.querySeletor('div.pagination-wrapper.more>a.button')){
-      document.querySeletor('div.pagination-wrapper.more>a.button').href = `${window.location.pathname}${searchParams && '?'.concat(searchParams)}&page=2`;
+    if (document.querySelector('div.pagination-wrapper.more>a.button')){
+      document.querySelector('div.pagination-wrapper.more>a.button').href = `${window.location.pathname}${searchParams && '?'.concat(searchParams)}&page=2`;
     }
   }
 
