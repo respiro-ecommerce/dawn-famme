@@ -45,16 +45,16 @@ class FacetFiltersForm extends HTMLElement {
     sections.forEach((section) => {
       const url = `${window.location.pathname}?section_id=${section.section}&${searchParams}`;
       const filterDataUrl = element => element.url === url;
-console.log(section);
       FacetFiltersForm.filterData.some(filterDataUrl) ?
         FacetFiltersForm.renderSectionFromCache(filterDataUrl, event) :
-        FacetFiltersForm.renderSectionFromFetch(url, event);
+        FacetFiltersForm.renderSectionFromFetch(url, event, section = section.section );
     });
 
     if (updateURLHash) FacetFiltersForm.updateURLHash(searchParams);
   }
 
-  static renderSectionFromFetch(url, event) {
+  static renderSectionFromFetch(url, event, section) {
+    console.log(section);
     fetch(url)
       .then(response => response.text())
       .then((responseText) => {
