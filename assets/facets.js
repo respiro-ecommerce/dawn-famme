@@ -54,7 +54,6 @@ class FacetFiltersForm extends HTMLElement {
   }
 
   static renderSectionFromFetch(url, event, section) {
-    console.log(section);
     fetch(url)
       .then(response => response.text())
       .then((responseText) => {
@@ -63,9 +62,9 @@ class FacetFiltersForm extends HTMLElement {
         FacetFiltersForm.renderFilters(html, event);
         FacetFiltersForm.renderProductGridContainer(html);
         FacetFiltersForm.renderProductCount(html);
-        //if (document.querySelector('div.pagination-wrapper.more>a.button')){
-        //  document.querySelector('div.pagination-wrapper.more>a.button').href = url + '&page=2';
-        //}
+        if (section.includes('__product-grid') && document.querySelector('div.pagination-wrapper.more>a.button')){
+          document.querySelector('div.pagination-wrapper.more>a.button').href = url + '&page=2';
+        }
       });
   }
 
