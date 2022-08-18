@@ -45,7 +45,7 @@ class FacetFiltersForm extends HTMLElement {
     sections.forEach((section) => {
       const url = `${window.location.pathname}?section_id=${section.section}&${searchParams}`;
       const filterDataUrl = element => element.url === url;
-
+console.log(section);
       FacetFiltersForm.filterData.some(filterDataUrl) ?
         FacetFiltersForm.renderSectionFromCache(filterDataUrl, event) :
         FacetFiltersForm.renderSectionFromFetch(url, event);
@@ -63,6 +63,9 @@ class FacetFiltersForm extends HTMLElement {
         FacetFiltersForm.renderFilters(html, event);
         FacetFiltersForm.renderProductGridContainer(html);
         FacetFiltersForm.renderProductCount(html);
+        //if (document.querySelector('div.pagination-wrapper.more>a.button')){
+        //  document.querySelector('div.pagination-wrapper.more>a.button').href = url + '&page=2';
+        //}
       });
   }
 
@@ -152,9 +155,6 @@ class FacetFiltersForm extends HTMLElement {
 
   static updateURLHash(searchParams) {
     history.pushState({ searchParams }, '', `${window.location.pathname}${searchParams && '?'.concat(searchParams)}`);
-    if (document.querySelector('div.pagination-wrapper.more>a.button')){
-      document.querySelector('div.pagination-wrapper.more>a.button').href = `${window.location.pathname}${searchParams && '?'.concat(searchParams)}&page=2`;
-    }
   }
 
   static getSections() {
