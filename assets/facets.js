@@ -52,6 +52,10 @@ class FacetFiltersForm extends HTMLElement {
     });
 
     if (updateURLHash) FacetFiltersForm.updateURLHash(searchParams);
+    console.log(searchParams);
+    //if (document.querySeletor('div.pagination-wrapper.more')){
+    //  document.querySeletor('div.pagination-wrapper.more>a').href = '';
+    //}
   }
 
   static renderSectionFromFetch(url, event) {
