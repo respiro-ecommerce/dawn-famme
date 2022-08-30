@@ -152,9 +152,9 @@
     "16463038447a5cbd60": {
       "type": "featured-collection",
       "settings": {
-        "title": "Siste nytt",
+        "title": "Nyheter",
         "heading_size": "h2",
-        "description": "",
+        "description": "<p>Sjekk ut våre nyeste produkter her.<\/p>",
         "show_description": false,
         "description_style": "body",
         "collection": "new-releases",
