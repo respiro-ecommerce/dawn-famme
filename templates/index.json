@@ -152,12 +152,12 @@
     "16463038447a5cbd60": {
       "type": "featured-collection",
       "settings": {
-        "title": "Se vårt utvalg av turklær",
+        "title": "Siste nytt",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "turklaer",
+        "collection": "new-releases",
         "products_to_show": 8,
         "columns_desktop": 4,
         "full_width": false,
