@@ -149,19 +149,38 @@
         "padding_bottom": 0
       }
     },
+    "16620310837584a090": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/hiking-essentials-banner-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/hiking-essentials-banner-mobil.jpg",
+        "image_url": "",
+        "image_overlay_opacity": 0,
+        "image2_url": "",
+        "image_height": "large",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "16463038447a5cbd60": {
       "type": "featured-collection",
       "settings": {
-        "title": "Nyheter",
+        "title": "",
         "heading_size": "h2",
-        "description": "<p>Sjekk ut våre nyeste produkter her.<\/p>",
+        "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "new-releases",
+        "collection": "treningsklaer-til-damer",
         "products_to_show": 8,
         "columns_desktop": 4,
         "full_width": false,
-        "show_view_all": true,
+        "show_view_all": false,
         "view_all_style": "solid",
         "enable_desktop_slider": true,
         "color_scheme": "background-1",
@@ -172,8 +191,8 @@
         "enable_quick_add": false,
         "columns_mobile": "2",
         "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 0,
+        "padding_bottom": 12
       }
     },
     "16602879286b7eef4a": {
@@ -272,6 +291,7 @@
     "165607326399458504",
     "166057046086c544fd",
     "1660654738369bfdd0",
+    "16620310837584a090",
     "16463038447a5cbd60",
     "16602879286b7eef4a",
     "1629157352b193f90f",
