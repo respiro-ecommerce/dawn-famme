@@ -3,9 +3,9 @@
     "165607326399458504": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/back-to-school-banner-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/back-to-school-banner-mobil.jpg",
-        "image_url": "shopify:\/\/collections\/bestsellers",
+        "image": "shopify:\/\/shop_images\/hiking-banner-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/hiking-banner-mobil.jpg",
+        "image_url": "shopify:\/\/collections\/turklaer",
         "image_overlay_opacity": 0,
         "image2_url": "",
         "image_height": "large",
@@ -25,19 +25,19 @@
         "1660570459ecdaf28d-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/3_fc02e552-898f-41ce-9b26-0064e0fa1a71.jpg",
-            "url": "shopify:\/\/collections\/treningstights",
+            "image": "shopify:\/\/shop_images\/jakker-bilde-knapp.jpg",
+            "url": "shopify:\/\/collections\/jacket",
             "title": "",
             "text": "",
             "link_label": "",
-            "link": ""
+            "link": "shopify:\/\/collections\/jacket"
           }
         },
         "1660570459ecdaf28d-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1_89ce98ca-e51f-4cdb-8f05-b16167a6e3bb.jpg",
-            "url": "shopify:\/\/collections\/sports-bh",
+            "image": "shopify:\/\/shop_images\/shorts-bukse-bilde-knapp.jpg",
+            "url": "shopify:\/\/collections\/turbukser",
             "title": "",
             "text": "",
             "link_label": "",
@@ -47,7 +47,7 @@
         "1660570459ecdaf28d-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2_090da4e9-533f-44b9-a31a-3aece10f4315.jpg",
+            "image": "shopify:\/\/shop_images\/topp-bilde-knapp.jpg",
             "url": "shopify:\/\/collections\/treningsoverdeler",
             "title": "",
             "text": "",
@@ -58,8 +58,8 @@
         "10a7abb5-b911-417a-bfa8-44d013a16de9": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/4_ebe03277-63ae-4488-8a9a-f7b28d658fb8.jpg",
-            "url": "shopify:\/\/collections\/shoes",
+            "image": "shopify:\/\/shop_images\/sko-bilde-knapp.jpg",
+            "url": "shopify:\/\/products\/ventdry-rx1-shoes",
             "title": "",
             "text": "",
             "link_label": "",
@@ -152,8 +152,8 @@
     "16620310837584a090": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/hiking-essential-desktop-banner.jpg",
-        "image_m": "shopify:\/\/shop_images\/hiking-essentials-banner-mobil.jpg",
+        "image": "shopify:\/\/shop_images\/activewear-desktop-banner.jpg",
+        "image_m": "shopify:\/\/shop_images\/activewear-mobil-banner.jpg",
         "image_url": "shopify:\/\/collections\/treningsklaer",
         "image_overlay_opacity": 0,
         "image2_url": "",
@@ -236,7 +236,7 @@
         "1629157352b193f90f-1": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Bli den første som får vite om nyheter og tilbud<\/p>"
+            "text": "<p>Registrer deg og få et velkomsttilbud på mail. Bli den første som får høre om nye produkter og eksklusive tilbud.<\/p>"
           }
         },
         "1629157352b193f90f-2": {
