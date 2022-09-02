@@ -17,29 +17,31 @@
             "image": "shopify:\/\/shop_images\/Dark-Grey-Vortex-V2-1-1.jpg",
             "url": "",
             "title": "Vortex Tights 2",
-            "text": "<p>185,-<\/p>",
-            "link_label": "Kjøp Vortex Tights 2",
+            "text": "<p><strong>185kr<\/strong>, noe mer tekst?<\/p>",
+            "link_label": "Kjøp Vortex Tights 2 her",
             "link": "shopify:\/\/products\/seamless-tights-vortex-2"
           }
         },
         "1662122282a1d8a20b-1": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/SupportSportsBra-Svart-SUSSBA-BK_1.jpg",
             "url": "",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
+            "title": "Support Sports Bra",
+            "text": "<p><strong>185kr<\/strong>, noe mer tekst?<\/p>",
+            "link_label": "Kjøp Support Sports Bra her",
             "link": ""
           }
         },
         "1662122282a1d8a20b-2": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Tech-T-Shirt-T-Shirt-6.jpg",
             "url": "",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "title": "Tech T-Shirt",
+            "text": "<p><strong>149kr<\/strong>, noe mer tekst?<\/p>",
+            "link_label": "Kjøp Tech T-Shirt her",
+            "link": "shopify:\/\/products\/tech-t-shirt"
           }
         }
       },
@@ -56,13 +58,13 @@
         "columns_desktop": 3,
         "column_alignment": "left",
         "background_style": "primary",
-        "button_label": "Button label",
+        "button_label": "",
         "button_link": "",
         "color_scheme": "background-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 8
       }
     },
     "1662122662822631eb": {
@@ -123,11 +125,68 @@
         "padding_top": 20,
         "padding_bottom": 12
       }
+    },
+    "166212325225219735": {
+      "type": "multicolumn",
+      "blocks": {
+        "16621232520780af78-0": {
+          "type": "column",
+          "settings": {
+            "url": "",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "16621232520780af78-1": {
+          "type": "column",
+          "settings": {
+            "url": "",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "16621232520780af78-2": {
+          "type": "column",
+          "settings": {
+            "url": "",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16621232520780af78-0",
+        "16621232520780af78-1",
+        "16621232520780af78-2"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
     "166212228261bd931a",
-    "1662122662822631eb"
+    "1662122662822631eb",
+    "166212325225219735"
   ]
 }
