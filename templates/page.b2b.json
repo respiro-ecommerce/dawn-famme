@@ -2,11 +2,132 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "166212228261bd931a": {
+      "type": "multicolumn",
+      "blocks": {
+        "1662122282a1d8a20b-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Dark-Grey-Vortex-V2-1-1.jpg",
+            "url": "",
+            "title": "Vortex Tights 2",
+            "text": "<p>185,-<\/p>",
+            "link_label": "Kjøp Vortex Tights 2",
+            "link": "shopify:\/\/products\/seamless-tights-vortex-2"
+          }
+        },
+        "1662122282a1d8a20b-1": {
+          "type": "column",
+          "settings": {
+            "url": "",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "1662122282a1d8a20b-2": {
+          "type": "column",
+          "settings": {
+            "url": "",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1662122282a1d8a20b-0",
+        "1662122282a1d8a20b-1",
+        "1662122282a1d8a20b-2"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1662122662822631eb": {
+      "type": "multicolumn-usp",
+      "blocks": {
+        "16621226624b71c242-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/levering-ikon_d8192b31-f292-4824-85ac-36da86a4b1f8.png",
+            "title": "2-4 dager levering",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "16621226624b71c242-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/frifrakt-ikon.png",
+            "title": "Fri frakt",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "16621226624b71c242-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/kundeservice-ikon_67b5249b-439e-4d52-a127-2b9dcbd7cc95.png",
+            "title": "Rask kundeservice",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16621226624b71c242-0",
+        "16621226624b71c242-1",
+        "16621226624b71c242-2"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_max": 88,
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "sizet": 15,
+        "size": 10,
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "inverse",
+        "columns_mobile": "3",
+        "swipe_on_mobile": false,
+        "padding_top": 20,
+        "padding_bottom": 12
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "166212228261bd931a",
+    "1662122662822631eb"
   ]
 }
