@@ -132,9 +132,10 @@
         "16621232520780af78-0": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Tech-T-Shirt-T-Shirt-6.jpg",
             "url": "",
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -142,9 +143,10 @@
         "16621232520780af78-1": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Tech-T-Shirt-T-Shirt-6.jpg",
             "url": "",
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -152,9 +154,10 @@
         "16621232520780af78-2": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Tech-T-Shirt-T-Shirt-6.jpg",
             "url": "",
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -173,7 +176,7 @@
         "columns_desktop": 3,
         "column_alignment": "left",
         "background_style": "primary",
-        "button_label": "Button label",
+        "button_label": "",
         "button_link": "",
         "color_scheme": "background-1",
         "columns_mobile": "1",
