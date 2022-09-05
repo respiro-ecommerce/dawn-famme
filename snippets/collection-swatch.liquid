@@ -1,4 +1,4 @@
-{%- assign colors = section.settings.colors | newline_to_br | split: '<br />' -%}
+{%- assign colors = settings.colors | newline_to_br | split: '<br />' -%}
 {% for option in product.options %}
   {%- assign downcased_option = option | downcase -%}
   {% if downcased_option contains 'color' or downcased_option contains 'colour' or downcased_option contains 'far' or downcased_option contains 'fär' %}
