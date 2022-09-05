@@ -6,7 +6,7 @@
         "164486988682155a12-0": {
           "type": "heading",
           "settings": {
-            "heading": "@{{ collection.metafields.influencer[\"instagram-username\"].value }}",
+            "heading": "<p>@{{ collection.metafields.influencer[\"instagram-username\"].value }}<\/p>",
             "heading_size": "h2"
           }
         }
@@ -15,6 +15,8 @@
         "164486988682155a12-0"
       ],
       "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
         "color_scheme": "background-1",
         "full_width": true,
         "padding_top": 40,
@@ -46,7 +48,7 @@
         "16448713894e87d09a-0": {
           "type": "heading",
           "settings": {
-            "heading": "Mine favoritter",
+            "heading": "<p>Mine favoritter<\/p>",
             "heading_size": "h2"
           }
         }
@@ -55,6 +57,8 @@
         "16448713894e87d09a-0"
       ],
       "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
         "color_scheme": "background-1",
         "full_width": true,
         "padding_top": 40,
@@ -64,14 +68,18 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
-        "products_per_page": 15,
+        "products_per_page": 20,
+        "columns_desktop": 4,
         "image_ratio": "adapt",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
+        "enable_quick_add": false,
+        "colors": "White-#FFFFFF\nRed-#FF3131\nKhaki-#8A865D\nYellow-#FFEA00\nBurgundy- Dark red?\nLight Blue-#ADD8E6\nLight Grey-#D3D3D3\nWhite\/Blue -> #FFFFFF\nLight Green-#cbffc7\nDark Red\/Blue-#FF3131\nDark Red\/Brown-#FF3131\nBrown-#8c5c2a\nGrey\/Blue-#000\nOrange-#ffaa00\nBlue\/Beige-#0a2d4d\nBlack-#000\nDark Red-#9b012c\nBlue-#3530ab\nNavy Blue-#35304b\nDark green-#514b38\nDark Green-#514b38\nGreen-#514b38\nPurple-#513742\nDark grey-#413d47\nDark Grey-#413d47\nGrey-#413d47\nBeige-#e2cab4\nPink-#fdced7\nLight Purple-#d7d7f2\nDark Blue-#3d3f69\nDark Pink-#ca8482\nLight Beige-#faf0e6\nDark purple-#741b47\nPurple\/Red-#513742\nDark Grey\/White-#413d47\nRed\/yellow-#FFA0A0\nBlack\/Blue-#3530ab\nBlack\/Green-#514b38\nBlack\/Pink-#FF69B4\nBlack\/Dark grey-#000",
         "enable_filtering": false,
+        "filter_type": "horizontal",
         "enable_sorting": true,
-        "collapse_on_larger_devices": false,
+        "columns_mobile": "2",
         "padding_top": 0,
         "padding_bottom": 36
       }
