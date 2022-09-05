@@ -158,7 +158,21 @@
     </div>
   </div>
 </div>
-
+<script>
+  document.querySelector('div#ProductGridContainer').onclick=e=>{
+    if (e.target.classList.contains('more')){
+      var imgs = e.target.parentElement.querySelectorAll('a.hidden');
+      [].forEach.call(imgs, img=>{img.classList.remove('hidden')});
+      e.target.remove();
+    }
+  }
+  document.querySelector('div#ProductGridContainer').onmouseover=e=>{
+    if (e.target.classList.contains('img')){
+      e.target.parentElement.previousElementSibling.querySelector('img.motion-reduce').removeAttribute('srcset');
+      e.target.parentElement.previousElementSibling.querySelector('img.motion-reduce').src = e.target.getAttribute('src');
+    }
+  }
+</script>
 
 {% schema %}
 {
@@ -231,6 +245,11 @@
       "id": "enable_quick_add",
       "default": false,
       "label": "t:sections.main-collection-product-grid.settings.enable_quick_buy.label"
+    },
+    {
+      "type": "textarea",
+      "id": "colors",
+      "label": "List of colors name-hex pairs, each pair on it's own line"
     },
     {
       "type": "header",
