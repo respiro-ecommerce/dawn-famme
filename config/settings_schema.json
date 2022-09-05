@@ -4,8 +4,8 @@
     "theme_name": "Dawn",
     "theme_version": "6.0.2",
     "theme_author": "Shopify",
-    "theme_documentation_url": "https://help.shopify.com/manual/online-store/themes",
-    "theme_support_url": "https://support.shopify.com/"
+    "theme_documentation_url": "https:\/\/help.shopify.com\/manual\/online-store\/themes",
+    "theme_support_url": "https:\/\/support.shopify.com\/"
   },
   {
     "name": "t:settings_schema.colors.name",
@@ -442,6 +442,11 @@
   {
     "name": "t:settings_schema.cards.name",
     "settings": [
+      {
+        "type": "textarea",
+        "id": "colors",
+        "label": "List of colors name-hex pairs, each pair on it's own line"
+      },
       {
         "type": "select",
         "id": "card_style",
