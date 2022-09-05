@@ -914,3 +914,18 @@ class VariantRadios extends VariantSelects {
 }
 
 customElements.define('variant-radios', VariantRadios);
+if (document.querySelector('div#ProductGridContainer')){
+  document.querySelector('div#ProductGridContainer').onclick=e=>{
+    if (e.target.classList.contains('more')){
+      var imgs = e.target.parentElement.querySelectorAll('a.hidden');
+      [].forEach.call(imgs, img=>{img.classList.remove('hidden')});
+      e.target.remove();
+    }
+  }
+  document.querySelector('div#ProductGridContainer').onmouseover=e=>{
+    if (e.target.classList.contains('img')){
+      e.target.parentElement.previousElementSibling.querySelector('img.motion-reduce').removeAttribute('srcset');
+      e.target.parentElement.previousElementSibling.querySelector('img.motion-reduce').src = e.target.getAttribute('src');
+    }
+  }
+}
