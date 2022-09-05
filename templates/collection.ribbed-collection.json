@@ -41,7 +41,6 @@
     "16546828983a2aef66": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/ribbed-kolleksjon-banner-desktop-4_dff1c5d0-b259-44a6-b5e7-8dee7540c72f.jpg",
         "image_m": "shopify:\/\/shop_images\/ribbed-kolleksjon-banner-mobil-4.jpg",
         "image_url": "",
         "image_overlay_opacity": 0,
@@ -106,7 +105,6 @@
     "16546831172b58a65b": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/ribbed-kolleksjon-banner-desktop-7_d8dabfdc-2dff-4aaf-8561-fbdeb5e4f810.jpg",
         "image_m": "shopify:\/\/shop_images\/ribbed-kolleksjon-banner-mobil-6.jpg",
         "image_url": "",
         "image_overlay_opacity": 0,
@@ -170,6 +168,7 @@
         "show_vendor": false,
         "show_rating": false,
         "enable_quick_add": false,
+        "colors": "White-#FFFFFF\nRed-#FF3131\nKhaki-#8A865D\nYellow-#FFEA00\nBurgundy- Dark red?\nLight Blue-#ADD8E6\nLight Grey-#D3D3D3\nWhite\/Blue -> #FFFFFF\nLight Green-#cbffc7\nDark Red\/Blue-#FF3131\nDark Red\/Brown-#FF3131\nBrown-#8c5c2a\nGrey\/Blue-#000\nOrange-#ffaa00\nBlue\/Beige-#0a2d4d\nBlack-#000\nDark Red-#9b012c\nBlue-#3530ab\nNavy Blue-#35304b\nDark green-#514b38\nDark Green-#514b38\nGreen-#514b38\nPurple-#513742\nDark grey-#413d47\nDark Grey-#413d47\nGrey-#413d47\nBeige-#e2cab4\nPink-#fdced7\nLight Purple-#d7d7f2\nDark Blue-#3d3f69\nDark Pink-#ca8482\nLight Beige-#faf0e6\nDark purple-#741b47\nPurple\/Red-#513742\nDark Grey\/White-#413d47\nRed\/yellow-#FFA0A0\nBlack\/Blue-#3530ab\nBlack\/Green-#514b38\nBlack\/Pink-#FF69B4\nBlack\/Dark grey-#000",
         "enable_filtering": true,
         "filter_type": "horizontal",
         "enable_sorting": true,
