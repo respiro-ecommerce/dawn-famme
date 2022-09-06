@@ -156,10 +156,10 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Essential-Long-Sleeve-Long-Sleeve.jpg",
             "url": "",
-            "title": "Column",
-            "text": "",
-            "link_label": "",
-            "link": ""
+            "title": "Essential Long Sleeve",
+            "text": "<p><strong>140kr<\/strong>, noe mer tekst her?<\/p>",
+            "link_label": "Kjøp Essential Long Sleeve her",
+            "link": "shopify:\/\/products\/essential-long-sleeve"
           }
         }
       },
