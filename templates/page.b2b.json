@@ -132,29 +132,29 @@
         "16621232520780af78-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Elevate-Vortex-Leggings-2-Leggings-2.jpg",
+            "image": "shopify:\/\/shop_images\/long-essential-leggings-black_622f2d1b-d7c1-4407-b2ee-315d3fe1bd7b.webp",
             "url": "",
-            "title": "Elevate Vortex Tights 2",
-            "text": "<p><strong>195kr<\/strong>, noe mer tekst her?<\/p>",
-            "link_label": "Kjøp Elevate Vortex her",
-            "link": "shopify:\/\/products\/grey-elevate-vortex-leggings-2"
+            "title": "Essential Tights",
+            "text": "<p><strong>185kr<\/strong>, noe mer tekst her?<\/p>",
+            "link_label": "Kjøp Essential Tights her",
+            "link": "shopify:\/\/products\/essential-high-waist-tights"
           }
         },
         "16621232520780af78-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Tech-T-Shirt-T-Shirt-6.jpg",
+            "image": "shopify:\/\/shop_images\/Essential-T-shirt-T-Shirt.jpg",
             "url": "",
-            "title": "Column",
-            "text": "",
-            "link_label": "",
-            "link": ""
+            "title": "Essential T-Shirt",
+            "text": "<p><strong>90kr<\/strong>, noe mer tekst her?<\/p>",
+            "link_label": "Kjøp Essential T-Shirt her",
+            "link": "shopify:\/\/products\/essential-t-shirt"
           }
         },
         "16621232520780af78-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Tech-T-Shirt-T-Shirt-6.jpg",
+            "image": "shopify:\/\/shop_images\/Essential-Long-Sleeve-Long-Sleeve.jpg",
             "url": "",
             "title": "Column",
             "text": "",
