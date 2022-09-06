@@ -306,6 +306,28 @@
     "1662465807db678999": {
       "type": "multicolumn",
       "blocks": {
+        "166246580742f12e52-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Scrunch-Seamless-Leggings-Leggings-21.jpg",
+            "url": "",
+            "title": "Scrunch Seamless Leggings",
+            "text": "<p><strong>Innkjøpspris: 180kr<\/strong><br\/>Utsalgspris: 699kr<\/p>",
+            "link_label": "Kjøp her",
+            "link": "shopify:\/\/products\/scrunch-seamless-leggings"
+          }
+        },
+        "166246580742f12e52-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/high-impact-sports-bra-black.jpg",
+            "url": "",
+            "title": "High Impact Sports Bra",
+            "text": "<p><strong>Innkjøpspris: 133kr<\/strong><br\/>Utsalgspris: 399kr<\/p>",
+            "link_label": "Kjøp her",
+            "link": "shopify:\/\/products\/high-impact-sports-bra"
+          }
+        },
         "166246580742f12e52-0": {
           "type": "column",
           "settings": {
@@ -316,32 +338,12 @@
             "link_label": "Kjøp her",
             "link": "shopify:\/\/products\/treningsstrikk"
           }
-        },
-        "166246580742f12e52-1": {
-          "type": "column",
-          "settings": {
-            "url": "",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "166246580742f12e52-2": {
-          "type": "column",
-          "settings": {
-            "url": "",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
         }
       },
       "block_order": [
-        "166246580742f12e52-0",
+        "166246580742f12e52-2",
         "166246580742f12e52-1",
-        "166246580742f12e52-2"
+        "166246580742f12e52-0"
       ],
       "settings": {
         "title": "",
