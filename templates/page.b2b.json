@@ -18,7 +18,7 @@
             "url": "",
             "title": "Essential Tights",
             "text": "<p><strong>B2B price NOK: 185kr <\/strong><br\/>Margins: 3,8 <\/p>",
-            "link_label": "Kjøp Essential Tights her",
+            "link_label": "Kjøp her",
             "link": "shopify:\/\/products\/essential-high-waist-tights"
           }
         },
@@ -28,8 +28,8 @@
             "image": "shopify:\/\/shop_images\/Essential-T-shirt-T-Shirt.jpg",
             "url": "",
             "title": "Essential T-Shirt",
-            "text": "<p><strong>B2B price NOK: 90kr <\/strong><br\/>Margins: 3,8 <\/p>",
-            "link_label": "Kjøp Essential T-Shirt her",
+            "text": "<p><strong>B2B price NOK: 90kr <\/strong><br\/>Margins: 3,3<\/p>",
+            "link_label": "Kjøp her",
             "link": "shopify:\/\/products\/essential-t-shirt"
           }
         },
