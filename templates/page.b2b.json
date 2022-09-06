@@ -135,7 +135,7 @@
             "image": "shopify:\/\/shop_images\/TechLST-Shirt-Black-TELSTT-MBK_1.jpg",
             "url": "",
             "title": "Tech LS T-Shirt",
-            "text": "",
+            "text": "<p><strong>B2B price NOK: 165kr <\/strong><br\/>Margins: 3,0<\/p>",
             "link_label": "Kjøp Tech LS T-Shirt her",
             "link": "shopify:\/\/products\/tech-ls-t-shirt"
           }
@@ -146,7 +146,7 @@
             "image": "shopify:\/\/shop_images\/Tech-T-Shirt-T-Shirt.jpg",
             "url": "",
             "title": "Tech T-Shirt",
-            "text": "",
+            "text": "<p><strong>B2B price NOK: 132kr <\/strong><br\/>Margins: 3,0<\/p>",
             "link_label": "Kjøp Tech T-Shirt her",
             "link": "shopify:\/\/products\/tech-t-shirt"
           }
@@ -199,17 +199,6 @@
             "link": "shopify:\/\/products\/seamless-tights-vortex-2"
           }
         },
-        "1662122282a1d8a20b-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Elevate-Vortex-Leggings-2-Leggings-2.jpg",
-            "url": "",
-            "title": "Elevate Vortex Leggings 2",
-            "text": "<p><strong>B2B price NOK: 195kr <\/strong><br\/>Margins: 3,6<\/p>",
-            "link_label": "Shop here",
-            "link": "shopify:\/\/products\/grey-elevate-vortex-leggings-2"
-          }
-        },
         "529aee94-89b4-4af1-b473-2aabb4ac5439": {
           "type": "column",
           "settings": {
@@ -223,7 +212,6 @@
       },
       "block_order": [
         "1662122282a1d8a20b-0",
-        "1662122282a1d8a20b-1",
         "529aee94-89b4-4af1-b473-2aabb4ac5439"
       ],
       "settings": {
