@@ -22,6 +22,17 @@
             "link": "shopify:\/\/products\/seamless-tights-vortex-2"
           }
         },
+        "7fbd77af-64d5-40c5-ab6d-c9377b0f22d9": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/SupportSportsBra-Svart-SUSSBA-BK_1.jpg",
+            "url": "",
+            "title": "Support Sports Bra",
+            "text": "<p><strong>B2B price NOK: 149<\/strong><br\/>Margins: 3,0<\/p>",
+            "link_label": "Shop here",
+            "link": "shopify:\/\/products\/support-sports-bra"
+          }
+        },
         "529aee94-89b4-4af1-b473-2aabb4ac5439": {
           "type": "column",
           "settings": {
@@ -32,22 +43,12 @@
             "link_label": "Shop here",
             "link": "shopify:\/\/products\/endorphin-rx1-shoes"
           }
-        },
-        "7fbd77af-64d5-40c5-ab6d-c9377b0f22d9": {
-          "type": "column",
-          "settings": {
-            "url": "",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
         }
       },
       "block_order": [
         "1662122282a1d8a20b-0",
-        "529aee94-89b4-4af1-b473-2aabb4ac5439",
-        "7fbd77af-64d5-40c5-ab6d-c9377b0f22d9"
+        "7fbd77af-64d5-40c5-ab6d-c9377b0f22d9",
+        "529aee94-89b4-4af1-b473-2aabb4ac5439"
       ],
       "settings": {
         "title": "",
