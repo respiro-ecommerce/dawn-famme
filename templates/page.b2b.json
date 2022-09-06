@@ -135,8 +135,8 @@
             "image": "shopify:\/\/shop_images\/Dark-Grey-Vortex-V2-1-1.jpg",
             "url": "",
             "title": "Vortex Tights 2",
-            "text": "<p><strong>185kr<\/strong>, noe mer tekst?<\/p>",
-            "link_label": "Kjøp Vortex Tights 2 her",
+            "text": "<p><strong>B2B price NOK: 185kr <\/strong><br\/>Margins: 3,8 <\/p>",
+            "link_label": "Shop here",
             "link": "shopify:\/\/products\/seamless-tights-vortex-2"
           }
         },
