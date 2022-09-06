@@ -8,51 +8,51 @@
         "padding_bottom": 36
       }
     },
-    "166212228261bd931a": {
+    "166212325225219735": {
       "type": "multicolumn",
       "blocks": {
-        "1662122282a1d8a20b-0": {
+        "16621232520780af78-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Dark-Grey-Vortex-V2-1-1.jpg",
+            "image": "shopify:\/\/shop_images\/long-essential-leggings-black_622f2d1b-d7c1-4407-b2ee-315d3fe1bd7b.webp",
             "url": "",
-            "title": "Vortex Tights 2",
-            "text": "<p><strong>185kr<\/strong>, noe mer tekst?<\/p>",
-            "link_label": "Kjøp Vortex Tights 2 her",
-            "link": "shopify:\/\/products\/seamless-tights-vortex-2"
+            "title": "Essential Tights",
+            "text": "<p><strong>B2B price NOK: 185kr <\/strong><br\/>Margins: 3,8 <\/p>",
+            "link_label": "Kjøp Essential Tights her",
+            "link": "shopify:\/\/products\/essential-high-waist-tights"
           }
         },
-        "1662122282a1d8a20b-1": {
+        "16621232520780af78-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/SupportSportsBra-Svart-SUSSBA-BK_1.jpg",
+            "image": "shopify:\/\/shop_images\/Essential-T-shirt-T-Shirt.jpg",
             "url": "",
-            "title": "Support Sports Bra",
-            "text": "<p><strong>185kr<\/strong>, noe mer tekst?<\/p>",
-            "link_label": "Kjøp Support Sports Bra her",
-            "link": ""
+            "title": "Essential T-Shirt",
+            "text": "<p><strong>B2B price NOK: 90kr <\/strong><br\/>Margins: 3,8 <\/p>",
+            "link_label": "Kjøp Essential T-Shirt her",
+            "link": "shopify:\/\/products\/essential-t-shirt"
           }
         },
-        "1662122282a1d8a20b-2": {
+        "16621232520780af78-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Tech-T-Shirt-T-Shirt-6.jpg",
+            "image": "shopify:\/\/shop_images\/Essential-Long-Sleeve-Long-Sleeve.jpg",
             "url": "",
-            "title": "Tech T-Shirt",
-            "text": "<p><strong>149kr<\/strong>, noe mer tekst?<\/p>",
-            "link_label": "Kjøp Tech T-Shirt her",
-            "link": "shopify:\/\/products\/tech-t-shirt"
+            "title": "Essential Long Sleeve",
+            "text": "<p><strong>140kr<\/strong>, noe mer tekst her?<\/p>",
+            "link_label": "Kjøp Essential Long Sleeve her",
+            "link": "shopify:\/\/products\/essential-long-sleeve"
           }
         }
       },
       "block_order": [
-        "1662122282a1d8a20b-0",
-        "1662122282a1d8a20b-1",
-        "1662122282a1d8a20b-2"
+        "16621232520780af78-0",
+        "16621232520780af78-1",
+        "16621232520780af78-2"
       ],
       "settings": {
         "title": "",
-        "heading_size": "h1",
+        "heading_size": "h2",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 3,
@@ -62,9 +62,9 @@
         "button_link": "",
         "color_scheme": "background-1",
         "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "padding_top": 36,
-        "padding_bottom": 8
+        "padding_bottom": 36
       }
     },
     "1662122662822631eb": {
@@ -126,47 +126,46 @@
         "padding_bottom": 12
       }
     },
-    "166212325225219735": {
+    "166212228261bd931a": {
       "type": "multicolumn",
       "blocks": {
-        "16621232520780af78-0": {
+        "1662122282a1d8a20b-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/long-essential-leggings-black_622f2d1b-d7c1-4407-b2ee-315d3fe1bd7b.webp",
+            "image": "shopify:\/\/shop_images\/Dark-Grey-Vortex-V2-1-1.jpg",
             "url": "",
-            "title": "Essential Tights",
-            "text": "<p><strong>185kr<\/strong>, noe mer tekst her?<\/p>",
-            "link_label": "Kjøp Essential Tights her",
-            "link": "shopify:\/\/products\/essential-high-waist-tights"
+            "title": "Vortex Tights 2",
+            "text": "<p><strong>185kr<\/strong>, noe mer tekst?<\/p>",
+            "link_label": "Kjøp Vortex Tights 2 her",
+            "link": "shopify:\/\/products\/seamless-tights-vortex-2"
           }
         },
-        "16621232520780af78-1": {
+        "1662122282a1d8a20b-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Essential-T-shirt-T-Shirt.jpg",
+            "image": "shopify:\/\/shop_images\/SupportSportsBra-Svart-SUSSBA-BK_1.jpg",
             "url": "",
-            "title": "Essential T-Shirt",
-            "text": "<p><strong>90kr<\/strong>, noe mer tekst her?<\/p>",
-            "link_label": "Kjøp Essential T-Shirt her",
-            "link": "shopify:\/\/products\/essential-t-shirt"
+            "title": "Support Sports Bra",
+            "text": "<p><strong>185kr<\/strong>, noe mer tekst?<\/p>",
+            "link_label": "Kjøp Support Sports Bra her",
+            "link": ""
           }
         },
-        "16621232520780af78-2": {
+        "529aee94-89b4-4af1-b473-2aabb4ac5439": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Essential-Long-Sleeve-Long-Sleeve.jpg",
             "url": "",
-            "title": "Essential Long Sleeve",
-            "text": "<p><strong>140kr<\/strong>, noe mer tekst her?<\/p>",
-            "link_label": "Kjøp Essential Long Sleeve her",
-            "link": "shopify:\/\/products\/essential-long-sleeve"
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "16621232520780af78-0",
-        "16621232520780af78-1",
-        "16621232520780af78-2"
+        "1662122282a1d8a20b-0",
+        "1662122282a1d8a20b-1",
+        "529aee94-89b4-4af1-b473-2aabb4ac5439"
       ],
       "settings": {
         "title": "",
@@ -182,14 +181,74 @@
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
+        "padding_bottom": 8
+      }
+    },
+    "1662446162ab44241c": {
+      "type": "multicolumn",
+      "blocks": {
+        "1662446162dadddaee-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TechLST-Shirt-Black-TELSTT-MBK_1.jpg",
+            "url": "",
+            "title": "Tech LS T-Shirt",
+            "text": "",
+            "link_label": "Kjøp Tech LS T-Shirt her",
+            "link": "shopify:\/\/products\/tech-ls-t-shirt"
+          }
+        },
+        "1662446162dadddaee-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Tech-T-Shirt-T-Shirt.jpg",
+            "url": "",
+            "title": "Tech T-Shirt",
+            "text": "",
+            "link_label": "Kjøp Tech T-Shirt her",
+            "link": "shopify:\/\/products\/tech-t-shirt"
+          }
+        },
+        "1662446162dadddaee-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Tech-Tank-Top-Top-4.jpg",
+            "url": "",
+            "title": "Tech Tank Top",
+            "text": "",
+            "link_label": "Kjøp Tech Tank Top her",
+            "link": "shopify:\/\/products\/tech-top"
+          }
+        }
+      },
+      "block_order": [
+        "1662446162dadddaee-0",
+        "1662446162dadddaee-1",
+        "1662446162dadddaee-2"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
         "padding_bottom": 36
       }
     }
   },
   "order": [
     "main",
-    "166212228261bd931a",
+    "166212325225219735",
     "1662122662822631eb",
-    "166212325225219735"
+    "166212228261bd931a",
+    "1662446162ab44241c"
   ]
 }
