@@ -254,28 +254,30 @@
             "url": "",
             "title": "Antislip Biker Shorts",
             "text": "<p><strong>B2B price NOK: 132kr <\/strong><br\/>Margins: 3,0<\/p>",
-            "link_label": "",
+            "link_label": "Shop here",
             "link": "shopify:\/\/products\/antislip-biker-shorts"
           }
         },
         "1662447736e2919601-1": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Active-Pants-Pants-2_6136c1c3-ff74-4813-bb6d-558455e917cf.jpg",
             "url": "",
-            "title": "Column",
+            "title": "Active Pants",
             "text": "<p><strong>B2B price NOK: 132kr <\/strong><br\/>Margins: 3,0<\/p>",
-            "link_label": "",
-            "link": ""
+            "link_label": "Shop here",
+            "link": "shopify:\/\/products\/active-pants"
           }
         },
         "1662447736e2919601-2": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Elevate-Vortex-Leggings-2-Leggings-2.jpg",
             "url": "",
-            "title": "Column",
-            "text": "<p><strong>B2B price NOK: 132kr <\/strong><br\/>Margins: 3,0<\/p>",
-            "link_label": "",
-            "link": ""
+            "title": "Elevate Vortex Leggings 2",
+            "text": "<p><strong>B2B price NOK: 195kr <\/strong><br\/>Margins: 3,6<\/p>",
+            "link_label": "Shop here",
+            "link": "shopify:\/\/products\/grey-elevate-vortex-leggings-2"
           }
         }
       },
