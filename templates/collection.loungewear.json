@@ -8,7 +8,7 @@
         "show_secondary_image": true,
         "show_vendor": false,
         "enable_filtering": true,
-        "enable_sorting": true,
+        "enable_sorting": true,"filter_type": "vertical",
         "collapse_on_larger_devices": false
       }
     },
