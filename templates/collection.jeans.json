@@ -9,8 +9,8 @@
         "show_vendor": false,
         "show_rating": false,
         "enable_filtering": true,
-        "enable_sorting": true,"filter_type": "vertical",
-        "collapse_on_larger_devices": false
+        "filter_type": "vertical",
+        "enable_sorting": true
       }
     },
     "16293707771e417396": {

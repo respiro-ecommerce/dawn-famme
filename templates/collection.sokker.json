@@ -8,8 +8,7 @@
         "show_secondary_image": true,
         "show_vendor": false,
         "enable_filtering": true,
-        "enable_sorting": true,
-        "collapse_on_larger_devices": false
+        "enable_sorting": true
       }
     },
     "1629364797037f49c2": {

@@ -5,12 +5,11 @@
       "settings": {
         "image_ratio": "adapt",
         "show_secondary_image": false,
-        "add_image_padding": false,
-        "show_image_outline": true,
         "show_vendor": false,
         "show_rating": false,
         "enable_filtering": true,
-        "enable_sorting": true,"filter_type": "vertical",
+        "filter_type": "vertical",
+        "enable_sorting": true,
         "article_show_date": true,
         "article_show_author": false
       }
@@ -22,13 +21,11 @@
         "collection": "bestsellers",
         "products_to_show": 4,
         "show_view_all": false,
-        "swipe_on_mobile": true,
         "image_ratio": "adapt",
         "show_secondary_image": false,
-        "add_image_padding": false,
-        "show_image_outline": true,
         "show_vendor": false,
-        "show_rating": false
+        "show_rating": false,
+        "swipe_on_mobile": true
       }
     }
   },

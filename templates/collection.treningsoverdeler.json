@@ -21,8 +21,8 @@
         "show_vendor": false,
         "show_rating": false,
         "enable_filtering": true,
-        "enable_sorting": true,"filter_type": "vertical",
-        "collapse_on_larger_devices": false,
+        "filter_type": "vertical",
+        "enable_sorting": true,
         "padding_top": 0,
         "padding_bottom": 36
       }
