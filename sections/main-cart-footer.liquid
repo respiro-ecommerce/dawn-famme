@@ -22,7 +22,22 @@
               <div class="js-contents" {{ block.shopify_attributes }}>
                 <div class="totals">
                   <h2 class="totals__subtotal">{{ 'sections.cart.subtotal' | t }}</h2>
-                  <p class="totals__subtotal-value">{{ cart.total_price | money_with_currency }}</p>
+                  <p class="totals__subtotal-value">
+                    {%- if customer.tags contains 'b2b' -%}
+                      {% assign b2btotal = 0 %}
+                      {%- for item in cart.items -%}
+                        {%- if item.product.metafields.my_fields.b2b_price_nok != blank -%}
+                          {% assign b2bprice = item.product.metafields.my_fields.b2b_price_nok | times: item.quantity | times: 100 %}
+                          {% assign b2btotal = b2btotal | plus: b2bprice %}
+                        {%- else -%}
+                          {% assign b2btotal = b2btotal | plus: item.final_line_price %}
+                        {%- endif -%}
+                      {%- endfor -%}
+                      {{ b2btotal | money_with_currency }}
+                    {% else %}
+                      {{ cart.total_price | money_with_currency }}
+                    {% endif %}
+                  </p>
                 </div>
 
                 <div>
