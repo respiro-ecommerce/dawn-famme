@@ -83,8 +83,9 @@
                     {%- endif -%}
 
                     <a href="{{ item.url }}" class="cart-item__name h4 break">{{ item.product.title | escape }}</a>
-
-                    {%- if item.original_price != item.final_price -%}
+                    {%- if customer.tags contains 'b2b' and item.product.metafields.my_fields.b2b_price_nok != blank -%}
+                      <span class="product-option">{{ item.product.metafields.my_fields.b2b_price_nok | times: 100 | money }}</span>
+                    {%- elsif item.original_price != item.final_price -%}
                       <div class="cart-item__discounted-prices">
                         <span class="visually-hidden">
                           {{ 'products.product.price.regular_price' | t }}
@@ -157,7 +158,9 @@
                       </div>
                     </div>
                     <div class="cart-item__price-wrapper">
-                      {%- if item.original_line_price != item.final_line_price -%}
+                      {%- if customer.tags contains 'b2b' and item.product.metafields.my_fields.b2b_price_nok != blank -%}
+                        <span class="price price--end">{{ item.product.metafields.my_fields.b2b_price_nok | times: item.quantity | times: 100 | money }}</span>
+                      {%- elsif item.original_line_price != item.final_line_price -%}
                         <dl class="cart-item__discounted-prices">
                           <dt class="visually-hidden">
                             {{ 'products.product.price.regular_price' | t }}
@@ -175,9 +178,7 @@
                           </dd>
                         </dl>
                       {%- else -%}
-                        <span class="price price--end">
-                          {{ item.original_line_price | money }}
-                        </span>
+                        <span class="price price--end">{{ item.original_line_price | money }}</span>
                       {%- endif -%}
 
                       {%- if item.variant.available and item.unit_price_measurement -%}
@@ -247,7 +248,9 @@
                     </div>
 
                     <div class="cart-item__price-wrapper">
-                      {%- if item.original_line_price != item.final_line_price -%}
+                      {%- if customer.tags contains 'b2b' and item.product.metafields.my_fields.b2b_price_nok != blank -%}
+                        <span class="price price--end">{{ item.product.metafields.my_fields.b2b_price_nok | times: item.quantity | times: 100 | money }}</span>
+                      {%- elsif item.original_line_price != item.final_line_price -%}
                         <dl class="cart-item__discounted-prices">
                           <dt class="visually-hidden">
                             {{ 'products.product.price.regular_price' | t }}
