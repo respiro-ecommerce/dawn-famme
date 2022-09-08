@@ -21,6 +21,7 @@
     },
     "16533034072f022e1d": {
       "type": "image-banner",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/ribbed-kolleksjon-tekst-banner-large-desktop.jpg",
         "image_m": "shopify:\/\/shop_images\/ribbed-kolleksjon-tekst-1-banners-large-mobil.jpg",
@@ -40,6 +41,7 @@
     },
     "16546828983a2aef66": {
       "type": "image-banner",
+      "disabled": true,
       "settings": {
         "image_m": "shopify:\/\/shop_images\/ribbed-kolleksjon-banner-mobil-4.jpg",
         "image_url": "",
@@ -58,6 +60,7 @@
     },
     "1654682946e73d02cd": {
       "type": "image-banner",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/ribbed-kolleksjon-banner-desktop-4.jpg",
         "image_m": "shopify:\/\/shop_images\/ribbed-kolleksjon-banner-mobil-5.jpg",
@@ -77,6 +80,7 @@
     },
     "1654682951c7a5f9bd": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h2",
@@ -104,6 +108,7 @@
     },
     "16546831172b58a65b": {
       "type": "image-banner",
+      "disabled": true,
       "settings": {
         "image_m": "shopify:\/\/shop_images\/ribbed-kolleksjon-banner-mobil-6.jpg",
         "image_url": "",
@@ -122,6 +127,7 @@
     },
     "16546831605b7ab647": {
       "type": "image-banner",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/ribbed-kolleksjon-tekst-2-banner-large-desktop.jpg",
         "image_m": "shopify:\/\/shop_images\/ribbed-kolleksjon-tekst-2-banners-large-mobil_5a2a4bc4-fbb1-4ac9-aa15-36f21f5c0ba4.jpg",
@@ -141,6 +147,7 @@
     },
     "1654683195d38303ec": {
       "type": "image-banner",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/ribbed-kolleksjon-banner-desktop-7.jpg",
         "image_m": "shopify:\/\/shop_images\/ribbed-kolleksjon-banner-mobil-7.jpg",
