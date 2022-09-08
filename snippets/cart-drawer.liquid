@@ -64,7 +64,7 @@
                     </tr>
                   </thead>
 
-                  <tbody role="rowgroup">
+                  <tbody role="rowgroup">{% assign b2btotal = 0 %}
                     {%- for item in cart.items -%}
                       <tr id="CartDrawer-Item-{{ item.index | plus: 1 }}" class="cart-item" role="row">
                         <td class="cart-item__media" role="cell" headers="CartDrawer-ColumnProductImage">
@@ -87,8 +87,9 @@
                           {%- endif -%}
 
                           <a href="{{ item.url }}" class="cart-item__name h4 break">{{ item.product.title | escape }}</a>
-
-                          {%- if item.original_price != item.final_price -%}
+                          {%- if customer.tags contains 'b2b' and item.product.metafields.my_fields.b2b_price_nok != blank -%}
+                            <span class="product-option">{{ item.product.metafields.my_fields.b2b_price_nok | money }}</span>
+                          {%- elsif item.original_price != item.final_price -%}
                             <div class="cart-item__discounted-prices">
                               <span class="visually-hidden">
                                 {{ 'products.product.price.regular_price' | t }}
@@ -162,7 +163,11 @@
                           </div>
 
                           <div class="cart-item__price-wrapper">
-                            {%- if item.original_line_price != item.final_line_price -%}
+                            {%- if customer.tags contains 'b2b' and item.product.metafields.my_fields.b2b_price_nok != blank -%}
+                              {% assign b2bprice = item.product.metafields.my_fields.b2b_price_nok | times: item.quantity | times: 100 %}
+                              <span class="price price--end">{{ b2bprice | money }}</span>
+                              {% assign b2btotal = b2btotal | plus: b2bprice %}
+                            {%- elsif item.original_line_price != item.final_line_price -%}
                               <div class="cart-item__discounted-prices">
                                 <span class="visually-hidden">
                                   {{ 'products.product.price.regular_price' | t }}
@@ -271,7 +276,13 @@
         <div class="cart-drawer__footer" {{ block.shopify_attributes }}>
           <div class="totals" role="status">
             <h2 class="totals__subtotal">{{ 'sections.cart.subtotal' | t }}</h2>
-            <p class="totals__subtotal-value">{{ cart.total_price | money_with_currency }}</p>
+            <p class="totals__subtotal-value">
+              {% if b2btotal > 0 %}
+                {{ b2btotal | money_with_currency }}
+              {% else %}
+                {{ cart.total_price | money_with_currency }}
+              {% endif %}
+            </p>
           </div>
 
           <div>
