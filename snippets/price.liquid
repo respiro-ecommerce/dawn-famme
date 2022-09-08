@@ -28,6 +28,14 @@
   if target == product and product.price_varies
     assign money_price = 'products.product.price.from_price_html' | t: price: money_price
   endif
+
+  if customer.tags contains 'b2b' and product.metafields.my_fields.b2b_price_nok != blank
+    if settings.currency_code_enabled
+     assign money_price = product.metafields.my_fields.b2b_price_nok | times: 100 | money_with_currency
+    else
+      assign money_price = product.metafields.my_fields.b2b_price_nok | times: 100 | money
+    endif
+  endif
 -%}
 
 <div class="price
