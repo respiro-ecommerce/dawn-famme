@@ -22,6 +22,7 @@ if (!customElements.get('quick-add-modal')) {
       fetch(opener.getAttribute('data-product-url'))
         .then((response) => response.text())
         .then((responseText) => {
+          console.log(responseText);
           const responseHTML = new DOMParser().parseFromString(responseText, 'text/html');
           this.productElement = responseHTML.querySelector('section[id^="MainProduct-"]');
           this.preventDuplicatedIDs();
