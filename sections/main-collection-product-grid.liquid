@@ -129,6 +129,7 @@
               <a href="{{ collection.url }}?page={{ paginate.current_page | plus: 1 }}" id="{{ paginate.pages }}" Class="button button--primary">{{ 'shopify.checkout.general.expand_notice_label' | t }}</a>
             </div>
             <script>
+              if (window.location.href.includes('?')){document.querySelector('div.more>a').href = window.location.href + '&page={{ paginate.current_page | plus: 1 }}';}
               window.onscroll = function(){
                 if (document.querySelector('div.pagination-wrapper.more') && document.querySelector('div.more>a').getBoundingClientRect().bottom < 3000 && document.querySelector('div.more>a').innerHTML != '{{ 'accessibility.loading' | t }}'){
                   document.querySelector('div.more>a').innerHTML = '{{ 'accessibility.loading' | t }}';
