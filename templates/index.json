@@ -3,8 +3,8 @@
     "165607326399458504": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/hiking-banner-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/hiking-banner-mobil.jpg",
+        "image": "shopify:\/\/shop_images\/hostsalg-banner-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/hostsalg-banner-mobil.jpg",
         "image_url": "shopify:\/\/collections\/turklaer",
         "image_overlay_opacity": 0,
         "image2_url": "",
@@ -17,77 +17,6 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
-      }
-    },
-    "166057046086c544fd": {
-      "type": "multicolumn",
-      "blocks": {
-        "1660570459ecdaf28d-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/jakker-bilde-knapp.jpg",
-            "url": "shopify:\/\/collections\/jacket",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": "shopify:\/\/collections\/jacket"
-          }
-        },
-        "1660570459ecdaf28d-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/shorts-bukse-bilde-knapp.jpg",
-            "url": "shopify:\/\/collections\/turbukser",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": "shopify:\/\/collections\/sports-bh"
-          }
-        },
-        "1660570459ecdaf28d-2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/topp-bilde-knapp.jpg",
-            "url": "shopify:\/\/collections\/treningsoverdeler",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "10a7abb5-b911-417a-bfa8-44d013a16de9": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/sko-bilde-knapp.jpg",
-            "url": "shopify:\/\/products\/ventdry-rx1-shoes",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "1660570459ecdaf28d-0",
-        "1660570459ecdaf28d-1",
-        "1660570459ecdaf28d-2",
-        "10a7abb5-b911-417a-bfa8-44d013a16de9"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h2",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 4,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "background-1",
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 4,
-        "padding_bottom": 4
       }
     },
     "1660654738369bfdd0": {
@@ -149,6 +78,104 @@
         "padding_bottom": 0
       }
     },
+    "166057046086c544fd": {
+      "type": "multicolumn",
+      "blocks": {
+        "1660570459ecdaf28d-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/tights-knapp-mulitcolumn.jpg",
+            "url": "shopify:\/\/collections\/treningstights",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/collections\/jacket"
+          }
+        },
+        "1660570459ecdaf28d-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sportsbra-knapp-mulitcolumn.jpg",
+            "url": "shopify:\/\/collections\/turbukser",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/collections\/sports-bh"
+          }
+        },
+        "1660570459ecdaf28d-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/topper-knapp-mulitcolumn.jpg",
+            "url": "shopify:\/\/collections\/treningsoverdeler",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "10a7abb5-b911-417a-bfa8-44d013a16de9": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/jakker-knapp-mulitcolumn.jpg",
+            "url": "shopify:\/\/collections\/jacket",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1660570459ecdaf28d-0",
+        "1660570459ecdaf28d-1",
+        "1660570459ecdaf28d-2",
+        "10a7abb5-b911-417a-bfa8-44d013a16de9"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 4,
+        "padding_bottom": 4
+      }
+    },
+    "1663594925b05b51c0": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Nyheter",
+        "heading_size": "h2",
+        "description": "<p>Få med deg de nyeste lanseringene!<\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "new-releases",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 16,
+        "padding_bottom": 16
+      }
+    },
     "16620310837584a090": {
       "type": "image-banner",
       "settings": {
@@ -171,12 +198,12 @@
     "16463038447a5cbd60": {
       "type": "featured-collection",
       "settings": {
-        "title": "",
+        "title": "Bestselgere",
         "heading_size": "h2",
-        "description": "",
+        "description": "<p>De mest populære produktene akkurat nå!<\/p>",
         "show_description": false,
         "description_style": "body",
-        "collection": "treningsklaer-til-damer",
+        "collection": "bestsellers",
         "products_to_show": 8,
         "columns_desktop": 4,
         "full_width": false,
@@ -191,8 +218,8 @@
         "enable_quick_add": false,
         "columns_mobile": "2",
         "swipe_on_mobile": true,
-        "padding_top": 0,
-        "padding_bottom": 8
+        "padding_top": 16,
+        "padding_bottom": 16
       }
     },
     "16602879286b7eef4a": {
@@ -289,8 +316,9 @@
   },
   "order": [
     "165607326399458504",
-    "166057046086c544fd",
     "1660654738369bfdd0",
+    "166057046086c544fd",
+    "1663594925b05b51c0",
     "16620310837584a090",
     "16463038447a5cbd60",
     "16602879286b7eef4a",
