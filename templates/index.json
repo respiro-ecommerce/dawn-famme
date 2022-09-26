@@ -1,13 +1,11 @@
 {
   "sections": {
-    "165607326399458504": {
+    "16620310837584a090": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/EN-hostsalg-banner-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/EN-hostsalg-banner-mobil.jpg",
-        "imageno": "shopify:\/\/shop_images\/hostsalg-banner-desktop.jpg",
-        "image_nom": "shopify:\/\/shop_images\/hostsalg-banner-mobil.jpg",
-        "image_url": "shopify:\/\/collections\/sale",
+        "image": "shopify:\/\/shop_images\/activewear-desktop-banner.jpg",
+        "image_m": "shopify:\/\/shop_images\/activewear-mobil-banner.jpg",
+        "image_url": "shopify:\/\/collections\/treningsklaer",
         "image_overlay_opacity": 0,
         "image2_url": "",
         "image_height": "large",
@@ -178,12 +176,14 @@
         "padding_bottom": 16
       }
     },
-    "16620310837584a090": {
+    "165607326399458504": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/activewear-desktop-banner.jpg",
-        "image_m": "shopify:\/\/shop_images\/activewear-mobil-banner.jpg",
-        "image_url": "shopify:\/\/collections\/treningsklaer",
+        "image": "shopify:\/\/shop_images\/EN-hostsalg-banner-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/EN-hostsalg-banner-mobil.jpg",
+        "imageno": "shopify:\/\/shop_images\/hostsalg-banner-desktop.jpg",
+        "image_nom": "shopify:\/\/shop_images\/hostsalg-banner-mobil.jpg",
+        "image_url": "shopify:\/\/collections\/sale",
         "image_overlay_opacity": 0,
         "image2_url": "",
         "image_height": "large",
@@ -317,11 +317,11 @@
     }
   },
   "order": [
-    "165607326399458504",
+    "16620310837584a090",
     "1660654738369bfdd0",
     "166057046086c544fd",
     "1663594925b05b51c0",
-    "16620310837584a090",
+    "165607326399458504",
     "16463038447a5cbd60",
     "16602879286b7eef4a",
     "1629157352b193f90f",
