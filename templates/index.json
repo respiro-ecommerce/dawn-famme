@@ -179,10 +179,8 @@
     "165607326399458504": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/EN-hostsalg-banner-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/EN-hostsalg-banner-mobil.jpg",
-        "imageno": "shopify:\/\/shop_images\/hostsalg-banner-desktop.jpg",
-        "image_nom": "shopify:\/\/shop_images\/hostsalg-banner-mobil.jpg",
+        "image": "shopify:\/\/shop_images\/hiking-banner-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/hiking-banner-mobil.jpg",
         "image_url": "shopify:\/\/collections\/sale",
         "image_overlay_opacity": 0,
         "image2_url": "",
