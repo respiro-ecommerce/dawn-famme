@@ -156,6 +156,8 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/activewear-desktop-banner.jpg",
         "image_m": "shopify:\/\/shop_images\/activewear-mobil-banner.jpg",
+        "imageno": "shopify:\/\/shop_images\/treningsklaer-banner-desktop-NO.jpg",
+        "image_nom": "shopify:\/\/shop_images\/treningsklaer-banner-mobil-NO.jpg",
         "image_url": "shopify:\/\/collections\/treningsklaer",
         "image_overlay_opacity": 0,
         "image2_url": "",
