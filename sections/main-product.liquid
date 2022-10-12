@@ -488,51 +488,16 @@
 	            {% endif %}
 	          {% endfor %}
                 {%- if block.settings.picker_type == 'button' -%}
-                <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }} data-variant-picker>
+                <variant-radiosid="variant-radios-{{ section.id }}" class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }} data-variant-picker>
                     {%- for option in product.options_with_values -%}
                     {% if option.name contains 'ize' %}<p><b>{{ sizing_recommendation }}</b></p>{% endif %}
                     <fieldset class="js product-form__input">
-                      <legend class="form__label">{{ option.name }} - <span>{{ option.selected_value }}</span></legend>
-                      {%- for value in option.values -%}
-                        {%- assign option_disabled = true -%}
-                        {% for option1_name in variants_option1_arr %}
-                          {% case option.position %}
-                            {% when 1 %}
-                              {% if variants_option1_arr[forloop.index0] == value and variants_available_arr[forloop.index0] == true %}
-                                {%- assign option_disabled = false -%}
-                              {% endif %}
-                            {% when 2 %}
-                              {% if option1_name == product.selected_or_first_available_variant.option1 and variants_option2_arr[forloop.index0] == value and variants_available_arr[forloop.index0] == true %}
-                                {%- assign option_disabled = false -%}
-                              {% endif %}
-                            {% when 3 %}
-                              {% if option1_name == product.selected_or_first_available_variant.option1 and variants_option2_arr[forloop.index0] == product.selected_or_first_available_variant.option2 and variants_option3_arr[forloop.index0] == value and variants_available_arr[forloop.index0] == true %}
-                                {%- assign option_disabled = false -%}
-                              {% endif %}
-                          {% endcase %}
-                        {% endfor %}
-                        <input
-                            type="radio"
-                            id="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}"
-                              name="{{ option.name }}"
-                              value="{{ value | escape }}"
-                               form="{{ product_form_id }}"
-                              {% if option.selected_value == value %}checked{% endif %}
-                              {% if option_disabled %}class="disabled"{% endif %}
-                        >
-                        {%- assign downcased_option = option.name | downcase -%}
-                        {%- if downcased_option contains 'olor' or downcased_option contains 'olour' or downcased_option contains 'far' or downcased_option contains 'fär' -%}
-                          <label class="color" for="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}">
-                            {%- for variant in product.variants -%}
-                              {%- if variant.option1 == value or variant.option2 == value or variant.option3 == value -%}
-                                {%- if variant.image -%}{{ variant.image | image_url: width: 60 | image_tag  }}{%- break -%}{%- endif -%}
-                              {%- endif -%}
-                            {%- endfor -%}
-                          </label>
-                        {%- else -%}
-                          <label for="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}">{{ value }}</label>
-                        {%- endif -%}
-                      {%- endfor -%}
+                        <legend class="form__label">{{ option.name }}</legend>
+                        {% render 'product-variant-options',
+                          product: product,
+                          option: option,
+                          block: block
+                        %}
                     </fieldset>
                   {%- endfor -%}
                   <script type="application/json">
@@ -540,7 +505,7 @@
                   </script>
                 </variant-radios>
               {%- else -%}
-                <variant-selects class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }} data-variant-picker>
+                <variant-selectsid="variant-selects-{{ section.id }}" class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }} data-variant-picker>
                     {%- for option in product.options_with_values -%}
                     {% if option.name contains 'ize' or option.name contains 'lse' %}<p><b>{{ sizing_recommendation }}</b></p>{% endif %}
                       <div class="product-form__input product-form__input--dropdown">
@@ -554,28 +519,11 @@
                             name="options[{{ option.name | escape }}]"
                             form="{{ product_form_id }}"
                           >
-                            {%- for value in option.values -%}
-                              {%- assign option_disabled = true -%}
-                            {% for option1_name in variants_option1_arr %}
-                              {% case option.position %}
-                                {% when 1 %}
-                                  {% if variants_option1_arr[forloop.index0] == value and variants_available_arr[forloop.index0] == true %}
-                                    {%- assign option_disabled = false -%}
-                                  {% endif %}
-                                {% when 2 %}
-                                  {% if option1_name == product.selected_or_first_available_variant.option1 and variants_option2_arr[forloop.index0] == value and variants_available_arr[forloop.index0] == true %}
-                                    {%- assign option_disabled = false -%}
-                                  {% endif %}
-                                {% when 3 %}
-                                  {% if option1_name == product.selected_or_first_available_variant.option1 and variants_option2_arr[forloop.index0] == product.selected_or_first_available_variant.option2 and variants_option3_arr[forloop.index0] == value and variants_available_arr[forloop.index0] == true %}
-                                    {%- assign option_disabled = false -%}
-                                  {% endif %}
-                              {% endcase %}
-                            {% endfor %}
-                            <option value="{{ value | escape }}" {% if option.selected_value == value %}selected="selected"{% endif %}{% if option_disabled %} disabled{% endif %}>
-                                {{ value }}
-                              </option>
-                            {%- endfor -%}
+                            {% render 'product-variant-options',
+                              product: product,
+                              option: option,
+                              block: block
+                            %}
                           </select>
                           {% render 'icon-caret' %}
                         </div>
@@ -1422,6 +1370,12 @@
           ],
           "default": "button",
           "label": "t:sections.main-product.blocks.variant_picker.settings.picker_type.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_soldout_variants",
+          "default": false,
+          "label": "t:sections.main-product.blocks.variant_picker.settings.show_soldout.label"
         }
       ]
     },
