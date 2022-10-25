@@ -26,12 +26,6 @@
     }
   {%- endstyle -%}
 
-{% comment %} Custom: Part of the sold out UI: https://github.com/Shopify/dawn/pull/105 {% endcomment %}
-{%- assign variants_available_arr = product.variants | map: 'available' -%}
-{%- assign variants_option1_arr = product.variants | map: 'option1' -%}
-{%- assign variants_option2_arr = product.variants | map: 'option2' -%}
-{%- assign variants_option3_arr = product.variants | map: 'option3' -%}
-
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 
   {%- assign first_3d_model = product.media | where: 'media_type', 'model' | first -%}
