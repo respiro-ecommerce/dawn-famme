@@ -33,8 +33,9 @@ class CartNotification extends HTMLElement {
   renderContents(parsedState) {
       this.cartItemKey = parsedState.key;
       this.getSectionsToRender().forEach((section => {
+        var selector = '.item=' + this.cartItemKey.split(':')[0];
         document.getElementById(section.id).innerHTML =
-          this.getSectionInnerHTML(parsedState.sections[section.id], '.shopify-section');
+          this.getSectionInnerHTML(parsedState.sections[section.id], selector);
       }));
 
       if (this.header) this.header.reveal();
