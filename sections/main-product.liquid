@@ -224,7 +224,7 @@
 	            {% endif %}
 	          {% endfor %}
                 {%- if block.settings.picker_type == 'button' -%}
-                <variant-radiosid="variant-radios-{{ section.id }}" class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }} data-variant-picker>
+                <variant-radios id="variant-radios-{{ section.id }}" class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }} data-variant-picker>
                     {%- for option in product.options_with_values -%}
                     {% if option.name contains 'ize' %}<p><b>{{ sizing_recommendation }}</b></p>{% endif %}
                     <fieldset class="js product-form__input">
