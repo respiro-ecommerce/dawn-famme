@@ -228,7 +228,7 @@
                     {%- for option in product.options_with_values -%}
                     {% if option.name contains 'ize' %}<p><b>{{ sizing_recommendation }}</b></p>{% endif %}
                     <fieldset class="js product-form__input">
-                        <legend class="form__label">{{ option.name }}</legend>
+                        <legend class="form__label">{{ option.name }} - <span>{{ option.selected_value }}</span></legend>
                         {% render 'product-variant-options',
                           product: product,
                           option: option,
