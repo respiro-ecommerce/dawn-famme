@@ -1,6 +1,6 @@
 {%- if cart != empty -%}
   {%- for item in cart.items -%}
-    <div id="cart-notification-product-{{ item.key }}" class="cart-item item{{ item.id }}">
+    <div id="cart-notification-product-{{ item.key }}" class="cart-item">
       {% if item.image %}
         <img class="cart-notification-product__image"
           src="{{ item.image | img_url: '140x' }}"
