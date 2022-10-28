@@ -154,6 +154,7 @@
       "type": "image-banner",
       "settings": {
         "image": "shopify:\/\/shop_images\/activewear-desktop-banner.jpg",
+        "image_m": "shopify:\/\/shop_images\/treningsklaer-banner-mobil-NO.jpg",
         "image_url": "",
         "image_overlay_opacity": 0,
         "image_height": "large",
@@ -198,6 +199,7 @@
       "type": "image-banner",
       "settings": {
         "image": "shopify:\/\/shop_images\/hiking-banner-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/turklaer-banner-mobil-No.jpg",
         "image_url": "",
         "image_overlay_opacity": 0,
         "image_height": "large",
