@@ -1,13 +1,11 @@
 {
   "sections": {
-    "5aa9934d-8d5f-42b0-ae46-193127d83e1c": {
+    "16620310837584a090": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/EN-pink-month-desktop-banner.jpg",
-        "image_m": "shopify:\/\/shop_images\/EN-pink-month-mobil-banner.jpg",
-        "imageno": "shopify:\/\/shop_images\/pink-month-desktop-banner.jpg",
-        "image_nom": "shopify:\/\/shop_images\/pink-month-mobil-banner.jpg",
-        "image_url": "shopify:\/\/collections\/treningsoverdeler",
+        "image": "shopify:\/\/shop_images\/activewear-desktop-banner.jpg",
+        "image_m": "shopify:\/\/shop_images\/treningsklaer-banner-mobil-NO.jpg",
+        "image_url": "",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "adapt_height_first_image": false,
@@ -148,24 +146,6 @@
         "swipe_on_mobile": true,
         "padding_top": 4,
         "padding_bottom": 4
-      }
-    },
-    "16620310837584a090": {
-      "type": "image-banner",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/activewear-desktop-banner.jpg",
-        "image_m": "shopify:\/\/shop_images\/treningsklaer-banner-mobil-NO.jpg",
-        "image_url": "",
-        "image_overlay_opacity": 0,
-        "image_height": "large",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
       }
     },
     "1663594925b05b51c0": {
@@ -329,10 +309,9 @@
     }
   },
   "order": [
-    "5aa9934d-8d5f-42b0-ae46-193127d83e1c",
+    "16620310837584a090",
     "1660654738369bfdd0",
     "166057046086c544fd",
-    "16620310837584a090",
     "1663594925b05b51c0",
     "165607326399458504",
     "16463038447a5cbd60",
