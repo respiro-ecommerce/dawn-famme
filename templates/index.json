@@ -3,9 +3,9 @@
     "16620310837584a090": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/treningsklaer-banner-desktop-NO.jpg",
-        "image_m": "shopify:\/\/shop_images\/treningsklaer-banner-mobil-NO.jpg",
-        "image_url": "",
+        "image": "shopify:\/\/shop_images\/VORTEX-banner-desktop_4.jpg",
+        "image_m": "shopify:\/\/shop_images\/vortex-banner-mobil_4.jpg",
+        "image_url": "shopify:\/\/collections\/bestsellers",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "adapt_height_first_image": false,
