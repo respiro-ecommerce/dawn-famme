@@ -286,6 +286,7 @@
       "type": "image-banner",
       "settings": {
         "image": "shopify:\/\/shop_images\/produktgruppe-banner-engelsk-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/produktgruppe-banner-engelsk-mobil.jpg",
         "image_url": "",
         "image_overlay_opacity": 0,
         "image_height": "small",
