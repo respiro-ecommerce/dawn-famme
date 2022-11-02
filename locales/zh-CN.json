@@ -7,7 +7,7 @@
       "login_form_password_placeholder": "您的密码",
       "login_form_error": "密码错误！",
       "login_form_submit": "输入",
-      "admin_link_html": "您是否是店主？<a href=\"/admin\" class=\"link underlined-link\">在此处登录</a>",
+      "admin_link_html": "您是否为店主？<a href=\"/admin\" class=\"link underlined-link\">在此处登录</a>",
       "powered_by_shopify_html": "此商店由 {{ shopify }} 提供支持"
     },
     "social": {
@@ -51,7 +51,8 @@
     "slider": {
       "of": "/",
       "next_slide": "向右滑动",
-      "previous_slide": "向左滑动"
+      "previous_slide": "向左滑动",
+      "name": "滑块"
     }
   },
   "newsletter": {
@@ -74,7 +75,8 @@
     "skip_to_product_info": "跳至产品信息",
     "total_reviews": "总评论数",
     "star_reviews_info": "{{ rating_value }}/{{ rating_max }} 星",
-    "collapsible_content_title": "可折叠内容"
+    "collapsible_content_title": "可折叠内容",
+    "complementary_products": "互补产品"
   },
   "blogs": {
     "article": {
@@ -148,7 +150,16 @@
       "include_taxes": "含税费。",
       "shipping_policy_html": "结账时计算的<a href=\"{{ link }}\">运费</a>。",
       "choose_options": "选择选项",
-      "choose_product_options": "选择用于 {{ product_name }} 的选项"
+      "choose_product_options": "选择用于 {{ product_name }} 的选项",
+      "value_unavailable": "{{ option_value }} - 不可用",
+      "variant_sold_out_or_unavailable": "多属性已售罄或不可用",
+      "inventory_in_stock": "现货",
+      "inventory_in_stock_show_count": "{{ quantity }} 件存货",
+      "inventory_low_stock": "低库存",
+      "inventory_low_stock_show_count": "低库存：剩余 {{ quantity }}",
+      "inventory_out_of_stock": "缺货",
+      "inventory_out_of_stock_continue_selling": "现货",
+      "sku": "SKU"
     },
     "modal": {
       "label": "媒体图库"
@@ -267,8 +278,7 @@
     },
     "featured_collection": {
       "view_all": "查看全部",
-      "view_all_label": "查看 {{ collection_name }} 产品系列中的所有产品",
-      "slider": "滑块"
+      "view_all_label": "查看 {{ collection_name }} 产品系列中的所有产品"
     },
     "collection_list": {
       "view_all": "查看全部"
@@ -378,7 +388,7 @@
     },
     "reset_password": {
       "title": "重置账户密码",
-      "subtext": "输入 {{ email }} 的新密码",
+      "subtext": "输入新密码",
       "password": "密码",
       "password_confirm": "确认密码",
       "submit": "重置密码"

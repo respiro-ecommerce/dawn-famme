@@ -51,7 +51,8 @@
     "slider": {
       "of": "od",
       "next_slide": "Podrsajte desno",
-      "previous_slide": "Podrsajte levo"
+      "previous_slide": "Podrsajte levo",
+      "name": "Drsnik"
     }
   },
   "newsletter": {
@@ -74,7 +75,8 @@
     "skip_to_product_info": "Preskoči na informacije o izdelku",
     "total_reviews": "skupno število pregledov",
     "star_reviews_info": "{{ rating_value }} od {{ rating_max }} zvezdic",
-    "collapsible_content_title": "Vsebina, ki jo je mogoče strniti"
+    "collapsible_content_title": "Vsebina, ki jo je mogoče strniti",
+    "complementary_products": "Dopolnilni izdelki"
   },
   "blogs": {
     "article": {
@@ -150,7 +152,16 @@
       "include_taxes": "Vključno z davkom.",
       "shipping_policy_html": "<a href=\"{{ link }}\">Dostava</a> se obračuna ob zaključku nakupa.",
       "choose_options": "Izberite možnosti",
-      "choose_product_options": "Izberite možnosti za izdelek {{ product_name }}"
+      "choose_product_options": "Izberite možnosti za izdelek {{ product_name }}",
+      "value_unavailable": "{{ option_value }} – ni na voljo",
+      "variant_sold_out_or_unavailable": "Različica je razprodana ali ni na voljo",
+      "inventory_in_stock": "Na zalogi",
+      "inventory_in_stock_show_count": "Na zalogi: {{ quantity }}",
+      "inventory_low_stock": "Majhna zaloga",
+      "inventory_low_stock_show_count": "Majhna zaloga, preostalo še: {{ quantity }}",
+      "inventory_out_of_stock": "Ni na zalogi",
+      "inventory_out_of_stock_continue_selling": "Na zalogi",
+      "sku": "Inventarna številka"
     },
     "modal": {
       "label": "Galerija predstavnostnih vsebin"
@@ -281,8 +292,7 @@
     },
     "featured_collection": {
       "view_all": "Prikaži vse",
-      "view_all_label": "Prikaži vse izdelke v zbirki {{ collection_name }}",
-      "slider": "Drsnik"
+      "view_all_label": "Prikaži vse izdelke v zbirki {{ collection_name }}"
     },
     "collection_list": {
       "view_all": "Prikaži vse"
@@ -417,7 +427,7 @@
     },
     "reset_password": {
       "title": "Ponastavitev gesla za račun",
-      "subtext": "Vnesite novo geslo za {{ email }}",
+      "subtext": "Vnesite novo geslo",
       "password": "Geslo",
       "password_confirm": "Potrdite geslo",
       "submit": "Ponastavi geslo"

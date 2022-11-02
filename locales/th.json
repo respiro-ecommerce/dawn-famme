@@ -51,7 +51,8 @@
     "slider": {
       "of": "จาก",
       "next_slide": "ไปสไลด์ขวา",
-      "previous_slide": "ไปสไลด์ซ้าย"
+      "previous_slide": "ไปสไลด์ซ้าย",
+      "name": "แถบเลื่อน"
     }
   },
   "newsletter": {
@@ -74,7 +75,8 @@
     "skip_to_product_info": "ข้ามไปยังข้อมูลสินค้า",
     "total_reviews": "รีวิวทั้งหมด",
     "star_reviews_info": "{{ rating_value }} จาก {{ rating_max }} ดาว",
-    "collapsible_content_title": "เนื้อหาที่ย่อได้"
+    "collapsible_content_title": "เนื้อหาที่ย่อได้",
+    "complementary_products": "สินค้าเสริม"
   },
   "blogs": {
     "article": {
@@ -148,7 +150,16 @@
       "include_taxes": "รวมภาษี",
       "shipping_policy_html": "<a href=\"{{ link }}\">ค่าจัดส่ง</a>ที่คำนวณในขั้นตอนการชำระเงิน",
       "choose_options": "เลือกตัวเลือก",
-      "choose_product_options": "เลือกตัวเลือกสำหรับ {{ product_name }}"
+      "choose_product_options": "เลือกตัวเลือกสำหรับ {{ product_name }}",
+      "value_unavailable": "{{ option_value }} ไม่พร้อมจำหน่าย",
+      "variant_sold_out_or_unavailable": "ตัวเลือกสินค้าขายหมดแล้วหรือไม่พร้อมจำหน่าย",
+      "inventory_in_stock": "มีในสต็อก",
+      "inventory_in_stock_show_count": "มี {{ quantity }} รายการในสต็อกสินค้า",
+      "inventory_low_stock": "สต็อกสินค้าเหลือน้อย",
+      "inventory_low_stock_show_count": "สต็อกสินค้าเหลือน้อย: เหลือ {{ quantity }} ชิ้น",
+      "inventory_out_of_stock": "หมดสต็อก",
+      "sku": "SKU",
+      "inventory_out_of_stock_continue_selling": "มีในสต็อก"
     },
     "modal": {
       "label": "แกลเลอรีสื่อ"
@@ -267,8 +278,7 @@
     },
     "featured_collection": {
       "view_all": "ดูทั้งหมด",
-      "view_all_label": "ดูสินค้าทั้งหมดในคอลเลกชัน {{ collection_name }}",
-      "slider": "แถบเลื่อน"
+      "view_all_label": "ดูสินค้าทั้งหมดในคอลเลกชัน {{ collection_name }}"
     },
     "collection_list": {
       "view_all": "ดูทั้งหมด"
@@ -378,7 +388,7 @@
     },
     "reset_password": {
       "title": "รีเซ็ตรหัสผ่านของบัญชีผู้ใช้",
-      "subtext": "ป้อนรหัสผ่านใหม่สำหรับ {{ email }}",
+      "subtext": "ป้อนรหัสผ่านใหม่",
       "password": "รหัสผ่าน",
       "password_confirm": "ยืนยันรหัสผ่าน",
       "submit": "รีเซ็ตรหัสผ่าน"

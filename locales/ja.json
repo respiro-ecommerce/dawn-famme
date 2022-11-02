@@ -51,7 +51,8 @@
     "slider": {
       "of": "の",
       "next_slide": "右にスライド",
-      "previous_slide": "左にスライド"
+      "previous_slide": "左にスライド",
+      "name": "スライダー"
     }
   },
   "newsletter": {
@@ -74,7 +75,8 @@
     "skip_to_product_info": "商品情報にスキップ",
     "total_reviews": "レビュー数の合計",
     "star_reviews_info": "{{ rating_max }}つ星中{{ rating_value }}つ",
-    "collapsible_content_title": "折りたたみ可能なコンテンツ"
+    "collapsible_content_title": "折りたたみ可能なコンテンツ",
+    "complementary_products": "付属商品"
   },
   "blogs": {
     "article": {
@@ -148,7 +150,16 @@
       "include_taxes": "税込み。",
       "shipping_policy_html": "<a href=\"{{ link }}\">配送料</a>はチェックアウト時に計算されます。",
       "choose_options": "オプションを選択",
-      "choose_product_options": "{{ product_name }}のオプションを選択する"
+      "choose_product_options": "{{ product_name }}のオプションを選択する",
+      "value_unavailable": "{{ option_value }}は利用できません",
+      "variant_sold_out_or_unavailable": "バリエーションは売り切れているか販売できません",
+      "inventory_in_stock": "在庫あり",
+      "inventory_in_stock_show_count": "{{ quantity }}個の在庫",
+      "inventory_low_stock": "低在庫",
+      "inventory_low_stock_show_count": "低在庫：残り{{ quantity }}個",
+      "inventory_out_of_stock": "在庫切れ",
+      "inventory_out_of_stock_continue_selling": "在庫あり",
+      "sku": "SKU"
     },
     "modal": {
       "label": "メディアギャラリー"
@@ -267,8 +278,7 @@
     },
     "featured_collection": {
       "view_all": "すべてを表示する",
-      "view_all_label": "{{ collection_name }}コレクションの商品をすべて表示する",
-      "slider": "スライダー"
+      "view_all_label": "{{ collection_name }}コレクションの商品をすべて表示する"
     },
     "collection_list": {
       "view_all": "すべてを表示する"
@@ -378,7 +388,7 @@
     },
     "reset_password": {
       "title": "アカウントのパスワードをリセットする",
-      "subtext": "{{ email }}の新しいパスワードを入力してください",
+      "subtext": "新しいパスワードを入力してください",
       "password": "パスワード",
       "password_confirm": "パスワードを確認する",
       "submit": "パスワードをリセットする"

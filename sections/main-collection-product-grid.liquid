@@ -64,7 +64,13 @@
             </span>
           </h2>
           <div class="loading-overlay__spinner">
-            <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              class="spinner"
+              viewBox="0 0 66 66"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
             </svg>
           </div>
@@ -129,6 +135,7 @@
               <a href="{{ collection.url }}?page={{ paginate.current_page | plus: 1 }}" id="{{ paginate.pages }}" Class="button button--primary">{{ 'shopify.checkout.general.expand_notice_label' | t }}</a>
             </div>
             <script>
+              if (window.location.href.includes('?')){document.querySelector('div.more>a').href = window.location.href + '&page={{ paginate.current_page | plus: 1 }}';}
               window.onscroll = function(){
                 if (document.querySelector('div.pagination-wrapper.more') && document.querySelector('div.more>a').getBoundingClientRect().bottom < 3000 && document.querySelector('div.more>a').innerHTML != '{{ 'accessibility.loading' | t }}'){
                   document.querySelector('div.more>a').innerHTML = '{{ 'accessibility.loading' | t }}';
@@ -158,8 +165,6 @@
     </div>
   </div>
 </div>
-
-
 {% schema %}
 {
   "name": "t:sections.main-collection-product-grid.name",

@@ -15,14 +15,14 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
-        "products_per_page": 15,
+        "products_per_page": 20,
         "image_ratio": "adapt",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
         "enable_filtering": true,
-        "enable_sorting": true,
-        "collapse_on_larger_devices": false
+        "filter_type": "vertical",
+        "enable_sorting": true
       }
     },
     "1629364797037f49c2": {

@@ -235,23 +235,6 @@
         }
       }
     },
-    "cards": {
-      "name": "Karten",
-      "settings": {
-        "header__badge": {
-          "content": "Badge"
-        },
-        "style": {
-          "options__1": {
-            "label": "Standard"
-          },
-          "options__2": {
-            "label": "Karte"
-          },
-          "label": "Optik"
-        }
-      }
-    },
     "badges": {
       "name": "Badges",
       "settings": {
@@ -326,8 +309,50 @@
           "header": "Warenkorbeinschub",
           "collection": {
             "label": "Kategorie",
-            "info": "Sichtbar, wenn der Warenkorbeinschub leer ist"
+            "info": "Sichtbar, wenn der Warenkorbeinschub leer ist."
           }
+        }
+      }
+    },
+    "cards": {
+      "name": "Produktkarten",
+      "settings": {
+        "style": {
+          "options__1": {
+            "label": "Standard"
+          },
+          "options__2": {
+            "label": "Karte"
+          },
+          "label": "Optik"
+        }
+      }
+    },
+    "collection_cards": {
+      "name": "Kategoriekarten",
+      "settings": {
+        "style": {
+          "options__1": {
+            "label": "Standard"
+          },
+          "options__2": {
+            "label": "Karte"
+          },
+          "label": "Optik"
+        }
+      }
+    },
+    "blog_cards": {
+      "name": "Blog-Karten",
+      "settings": {
+        "style": {
+          "options__1": {
+            "label": "Standard"
+          },
+          "options__2": {
+            "label": "Karte"
+          },
+          "label": "Optik"
         }
       }
     }
@@ -386,6 +411,18 @@
             },
             "link": {
               "label": "Link"
+            },
+            "text_alignment": {
+              "label": "Textausrichtung",
+              "options__1": {
+                "label": "Links"
+              },
+              "options__2": {
+                "label": "Zentriert"
+              },
+              "options__3": {
+                "label": "Rechts"
+              }
             }
           }
         }
@@ -413,6 +450,16 @@
           },
           "options__2": {
             "label": "Spalte"
+          }
+        },
+        "card_styles": {
+          "label": "Kartendesign",
+          "info": "Das Design von Produkten, Kategorien und Blogkarten kann in den Theme-Einstellungen aktualisiert werden.",
+          "options__1": {
+            "label": "Individuelle Kartendesigns verwenden"
+          },
+          "options__2": {
+            "label": "Alle als Produktkarten gestalten"
           }
         }
       },
@@ -781,7 +828,9 @@
           "options__3": {
             "label": "Oben zentriert"
           },
-          "info": "Positionen werden automatisch für die mobile Nutzung optimiert."
+          "options__4": {
+            "label": "Mitte zentriert"
+          }
         },
         "menu": {
           "label": "Menü"
@@ -804,6 +853,18 @@
           },
           "options__2": {
             "label": "Mega-Menü"
+          }
+        },
+        "mobile_layout": {
+          "content": "Mobiles Layout"
+        },
+        "mobile_logo_position": {
+          "label": "Logo-Position für mobile Darstellung",
+          "options__1": {
+            "label": "Zentriert"
+          },
+          "options__2": {
+            "label": "Links"
           }
         }
       }
@@ -1659,6 +1720,139 @@
               "content": "Um eine Bewertung anzuzeigen, musst du eine Produktbewertungs-App hinzufügen. [Mehr Informationen](https://help.shopify.com/manual/online-store/themes/theme-structure/page-types#product-rating-block)"
             }
           }
+        },
+        "complementary_products": {
+          "name": "Ergänzende Produkte",
+          "settings": {
+            "paragraph": {
+              "content": "Um ergänzende Produkte auszuwählen, füge die Search & Discovery-App hinzu. [Mehr Informationen](https://help.shopify.com/manual/online-store/search-and-discovery/product-recommendations)"
+            },
+            "heading": {
+              "label": "Überschrift"
+            },
+            "make_collapsible_row": {
+              "label": "Als einklappbare Reihe anzeigen"
+            },
+            "icon": {
+              "info": "Sichtbar, wenn einklappbare Reihe angezeigt wird."
+            },
+            "product_list_limit": {
+              "label": "Maximal anzuzeigende Produkte"
+            },
+            "products_per_page": {
+              "label": "Anzahl der Produkte pro Seite"
+            },
+            "pagination_style": {
+              "label": "Seitennummerierungsstil",
+              "options": {
+                "option_1": "Punkte",
+                "option_2": "Zähler",
+                "option_3": "Zahlen"
+              }
+            },
+            "product_card": {
+              "heading": "Produktkarte"
+            },
+            "image_ratio": {
+              "label": "Bildverhältnis",
+              "options": {
+                "option_1": "Hochformat",
+                "option_2": "Quadratisch"
+              }
+            },
+            "enable_quick_add": {
+              "label": "Schaltfläche zum schnellen Hinzufügen aktivieren"
+            }
+          }
+        },
+        "icon_with_text": {
+          "name": "Symbol mit Text",
+          "settings": {
+            "layout": {
+              "label": "Layout",
+              "options__1": {
+                "label": "Horizontal"
+              },
+              "options__2": {
+                "label": "Vertikal"
+              }
+            },
+            "content": {
+              "label": "Inhalt",
+              "info": "Wähle ein Symbol oder füge ein Bild für jede Spalte oder Zeile hinzu."
+            },
+            "heading": {
+              "info": "Lasse die Überschrift leer, um die Symbolspalte auszublenden."
+            },
+            "icon_1": {
+              "label": "Erstes Symbol"
+            },
+            "image_1": {
+              "label": "Erstes Bild"
+            },
+            "heading_1": {
+              "label": "Erste Überschrift"
+            },
+            "icon_2": {
+              "label": "Zweites Symbol"
+            },
+            "image_2": {
+              "label": "Zweites Bild"
+            },
+            "heading_2": {
+              "label": "Zweite Überschrift"
+            },
+            "icon_3": {
+              "label": "Drittes Symbol"
+            },
+            "image_3": {
+              "label": "Drittes Bild"
+            },
+            "heading_3": {
+              "label": "Dritte Überschrift"
+            }
+          }
+        },
+        "sku": {
+          "name": "SKU",
+          "settings": {
+            "text_style": {
+              "label": "Textstil",
+              "options__1": {
+                "label": "Nachricht"
+              },
+              "options__2": {
+                "label": "Untertitel"
+              },
+              "options__3": {
+                "label": "Großbuchstaben"
+              }
+            }
+          }
+        },
+        "inventory": {
+          "name": "Inventarstatus",
+          "settings": {
+            "text_style": {
+              "label": "Textstil",
+              "options__1": {
+                "label": "Nachricht"
+              },
+              "options__2": {
+                "label": "Untertitel"
+              },
+              "options__3": {
+                "label": "Großbuchstaben"
+              }
+            },
+            "inventory_threshold": {
+              "label": "Geringer Inventarschwellenwert",
+              "info": "Wähle 0 aus, um immer den Lagerbestand anzuzeigen, falls verfügbar."
+            },
+            "show_inventory_quantity": {
+              "label": "Inventar anzeigen"
+            }
+          }
         }
       },
       "settings": {
@@ -1681,9 +1875,12 @@
             "label": "Gestapelt"
           },
           "options__2": {
-            "label": "Vorschaubilder"
+            "label": "2 Spalten"
           },
           "options__3": {
+            "label": "Vorschaubilder"
+          },
+          "options__4": {
             "label": "Karussell mit Vorschaubildern"
           }
         },
@@ -1703,10 +1900,36 @@
         "mobile_thumbnails": {
           "label": "Mobiles Layout",
           "options__1": {
-            "label": "Vorschaubilder anzeigen"
+            "label": "2 Spalten"
           },
           "options__2": {
+            "label": "Vorschaubilder anzeigen"
+          },
+          "options__3": {
             "label": "Vorschaubilder ausblenden"
+          }
+        },
+        "media_position": {
+          "label": "Desktop-Medienposition",
+          "info": "Positionen werden automatisch für die mobile Nutzung optimiert.",
+          "options__1": {
+            "label": "Links"
+          },
+          "options__2": {
+            "label": "Rechts"
+          }
+        },
+        "image_zoom": {
+          "label": "Bildzoom",
+          "info": "Klicke auf und fahre mit der Maus über \"Standards\", um Lightbox auf deinem Mobilgerät zu öffnen.",
+          "options__1": {
+            "label": "Lightbox öffnen"
+          },
+          "options__2": {
+            "label": "Klicken und mit der Maus darüber fahren"
+          },
+          "options__3": {
+            "label": "Nicht zoomen"
           }
         }
       },
@@ -1737,7 +1960,8 @@
           "content": "Produktkarte"
         },
         "header__2": {
-          "content": "Blog-Karte"
+          "content": "Blog-Karte",
+          "info": "Die Blog-Karten-Optik gilt auch für Seiten-Karten in den Suchergebnissen. Aktualisiere deine Theme-Einstellungen, um die Karten-Optik zu ändern."
         },
         "article_show_date": {
           "label": "Datum anzeigen"
@@ -2204,6 +2428,23 @@
               "content": "Um eine Bewertung anzuzeigen, musst du eine Produktbewertungs-App hinzufügen. [Mehr Informationen](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#featured-product-rating)"
             }
           }
+        },
+        "sku": {
+          "name": "SKU",
+          "settings": {
+            "text_style": {
+              "label": "Textstil",
+              "options__1": {
+                "label": "Nachricht"
+              },
+              "options__2": {
+                "label": "Untertitel"
+              },
+              "options__3": {
+                "label": "Großbuchstaben"
+              }
+            }
+          }
         }
       },
       "settings": {
@@ -2222,6 +2463,16 @@
         },
         "hide_variants": {
           "label": "Medien von nicht ausgewählten Varianten auf dem Desktop ausblenden"
+        },
+        "media_position": {
+          "label": "Desktop-Medienposition",
+          "info": "Positionen werden automatisch für die mobile Nutzung optimiert.",
+          "options__1": {
+            "label": "Links"
+          },
+          "options__2": {
+            "label": "Rechts"
+          }
         }
       },
       "presets": {
@@ -2736,6 +2987,27 @@
       "presets": {
         "name": "Einklappbarer Inhalt"
       }
+    },
+    "main-account": {
+      "name": "Konto"
+    },
+    "main-activate-account": {
+      "name": "Kontoaktivierung"
+    },
+    "main-addresses": {
+      "name": "Adressen"
+    },
+    "main-login": {
+      "name": "Login"
+    },
+    "main-order": {
+      "name": "Bestellung"
+    },
+    "main-register": {
+      "name": "Registrierung"
+    },
+    "main-reset-password": {
+      "name": "Passwort zurücksetzen"
     }
   }
 }

@@ -1,13 +1,12 @@
 {
   "sections": {
-    "1654610090b599dcf0": {
+    "16620310837584a090": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/sommer-banner-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/sommer-banner-mobil.jpg",
-        "image_url": "shopify:\/\/collections\/summer",
+        "image": "shopify:\/\/shop_images\/VORTEX-banner-desktop_4.jpg",
+        "image_m": "shopify:\/\/shop_images\/vortex-banner-mobil_4.jpg",
+        "image_url": "shopify:\/\/collections\/bestsellers",
         "image_overlay_opacity": 0,
-        "image2_url": "",
         "image_height": "large",
         "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",
@@ -19,102 +18,170 @@
         "show_text_below": true
       }
     },
-    "1629993086223521d8": {
-      "type": "famme-spaced-button-links",
+    "1660654738369bfdd0": {
+      "type": "multicolumn-usp",
+      "blocks": {
+        "16606547378d6748fc-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/levering-ikon_d8192b31-f292-4824-85ac-36da86a4b1f8.png",
+            "title": "Kort leveringstid",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "16606547378d6748fc-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/frifrakt-ikon.png",
+            "title": "Fri frakt over 400kr",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "16606547378d6748fc-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/kundeservice-ikon_67b5249b-439e-4d52-a127-2b9dcbd7cc95.png",
+            "title": "Rask kundeservice",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16606547378d6748fc-0",
+        "16606547378d6748fc-1",
+        "16606547378d6748fc-2"
+      ],
       "settings": {
-        "menu": "header2-produktkategorier",
-        "pw": false,
-        "bg": "#4e4e4e",
-        "color": "#ffffff",
-        "width": 150,
-        "padx": 10,
-        "pady": 7,
-        "radius": 100
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_max": 68,
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "sizet": 13,
+        "size": 10,
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "inverse",
+        "columns_mobile": "3",
+        "swipe_on_mobile": false,
+        "padding_top": 16,
+        "padding_bottom": 0
+      }
+    },
+    "166057046086c544fd": {
+      "type": "multicolumn",
+      "blocks": {
+        "1660570459ecdaf28d-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/tights-knapp-mulitcolumn.jpg",
+            "url": "shopify:\/\/collections\/treningstights",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/collections\/jacket"
+          }
+        },
+        "1660570459ecdaf28d-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sportsbra-knapp-mulitcolumn.jpg",
+            "url": "shopify:\/\/collections\/sports-bh",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/collections\/sports-bh"
+          }
+        },
+        "1660570459ecdaf28d-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/topper-knapp-mulitcolumn.jpg",
+            "url": "shopify:\/\/collections\/treningsoverdeler",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "10a7abb5-b911-417a-bfa8-44d013a16de9": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/jakker-knapp-mulitcolumn.jpg",
+            "url": "shopify:\/\/collections\/jacket",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1660570459ecdaf28d-0",
+        "1660570459ecdaf28d-1",
+        "1660570459ecdaf28d-2",
+        "10a7abb5-b911-417a-bfa8-44d013a16de9"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 4,
+        "padding_bottom": 4
+      }
+    },
+    "1663594925b05b51c0": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Nyheter",
+        "heading_size": "h2",
+        "description": "<p>Få med deg de nyeste lanseringene!<\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "new-releases",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "link",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 16,
+        "padding_bottom": 16
       }
     },
     "165607326399458504": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/matching-set-banner-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/matching-set-banner-mobil.jpg",
-        "image_url": "shopify:\/\/collections\/treningssett",
+        "image": "shopify:\/\/shop_images\/hiking-banner-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/turklaer-banner-mobil-No.jpg",
+        "image_url": "",
         "image_overlay_opacity": 0,
-        "image2_url": "",
-        "image_height": "large",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
-    "164612698482e306bb": {
-      "type": "image-banner",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Ribbed-collection-banner-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/Ribbed-collection-banner-mobil.jpg",
-        "image_url": "shopify:\/\/collections\/ribbed",
-        "image_overlay_opacity": 0,
-        "image2_url": "",
-        "image_height": "large",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
-    "1647875727c189611d": {
-      "type": "image-banner",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/vortex-banner-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/vortex-banner-mobil.jpg",
-        "image_url": "shopify:\/\/collections\/bestsellers",
-        "image_overlay_opacity": 0,
-        "image2_url": "",
-        "image_height": "large",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
-    "16311853465cfb015e": {
-      "type": "image-banner",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Loungewear-banner-ny-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/Loungewear-banner-ny-mobil.jpg",
-        "image_url": "shopify:\/\/collections\/loungewear",
-        "image_overlay_opacity": 0,
-        "image2_url": "",
-        "image_height": "large",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
-    "164138293938171117": {
-      "type": "image-banner",
-      "disabled": true,
-      "settings": {
-        "image_url": "shopify:\/\/products\/elevate-wave-leggings-2",
-        "image_overlay_opacity": 0,
-        "image2_url": "",
         "image_height": "large",
         "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",
@@ -129,18 +196,18 @@
     "16463038447a5cbd60": {
       "type": "featured-collection",
       "settings": {
-        "title": "Shop Bestselgere!",
+        "title": "Bestselgere",
         "heading_size": "h2",
-        "description": "",
+        "description": "<p>De mest populære produktene akkurat nå!<\/p>",
         "show_description": false,
         "description_style": "body",
         "collection": "bestsellers",
-        "products_to_show": 4,
+        "products_to_show": 8,
         "columns_desktop": 4,
         "full_width": false,
         "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
+        "view_all_style": "link",
+        "enable_desktop_slider": true,
         "color_scheme": "background-1",
         "image_ratio": "adapt",
         "show_secondary_image": false,
@@ -148,47 +215,37 @@
         "show_rating": false,
         "enable_quick_add": false,
         "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "swipe_on_mobile": true,
+        "padding_top": 16,
+        "padding_bottom": 24
       }
     },
-    "163117812908a522c8": {
-      "type": "image-banner",
+    "16602879286b7eef4a": {
+      "type": "apps",
+      "blocks": {
+        "8cc4873d-cdc4-46a9-9624-2e324ff53607": {
+          "type": "shopify:\/\/apps\/covet-pics-instagram-feed\/blocks\/app-block-standard\/577480e8-b5be-4890-968c-06ccfb458c74",
+          "settings": {
+            "gallery_embed_id": 230022,
+            "show_text": true,
+            "title_text": "Shop from Instagram",
+            "title_color": "#4e4e4e",
+            "title_size": 22,
+            "subtitle_text": "@famme #fammely",
+            "subtitle_color": "#959595",
+            "subtitle_size": 14,
+            "text_alignment": "center",
+            "margin": 22,
+            "custom_html_above": "",
+            "custom_html_below": ""
+          }
+        }
+      },
+      "block_order": [
+        "8cc4873d-cdc4-46a9-9624-2e324ff53607"
+      ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Outdoor-banner-ny-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/Outdoor-banner-ny-mobil.jpg",
-        "image_url": "shopify:\/\/collections\/turklaer",
-        "image_overlay_opacity": 0,
-        "image2_url": "",
-        "image_height": "large",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
-    "16252134879571dabc": {
-      "type": "image-banner",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/jeans-banner-ny-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/jeans-banner-ny-mobil.jpg",
-        "image_url": "shopify:\/\/collections\/jeans",
-        "image_overlay_opacity": 0,
-        "image2_url": "",
-        "image_height": "large",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
+        "include_margins": true
       }
     },
     "1629157352b193f90f": {
@@ -197,14 +254,14 @@
         "1629157352b193f90f-0": {
           "type": "heading",
           "settings": {
-            "heading": "Neste lansering?",
-            "heading_size": "h1"
+            "heading": "Velkomsttilbud: 20% rabatt på ett valgfritt produkt",
+            "heading_size": "h2"
           }
         },
         "1629157352b193f90f-1": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Bli den første som får vite om nyheter og tilbud<\/p>"
+            "text": "<p>Meld deg på nyhetsbrevet vårt for å motta rabattkoden din.<\/p>"
           }
         },
         "1629157352b193f90f-2": {
@@ -227,40 +284,11 @@
     },
     "162567415706bdadcd": {
       "type": "image-banner",
-      "blocks": {
-        "162567415706bdadcd-1": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "BLI MED I NORGES STØRSTE PRODUKTUTVIKLINGSGRUPPE MED FLERE TITUSENER MEDLEMMER I NORGE.",
-            "text_style": "body"
-          }
-        },
-        "162567415706bdadcd-2": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_label_1": "FÅ HJELP OG GI FEEDBACK",
-            "button_link_1": "https:\/\/www.facebook.com\/groups\/fammeproduktutvikling",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "162567415706bdadcd-1",
-        "162567415706bdadcd-2"
-      ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/EN-produktutviklingsgruppen-banner-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/EN-produktutviklingsgruppen-banner-mobil.jpg",
-        "imageno": "shopify:\/\/shop_images\/NO-produktutviklingsgruppen-banner-desktop.jpg",
-        "image_nom": "shopify:\/\/shop_images\/NO-produktutviklingsgruppen-banner-mobil.jpg",
-        "image_url": "https:\/\/www.facebook.com\/groups\/fammeproduktutvikling\/",
+        "image": "shopify:\/\/shop_images\/produktgruppe-banner-engelsk-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/produktgruppe-banner-engelsk-mobil.jpg",
+        "image_url": "",
         "image_overlay_opacity": 0,
-        "image2_url": "",
         "image_height": "small",
         "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",
@@ -271,20 +299,26 @@
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
+    },
+    "social_widget_45713": {
+      "type": "social-widget",
+      "settings": {
+        "social_widget_id": "45713",
+        "social_product_id": "none",
+        "social_widget_type": "none"
+      }
     }
   },
   "order": [
-    "1654610090b599dcf0",
-    "1629993086223521d8",
+    "16620310837584a090",
+    "1660654738369bfdd0",
+    "166057046086c544fd",
+    "1663594925b05b51c0",
     "165607326399458504",
-    "164612698482e306bb",
-    "1647875727c189611d",
-    "16311853465cfb015e",
-    "164138293938171117",
     "16463038447a5cbd60",
-    "163117812908a522c8",
-    "16252134879571dabc",
+    "16602879286b7eef4a",
     "1629157352b193f90f",
-    "162567415706bdadcd"
+    "162567415706bdadcd",
+    "social_widget_45713"
   ]
 }

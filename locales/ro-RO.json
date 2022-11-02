@@ -51,7 +51,8 @@
     "slider": {
       "of": "din",
       "next_slide": "Glisare la dreapta",
-      "previous_slide": "Glisare la stânga"
+      "previous_slide": "Glisare la stânga",
+      "name": "Glisor"
     }
   },
   "newsletter": {
@@ -74,7 +75,8 @@
     "skip_to_product_info": "Salt la informațiile despre produs",
     "total_reviews": "total recenzii",
     "star_reviews_info": "{{ rating_value }} din {{ rating_max }} stele",
-    "collapsible_content_title": "Conținut care poate fi restrâns"
+    "collapsible_content_title": "Conținut care poate fi restrâns",
+    "complementary_products": "Produse complementare"
   },
   "blogs": {
     "article": {
@@ -149,7 +151,16 @@
       "include_taxes": "Taxe incluse.",
       "shipping_policy_html": "<a href=\"{{ link }}\">Taxele de expediere</a> sunt calculate la finalizarea comenzii.",
       "choose_options": "Alege opțiunile",
-      "choose_product_options": "Alege opțiunile pentru {{ product_name }}"
+      "choose_product_options": "Alege opțiunile pentru {{ product_name }}",
+      "value_unavailable": "{{ option_value }} – Indisponibil",
+      "variant_sold_out_or_unavailable": "Varianta are stocul epuizat sau este indisponibilă",
+      "inventory_in_stock": "În stoc",
+      "inventory_in_stock_show_count": "{{ quantity }} în stoc",
+      "inventory_low_stock": "Stoc redus",
+      "inventory_low_stock_show_count": "Stoc redus: doar {{ quantity }} articole rămase",
+      "inventory_out_of_stock": "Nu există în stoc",
+      "inventory_out_of_stock_continue_selling": "În stoc",
+      "sku": "SKU"
     },
     "modal": {
       "label": "Galerie media"
@@ -274,8 +285,7 @@
     },
     "featured_collection": {
       "view_all": "Afișați tot",
-      "view_all_label": "Afișați toate produsele din colecția {{ collection_name }}",
-      "slider": "Glisor"
+      "view_all_label": "Afișați toate produsele din colecția {{ collection_name }}"
     },
     "collection_list": {
       "view_all": "Afișați tot"
@@ -385,7 +395,7 @@
     },
     "reset_password": {
       "title": "Resetați parola contului",
-      "subtext": "Introduceți o nouă parolă pentru {{ email }}",
+      "subtext": "Introdu o parolă nouă",
       "password": "Parolă",
       "password_confirm": "Confirmați parola",
       "submit": "Resetați parola"

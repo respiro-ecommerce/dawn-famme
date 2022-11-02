@@ -51,7 +51,8 @@
     "slider": {
       "of": "de",
       "next_slide": "Faire glisser vers la droite",
-      "previous_slide": "Faire glisser vers la gauche"
+      "previous_slide": "Faire glisser vers la gauche",
+      "name": "Carrousel"
     }
   },
   "newsletter": {
@@ -74,7 +75,8 @@
     "skip_to_product_info": "Passer aux informations produits",
     "total_reviews": "total des critiques",
     "star_reviews_info": "{{ rating_value }} sur {{ rating_max }} étoiles",
-    "collapsible_content_title": "Contenu réductible"
+    "collapsible_content_title": "Contenu réductible",
+    "complementary_products": "Produits complémentaires"
   },
   "blogs": {
     "article": {
@@ -149,7 +151,16 @@
       "include_taxes": "Taxes incluses.",
       "shipping_policy_html": "<a href=\"{{ link }}\">Frais d'expédition</a> calculés à l'étape de paiement.",
       "choose_options": "Choisir des options",
-      "choose_product_options": "Choisir des options pour {{ product_name }}"
+      "choose_product_options": "Choisir des options pour {{ product_name }}",
+      "value_unavailable": "{{ option_value }} – indisponible",
+      "variant_sold_out_or_unavailable": "Variante épuisée ou indisponible",
+      "inventory_in_stock": "En stock",
+      "inventory_in_stock_show_count": "{{ quantity }} en stock",
+      "inventory_low_stock": "Stock bas",
+      "inventory_low_stock_show_count": "Stock bas : {{ quantity }} restant(s)",
+      "sku": "SKU",
+      "inventory_out_of_stock": "En rupture de stock",
+      "inventory_out_of_stock_continue_selling": "En stock"
     },
     "modal": {
       "label": "Galerie de supports multimédias"
@@ -274,8 +285,7 @@
     },
     "featured_collection": {
       "view_all": "Tout afficher",
-      "view_all_label": "Afficher tous les produits de la collection {{ collection_name }}",
-      "slider": "Carrousel"
+      "view_all_label": "Afficher tous les produits de la collection {{ collection_name }}"
     },
     "collection_list": {
       "view_all": "Tout afficher"
@@ -385,7 +395,7 @@
     },
     "reset_password": {
       "title": "Réinitialiser le mot de passe du compte",
-      "subtext": "Saisir un nouveau mot de passe pour {{ email }}",
+      "subtext": "Saisissez un nouveau mot de passe",
       "password": "Mot de passe",
       "password_confirm": "Confirmer le mot de passe",
       "submit": "Réinitialiser le mot de passe"

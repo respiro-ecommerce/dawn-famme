@@ -51,7 +51,8 @@
     "slider": {
       "of": "of",
       "next_slide": "Slide right",
-      "previous_slide": "Slide left"
+      "previous_slide": "Slide left",
+      "name": "Slider"
     }
   },
   "newsletter": {
@@ -73,7 +74,9 @@
     },
     "loading": "Loading...",
     "total_reviews": "total reviews",
-    "star_reviews_info": "{{ rating_value }} out of {{ rating_max }} stars"
+    "star_reviews_info": "{{ rating_value }} out of {{ rating_max }} stars",
+    "collapsible_content_title": "Collapsible content",
+    "complementary_products": "Complementary products"
   },
   "blogs": {
     "article": {
@@ -104,7 +107,7 @@
     "composition": "Materials: ",
     "model_height": "Model height: ",
     "bullets": {
-      "bullet_1": "Always free shipping",
+      "bullet_1": "1-3 days express delivery & 60 days right of return",
       "bullet_2": "2-year guarantee and fast customer service",
       "bullet_3": "PayPal, Google Pay & credit card"
     },
@@ -118,6 +121,13 @@
       "choose_options": "Choose options",
       "choose_product_options": "Choose options for {{ product_name }}",
       "description": "Description",
+      "inventory_in_stock": "In stock",
+      "inventory_in_stock_show_count": "{{ quantity }} in stock",
+      "inventory_low_stock": "Low stock",
+      "inventory_low_stock_show_count": "Low stock: {{ quantity }} left",
+      "inventory_out_of_stock": "Out of stock",
+      "inventory_out_of_stock_continue_selling": "In stock",
+      "sku": "SKU",
       "on_sale": "Sale",
       "product_variants": "Product variants",
       "media": {
@@ -155,6 +165,8 @@
       "sold_out": "Sold out",
       "unavailable": "Unavailable",
       "vendor": "Vendor",
+      "value_unavailable": "{{ option_value }} - Unavailable",
+      "variant_sold_out_or_unavailable": "Variant sold out or unavailable",
       "video_exit_message": "{{ title }} opens full screen video in same window.",
       "view_full_details": "View full details",
       "xr_button": "View in your space",
@@ -279,8 +291,7 @@
     },
     "featured_collection": {
       "view_all": "View all",
-      "view_all_label": "View all products in the {{ collection_name }} collection",
-      "slider": "Slider"
+      "view_all_label": "View all products in the {{ collection_name }} collection"
     },
     "collection_list": {
       "view_all": "View all"
@@ -419,7 +430,7 @@
     },
     "reset_password": {
       "title": "Reset account password",
-      "subtext": "Enter a new password for {{ email }}",
+      "subtext": "Enter a new password",
       "password": "Password",
       "password_confirm": "Confirm password",
       "submit": "Reset password"

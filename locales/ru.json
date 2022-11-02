@@ -51,7 +51,8 @@
     "slider": {
       "of": "из",
       "next_slide": "Листать вперед",
-      "previous_slide": "Листать назад"
+      "previous_slide": "Листать назад",
+      "name": "Ползунок"
     }
   },
   "newsletter": {
@@ -74,7 +75,8 @@
     "skip_to_product_info": "Перейти к информации о продукте",
     "total_reviews": "всего отзывов",
     "star_reviews_info": "{{ rating_value }} из {{ rating_max }} звезд",
-    "collapsible_content_title": "Контент, который можно свернуть"
+    "collapsible_content_title": "Контент, который можно свернуть",
+    "complementary_products": "Дополнительные товары"
   },
   "blogs": {
     "article": {
@@ -150,7 +152,16 @@
       "include_taxes": "Сумма налога включена.",
       "shipping_policy_html": "<a href=\"{{ link }}\">Стоимость доставки</a> рассчитывается при оформлении заказа.",
       "choose_options": "Выберите варианты",
-      "choose_product_options": "Выберите варианты для {{ product_name }}"
+      "choose_product_options": "Выберите варианты для {{ product_name }}",
+      "value_unavailable": "{{ option_value }} — Недоступно",
+      "variant_sold_out_or_unavailable": "Вариант распродан или недоступен",
+      "inventory_in_stock": "В наличии",
+      "inventory_in_stock_show_count": "В наличии: {{ quantity }}",
+      "inventory_low_stock": "Заканчивается",
+      "inventory_low_stock_show_count": "Заканчивается. Осталось: {{ quantity }}",
+      "inventory_out_of_stock": "Нет в наличии",
+      "inventory_out_of_stock_continue_selling": "В наличии",
+      "sku": "Артикул"
     },
     "modal": {
       "label": "Галерея мультимедиа"
@@ -281,8 +292,7 @@
     },
     "featured_collection": {
       "view_all": "Посмотреть все",
-      "view_all_label": "Посмотреть все продукты в коллекции \"{{ collection_name }}\"",
-      "slider": "Ползунок"
+      "view_all_label": "Посмотреть все продукты в коллекции \"{{ collection_name }}\""
     },
     "collection_list": {
       "view_all": "Посмотреть все"
@@ -392,7 +402,7 @@
     },
     "reset_password": {
       "title": "Сбросьте пароль учетной записи",
-      "subtext": "Введите новый пароль для {{ email }}",
+      "subtext": "Введите новый пароль",
       "password": "Пароль",
       "password_confirm": "Подтвердить пароль",
       "submit": "Сбросить пароль"

@@ -51,7 +51,8 @@
     "slider": {
       "of": "z",
       "next_slide": "Snímek vpravo",
-      "previous_slide": "Snímek vlevo"
+      "previous_slide": "Snímek vlevo",
+      "name": "Posuvník"
     }
   },
   "newsletter": {
@@ -74,7 +75,8 @@
     "skip_to_product_info": "Přejít na informace o produktu",
     "total_reviews": "celkový počet recenzí",
     "star_reviews_info": "{{ rating_value }} z {{ rating_max }} hvězdiček",
-    "collapsible_content_title": "Sbalitelný obsah"
+    "collapsible_content_title": "Sbalitelný obsah",
+    "complementary_products": "Doplňkové produkty"
   },
   "blogs": {
     "article": {
@@ -150,7 +152,16 @@
       "include_taxes": "Včetně daní.",
       "shipping_policy_html": "<a href=\"{{ link }}\">Poštovné</a> se vypočítá na pokladně.",
       "choose_options": "Výběr možností",
-      "choose_product_options": "Zvolte možnosti pro: {{ product_name }}"
+      "choose_product_options": "Zvolte možnosti pro: {{ product_name }}",
+      "value_unavailable": "{{ option_value }} – není k dispozici",
+      "variant_sold_out_or_unavailable": "Vyprodaná nebo nedostupná varianta",
+      "inventory_in_stock": "Skladem",
+      "inventory_in_stock_show_count": "{{ quantity }} skladem",
+      "inventory_low_stock": "Skladové zásoby docházejí",
+      "inventory_low_stock_show_count": "Skladové zásoby docházejí, zbývající množství: {{ quantity }}",
+      "inventory_out_of_stock": "Není skladem",
+      "sku": "SKU",
+      "inventory_out_of_stock_continue_selling": "Skladem"
     },
     "modal": {
       "label": "Galerie multimédií"
@@ -281,8 +292,7 @@
     },
     "featured_collection": {
       "view_all": "Zobrazit vše",
-      "view_all_label": "Zobrazit všechny produkty v kolekci {{ collection_name }}",
-      "slider": "Posuvník"
+      "view_all_label": "Zobrazit všechny produkty v kolekci {{ collection_name }}"
     },
     "collection_list": {
       "view_all": "Zobrazit vše"
@@ -392,7 +402,7 @@
     },
     "reset_password": {
       "title": "Resetujte heslo účtu",
-      "subtext": "Zadejte nové heslo pro {{ email }}",
+      "subtext": "Zadejte nové heslo",
       "password": "Heslo",
       "password_confirm": "Potvrdit heslo",
       "submit": "Resetovat heslo"

@@ -235,23 +235,6 @@
         }
       }
     },
-    "cards": {
-      "name": "Tarjetas",
-      "settings": {
-        "header__badge": {
-          "content": "Emblema"
-        },
-        "style": {
-          "options__1": {
-            "label": "Estándar"
-          },
-          "options__2": {
-            "label": "Tarjeta"
-          },
-          "label": "Estilo"
-        }
-      }
-    },
     "badges": {
       "name": "Emblemas",
       "settings": {
@@ -326,8 +309,50 @@
           "header": "Carrito lateral",
           "collection": {
             "label": "Colección",
-            "info": "Visible cuando el carrito lateral está vacío"
+            "info": "Visible cuando el carrito lateral está vacío."
           }
+        }
+      }
+    },
+    "cards": {
+      "name": "Tarjetas de producto",
+      "settings": {
+        "style": {
+          "options__1": {
+            "label": "Estándar"
+          },
+          "options__2": {
+            "label": "Tarjeta"
+          },
+          "label": "Estilo"
+        }
+      }
+    },
+    "collection_cards": {
+      "name": "Tarjetas de colección",
+      "settings": {
+        "style": {
+          "options__1": {
+            "label": "Estándar"
+          },
+          "options__2": {
+            "label": "Tarjeta"
+          },
+          "label": "Estilo"
+        }
+      }
+    },
+    "blog_cards": {
+      "name": "Tarjetas de blogs",
+      "settings": {
+        "style": {
+          "options__1": {
+            "label": "Estándar"
+          },
+          "options__2": {
+            "label": "Tarjeta"
+          },
+          "label": "Estilo"
         }
       }
     }
@@ -384,6 +409,18 @@
             "text": {
               "label": "Texto"
             },
+            "text_alignment": {
+              "label": "Alineación de texto",
+              "options__1": {
+                "label": "Izquierda"
+              },
+              "options__2": {
+                "label": "Centrado"
+              },
+              "options__3": {
+                "label": "Derecha"
+              }
+            },
             "link": {
               "label": "Enlace"
             }
@@ -413,6 +450,16 @@
           },
           "options__2": {
             "label": "Columna"
+          }
+        },
+        "card_styles": {
+          "label": "Estilo de tarjeta",
+          "info": "La configuración del tema permite actualizar los estilos de tarjeta de blog, producto y colección.",
+          "options__1": {
+            "label": "Usar estilos de tarjeta individuales"
+          },
+          "options__2": {
+            "label": "Definir todos los estilos como tarjetas de producto"
           }
         }
       },
@@ -781,7 +828,9 @@
           "options__3": {
             "label": "Superior centrada"
           },
-          "info": "La posición se optimizó automáticamente para dispositivos móviles."
+          "options__4": {
+            "label": "Centrado en el medio"
+          }
         },
         "menu": {
           "label": "Menú"
@@ -804,6 +853,18 @@
           },
           "options__2": {
             "label": "Mega menú"
+          }
+        },
+        "mobile_layout": {
+          "content": "Diseño para dispositivo móvil"
+        },
+        "mobile_logo_position": {
+          "label": "Posición del logo en dispositivo móvil",
+          "options__1": {
+            "label": "Centro"
+          },
+          "options__2": {
+            "label": "Izquierda"
           }
         }
       }
@@ -1660,6 +1721,139 @@
               "content": "Para mostrar una calificación, agrega una aplicación de calificación de productos [Más información](https://help.shopify.com/manual/online-store/themes/theme-structure/page-types#product-rating-block)"
             }
           }
+        },
+        "complementary_products": {
+          "name": "Productos complementarios",
+          "settings": {
+            "paragraph": {
+              "content": "Para seleccionar productos complementarios, agrega la aplicación Search & Discovery. [Más información](https://help.shopify.com/manual/online-store/search-and-discovery/product-recommendations)"
+            },
+            "heading": {
+              "label": "Encabezado"
+            },
+            "make_collapsible_row": {
+              "label": "Mostrar como una fila plegable"
+            },
+            "icon": {
+              "info": "Visible cuando se muestra la fila plegable."
+            },
+            "product_list_limit": {
+              "label": "Número máximo de productos para mostrar"
+            },
+            "products_per_page": {
+              "label": "Cantidad de productos por página"
+            },
+            "pagination_style": {
+              "label": "Estilo de paginación",
+              "options": {
+                "option_1": "Puntos",
+                "option_2": "Contador",
+                "option_3": "Números"
+              }
+            },
+            "product_card": {
+              "heading": "Tarjeta de producto"
+            },
+            "image_ratio": {
+              "label": "Relación de aspecto de imagen",
+              "options": {
+                "option_1": "Retrato",
+                "option_2": "Cuadrado"
+              }
+            },
+            "enable_quick_add": {
+              "label": "Activar botón de agregado rápido"
+            }
+          }
+        },
+        "icon_with_text": {
+          "name": "Ícono con texto",
+          "settings": {
+            "layout": {
+              "label": "Diseño",
+              "options__1": {
+                "label": "Horizontal"
+              },
+              "options__2": {
+                "label": "Vertical"
+              }
+            },
+            "content": {
+              "label": "Contenido",
+              "info": "Elige un ícono o agrega una imagen para cada columna o fila."
+            },
+            "heading": {
+              "info": "Deja la etiqueta de encabezado en blanco para ocultar la columna del ícono."
+            },
+            "icon_1": {
+              "label": "Primer ícono"
+            },
+            "image_1": {
+              "label": "Primera imagen"
+            },
+            "heading_1": {
+              "label": "Primer encabezado"
+            },
+            "icon_2": {
+              "label": "Segundo ícono"
+            },
+            "image_2": {
+              "label": "Segunda imagen"
+            },
+            "heading_2": {
+              "label": "Segundo encabezado"
+            },
+            "icon_3": {
+              "label": "Tercer ícono"
+            },
+            "image_3": {
+              "label": "Tercera imagen"
+            },
+            "heading_3": {
+              "label": "Tercer encabezado"
+            }
+          }
+        },
+        "sku": {
+          "name": "SKU",
+          "settings": {
+            "text_style": {
+              "label": "Estilo de texto",
+              "options__1": {
+                "label": "Cuerpo"
+              },
+              "options__2": {
+                "label": "Subtítulo"
+              },
+              "options__3": {
+                "label": "Mayúscula"
+              }
+            }
+          }
+        },
+        "inventory": {
+          "name": "Estado del inventario",
+          "settings": {
+            "text_style": {
+              "label": "Estilo de texto",
+              "options__1": {
+                "label": "Cuerpo"
+              },
+              "options__2": {
+                "label": "Subtítulo"
+              },
+              "options__3": {
+                "label": "Mayúscula"
+              }
+            },
+            "inventory_threshold": {
+              "label": "Umbral de inventario bajo",
+              "info": "Elige 0 para que siempre se muestre en existencias si está disponible."
+            },
+            "show_inventory_quantity": {
+              "label": "Mostrar recuento de inventario"
+            }
+          }
         }
       },
       "settings": {
@@ -1682,9 +1876,12 @@
             "label": "Apilado"
           },
           "options__2": {
-            "label": "Miniaturas"
+            "label": "Dos columnas"
           },
           "options__3": {
+            "label": "Miniaturas"
+          },
+          "options__4": {
             "label": "Carrusel de miniaturas"
           }
         },
@@ -1704,10 +1901,36 @@
         "mobile_thumbnails": {
           "label": "Diseño para móviles",
           "options__1": {
-            "label": "Mostrar miniaturas"
+            "label": "Dos columnas"
           },
           "options__2": {
+            "label": "Mostrar miniaturas"
+          },
+          "options__3": {
             "label": "Ocultar miniaturas"
+          }
+        },
+        "media_position": {
+          "label": "Posición de contenido multimedia en el escritorio",
+          "info": "La posición se optimiza automáticamente para dispositivos móviles.",
+          "options__1": {
+            "label": "Izquierda"
+          },
+          "options__2": {
+            "label": "Derecha"
+          }
+        },
+        "image_zoom": {
+          "label": "Ampliar imagen",
+          "info": "En dispositivos móviles, la opción Hacer clic y pasar sobre el elemento cambia a Abrir Lightbox de forma predeterminada.",
+          "options__1": {
+            "label": "Abrir Lightbox"
+          },
+          "options__2": {
+            "label": "Hacer clic y pasar sobre el elemento"
+          },
+          "options__3": {
+            "label": "Sin zoom"
           }
         }
       }
@@ -1737,7 +1960,8 @@
           "content": "Tarjeta de producto"
         },
         "header__2": {
-          "content": "Tarjeta de blog"
+          "content": "Tarjeta de blog",
+          "info": "Los estilos de tarjeta de blog también se aplican a las tarjetas de página en los resultados de búsqueda. Para cambiar los estilos de tarjeta, modifica la configuración del tema."
         },
         "article_show_date": {
           "label": "Mostrar fecha"
@@ -2204,6 +2428,23 @@
               "content": "Agrega una aplicación para mostrar las calificaciones de los productos. [Más información](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#featured-product-rating)"
             }
           }
+        },
+        "sku": {
+          "name": "SKU",
+          "settings": {
+            "text_style": {
+              "label": "Estilo de texto",
+              "options__1": {
+                "label": "Cuerpo"
+              },
+              "options__2": {
+                "label": "Subtítulo"
+              },
+              "options__3": {
+                "label": "Mayúscula"
+              }
+            }
+          }
         }
       },
       "settings": {
@@ -2222,6 +2463,16 @@
         },
         "hide_variants": {
           "label": "Ocultar elementos multimedia de variantes no seleccionadas en el escritorio"
+        },
+        "media_position": {
+          "label": "Posición del contenido multimedia en computadoras de escritorio",
+          "info": "La posición se optimiza automáticamente para dispositivos móviles.",
+          "options__1": {
+            "label": "Izquierda"
+          },
+          "options__2": {
+            "label": "Derecha"
+          }
         }
       },
       "presets": {
@@ -2736,6 +2987,27 @@
       "presets": {
         "name": "Contenido desplegable"
       }
+    },
+    "main-account": {
+      "name": "Cuenta"
+    },
+    "main-activate-account": {
+      "name": "Activación de cuenta"
+    },
+    "main-addresses": {
+      "name": "Direcciones"
+    },
+    "main-login": {
+      "name": "Inicio de sesión"
+    },
+    "main-order": {
+      "name": "Pedido"
+    },
+    "main-register": {
+      "name": "Registro"
+    },
+    "main-reset-password": {
+      "name": "Restablecimiento de contraseña"
     }
   }
 }

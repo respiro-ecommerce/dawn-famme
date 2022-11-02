@@ -2,8 +2,11 @@
 a.klaviyo-bis-trigger {color: #4E4E4E; line-height: 47px;}
 
 {% comment %}support for mobile AND desktop image upload for the image banner section{% endcomment %}
-@media screen and (min-width: 750px) {a.banner__media.media > img.mob {display: none;}}
-@media screen and (max-width: 749px) {a.banner__media.media > img.dt {display: none;}}
+@media screen and (min-width: 750px) {a.banner__media.media>img.mob, video.js-youtube.mob {display: none;}}
+@media screen and (max-width: 749px) {a.banner__media.media>img.dt, video.js-youtube.dt {display: none;}
+  deferred-media.video-section__media.deferred-media {padding: 0;}
+  deferred-media.video-section__media.deferred-media * {position: static!important;}
+}
 
 {% comment %}Used for showing variant images instead of buttons for choosing color variant{% endcomment %}
 .product-form__input input[type='radio'] + label.color {
@@ -66,12 +69,28 @@ ul.product-grid div.card-wrapper {height: auto;}
 }
 div.product-groups__images {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  align-items: center;
   flex-wrap: wrap;
 }
-div.product-groups__images > a.other-product-image {
-  margin: 0 2px;
+div.product-groups__images>a.other-product-image {
+  margin: 0 .7rem .7rem 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
 }
+div.product-groups__images>span.other-product-image {
+  cursor: pointer;
+  border: 1px solid;
+  border-radius: 50%;
+  min-width: 20px;
+  height: 20px;
+  line-height: 18px;
+  font-size: 9px;
+  text-align: center;
+  margin-bottom: .7em;
+}
+div.card__information {padding-bottom: .5em;}
 /*banner links and header submenus*/
 div.banner__content {
   z-index: 1;
@@ -125,3 +144,13 @@ p.rd {
   padding: 7px 20px;
 }
 {% comment %} .banner--large:not(.banner--adapt) {height: 100vh;} {% endcomment %}
+
+.multicolumn li.multicolumn-list__item.grid__item.slider__slide {margin-left: 0;}
+.background-none .multicolumn-card__image-wrapper {margin: 0;}
+.video-section__media.deferred-media video.js-youtube {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-height: 100%;
+}

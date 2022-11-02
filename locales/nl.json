@@ -51,7 +51,8 @@
     "slider": {
       "of": "van",
       "next_slide": "Naar rechts schuiven",
-      "previous_slide": "Naar links schuiven"
+      "previous_slide": "Naar links schuiven",
+      "name": "Schuifregelaar"
     }
   },
   "newsletter": {
@@ -74,7 +75,8 @@
     "skip_to_product_info": "Ga direct naar productinformatie",
     "total_reviews": "totaal aantal recensies",
     "star_reviews_info": "{{ rating_value }} van de {{ rating_max }} sterren",
-    "collapsible_content_title": "Inklapbare content"
+    "collapsible_content_title": "Inklapbare content",
+    "complementary_products": "Aanvullende producten"
   },
   "blogs": {
     "article": {
@@ -148,7 +150,16 @@
       "include_taxes": "Inclusief btw.",
       "shipping_policy_html": "<a href=\"{{ link }}\">Verzendkosten<\/a> worden berekend bij de checkout.",
       "choose_options": "Opties kiezen",
-      "choose_product_options": "Opties kiezen voor {{ product_name }}"
+      "choose_product_options": "Opties kiezen voor {{ product_name }}",
+      "value_unavailable": "{{ option_value }} - Niet beschikbaar",
+      "variant_sold_out_or_unavailable": "Variant uitverkocht of niet beschikbaar",
+      "inventory_in_stock": "Op voorraad",
+      "inventory_in_stock_show_count": "{{ quantity }} op voorraad",
+      "inventory_low_stock": "Voorraad laag",
+      "inventory_low_stock_show_count": "Lage voorraad: nog maar {{ quantity }}",
+      "inventory_out_of_stock": "Niet op voorraad",
+      "sku": "SKU",
+      "inventory_out_of_stock_continue_selling": "Op voorraad"
     },
     "modal": {
       "label": "Mediagalerij"
@@ -278,8 +289,7 @@
     },
     "featured_collection": {
       "view_all": "Alles bekijken",
-      "view_all_label": "Bekijk alle producten in de collectie {{ collection_name }}",
-      "slider": "Schuifregelaar"
+      "view_all_label": "Bekijk alle producten in de collectie {{ collection_name }}"
     },
     "collection_list": {
       "view_all": "Alles bekijken"
@@ -393,7 +403,7 @@
     },
     "reset_password": {
       "title": "Account-wachtwoord opnieuw instellen",
-      "subtext": "Voer een nieuw wachtwoord in voor {{ email }}",
+      "subtext": "Voer een nieuw wachtwoord in",
       "password": "Wachtwoord",
       "password_confirm": "Wachtwoord bevestigen",
       "submit": "Wachtwoord opnieuw instellen"

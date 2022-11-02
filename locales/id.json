@@ -51,7 +51,8 @@
     "slider": {
       "of": "dari",
       "next_slide": "Geser kanan",
-      "previous_slide": "Geser kiri"
+      "previous_slide": "Geser kiri",
+      "name": "Slider"
     }
   },
   "newsletter": {
@@ -74,7 +75,8 @@
     "skip_to_product_info": "Langsung ke informasi produk",
     "total_reviews": "ulasan keseluruhan",
     "star_reviews_info": "{{ rating_value }} dari {{ rating_max }} bintang",
-    "collapsible_content_title": "Konten yang dapat ditutup"
+    "collapsible_content_title": "Konten yang dapat ditutup",
+    "complementary_products": "Produk pelengkap"
   },
   "blogs": {
     "article": {
@@ -148,7 +150,16 @@
       "include_taxes": "Termasuk pajak.",
       "shipping_policy_html": "<a href=\"{{ link }}\">Biaya pengiriman</a> dihitung saat checkout.",
       "choose_options": "Pilih opsi",
-      "choose_product_options": "Pilih opsi untuk {{ product_name }}"
+      "choose_product_options": "Pilih opsi untuk {{ product_name }}",
+      "value_unavailable": "{{ option_value }} - Tidak tersedia",
+      "variant_sold_out_or_unavailable": "Varian terjual habis atau tidak tersedia",
+      "inventory_in_stock": "Tersedia",
+      "inventory_in_stock_show_count": "{{ quantity }} tersedia",
+      "inventory_low_stock": "Stok sedikit",
+      "inventory_low_stock_show_count": "Stok sedikit: {{ quantity }} tersisa",
+      "inventory_out_of_stock": "Habis",
+      "inventory_out_of_stock_continue_selling": "Tersedia",
+      "sku": "SKU"
     },
     "modal": {
       "label": "Galeri media"
@@ -267,8 +278,7 @@
     },
     "featured_collection": {
       "view_all": "Lihat semua",
-      "view_all_label": "Lihat semua produk dalam koleksi {{ collection_name }}",
-      "slider": "Slider"
+      "view_all_label": "Lihat semua produk dalam koleksi {{ collection_name }}"
     },
     "collection_list": {
       "view_all": "Lihat semua"
@@ -378,7 +388,7 @@
     },
     "reset_password": {
       "title": "Reset sandi akun",
-      "subtext": "Masukkan sandi baru untuk {{ email }}",
+      "subtext": "Masukkan sandi baru",
       "password": "Sandi",
       "password_confirm": "Konfirmasi sandi",
       "submit": "Reset sandi"
