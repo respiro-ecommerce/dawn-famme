@@ -58,7 +58,7 @@
           assign sizes = "100vw"
         endif
       -%}
-      {{ img | image_url: width: 2000 | image_tag: loading: 'lazy', width: img.width, height: image_height, class: image_class, sizes: sizes,
+      {{ img | image_url: width: 2048 | image_tag: loading: 'lazy', width: img.width, height: image_height, class: image_class, sizes: sizes,
         widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840', alt: img.alt | escape }}
       {%- if imgm != blank -%}
         {% assign m_height = imgm.width | divided_by: imgm.aspect_ratio %}{% assign m_class = image_class | append: ' mob' %}
@@ -86,7 +86,7 @@
           assign sizes = "100vw"
         endif
       -%}
-      {{ img2 | image_url: width: 2000 | image_tag: loading: 'lazy', width: img2.width, height: image_height_2, class: image_class_2, sizes: sizes,
+      {{ img2 | image_url: width: 2048 | image_tag: loading: 'lazy', width: img2.width, height: image_height_2, class: image_class_2, sizes: sizes,
         widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840', alt: img2.alt | escape }}
       {%- if img2m != blank -%}
         {% assign m2_height = img2m.width | divided_by: img2m.aspect_ratio %}{% assign m_class_2 = image_class_2 | append: ' mob' %}
