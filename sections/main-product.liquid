@@ -347,6 +347,7 @@
                 </div>
               </noscript>
             {%- when 'buy_buttons' -%}
+              {%- render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, show_pickup_availability: true -%}
               <div {{ block.shopify_attributes }}>
               {% if product.metafields.my_fields.refill_date != blank %}
                 <p class="rdt{% if product.selected_or_first_available_variant.inventory_quantity < 1 and product.selected_or_first_available_variant.inventory_policy == 'continue' %}{% else %} hidden{% endif %}">
