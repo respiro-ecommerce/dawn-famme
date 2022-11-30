@@ -224,7 +224,7 @@
       "type": "apps",
       "blocks": {
         "8cc4873d-cdc4-46a9-9624-2e324ff53607": {
-          "type": "shopify:\/\/apps\/covet-pics-instagram-feed\/blocks\/app-block-standard\/577480e8-b5be-4890-968c-06ccfb458c74",
+          "type": "shopify:\/\/apps\/covet-instagram-feed-reviews\/blocks\/app-block-standard\/577480e8-b5be-4890-968c-06ccfb458c74",
           "settings": {
             "gallery_embed_id": 230022,
             "show_text": true,
