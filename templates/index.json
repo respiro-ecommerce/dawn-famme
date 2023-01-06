@@ -325,7 +325,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/produktgruppe-banner-engelsk-desktop.jpg",
         "image_m": "shopify:\/\/shop_images\/produktgruppe-banner-engelsk-mobil.jpg",
-        "image_url": "",
+        "image_url": "https:\/\/www.facebook.com\/groups\/fammeproduktutvikling",
         "image_overlay_opacity": 0,
         "image_height": "small",
         "adapt_height_first_image": false,
