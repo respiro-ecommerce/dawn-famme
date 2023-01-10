@@ -274,7 +274,14 @@
               </share-button>
               <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
             {%- when 'variant_picker' -%}
-              <!--{{ product.metafields.related.swatches }}-->
+              {%- if product.metafields.related.swatches != blank -%}
+                <fieldset class="product-form__input" style="display:none;">
+                  <label class="color checked">{{ product.featured_image | image_url: width: 60 | image_tag  }}</label>
+                  {%- for prod in product.metafields.related.swatches -%}
+                    <a class="color" href="{{ all_products[prod].url }}">{{ all_products[prod].featured_image | image_url: width: 60 | image_tag  }}</a>
+                  {%- endfor -%}
+                </fieldset>
+              {%- endif -%}
               {%- unless product.has_only_default_variant -%}
               {% comment %} If we do not recommend up or down, recommend normal size {% endcomment %}
               {% capture sizing_recommendation %}{{ 'products.sizing_recommendation_normal' | t }}{% endcapture %}
@@ -303,7 +310,7 @@
                   </script>
                 </variant-radios>
               {%- else -%}
-                <variant-selectsid="variant-selects-{{ section.id }}" class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }} data-variant-picker>
+                <variant-selects id="variant-selects-{{ section.id }}" class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }} data-variant-picker>
                     {%- for option in product.options_with_values -%}
                     {% if option.name contains 'ize' or option.name contains 'lse' %}<p><b>{{ sizing_recommendation }}</b></p>{% endif %}
                       <div class="product-form__input product-form__input--dropdown">
