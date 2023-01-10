@@ -276,10 +276,12 @@
             {%- when 'variant_picker' -%}
               {%- if product.metafields.related.swatches != blank -%}
                 <fieldset class="product-form__input" style="display:none;">
-                  <label class="color checked">{{ product.featured_image | image_url: width: 60 | image_tag  }}</label>
+                  <label class="color checked" title="{{ product.title | escape }}">{{ product.featured_image | image_url: width: 60 | image_tag  }}</label>
                   {%- assign prods = product.metafields.related.swatches | remove: '[' | remove: ']' | remove: '"' | split: ',' -%}
                   {%- for prod in prods -%}
-                    <a class="color" href="{{ all_products[prod].url }}">{{ all_products[prod].featured_image | image_url: width: 60 | image_tag  }}</a>
+                    <a class="color" href="{{ all_products[prod].url }}" title="{{ all_products[prod].title | escape }}">
+                      {{ all_products[prod].featured_image | image_url: width: 60 | image_tag  }}
+                    </a>
                   {%- endfor -%}
                 </fieldset>
               {%- endif -%}
