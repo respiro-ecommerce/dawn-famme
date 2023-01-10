@@ -156,14 +156,14 @@ p.rd {
 }
 /*Fake swatches*/
 label.color.checked, a.color {
-  border: var(--variant-pills-border-width) solid rgba(var(--color-foreground), var(--variant-pills-border-opacity));
+  border: var(--variant-pills-border-width) solid transparent);
   background-color: rgb(var(--color-background));
   color: rgba(var(--color-foreground));
   border-radius: var(--variant-pills-radius);
   color: rgb(var(--color-foreground));
   display: inline-block;
   margin: 0.7rem 0.5rem 0.2rem 0;
-  padding: 1rem 2rem;
+  padding: 0;
   font-size: 1.4rem;
   letter-spacing: 0.1rem;
   line-height: 1;
@@ -171,6 +171,7 @@ label.color.checked, a.color {
   transition: border var(--duration-short) ease;
   cursor: pointer;
   position: relative;
+  overflow: hidden;
 }
 label.color.checked:before, a.color:before {
   content: '';
