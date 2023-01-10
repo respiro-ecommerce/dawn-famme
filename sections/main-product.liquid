@@ -274,8 +274,8 @@
               </share-button>
               <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
             {%- when 'variant_picker' -%}
+              <!--{{ product.metafields.related.swatches }}-->
               {%- unless product.has_only_default_variant -%}
-
               {% comment %} If we do not recommend up or down, recommend normal size {% endcomment %}
               {% capture sizing_recommendation %}{{ 'products.sizing_recommendation_normal' | t }}{% endcapture %}
         	  {% for tag in product.tags %}
