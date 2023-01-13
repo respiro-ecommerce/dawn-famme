@@ -325,6 +325,8 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/web-banner-group-facebook.jpg",
         "image_m": "shopify:\/\/shop_images\/web-banner-mobile-group-facebook.jpg",
+        "imageno": "shopify:\/\/shop_images\/web-facebook-no.jpg",
+        "image_nom": "shopify:\/\/shop_images\/web-mobile-facebook-no.jpg",
         "image_url": "https:\/\/www.facebook.com\/groups\/fammeproduktutvikling",
         "image_overlay_opacity": 0,
         "image_height": "small",
