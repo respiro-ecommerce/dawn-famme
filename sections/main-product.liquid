@@ -278,8 +278,8 @@
                 <fieldset class="product-form__input">
                   <label class="color checked" title="{{ product.title | escape }}">{{ product.featured_image | image_url: width: 60 | image_tag  }}</label>
                   {%- assign prods = product.metafields.my_fields.swatches | replace: ', ',',' | replace: ' ,',',' | split: ',' -%}
-                <!--{{ prods }}-->
                   {%- for prod in prods -%}
+                    <!--{{ prod }}-->
                     <a class="color" href="{{ all_products[prod].url }}" title="{{ all_products[prod].title | escape }}">
                       {{ all_products[prod].featured_image | image_url: width: 60 | image_tag  }}
                     </a>
