@@ -276,10 +276,12 @@
             {%- when 'variant_picker' -%}
               {%- if product.metafields.my_fields.swatches != blank -%}
                 <fieldset class="product-form__input">
-                  <label class="color checked" title="{{ product.title | escape }}">{{ product.featured_image | image_url: width: 60 | image_tag  }}</label>
+                  {%- if product.available -%}
+                    <label class="color checked" title="{{ product.title | escape }}">{{ product.featured_image | image_url: width: 60 | image_tag  }}</label>
+                  {%- endif -%}
                   {%- assign prods = product.metafields.my_fields.swatches | replace: ', ',',' | replace: ' ,',',' | split: ',' -%}
                   {%- for prod in prods -%}
-                    {%- if all_products[prod] != blank -%}
+                    {%- if all_products[prod].available -%}
                       <a class="color" href="{{ all_products[prod].url }}" title="{{ all_products[prod].title | escape }}">
                         {{ all_products[prod].featured_image | image_url: width: 60 | image_tag  }}
                       </a>
