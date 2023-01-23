@@ -274,8 +274,22 @@
               </share-button>
               <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
             {%- when 'variant_picker' -%}
+              {%- if product.metafields.my_fields.swatches != blank -%}
+                <fieldset class="product-form__input">
+                  {%- if product.available -%}
+                    <label class="color checked" title="{{ product.title | escape }}">{{ product.featured_image | image_url: width: 60 | image_tag  }}</label>
+                  {%- endif -%}
+                  {%- assign prods = product.metafields.my_fields.swatches | replace: ', ',',' | replace: ' ,',',' | split: ',' -%}
+                  {%- for prod in prods -%}
+                    {%- if all_products[prod] != blank and all_products[prod].available and all_products[prod].featured_image != blank -%}
+                      <a class="color" href="{{ all_products[prod].url }}" title="{{ all_products[prod].title | escape }}">
+                        {{ all_products[prod].featured_image | image_url: width: 60 | image_tag  }}
+                      </a>
+                    {%- endif -%}
+                  {%- endfor -%}
+                </fieldset>
+              {%- endif -%}
               {%- unless product.has_only_default_variant -%}
-
               {% comment %} If we do not recommend up or down, recommend normal size {% endcomment %}
               {% capture sizing_recommendation %}{{ 'products.sizing_recommendation_normal' | t }}{% endcapture %}
         	  {% for tag in product.tags %}
@@ -303,7 +317,7 @@
                   </script>
                 </variant-radios>
               {%- else -%}
-                <variant-selectsid="variant-selects-{{ section.id }}" class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }} data-variant-picker>
+                <variant-selects id="variant-selects-{{ section.id }}" class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }} data-variant-picker>
                     {%- for option in product.options_with_values -%}
                     {% if option.name contains 'ize' or option.name contains 'lse' %}<p><b>{{ sizing_recommendation }}</b></p>{% endif %}
                       <div class="product-form__input product-form__input--dropdown">
