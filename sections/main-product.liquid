@@ -185,6 +185,7 @@
               </div>
             {%- when 'quantity_selector' -%}
               <div
+                id="Quantity-Form-{{ section.id }}"
                 class="product-form__input product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}"
                 {{ block.shopify_attributes }}
               >
@@ -192,9 +193,9 @@
                 {% # theme-check-disable %}
                 {%- assign cart_qty = cart | item_count_for_variant: product.selected_or_first_available_variant.id -%}
                 {% # theme-check-enable %}
-                <label class="form__label" for="Quantity-{{ section.id }}">
+                <label class="quantity__label form__label" for="Quantity-{{ section.id }}">
                   {{ 'products.product.quantity.label' | t }}
-                  <span class="quantity__rules-cart{% if cart_qty == 0 %} hidden{% endif %}">
+                  <span class="quantity__rules-cart no-js-hidden{% if cart_qty == 0 %} hidden{% endif %}">
                     <span class="loading-overlay hidden">
                       <span class="loading-overlay__spinner">
                         <svg
@@ -241,7 +242,7 @@
                     {% render 'icon-plus' %}
                   </button>
                 </quantity-input>
-                <div class="quantity__rules caption">
+                <div class="quantity__rules caption no-js-hidden">
                   {%- if product.selected_or_first_available_variant.quantity_rule.increment > 1 -%}
                     <span class="divider">
                       {{-
@@ -402,7 +403,7 @@
                 </div>
               </noscript>
             {%- when 'buy_buttons' -%}
-              {%- render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, show_pickup_availability: true -%}
+              {%- render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true -%}
               <div {{ block.shopify_attributes }}>
               {% if product.metafields.my_fields.refill_date != blank %}
                 <p class="rdt{% if product.selected_or_first_available_variant.inventory_quantity < 1 and product.selected_or_first_available_variant.inventory_policy == 'continue' %}{% else %} hidden{% endif %}">
