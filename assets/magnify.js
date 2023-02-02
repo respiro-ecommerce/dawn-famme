@@ -3,8 +3,13 @@ function createOverlay(image) {
   overlay = document.createElement('div');
   overlay.setAttribute('class', 'image-magnify-full-size');
   overlay.setAttribute('aria-hidden', 'true');
-  overlay.style.backgroundImage = `url('${image.src}')`;
-  image.parentElement.insertBefore(overlay, image);
+  
+  const overlayImage = new Image();
+  overlayImage.onload = () => {
+    overlay.style.backgroundImage = `url('${image.src}')`;
+    image.parentElement.insertBefore(overlay, image);
+  }
+  overlayImage.src = image.src;
   return overlay;
 };
 
