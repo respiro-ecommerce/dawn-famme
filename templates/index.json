@@ -63,7 +63,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/levering-ikon_d8192b31-f292-4824-85ac-36da86a4b1f8.png",
-            "title": "Kort leveringstid",
+            "title": "1-3 Dager levering",
             "text": "",
             "link_label": "",
             "link": ""
@@ -73,7 +73,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/frifrakt-ikon.png",
-            "title": "Fri frakt over 400kr",
+            "title": "Fri frakt over 399,-",
             "text": "",
             "link_label": "",
             "link": ""
@@ -83,7 +83,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/kundeservice-ikon_67b5249b-439e-4d52-a127-2b9dcbd7cc95.png",
-            "title": "Rask kundeservice",
+            "title": "Svar innen 24 timer",
             "text": "",
             "link_label": "",
             "link": ""
