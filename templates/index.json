@@ -121,7 +121,7 @@
         "1660570459ecdaf28d-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/tights-knapp-mulitcolumn.jpg",
+            "image": "shopify:\/\/shop_images\/tights_00c8bb10-b8e5-4070-9a81-7994ea58eae5.jpg",
             "url": "shopify:\/\/collections\/treningstights",
             "title": "",
             "text": "",
@@ -129,21 +129,10 @@
             "link": "shopify:\/\/collections\/jacket"
           }
         },
-        "1660570459ecdaf28d-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/sportsbra-knapp-mulitcolumn.jpg",
-            "url": "shopify:\/\/collections\/sports-bh",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": "shopify:\/\/collections\/sports-bh"
-          }
-        },
         "1660570459ecdaf28d-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/topper-knapp-mulitcolumn.jpg",
+            "image": "shopify:\/\/shop_images\/topper.jpg",
             "url": "shopify:\/\/collections\/treningsoverdeler",
             "title": "",
             "text": "",
@@ -151,11 +140,22 @@
             "link": ""
           }
         },
+        "1660570459ecdaf28d-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sports-bh.jpg",
+            "url": "shopify:\/\/collections\/sports-bh",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/collections\/sports-bh"
+          }
+        },
         "10a7abb5-b911-417a-bfa8-44d013a16de9": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/jakker-knapp-mulitcolumn.jpg",
-            "url": "shopify:\/\/collections\/jacket",
+            "image": "shopify:\/\/shop_images\/shorts-2.jpg",
+            "url": "shopify:\/\/collections\/treningsshorts",
             "title": "",
             "text": "",
             "link_label": "",
@@ -165,8 +165,8 @@
       },
       "block_order": [
         "1660570459ecdaf28d-0",
-        "1660570459ecdaf28d-1",
         "1660570459ecdaf28d-2",
+        "1660570459ecdaf28d-1",
         "10a7abb5-b911-417a-bfa8-44d013a16de9"
       ],
       "settings": {
