@@ -1,12 +1,50 @@
 {
   "sections": {
-    "16620310837584a090": {
-      "type": "image-banner",
+    "34e67a7e-53eb-4f8e-9332-3824b3cd32d0": {
+      "type": "image-banner-famme-custom",
+      "blocks": {
+        "template--14725536972974__34e67a7e-53eb-4f8e-9332-3824b3cd32d0-16710124190f41187b-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "template--14725536972974__34e67a7e-53eb-4f8e-9332-3824b3cd32d0-16710124190f41187b-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "template--14725536972974__34e67a7e-53eb-4f8e-9332-3824b3cd32d0-16710124190f41187b-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--14725536972974__34e67a7e-53eb-4f8e-9332-3824b3cd32d0-16710124190f41187b-0",
+        "template--14725536972974__34e67a7e-53eb-4f8e-9332-3824b3cd32d0-16710124190f41187b-1",
+        "template--14725536972974__34e67a7e-53eb-4f8e-9332-3824b3cd32d0-16710124190f41187b-2"
+      ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/VORTEX-banner-desktop_4.jpg",
-        "image_m": "shopify:\/\/shop_images\/vortex-banner-mobil_4.jpg",
-        "image_url": "shopify:\/\/collections\/bestsellers",
+        "image_url": "",
+        "image_2": "shopify:\/\/shop_images\/peachy-leggings-desktop.jpg",
+        "image2_m": "shopify:\/\/shop_images\/peachy-leggings-mobile.jpg",
+        "image2no": "shopify:\/\/shop_images\/peachy-tights-desktop.jpg",
+        "image2_nom": "shopify:\/\/shop_images\/peachy-tights-mobile.jpg",
         "image_overlay_opacity": 0,
+        "image2_url": "https:\/\/famme.no\/collections\/scrunch",
         "image_height": "large",
         "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",
@@ -25,7 +63,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/levering-ikon_d8192b31-f292-4824-85ac-36da86a4b1f8.png",
-            "title": "Kort leveringstid",
+            "title": "1-3 Dager levering",
             "text": "",
             "link_label": "",
             "link": ""
@@ -35,7 +73,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/frifrakt-ikon.png",
-            "title": "Fri frakt over 400kr",
+            "title": "Fri frakt over 399,-",
             "text": "",
             "link_label": "",
             "link": ""
@@ -45,7 +83,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/kundeservice-ikon_67b5249b-439e-4d52-a127-2b9dcbd7cc95.png",
-            "title": "Rask kundeservice",
+            "title": "Svar innen 24 timer",
             "text": "",
             "link_label": "",
             "link": ""
@@ -83,7 +121,7 @@
         "1660570459ecdaf28d-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/tights-knapp-mulitcolumn.jpg",
+            "image": "shopify:\/\/shop_images\/tights_00c8bb10-b8e5-4070-9a81-7994ea58eae5.jpg",
             "url": "shopify:\/\/collections\/treningstights",
             "title": "",
             "text": "",
@@ -91,21 +129,10 @@
             "link": "shopify:\/\/collections\/jacket"
           }
         },
-        "1660570459ecdaf28d-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/sportsbra-knapp-mulitcolumn.jpg",
-            "url": "shopify:\/\/collections\/sports-bh",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": "shopify:\/\/collections\/sports-bh"
-          }
-        },
         "1660570459ecdaf28d-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/topper-knapp-mulitcolumn.jpg",
+            "image": "shopify:\/\/shop_images\/topper.jpg",
             "url": "shopify:\/\/collections\/treningsoverdeler",
             "title": "",
             "text": "",
@@ -113,11 +140,22 @@
             "link": ""
           }
         },
+        "1660570459ecdaf28d-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sports-bh.jpg",
+            "url": "shopify:\/\/collections\/sports-bh",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/collections\/sports-bh"
+          }
+        },
         "10a7abb5-b911-417a-bfa8-44d013a16de9": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/jakker-knapp-mulitcolumn.jpg",
-            "url": "shopify:\/\/collections\/jacket",
+            "image": "shopify:\/\/shop_images\/shorts-2.jpg",
+            "url": "shopify:\/\/collections\/treningsshorts",
             "title": "",
             "text": "",
             "link_label": "",
@@ -127,8 +165,8 @@
       },
       "block_order": [
         "1660570459ecdaf28d-0",
-        "1660570459ecdaf28d-1",
         "1660570459ecdaf28d-2",
+        "1660570459ecdaf28d-1",
         "10a7abb5-b911-417a-bfa8-44d013a16de9"
       ],
       "settings": {
@@ -146,51 +184,6 @@
         "swipe_on_mobile": true,
         "padding_top": 4,
         "padding_bottom": 4
-      }
-    },
-    "1663594925b05b51c0": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Nyheter",
-        "heading_size": "h2",
-        "description": "<p>Få med deg de nyeste lanseringene!<\/p>",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "new-releases",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "link",
-        "enable_desktop_slider": true,
-        "color_scheme": "background-1",
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 16,
-        "padding_bottom": 16
-      }
-    },
-    "165607326399458504": {
-      "type": "image-banner",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/hiking-banner-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/turklaer-banner-mobil-No.jpg",
-        "image_url": "",
-        "image_overlay_opacity": 0,
-        "image_height": "large",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
       }
     },
     "16463038447a5cbd60": {
@@ -220,11 +213,56 @@
         "padding_bottom": 24
       }
     },
+    "16620310837584a090": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/DESEMBER_BANNER_website_Engelsk.jpg",
+        "image_m": "shopify:\/\/shop_images\/DESEMBER_BANNER_instagram_ENGELSK.jpg",
+        "image_url": "\/products\/seamless-tights-vortex-2",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "1663594925b05b51c0": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Nyheter",
+        "heading_size": "h2",
+        "description": "<p>Få med deg de nyeste lanseringene!<\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "new-releases",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "link",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 16,
+        "padding_bottom": 16
+      }
+    },
     "16602879286b7eef4a": {
       "type": "apps",
       "blocks": {
         "8cc4873d-cdc4-46a9-9624-2e324ff53607": {
-          "type": "shopify:\/\/apps\/covet-pics-instagram-feed\/blocks\/app-block-standard\/577480e8-b5be-4890-968c-06ccfb458c74",
+          "type": "shopify:\/\/apps\/covet-instagram-feed-reviews\/blocks\/app-block-standard\/577480e8-b5be-4890-968c-06ccfb458c74",
           "settings": {
             "gallery_embed_id": 230022,
             "show_text": true,
@@ -254,14 +292,14 @@
         "1629157352b193f90f-0": {
           "type": "heading",
           "settings": {
-            "heading": "Velkomsttilbud: 20% rabatt på ett valgfritt produkt",
+            "heading": "Meld deg på nyhetsbrevet!",
             "heading_size": "h2"
           }
         },
         "1629157352b193f90f-1": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Meld deg på nyhetsbrevet vårt for å motta rabattkoden din.<\/p>"
+            "text": ""
           }
         },
         "1629157352b193f90f-2": {
@@ -285,9 +323,11 @@
     "162567415706bdadcd": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/produktgruppe-banner-engelsk-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/produktgruppe-banner-engelsk-mobil.jpg",
-        "image_url": "",
+        "image": "shopify:\/\/shop_images\/web-banner-group-facebook.jpg",
+        "image_m": "shopify:\/\/shop_images\/web-banner-mobile-group-facebook.jpg",
+        "imageno": "shopify:\/\/shop_images\/web-facebook-no.jpg",
+        "image_nom": "shopify:\/\/shop_images\/web-mobile-facebook-no-2.jpg",
+        "image_url": "https:\/\/www.facebook.com\/groups\/fammeproduktutvikling",
         "image_overlay_opacity": 0,
         "image_height": "small",
         "adapt_height_first_image": false,
@@ -310,12 +350,12 @@
     }
   },
   "order": [
-    "16620310837584a090",
+    "34e67a7e-53eb-4f8e-9332-3824b3cd32d0",
     "1660654738369bfdd0",
     "166057046086c544fd",
-    "1663594925b05b51c0",
-    "165607326399458504",
     "16463038447a5cbd60",
+    "16620310837584a090",
+    "1663594925b05b51c0",
     "16602879286b7eef4a",
     "1629157352b193f90f",
     "162567415706bdadcd",
