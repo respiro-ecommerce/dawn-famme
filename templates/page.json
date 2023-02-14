@@ -10,7 +10,7 @@
     "4b7b4ab0-3f15-44f2-a9a0-2e2313f0ffa9": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"klaviyo-form-VvgsSY\"><\/div>",
+        "custom_liquid": "<form action=\"#\" class=\"klaviyo-form-VvgsSY\">\n  <label for=\"email\">Email:<\/label>\n  <input type=\"email\" name=\"email\" id=\"email\" required>\n  <button type=\"submit\">Subscribe<\/button>\n<\/form>",
         "color_scheme": "background-1",
         "padding_top": 40,
         "padding_bottom": 52
