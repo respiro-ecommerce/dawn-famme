@@ -144,7 +144,6 @@ p.rd {
   padding: 7px 20px;
 }
 {% comment %} .banner--large:not(.banner--adapt) {height: 100vh;} {% endcomment %}
-
 .multicolumn li.multicolumn-list__item.grid__item.slider__slide {margin-left: 0;}
 .background-none .multicolumn-card__image-wrapper {margin: 0;}
 .video-section__media.deferred-media video.js-youtube {
@@ -189,4 +188,17 @@ label.color.checked>img, a.color>img {max-width: 59px;}
 label.color.checked {
   background-color: rgb(var(--color-foreground));
   color: rgb(var(--color-background));
+}
+/*Banner responsive image*/
+a.banner__media.media>picture>img {
+  display: block;
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+  transition: opacity .4s cubic-bezier(.25,.46,.45,.94);
 }

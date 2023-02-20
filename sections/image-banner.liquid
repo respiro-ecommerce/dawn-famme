@@ -58,13 +58,17 @@
           assign sizes = "100vw"
         endif
       -%}
-      {{ img | image_url: width: 2048 | image_tag: loading: 'lazy', width: img.width, height: image_height, class: image_class, sizes: sizes,
-        widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840', alt: img.alt | escape }}
-      {%- if imgm != blank -%}
-        {% assign m_height = imgm.width | divided_by: imgm.aspect_ratio %}{% assign m_class = image_class | append: ' mob' %}
-        {{ imgm | image_url: width: 800 | image_tag: loading: 'lazy', width: imgm.width, height: m_height, class: m_class, sizes: sizes,
-        widths: '375, 550, 750', alt: imgm.alt | escape }}
-      {%- endif -%}
+      <picture>
+        <source media="(max-width:750px)" sizes="{{ sizes }}"
+          {% if imgm != blank -%}
+            {% assign m_height = imgm.width | divided_by: imgm.aspect_ratio %}{% assign m_class = image_class | append: ' mob' %}
+            srcset="{{ imgm | image_url: width: 750 }}" width="{{ imgm.width }}" height="{{ m_height }}" class="{{ m_class }}"
+          {% else %}
+            srcset="{{ img | image_url: width: 750 }}" width="{{ img.width }}" height="{{ image_height }}" class="{{ image_class }}"
+          {% endif %}
+        >
+        <img src="{{ img | image_url: width: 1920 }}" width="{{ img.width }}" height="{{ image_height }}" class="{{ image_class }}" sizes="{{ sizes }}" alt="{{ img.alt | escape }}" loading="lazy">
+      </picture>
     </a>
   {%- elsif img2 == blank -%}
     <div class="banner__media media{% if img == blank and img2 == blank %} placeholder{% endif %}{% if img2 != blank %} banner__media-half{% endif %}">
@@ -86,13 +90,17 @@
           assign sizes = "100vw"
         endif
       -%}
-      {{ img2 | image_url: width: 2048 | image_tag: loading: 'lazy', width: img2.width, height: image_height_2, class: image_class_2, sizes: sizes,
-        widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840', alt: img2.alt | escape }}
-      {%- if img2m != blank -%}
-        {% assign m2_height = img2m.width | divided_by: img2m.aspect_ratio %}{% assign m_class_2 = image_class_2 | append: ' mob' %}
-        {{ img2m | image_url: width: 800 | image_tag: loading: 'lazy', width: img2m.width, height: m2_height, class: m_class_2, sizes: sizes,
-        widths: '375, 550, 750', alt: img2m.alt | escape }}
-      {%- endif -%}
+      <picture>
+        <source media="(max-width:750px)" sizes="{{ sizes }}"
+          {% if img2m != blank -%}
+            {% assign m2_height = img2m.width | divided_by: img2m.aspect_ratio %}{% assign m_class_2 = image_class_2 | append: ' mob' %}
+            srcset="{{ img2m | image_url: width: 750 }}" width="{{ img2m.width }}" height="{{ m2_height }}" class="{{ m_class_2 }}"
+          {% else %}
+            srcset="{{ img2 | image_url: width: 750 }}" width="{{ img2.width }}" height="{{ image_height_2 }}" class="{{ image_class_2 }}"
+          {% endif %}
+        >
+        <img src="{{ img2 | image_url: width: 1920 }}" width="{{ img2.width }}" height="{{ image_height_2 }}" class="{{ image_class_2 }}" sizes="{{ sizes }}" alt="{{ img2.alt | escape }}" loading="lazy">
+      </picture>
     </a>
   {%- endif -%}
   <div class="banner__content banner__content--{{ section.settings.desktop_content_position }} page-width">
