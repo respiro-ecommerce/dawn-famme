@@ -190,7 +190,7 @@ class QuantityInput extends HTMLElement {
       const max = parseInt(this.input.max);
       const buttonPlus = this.querySelector(".quantity__button[name='plus']");
       buttonPlus.classList.toggle('disabled', value >= max);
-    } 
+    }
   }
 }
 
@@ -549,10 +549,14 @@ class DeferredMedia extends HTMLElement {
     if (!this.getAttribute('loaded')) {
       const content = document.createElement('div');
       content.appendChild(this.querySelector('template').content.firstElementChild.cloneNode(true));
+
       this.setAttribute('loaded', true);
       const deferredElement = this.appendChild(content.querySelector('video, model-viewer, iframe'));
       if (focus) deferredElement.focus();
-      if (deferredElement.tagName == 'VIDEO'){deferredElement.play();}
+      if (deferredElement.nodeName == 'VIDEO' && deferredElement.getAttribute('autoplay')) {
+        // force autoplay for safari
+        deferredElement.play();
+      }
     }
   }
 }
@@ -808,24 +812,12 @@ class VariantSelects extends HTMLElement {
     if (!this.currentVariant) {
       this.toggleAddButton(true, '', true);
       this.setUnavailable();
-      if (document.querySelector('a.klaviyo-bis-trigger')){document.querySelector('a.klaviyo-bis-trigger').style.display = 'block';}
     } else {
-      if (document.querySelector('a.klaviyo-bis-trigger')){document.querySelector('a.klaviyo-bis-trigger').style.display = 'none';}
       this.updateMedia();
       this.updateURL();
       this.updateVariantInput();
       this.renderProductInfo();
       this.updateShareUrl();
-    }
-    //Refill date dynamic message code updated per variant
-    if (document.querySelector('p.rd') && document.querySelector('p.rdt') && document.querySelector('li#id'+ document.querySelector('input[name="id"]').value)){
-      if (document.querySelector('li#id'+ document.querySelector('input[name="id"]').value).innerHTML == 'continue' && document.querySelector('li#id'+ document.querySelector('input[name="id"]').value).getAttribute('qty') < 1){
-        document.querySelector('p.rd').classList.remove('hidden');
-        document.querySelector('p.rdt').classList.remove('hidden');
-      } else {
-        document.querySelector('p.rd').classList.add('hidden');
-        document.querySelector('p.rdt').classList.add('hidden');
-      }
     }
   }
 
@@ -846,7 +838,7 @@ class VariantSelects extends HTMLElement {
     if (!this.currentVariant.featured_media) return;
 
     const mediaGalleries = document.querySelectorAll(`[id^="MediaGallery-${this.dataset.section}"]`);
-    mediaGalleries.forEach(mediaGallery => mediaGallery.setActiveMedia(`${this.dataset.section}-${this.currentVariant.featured_media.id}`, false));
+    mediaGalleries.forEach(mediaGallery => mediaGallery.setActiveMedia(`${this.dataset.section}-${this.currentVariant.featured_media.id}`, true));
 
     const modalContent = document.querySelector(`#ProductModal-${this.dataset.section} .product-media-modal__content`);
     if (!modalContent) return;
@@ -1023,21 +1015,6 @@ class VariantRadios extends VariantSelects {
 }
 
 customElements.define('variant-radios', VariantRadios);
-if (document.querySelector('div#ProductGridContainer')){
-  document.querySelector('div#ProductGridContainer').onclick=e=>{
-    if (e.target.classList.contains('more')){
-      var imgs = e.target.parentElement.querySelectorAll('a.hidden');
-      [].forEach.call(imgs, img=>{img.classList.remove('hidden')});
-      e.target.remove();
-    }
-  }
-  document.querySelector('div#ProductGridContainer').onmouseover=e=>{
-    if (e.target.classList.contains('img')){
-      e.target.parentElement.previousElementSibling.querySelector('img.motion-reduce').removeAttribute('srcset');
-      e.target.parentElement.previousElementSibling.querySelector('img.motion-reduce').src = e.target.getAttribute('src');
-    }
-  }
-}
 
 class ProductRecommendations extends HTMLElement {
   constructor() {
