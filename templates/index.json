@@ -1,50 +1,12 @@
 {
   "sections": {
-    "34e67a7e-53eb-4f8e-9332-3824b3cd32d0": {
-      "type": "image-banner-famme-custom",
-      "blocks": {
-        "template--14725536972974__34e67a7e-53eb-4f8e-9332-3824b3cd32d0-16710124190f41187b-0": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1"
-          }
-        },
-        "template--14725536972974__34e67a7e-53eb-4f8e-9332-3824b3cd32d0-16710124190f41187b-1": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "template--14725536972974__34e67a7e-53eb-4f8e-9332-3824b3cd32d0-16710124190f41187b-2": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "template--14725536972974__34e67a7e-53eb-4f8e-9332-3824b3cd32d0-16710124190f41187b-0",
-        "template--14725536972974__34e67a7e-53eb-4f8e-9332-3824b3cd32d0-16710124190f41187b-1",
-        "template--14725536972974__34e67a7e-53eb-4f8e-9332-3824b3cd32d0-16710124190f41187b-2"
-      ],
+    "16620310837584a090": {
+      "type": "image-banner",
       "settings": {
-        "image_url": "",
-        "image_2": "shopify:\/\/shop_images\/peachy-leggings-desktop.jpg",
-        "image2_m": "shopify:\/\/shop_images\/peachy-leggings-mobile.jpg",
-        "image2no": "shopify:\/\/shop_images\/peachy-tights-desktop.jpg",
-        "image2_nom": "shopify:\/\/shop_images\/peachy-tights-mobile.jpg",
+        "image": "shopify:\/\/shop_images\/vortex-desktop-NO.jpg",
+        "image_m": "shopify:\/\/shop_images\/vortex-mobile-NO.jpg",
+        "image_url": "\/products\/seamless-tights-vortex-2",
         "image_overlay_opacity": 0,
-        "image2_url": "https:\/\/famme.no\/collections\/scrunch",
         "image_height": "large",
         "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",
@@ -213,13 +175,51 @@
         "padding_bottom": 24
       }
     },
-    "16620310837584a090": {
-      "type": "image-banner",
+    "34e67a7e-53eb-4f8e-9332-3824b3cd32d0": {
+      "type": "image-banner-famme-custom",
+      "blocks": {
+        "template--14725536972974__34e67a7e-53eb-4f8e-9332-3824b3cd32d0-16710124190f41187b-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "template--14725536972974__34e67a7e-53eb-4f8e-9332-3824b3cd32d0-16710124190f41187b-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "template--14725536972974__34e67a7e-53eb-4f8e-9332-3824b3cd32d0-16710124190f41187b-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--14725536972974__34e67a7e-53eb-4f8e-9332-3824b3cd32d0-16710124190f41187b-0",
+        "template--14725536972974__34e67a7e-53eb-4f8e-9332-3824b3cd32d0-16710124190f41187b-1",
+        "template--14725536972974__34e67a7e-53eb-4f8e-9332-3824b3cd32d0-16710124190f41187b-2"
+      ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/vortex-desktop-NO.jpg",
-        "image_m": "shopify:\/\/shop_images\/vortex-mobile-NO.jpg",
-        "image_url": "\/products\/seamless-tights-vortex-2",
+        "image_url": "",
+        "image_2": "shopify:\/\/shop_images\/peachy-leggings-desktop.jpg",
+        "image2_m": "shopify:\/\/shop_images\/peachy-leggings-mobile.jpg",
+        "image2no": "shopify:\/\/shop_images\/peachy-tights-desktop.jpg",
+        "image2_nom": "shopify:\/\/shop_images\/peachy-tights-mobile.jpg",
         "image_overlay_opacity": 0,
+        "image2_url": "https:\/\/famme.no\/collections\/scrunch",
         "image_height": "large",
         "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",
@@ -350,11 +350,11 @@
     }
   },
   "order": [
-    "34e67a7e-53eb-4f8e-9332-3824b3cd32d0",
+    "16620310837584a090",
     "1660654738369bfdd0",
     "166057046086c544fd",
     "16463038447a5cbd60",
-    "16620310837584a090",
+    "34e67a7e-53eb-4f8e-9332-3824b3cd32d0",
     "1663594925b05b51c0",
     "16602879286b7eef4a",
     "1629157352b193f90f",
