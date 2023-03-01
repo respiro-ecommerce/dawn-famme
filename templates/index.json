@@ -5,7 +5,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/vortex-desktop-NO.jpg",
         "image_m": "shopify:\/\/shop_images\/vortex-mobile-NO.jpg",
-        "image_url": "\/products\/seamless-tights-vortex-2",
+        "image_url": "https:\/\/famme.no\/search?q=vortex&type=product&options%5Bprefix%5D=last",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "adapt_height_first_image": false,
