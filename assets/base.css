@@ -2958,12 +2958,13 @@ details-disclosure > details {
   }
 }
 
-
-.list-menu > li > a > span {
+.list-menu > li:nth-child(3) > a > span {
+  color: rgb(238, 75, 43);
   font-weight: bold;
 }
 
+
 .menu-drawer__menu-item--active {
-  color: red !important;
+  color: rgb(238, 75, 43) !important;
   font-weight: bold !important;
 }
