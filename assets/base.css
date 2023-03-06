@@ -2957,3 +2957,6 @@ details-disclosure > details {
     outline: transparent solid 1px;
   }
 }
+
+.site-header nav ul li:last-child .site-nav__link .site-nav__label {font-weight: bold !important; color: red !important}
+/* End*/
