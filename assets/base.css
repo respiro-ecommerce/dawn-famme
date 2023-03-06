@@ -2958,4 +2958,9 @@ details-disclosure > details {
   }
 }
 
-.header__menu-item.list-menu__item.link--text.focus-inset  {font-weight: bold !important; color: red !important}
+
+
+.list-menu > li:nth-child(3) > a > span {
+  color: red;
+  font-weight: bold;
+}
