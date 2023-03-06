@@ -2958,4 +2958,6 @@ details-disclosure > details {
   }
 }
 
-.header__menu-item.list-menu__item.link--text.focus-inset {font-weight: bold !important; color: red !important}
+.header__menu-item.list-menu__item.link--text.focus-inset span:contains("Outlet") {
+  color: red;
+}
