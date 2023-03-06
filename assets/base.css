@@ -2957,6 +2957,5 @@ details-disclosure > details {
     outline: transparent solid 1px;
   }
 }
-.header__menu-item.list-menu__item.link--text.focus-inset span:contains("Outlet") {
-font-weight: bold !important; color: red !important
-}
+
+.header__menu-item.list-menu__item.link--text.focus-inset  {font-weight: bold !important; color: red !important}
