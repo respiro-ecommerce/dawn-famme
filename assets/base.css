@@ -2963,6 +2963,7 @@ details-disclosure > details {
   font-weight: bold;
 }
 
-.list-menu > li:nth-child(3) > a > span {
-  color: red;
+.menu-drawer__menu-item--active {
+  color: red !important;
+  font-weight: bold !important;
 }
