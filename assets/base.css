@@ -2958,4 +2958,4 @@ details-disclosure > details {
   }
 }
 
-.site-header nav ul li:last-child .site-nav__link .site-nav__label {font-weight: bold !important; color: red !important}
+.header__menu-item.list-menu__item.link--text.focus-inset {font-weight: bold !important; color: red !important}
