@@ -18,59 +18,6 @@
         "show_text_below": true
       }
     },
-    "4585c00c-43a2-42a8-b3f1-d37376c75283": {
-      "type": "image-banner",
-      "blocks": {
-        "template--15180132253870__4585c00c-43a2-42a8-b3f1-d37376c75283-1678267360c9174e6c-0": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1"
-          }
-        },
-        "template--15180132253870__4585c00c-43a2-42a8-b3f1-d37376c75283-1678267360c9174e6c-1": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "template--15180132253870__4585c00c-43a2-42a8-b3f1-d37376c75283-1678267360c9174e6c-2": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "template--15180132253870__4585c00c-43a2-42a8-b3f1-d37376c75283-1678267360c9174e6c-0",
-        "template--15180132253870__4585c00c-43a2-42a8-b3f1-d37376c75283-1678267360c9174e6c-1",
-        "template--15180132253870__4585c00c-43a2-42a8-b3f1-d37376c75283-1678267360c9174e6c-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/outlet-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/outlet-mobile.jpg",
-        "image_url": "",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
     "1660654738369bfdd0": {
       "type": "multicolumn-usp",
       "blocks": {
@@ -128,6 +75,61 @@
         "swipe_on_mobile": false,
         "padding_top": 16,
         "padding_bottom": 0
+      }
+    },
+    "4585c00c-43a2-42a8-b3f1-d37376c75283": {
+      "type": "image-banner",
+      "blocks": {
+        "template--15180132253870__4585c00c-43a2-42a8-b3f1-d37376c75283-1678267360c9174e6c-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "template--15180132253870__4585c00c-43a2-42a8-b3f1-d37376c75283-1678267360c9174e6c-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "template--15180132253870__4585c00c-43a2-42a8-b3f1-d37376c75283-1678267360c9174e6c-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15180132253870__4585c00c-43a2-42a8-b3f1-d37376c75283-1678267360c9174e6c-0",
+        "template--15180132253870__4585c00c-43a2-42a8-b3f1-d37376c75283-1678267360c9174e6c-1",
+        "template--15180132253870__4585c00c-43a2-42a8-b3f1-d37376c75283-1678267360c9174e6c-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/outlet-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/outlet-mobile.jpg",
+        "imageno": "shopify:\/\/shop_images\/outlet-desktop-NO.jpg",
+        "image_nom": "shopify:\/\/shop_images\/outlet-mobile-NO.jpg",
+        "image_url": "",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
       }
     },
     "166057046086c544fd": {
@@ -348,8 +350,8 @@
   },
   "order": [
     "16620310837584a090",
-    "4585c00c-43a2-42a8-b3f1-d37376c75283",
     "1660654738369bfdd0",
+    "4585c00c-43a2-42a8-b3f1-d37376c75283",
     "166057046086c544fd",
     "16463038447a5cbd60",
     "1663594925b05b51c0",
