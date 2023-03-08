@@ -57,6 +57,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/outlet-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/outlet-mobile.jpg",
         "image_url": "",
         "image_overlay_opacity": 0,
         "image_height": "medium",
