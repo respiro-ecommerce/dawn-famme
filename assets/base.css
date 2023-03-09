@@ -2296,6 +2296,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
   display: block;
   position: relative;
   background-color: rgb(var(--color-background));
+  z-index: 1;
 }
 
 .header-wrapper--border-bottom {
