@@ -1,9 +1,46 @@
 {
   "sections": {
+    "77d0a0e6-d570-4895-8311-3c513e09e6cd": {
+      "type": "image-banner",
+      "blocks": {
+        "template--16046917615790__77d0a0e6-d570-4895-8311-3c513e09e6cd-1678965111684c3727-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "60% Salg på Alle Turklær",
+            "heading_size": "h0"
+          }
+        },
+        "template--16046917615790__77d0a0e6-d570-4895-8311-3c513e09e6cd-1678965111684c3727-1": {
+          "type": "text",
+          "settings": {
+            "text": "Turbukser, skalljakker, fleecejakker og merino-ull. Returlapp i pakken og bytterett.",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "template--16046917615790__77d0a0e6-d570-4895-8311-3c513e09e6cd-1678965111684c3727-0",
+        "template--16046917615790__77d0a0e6-d570-4895-8311-3c513e09e6cd-1678965111684c3727-1"
+      ],
+      "settings": {
+        "image_url": "",
+        "image_2": "shopify:\/\/shop_images\/salg-60.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "adapt_height_first_image": true,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "01aba802-6d31-4681-9f2f-986df2fd978a": {
       "type": "image-banner",
       "custom_css": [
-        ".banner--adapt, .banner--adapt_image.banner--mobile-bottom .banner__media:not(.placeholder) {height: 90px !important;}"
+
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/salg-60.jpg",
@@ -49,6 +86,7 @@
     }
   },
   "order": [
+    "77d0a0e6-d570-4895-8311-3c513e09e6cd",
     "01aba802-6d31-4681-9f2f-986df2fd978a",
     "product-grid",
     "banner"
