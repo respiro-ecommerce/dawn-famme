@@ -2,8 +2,12 @@
   "sections": {
     "01aba802-6d31-4681-9f2f-986df2fd978a": {
       "type": "image-banner",
+      "custom_css": [
+        ".banner--adapt, .banner--adapt_image.banner--mobile-bottom .banner__media:not(.placeholder) {height: 90px !important;}"
+      ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/banner-1-salg.jpg",
+        "image": "shopify:\/\/shop_images\/salg-60.jpg",
+        "image_m": "shopify:\/\/shop_images\/salg-60-mobile.jpg",
         "image_url": "",
         "image_overlay_opacity": 0,
         "image_height": "small",
