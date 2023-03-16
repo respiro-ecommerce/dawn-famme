@@ -3,27 +3,8 @@
     "c44e474f-9dcc-4093-ab66-e04b1cf0df61": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/60-deskopt.jpg",
-        "image_url": "",
-        "image_overlay_opacity": 0,
-        "image_height": "small",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
-    "01aba802-6d31-4681-9f2f-986df2fd978a": {
-      "type": "image-banner",
-      "custom_css": [
-
-      ],
-      "settings": {
-        "image_m": "shopify:\/\/shop_images\/60-mobile.jpg",
+        "image": "shopify:\/\/shop_images\/60-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/60-mobile_69c42165-9b3d-409a-9566-d3545c22a454.jpg",
         "image_url": "",
         "image_overlay_opacity": 0,
         "image_height": "small",
@@ -66,7 +47,6 @@
   },
   "order": [
     "c44e474f-9dcc-4093-ab66-e04b1cf0df61",
-    "01aba802-6d31-4681-9f2f-986df2fd978a",
     "product-grid",
     "banner"
   ]
