@@ -23,18 +23,18 @@
         "template--16046917615790__77d0a0e6-d570-4895-8311-3c513e09e6cd-1678965111684c3727-1"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/salg-60.jpg",
         "image_url": "",
-        "image_2": "shopify:\/\/shop_images\/salg-60.jpg",
         "image_overlay_opacity": 0,
         "image_height": "small",
         "adapt_height_first_image": true,
         "desktop_content_position": "middle-center",
-        "show_text_box": true,
+        "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "background-1",
         "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
+        "stack_images_on_mobile": false,
+        "show_text_below": false
       }
     },
     "01aba802-6d31-4681-9f2f-986df2fd978a": {
