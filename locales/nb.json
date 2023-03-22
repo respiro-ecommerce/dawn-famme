@@ -134,7 +134,7 @@
         "minimum_of": "Minimum på {{ quantity }}",
         "maximum_of": "Maksimum på {{ quantity }}",
         "multiples_of": "Økninger på {{ quantity }}",
-        "in_cart_html": "<span class=\"quantity-cart\">{{ quantity }}</span> i handlekurven"
+        "in_cart_html": "<span class=\"quantity-cart\">{{ quantity }}<\/span> i handlekurven"
       },
       "price": {
         "from_price_html": "Fra {{ price }}",

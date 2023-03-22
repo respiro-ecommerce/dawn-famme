@@ -469,11 +469,6 @@
     "name": "t:settings_schema.cards.name",
     "settings": [
       {
-        "type": "textarea",
-        "id": "colors",
-        "label": "List of colors name-hex pairs, each pair on it's own line"
-      },
-      {
         "type": "select",
         "id": "card_style",
         "options": [

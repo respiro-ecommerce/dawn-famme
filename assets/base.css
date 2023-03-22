@@ -2296,8 +2296,9 @@ product-info .loading-overlay:not(.hidden) ~ *,
   display: block;
   position: relative;
   background-color: rgb(var(--color-background));
+  z-index: 1;
 }
-
+#shopify-section-header {z-index: 3;}
 .header-wrapper--border-bottom {
   border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
 }

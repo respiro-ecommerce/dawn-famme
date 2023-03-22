@@ -119,8 +119,6 @@
         "heading": "",
         "image_ratio": "adapt",
         "show_secondary_image": true,
-        "add_image_padding": false,
-        "show_image_outline": true,
         "show_vendor": false,
         "show_rating": false
       }
@@ -134,7 +132,6 @@
         "show_image": true,
         "show_date": true,
         "show_author": false,
-        "soft_background": false,
         "show_view_all": true
       }
     }
