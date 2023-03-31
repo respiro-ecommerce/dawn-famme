@@ -22,29 +22,7 @@ Implemented with the <picture> tag and multiple sources.
 
 
 
-
-## Legacy customization 
-
-* Adding a color label dynamically when hovering over the swatches:
-```javascript
-// Custom: For showing color names dynamically on product page
-// above the images on the PDP for selecti
-if (document.querySelector('variant-radios')){
-  document.querySelector('variant-radios').onmouseover=e=>{
-    if (e.target.tagName == 'LABEL'){
-      e.target.parentElement.firstElementChild.firstElementChild.innerHTML = e.target.previousElementSibling.value;
-    }
-  }
-  document.querySelector('variant-radios').onmouseout=e=>{
-    if (e.target.tagName == 'LABEL'){
-      e.target.parentElement.firstElementChild.firstElementChild.innerHTML = e.target.parentElement.querySelector('input:checked').value;
-    }
-  }
-}
-```
-
-## Endless scroll / infinite scroll, main-collection-product-grid.liquid:
-
+* Endless scroll / infinite scroll, main-collection-product-grid.liquid:
 
 ```liquid
 {%- if paginate.pages > 1 -%}
@@ -98,6 +76,28 @@ static renderSectionFromFetch(url, event, section) {
       });
   }
 ```
+
+
+## Legacy customization 
+
+* Adding a color label dynamically when hovering over the swatches:
+```javascript
+// Custom: For showing color names dynamically on product page
+// above the images on the PDP for selecti
+if (document.querySelector('variant-radios')){
+  document.querySelector('variant-radios').onmouseover=e=>{
+    if (e.target.tagName == 'LABEL'){
+      e.target.parentElement.firstElementChild.firstElementChild.innerHTML = e.target.previousElementSibling.value;
+    }
+  }
+  document.querySelector('variant-radios').onmouseout=e=>{
+    if (e.target.tagName == 'LABEL'){
+      e.target.parentElement.firstElementChild.firstElementChild.innerHTML = e.target.parentElement.querySelector('input:checked').value;
+    }
+  }
+}
+```
+
 
 
 
