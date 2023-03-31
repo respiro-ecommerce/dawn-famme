@@ -9,6 +9,8 @@ if (!customElements.get('product-form')) {
       this.cart = document.querySelector('cart-notification') || document.querySelector('cart-drawer');
       this.submitButton = this.querySelector('[type="submit"]');
       if (document.querySelector('cart-drawer')) this.submitButton.setAttribute('aria-haspopup', 'dialog');
+
+      this.hideErrors = this.dataset.hideErrors === 'true';
     }
 
     onSubmitHandler(evt) {
@@ -37,6 +39,7 @@ if (!customElements.get('product-form')) {
         .then((response) => response.json())
         .then((response) => {
           if (response.status) {
+            publish(PUB_SUB_EVENTS.cartError, {source: 'product-form', productVariantId: formData.get('id'), errors: response.description, message: response.message});
             this.handleErrorMessage(response.description);
 
             const soldOutMessage = this.submitButton.querySelector('.sold-out-message');
@@ -51,6 +54,7 @@ if (!customElements.get('product-form')) {
             return;
           }
 
+          if (!this.error) publish(PUB_SUB_EVENTS.cartUpdate, {source: 'product-form', productVariantId: formData.get('id')});
           this.error = false;
           const quickAddModal = this.closest('quick-add-modal');
           if (quickAddModal) {
@@ -74,6 +78,8 @@ if (!customElements.get('product-form')) {
     }
 
     handleErrorMessage(errorMessage = false) {
+      if (this.hideErrors) return;
+
       this.errorMessageWrapper = this.errorMessageWrapper || this.querySelector('.product-form__error-message-wrapper');
       if (!this.errorMessageWrapper) return;
       this.errorMessage = this.errorMessage || this.errorMessageWrapper.querySelector('.product-form__error-message');
@@ -85,19 +91,4 @@ if (!customElements.get('product-form')) {
       }
     }
   });
-}
-
-// Custom: For showing color names dynamically on product page
-// above the images on the PDP for selecting variant
-if (document.querySelector('variant-radios')){
-  document.querySelector('variant-radios').onmouseover=e=>{
-    if (e.target.tagName == 'LABEL'){
-      e.target.parentElement.firstElementChild.firstElementChild.innerHTML = e.target.previousElementSibling.value;
-    }
-  }
-  document.querySelector('variant-radios').onmouseout=e=>{
-    if (e.target.tagName == 'LABEL'){
-      e.target.parentElement.firstElementChild.firstElementChild.innerHTML = e.target.parentElement.querySelector('input:checked').value;
-    }
-  }
 }

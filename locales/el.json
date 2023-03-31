@@ -7,7 +7,7 @@
       "login_form_password_placeholder": "Ο κωδικός σας πρόσβασης",
       "login_form_error": "Λανθασμένος κωδικός πρόσβασης!",
       "login_form_submit": "Είσοδος",
-      "admin_link_html": "Είστε ο ιδιοκτήτης του καταστήματος; <a href=\"\/admin\" class=\"link underlined-link\">Συνδεθείτε εδώ<\/a>",
+      "admin_link_html": "Είστε ο ιδιοκτήτης του καταστήματος; <a href=\"/admin\" class=\"link underlined-link\">Συνδεθείτε εδώ</a>",
       "powered_by_shopify_html": "Αυτό το κατάστημα θα υποστηρίζεται από το {{ shopify }}"
     },
     "social": {
@@ -36,11 +36,13 @@
       "previous": "Προηγούμενη σελίδα"
     },
     "search": {
-      "search": "Αναζήτηση"
+      "search": "Αναζήτηση",
+      "reset": "Διαγραφή όρου αναζήτησης"
     },
     "cart": {
-      "view": "Προβολή του καλαθιού μου ({{ count }})",
-      "item_added": "Το στοιχείο προστέθηκε στο καλάθι σας"
+      "view": "Προβολή καλαθιού ({{ count }})",
+      "item_added": "Το στοιχείο προστέθηκε στο καλάθι σας",
+      "view_empty_cart": "Προβολή καλαθιού"
     },
     "share": {
       "copy_to_clipboard": "Αντιγραφή συνδέσμου",
@@ -112,7 +114,11 @@
         "label": "Ποσότητα",
         "input_label": "Ποσότητα για {{ product }}",
         "increase": "Αύξηση ποσότητας για {{ product }}",
-        "decrease": "Μείωση ποσότητας για {{ product }}"
+        "decrease": "Μείωση ποσότητας για {{ product }}",
+        "minimum_of": "Ελάχιστο όριο {{ quantity }}",
+        "maximum_of": "Μέγιστο όριο {{ quantity }}",
+        "multiples_of": "Δόσεις {{ quantity }}",
+        "in_cart_html": "<span class=\"quantity-cart\">{{ quantity }}</span> στο καλάθι"
       },
       "price": {
         "from_price_html": "Από {{ price }}",
@@ -131,8 +137,8 @@
         "view_store_info": "Προβολή πληροφοριών καταστήματος",
         "check_other_stores": "Έλεγχος διαθεσιμότητας σε άλλα καταστήματα",
         "pick_up_available": "Υπάρχει δυνατότητα παραλαβής",
-        "pick_up_available_at_html": "Υπάρχει δυνατότητα παραλαβής από <span class=\"color-foreground\">{{ location_name }}<\/span>",
-        "pick_up_unavailable_at_html": "Δεν υπάρχει δυνατότητα παραλαβής από <span class=\"color-foreground\">{{ location_name }}<\/span>",
+        "pick_up_available_at_html": "Υπάρχει δυνατότητα παραλαβής από <span class=\"color-foreground\">{{ location_name }}</span>",
+        "pick_up_unavailable_at_html": "Δεν υπάρχει δυνατότητα παραλαβής από <span class=\"color-foreground\">{{ location_name }}</span>",
         "unavailable": "Δεν ήταν δυνατή η φόρτωση της διαθεσιμότητας παραλαβής",
         "refresh": "Ανανέωση"
       },
@@ -148,7 +154,7 @@
       },
       "view_full_details": "Προβολή όλων των λεπτομερειών",
       "include_taxes": "Ο φόρος συμπεριλαμβάνεται.",
-      "shipping_policy_html": "Τα <a href=\"{{ link }}\">έξοδα αποστολής<\/a> υπολογίζονται κατά την ολοκλήρωση της αγοράς.",
+      "shipping_policy_html": "Τα <a href=\"{{ link }}\">έξοδα αποστολής</a> υπολογίζονται κατά την ολοκλήρωση της αγοράς.",
       "choose_options": "Ορίστε επιλογές",
       "choose_product_options": "Ορίστε επιλογές για {{ product_name }}",
       "value_unavailable": "{{ option_value }} - Μη διαθέσιμο",
@@ -209,6 +215,20 @@
       "results_with_count_and_term": {
         "one": "Βρέθηκε {{ count }} αποτέλεσμα για «{{ terms }}»",
         "other": "Βρέθηκαν {{ count }} αποτελέσματα για «{{ terms }}»"
+      },
+      "results_pages_with_count": {
+        "one": "{{ count }} σελίδα",
+        "other": "{{ count }} σελίδες"
+      },
+      "results_products_with_count": {
+        "one": "{{ count }} προϊόν",
+        "other": "{{ count }} προϊόντα"
+      },
+      "suggestions": "Προτάσεις",
+      "pages": "Σελίδες",
+      "results_suggestions_with_count": {
+        "one": "{{ count }} πρόταση",
+        "other": "{{ count }} προτάσεις"
       }
     },
     "cart": {
@@ -251,9 +271,9 @@
       "empty": "Το καλάθι σας είναι κενό",
       "cart_error": "Παρουσιάστηκε σφάλμα κατά την ενημέρωση του καλαθιού. Δοκιμάστε ξανά.",
       "cart_quantity_error_html": "Μπορείτε να προσθέσετε μόνο {{ quantity }} από αυτό το προϊόν στο καλάθι σας.",
-      "taxes_and_shipping_policy_at_checkout_html": "Οι φόροι και τα <a href=\"{{ link }}\">έξοδα αποστολής<\/a> υπολογίζονται κατά την ολοκλήρωση της αγοράς",
+      "taxes_and_shipping_policy_at_checkout_html": "Οι φόροι και τα <a href=\"{{ link }}\">έξοδα αποστολής</a> υπολογίζονται κατά την ολοκλήρωση της αγοράς",
       "taxes_included_but_shipping_at_checkout": "Ο φόρος συμπεριλαμβάνεται και τα έξοδα αποστολής υπολογίζονται κατά την ολοκλήρωση της αγοράς",
-      "taxes_included_and_shipping_policy_html": "Ο φόρος συμπεριλαμβάνεται. Τα <a href=\"{{ link }}\">έξοδα αποστολής<\/a> υπολογίζονται κατά την ολοκλήρωση της αγοράς.",
+      "taxes_included_and_shipping_policy_html": "Ο φόρος συμπεριλαμβάνεται. Τα <a href=\"{{ link }}\">έξοδα αποστολής</a> υπολογίζονται κατά την ολοκλήρωση της αγοράς.",
       "taxes_and_shipping_at_checkout": "Οι φόροι και τα έξοδα αποστολής υπολογίζονται κατά την ολοκλήρωση της αγοράς",
       "headings": {
         "product": "Προϊόν",
@@ -265,7 +285,7 @@
       "update": "Ενημέρωση",
       "login": {
         "title": "Έχετε λογαριασμό;",
-        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Συνδεθείτε<\/a> για ταχύτερη ολοκλήρωση των αγορών σας."
+        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Συνδεθείτε</a> για ταχύτερη ολοκλήρωση των αγορών σας."
       }
     },
     "footer": {
@@ -286,7 +306,7 @@
     "collection_template": {
       "title": "Συλλογή",
       "empty": "Δεν βρέθηκαν προϊόντα",
-      "use_fewer_filters_html": "Χρησιμοποιήστε λιγότερα φίλτρα ή <a class=\"{{ class }}\" href=\"{{ link }}\">καταργήστε τα όλα<\/a>"
+      "use_fewer_filters_html": "Χρησιμοποιήστε λιγότερα φίλτρα ή <a class=\"{{ class }}\" href=\"{{ link }}\">καταργήστε τα όλα</a>"
     },
     "video": {
       "load_video": "Φόρτωση βίντεο: {{ description }}"
@@ -305,10 +325,10 @@
     }
   },
   "localization": {
-    "country_label": "Χώρα\/περιοχή",
+    "country_label": "Χώρα/περιοχή",
     "language_label": "Γλώσσα",
     "update_language": "Ενημέρωση γλώσσας",
-    "update_country": "Ενημερώστε τη χώρα\/περιοχή"
+    "update_country": "Ενημερώστε τη χώρα/περιοχή"
   },
   "customer": {
     "account": {
@@ -337,7 +357,7 @@
       "address1": "Διεύθυνση 1",
       "address2": "Διεύθυνση 2",
       "city": "Πόλη",
-      "country": "Χώρα\/περιοχή",
+      "country": "Χώρα/περιοχή",
       "province": "Επαρχία",
       "zip": "Ταχυδρομικός κώδικας",
       "phone": "Τηλέφωνο",
@@ -416,22 +436,36 @@
       "tracking_company": "Εταιρεία ταχυμεταφοράς",
       "tracking_number": "Αριθμός παρακολούθησης",
       "subtotal": "Υποσύνολο",
-      "total_duties": "Δασμοί"
+      "total_duties": "Δασμοί",
+      "total_refunded": "Τα χρήματα επιστράφηκαν"
     }
   },
   "gift_cards": {
     "issued": {
-      "title": "Αυτή είναι η δωροκάρτα σας αξίας {{ value }} για το {{ shop }}!",
+      "title": "Αυτό είναι το υπόλοιπο της δωροκάρτας σας ύψους {{ value }} για το {{ shop }}!",
       "subtext": "Η δωροκάρτα σας",
       "gift_card_code": "Κωδικός δωροκάρτας",
-      "shop_link": "Συνέχιση αγορών",
-      "remaining_html": "Απομένουν {{ balance }}",
+      "shop_link": "Επισκεφτείτε το διαδικτυακό κατάστημα",
       "add_to_apple_wallet": "Προσθήκη στο Apple Wallet",
       "qr_image_alt": "Κωδικός QR — σαρώστε για να εξαργυρώσετε τη δωροκάρτα",
-      "copy_code": "Αντιγραφή κωδικού",
+      "copy_code": "Αντιγραφή κωδικού δωροκάρτας",
       "expired": "Έληξε",
       "copy_code_success": "Η αντιγραφή του κωδικού ήταν επιτυχής",
-      "print_gift_card": "Εκτύπωση"
+      "how_to_use_gift_card": "Χρησιμοποιήστε τον κωδικό της δωροκάρτας στο διαδίκτυο ή τον κωδικό QR στο κατάστημα",
+      "expiration_date": "Λήγει στις {{ expires_on }}"
+    }
+  },
+  "recipient": {
+    "form": {
+      "checkbox": "Θέλω να το στείλω ως δώρο",
+      "email_label": "Email παραλήπτη",
+      "email_label_optional": "Email παραλήπτη (προαιρετικά)",
+      "email": "Email",
+      "name_label": "Όνομα παραλήπτη (προαιρετικά)",
+      "name": "Όνομα",
+      "message_label": "Μήνυμα (προαιρετικά)",
+      "message": "Μήνυμα",
+      "max_characters": "Έως {{ max_chars }} χαρακτήρες"
     }
   }
 }

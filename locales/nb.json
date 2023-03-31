@@ -357,7 +357,7 @@
       "address1": "Adresse 1",
       "address2": "Adresse 2",
       "city": "Sted",
-      "country": "Land\/region",
+      "country": "Land/region",
       "province": "Provins",
       "zip": "Postnummer",
       "phone": "Telefon",
@@ -379,7 +379,7 @@
       "guest_continue": "Fortsett",
       "guest_title": "Fortsett som gjest",
       "password": "Passord",
-      "title": "Logg inn",
+      "title": "Logg på",
       "sign_in": "Logg inn",
       "submit": "Send inn",
       "account_info": "Merk! Å legge inn en bestilling gjør ikke at du automatisk lager en bruker i vår butikk. Opprett konto med samme e-post som du plasserte bestillingen med."
@@ -407,7 +407,8 @@
       "tracking_company": "Transportør",
       "tracking_number": "Sporingsnummer",
       "subtotal": "Delsum",
-      "total_duties": "Tollplikter"
+      "total_duties": "Tollplikter",
+      "total_refunded": "Refundert"
     },
     "orders": {
       "title": "Bestillingshistorikk",
@@ -442,165 +443,30 @@
   },
   "gift_cards": {
     "issued": {
-      "title": "Her er {{ value }} gavekortet ditt for {{ shop }}!",
+      "title": "Her er gavekortsaldoen {{ value }} for {{ shop }}.",
       "subtext": "Ditt gavekort",
       "gift_card_code": "Gavekortkode",
-      "shop_link": "Fortsett å handle",
-      "remaining_html": "Gjenstår {{ balance }}",
+      "shop_link": "Besøk nettbutikken",
       "add_to_apple_wallet": "Legg til i Apple Wallet",
       "qr_image_alt": "QR-kode – skann for å løse inn gavekortet",
-      "copy_code": "Kopier kode",
+      "copy_code": "Kopier gavekortkoden",
       "expired": "Utløpt",
       "copy_code_success": "Koden er kopiert",
-      "print_gift_card": "Skriv ut"
+      "how_to_use_gift_card": "Bruk gavekortet på nettet eller QR-koden i butikken",
+      "expiration_date": "Utløper {{ expires_on }}"
     }
   },
-  "shopify": {
-    "notices": {
-      "order": {
-        "transaction_status": {
-          "success": "Vellykket!"
-        }
-      }
-    },
-    "checkout": {
-      "general": {
-        "error_page_title": "Error.",
-        "page_title": "Utsjekking",
-        "skip_to_content": "Gå videre til innholdet",
-        "breadcrumb": "Søkebane",
-        "continue_button_label": "Fortsett",
-        "complete_purchase_button_label": "Fullfør bestilling",
-        "pay_now_button_label": "Betal nå",
-        "authenticate_purchase_button_label": "Godkjenn betaling",
-        "edit_link_label": "Rediger",
-        "all_rights_reserved": "Alle rettigheter forbeholdt {{ shop_name }}",
-        "print_policies_link_label": "Skriv ut",
-        "cart": "Handlekurv",
-        "close_modal_label": "Lukk",
-        "close_notice_label": "Lukk",
-        "expand_notice_label": "Vis mer",
-        "continue_to_shipping_method": "Fortsett til frakt",
-        "continue_to_payment_method": "Fortsett til betaling",
-        "continue_to_review": "Gjennomgå bestilling",
-        "back_to_cart": "Gå tilbake til handlekurv",
-        "back_to_contact_information": "Gå tilbake til informasjon",
-        "back_to_shipping_method": "Gå tilbake til frakt",
-        "back_to_payment_method": "Gå tilbake til betaling",
-        "choose_shipping_method": "Velg en leveringsmetode",
-        "forwarding_indicator": {
-          "new_window": "Åpner i nytt vindu",
-          "external": "Åpner ekstern nettside",
-          "external_and_new_window": "Åpner ekstern nettside i nytt vindu"
-        },
-        "checkout_context": {
-          "step_one": "{{ shop_name }} - Kasse"
-        },
-        "errors": {
-          "session_identifier_not_unique_error": "Det oppsto en feil med bestillingen, prøv å betale på nytt."
-        },
-        "choose_payment_method": "Velg en betalingsmetode",
-        "choose_billing_address": "Velg faktureringsadresse",
-        "contact_us_html": "Kontakt oss for mer informasjon",
-        "autocomplete_title": "Forslag",
-        "autocomplete_single_item": "1 vare tilgjengelig",
-        "autocomplete_multi_item": "{{number}} varer tilgjengelig",
-        "autocomplete_selection": "{{number}} av {{total}}",
-        "autocomplete_close": "Lukk forslag",
-        "tooltip_accessibility_label": "Mer informasjon"
-      },
-      "contact": {
-        "title": "Informasjon",
-        "address_title": "Adresse",
-        "shipping_address_title": "Leveringsadresse",
-        "delivery_option_title": "Leveringsmetode",
-        "contact_method_title": "Kontektinformasjon",
-        "email_label": "E-postadresse",
-        "email_placeholder": "E-postadresse",
-        "email_or_phone_label": "E-postadresse eller mobiltelefonnummer",
-        "email_or_phone_placeholder": "E-postadresse eller mobiltelefonnummer",
-        "stored_addresses_label": "Lagrede adresser",
-        "new_address_label": "Bruk en ny adresse",
-        "first_name_label": "Fornavn",
-        "optional_first_name_label": "Fornavn (valgfritt)",
-        "last_name_label": "Etternavn",
-        "company_label": "Bedrift",
-        "optional_company_label": "Bedrift (valgfritt)",
-        "address1_label": "Adresse",
-        "address2_label": "Leilighet, etasje, osv. (valgfritt)",
-        "optional_address2_label": "Leilighet, etasje, osv. (valgfritt)",
-        "city_label": "By",
-        "country_label": "Land\/region",
-        "country_code": "Lands-\/Regionkode",
-        "province_label": "Provins",
-        "province_placeholder": "Provins",
-        "county_label": "Fylke",
-        "county_placeholder": "Fylke",
-        "state_label": "Stat",
-        "state_placeholder": "Stat",
-        "region_label": "Område",
-        "region_placeholder": "Område",
-        "prefecture_label": "Prefektur",
-        "prefecture_placeholder": "Prefektur",
-        "governorate_label": "Guvernement",
-        "governorate_placeholder": "Guvernement",
-        "emirate_label": "Emirat",
-        "emirate_placeholder": "Emirat",
-        "state_and_territory_label": "Stat\/territorium",
-        "state_and_territory_placeholder": "Stat\/territorium",
-        "phone_label": "Telefon",
-        "optional_phone_label": "Telefon (valgfritt)",
-        "phone_placeholder": "Telefon",
-        "phone_tooltip": "I tilfelle vi må kontakte deg om bestillingen",
-        "zip_code_label": "Postnummer",
-        "zip_code_placeholder": "Postnummer",
-        "postal_code_label": "Postnummer",
-        "postal_code_placeholder": "Postnummer",
-        "postcode_label": "Postnummer",
-        "postcode_placeholder": "Postnummer",
-        "pincode_label": "PIN-code",
-        "pincode_placeholder": "PIN-code",
-        "region_none": "Ingen er valgt",
-        "civic_number_warning": "Legg til husnummer hvis du har et"
-      },
-      "delivery_options": {
-        "ship": "Send",
-        "pick_up": "Henting",
-        "pick_up_in_two_hours": "Vanligvis klar på fire timer"
-      }
-    },
-    "sentence": {
-      "words_connector": ",",
-      "two_words_connector": "og",
-      "last_word_connector": ", og"
-    }
-  },
-  "customer_accounts": {
-    "navigation_and_structure": {
-      "account_menu": {
-        "hide_accessibility_label": "Skjul kontomeny",
-        "label": "Konto",
-        "show_accessibility_label": "Vis kontomeny"
-      },
-      "action_menu_accessibility_label": "Flere handlinger",
-      "close_menu_accessibility_label": "Lukk hovednavigasjon",
-      "contact_email_subject": "Kontakt fra nettbutikken {{shopName}}",
-      "contact_link": "Kontakt oss",
-      "dismiss_toast": "Avvis",
-      "document_title": "{{sectionName}} – {{shopName}} – Konto",
-      "generic_accessibility_label": "{{label}}: {{value}}",
-      "go_to_store_link": "Gå til butikk",
-      "loading_message": "Laster inn",
-      "log_out_link": "Logg av",
-      "logout_overlay_label": "Logger deg av …",
-      "nav_label_accessibility_label": "Hovednavigasjon",
-      "navigation_accessibility_message": "Du navigerte til {{sectionName}}",
-      "open_menu_accessibility_label": "Åpne hovednavigasjon"
-    },
-    "account_information": {
-      "profile_card": {
-        "cancel": "Avbryt"
-      }
+  "recipient": {
+    "form": {
+      "checkbox": "Jeg vil sende dette som en gave",
+      "email_label": "Mottakerens e-post",
+      "email_label_optional": "Mottakerens e-post (valgfritt)",
+      "email": "E-post",
+      "name_label": "Mottakerens navn (valgfritt)",
+      "name": "Navn",
+      "message_label": "Melding (valgfritt)",
+      "message": "Melding",
+      "max_characters": "Maks. {{ max_chars }} tegn"
     }
   }
 }

@@ -7,7 +7,7 @@
       "login_form_password_placeholder": "A sua palavra-passe",
       "login_form_error": "Palavra-passe errada!",
       "login_form_submit": "Entrar",
-      "admin_link_html": "É o proprietário da loja? <a href=\"\/admin\" class=\"link underlined-link\">Inicie a sessão aqui<\/a>",
+      "admin_link_html": "É o proprietário da loja? <a href=\"/admin\" class=\"link underlined-link\">Inicie a sessão aqui</a>",
       "powered_by_shopify_html": "Esta loja irá contar com tecnologia {{ shopify }}"
     },
     "social": {
@@ -36,11 +36,13 @@
       "previous": "Página anterior"
     },
     "search": {
-      "search": "Pesquisar"
+      "search": "Pesquisar",
+      "reset": "Limpar termo de pesquisa"
     },
     "cart": {
-      "view": "Ver o meu carrinho ({{ count }})",
-      "item_added": "Item adicionado ao seu carrinho"
+      "view": "Ver carrinho ({{ count }})",
+      "item_added": "Item adicionado ao seu carrinho",
+      "view_empty_cart": "Ver carrinho"
     },
     "share": {
       "copy_to_clipboard": "Copiar ligação",
@@ -113,7 +115,11 @@
         "label": "Quantidade",
         "input_label": "Quantidade de {{ product }}",
         "increase": "Aumentar a quantidade de {{ product }}",
-        "decrease": "Diminuir a quantidade de {{ product }}"
+        "decrease": "Diminuir a quantidade de {{ product }}",
+        "minimum_of": "Mínimo de {{ quantity }}",
+        "maximum_of": "Máximo de {{ quantity }}",
+        "multiples_of": "Incrementos de {{ quantity }}",
+        "in_cart_html": "<span class=\"quantity-cart\">{{ quantity }}</span> no carrinho"
       },
       "price": {
         "from_price_html": "A partir de {{ price }}",
@@ -132,8 +138,8 @@
         "view_store_info": "Ver informações da loja",
         "check_other_stores": "Verificar a disponibilidade noutras lojas",
         "pick_up_available": "Recolha disponível",
-        "pick_up_available_at_html": "Recolha disponível em <span class=\"color-foreground\">{{ location_name }}<\/span>",
-        "pick_up_unavailable_at_html": "Recolha atualmente indisponível em <span class=\"color-foreground\">{{ location_name }}<\/span>",
+        "pick_up_available_at_html": "Recolha disponível em <span class=\"color-foreground\">{{ location_name }}</span>",
+        "pick_up_unavailable_at_html": "Recolha atualmente indisponível em <span class=\"color-foreground\">{{ location_name }}</span>",
         "unavailable": "Não foi possível carregar a disponibilidade de recolha",
         "refresh": "Atualizar"
       },
@@ -149,7 +155,7 @@
       },
       "view_full_details": "Ver detalhes completos",
       "include_taxes": "Imposto incluído.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Envio<\/a> calculado na finalização da compra.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Envio</a> calculado na finalização da compra.",
       "choose_options": "Escolher opções",
       "choose_product_options": "Escolha opções para {{ product_name }}",
       "value_unavailable": "{{ option_value }} - Indisponível",
@@ -215,7 +221,24 @@
         "one": "{{ count }} resultado encontrado para “{{ terms }}”",
         "other": "{{ count }} resultado encontrado para “{{ terms }}”",
         "many": "{{ count }} resultado encontrado para “{{ terms }}”"
-      }
+      },
+      "results_pages_with_count": {
+        "one": "{{ count }} página",
+        "other": "{{ count }} páginas",
+        "many": "{{ count }} páginas"
+      },
+      "results_suggestions_with_count": {
+        "one": "{{ count }} sugestão",
+        "other": "{{ count }} sugestões",
+        "many": "{{ count }} sugestões"
+      },
+      "results_products_with_count": {
+        "one": "{{ count }} produto",
+        "other": "{{ count }} produtos",
+        "many": "{{ count }} produtos"
+      },
+      "suggestions": "Sugestões",
+      "pages": "Páginas"
     },
     "cart": {
       "cart": "Carrinho"
@@ -258,9 +281,9 @@
       "empty": "O seu carrinho está vazio",
       "cart_error": "Ocorreu um erro ao atualizar o seu carrinho. Tente novamente.",
       "cart_quantity_error_html": "É possível adicionar apenas {{ quantity }} unidade(s) deste item ao carrinho.",
-      "taxes_and_shipping_policy_at_checkout_html": "Impostos e <a href=\"{{ link }}\">shipping<\/a> calculados na finalização da compra",
+      "taxes_and_shipping_policy_at_checkout_html": "Impostos e <a href=\"{{ link }}\">shipping</a> calculados na finalização da compra",
       "taxes_included_but_shipping_at_checkout": "Imposto incluído e envio calculado na finalização da compra",
-      "taxes_included_and_shipping_policy_html": "Imposto incluído. <a href=\"{{ link }}\">Envio<\/a> calculado na finalização da compra.",
+      "taxes_included_and_shipping_policy_html": "Imposto incluído. <a href=\"{{ link }}\">Envio</a> calculado na finalização da compra.",
       "taxes_and_shipping_at_checkout": "Impostos e envio calculados na finalização da compra",
       "headings": {
         "product": "Produto",
@@ -272,7 +295,7 @@
       "update": "Atualizar",
       "login": {
         "title": "Tem uma conta?",
-        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Inicie sessão<\/a> para finalizar a compra mais rápido."
+        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Inicie sessão</a> para finalizar a compra mais rápido."
       }
     },
     "footer": {
@@ -293,7 +316,7 @@
     "collection_template": {
       "title": "Coleção",
       "empty": "Nenhum produto encontrado",
-      "use_fewer_filters_html": "Utilizar menos filtros ou <a class=\"{{ class }}\" href=\"{{ link }}\">remover tudo<\/a>"
+      "use_fewer_filters_html": "Utilizar menos filtros ou <a class=\"{{ class }}\" href=\"{{ link }}\">remover tudo</a>"
     },
     "video": {
       "load_video": "Carregar vídeo: {{ description }}"
@@ -312,10 +335,10 @@
     }
   },
   "localization": {
-    "country_label": "País\/região",
+    "country_label": "País/região",
     "language_label": "Idioma",
     "update_language": "Atualizar idioma",
-    "update_country": "Atualizar país\/região"
+    "update_country": "Atualizar país/região"
   },
   "customer": {
     "account": {
@@ -344,7 +367,7 @@
       "address1": "Endereço1",
       "address2": "Endereço 2",
       "city": "Localidade",
-      "country": "País\/região",
+      "country": "País/região",
       "province": "Província",
       "zip": "Código postal",
       "phone": "Telefone",
@@ -393,7 +416,8 @@
       "tracking_company": "Transportadora",
       "tracking_number": "Número de rastreio",
       "subtotal": "Subtotal",
-      "total_duties": "Encargos"
+      "total_duties": "Encargos",
+      "total_refunded": "Reembolsado"
     },
     "orders": {
       "title": "Histórico de encomendas",
@@ -428,17 +452,30 @@
   },
   "gift_cards": {
     "issued": {
-      "title": "Aqui está o seu cartão de oferta de {{ value }} para {{ shop }}!",
+      "title": "Aqui está o seu saldo do cartão de oferta de {{ value }} para {{ shop }}!",
       "subtext": "O seu cartão de oferta",
       "gift_card_code": "Código do cartão de oferta",
-      "shop_link": "Continuar a comprar",
-      "remaining_html": "{{ balance }} restante",
+      "shop_link": "Visite a loja online",
       "add_to_apple_wallet": "Adicionar a Apple Wallet",
       "qr_image_alt": "Código QR - digitalizar para resgatar cartão de oferta",
-      "copy_code": "Copiar código",
+      "copy_code": "Copiar código de cartão-de oferta",
       "expired": "Expirado",
       "copy_code_success": "Código copiado com sucesso",
-      "print_gift_card": "Imprimir"
+      "how_to_use_gift_card": "Utilize o código do cartão de oferta online ou o código QR na loja",
+      "expiration_date": "Expira em {{ expires_on }}"
+    }
+  },
+  "recipient": {
+    "form": {
+      "checkbox": "Quero enviar isto como um presente",
+      "email_label": "E-mail do destinatário",
+      "email_label_optional": "E-mail do destinatário (opcional)",
+      "email": "E-mail",
+      "name_label": "Nome do destinatário (opcional)",
+      "name": "Nome",
+      "message_label": "Mensagem (opcional)",
+      "message": "Mensagem",
+      "max_characters": "Máximo de {{ max_chars }} caracteres"
     }
   }
 }

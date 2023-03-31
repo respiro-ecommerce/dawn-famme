@@ -59,20 +59,10 @@
         class="disabled"
       {% endif %}
     >
-    {%- if option.name contains 'olor' or option.name contains 'olour' or option.name contains 'far' or option.name contains 'fär' -%}
-      <label class="color" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
-        {%- for variant in product.variants -%}
-          {%- if variant.option1 == value or variant.option2 == value or variant.option3 == value -%}
-            {%- if variant.image -%}{{ variant.image | image_url: width: 60 | image_tag  }}{%- break -%}{%- endif -%}
-          {%- endif -%}
-        {%- endfor -%}
-      </label>
-    {%- else -%}
-      <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+    <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
       {{ value -}}
       <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
-      </label>
-    {%- endif -%}
+    </label>
   {%- elsif block.settings.picker_type == 'dropdown' -%}
     <option
       value="{{ value | escape }}"

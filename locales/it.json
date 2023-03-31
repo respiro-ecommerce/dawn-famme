@@ -7,7 +7,7 @@
       "login_form_password_placeholder": "La tua password",
       "login_form_error": "Password errata!",
       "login_form_submit": "Accedi",
-      "admin_link_html": "Sei il proprietario del negozio? <a href=\"\/admin\" class=\"link underlined-link\">Accedi qui<\/a>",
+      "admin_link_html": "Sei il proprietario del negozio? <a href=\"/admin\" class=\"link underlined-link\">Accedi qui</a>",
       "powered_by_shopify_html": "Questo negozio sarà ospitato su {{ shopify }}"
     },
     "social": {
@@ -36,11 +36,13 @@
       "previous": "Pagina precedente"
     },
     "search": {
-      "search": "Cerca"
+      "search": "Cerca",
+      "reset": "Cancella termine ricerca"
     },
     "cart": {
       "view": "Visualizza carrello ({{ count }})",
-      "item_added": "Articolo aggiunto al carrello"
+      "item_added": "Articolo aggiunto al carrello",
+      "view_empty_cart": "Visualizza carrello"
     },
     "share": {
       "copy_to_clipboard": "Copia link",
@@ -113,7 +115,11 @@
         "label": "Quantità",
         "input_label": "Quantità per {{ product }}",
         "increase": "Aumenta quantità per {{ product }}",
-        "decrease": "Diminuisci quantità per {{ product }}"
+        "decrease": "Diminuisci quantità per {{ product }}",
+        "minimum_of": "Minimo di {{ quantity }}",
+        "maximum_of": "Massimo di {{ quantity }}",
+        "multiples_of": "Incrementi di {{ quantity }}",
+        "in_cart_html": "<span class=\"quantity-cart\">{{ quantity }}</span> nel carrello"
       },
       "price": {
         "from_price_html": "Da {{ price }}",
@@ -132,8 +138,8 @@
         "view_store_info": "Visualizza i dettagli del negozio",
         "check_other_stores": "Verifica la disponibilità in altri negozi",
         "pick_up_available": "Ritiro disponibile",
-        "pick_up_available_at_html": "Ritiro disponibile presso la sede <span class=\"color-foreground\">{{ location_name }}<\/span>",
-        "pick_up_unavailable_at_html": "Ritiro attualmente non disponibile presso la sede <span class=\"color-foreground\">{{ location_name }}<\/span>",
+        "pick_up_available_at_html": "Ritiro disponibile presso la sede <span class=\"color-foreground\">{{ location_name }}</span>",
+        "pick_up_unavailable_at_html": "Ritiro attualmente non disponibile presso la sede <span class=\"color-foreground\">{{ location_name }}</span>",
         "unavailable": "Impossibile caricare la disponibilità di ritiro",
         "refresh": "Aggiorna"
       },
@@ -149,13 +155,13 @@
       },
       "view_full_details": "Visualizza dettagli completi",
       "include_taxes": "Imposte incluse.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Spese di spedizione<\/a> calcolate al check-out.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Spese di spedizione</a> calcolate al check-out.",
       "choose_options": "Scegli opzioni",
       "choose_product_options": "Scegli opzioni per {{ product_name }}",
       "value_unavailable": "{{ option_value }} - Non disponibile",
       "variant_sold_out_or_unavailable": "Variante esaurita o non disponibile",
       "inventory_in_stock": "Disponibile",
-      "inventory_in_stock_show_count": "{{ quantity }} disponibile\/i",
+      "inventory_in_stock_show_count": "{{ quantity }} disponibile/i",
       "inventory_low_stock": "Scorte ridotte",
       "inventory_low_stock_show_count": "Scorte ridotte: ne restano {{ quantity }}",
       "inventory_out_of_stock": "Esaurito",
@@ -215,6 +221,23 @@
         "one": "{{ count }} risultato trovato per \"{{ terms }}\"",
         "other": "{{ count }} risultati trovati per \"{{ terms }}\"",
         "many": "{{ count }} risultati trovati per \"{{ terms }}\""
+      },
+      "results_pages_with_count": {
+        "one": "{{ count }} pagina",
+        "other": "{{ count }} pagine",
+        "many": "{{ count }} pagine"
+      },
+      "results_products_with_count": {
+        "one": "{{ count }} prodotto",
+        "other": "{{ count }} prodotti",
+        "many": "{{ count }} prodotti"
+      },
+      "suggestions": "Suggerimenti",
+      "pages": "Pagine",
+      "results_suggestions_with_count": {
+        "one": "{{ count }} suggerimento",
+        "other": "{{ count }} suggerimenti",
+        "many": "{{ count }} suggerimenti"
       }
     },
     "cart": {
@@ -258,9 +281,9 @@
       "empty": "Il tuo carrello è vuoto",
       "cart_error": "Si è verificato un errore durante l'aggiornamento del carrello. Riprova più tardi.",
       "cart_quantity_error_html": "Puoi aggiungere soltanto {{ quantity }} di questo articolo al tuo carrello.",
-      "taxes_and_shipping_policy_at_checkout_html": "Imposte e <a href=\"{{ link }}\">spese di spedizione<\/a> calcolate al momento del check-out",
+      "taxes_and_shipping_policy_at_checkout_html": "Imposte e <a href=\"{{ link }}\">spese di spedizione</a> calcolate al momento del check-out",
       "taxes_included_but_shipping_at_checkout": "Imposte incluse e spese di spedizione calcolate al momento del check-out",
-      "taxes_included_and_shipping_policy_html": "Imposte incluse. <a href=\"{{ link }}\">Spese di spedizione<\/a> calcolate al check-out.",
+      "taxes_included_and_shipping_policy_html": "Imposte incluse. <a href=\"{{ link }}\">Spese di spedizione</a> calcolate al check-out.",
       "taxes_and_shipping_at_checkout": "Imposte e spese di spedizione calcolate al momento del check-out",
       "headings": {
         "product": "Prodotto",
@@ -272,7 +295,7 @@
       "update": "Aggiorna",
       "login": {
         "title": "Hai un account?",
-        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Accedi<\/a> per un check-out più veloce."
+        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Accedi</a> per un check-out più veloce."
       }
     },
     "footer": {
@@ -293,7 +316,7 @@
     "collection_template": {
       "title": "Collezione",
       "empty": "Nessun prodotto trovato",
-      "use_fewer_filters_html": "Utilizza meno filtri o <a class=\"{{ class }}\" href=\"{{ link }}\">rimuovi tutto<\/a>"
+      "use_fewer_filters_html": "Utilizza meno filtri o <a class=\"{{ class }}\" href=\"{{ link }}\">rimuovi tutto</a>"
     },
     "video": {
       "load_video": "Carica il video: {{ description }}"
@@ -312,10 +335,10 @@
     }
   },
   "localization": {
-    "country_label": "Paese\/Area geografica",
+    "country_label": "Paese/Area geografica",
     "language_label": "Lingua",
     "update_language": "Aggiorna lingua",
-    "update_country": "Aggiorna paese\/area geografica"
+    "update_country": "Aggiorna paese/area geografica"
   },
   "customer": {
     "account": {
@@ -344,7 +367,7 @@
       "address1": "Indirizzo - campo 1",
       "address2": "Indirizzo - campo 2",
       "city": "Città",
-      "country": "Paese\/Area geografica",
+      "country": "Paese/Area geografica",
       "province": "Provincia",
       "zip": "CAP",
       "phone": "Numero di telefono",
@@ -393,7 +416,8 @@
       "tracking_company": "Corriere",
       "tracking_number": "Numero di tracking",
       "subtotal": "Subtotale",
-      "total_duties": "Dazi"
+      "total_duties": "Dazi",
+      "total_refunded": "Rimborsato"
     },
     "orders": {
       "title": "Cronologia ordini",
@@ -428,17 +452,30 @@
   },
   "gift_cards": {
     "issued": {
-      "title": "Ecco il tuo buono regalo dal valore di {{ value }} per {{ shop }}!",
+      "title": "Ecco il saldo del tuo buono regalo dal valore di {{ value }} per {{ shop }}!",
       "subtext": "Il tuo buono regalo",
       "gift_card_code": "Codice del buono regalo",
-      "shop_link": "Continua lo shopping",
-      "remaining_html": "Saldo residuo: {{ balance }}",
+      "shop_link": "Visita il negozio online",
       "add_to_apple_wallet": "Aggiungi a Apple Wallet",
       "qr_image_alt": "Codice QR — scansiona per riscattare il buono regalo",
-      "copy_code": "Copia codice",
+      "copy_code": "Copia codice del buono regalo",
       "expired": "Scaduto",
       "copy_code_success": "Codice copiato correttamente",
-      "print_gift_card": "Stampa"
+      "how_to_use_gift_card": "Utilizza il codice del buono regalo online o il codice QR in negozio",
+      "expiration_date": "Scade il giorno {{ expires_on }}"
+    }
+  },
+  "recipient": {
+    "form": {
+      "checkbox": "Voglio inviarlo come regalo",
+      "email_label": "Email destinatario",
+      "email_label_optional": "Email destinatario (facoltativa)",
+      "email": "email",
+      "name_label": "Nome destinatario (facoltativo)",
+      "name": "Nome",
+      "message_label": "Messaggio (facoltativo)",
+      "message": "Messaggio",
+      "max_characters": "Massimo {{ max_chars }} caratteri"
     }
   }
 }

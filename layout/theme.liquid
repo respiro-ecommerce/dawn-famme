@@ -24,42 +24,6 @@
     })(window,document,'script','dataLayer','GTM-TJ4V6TV');</script>
   <!-- End Google Tag Manager -->
 
-    <script type="text/javascript">
-      var _learnq = _learnq || [];
-      function addedToCart() {
-        fetch(`${window.location.origin}/cart.js`)
-                .then(res => res.clone().json().then(data => {
-                  var cart = {
-                    total_price: data.total_price/100,
-                    $value: data.total_price/100,
-                    total_discount: data.total_discount,
-                    original_total_price: data.original_total_price/100,
-                    items: data.items
-                  }
-                  if (item !== 'undefined') {
-                    cart = Object.assign(cart, item)
-                  }
-                  _learnq.push(['track', 'Added to Cart', cart])
-                }))
-      }
-      (function (ns, fetch) {
-        ns.fetch = function() {
-          const response = fetch.apply(this, arguments);
-          response.then(res => {
-            if (`${window.location.origin}/cart/add.js`
-                    .includes(res.url)) {
-              addedToCart()
-            }
-          });
-          return response
-        }
-      }(window, window.fetch))
-      $(document).ajaxComplete(function(event, request, settings){
-        if(settings.url == "/cart/add.js"){
-          addedToCart()
-        }
-      })</script>
-
 
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
@@ -87,7 +51,13 @@
 
     {% render 'meta-tags' %}
 
+    <script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
+    {%- if settings.animations_reveal_on_scroll -%}
+      <script src="{{ 'animations.js' | asset_url }}" id="AnimationsScript" defer="defer"></script>
+    {%- endif -%}
+
     {{ content_for_header }}
 
     {%- liquid
@@ -301,7 +271,7 @@
     {{ 'okendo-reviews.js' | asset_url | script_tag }}
     {% endif %}
 
-  <script async="true" type="text/javascript" src="https://s.kk-resources.com/leadtag.js" ></script>
+
     
   </head>
 
@@ -314,14 +284,16 @@
       {%- render 'cart-drawer' -%}
     {%- endif -%}
 
-    {% section 'announcement-bar' %}
-    {% section 'header' %}
+    {% sections 'header-group' %}
+
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
     </main>
 
-    {% section 'footer' %}
-	{{ 'custom.css' | asset_url | stylesheet_tag }}
+    {% sections 'footer-group' %}
+
+    {{ 'custom.css' | asset_url | stylesheet_tag }}
+
     <ul hidden>
       <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
       <li id="a11y-new-window-message">{{ 'accessibility.link_messages.new_window' | t }}</li>
@@ -360,31 +332,5 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
-        
-        
-
-<!-- **BEGIN** Hextom TMS Translator // Main Include - DO NOT MODIFY -->
-    <script src="{{ 'tms-translator.js' | asset_url }}" defer="defer"></script>
-    <!-- **END** Hextom TMS Translator // Main Include - DO NOT MODIFY -->
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-
-
-        
-</body>
+  </body>
 </html>

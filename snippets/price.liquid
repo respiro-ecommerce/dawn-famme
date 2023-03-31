@@ -1,14 +1,14 @@
 {% comment %}
-    Renders a list of product's price (regular, sale)
+  Renders a list of product's price (regular, sale)
 
-    Accepts:
-    - product: {Object} Product Liquid object (optional)
-    - use_variant: {Boolean} Renders selected or first variant price instead of overall product pricing (optional)
-    - show_badges: {Boolean} Renders 'Sale' and 'Sold Out' tags if the product matches the condition (optional)
-    - price_class: {String} Adds a price class to the price element (optional)
+  Accepts:
+  - product: {Object} Product Liquid object (optional)
+  - use_variant: {Boolean} Renders selected or first variant price instead of overall product pricing (optional)
+  - show_badges: {Boolean} Renders 'Sale' and 'Sold Out' tags if the product matches the condition (optional)
+  - price_class: {String} Adds a price class to the price element (optional)
 
-    Usage:
-    {% render 'price', product: product %}
+  Usage:
+  {% render 'price', product: product %}
 {% endcomment %}
 {%- liquid
   if use_variant
