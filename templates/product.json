@@ -34,7 +34,6 @@
         "description": {
           "type": "description",
           "settings": {
-            "icon": "check_mark"
           }
         },
         "eabf9557-eae1-4602-8216-a1fcf53adaa8": {
@@ -88,8 +87,7 @@
         "hide_variants": false,
         "enable_video_looping": false,
         "padding_top": 36,
-        "padding_bottom": 36,
-        "bg": "#f5f5f5"
+        "padding_bottom": 36
       }
     },
     "1638933924cc2996fe": {
