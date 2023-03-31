@@ -4,14 +4,21 @@ Customization of Shopify Dawn.
 
 ## Customization
 
-* Image banner with support for mobile and desktop
-* A USP section on the product page
+* Image banner with support for mobile and desktop: image-banner.liquid 
+
+Implemented with the <picture> tag and multiple sources.
+
+* A USP section on the product page: product-bullets.liquid
 * custom.css.liquid: All custom CSS should be here, to avoid clash with the theme's CSS
 * theme.liquid: Google Tag Manager, a bit rewrite of SEO title, custom.css import 
+
+
 * main-cart-footer.liquid: b2b price based on metafields 
 * main-cart-items.liquid: b2b price based on metafields
+* price.liquid: b2b price based on metafields
+
+
 * main-order.liquid: Some links to complaint and return form 
-* 
 
 
 
