@@ -10,7 +10,7 @@ Implemented with the <picture> tag and multiple sources.
 
 * A USP section on the product page: product-bullets.liquid
 * custom.css.liquid: All custom CSS should be here, to avoid clash with the theme's CSS
-* theme.liquid: Google Tag Manager, a bit rewrite of SEO title, custom.css import 
+* theme.liquid: Google Tag Manager, custom.css import 
 
 
 * main-cart-footer.liquid: b2b price based on metafields 
