@@ -127,6 +127,7 @@
         "swipe_on_mobile": false,
         "image_ratio": "adapt",
         "show_secondary_image": false,
+        "add_image_padding": false,
         "show_vendor": false
       }
     },
@@ -183,6 +184,7 @@
         "image_ratio": "adapt",
         "color_scheme": "background-1",
         "swipe_on_mobile": false,
+        "image_padding": false,
         "show_view_all": false
       }
     }

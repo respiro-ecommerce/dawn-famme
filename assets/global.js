@@ -68,12 +68,6 @@ function trapFocus(container, elementToFocus = container) {
   document.addEventListener('focusin', trapFocusHandlers.focusin);
 
   elementToFocus.focus();
-
-  if (elementToFocus.tagName === 'INPUT' &&
-    ['search', 'text', 'email', 'url'].includes(elementToFocus.type) &&
-    elementToFocus.value) {
-    elementToFocus.setSelectionRange(0, elementToFocus.value.length);
-  }
 }
 
 // Here run the querySelector to figure out if the browser supports :focus-visible or not and run code based on it.
@@ -146,29 +140,11 @@ class QuantityInput extends HTMLElement {
   constructor() {
     super();
     this.input = this.querySelector('input');
-    this.changeEvent = new Event('change', { bubbles: true });
+    this.changeEvent = new Event('change', { bubbles: true })
 
-    this.input.addEventListener('change', this.onInputChange.bind(this));
     this.querySelectorAll('button').forEach(
       (button) => button.addEventListener('click', this.onButtonClick.bind(this))
     );
-  }
-
-  quantityUpdateUnsubscriber = undefined;
-
-  connectedCallback() {
-    this.validateQtyRules();
-    this.quantityUpdateUnsubscriber = subscribe(PUB_SUB_EVENTS.quantityUpdate, this.validateQtyRules.bind(this));
-  }
-
-  disconnectedCallback() {
-    if (this.quantityUpdateUnsubscriber) {
-      this.quantityUpdateUnsubscriber();
-    }
-  }
-
-  onInputChange(event) {
-    this.validateQtyRules();
   }
 
   onButtonClick(event) {
@@ -177,20 +153,6 @@ class QuantityInput extends HTMLElement {
 
     event.target.name === 'plus' ? this.input.stepUp() : this.input.stepDown();
     if (previousValue !== this.input.value) this.input.dispatchEvent(this.changeEvent);
-  }
-
-  validateQtyRules() {
-    const value = parseInt(this.input.value);
-    if (this.input.min) {
-      const min = parseInt(this.input.min);
-      const buttonMinus = this.querySelector(".quantity__button[name='minus']");
-      buttonMinus.classList.toggle('disabled', value <= min);
-    }
-    if (this.input.max) {
-      const max = parseInt(this.input.max);
-      const buttonPlus = this.querySelector(".quantity__button[name='plus']");
-      buttonPlus.classList.toggle('disabled', value >= max);
-    }
   }
 }
 
@@ -334,7 +296,7 @@ class MenuDrawer extends HTMLElement {
 
   bindEvents() {
     this.querySelectorAll('summary').forEach(summary => summary.addEventListener('click', this.onSummaryClick.bind(this)));
-    this.querySelectorAll('button:not(.localization-selector)').forEach(button => button.addEventListener('click', this.onCloseButtonClick.bind(this)));
+    this.querySelectorAll('button').forEach(button => button.addEventListener('click', this.onCloseButtonClick.bind(this)));
   }
 
   onKeyUp(event) {
@@ -400,7 +362,7 @@ class MenuDrawer extends HTMLElement {
     this.closeAnimation(this.mainDetailsToggle);
   }
 
-  onFocusOut() {
+  onFocusOut(event) {
     setTimeout(() => {
       if (this.mainDetailsToggle.hasAttribute('open') && !this.mainDetailsToggle.contains(document.activeElement)) this.closeMenuDrawer();
     });
@@ -452,7 +414,7 @@ class HeaderDrawer extends MenuDrawer {
   }
 
   openMenuDrawer(summaryElement) {
-    this.header = this.header || document.querySelector('.section-header');
+    this.header = this.header || document.getElementById('shopify-section-header');
     this.borderOffset = this.borderOffset || this.closest('.header-wrapper').classList.contains('header-wrapper--border-bottom') ? 1 : 0;
     document.documentElement.style.setProperty('--header-bottom-position', `${parseInt(this.header.getBoundingClientRect().bottom - this.borderOffset)}px`);
     this.header.classList.add('menu-open');
@@ -462,22 +424,14 @@ class HeaderDrawer extends MenuDrawer {
     });
 
     summaryElement.setAttribute('aria-expanded', true);
-    window.addEventListener('resize', this.onResize);
     trapFocus(this.mainDetailsToggle, summaryElement);
     document.body.classList.add(`overflow-hidden-${this.dataset.breakpoint}`);
   }
 
   closeMenuDrawer(event, elementToFocus) {
-    if (!elementToFocus) return;
     super.closeMenuDrawer(event, elementToFocus);
     this.header.classList.remove('menu-open');
-    window.removeEventListener('resize', this.onResize);
   }
-
-  onResize = () => {
-    this.header && document.documentElement.style.setProperty('--header-bottom-position', `${parseInt(this.header.getBoundingClientRect().bottom - this.borderOffset)}px`);
-    document.documentElement.style.setProperty('--viewport-height', `${window.innerHeight}px`);
-  };
 }
 
 customElements.define('header-drawer', HeaderDrawer);
@@ -557,14 +511,10 @@ class DeferredMedia extends HTMLElement {
     if (!this.getAttribute('loaded')) {
       const content = document.createElement('div');
       content.appendChild(this.querySelector('template').content.firstElementChild.cloneNode(true));
-
       this.setAttribute('loaded', true);
       const deferredElement = this.appendChild(content.querySelector('video, model-viewer, iframe'));
       if (focus) deferredElement.focus();
-      if (deferredElement.nodeName == 'VIDEO' && deferredElement.getAttribute('autoplay')) {
-        // force autoplay for safari
-        deferredElement.play();
-      }
+      if (deferredElement.tagName == 'VIDEO'){deferredElement.play();}
     }
   }
 }
@@ -820,12 +770,24 @@ class VariantSelects extends HTMLElement {
     if (!this.currentVariant) {
       this.toggleAddButton(true, '', true);
       this.setUnavailable();
+      if (document.querySelector('a.klaviyo-bis-trigger')){document.querySelector('a.klaviyo-bis-trigger').style.display = 'block';}
     } else {
+      if (document.querySelector('a.klaviyo-bis-trigger')){document.querySelector('a.klaviyo-bis-trigger').style.display = 'none';}
       this.updateMedia();
       this.updateURL();
       this.updateVariantInput();
       this.renderProductInfo();
       this.updateShareUrl();
+    }
+    //Refill date dynamic message code updated per variant
+    if (document.querySelector('p.rd') && document.querySelector('p.rdt') && document.querySelector('li#id'+ document.querySelector('input[name="id"]').value)){
+      if (document.querySelector('li#id'+ document.querySelector('input[name="id"]').value).innerHTML == 'continue' && document.querySelector('li#id'+ document.querySelector('input[name="id"]').value).getAttribute('qty') < 1){
+        document.querySelector('p.rd').classList.remove('hidden');
+        document.querySelector('p.rdt').classList.remove('hidden');
+      } else {
+        document.querySelector('p.rd').classList.add('hidden');
+        document.querySelector('p.rdt').classList.add('hidden');
+      }
     }
   }
 
@@ -846,7 +808,7 @@ class VariantSelects extends HTMLElement {
     if (!this.currentVariant.featured_media) return;
 
     const mediaGalleries = document.querySelectorAll(`[id^="MediaGallery-${this.dataset.section}"]`);
-    mediaGalleries.forEach(mediaGallery => mediaGallery.setActiveMedia(`${this.dataset.section}-${this.currentVariant.featured_media.id}`, true));
+    mediaGalleries.forEach(mediaGallery => mediaGallery.setActiveMedia(`${this.dataset.section}-${this.currentVariant.featured_media.id}`, false));
 
     const modalContent = document.querySelector(`#ProductModal-${this.dataset.section} .product-media-modal__content`);
     if (!modalContent) return;
@@ -918,7 +880,6 @@ class VariantSelects extends HTMLElement {
 
   renderProductInfo() {
     const requestedVariantId = this.currentVariant.id;
-    const sectionId = this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section;
 
     fetch(`${this.dataset.url}?variant=${requestedVariantId}&section_id=${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`)
       .then((response) => response.text())
@@ -947,14 +908,7 @@ class VariantSelects extends HTMLElement {
 
         if (inventoryDestination) inventoryDestination.classList.toggle('visibility-hidden', inventorySource.innerText === '');
 
-        const addButtonUpdated = html.getElementById(`ProductSubmitButton-${sectionId}`);
-        this.toggleAddButton(addButtonUpdated ? addButtonUpdated.hasAttribute('disabled') : true, window.variantStrings.soldOut);
-
-        publish(PUB_SUB_EVENTS.variantChange, {data: {
-          sectionId,
-          html,
-          variant: this.currentVariant
-        }});
+        this.toggleAddButton(!this.currentVariant.available, window.variantStrings.soldOut);
       });
   }
 
@@ -1023,6 +977,21 @@ class VariantRadios extends VariantSelects {
 }
 
 customElements.define('variant-radios', VariantRadios);
+if (document.querySelector('div#ProductGridContainer')){
+  document.querySelector('div#ProductGridContainer').onclick=e=>{
+    if (e.target.classList.contains('more')){
+      var imgs = e.target.parentElement.querySelectorAll('a.hidden');
+      [].forEach.call(imgs, img=>{img.classList.remove('hidden')});
+      e.target.remove();
+    }
+  }
+  document.querySelector('div#ProductGridContainer').onmouseover=e=>{
+    if (e.target.classList.contains('img')){
+      e.target.parentElement.previousElementSibling.querySelector('img.motion-reduce').removeAttribute('srcset');
+      e.target.parentElement.previousElementSibling.querySelector('img.motion-reduce').src = e.target.getAttribute('src');
+    }
+  }
+}
 
 class ProductRecommendations extends HTMLElement {
   constructor() {

@@ -36,13 +36,11 @@
       "previous": "Föregående sida"
     },
     "search": {
-      "search": "Sök",
-      "reset": "Rensa sökord"
+      "search": "Sök"
     },
     "cart": {
       "view": "Visa min varukorg ({{ count }})",
-      "item_added": "Artikeln har lagts till i varukorgen",
-      "view_empty_cart": "Se min varukorg"
+      "item_added": "Artikeln har lagts till i varukorgen"
     },
     "share": {
       "copy_to_clipboard": "Kopiera länk",
@@ -114,11 +112,7 @@
         "label": "Kvantitet",
         "input_label": "Kvantitet för {{ product }}",
         "increase": "Öka kvantitet för {{ product }}",
-        "decrease": "Minska kvantitet för {{ product }}",
-        "minimum_of": "Minimum på {{ quantity }}",
-        "maximum_of": "Maximum på {{ quantity }}",
-        "multiples_of": "Ökningar i steg om {{ quantity }}",
-        "in_cart_html": "<span class=\"quantity-cart\">{{ quantity }}<\/span> i varukorg"
+        "decrease": "Minska kvantitet för {{ product }}"
       },
       "price": {
         "from_price_html": "Från {{ price }}",
@@ -228,20 +222,6 @@
       "results_with_count_and_term": {
         "one": "hittat {{ count }} resultat för \"{{ terms }}\"",
         "other": "hittat {{ count }} resultat för \"{{ terms }}\""
-      },
-      "results_pages_with_count": {
-        "one": "{{ count }}-sida",
-        "other": "{{ count }} sidor"
-      },
-      "results_products_with_count": {
-        "one": "{{ count }} produkt",
-        "other": "{{ count }} produkter"
-      },
-      "suggestions": "Förslag",
-      "pages": "Sidor",
-      "results_suggestions_with_count": {
-        "one": "{{ count }} förslag",
-        "other": "{{ count }} förslag"
       }
     },
     "cart": {
@@ -453,8 +433,7 @@
       "tracking_company": "Transportör",
       "tracking_number": "Spårningsnummer",
       "subtotal": "Delsumma",
-      "total_duties": "Tullavgifter",
-      "total_refunded": "Återbetald"
+      "total_duties": "Tullavgifter"
     }
   },
   "gift_cards": {

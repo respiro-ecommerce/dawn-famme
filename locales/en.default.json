@@ -36,12 +36,10 @@
       "previous": "Previous page"
     },
     "search": {
-      "search": "Search",
-      "reset": "Clear search term"
+      "search": "Search"
     },
     "cart": {
       "view": "View my cart ({{ count }})",
-      "view_empty_cart": "View my cart",
       "item_added": "Item added to your cart"
     },
     "share": {
@@ -146,11 +144,7 @@
         "label": "Quantity",
         "input_label": "Quantity for {{ product }}",
         "increase": "Increase quantity for {{ product }}",
-        "decrease": "Decrease quantity for {{ product }}",
-        "minimum_of": "Minimum of {{ quantity }}",
-        "maximum_of": "Maximum of {{ quantity }}",
-        "multiples_of": "Increments of {{ quantity }}",
-        "in_cart_html": "<span class=\"quantity-cart\">{{ quantity }}<\/span> in cart"
+        "decrease": "Decrease quantity for {{ product }}"
       },
       "pickup_availability": {
         "view_store_info": "View store information",
@@ -219,18 +213,6 @@
       "no_results": "No results found for “{{ terms }}”. Check the spelling or use a different word or phrase.",
       "page": "Page",
       "products": "Products",
-      "results_pages_with_count": {
-        "one": "{{ count }} page",
-        "other": "{{ count }} pages"
-      },
-      "results_suggestions_with_count": {
-        "one": "{{ count }} suggestion",
-        "other": "{{ count }} suggestions"
-      },
-      "results_products_with_count": {
-        "one": "{{ count }} product",
-        "other": "{{ count }} products"
-      },
       "results_with_count": {
         "one": "{{ count }} result",
         "other": "{{ count }} results"
@@ -240,9 +222,7 @@
         "other": "{{ count }} results found for “{{ terms }}”"
       },
       "title": "Search results",
-      "search_for": "Search for “{{ terms }}”",
-      "suggestions": "Suggestions",
-      "pages": "Pages"
+      "search_for": "Search for “{{ terms }}”"
     },
     "cart": {
       "cart": "Cart"
@@ -417,7 +397,6 @@
       "price": "Price",
       "quantity": "Quantity",
       "total": "Total",
-      "total_refunded": "Refunded",
       "fulfilled_at_html": "Fulfilled {{ date }}",
       "track_shipment": "Track shipment",
       "tracking_url": "Tracking link",

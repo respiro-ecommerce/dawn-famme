@@ -51,7 +51,6 @@ if (!customElements.get('product-form')) {
             return;
           }
 
-          if (!this.error) publish(PUB_SUB_EVENTS.cartUpdate, {source: 'product-form'});
           this.error = false;
           const quickAddModal = this.closest('quick-add-modal');
           if (quickAddModal) {
@@ -86,4 +85,19 @@ if (!customElements.get('product-form')) {
       }
     }
   });
+}
+
+// Custom: For showing color names dynamically on product page
+// above the images on the PDP for selecting variant
+if (document.querySelector('variant-radios')){
+  document.querySelector('variant-radios').onmouseover=e=>{
+    if (e.target.tagName == 'LABEL'){
+      e.target.parentElement.firstElementChild.firstElementChild.innerHTML = e.target.previousElementSibling.value;
+    }
+  }
+  document.querySelector('variant-radios').onmouseout=e=>{
+    if (e.target.tagName == 'LABEL'){
+      e.target.parentElement.firstElementChild.firstElementChild.innerHTML = e.target.parentElement.querySelector('input:checked').value;
+    }
+  }
 }

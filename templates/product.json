@@ -42,7 +42,7 @@
           "settings": {
             "heading": "Frakt",
             "icon": "check_mark",
-            "content": "<p><strong>Posten <\/strong>leverer pakken din direkte i postkassen, om pakken er for stor går den til <strong>nærmeste butikk<\/strong>. Alternativt kan du få pakken rett i en <strong>butikk<\/strong> eller <strong>pakkeboks<\/strong> du velger selv.  Om du ønsker pakken levert <strong>samme dag<\/strong> tilbyr vi dette med <strong>Porterbuddy<\/strong><\/p>",
+            "content": "<p><strong>Posten eller HeltHjem <\/strong>leverer pakken din direkte i postkassen, om pakken er for stor går den til <strong>nærmeste hentested.<\/strong><\/p><p>Alternativt kan du få pakken rett i hentested.<\/p>",
             "page": ""
           }
         },
@@ -60,7 +60,7 @@
           "settings": {
             "heading": "Passform",
             "icon": "check_mark",
-            "content": "<p>Modellhøyde: {{ product.metafields.my_fields.model_height.value }}<\/p><p>Modellstørrelse: {{ product.metafields.my_fields.model_size.value }}<\/p>",
+            "content": "<p>Modellhøyde: 170 cm<\/p><p>Modellstørrelse: Small<\/p>",
             "page": ""
           }
         }
@@ -78,8 +78,12 @@
       ],
       "settings": {
         "enable_sticky_info": false,
-        "gallery_layout": "thumbnail",
         "media_size": "large",
+        "constrain_to_viewport": false,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail",
+        "media_position": "left",
+        "image_zoom": "lightbox",
         "mobile_thumbnails": "show",
         "hide_variants": false,
         "enable_video_looping": false,

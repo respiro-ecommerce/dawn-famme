@@ -108,10 +108,12 @@
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
-            <h2 class="banner__heading inline-richtext {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{{ block.settings.heading }}</h2>
+            <h2 class="banner__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
+              <span>{{ block.settings.heading | escape }}</span>
+            </h2>
           {%- when 'text' -%}
-            <div class="banner__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
-              <p>{{ block.settings.text }}</p>
+            <div class="banner__text {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
+              <span>{{ block.settings.text | escape }}</span>
             </div>
           {%- when 'buttons' -%}
             <div class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}" {{ block.shopify_attributes }}>
@@ -134,9 +136,6 @@
   "name": "t:sections.image-banner.name",
   "tag": "section",
   "class": "section",
-  "disabled_on": {
-    "groups": ["header", "footer"]
-  },
   "settings": [
     {
       "type": "image_picker",
@@ -364,7 +363,7 @@
       "limit": 1,
       "settings": [
         {
-          "type": "inline_richtext",
+          "type": "text",
           "id": "heading",
           "default": "Image banner",
           "label": "t:sections.image-banner.blocks.heading.settings.heading.label"
@@ -397,7 +396,7 @@
       "limit": 1,
       "settings": [
         {
-          "type": "inline_richtext",
+          "type": "text",
           "id": "text",
           "default": "Give customers details about the banner image(s) or content on the template.",
           "label": "t:sections.image-banner.blocks.text.settings.text.label"
