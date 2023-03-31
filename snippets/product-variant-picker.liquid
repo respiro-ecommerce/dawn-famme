@@ -21,6 +21,22 @@
       {% endif %}
       {{ block.shopify_attributes }}
     >
+
+      {%- if product.metafields.my_fields.swatches != blank -%}
+        <fieldset class="product-form__input">
+          {%- if product.available -%}
+            <label class="color checked" title="{{ product.title | escape }}">{{ product.featured_image | image_url: width: 60 | image_tag  }}</label>
+          {%- endif -%}
+          {%- assign prods = product.metafields.my_fields.swatches | replace: ', ',',' | replace: ' ,',',' | split: ',' -%}
+          {%- for prod in prods -%}
+            {%- if all_products[prod] != blank and all_products[prod].available and all_products[prod].featured_image != blank -%}
+              <a class="color" href="{{ all_products[prod].url }}" title="{{ all_products[prod].title | escape }}">
+                {{ all_products[prod].featured_image | image_url: width: 60 | image_tag  }}
+              </a>
+            {%- endif -%}
+          {%- endfor -%}
+        </fieldset>
+      {%- endif -%}
       {%- for option in product.options_with_values -%}
         <fieldset class="js product-form__input">
           <legend class="form__label">{{ option.name }}</legend>
