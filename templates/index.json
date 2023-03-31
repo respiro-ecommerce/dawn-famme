@@ -445,14 +445,6 @@
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
-    },
-    "social_widget_45713": {
-      "type": "social-widget",
-      "settings": {
-        "social_widget_id": "45713",
-        "social_product_id": "none",
-        "social_widget_type": "none"
-      }
     }
   },
   "order": [
@@ -466,7 +458,6 @@
     "34e67a7e-53eb-4f8e-9332-3824b3cd32d0",
     "16602879286b7eef4a",
     "1629157352b193f90f",
-    "162567415706bdadcd",
-    "social_widget_45713"
+    "162567415706bdadcd"
   ]
 }
