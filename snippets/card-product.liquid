@@ -197,8 +197,12 @@
                 </span>
               </p>
             {%- endif -%}
-
             {% render 'price', product: card_product, price_class: '' %}
+            {%- if product.variants.size > 1 and product.options_with_values.size < 2 -%}
+              <div class="js product-form__input">
+                {%- for v in product.variants -%}{%- if v.available -%}<a href="{{ v.url }}">{{ v.title }}</a>{%- endif -%}{%- endfor -%}
+              </div>
+            {%- endif -%}
           </div>
         </div>
         {%- if show_quick_add -%}
