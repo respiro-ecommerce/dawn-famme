@@ -200,11 +200,6 @@
             {% render 'price', product: card_product, price_class: '' %}
           </div>
         </div>
-        {%- if card_product.variants.size > 1 and card_product.options_with_values.size < 2 -%}
-          <div class="js product-form__input">
-            {%- for v in card_product.variants -%}{%- if v.available -%}<a href="{{ v.url }}">{{ v.title }}</a>{%- endif -%}{%- endfor -%}
-          </div>
-        {%- endif -%}
         {%- if show_quick_add -%}
           <div class="quick-add no-js-hidden">
             {%- liquid
@@ -336,6 +331,11 @@
             </span>
           {%- endif -%}
         </div>
+        {%- if card_product.variants.size > 1 and card_product.options_with_values.size < 2 -%}
+          <div class="product-form__input">
+            {%- for v in card_product.variants -%}{%- if v.available -%}<a href="{{ v.url }}">{{ v.title }}</a>{%- endif -%}{%- endfor -%}
+          </div>
+        {%- endif -%}
       </div>
     </div>
   </div>
