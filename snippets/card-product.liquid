@@ -332,12 +332,12 @@
           {%- endif -%}
         </div>
       </div>
-      {%- if card_product.variants.size > 1 and card_product.options_with_values.size < 2 -%}
-        <div class="product-form__input">
-          {%- for v in card_product.variants -%}{%- if v.available -%}<a href="{{ v.url }}">{{ v.title }}</a>{%- endif -%}{%- endfor -%}
-        </div>
-      {%- endif -%}
     </div>
+    {%- if card_product.variants.size > 1 and card_product.options_with_values.size < 2 -%}
+      <div class="product-form__input">
+        {%- for v in card_product.variants -%}{%- if v.available -%}<a href="{{ v.url }}">{{ v.title }}</a>{%- endif -%}{%- endfor -%}
+      </div>
+    {%- endif -%}
   </div>
 {%- else -%}
   <div class="product-card-wrapper card-wrapper underline-links-hover">
