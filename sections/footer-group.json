@@ -19,18 +19,18 @@
             "menu": "product-development"
           }
         },
-        "footer-2": {
-          "type": "text",
+        "5a68e922-1d77-4770-aaa6-f41bbc842d2c": {
+          "type": "link_list",
           "settings": {
-            "heading": "Our mission",
-            "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+            "heading": "Samarbeid",
+            "menu": "partnerships"
           }
         }
       },
       "block_order": [
         "footer-0",
         "footer-1",
-        "footer-2"
+        "5a68e922-1d77-4770-aaa6-f41bbc842d2c"
       ],
       "settings": {
         "color_scheme": "inverse",
