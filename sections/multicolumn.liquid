@@ -72,7 +72,7 @@
                   {% assign spaced_image = true %}
                 {% endif %}
                 <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--{{ section.settings.image_width }}-width{% if section.settings.image_width != 'full' or spaced_image %} multicolumn-card-spacing{% endif %}">
-                  <div
+                  <{% if block.settings.url != blank %}a href="{{ block.settings.url }}"{% else %}div{% endif %}
                     class="media media--transparent media--{{ section.settings.image_ratio }}"
                     {% if section.settings.image_ratio == 'adapt' %}
                       style="padding-bottom: {{ 1 | divided_by: highest_ratio | times: 100 }}%;"
@@ -107,7 +107,7 @@
                         sizes: sizes,
                         class: 'multicolumn-card__image'
                     }}
-                  </div>
+                  </{% if block.settings.url == blank %}div{% else %}a{% endif %}>
                 </div>
               {%- endif -%}
               <div class="multicolumn-card__info">
@@ -399,6 +399,11 @@
           "type": "image_picker",
           "id": "image",
           "label": "t:sections.multicolumn.blocks.column.settings.image.label"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Image link"
         },
         {
           "type": "inline_richtext",
