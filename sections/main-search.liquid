@@ -102,7 +102,7 @@
                   >
                   <label class="field__label" for="Search-In-Template">{{ 'general.search.search' | t }}</label>
                   <input name="options[prefix]" type="hidden" value="last">
-
+                  <input type="hidden" name="type" value="product">
                   {%- if settings.predictive_search_enabled -%}
                     <div class="predictive-search predictive-search--search-template" tabindex="-1" data-predictive-search>
                       <div class="predictive-search__loading-state">
