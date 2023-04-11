@@ -198,8 +198,5 @@ div.product-form__input>a {
   height: auto;
 }
 /*product thumbs full height*/
-li.thumbnail-list__item.slider__slide>button.thumbnail.global-media-settings {height: auto;}
-li.thumbnail-list__item.slider__slide>button.thumbnail.global-media-settings>img {
-  display: block;
-  height: auto;
-}
+li.thumbnail-list__item.slider__slide:before {content: none;}
+li.thumbnail-list__item.slider__slide>button.thumbnail.global-media-settings {position: relative;}
