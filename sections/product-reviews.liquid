@@ -500,6 +500,14 @@
   .product-reviews__background-overlay.is-hidden {
     display: none !important;
   }
+
+  @media (max-width: 850px) {
+    .product-reviews__gallery, 
+    .product-reviews__popup {
+      width: 100%;
+      max-width: 80vw;
+    }
+  }
 {% endstylesheet %}
 
 {% javascript %}
