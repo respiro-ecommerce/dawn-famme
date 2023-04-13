@@ -291,6 +291,26 @@
                 share_link: share_url
               %}
 
+            {%- when 'product_reviews' -%}
+              {%- liquid 
+                assign product_rating = 0
+                assign product_review_count = 0
+                 
+                for review in product.metafields.custom.reviews.value
+                  assign product_rating = product_rating | plus: review.rating
+                  assign product_review_count = product_review_count | plus: 1
+                endfor
+              
+                unless product_rating == 0 and product_review_count == 0
+                  assign product_rating = product_rating | divided_by: product_review_count
+                endunless
+              -%}
+
+              <a href="#reviews-section" class="product-form__reviews">
+                {% render 'star-rating', with rating: product_rating %} 
+                <span>{{ 'sections.reviews.total_reviews' | t: count: product_review_count }}</span>
+              </a>
+
             {%- when 'variant_picker' -%}
               {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
             {%- when 'buy_buttons' -%}
@@ -693,6 +713,10 @@
       "type": "quantity_selector",
       "name": "t:sections.main-product.blocks.quantity_selector.name",
       "limit": 1
+    },
+    {
+      "type": "product_reviews",
+      "name": "Product Reviews"
     },
     {
       "type": "variant_picker",
