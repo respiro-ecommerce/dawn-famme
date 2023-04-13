@@ -42,7 +42,7 @@
     "cart": {
       "view": "Vis handlekurven ({{ count }})",
       "item_added": "Vare lagt i handlekurven",
-      "view_empty_cart": ""
+      "view_empty_cart": "tom kurv"
     },
     "share": {
       "copy_to_clipboard": "Kopier kobling",
