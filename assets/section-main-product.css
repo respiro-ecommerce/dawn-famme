@@ -15,6 +15,24 @@
   padding-left: 0;
 }
 
+.product-form__reviews {
+  display: flex;
+  align-items: center;
+  scroll-behavior: smooth;
+  text-decoration: none;
+}
+
+.product-form__reviews span {
+  margin-left: 8px;
+  color: rgba(78, 78, 78, 0.75);
+}
+
+.product-form__reviews svg {
+  width: 17px;
+  height: 17px;
+  margin-bottom: 2px;
+}
+
 @media screen and (min-width: 750px) {
   .product__column-sticky {
     display: block;
