@@ -68,6 +68,7 @@
               alt="{{ product.title }}"
               js-product-reviews="image"
               data-image-index="{{ forloop.index0 }}"
+              loading=“lazy” 
             />
           {% endif %}
         {% endfor %}
@@ -157,6 +158,7 @@
                     alt="{{ review.review_title }}"
                     js-product-reviews="image"
                     data-image-index="{{ image_index }}"
+                    loading=“lazy” 
                   />
                 {% endif %}
               {% endfor %}
