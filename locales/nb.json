@@ -338,6 +338,13 @@
     },
     "page": {
       "title": "Sidetittel"
+    },
+    "reviews": {
+      "verified_buyer": "Verifisert kjøper",
+      "view_more": "Se mer",
+      "submit_review": "Send inn en anmeldelse",
+      "based_on_count": "Verifisert Basert på {{ count }} anmeldelser",
+      "total_reviews": "{{ count }} anmeldelser"
     }
   },
   "localization": {
