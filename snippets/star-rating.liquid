@@ -1,0 +1,11 @@
+{% assign half_star = rating | modulo: 1 %}
+
+{% for index in (1..rating) %}
+  {% render 'icon-star', with modifier: 'filled' %}
+{% endfor %}
+
+{% assign rating_left = 5 | minus: rating %}
+
+{% for index in (1..rating_left) %}
+  {% render 'icon-star', with modifier: 'unfilled' %}
+{% endfor %}
