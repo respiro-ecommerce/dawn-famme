@@ -189,7 +189,7 @@ class PredictiveSearch extends SearchForm {
       this.renderSearchResults(this.cachedResults[queryKey]);
       return;
     }
-    console.log(`${routes.predictive_search_url}&q=${encodeURIComponent(searchTerm)}&section_id=predictive-search`);
+console.log(`${routes.predictive_search_url}&q=${encodeURIComponent(searchTerm)}&section_id=predictive-search`);
     fetch(
       `${routes.predictive_search_url}&q=${encodeURIComponent(
         searchTerm
