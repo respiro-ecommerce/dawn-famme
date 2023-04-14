@@ -306,7 +306,7 @@
                 endunless
               -%}
 
-              <a href="#reviews-section" class="product-form__reviews">
+              <a href="#reviews" class="product-form__reviews">
                 {% render 'star-rating', with rating: product_rating %} 
                 <span>{{ 'sections.reviews.total_reviews' | t: count: product_review_count }}</span>
               </a>
