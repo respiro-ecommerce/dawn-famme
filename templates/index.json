@@ -2,41 +2,11 @@
   "sections": {
     "e3e1938f-c685-42e5-a842-fef3f2e9ba75": {
       "type": "image-banner",
-      "blocks": {
-        "template--16052441645230__e3e1938f-c685-42e5-a842-fef3f2e9ba75-168018979232325b6f-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1"
-          }
-        },
-        "template--16052441645230__e3e1938f-c685-42e5-a842-fef3f2e9ba75-168018979232325b6f-1": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "template--16052441645230__e3e1938f-c685-42e5-a842-fef3f2e9ba75-168018979232325b6f-2": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "template--16052441645230__e3e1938f-c685-42e5-a842-fef3f2e9ba75-168018979232325b6f-0",
-        "template--16052441645230__e3e1938f-c685-42e5-a842-fef3f2e9ba75-168018979232325b6f-1",
-        "template--16052441645230__e3e1938f-c685-42e5-a842-fef3f2e9ba75-168018979232325b6f-2"
-      ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Softy-collection-desktop-EN.jpg",
-        "image_m": "shopify:\/\/shop_images\/softy-collection-mobile-EN.jpg",
+        "image": "shopify:\/\/shop_images\/softy-sale-pastel-colors-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/softy-sale-pastel-colors-mobile.jpg",
+        "imageno": "shopify:\/\/shop_images\/softy-sale-pastel-colors-desktop-NO.jpg",
+        "image_nom": "shopify:\/\/shop_images\/softy-sale-pastel-colors-mobile-NO.jpg",
         "image_url": "shopify:\/\/collections\/softy",
         "image_overlay_opacity": 0,
         "image_height": "medium",
