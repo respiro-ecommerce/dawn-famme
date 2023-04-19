@@ -88,8 +88,9 @@
         {{ 'sections.reviews.view_more' | t }} {% render 'icon-caret' %}
       </button>
 
+      {% assign sorted_reviews = product.metafields.custom.reviews.value | sort: "rating" %}
 
-      {% for review in product.metafields.custom.reviews.value %}
+      {% for review in sorted_reviews %}
         {% assign review_index = forloop.index0 %}
         
         <div 
