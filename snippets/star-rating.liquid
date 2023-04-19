@@ -1,5 +1,11 @@
 {% assign half_star = rating | modulo: 1 %}
 
+{% if rating >= 4.5 %}
+  {% assign rating = 5 %}
+{% elsif rating >= 3.5 and rating <= 4 %}
+  {% assign rating = 4 %}
+{% endif %}
+
 {% for index in (1..rating) %}
   {% render 'icon-star', with modifier: 'filled' %}
 {% endfor %}
