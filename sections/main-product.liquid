@@ -294,7 +294,7 @@
             {%- when 'product_reviews' -%}
               {%- liquid 
                 assign product_rating = 0
-                assign star_product_rating = 0
+                assign star_product_rating = 0.0
                 assign product_review_count = 0
                  
                 for review in product.metafields.custom.reviews.value
