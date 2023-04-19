@@ -3,10 +3,8 @@
     "e3e1938f-c685-42e5-a842-fef3f2e9ba75": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/softy-sale-pastel-colors-desktop-2.jpg",
-        "image_m": "shopify:\/\/shop_images\/softy-sale-pastel-colors-mobile-2.jpg",
-        "imageno": "shopify:\/\/shop_images\/softy-sale-pastel-colors-desktop-NO-2_8e24d0dd-9138-4c27-9fcf-df4a6ab2b277.jpg",
-        "image_nom": "shopify:\/\/shop_images\/softy-sale-pastel-colors-mobile-NO-2.jpg",
+        "image": "shopify:\/\/shop_images\/Softy-collection-desktop-EN.jpg",
+        "imageno": "shopify:\/\/shop_images\/softy-collection-mobile-EN.jpg",
         "image_url": "shopify:\/\/collections\/softy",
         "image_overlay_opacity": 0,
         "image_height": "medium",
