@@ -302,7 +302,6 @@
                   assign star_product_rating = star_product_rating | plus: review.rating
                   assign product_review_count = product_review_count | plus: 1
                 endfor
-            
 
                unless product_rating == 0 and product_review_count == 0
                   assign product_rating = product_rating | divided_by: product_review_count
@@ -311,7 +310,7 @@
               -%}
 
               <a href="#reviews" class="product-form__reviews">
-                {% render 'star-rating', with rating: product_rating, float_rating: product_rating %} 
+                {% render 'star-rating', with rating: product_rating, float_rating: star_product_rating %} 
                 <span>{{ 'sections.reviews.total_reviews' | t: count: product_review_count }}</span>
               </a>
 
