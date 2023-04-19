@@ -1,8 +1,8 @@
 {% assign half_star = rating | modulo: 1 %}
 
-{% if rating >= 4.5 %}
+{% if float_rating >= 4.5 %}
   {% assign rating = 5 %}
-{% elsif rating >= 3.5 and rating <= 4 %}
+{% elsif float_rating >= 3.5 and rating <= 4 %}
   {% assign rating = 4 %}
 {% endif %}
 

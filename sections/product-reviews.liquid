@@ -38,7 +38,7 @@
             <span>{{ product_rating | times: 1.0 | round: 1 }}</span>
   
             <div class="product-reviews__product-rating">
-              {% render 'star-rating', with rating: star_product_rating %}
+              {% render 'star-rating', with rating: star_product_rating, float_rating: product_rating  %}
             </div>
           </div>
           
