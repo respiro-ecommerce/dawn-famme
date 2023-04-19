@@ -4,7 +4,7 @@
       "type": "image-banner",
       "settings": {
         "image": "shopify:\/\/shop_images\/Softy-collection-desktop-EN.jpg",
-        "imageno": "shopify:\/\/shop_images\/softy-collection-mobile-EN.jpg",
+        "image_m": "shopify:\/\/shop_images\/softy-collection-mobile-EN.jpg",
         "image_url": "shopify:\/\/collections\/softy",
         "image_overlay_opacity": 0,
         "image_height": "medium",
