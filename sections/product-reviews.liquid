@@ -73,7 +73,11 @@
           {% endif %}
         {% endfor %}
 
-        <span class="product-reviews__see-all-photos">
+        <span 
+          class="product-reviews__see-all-photos"
+          js-product-reviews="image"
+          data-image-index="0"
+        >
           {{ 'sections.reviews.see_all_photos' | t }}
         </span>
       </div>
