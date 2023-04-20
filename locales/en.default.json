@@ -340,6 +340,7 @@
       "verified_buyer": "Verified Buyer",
       "view_more": "View More",
       "submit_review": "Submit a Review",
+      "see_all_photos": "See all customer photos",
       "based_on_count": "Based on {{ count }} reviews",
       "total_reviews": "{{ count }} reviews"
     }
