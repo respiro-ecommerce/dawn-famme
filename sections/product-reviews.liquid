@@ -73,7 +73,7 @@
           {% endif %}
         {% endfor %}
 
-        <span>See all customer photos</span>
+        <span>See all customer photos {{ 'sections.reviews.see_all_photos' | t }}</span>
       </div>
     </div>
 
@@ -263,6 +263,7 @@
 
   .product-reviews__header-bottom {
     display: flex;
+    align-items: center;
     gap: 4px;
     padding-top: 12px;
     flex-wrap: wrap;
