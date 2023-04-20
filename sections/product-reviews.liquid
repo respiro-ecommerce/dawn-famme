@@ -73,7 +73,9 @@
           {% endif %}
         {% endfor %}
 
-        <span>See all customer photos {{ 'sections.reviews.see_all_photos' | t }}</span>
+        <span class="product-reviews__see-all-photos">
+          {{ 'sections.reviews.see_all_photos' | t }}
+        </span>
       </div>
     </div>
 
@@ -267,6 +269,10 @@
     gap: 4px;
     padding-top: 12px;
     flex-wrap: wrap;
+  }
+
+  .product-reviews__see-all-photos {
+    margin-left: 4px;
   }
 
   .product-reviews__header-left {
