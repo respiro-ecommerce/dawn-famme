@@ -36,6 +36,19 @@
           "settings": {
           }
         },
+        "a6e7a80b-c57f-4cdc-aa6f-5e15e24e3747": {
+          "type": "complementary",
+          "settings": {
+            "block_heading": "Pairs well with",
+            "make_collapsible_row": true,
+            "icon": "price_tag",
+            "product_list_limit": 10,
+            "products_per_page": 3,
+            "pagination_style": "counter",
+            "image_ratio": "portrait",
+            "enable_quick_add": true
+          }
+        },
         "eabf9557-eae1-4602-8216-a1fcf53adaa8": {
           "type": "collapsible_tab",
           "settings": {
@@ -62,19 +75,6 @@
             "content": "<p>Modellhøyde: 170 cm<\/p><p>Modellstørrelse: Small<\/p>",
             "page": ""
           }
-        },
-        "a6e7a80b-c57f-4cdc-aa6f-5e15e24e3747": {
-          "type": "complementary",
-          "settings": {
-            "block_heading": "Pairs well with",
-            "make_collapsible_row": true,
-            "icon": "price_tag",
-            "product_list_limit": 10,
-            "products_per_page": 3,
-            "pagination_style": "counter",
-            "image_ratio": "portrait",
-            "enable_quick_add": true
-          }
         }
       },
       "block_order": [
@@ -84,10 +84,10 @@
         "variant_picker",
         "buy_buttons",
         "description",
+        "a6e7a80b-c57f-4cdc-aa6f-5e15e24e3747",
         "eabf9557-eae1-4602-8216-a1fcf53adaa8",
         "576a2eb7-833f-45f5-a1ca-f507f429547d",
-        "7ed2c020-6590-4a00-9d01-dbdd3590ee01",
-        "a6e7a80b-c57f-4cdc-aa6f-5e15e24e3747"
+        "7ed2c020-6590-4a00-9d01-dbdd3590ee01"
       ],
       "settings": {
         "enable_sticky_info": false,
