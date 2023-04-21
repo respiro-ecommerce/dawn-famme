@@ -39,7 +39,7 @@
         "a6e7a80b-c57f-4cdc-aa6f-5e15e24e3747": {
           "type": "complementary",
           "settings": {
-            "block_heading": "Pairs well with",
+            "block_heading": "Passer med",
             "make_collapsible_row": true,
             "icon": "price_tag",
             "product_list_limit": 10,
