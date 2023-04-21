@@ -334,8 +334,27 @@
         "show_text_below": true
       }
     },
+    "2e9f2cce-25f1-4489-9a05-a0dea368658f": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/instagram-banner-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/instagram-banner-mobile.jpg",
+        "image_url": "",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "16602879286b7eef4a": {
       "type": "apps",
+      "disabled": true,
       "blocks": {
         "8cc4873d-cdc4-46a9-9624-2e324ff53607": {
           "type": "shopify:\/\/apps\/covet-instagram-feed-reviews\/blocks\/app-block-standard\/577480e8-b5be-4890-968c-06ccfb458c74",
@@ -392,7 +411,7 @@
       "settings": {
         "color_scheme": "background-1",
         "full_width": true,
-        "padding_top": 40,
+        "padding_top": 0,
         "padding_bottom": 52
       }
     },
@@ -426,6 +445,7 @@
     "166057046086c544fd",
     "16463038447a5cbd60",
     "34e67a7e-53eb-4f8e-9332-3824b3cd32d0",
+    "2e9f2cce-25f1-4489-9a05-a0dea368658f",
     "16602879286b7eef4a",
     "1629157352b193f90f",
     "162567415706bdadcd"
