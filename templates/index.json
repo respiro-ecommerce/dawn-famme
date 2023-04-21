@@ -339,7 +339,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/instagram-banner-desktop.jpg",
         "image_m": "shopify:\/\/shop_images\/instagram-banner-mobile.jpg",
-        "image_url": "",
+        "image_url": "https:\/\/www.instagram.com\/famme\/",
         "image_overlay_opacity": 0,
         "image_height": "small",
         "adapt_height_first_image": false,
