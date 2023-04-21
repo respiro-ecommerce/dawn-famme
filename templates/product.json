@@ -108,18 +108,10 @@
       "type": "product-reviews",
       "settings": {
       }
-    },
-    "1638933924cc2996fe": {
-      "type": "apps",
-      "disabled": true,
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
     "main",
-    "0b47f255-2564-41ec-b662-4e57083fe09d",
-    "1638933924cc2996fe"
+    "0b47f255-2564-41ec-b662-4e57083fe09d"
   ]
 }
