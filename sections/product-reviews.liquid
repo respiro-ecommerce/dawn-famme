@@ -52,7 +52,7 @@
             class="product-reviews__submit-review"
             js-product-review="submitReview"
           >
-            {{ 'custom.submit_review' | t }}
+            {{ 'custom.reviews.submit_review' | t }}
           </span>
         </div>
       </div>
@@ -78,7 +78,7 @@
           js-product-reviews="image"
           data-image-index="0"
         >
-          {{ 'custom.see_all_photos' | t }}
+          {{ 'custom.reviews.see_all_photos' | t }}
         </span>
       </div>
     </div>
@@ -93,7 +93,7 @@
         "
         js-product-reviews="viewMore"
       >
-        {{ 'custom.view_more' | t }} {% render 'icon-caret' %}
+        {{ 'custom.reviews.view_more' | t }} {% render 'icon-caret' %}
       </button>
 
       {% assign sorted_reviews = product.metafields.custom.reviews.value | sort: "rating" | reverse %}
@@ -119,7 +119,7 @@
             {% endif %}
         
             <span class="product-reviews__verified">
-              {% render 'icon-verified' %} {{ 'custom.verified_buyer' | t }}
+              {% render 'icon-verified' %} {{ 'custom.reviews.verified_buyer' | t }}
             </span>
           </div>
   
