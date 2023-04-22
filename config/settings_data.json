@@ -14,6 +14,7 @@
     "type_body_font": "roboto_n4",
     "page_width": 1400,
     "spacing_sections": 4,
+    "animations_reveal_on_scroll": false,
     "sale_badge_color_scheme": "accent-2",
     "social_facebook_link": "https:\/\/www.facebook.com\/fammesportswear",
     "social_instagram_link": "https:\/\/www.instagram.com\/famme\/",
