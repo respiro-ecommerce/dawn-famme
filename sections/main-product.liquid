@@ -292,11 +292,11 @@
               %}
 
             {%- when 'product_reviews' -%}
-              {%- liquid 
+              {%- liquid
                 assign product_rating = 0
                 assign star_product_rating = 0.0
                 assign product_review_count = 0
-                 
+
                 for review in product.metafields.custom.reviews.value
                   assign product_rating = product_rating | plus: review.rating
                   assign star_product_rating = star_product_rating | plus: review.rating
@@ -309,9 +309,17 @@
                 endunless
               -%}
 
-              <a href="#reviews" class="product-form__reviews">
-                {% render 'star-rating', with rating: product_rating, float_rating: star_product_rating %} 
-                <span>{{ 'custom.reviews.total_reviews' | t: count: product_review_count }}</span>
+              <a href="#reviews"
+                class="product-form__reviews"
+                style="display: flex;
+                align-items: center;
+                scroll-behavior: smooth;
+                text-decoration: none;"
+                >
+                  {% render 'star-rating', with rating: product_rating, float_rating: star_product_rating %}
+                  <span style="color: rgba(78, 78, 78, 0.75);margin-left: 8px;">
+                    {{ 'custom.reviews.total_reviews' | t: count: product_review_count }}
+                </span>
               </a>
 
             {%- when 'variant_picker' -%}
@@ -569,7 +577,7 @@
             "price" : {{ variant.price | divided_by: 100.00 | json }},
             "priceCurrency" : {{ cart.currency.iso_code | json }},
             "url" : {{ request.origin | append: variant.url | json }}
-          }{% unless forloop.last %},{% endunless %}
+          }{% unless forloop.last %}{% endunless %}
         {%- endfor -%}
       ],"aggregateRating": {
        "@type": "AggregateRating",
