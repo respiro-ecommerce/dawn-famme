@@ -571,22 +571,12 @@
             "url" : {{ request.origin | append: variant.url | json }}
           }{% unless forloop.last %},{% endunless %}
         {%- endfor -%}
-      ]
-    {% if product.metafields.okendo.summaryData.reviewCount > 0 %}
-    ,"aggregateRating": {
+      ],"aggregateRating": {
        "@type": "AggregateRating",
-       "description": "Okendo Reviews",
-       "ratingValue": "{{ product.metafields.okendo.summaryData.reviewAverageValue }}",
-       "ratingCount": "{{ product.metafields.okendo.summaryData.reviewCount }}"
+       "description": "Famme Reviews",
+       "ratingValue": "{{ product_rating }}",
+       "ratingCount": "{{ product_review_count }}"
     }
-    {% elsif product.metafields.okendo.ReviewCount > 0 %}
-    ,"aggregateRating": {
-       "@type": "AggregateRating",
-       "description": "Okendo Reviews",
-       "ratingValue": "{{ product.metafields.okendo.ReviewAverageValue }}",
-       "ratingCount": "{{ product.metafields.okendo.ReviewCount }}"
-    }
-    {% endif %}
     }
   </script>
 </section>
