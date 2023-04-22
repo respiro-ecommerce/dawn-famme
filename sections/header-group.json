@@ -9,8 +9,6 @@
           "type": "announcement",
           "settings": {
             "text": "Vipps & Klarna | Returlapp i Pakken | 100 Dager Åpent Kjøp",
-            "text_alignment": "center",
-            "color_scheme": "inverse",
             "link": ""
           }
         }
@@ -19,6 +17,10 @@
         "announcement-bar-0"
       ],
       "settings": {
+        "color_scheme": "inverse",
+        "show_line_separator": true,
+        "auto_rotate": false,
+        "change_slides_speed": 5
       }
     },
     "header": {

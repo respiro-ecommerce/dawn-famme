@@ -4,8 +4,8 @@
       "type": "video",
       "settings": {
         "heading": "",
-        "cover_image": "shopify:\/\/shop_images\/om-famme-endorphin-rx1-video-cover.jpg",
         "video_url": "https:\/\/youtu.be\/SUVoJYlJCWw",
+        "cover_image": "shopify:\/\/shop_images\/om-famme-endorphin-rx1-video-cover.jpg",
         "description": "",
         "full_width": true,
         "color_scheme": "background-1",
