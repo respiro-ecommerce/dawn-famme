@@ -8,7 +8,15 @@
     "return_form": "Gå til returskjema",
     "complaint_form": "Gå til reklamasjonsskjema",
     "return_header": "Returskjema",
-    "complaint_header": "Reklamasjonsskjema"
+    "complaint_header": "Reklamasjonsskjema",
+    "reviews": {
+      "verified_buyer": "Verifisert kjøper",
+      "view_more": "Se mer",
+      "submit_review": "Send inn en anmeldelse",
+      "see_all_photos": "Se alle kundebilder",
+      "based_on_count": "Verifisert Basert på {{ count }} anmeldelser",
+      "total_reviews": "{{ count }} anmeldelser"
+    }
   },
   "general": {
     "password_page": {

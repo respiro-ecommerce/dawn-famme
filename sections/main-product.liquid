@@ -311,7 +311,7 @@
 
               <a href="#reviews" class="product-form__reviews">
                 {% render 'star-rating', with rating: product_rating, float_rating: star_product_rating %} 
-                <span>{{ 'sections.reviews.total_reviews' | t: count: product_review_count }}</span>
+                <span>{{ 'custom.total_reviews' | t: count: product_review_count }}</span>
               </a>
 
             {%- when 'variant_picker' -%}
