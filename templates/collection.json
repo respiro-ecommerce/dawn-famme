@@ -1,22 +1,5 @@
 {
   "sections": {
-    "c1c41b94-0dfd-4e36-b903-de1af619cc32": {
-      "type": "image-banner",
-      "disabled": true,
-      "settings": {
-        "image_url": "",
-        "image_overlay_opacity": 0,
-        "image_height": "small",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
@@ -43,11 +26,28 @@
         "show_collection_image": true,
         "color_scheme": "background-1"
       }
+    },
+    "c1c41b94-0dfd-4e36-b903-de1af619cc32": {
+      "type": "image-banner",
+      "disabled": true,
+      "settings": {
+        "image_url": "",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
     }
   },
   "order": [
-    "c1c41b94-0dfd-4e36-b903-de1af619cc32",
     "product-grid",
-    "banner"
+    "banner",
+    "c1c41b94-0dfd-4e36-b903-de1af619cc32"
   ]
 }
