@@ -110,7 +110,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/vortex-desktop-NO.jpg",
         "image_m": "shopify:\/\/shop_images\/vortex-mobile-NO.jpg",
-        "image_url": "https:\/\/famme.no\/search?q=vortex&type=product&options%5Bprefix%5D=last",
+        "image_url": "shopify:\/\/collections\/vortex-tights",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "adapt_height_first_image": false,
@@ -186,7 +186,6 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/tights_00c8bb10-b8e5-4070-9a81-7994ea58eae5.jpg",
-            "url": "https:\/\/famme.no\/collections\/treningstights",
             "title": "",
             "text": "",
             "link_label": "",
@@ -197,7 +196,6 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/topper.jpg",
-            "url": "https:\/\/famme.no\/collections\/treningsoverdeler",
             "title": "",
             "text": "",
             "link_label": "",
@@ -208,7 +206,6 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/sports-bh.jpg",
-            "url": "https:\/\/famme.no\/collections\/sports-bh",
             "title": "",
             "text": "",
             "link_label": "",
@@ -219,7 +216,6 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/shorts-2.jpg",
-            "url": "https:\/\/famme.no\/collections\/treningsshorts",
             "title": "",
             "text": "",
             "link_label": "",
