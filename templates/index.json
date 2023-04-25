@@ -3,9 +3,11 @@
     "e3e1938f-c685-42e5-a842-fef3f2e9ba75": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Softy-collection-desktop-EN.jpg",
-        "image_m": "shopify:\/\/shop_images\/softy-collection-mobile-EN.jpg",
-        "image_url": "shopify:\/\/collections\/softy",
+        "image": "shopify:\/\/shop_images\/vortex-2-desktop-EN.jpg",
+        "image_m": "shopify:\/\/shop_images\/vortex-2-mobile-EN.jpg",
+        "imageno": "shopify:\/\/shop_images\/vortex-2-desktop-NO.jpg",
+        "image_nom": "shopify:\/\/shop_images\/vortex-2-mobile-NO.jpg",
+        "image_url": "shopify:\/\/collections\/vortex-tights",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "adapt_height_first_image": false,
