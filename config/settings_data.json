@@ -115,6 +115,18 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "1251128615222945960": {
+        "type": "shopify:\/\/apps\/post-checkout-upsells-promos\/blocks\/app-embed\/ea24a4f3-06ec-4555-b927-79ef4ba4841e",
+        "disabled": true,
+        "settings": {
+        }
+      },
+      "13768625480086291342": {
+        "type": "shopify:\/\/apps\/forms\/blocks\/forms\/8744a304-fcb1-4347-b211-bb6b4759a76a",
+        "disabled": false,
+        "settings": {
+        }
       }
     }
   }
