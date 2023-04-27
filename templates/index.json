@@ -109,6 +109,7 @@
     },
     "16620310837584a090": {
       "type": "image-banner",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/vortex-desktop-NO.jpg",
         "image_m": "shopify:\/\/shop_images\/vortex-mobile-NO.jpg",
