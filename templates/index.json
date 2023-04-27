@@ -188,6 +188,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/tights_00c8bb10-b8e5-4070-9a81-7994ea58eae5.jpg",
+            "url": "https:\/\/famme.no\/collections\/treningstights",
             "title": "",
             "text": "",
             "link_label": "",
@@ -198,6 +199,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/topper.jpg",
+            "url": "https:\/\/famme.no\/collections\/treningsoverdeler",
             "title": "",
             "text": "",
             "link_label": "",
@@ -208,6 +210,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/sports-bh.jpg",
+            "url": "https:\/\/famme.no\/collections\/sports-bh",
             "title": "",
             "text": "",
             "link_label": "",
@@ -218,6 +221,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/shorts-2.jpg",
+            "url": "https:\/\/famme.no\/collections\/treningsshorts",
             "title": "",
             "text": "",
             "link_label": "",
