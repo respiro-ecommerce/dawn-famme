@@ -84,6 +84,8 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/40-60-all-shoes-desktop.jpg",
         "image_m": "shopify:\/\/shop_images\/40-60-all-shoes-mobile.jpg",
+        "imageno": "shopify:\/\/shop_images\/40-60-all-shoes-desktop-NO.jpg",
+        "image_nom": "shopify:\/\/shop_images\/40-60-all-shoes-mobile-NOjpg.jpg",
         "image_url": "shopify:\/\/collections\/shoes",
         "image_overlay_opacity": 0,
         "image_height": "large",
