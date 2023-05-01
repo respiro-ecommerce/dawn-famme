@@ -79,153 +79,12 @@
         "padding_bottom": 0
       }
     },
-    "c9defff2-34be-43bd-af13-9aa3ecfc038e": {
-      "type": "image-banner-famme-custom",
-      "blocks": {
-        "template--14725536972974__c9defff2-34be-43bd-af13-9aa3ecfc038e-1678281804882d078c-0": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1"
-          }
-        },
-        "template--14725536972974__c9defff2-34be-43bd-af13-9aa3ecfc038e-1678281804882d078c-1": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "template--14725536972974__c9defff2-34be-43bd-af13-9aa3ecfc038e-1678281804882d078c-2": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "template--14725536972974__c9defff2-34be-43bd-af13-9aa3ecfc038e-1678281804882d078c-0",
-        "template--14725536972974__c9defff2-34be-43bd-af13-9aa3ecfc038e-1678281804882d078c-1",
-        "template--14725536972974__c9defff2-34be-43bd-af13-9aa3ecfc038e-1678281804882d078c-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/outlet-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/outlet-mobile.jpg",
-        "imageno": "shopify:\/\/shop_images\/outlet-desktop-NO.jpg",
-        "image_nom": "shopify:\/\/shop_images\/outlet-mobile-NO.jpg",
-        "image_url": "https:\/\/famme.no\/collections\/sale",
-        "image_overlay_opacity": 0,
-        "image2_url": "",
-        "image_height": "medium",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
-    "1663594925b05b51c0": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Nyheter",
-        "heading_size": "h2",
-        "description": "<p>Få med deg de nyeste lanseringene!<\/p>",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "new-releases",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "link",
-        "enable_desktop_slider": true,
-        "color_scheme": "background-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 16,
-        "padding_bottom": 16
-      }
-    },
-    "34e67a7e-53eb-4f8e-9332-3824b3cd32d0": {
-      "type": "image-banner-famme-custom",
-      "blocks": {
-        "template--14725536972974__34e67a7e-53eb-4f8e-9332-3824b3cd32d0-16710124190f41187b-0": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1"
-          }
-        },
-        "template--14725536972974__34e67a7e-53eb-4f8e-9332-3824b3cd32d0-16710124190f41187b-1": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "template--14725536972974__34e67a7e-53eb-4f8e-9332-3824b3cd32d0-16710124190f41187b-2": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "template--14725536972974__34e67a7e-53eb-4f8e-9332-3824b3cd32d0-16710124190f41187b-0",
-        "template--14725536972974__34e67a7e-53eb-4f8e-9332-3824b3cd32d0-16710124190f41187b-1",
-        "template--14725536972974__34e67a7e-53eb-4f8e-9332-3824b3cd32d0-16710124190f41187b-2"
-      ],
-      "settings": {
-        "image_url": "",
-        "image_2": "shopify:\/\/shop_images\/peachy-leggings-desktop.jpg",
-        "image2_m": "shopify:\/\/shop_images\/peachy-leggings-mobile.jpg",
-        "image2no": "shopify:\/\/shop_images\/peachy-tights-desktop.jpg",
-        "image2_nom": "shopify:\/\/shop_images\/peachy-tights-mobile.jpg",
-        "image_overlay_opacity": 0,
-        "image2_url": "https:\/\/famme.no\/collections\/scrunch",
-        "image_height": "large",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
     "16620310837584a090": {
       "type": "image-banner",
-      "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/vortex-desktop-NO.jpg",
-        "image_m": "shopify:\/\/shop_images\/vortex-mobile-NO.jpg",
-        "image_url": "shopify:\/\/collections\/vortex-tights",
+        "image": "shopify:\/\/shop_images\/40-60-all-shoes-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/40-60-all-shoes-mobile.jpg",
+        "image_url": "shopify:\/\/collections\/shoes",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "adapt_height_first_image": false,
@@ -309,6 +168,90 @@
         "padding_bottom": 4
       }
     },
+    "1663594925b05b51c0": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Nyheter",
+        "heading_size": "h2",
+        "description": "<p>Få med deg de nyeste lanseringene!<\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "new-releases",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "link",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 16,
+        "padding_bottom": 16
+      }
+    },
+    "c9defff2-34be-43bd-af13-9aa3ecfc038e": {
+      "type": "image-banner-famme-custom",
+      "blocks": {
+        "template--14725536972974__c9defff2-34be-43bd-af13-9aa3ecfc038e-1678281804882d078c-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "template--14725536972974__c9defff2-34be-43bd-af13-9aa3ecfc038e-1678281804882d078c-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "template--14725536972974__c9defff2-34be-43bd-af13-9aa3ecfc038e-1678281804882d078c-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--14725536972974__c9defff2-34be-43bd-af13-9aa3ecfc038e-1678281804882d078c-0",
+        "template--14725536972974__c9defff2-34be-43bd-af13-9aa3ecfc038e-1678281804882d078c-1",
+        "template--14725536972974__c9defff2-34be-43bd-af13-9aa3ecfc038e-1678281804882d078c-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/outlet-desktop.jpg",
+        "image_m": "shopify:\/\/shop_images\/outlet-mobile.jpg",
+        "imageno": "shopify:\/\/shop_images\/outlet-desktop-NO.jpg",
+        "image_nom": "shopify:\/\/shop_images\/outlet-mobile-NO.jpg",
+        "image_url": "https:\/\/famme.no\/collections\/sale",
+        "image_overlay_opacity": 0,
+        "image2_url": "",
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "16463038447a5cbd60": {
       "type": "featured-collection",
       "settings": {
@@ -337,6 +280,62 @@
         "padding_bottom": 24
       }
     },
+    "34e67a7e-53eb-4f8e-9332-3824b3cd32d0": {
+      "type": "image-banner-famme-custom",
+      "blocks": {
+        "template--14725536972974__34e67a7e-53eb-4f8e-9332-3824b3cd32d0-16710124190f41187b-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "template--14725536972974__34e67a7e-53eb-4f8e-9332-3824b3cd32d0-16710124190f41187b-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "template--14725536972974__34e67a7e-53eb-4f8e-9332-3824b3cd32d0-16710124190f41187b-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--14725536972974__34e67a7e-53eb-4f8e-9332-3824b3cd32d0-16710124190f41187b-0",
+        "template--14725536972974__34e67a7e-53eb-4f8e-9332-3824b3cd32d0-16710124190f41187b-1",
+        "template--14725536972974__34e67a7e-53eb-4f8e-9332-3824b3cd32d0-16710124190f41187b-2"
+      ],
+      "settings": {
+        "image_url": "",
+        "image_2": "shopify:\/\/shop_images\/peachy-leggings-desktop.jpg",
+        "image2_m": "shopify:\/\/shop_images\/peachy-leggings-mobile.jpg",
+        "image2no": "shopify:\/\/shop_images\/peachy-tights-desktop.jpg",
+        "image2_nom": "shopify:\/\/shop_images\/peachy-tights-mobile.jpg",
+        "image_overlay_opacity": 0,
+        "image2_url": "https:\/\/famme.no\/collections\/scrunch",
+        "image_height": "large",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "2e9f2cce-25f1-4489-9a05-a0dea368658f": {
       "type": "image-banner",
       "settings": {
@@ -353,35 +352,6 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
-      }
-    },
-    "16602879286b7eef4a": {
-      "type": "apps",
-      "disabled": true,
-      "blocks": {
-        "8cc4873d-cdc4-46a9-9624-2e324ff53607": {
-          "type": "shopify:\/\/apps\/covet-instagram-feed-reviews\/blocks\/app-block-standard\/577480e8-b5be-4890-968c-06ccfb458c74",
-          "settings": {
-            "gallery_embed_id": 230022,
-            "show_text": true,
-            "title_text": "Shop from Instagram",
-            "title_color": "#4e4e4e",
-            "title_size": 22,
-            "subtitle_text": "@famme #fammely",
-            "subtitle_color": "#959595",
-            "subtitle_size": 14,
-            "text_alignment": "center",
-            "margin": 22,
-            "custom_html_above": "",
-            "custom_html_below": ""
-          }
-        }
-      },
-      "block_order": [
-        "8cc4873d-cdc4-46a9-9624-2e324ff53607"
-      ],
-      "settings": {
-        "include_margins": true
       }
     },
     "1629157352b193f90f": {
@@ -437,20 +407,27 @@
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
+    },
+    "16602879286b7eef4a": {
+      "type": "apps",
+      "disabled": true,
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "e3e1938f-c685-42e5-a842-fef3f2e9ba75",
     "1660654738369bfdd0",
-    "c9defff2-34be-43bd-af13-9aa3ecfc038e",
-    "1663594925b05b51c0",
-    "34e67a7e-53eb-4f8e-9332-3824b3cd32d0",
     "16620310837584a090",
     "166057046086c544fd",
+    "1663594925b05b51c0",
+    "c9defff2-34be-43bd-af13-9aa3ecfc038e",
     "16463038447a5cbd60",
+    "34e67a7e-53eb-4f8e-9332-3824b3cd32d0",
     "2e9f2cce-25f1-4489-9a05-a0dea368658f",
-    "16602879286b7eef4a",
     "1629157352b193f90f",
-    "162567415706bdadcd"
+    "162567415706bdadcd",
+    "16602879286b7eef4a"
   ]
 }
