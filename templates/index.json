@@ -166,6 +166,59 @@
         "padding_bottom": 4
       }
     },
+    "629c095c-65c1-4a0b-bf58-d154d9108815": {
+      "type": "image-banner",
+      "blocks": {
+        "template--18496543949148__629c095c-65c1-4a0b-bf58-d154d9108815-16842307252d5c433b-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "template--18496543949148__629c095c-65c1-4a0b-bf58-d154d9108815-16842307252d5c433b-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "template--18496543949148__629c095c-65c1-4a0b-bf58-d154d9108815-16842307252d5c433b-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18496543949148__629c095c-65c1-4a0b-bf58-d154d9108815-16842307252d5c433b-0",
+        "template--18496543949148__629c095c-65c1-4a0b-bf58-d154d9108815-16842307252d5c433b-1",
+        "template--18496543949148__629c095c-65c1-4a0b-bf58-d154d9108815-16842307252d5c433b-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/shorts-collection-desktop-NO.jpg",
+        "image_m": "shopify:\/\/shop_images\/shorts-collection-mobile-NO_1.jpg",
+        "image_url": "shopify:\/\/collections\/treningsshorts",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "1663594925b05b51c0": {
       "type": "featured-collection",
       "settings": {
@@ -363,6 +416,7 @@
     "1660654738369bfdd0",
     "16620310837584a090",
     "166057046086c544fd",
+    "629c095c-65c1-4a0b-bf58-d154d9108815",
     "1663594925b05b51c0",
     "c9defff2-34be-43bd-af13-9aa3ecfc038e",
     "16463038447a5cbd60",
