@@ -1,21 +1,21 @@
 {
   "sections": {
-    "e3e1938f-c685-42e5-a842-fef3f2e9ba75": {
+    "16620310837584a090": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/elevate-EN-desktop-2.jpg",
-        "image_m": "shopify:\/\/shop_images\/elevate-EN-mobile-2.jpg",
-        "image_url": "shopify:\/\/collections\/elevate-collection",
+        "image": "shopify:\/\/shop_images\/light-colored-desktop-NO-1.jpg",
+        "image_m": "shopify:\/\/shop_images\/light-colored-mobile-NO-1.jpg",
+        "image_url": "shopify:\/\/collections\/summer-vibes",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "large",
         "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",
         "color_scheme": "background-1",
         "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "stack_images_on_mobile": true,
+        "show_text_below": true
       }
     },
     "1660654738369bfdd0": {
@@ -75,24 +75,6 @@
         "swipe_on_mobile": false,
         "padding_top": 16,
         "padding_bottom": 0
-      }
-    },
-    "16620310837584a090": {
-      "type": "image-banner",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/light-colored-desktop-NO-1.jpg",
-        "image_m": "shopify:\/\/shop_images\/light-colored-mobile-NO-1.jpg",
-        "image_url": "shopify:\/\/collections\/summer-vibes",
-        "image_overlay_opacity": 0,
-        "image_height": "large",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
       }
     },
     "166057046086c544fd": {
@@ -412,9 +394,8 @@
     }
   },
   "order": [
-    "e3e1938f-c685-42e5-a842-fef3f2e9ba75",
-    "1660654738369bfdd0",
     "16620310837584a090",
+    "1660654738369bfdd0",
     "166057046086c544fd",
     "629c095c-65c1-4a0b-bf58-d154d9108815",
     "1663594925b05b51c0",
