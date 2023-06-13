@@ -41,7 +41,18 @@
         assign prods = ''
         paginate collections[col].products by 1000
           for prod in collections[col].products
-            if prod.title contains title and prod != product and prod.available and prod.featured_image != blank
+            assign prodparts = prod.title | remove: 'Dark ' | remove: 'Light ' | remove: 'Navy ' | remove: 'Triple ' | split: ' '
+            assign prodtitle = ''
+            for part in prodparts
+              unless forloop.first
+                if forloop.last
+                  assign prodtitle = prodtitle | append: part
+                else
+                  assign prodtitle = prodtitle | append: part | append: ' '
+                endif
+              endunless
+            endfor
+            if prodtitle == title and prod != product and prod.available and prod.featured_image != blank
               assign prods = prods | append: prod.handle | append: ','
             endif
           endfor
