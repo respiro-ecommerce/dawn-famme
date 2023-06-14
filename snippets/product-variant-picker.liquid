@@ -22,7 +22,7 @@
       {{ block.shopify_attributes }}
     >
       {%- liquid
-        assign titleparts = product.title | remove: 'Dark ' | remove: 'Light ' | remove: 'Navy ' | remove: 'Triple ' | split: ' '
+        assign titleparts = product.title | remove: 'Dark ' | remove: 'Melange ' | remove: 'Light ' | remove: 'Navy ' | remove: 'Triple ' | split: ' '
         assign title = ''
         for part in titleparts
           unless forloop.first
