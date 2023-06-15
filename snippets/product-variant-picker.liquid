@@ -41,7 +41,7 @@
         assign prods = ''
         paginate collections[col].products by 1000
           for prod in collections[col].products
-            assign prodparts = prod.title | remove: 'Dark ' | remove: 'Light ' | remove: 'Navy ' | remove: 'Triple ' | split: ' '
+            assign prodparts = prod.title | remove: 'Dark ' | remove: 'Melange ' | remove: 'Light ' | remove: 'Navy ' | remove: 'Triple ' | split: ' '
             assign prodtitle = ''
             for part in prodparts
               unless forloop.first
