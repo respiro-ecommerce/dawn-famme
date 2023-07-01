@@ -550,7 +550,6 @@
   init();
 
   function init() {
-    updateDates();
     initCarousel();
     setEventListeners();
   }
@@ -581,13 +580,6 @@
     if (backgroundOverlay) {
       backgroundOverlay.addEventListener("click", closeAllModals);
     }
-  }
-
-  function updateDates() {
-    dates.forEach((date) => {
-      const newDate = moment(date.innerText.replace('-', ''), "YYYYMMDD").fromNow();
-      date.innerText = newDate;
-    });
   }
 
   function initCarousel() {
