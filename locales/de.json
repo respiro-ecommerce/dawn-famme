@@ -474,5 +474,24 @@
       "max_characters": "Maximal {{ max_chars }} Zeichen",
       "email_label_optional_for_no_js_behavior": "E-Mail-Adresse des Empfängers (optional)"
     }
+  },
+  "custom": {
+    "bullets": {
+      "bullet_1": "Rücksendeetikett im Paket und 100 Tage offener Kauf",
+      "bullet_2": "Kostenloser Versand ab 399 NOK und 2 Jahre Garantie",
+      "bullet_3": "Vipps, Klarna und Kartenzahlung"
+    },
+    "return_form": "Gehen Sie zum Rücksendeformular",
+    "complaint_form": "Gehen Sie zum Beschwerdeformular",
+    "return_header": "Rücksendeformular",
+    "complaint_header": "Beschwerdeformular",
+    "reviews": {
+      "verified_buyer": "Verifizierter Käufer",
+      "view_more": "Mehr sehen",
+      "submit_review": "Geben Sie eine Bewertung ab",
+      "see_all_photos": "Sehen Sie sich alle Kundenfotos an",
+      "based_on_count": "Verifiziert Basierend auf {{ count }} Bewertungen",
+      "total_reviews": "{{ count }} Bewertungen"
+    }
   }
 }
