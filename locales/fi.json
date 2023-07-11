@@ -474,5 +474,24 @@
       "max_characters": "enintään {{ max_chars }} merkkiä",
       "email_label_optional_for_no_js_behavior": "Vastaanottajan sähköpostiosoite (valinnainen)"
     }
+  },
+  "custom": {
+    "bullets": {
+      "bullet_1": "Palautusetiketti pakkauksessa ja 100 päivää auki",
+      "bullet_2": "Ilmainen toimitus yli 399 NOK ja 2 vuoden takuu",
+      "bullet_3": "Vipps, Klarna &amp; korttimaksu"
+    },
+    "return_form": "Siirry palautuslomakkeeseen",
+    "complaint_form": "Siirry valituslomakkeeseen",
+    "return_header": "Palautuslomake",
+    "complaint_header": "Valituslomake",
+    "reviews": {
+      "verified_buyer": "Vahvistettu ostaja",
+      "view_more": "Katso lisää",
+      "submit_review": "Lähetä arvostelu",
+      "see_all_photos": "Katso kaikki asiakkaiden kuvat",
+      "based_on_count": "Vahvistettu {{ count }} arvostelun perusteella",
+      "total_reviews": "{{ count }} arvostelua"
+    }
   }
 }
