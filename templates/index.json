@@ -229,62 +229,6 @@
         "show_text_below": true
       }
     },
-    "c9defff2-34be-43bd-af13-9aa3ecfc038e": {
-      "type": "image-banner-famme-custom",
-      "blocks": {
-        "template--14725536972974__c9defff2-34be-43bd-af13-9aa3ecfc038e-1678281804882d078c-0": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1"
-          }
-        },
-        "template--14725536972974__c9defff2-34be-43bd-af13-9aa3ecfc038e-1678281804882d078c-1": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "template--14725536972974__c9defff2-34be-43bd-af13-9aa3ecfc038e-1678281804882d078c-2": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "template--14725536972974__c9defff2-34be-43bd-af13-9aa3ecfc038e-1678281804882d078c-0",
-        "template--14725536972974__c9defff2-34be-43bd-af13-9aa3ecfc038e-1678281804882d078c-1",
-        "template--14725536972974__c9defff2-34be-43bd-af13-9aa3ecfc038e-1678281804882d078c-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/outlet-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/outlet-mobile.jpg",
-        "imageno": "shopify:\/\/shop_images\/outlet-desktop-NO.jpg",
-        "image_nom": "shopify:\/\/shop_images\/outlet-mobile-NO.jpg",
-        "image_url": "https:\/\/famme.no\/collections\/sale",
-        "image_overlay_opacity": 0,
-        "image2_url": "",
-        "image_height": "medium",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
     "16463038447a5cbd60": {
       "type": "featured-collection",
       "settings": {
@@ -399,7 +343,6 @@
     "1663594925b05b51c0",
     "166057046086c544fd",
     "16620310837584a090",
-    "c9defff2-34be-43bd-af13-9aa3ecfc038e",
     "16463038447a5cbd60",
     "2e9f2cce-25f1-4489-9a05-a0dea368658f",
     "1629157352b193f90f",
