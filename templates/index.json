@@ -211,24 +211,6 @@
         "padding_bottom": 4
       }
     },
-    "16620310837584a090": {
-      "type": "image-banner",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/light-colored-desktop-NO-1.jpg",
-        "image_m": "shopify:\/\/shop_images\/light-colored-mobile-NO-1.jpg",
-        "image_url": "shopify:\/\/collections\/summer-vibes",
-        "image_overlay_opacity": 0,
-        "image_height": "large",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
     "16463038447a5cbd60": {
       "type": "featured-collection",
       "settings": {
@@ -255,6 +237,24 @@
         "swipe_on_mobile": true,
         "padding_top": 16,
         "padding_bottom": 24
+      }
+    },
+    "16620310837584a090": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/light-colored-desktop-NO-1.jpg",
+        "image_m": "shopify:\/\/shop_images\/light-colored-mobile-NO-1.jpg",
+        "image_url": "shopify:\/\/collections\/summer-vibes",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
       }
     },
     "2e9f2cce-25f1-4489-9a05-a0dea368658f": {
@@ -342,8 +342,8 @@
     "1660654738369bfdd0",
     "1663594925b05b51c0",
     "166057046086c544fd",
-    "16620310837584a090",
     "16463038447a5cbd60",
+    "16620310837584a090",
     "2e9f2cce-25f1-4489-9a05-a0dea368658f",
     "1629157352b193f90f",
     "162567415706bdadcd",
