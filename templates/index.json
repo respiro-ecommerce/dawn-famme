@@ -112,6 +112,34 @@
         "padding_bottom": 0
       }
     },
+    "1663594925b05b51c0": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Nyheter",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "new-releases",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "link",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 16,
+        "padding_bottom": 16
+      }
+    },
     "166057046086c544fd": {
       "type": "multicolumn",
       "blocks": {
@@ -199,34 +227,6 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
-      }
-    },
-    "1663594925b05b51c0": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Nyheter",
-        "heading_size": "h2",
-        "description": "<p>Få med deg de nyeste lanseringene!<\/p>",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "new-releases",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "link",
-        "enable_desktop_slider": true,
-        "color_scheme": "background-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 16,
-        "padding_bottom": 16
       }
     },
     "c9defff2-34be-43bd-af13-9aa3ecfc038e": {
@@ -396,9 +396,9 @@
   "order": [
     "629c095c-65c1-4a0b-bf58-d154d9108815",
     "1660654738369bfdd0",
+    "1663594925b05b51c0",
     "166057046086c544fd",
     "16620310837584a090",
-    "1663594925b05b51c0",
     "c9defff2-34be-43bd-af13-9aa3ecfc038e",
     "16463038447a5cbd60",
     "2e9f2cce-25f1-4489-9a05-a0dea368658f",
