@@ -241,6 +241,7 @@
     },
     "16620310837584a090": {
       "type": "image-banner",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/light-colored-desktop-NO-1.jpg",
         "image_m": "shopify:\/\/shop_images\/light-colored-mobile-NO-1.jpg",
