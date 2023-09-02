@@ -38,6 +38,23 @@
         "padding_bottom": 52
       }
     },
+    "b0239abf-b143-4be3-9958-bc9db4816cd1": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/ENDORPHINS-BROWN-10copy.jpg",
+        "image_url": "",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "65eb8c2a-8a4d-44d8-b336-349db388afc1": {
       "type": "image-banner",
       "blocks": {
@@ -77,23 +94,6 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Screenshot_2023-09-01_at_16.29.02.png",
-        "image_url": "",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
-    "b0239abf-b143-4be3-9958-bc9db4816cd1": {
-      "type": "image-banner",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/ENDORPHINS-BROWN-10copy.jpg",
         "image_url": "",
         "image_overlay_opacity": 0,
         "image_height": "medium",
@@ -209,8 +209,8 @@
   "order": [
     "main",
     "a8db3abb-7979-4a1c-b875-62f9411efb4f",
-    "65eb8c2a-8a4d-44d8-b336-349db388afc1",
     "b0239abf-b143-4be3-9958-bc9db4816cd1",
+    "65eb8c2a-8a4d-44d8-b336-349db388afc1",
     "22221b0a-ef36-476b-9cd1-e8032e073961",
     "8313b332-d7b9-4e26-8376-2a636a8dd05f",
     "da7ac088-7724-45c5-85b4-ebc70b681730"
