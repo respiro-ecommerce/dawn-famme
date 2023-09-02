@@ -113,7 +113,7 @@
         "template--19573806727516__22221b0a-ef36-476b-9cd1-e8032e073961-collapsible_row-1": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "Hvorfor famme sko er best",
             "icon": "check_mark",
             "row_content": "",
             "page": ""
@@ -122,7 +122,7 @@
         "template--19573806727516__22221b0a-ef36-476b-9cd1-e8032e073961-collapsible_row-2": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "Såleteknologi",
             "icon": "check_mark",
             "row_content": "",
             "page": ""
@@ -131,7 +131,7 @@
         "template--19573806727516__22221b0a-ef36-476b-9cd1-e8032e073961-collapsible_row-3": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "Bærekraft og Miljø",
             "icon": "check_mark",
             "row_content": "",
             "page": ""
@@ -140,7 +140,7 @@
         "template--19573806727516__22221b0a-ef36-476b-9cd1-e8032e073961-collapsible_row-4": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "Hvilken sko passer deg best",
             "icon": "check_mark",
             "row_content": "",
             "page": ""
@@ -196,6 +196,36 @@
         "padding_bottom": 36
       }
     },
+    "6fd3e3bb-e00d-42cd-8249-e00929cbc689": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19573806727516__6fd3e3bb-e00d-42cd-8249-e00929cbc689-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Hjelp til å lage Norges mest komfortable sko",
+            "heading_size": "h2"
+          }
+        },
+        "ac851282-9944-4637-805a-7f425feb1b08": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Du vil motta en epost når skjemaet er utfylt. Sjekk reklame\/søppelpost dersom du ikke mottar mailen. <br\/>NB: Sjekk at epost skrives riktig<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19573806727516__6fd3e3bb-e00d-42cd-8249-e00929cbc689-heading-1",
+        "ac851282-9944-4637-805a-7f425feb1b08"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "da7ac088-7724-45c5-85b4-ebc70b681730": {
       "type": "custom-liquid",
       "settings": {
@@ -213,6 +243,7 @@
     "b0239abf-b143-4be3-9958-bc9db4816cd1",
     "22221b0a-ef36-476b-9cd1-e8032e073961",
     "8313b332-d7b9-4e26-8376-2a636a8dd05f",
+    "6fd3e3bb-e00d-42cd-8249-e00929cbc689",
     "da7ac088-7724-45c5-85b4-ebc70b681730"
   ]
 }
