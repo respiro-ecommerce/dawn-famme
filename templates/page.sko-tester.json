@@ -8,16 +8,21 @@
         "padding_bottom": 36
       }
     },
+    "52e2aa11-d59d-4441-8ebf-89cc93679c7d": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".title {color: ##8e8e8e; text-align: center; font-weight: 800; font-size: 30px; line-height: 35px;}"
+      ],
+      "settings": {
+        "custom_liquid": "<div class=\"title\">Skjema for påmelding er nederst på siden<\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 12,
+        "padding_bottom": 0
+      }
+    },
     "a8db3abb-7979-4a1c-b875-62f9411efb4f": {
       "type": "rich-text",
       "blocks": {
-        "template--19573806727516__a8db3abb-7979-4a1c-b875-62f9411efb4f-heading-1": {
-          "type": "heading",
-          "settings": {
-            "heading": "Skjema for påmelding er nederst på siden",
-            "heading_size": "h1"
-          }
-        },
         "template--19573806727516__a8db3abb-7979-4a1c-b875-62f9411efb4f-text-1": {
           "type": "text",
           "settings": {
@@ -26,7 +31,6 @@
         }
       },
       "block_order": [
-        "template--19573806727516__a8db3abb-7979-4a1c-b875-62f9411efb4f-heading-1",
         "template--19573806727516__a8db3abb-7979-4a1c-b875-62f9411efb4f-text-1"
       ],
       "settings": {
@@ -34,14 +38,15 @@
         "content_alignment": "center",
         "color_scheme": "background-1",
         "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "padding_top": 0,
+        "padding_bottom": 36
       }
     },
     "b0239abf-b143-4be3-9958-bc9db4816cd1": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/ENDORPHINS-BROWN-10copy.jpg",
+        "image": "shopify:\/\/shop_images\/shoe-leads-banner-web.jpg",
+        "image_m": "shopify:\/\/shop_images\/shoe-leads-banner-web-mobile-2.jpg",
         "image_url": "",
         "image_overlay_opacity": 0,
         "image_height": "medium",
@@ -55,56 +60,87 @@
         "show_text_below": true
       }
     },
-    "65eb8c2a-8a4d-44d8-b336-349db388afc1": {
-      "type": "image-banner",
+    "d3ad56d4-ff0d-4eae-a138-a536dc65b436": {
+      "type": "multicolumn",
       "blocks": {
-        "template--19573806727516__65eb8c2a-8a4d-44d8-b336-349db388afc1-heading-1": {
-          "type": "heading",
-          "disabled": true,
+        "template--19573806727516__d3ad56d4-ff0d-4eae-a138-a536dc65b436-column-1": {
+          "type": "column",
           "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1"
+            "image": "shopify:\/\/shop_images\/shoe-leads-photos-1.jpg",
+            "url": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
           }
         },
-        "template--19573806727516__65eb8c2a-8a4d-44d8-b336-349db388afc1-text-1": {
-          "type": "text",
-          "disabled": true,
+        "template--19573806727516__d3ad56d4-ff0d-4eae-a138-a536dc65b436-column-2": {
+          "type": "column",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
+            "image": "shopify:\/\/shop_images\/shoe-leads-photos-3.jpg",
+            "url": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
           }
         },
-        "template--19573806727516__65eb8c2a-8a4d-44d8-b336-349db388afc1-buttons-1": {
-          "type": "buttons",
-          "disabled": true,
+        "template--19573806727516__d3ad56d4-ff0d-4eae-a138-a536dc65b436-column-3": {
+          "type": "column",
           "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "image": "shopify:\/\/shop_images\/shoe-leads-photos-4.jpg",
+            "url": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "8f287cd1-0b35-4ed5-9e45-149a7d7fde3b": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/shoe-leads-photos-2.jpg",
+            "url": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "template--19573806727516__65eb8c2a-8a4d-44d8-b336-349db388afc1-heading-1",
-        "template--19573806727516__65eb8c2a-8a4d-44d8-b336-349db388afc1-text-1",
-        "template--19573806727516__65eb8c2a-8a4d-44d8-b336-349db388afc1-buttons-1"
+        "template--19573806727516__d3ad56d4-ff0d-4eae-a138-a536dc65b436-column-1",
+        "template--19573806727516__d3ad56d4-ff0d-4eae-a138-a536dc65b436-column-2",
+        "template--19573806727516__d3ad56d4-ff0d-4eae-a138-a536dc65b436-column-3",
+        "8f287cd1-0b35-4ed5-9e45-149a7d7fde3b"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Screenshot_2023-09-01_at_16.29.02.png",
-        "image_url": "",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "portrait",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
         "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "a2d54985-caa9-4a4d-8604-cb2a626cf7f8": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "img {display: block; margin-left: auto; margin-right: auto; width: 100%; max-width: 800px; height: auto;}"
+      ],
+      "settings": {
+        "custom_liquid": "<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0076\/6033\/9297\/files\/reviews-shoes-mobile.jpg?v=1696347467\"> <\/img>",
+        "color_scheme": "background-1",
+        "padding_top": 20,
+        "padding_bottom": 0
       }
     },
     "22221b0a-ef36-476b-9cd1-e8032e073961": {
@@ -208,9 +244,11 @@
   },
   "order": [
     "main",
+    "52e2aa11-d59d-4441-8ebf-89cc93679c7d",
     "a8db3abb-7979-4a1c-b875-62f9411efb4f",
     "b0239abf-b143-4be3-9958-bc9db4816cd1",
-    "65eb8c2a-8a4d-44d8-b336-349db388afc1",
+    "d3ad56d4-ff0d-4eae-a138-a536dc65b436",
+    "a2d54985-caa9-4a4d-8604-cb2a626cf7f8",
     "22221b0a-ef36-476b-9cd1-e8032e073961",
     "8313b332-d7b9-4e26-8376-2a636a8dd05f",
     "da7ac088-7724-45c5-85b4-ebc70b681730"
