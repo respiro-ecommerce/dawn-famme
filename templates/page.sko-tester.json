@@ -11,12 +11,12 @@
     "52e2aa11-d59d-4441-8ebf-89cc93679c7d": {
       "type": "custom-liquid",
       "custom_css": [
-        ".title {color: ##8e8e8e; text-align: center; font-weight: 800; font-size: 30px; line-height: 35px;}"
+        ".title {color: ##8e8e8e; text-align: center; font-weight: 800; font-size: 35px; font-family: \"Montserrat\";}"
       ],
       "settings": {
         "custom_liquid": "<div class=\"title\">Skjema for påmelding er nederst på siden<\/div>",
         "color_scheme": "background-1",
-        "padding_top": 12,
+        "padding_top": 0,
         "padding_bottom": 0
       }
     },
@@ -42,24 +42,6 @@
         "padding_bottom": 36
       }
     },
-    "b0239abf-b143-4be3-9958-bc9db4816cd1": {
-      "type": "image-banner",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/shoe-leads-banner-web.jpg",
-        "image_m": "shopify:\/\/shop_images\/shoe-leads-banner-web-mobile-2.jpg",
-        "image_url": "",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
     "d3ad56d4-ff0d-4eae-a138-a536dc65b436": {
       "type": "multicolumn",
       "blocks": {
@@ -77,7 +59,7 @@
         "template--19573806727516__d3ad56d4-ff0d-4eae-a138-a536dc65b436-column-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/shoe-leads-photos-3.jpg",
+            "image": "shopify:\/\/shop_images\/cloud-sketch-1a.jpg",
             "url": "",
             "title": "",
             "text": "",
@@ -88,7 +70,7 @@
         "template--19573806727516__d3ad56d4-ff0d-4eae-a138-a536dc65b436-column-3": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/shoe-leads-photos-4.jpg",
+            "image": "shopify:\/\/shop_images\/cloud-photo.jpg",
             "url": "",
             "title": "",
             "text": "",
@@ -99,7 +81,7 @@
         "8f287cd1-0b35-4ed5-9e45-149a7d7fde3b": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/shoe-leads-photos-2.jpg",
+            "image": "shopify:\/\/shop_images\/endorphin-sketch-1a.jpg",
             "url": "",
             "title": "",
             "text": "",
@@ -118,7 +100,7 @@
         "title": "",
         "heading_size": "h1",
         "image_width": "full",
-        "image_ratio": "portrait",
+        "image_ratio": "square",
         "columns_desktop": 4,
         "column_alignment": "center",
         "background_style": "primary",
@@ -137,9 +119,21 @@
         "img {display: block; margin-left: auto; margin-right: auto; width: 100%; max-width: 800px; height: auto;}"
       ],
       "settings": {
-        "custom_liquid": "<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0076\/6033\/9297\/files\/reviews-shoes-mobile.jpg?v=1696347467\"> <\/img>",
+        "custom_liquid": "<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0076\/6033\/9297\/files\/shoes-reviews_6c6edfee-0e23-459c-93db-9fc453ecc395.jpg?v=1696575473\"> <\/img>",
         "color_scheme": "background-1",
-        "padding_top": 20,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "c4fce1ac-e392-481a-aab3-663bf2128ff2": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".title {color: ##8e8e8e; text-align: center; font-weight: 800; font-size: 35px; font-family: \"Montserrat\";}"
+      ],
+      "settings": {
+        "custom_liquid": "<div class=\"title\">Fordeler med våre sko<\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 0,
         "padding_bottom": 0
       }
     },
@@ -191,7 +185,7 @@
       ],
       "settings": {
         "caption": "",
-        "heading": "Fordeler med våre sko",
+        "heading": "",
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "none",
@@ -200,7 +194,7 @@
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
-        "padding_top": 36,
+        "padding_top": 0,
         "padding_bottom": 36
       }
     },
@@ -246,9 +240,9 @@
     "main",
     "52e2aa11-d59d-4441-8ebf-89cc93679c7d",
     "a8db3abb-7979-4a1c-b875-62f9411efb4f",
-    "b0239abf-b143-4be3-9958-bc9db4816cd1",
     "d3ad56d4-ff0d-4eae-a138-a536dc65b436",
     "a2d54985-caa9-4a4d-8604-cb2a626cf7f8",
+    "c4fce1ac-e392-481a-aab3-663bf2128ff2",
     "22221b0a-ef36-476b-9cd1-e8032e073961",
     "8313b332-d7b9-4e26-8376-2a636a8dd05f",
     "da7ac088-7724-45c5-85b4-ebc70b681730"
