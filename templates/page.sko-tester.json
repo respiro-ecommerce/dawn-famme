@@ -137,13 +137,13 @@
     "8313b332-d7b9-4e26-8376-2a636a8dd05f": {
       "type": "featured-collection",
       "settings": {
-        "title": "Våre sko👇",
+        "title": "Våre bestselgere👇",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
         "collection": "shoes",
-        "products_to_show": 25,
+        "products_to_show": 8,
         "columns_desktop": 4,
         "full_width": false,
         "show_view_all": false,
