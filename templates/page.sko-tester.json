@@ -14,7 +14,7 @@
         ".title {color: ##8e8e8e; text-align: center; font-weight: 800; font-size: 35px; font-family: \"Montserrat\";}"
       ],
       "settings": {
-        "custom_liquid": "<div class=\"title\">Skjema for påmelding er nederst på siden<\/div>",
+        "custom_liquid": "<div class=\"title\">Skjema for påmelding er lenger ned på siden<\/div>",
         "color_scheme": "background-1",
         "padding_top": 0,
         "padding_bottom": 0
