@@ -201,3 +201,44 @@ div.product-form__input>a {
 li.thumbnail-list__item.slider__slide:before {content: none;}
 li.thumbnail-list__item.slider__slide>button.thumbnail.global-media-settings {position: relative;}
 @media screen and (max-width: 749px){li.thumbnail-list__item.slider__slide {width: calc(25% - .6rem);}}
+/*mobile menu*/
+.js .menu-drawer__navigation ul.menu-drawer__menu li:not(:last-child){border-bottom: 1px solid rgba(var(--color-foreground),.75);}
+.js .menu-drawer__navigation ul.menu-drawer__menu {visibility: visible;}
+.js .menu-drawer__navigation ul.menu-drawer__menu .menu-drawer__close-button {display: none;}
+.js .menu-drawer__navigation ul.menu-drawer__menu details svg.icon.icon-arrow {
+  transform: rotate(90deg);
+  margin-top: -5px;
+  transition: .3s;
+}
+.js .menu-drawer__navigation ul.menu-drawer__menu details[open] svg.icon.icon-arrow {transform: rotate(270deg);}
+.js .menu-drawer__navigation ul.menu-drawer__menu details[open].menu-opening>.menu-drawer__submenu {
+  position: relative;
+  transition: none;
+  background-color: rgba(var(--color-foreground),.04);
+}
+.js .menu-drawer__navigation ul.menu-drawer__menu details[open].menu-opening > .menu-drawer__submenu a.menu-drawer__menu-item.link {padding-left: 4.5rem;}
+/*usp*/
+ul.product-bullets {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+}
+ul.product-bullets>li {width: 30%;}
+ul.product-bullets>li>p {margin-top: 0;}
+/*mobile banner height*/
+@media screen and (max-width: 749px) {
+  .mob--small:not(.banner--adapt) {min-height: 100vw;}
+  .mob--medium:not(.banner--adapt) {min-height: 56rem;}
+  .mob--large:not(.banner--adapt) {min-height: 72rem;}
+  .mob--small:not(.banner--adapt), .mob--medium:not(.banner--adapt), .mob--large:not(.banner--adapt) {position: relative;}
+  .mob--small:not(.banner--adapt)>a.banner__media.media, .mob--medium:not(.banner--adapt)>a.banner__media.media, .mob--large:not(.banner--adapt)>a.banner__media.media {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+}

@@ -4,6 +4,7 @@
       "type": "famme-spaced-button-links",
       "settings": {
         "menu": "collection-underwear",
+        "pw": false,
         "bg": "#4e4e4e",
         "color": "#ffffff",
         "width": 165,
@@ -16,39 +17,33 @@
       "type": "main-collection-product-grid",
       "settings": {
         "products_per_page": 20,
+        "columns_desktop": 4,
         "image_ratio": "adapt",
+        "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
+        "enable_quick_add": false,
         "enable_filtering": true,
         "filter_type": "vertical",
-        "enable_sorting": true
-      }
-    },
-    "1629364797037f49c2": {
-      "type": "featured-blog",
-      "settings": {
-        "heading": "Les mer om vårt undertøy og ullundertøy",
-        "blog": "ullundertoy",
-        "post_limit": 3,
-        "show_image": true,
-        "show_date": false,
-        "show_author": false,
-        "show_view_all": true
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "banner": {
       "type": "main-collection-banner",
       "settings": {
         "show_collection_description": true,
-        "show_collection_image": true
+        "show_collection_image": true,
+        "color_scheme": "background-1"
       }
     }
   },
   "order": [
     "1636713168ccea7b55",
     "product-grid",
-    "1629364797037f49c2",
     "banner"
   ]
 }

@@ -1,13 +1,13 @@
 {
   "current": {
-    "logo": "shopify:\/\/shop_images\/famme-logo.png",
-    "logo_width": 120,
+    "logo": "shopify:\/\/shop_images\/New-Famme-Logo-1a.png",
+    "logo_width": 150,
     "favicon": "shopify:\/\/shop_images\/Famme-favicon.png",
     "colors_solid_button_labels": "#ffffff",
-    "colors_accent_1": "#119da4",
-    "colors_accent_2": "#ffaa91",
+    "colors_accent_1": "#345df4",
+    "colors_accent_2": "#d3c298",
     "colors_text": "#252525",
-    "colors_outline_button_labels": "#4e4e4e",
+    "colors_outline_button_labels": "#345df4",
     "colors_background_1": "#ffffff",
     "colors_background_2": "#252525",
     "type_header_font": "roboto_n4",
@@ -116,18 +116,30 @@
         "settings": {
         }
       },
-      "1251128615222945960": {
-        "type": "shopify:\/\/apps\/post-checkout-upsells-promos\/blocks\/app-embed\/ea24a4f3-06ec-4555-b927-79ef4ba4841e",
-        "disabled": true,
-        "settings": {
-        }
-      },
       "13768625480086291342": {
         "type": "shopify:\/\/apps\/forms\/blocks\/forms\/8744a304-fcb1-4347-b211-bb6b4759a76a",
         "disabled": true,
         "settings": {
         }
+      },
+      "1251128615222945960": {
+        "type": "shopify:\/\/apps\/post-checkout-upsells-promos\/blocks\/app-embed\/ea24a4f3-06ec-4555-b927-79ef4ba4841e",
+        "disabled": false,
+        "settings": {
+        }
       }
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      ".footer:not(.color-background-1) {background-color: #345df4;}",
+      ".footer {margin-top: 0px;}",
+      ".footer-block__newsletter .field__input {background-color: #345df4 !important;}",
+      ".list-menu > li:nth-child(3) > a > span {color: #345df4;}",
+      ".announcement-bar,.announcement-bar__announcement {background-color: #345df4;}",
+      ".product-reviews__submit-review {background-color: #345df4;}",
+      "button.product-form__submit.button--full-width {background-color: #f25c05;}",
+      ".cart__checkout-button {background-color: #f25c05;}"
+    ]
   }
 }
