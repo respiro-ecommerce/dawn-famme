@@ -21,56 +21,6 @@
       {% endif %}
       {{ block.shopify_attributes }}
     >
-      {%- liquid
-        assign titleparts = product.title | remove: 'Dark ' | remove: 'Melange ' | remove: 'Light ' | remove: 'Navy ' | remove: 'Triple ' | split: ' '
-        assign title = ''
-        for part in titleparts
-          unless forloop.first
-            if forloop.last
-              assign title = title | append: part
-            else
-              assign title = title | append: part | append: ' '
-            endif
-          endunless
-        endfor
-        if collection
-          assign col = collection
-        else
-          assign col = 'all'
-        endif
-        assign prods = ''
-        paginate collections[col].products by 1000
-          for prod in collections[col].products
-            assign prodparts = prod.title | remove: 'Dark ' | remove: 'Melange ' | remove: 'Light ' | remove: 'Navy ' | remove: 'Triple ' | split: ' '
-            assign prodtitle = ''
-            for part in prodparts
-              unless forloop.first
-                if forloop.last
-                  assign prodtitle = prodtitle | append: part
-                else
-                  assign prodtitle = prodtitle | append: part | append: ' '
-                endif
-              endunless
-            endfor
-            if prodtitle == title and prod != product and prod.available and prod.featured_image != blank
-              assign prods = prods | append: prod.handle | append: ','
-            endif
-          endfor
-        endpaginate
-      -%}
-      {%- if prods != '' -%}
-        <div class="product-form_input">
-          {%- if product.available -%}
-            <label class="color checked" title="{{ product.title | escape }}">{{ product.featured_image | image_url: width: 60 | image_tag  }}</label>
-          {%- endif -%}
-          {%- assign prods = prods | split: ',' -%}
-          {%- for prod in prods -%}
-            <a class="color" href="{{ all_products[prod].url }}" title="{{ all_products[prod].title | escape }}">
-              {{ all_products[prod].featured_image | image_url: width: 60 | image_tag  }}
-            </a>
-          {%- endfor -%}
-        </div>
-      {%- endif -%}
       {%- for option in product.options_with_values -%}
         <fieldset class="js product-form__input">
           <legend class="form__label">{{ option.name }}</legend>

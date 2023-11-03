@@ -8,7 +8,7 @@
         "padding_bottom": 36
       }
     },
-    "52e2aa11-d59d-4441-8ebf-89cc93679c7d": {
+    "cf182b68-7b23-4110-9f2f-9632dbd65c40": {
       "type": "custom-liquid",
       "custom_css": [
         ".title {color: ##8e8e8e; text-align: center; font-weight: 800; font-size: 35px; font-family: \"Montserrat\";}"
@@ -20,10 +20,10 @@
         "padding_bottom": 0
       }
     },
-    "a8db3abb-7979-4a1c-b875-62f9411efb4f": {
+    "c9bd7e30-d295-41b2-ae01-9bb4621712eb": {
       "type": "rich-text",
       "blocks": {
-        "template--19573806727516__a8db3abb-7979-4a1c-b875-62f9411efb4f-text-1": {
+        "template--19869836804444__c9bd7e30-d295-41b2-ae01-9bb4621712eb-text-1": {
           "type": "text",
           "settings": {
             "text": "<p>Famme er ute etter personer som bruker størrelse 35-42 som skal gi tilbakemeldinger på sko under utvikling. Sko prøves enten med oss fysisk i Oslo eller sendes per post. <br\/>Vi kontakter deg om du er en av de heldige.<\/p>"
@@ -31,7 +31,7 @@
         }
       },
       "block_order": [
-        "template--19573806727516__a8db3abb-7979-4a1c-b875-62f9411efb4f-text-1"
+        "template--19869836804444__c9bd7e30-d295-41b2-ae01-9bb4621712eb-text-1"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -42,10 +42,10 @@
         "padding_bottom": 36
       }
     },
-    "d3ad56d4-ff0d-4eae-a138-a536dc65b436": {
+    "ad118814-0b0f-4bfa-9cfc-def0dfde4c22": {
       "type": "multicolumn",
       "blocks": {
-        "template--19573806727516__d3ad56d4-ff0d-4eae-a138-a536dc65b436-column-1": {
+        "template--19869836804444__ad118814-0b0f-4bfa-9cfc-def0dfde4c22-column-1": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/shoe-leads-photos-1.jpg",
@@ -56,7 +56,7 @@
             "link": ""
           }
         },
-        "template--19573806727516__d3ad56d4-ff0d-4eae-a138-a536dc65b436-column-2": {
+        "template--19869836804444__ad118814-0b0f-4bfa-9cfc-def0dfde4c22-column-2": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/cloud-sketch-1a.jpg",
@@ -67,7 +67,7 @@
             "link": ""
           }
         },
-        "template--19573806727516__d3ad56d4-ff0d-4eae-a138-a536dc65b436-column-3": {
+        "template--19869836804444__ad118814-0b0f-4bfa-9cfc-def0dfde4c22-column-3": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/cloud-photo.jpg",
@@ -78,7 +78,7 @@
             "link": ""
           }
         },
-        "8f287cd1-0b35-4ed5-9e45-149a7d7fde3b": {
+        "08585615-2543-44a4-b1c8-1c9656ec1f14": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/endorphin-sketch-1a.jpg",
@@ -91,10 +91,10 @@
         }
       },
       "block_order": [
-        "template--19573806727516__d3ad56d4-ff0d-4eae-a138-a536dc65b436-column-1",
-        "template--19573806727516__d3ad56d4-ff0d-4eae-a138-a536dc65b436-column-2",
-        "template--19573806727516__d3ad56d4-ff0d-4eae-a138-a536dc65b436-column-3",
-        "8f287cd1-0b35-4ed5-9e45-149a7d7fde3b"
+        "template--19869836804444__ad118814-0b0f-4bfa-9cfc-def0dfde4c22-column-1",
+        "template--19869836804444__ad118814-0b0f-4bfa-9cfc-def0dfde4c22-column-2",
+        "template--19869836804444__ad118814-0b0f-4bfa-9cfc-def0dfde4c22-column-3",
+        "08585615-2543-44a4-b1c8-1c9656ec1f14"
       ],
       "settings": {
         "title": "",
@@ -102,7 +102,7 @@
         "image_width": "full",
         "image_ratio": "square",
         "columns_desktop": 4,
-        "column_alignment": "center",
+        "column_alignment": "left",
         "background_style": "primary",
         "button_label": "",
         "button_link": "",
@@ -113,7 +113,7 @@
         "padding_bottom": 36
       }
     },
-    "a2d54985-caa9-4a4d-8604-cb2a626cf7f8": {
+    "95f74831-1c4f-4363-9245-137d35b8a7cc": {
       "type": "custom-liquid",
       "custom_css": [
         "img {display: block; margin-left: auto; margin-right: auto; width: 100%; max-width: 800px; height: auto;}"
@@ -125,7 +125,7 @@
         "padding_bottom": 0
       }
     },
-    "da7ac088-7724-45c5-85b4-ebc70b681730": {
+    "c12f5fb7-3ea8-4b32-9a44-8b4755ecefda": {
       "type": "custom-liquid",
       "settings": {
         "custom_liquid": "<iframe class=\"airtable-embed\" src=\"https:\/\/airtable.com\/embed\/appPfAEXR7jPlBqLe\/shrQhGWb99DXv2VFv?backgroundColor=purpleLight\" frameborder=\"0\" onmousewheel=\"\" width=\"100%\" height=\"533\" style=\"background: transparent; border: 1px solid #ccc;\"><\/iframe>",
@@ -134,7 +134,7 @@
         "padding_bottom": 52
       }
     },
-    "8313b332-d7b9-4e26-8376-2a636a8dd05f": {
+    "3182d1c8-2d29-4894-8e28-a92be1d6b982": {
       "type": "featured-collection",
       "settings": {
         "title": "Våre bestselgere👇",
@@ -165,11 +165,11 @@
   },
   "order": [
     "main",
-    "52e2aa11-d59d-4441-8ebf-89cc93679c7d",
-    "a8db3abb-7979-4a1c-b875-62f9411efb4f",
-    "d3ad56d4-ff0d-4eae-a138-a536dc65b436",
-    "a2d54985-caa9-4a4d-8604-cb2a626cf7f8",
-    "da7ac088-7724-45c5-85b4-ebc70b681730",
-    "8313b332-d7b9-4e26-8376-2a636a8dd05f"
+    "cf182b68-7b23-4110-9f2f-9632dbd65c40",
+    "c9bd7e30-d295-41b2-ae01-9bb4621712eb",
+    "ad118814-0b0f-4bfa-9cfc-def0dfde4c22",
+    "95f74831-1c4f-4363-9245-137d35b8a7cc",
+    "c12f5fb7-3ea8-4b32-9a44-8b4755ecefda",
+    "3182d1c8-2d29-4894-8e28-a92be1d6b982"
   ]
 }

@@ -62,6 +62,28 @@
     rgba(var(--color-shadow), var(--shadow-opacity));
 }
 
+/* Needed for gradient continuity with or without animation, the transform scopes the gradient to its container which happens already when animation are turned on */
+.card--card.gradient,
+.card__inner.gradient {
+  transform: perspective(0);
+}
+
+/* Needed for gradient continuity with or without animation so that transparent PNG images come up as we would expect */
+.card__inner.color-background-1 {
+  background: transparent;
+}
+
+/* Needed for gradient continuity with or without animation, the transform scopes the gradient to its container which happens already when animation are turned on */
+.card--card.gradient,
+.card__inner.gradient {
+  transform: perspective(0);
+}
+
+/* Needed for gradient continuity with or without animation so that transparent PNG images come up as we would expect */
+.card__inner.color-background-1 {
+  background: transparent;
+}
+
 .card .card__inner .card__media {
   overflow: hidden;
   /* Fix for Safari border bug on hover */
@@ -132,6 +154,12 @@
   grid-template-rows: max-content minmax(0, 1fr) max-content auto;
 }
 
+.card-information .card__information-volume-pricing-note {
+  margin-top: 0.6rem;
+  line-height: calc(0.5 + 0.4 / var(--font-body-scale));
+  color: rgba(var(--color-foreground), 0.75);
+}
+
 @media screen and (min-width: 750px) {
   .card__information {
     padding-bottom: 1.7rem;
@@ -184,7 +212,10 @@
   font-size: calc(var(--font-heading-scale) * 1.2rem);
 }
 
-.card--horizontal .card-information > *:not(.visually-hidden:first-child) + *:not(.rating) {
+.card--horizontal
+  .card-information
+  > *:not(.visually-hidden:first-child)
+  + *:not(.rating):not(.card__information-volume-pricing-note) {
   margin-top: 0;
 }
 
@@ -274,11 +305,16 @@
 }
 
 .card--standard.card--media .card__inner .card__information,
-.card--standard.card--text:not(.card--horizontal) > .card__content .card__heading,
+.card--standard.card--text:not(.card--horizontal) > .card__content .card__heading:not(.card__heading--placeholder),
 .card--standard:not(.card--horizontal) > .card__content .card__badge,
 .card--standard.card--text.article-card > .card__content .card__information,
 .card--standard > .card__content .card__caption {
   display: none;
+}
+
+.card--standard:not(.card--horizontal) .placeholder-svg {
+  height: auto;
+  width: 100%;
 }
 
 .card--standard > .card__content {
@@ -348,7 +384,7 @@
   margin-top: 0.4rem;
 }
 
-.card-information > *:not(.visually-hidden:first-child) + *:not(.rating) {
+.card-information > *:not(.visually-hidden:first-child) + *:not(.rating):not(.card__information-volume-pricing-note) {
   margin-top: 0.7rem;
 }
 
@@ -367,7 +403,8 @@
 }
 
 .card--shape.card--standard:not(.card--text) .card__inner {
-  border: 0; /* Border is not currently compatible with image shapes for standard cards. */
+  border: 0;
+  /* Border is not currently compatible with image shapes for standard cards. */
   background-color: transparent;
   filter: drop-shadow(
     var(--shadow-horizontal-offset) var(--shadow-vertical-offset) var(--shadow-blur-radius)

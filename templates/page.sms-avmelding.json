@@ -1,0 +1,161 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "16b85b7b-8f7c-42cf-af69-70ffae586769": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".title {color: ##8e8e8e; text-align: center; font-weight: 800; font-size: 35px; font-family: \"Montserrat\";}"
+      ],
+      "settings": {
+        "custom_liquid": "<div class=\"title\">SMS AVMELDING<\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "c514786a-8824-4b10-b82c-ecc35d1eb0b3": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19760811966812__c514786a-8824-4b10-b82c-ecc35d1eb0b3-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Takk! Du har bidratt til fellesskapet <\/strong>❤️<br\/>SMS-lesere sørger for lavere priser, som ellers ville gått i lommene på Instagram og Google.<\/p><p><\/p><p><strong>Vi ønsker å gi noe tilbake til deg.<\/strong><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19760811966812__c514786a-8824-4b10-b82c-ecc35d1eb0b3-text-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 20
+      }
+    },
+    "f0bf2641-e591-4a2c-a507-a2ac6e815f0f": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "img {display: block; margin-left: auto; margin-right: auto; width: 100%; max-width: 800px; height: auto;}"
+      ],
+      "settings": {
+        "custom_liquid": "<a href=\"https:\/\/famme.no\/discount\/gx200\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0076\/6033\/9297\/files\/banner-mobile-gift-card-2a.jpg?v=1696501675\"> <\/img><\/a>",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "3e22501b-683b-46bf-9ea9-db5d10c5e10c": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"klaviyo-form-S7Cqs9\"><\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "fccf5209-db19-4562-9a09-57db17ed103f": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".title {color: ##8e8e8e; text-align: center; font-weight: 800; font-size: 35px; font-family: \"Montserrat\";}"
+      ],
+      "settings": {
+        "custom_liquid": "<div class=\"title\">Over 200.000 tilfredse kunder i Skandinavien<\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "63ffba0f-9253-46b9-84ec-0ab3f75db803": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "img {display: block; margin-left: auto; margin-right: auto; width: 100%; max-width: 800px; height: auto;}"
+      ],
+      "settings": {
+        "custom_liquid": "<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0076\/6033\/9297\/files\/banner-mobile-reviews-sms-page-2.jpg?v=1696846533\"> <\/img>",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "88525ca0-4df9-4482-8ca6-b6cad8155488": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/banner-facebook-no-2.jpg",
+        "image_m": "shopify:\/\/shop_images\/banner-mobile-facebook-no-2.jpg",
+        "image_url": "https:\/\/www.facebook.com\/groups\/fammeproduktutvikling",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "8199dca2-5d27-4465-9b5f-850aca96136a": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".title {color: ##8e8e8e; text-align: center; font-weight: 800; font-size: 35px; font-family: \"Montserrat\";}"
+      ],
+      "settings": {
+        "custom_liquid": "<div class=\"title\">Bestselgere<\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "dba02bbb-8dcd-4abd-8b47-32e8129d0b6c": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "bestsellers",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16b85b7b-8f7c-42cf-af69-70ffae586769",
+    "c514786a-8824-4b10-b82c-ecc35d1eb0b3",
+    "f0bf2641-e591-4a2c-a507-a2ac6e815f0f",
+    "3e22501b-683b-46bf-9ea9-db5d10c5e10c",
+    "fccf5209-db19-4562-9a09-57db17ed103f",
+    "63ffba0f-9253-46b9-84ec-0ab3f75db803",
+    "88525ca0-4df9-4482-8ca6-b6cad8155488",
+    "8199dca2-5d27-4465-9b5f-850aca96136a",
+    "dba02bbb-8dcd-4abd-8b47-32e8129d0b6c"
+  ]
+}
