@@ -4,11 +4,8 @@
       "type": "image-banner",
       "settings": {
         "image": "shopify:\/\/shop_images\/scrunch-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/scrunch-desktop_163d0ca3-d38d-49d9-9d40-d7f43e628efa.jpg",
-        "image_url": "",
         "image_overlay_opacity": 0,
         "image_height": "small",
-        "adapt_height_first_image": true,
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",

@@ -1,3 +1,5 @@
+/*reviews CSS*/
+.product-reviews__wrapper{border-block:1px solid #F1F1F1;margin-bottom:40px}.product-reviews__header{display:flex;flex-direction:column;padding-block:40px}.product-reviews__header-top{display:flex;justify-content:space-between}.product-reviews__header-bottom{display:flex;align-items:center;gap:4px;padding-top:12px;flex-wrap:wrap}.product-reviews__see-all-photos{margin-left:4px}.product-reviews__header-left{display:flex;flex-direction:column;gap:4px}.product-reviews__header-right{align-self:flex-end}.product-reviews__submit-review{border-radius:25px;background-color:#119da4;color:#fff;font-size:15px;letter-spacing:.1rem;padding:.5em 1em;cursor:pointer;display:flex;align-items:center;justify-content:center;text-align:center}.product-reviews__total-rating{color:#4e4e4ebf;font-size:48px;line-height:57.6px;display:flex;gap:8px}.product-reviews__review-count{color:#4e4e4ebf;line-height:25.6px}.product-reviews__list{position:relative}.product-reviews__view-more{display:flex;align-items:center;gap:4px;position:absolute;bottom:-36px;left:50%;transform:translate(-50%);font-size:16px;border:1px solid #F1F1F1;border-top:0;color:#4e4e4ebf;padding:.5em 1em;cursor:pointer;background-color:transparent}.product-reviews__view-more svg{width:12px}.product-reviews__review{border-top:1px solid #F1F1F1;padding-block:32px;display:flex;gap:48px}.is-hidden{display:none!important}.product-reviews__author-details{display:flex;flex-direction:column;flex:1;max-width:20%}.product-reviews__author,.product-reviews__verified{line-height:25.6px}.product-reviews__author{color:#4e4e4e}.product-reviews__verified{color:#4ebd9c;display:flex;align-items:center;gap:4px}.product-reviews__verified svg{width:24px;height:24px;fill:#4ebd9c}.product-reviews__review-main{flex:1}.product-reviews__review-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}.product-reviews__product-rating,.product-reviews__review-rating{display:flex;align-items:center}.product-reviews .icon__star{width:20px;height:20px}.icon__star--filled{fill:#ffbd58}.icon__star--unfilled{fill:#e5e5e5}.product-reviews__review-title{margin-top:0}.product-reviews__review-main p{line-height:1.8;color:#4e4e4ebf;margin-top:0}.product-reviews__review-main p:last-child{margin-bottom:0}.product-reviews__review-image{aspect-ratio:1 / 1;object-fit:cover;height:80px;width:80px;cursor:pointer}.product-reviews__gallery,.product-reviews__popup{position:fixed!important;top:50%;left:50%;transform:translate(-50%,-50%);z-index:24!important;background-color:#fff;min-width:50vw}.swiper-wrapper,.product-reviews__gallery{max-height:60vh!important;max-width:60vw!important}.product-reviews__gallery{min-width:initial!important;background-color:#000!important}.swiper-wrapper{width:fit-content!important}.product-reviews__gallery-image{object-fit:contain;max-height:60vh!important;max-width:60vw!important}.product-reviews__gallery-close,.product-reviews__popup-close{background-color:transparent;border:0;outline:0;padding:0;position:absolute;top:16px;right:24px;cursor:pointer}.product-reviews__gallery-close{z-index:25}.product-reviews__gallery-close svg,.product-reviews__popup-close svg{width:16px;height:16px}.product-reviews__gallery-close svg *{fill:#fff}.swiper-button-next,.swiper-button-prev{display:flex!important}.swiper-button-next:after,.swiper-button-prev:after{color:#fff!important;font-size:24px!important}.product-reviews__background-overlay{width:100%;height:100%;z-index:23;position:fixed;top:0;left:0;background-color:#0006;display:block!important}.product-reviews__background-overlay.is-hidden{display:none!important}@media (max-width: 850px){.product-reviews__gallery-image{max-height:80vh!important;max-width:80vw!important}.product-reviews__gallery,.product-reviews__popup{width:100%;max-width:80vw!important}}
 {% comment %}styling of the Klaviyo back in stock button / text {% endcomment %}
 a.klaviyo-bis-trigger {color: #4E4E4E; line-height: 47px;}
 
@@ -201,3 +203,45 @@ div.product-form__input>a {
 li.thumbnail-list__item.slider__slide:before {content: none;}
 li.thumbnail-list__item.slider__slide>button.thumbnail.global-media-settings {position: relative;}
 @media screen and (max-width: 749px){li.thumbnail-list__item.slider__slide {width: calc(25% - .6rem);}}
+/*mobile menu*/
+.js .menu-drawer__navigation ul.menu-drawer__menu li:not(:last-child){border-bottom: 1px solid rgba(var(--color-foreground),.75);}
+.js .menu-drawer__navigation ul.menu-drawer__menu {visibility: visible;}
+.js .menu-drawer__navigation ul.menu-drawer__menu .menu-drawer__close-button {display: none;}
+.js .menu-drawer__navigation ul.menu-drawer__menu details svg.icon.icon-arrow {
+  transform: rotate(90deg);
+  margin-top: -5px;
+  transition: .3s;
+}
+.js .menu-drawer__navigation ul.menu-drawer__menu details[open] svg.icon.icon-arrow {transform: rotate(270deg);}
+.js .menu-drawer__navigation ul.menu-drawer__menu details[open].menu-opening>.menu-drawer__submenu {
+  position: relative;
+  transition: none;
+  background-color: rgba(var(--color-foreground),.04);
+}
+.js .menu-drawer__navigation ul.menu-drawer__menu details[open].menu-opening > .menu-drawer__submenu a.menu-drawer__menu-item.link {padding-left: 4.5rem;}
+/*usp*/
+ul.product-bullets {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+}
+ul.product-bullets>li {width: 30%;}
+ul.product-bullets>li>p {margin-top: 0;}
+/*mobile banner height*/
+@media screen and (max-width: 749px) {
+  .mob--small:not(.banner--adapt) {min-height: 100vw;}
+  .mob--medium:not(.banner--adapt) {min-height: 56rem;}
+  .mob--large:not(.banner--adapt) {min-height: 72rem;}
+  .mob--small:not(.banner--adapt), .mob--medium:not(.banner--adapt), .mob--large:not(.banner--adapt) {position: relative;}
+  .mob--small:not(.banner--adapt)>a.banner__media.media, .mob--medium:not(.banner--adapt)>a.banner__media.media, .mob--large:not(.banner--adapt)>a.banner__media.media {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  product-modal.product-media-modal.media-modal img.global-media-settings {max-width: 150%;}
+}

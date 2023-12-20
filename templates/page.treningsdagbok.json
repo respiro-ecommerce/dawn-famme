@@ -5,11 +5,8 @@
       "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/lagertomming-banner-desktop-2.jpg",
-        "image_m": "shopify:\/\/shop_images\/lagertomming-banner-mobil.jpg",
-        "image_url": "https:\/\/famme.no\/collections\/must-haves",
         "image_overlay_opacity": 0,
         "image_height": "small",
-        "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",

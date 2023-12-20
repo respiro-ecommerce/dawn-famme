@@ -91,12 +91,8 @@
       "type": "image-banner",
       "settings": {
         "image": "shopify:\/\/shop_images\/banner-facebook-dk.jpg",
-        "image_m": "shopify:\/\/shop_images\/banner-mobile-facebook-dk_6e9ae8d0-4270-439d-a310-a85328c6c1d3.jpg",
-        "image_url": "https:\/\/www.facebook.com\/groups\/fammeproduktutvikling",
         "image_overlay_opacity": 0,
         "image_height": "medium",
-        "mob_height": "small",
-        "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",

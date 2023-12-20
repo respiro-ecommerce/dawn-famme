@@ -4,11 +4,8 @@
       "type": "image-banner",
       "settings": {
         "image": "shopify:\/\/shop_images\/casualwear-desktop.jpg",
-        "image_m": "shopify:\/\/shop_images\/casualwear-mobile.jpg",
-        "image_url": "",
         "image_overlay_opacity": 0,
         "image_height": "small",
-        "adapt_height_first_image": true,
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",

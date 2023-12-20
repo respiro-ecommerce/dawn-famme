@@ -3,11 +3,9 @@
     "cart-items": {
       "type": "main-cart-items",
       "settings": {
+        "color_scheme": "",
         "padding_top": 36,
-        "padding_bottom": 36,
-        "prods": [
-
-        ]
+        "padding_bottom": 36
       }
     },
     "cart-footer": {
@@ -29,6 +27,9 @@
         "buttons"
       ],
       "settings": {
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 40
       }
     },
     "8c7aed88-ded6-435f-8eb0-2b9b6354687d": {
@@ -40,10 +41,9 @@
         "description": "",
         "description_style": "body",
         "prods": [
-          "feel-free-thong-2",
-          "beige-3-pack-invisible-seamless-thong-1",
+          "like-nothing-thong-1",
           "like-nothing-thong-2",
-          "beige-endorphin-rx1-shoes"
+          "tennis-sokker"
         ],
         "products_to_show": 4,
         "columns_desktop": 4,

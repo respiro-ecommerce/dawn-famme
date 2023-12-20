@@ -11,13 +11,8 @@
     "50700886-0a8f-434f-86c7-4ee7712be3a0": {
       "type": "image-banner",
       "settings": {
-        "imageno": "shopify:\/\/shop_images\/banner-title-desktop-2_9b66d155-54f6-4b84-bd9b-516513772106.jpg",
-        "image_nom": "shopify:\/\/shop_images\/banner-title-mobile.jpg",
-        "image_url": "https:\/\/www.facebook.com\/groups\/fammeproduktutvikling",
         "image_overlay_opacity": 0,
         "image_height": "large",
-        "mob_height": "small",
-        "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",
@@ -55,13 +50,8 @@
     "2f0b40ae-d5b2-4c93-81c8-96d614d9a929": {
       "type": "image-banner",
       "settings": {
-        "imageno": "shopify:\/\/shop_images\/banner-facebook-bf-page-no_406444eb-36be-4dbb-9272-9cdfb9ce2403.jpg",
-        "image_nom": "shopify:\/\/shop_images\/banner-mobile-facebook-bf-page-no.jpg",
-        "image_url": "https:\/\/www.facebook.com\/groups\/fammeproduktutvikling",
         "image_overlay_opacity": 0,
         "image_height": "medium",
-        "mob_height": "small",
-        "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",

@@ -4,11 +4,8 @@
       "type": "image-banner",
       "settings": {
         "image": "{{ collection.metafields.custom.collection_banner_desktop.value }}",
-        "image_m": "{{ collection.metafields.custom.collection_banner_mobile.value }}",
-        "image_url": "",
         "image_overlay_opacity": 0,
         "image_height": "small",
-        "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",

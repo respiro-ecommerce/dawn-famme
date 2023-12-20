@@ -8,8 +8,8 @@
     "reviews": {
       "verified_buyer": "Verifisert kjøper",
       "view_more": "Se mer",
-      "submit_review": "Send inn en anmeldelse",
-      "see_all_photos": "Se alle kundebilder",
+      "submit_review": "Skriv en omtale",
+      "see_all_photos": "Se alle bilder",
       "based_on_count": "Verifisert Basert på {{ count }} anmeldelser",
       "total_reviews": "{{ count }} anmeldelser"
     }

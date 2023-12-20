@@ -1,0 +1,22 @@
+<tolstoy-stories data-tags="{% for tag in product.tags -%}{{ tag }},{%- endfor %}" class="tolstoy-stories" id="{{ section.settings.publishId }}_story" data-publish-id="{{ section.settings.publishId }}" data-product-id="{{ product.id }}">
+</tolstoy-stories>
+
+{% schema %}
+  {
+    "name": "Tolstoy stories",
+    "settings": [
+      {
+        "type": "text",
+        "id": "publishId",
+        "label": "Publish id",
+        "default": "publishId"
+      }
+    ],
+    "presets": [
+{
+"name": "Tolstoy stories",
+"category": "Tolstoy Sections"
+}
+]
+  }
+{% endschema %}
