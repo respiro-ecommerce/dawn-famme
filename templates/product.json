@@ -45,6 +45,8 @@
         "description": {
           "type": "description",
           "settings": {
+            "collapse": true,
+            "icon": "check_mark"
           }
         },
         "a6e7a80b-c57f-4cdc-aa6f-5e15e24e3747": {
