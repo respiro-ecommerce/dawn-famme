@@ -3,10 +3,8 @@
     "2bce6a44-7d65-451b-aef9-8248e1111b73": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/banner-desktop-back-to-the-gym-1EN.jpg",
-        "image_m": "shopify:\/\/shop_images\/banner-mobile-back-to-the-gym-9EN.jpg",
-        "imageno": "shopify:\/\/shop_images\/banner-desktop-back-to-the-gym-1NO.jpg",
-        "image_nom": "shopify:\/\/shop_images\/banner-mobile-back-to-the-gym-9NO.jpg",
+        "image": "shopify:\/\/shop_images\/banner-desktop-back-to-the-gym-1NO.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/banner-mobile-back-to-the-gym-9NO.jpg",
         "image_url": "shopify:\/\/collections\/bestsellers",
         "image2_url": "",
         "image_overlay_opacity": 0,
@@ -150,10 +148,8 @@
     "9b125fe3-645c-4e1d-ba53-95e8639d56aa": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/banner-desktop-flared-pants-EN.jpg",
-        "image_m": "shopify:\/\/shop_images\/banner-mobile-flared-pants-EN.jpg",
-        "imageno": "shopify:\/\/shop_images\/banner-desktop-flared-pants-NO.jpg",
-        "image_nom": "shopify:\/\/shop_images\/banner-mobile-flared-pants-NO.jpg",
+        "image": "shopify:\/\/shop_images\/banner-desktop-flared-pants-NO.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/banner-mobile-flared-pants-NO.jpg",
         "image_url": "\/products\/grey-flared-yoga-pants-1?_pos=6&_sid=85856e444&_ss=r",
         "image2_url": "",
         "image_overlay_opacity": 0,
@@ -276,10 +272,8 @@
 
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/banner-FB-desktopEN_1bc07b46-4d20-46b1-b18b-acc354dcfc44.jpg",
-        "image_m": "shopify:\/\/shop_images\/banner-FB-mobileEN.jpg",
-        "imageno": "shopify:\/\/shop_images\/banner-FB-desktopNO.jpg",
-        "image_nom": "shopify:\/\/shop_images\/banner-FB-mobileNO.jpg",
+        "image": "shopify:\/\/shop_images\/banner-FB-desktopNO.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/banner-FB-mobileNO.jpg",
         "image_url": "https:\/\/www.facebook.com\/groups\/fammeproduktutvikling",
         "image2_url": "",
         "image_overlay_opacity": 0,
@@ -305,7 +299,6 @@
   "order": [
     "2bce6a44-7d65-451b-aef9-8248e1111b73",
     "1663594925b05b51c0",
-    "1660654738369bfdd0",
     "16463038447a5cbd60",
     "9b125fe3-645c-4e1d-ba53-95e8639d56aa",
     "2cab4b76-9a8a-4a0c-9231-78b5c6b6de3a",
