@@ -34,16 +34,16 @@
     },
     "8c7aed88-ded6-435f-8eb0-2b9b6354687d": {
       "type": "upsell",
-      "disabled": true,
       "settings": {
-        "title": "You may also like",
+        "title": "Accessories",
         "heading_size": "h1",
         "description": "",
         "description_style": "body",
         "prods": [
+          "white-sky-knit-sokker",
           "like-nothing-thong-1",
-          "like-nothing-thong-2",
-          "tennis-sokker"
+          "tennis-sokker",
+          "seamless-truse"
         ],
         "products_to_show": 4,
         "columns_desktop": 4,

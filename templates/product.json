@@ -68,15 +68,6 @@
             "content": "<p>{{ product.metafields.my_fields.composition.value }}<\/p><p><\/p><p><\/p>",
             "page": ""
           }
-        },
-        "7ed2c020-6590-4a00-9d01-dbdd3590ee01": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Passform",
-            "icon": "check_mark",
-            "content": "<p>Modellhøyde: 170 cm<\/p><p>Modellstørrelse: Small<\/p>",
-            "page": ""
-          }
         }
       },
       "block_order": [
@@ -88,11 +79,11 @@
         "8191be2e-afac-4420-ac10-4a7f57c8c9ce",
         "description",
         "a6e7a80b-c57f-4cdc-aa6f-5e15e24e3747",
-        "576a2eb7-833f-45f5-a1ca-f507f429547d",
-        "7ed2c020-6590-4a00-9d01-dbdd3590ee01"
+        "576a2eb7-833f-45f5-a1ca-f507f429547d"
       ],
       "settings": {
         "enable_sticky_info": false,
+        "color_scheme": "",
         "media_size": "large",
         "constrain_to_viewport": false,
         "media_fit": "contain",
