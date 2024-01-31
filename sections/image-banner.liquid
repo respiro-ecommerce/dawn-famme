@@ -1,44 +1,31 @@
-{%- if section.settings.imageno != blank and request.locale.iso_code == 'nb' -%}
-  {%- assign img = section.settings.imageno -%}
-  {%- if section.settings.image_nom != blank -%}{%- assign imgm = section.settings.image_nom -%}{%- endif -%}
-{%- else -%}
-  {%- assign img = section.settings.image %}
-  {%- if section.settings.image_m != blank -%}{%- assign imgm = section.settings.image_m -%}{%- endif -%}
-{%- endif -%}
-{%- if section.settings.image2no != blank and request.locale.iso_code == 'nb' -%}
-  {%- assign img2 = section.settings.image2no -%}
-  {%- if section.settings.image2_nom != blank -%}{%- assign img2m = section.settings.image2_nom -%}{%- endif -%}
-{%- else -%}
-  {%- assign img2 = section.settings.image_2 -%}
-  {%- if section.settings.image_m != blank -%}{%- assign img2m = section.settings.image2_m -%}{%- endif -%}
-{%- endif -%}
 {{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
+
 {%- if section.settings.image_height == 'adapt' and section.settings.image != blank -%}
   {%- style -%}
     @media screen and (max-width: 749px) {
-    #Banner-{{ section.id }}::before,
-    #Banner-{{ section.id }} .banner__media::before,
-    #Banner-{{ section.id }}:not(.banner--mobile-bottom) .banner__content::before {
-    padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;
-    content: '';
-    display: block;
-    }
+      #Banner-{{ section.id }}::before,
+      #Banner-{{ section.id }} .banner__media::before,
+      #Banner-{{ section.id }}:not(.banner--mobile-bottom) .banner__content::before {
+        padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;
+        content: '';
+        display: block;
+      }
     }
 
     @media screen and (min-width: 750px) {
-    #Banner-{{ section.id }}::before,
-    #Banner-{{ section.id }} .banner__media::before {
-    padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;
-    content: '';
-    display: block;
-    }
+      #Banner-{{ section.id }}::before,
+      #Banner-{{ section.id }} .banner__media::before {
+        padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;
+        content: '';
+        display: block;
+      }
     }
   {%- endstyle -%}
 {%- endif -%}
 
 {%- style -%}
   #Banner-{{ section.id }}::after {
-  opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
+    opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
   }
 {%- endstyle -%}
 
@@ -65,77 +52,52 @@
 -%}
 
 <div
-        id="Banner-{{ section.id }}"
-        class="banner banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and img != blank and img2 != blank %} banner--stacked{% endif %}{% if section.settings.image_height == 'adapt' and img != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
+  id="Banner-{{ section.id }}"
+  class="banner banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.image_height == 'adapt' and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
 >
-  {%- if img != blank -%}
-    <a href="{{ section.settings.image_url }}" class="banner__media media{% if img == blank and img2 == blank %} placeholder{% endif %}{% if img2 != blank %} banner__media-half{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
-      {%- liquid
-        assign image_height = img.width | divided_by: img.aspect_ratio
-        if img2 != blank
-          assign image_class = 'banner__media-image-half'
-        endif
-        if img2 != blank and section.settings.stack_images_on_mobile
-          assign sizes = stacked_sizes
-        elsif img2 != blank
-          assign sizes = half_width
-        else
-          assign sizes = full_width
-        endif
-      -%}
-      <picture>
-        <source media="(max-width:750px)" sizes="{{ sizes }}"
-                {% if imgm != blank -%}
-                  {% assign m_height = imgm.width | divided_by: imgm.aspect_ratio %}{% assign m_class = image_class | append: ' mob' %}
-                  srcset="{{ imgm | image_url: width: 750 }}" width="{{ imgm.width }}" height="{{ m_height }}" class="{{ m_class }}"
-                {% else %}
-                  srcset="{{ img | image_url: width: 750 }}" width="{{ img.width }}" height="{{ image_height }}" class="{{ image_class }}"
-                {% endif %}
-        >
-        <img src="{{ img | image_url: width: 1920 }}" width="{{ img.width }}" height="{{ image_height }}" class="{{ image_class }}" sizes="{{ sizes }}" alt="{{ img.alt | escape }}" loading="lazy">
-      </picture>
-    </a>
-  {%- elsif img2 == blank -%}
-    <div class="banner__media media{% if img == blank and img2 == blank %} placeholder{% endif %}{% if img2 != blank %} banner__media-half{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+  {%- if section.settings.image != blank -%}
+    <div class="banner__media media{% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+        {%- liquid
+            assign image_height = section.settings.image.width | divided_by: section.settings.image.aspect_ratio
+            if section.settings.image_2 != blank
+                assign image_class = 'banner__media-image-half'
+            endif
+            if section.settings.image_2 != blank and section.settings.stack_images_on_mobile
+                assign sizes = stacked_sizes
+            elsif section.settings.image_2 != blank
+                assign sizes = half_width
+            else
+                assign sizes = full_width
+            endif
+        -%}
+        <a href="{{ section.settings.image_url }}">
+            {{
+            section.settings.image
+            | image_url: width: 3840
+            | image_tag:
+            width: section.settings.image.width,
+            height: image_height,
+            class: image_class,
+            sizes: sizes,
+            widths: widths,
+            fetchpriority: fetch_priority
+            }}
+        </a>
+    </div>
+  {%- elsif section.settings.image_2 == blank -%}
+    <div class="banner__media media{% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
       {{ 'hero-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
     </div>
   {%- endif -%}
-  {%- if img2 != blank -%}
-    <a href="{{ section.settings.image2_url }}" class="banner__media media{% if img != blank %} banner__media-half{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
-      {%- liquid
-        assign image_height_2 = img2.width | divided_by: img2.aspect_ratio
-        if img != blank
-          assign image_class_2 = 'banner__media-image-half'
-        endif
-        if img != blank and section.settings.stack_images_on_mobile
-          assign sizes = stacked_sizes
-        elsif img2 != blank
-          assign sizes = half_width
-        else
-          assign sizes = full_width
-        endif
-      -%}
-      <picture>
-        <source media="(max-width:750px)" sizes="{{ sizes }}"
-                {% if img2m != blank -%}
-                  {% assign m2_height = img2m.width | divided_by: img2m.aspect_ratio %}{% assign m_class_2 = image_class_2 | append: ' mob' %}
-                  srcset="{{ img2m | image_url: width: 750 }}" width="{{ img2m.width }}" height="{{ m2_height }}" class="{{ m_class_2 }}"
-                {% else %}
-                  srcset="{{ img2 | image_url: width: 750 }}" width="{{ img2.width }}" height="{{ image_height_2 }}" class="{{ image_class_2 }}"
-                {% endif %}
-        >
-        <img src="{{ img2 | image_url: width: 1920 }}" width="{{ img2.width }}" height="{{ image_height_2 }}" class="{{ image_class_2 }}" sizes="{{ sizes }}" alt="{{ img2.alt | escape }}" loading="lazy">
-      </picture>
-    </a>
-  {%- endif -%}
+
   <div class="banner__content banner__content--{{ section.settings.desktop_content_position }} page-width{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
     <div class="banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient">
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
             <h2
-                    class="banner__heading inline-richtext {{ block.settings.heading_size }}"
-                    {{ block.shopify_attributes }}
+              class="banner__heading inline-richtext {{ block.settings.heading_size }}"
+              {{ block.shopify_attributes }}
             >
               {{ block.settings.heading }}
             </h2>
@@ -145,29 +107,29 @@
             </div>
           {%- when 'buttons' -%}
             <div
-                    class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}"
-                    {{ block.shopify_attributes }}
+              class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}"
+              {{ block.shopify_attributes }}
             >
               {%- if block.settings.button_label_1 != blank -%}
                 <a
-                        {% if block.settings.button_link_1 == blank %}
-                          role="link" aria-disabled="true"
-                        {% else %}
-                          href="{{ block.settings.button_link_1 }}"
-                        {% endif %}
-                        class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}"
+                  {% if block.settings.button_link_1 == blank %}
+                    role="link" aria-disabled="true"
+                  {% else %}
+                    href="{{ block.settings.button_link_1 }}"
+                  {% endif %}
+                  class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}"
                 >
                   {{- block.settings.button_label_1 | escape -}}
                 </a>
               {%- endif -%}
               {%- if block.settings.button_label_2 != blank -%}
                 <a
-                        {% if block.settings.button_link_2 == blank %}
-                          role="link" aria-disabled="true"
-                        {% else %}
-                          href="{{ block.settings.button_link_2 }}"
-                        {% endif %}
-                        class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}"
+                  {% if block.settings.button_link_2 == blank %}
+                    role="link" aria-disabled="true"
+                  {% else %}
+                    href="{{ block.settings.button_link_2 }}"
+                  {% endif %}
+                  class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}"
                 >
                   {{- block.settings.button_label_2 | escape -}}
                 </a>
@@ -191,52 +153,22 @@
     {
       "type": "image_picker",
       "id": "image",
-      "label": "t:sections.image-banner.settings.image.label"
+      "label": "Desktop image"
     },
     {
       "type": "image_picker",
-      "id": "image_m",
-      "label": "First image mobile"
-    },
-    {
-      "type": "image_picker",
-      "id": "imageno",
-      "label": "First image Norway"
-    },
-    {
-      "type": "image_picker",
-      "id": "image_nom",
-      "label": "First image mobile Norway"
+      "id": "image_mobile",
+      "label": "Mobile image"
     },
     {
       "type": "url",
       "id": "image_url",
-      "label": "Image 1 link"
+      "label": "Image link"
     },
     {
       "type": "image_picker",
       "id": "image_2",
       "label": "t:sections.image-banner.settings.image_2.label"
-    },
-    {
-      "type": "image_picker",
-      "id": "image2_m",
-      "label": "Second image mobile"
-    },
-    {
-      "type": "image_picker",
-      "id": "image2no",
-      "label": "Second image Norway"
-    },
-    {
-      "type": "image_picker",
-      "id": "image2_nom",
-      "label": "Second image mobile Norway"
-    },
-    {
-      "type": "url",
-      "id": "image2_url",
-      "label": "Image 2 link"
     },
     {
       "type": "range",
@@ -347,7 +279,7 @@
       "type": "color_scheme",
       "id": "color_scheme",
       "label": "t:sections.all.colors.label",
-      "default": "background-1"
+      "default": "scheme-1"
     },
     {
       "type": "header",
