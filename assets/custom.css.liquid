@@ -1,15 +1,4 @@
-/*reviews CSS*/
-.product-reviews__wrapper{border-block:1px solid #F1F1F1;margin-bottom:40px}.product-reviews__header{display:flex;flex-direction:column;padding-block:40px}.product-reviews__header-top{display:flex;justify-content:space-between}.product-reviews__header-bottom{display:flex;align-items:center;gap:4px;padding-top:12px;flex-wrap:wrap}.product-reviews__see-all-photos{margin-left:4px}.product-reviews__header-left{display:flex;flex-direction:column;gap:4px}.product-reviews__header-right{align-self:flex-end}.product-reviews__submit-review{border-radius:25px;background-color:#119da4;color:#fff;font-size:15px;letter-spacing:.1rem;padding:.5em 1em;cursor:pointer;display:flex;align-items:center;justify-content:center;text-align:center}.product-reviews__total-rating{color:#4e4e4ebf;font-size:48px;line-height:57.6px;display:flex;gap:8px}.product-reviews__review-count{color:#4e4e4ebf;line-height:25.6px}.product-reviews__list{position:relative}.product-reviews__view-more{display:flex;align-items:center;gap:4px;position:absolute;bottom:-36px;left:50%;transform:translate(-50%);font-size:16px;border:1px solid #F1F1F1;border-top:0;color:#4e4e4ebf;padding:.5em 1em;cursor:pointer;background-color:transparent}.product-reviews__view-more svg{width:12px}.product-reviews__review{border-top:1px solid #F1F1F1;padding-block:32px;display:flex;gap:48px}.is-hidden{display:none!important}.product-reviews__author-details{display:flex;flex-direction:column;flex:1;max-width:20%}.product-reviews__author,.product-reviews__verified{line-height:25.6px}.product-reviews__author{color:#4e4e4e}.product-reviews__verified{color:#4ebd9c;display:flex;align-items:center;gap:4px}.product-reviews__verified svg{width:24px;height:24px;fill:#4ebd9c}.product-reviews__review-main{flex:1}.product-reviews__review-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}.product-reviews__product-rating,.product-reviews__review-rating{display:flex;align-items:center}.product-reviews .icon__star{width:20px;height:20px}.icon__star--filled{fill:#ffbd58}.icon__star--unfilled{fill:#e5e5e5}.product-reviews__review-title{margin-top:0}.product-reviews__review-main p{line-height:1.8;color:#4e4e4ebf;margin-top:0}.product-reviews__review-main p:last-child{margin-bottom:0}.product-reviews__review-image{aspect-ratio:1 / 1;object-fit:cover;height:80px;width:80px;cursor:pointer}.product-reviews__gallery,.product-reviews__popup{position:fixed!important;top:50%;left:50%;transform:translate(-50%,-50%);z-index:24!important;background-color:#fff;min-width:50vw}.swiper-wrapper,.product-reviews__gallery{max-height:60vh!important;max-width:60vw!important}.product-reviews__gallery{min-width:initial!important;background-color:#000!important}.swiper-wrapper{width:fit-content!important}.product-reviews__gallery-image{object-fit:contain;max-height:60vh!important;max-width:60vw!important}.product-reviews__gallery-close,.product-reviews__popup-close{background-color:transparent;border:0;outline:0;padding:0;position:absolute;top:16px;right:24px;cursor:pointer}.product-reviews__gallery-close{z-index:25}.product-reviews__gallery-close svg,.product-reviews__popup-close svg{width:16px;height:16px}.product-reviews__gallery-close svg *{fill:#fff}.swiper-button-next,.swiper-button-prev{display:flex!important}.swiper-button-next:after,.swiper-button-prev:after{color:#fff!important;font-size:24px!important}.product-reviews__background-overlay{width:100%;height:100%;z-index:23;position:fixed;top:0;left:0;background-color:#0006;display:block!important}.product-reviews__background-overlay.is-hidden{display:none!important}@media (max-width: 850px){.product-reviews__gallery-image{max-height:80vh!important;max-width:80vw!important}.product-reviews__gallery,.product-reviews__popup{width:100%;max-width:80vw!important}}
-{% comment %}styling of the Klaviyo back in stock button / text {% endcomment %}
-a.klaviyo-bis-trigger {color: #4E4E4E; line-height: 47px;}
-
-{% comment %}support for mobile AND desktop image upload for the image banner section{% endcomment %}
-@media screen and (min-width: 750px) {a.banner__media.media>img.mob, video.js-youtube.mob {display: none;}}
-@media screen and (max-width: 749px) {a.banner__media.media>img.dt, video.js-youtube.dt {display: none;}
-  deferred-media.video-section__media.deferred-media {padding: 0;}
-  deferred-media.video-section__media.deferred-media * {position: static!important;}
-}
-
+/*
 {% comment %}Used for showing variant images instead of buttons for choosing color variant{% endcomment %}
 .product-form__input input[type='radio'] + label.color {
   padding: 0;
@@ -21,22 +10,9 @@ a.klaviyo-bis-trigger {color: #4E4E4E; line-height: 47px;}
   pointer-events: none;
 }
 
-{% comment %} Styling for the btns sections that is used for getting "button links" {% endcomment %}
-section.shopify-section.spaced-section.btns, section.shopify-section.spaced-section.btns>div.page-width {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-}
-section.shopify-section.spaced-section.btns a {
-  margin: 0 5px 10px;
-  text-decoration: none;
-  text-align: center;
-}
+/*
 
-a.banner__media.media {
-  z-index: 2;
-}
+/*
 button.product-form__submit.button--full-width {
   max-width: 550px;
   transition: .5s;
@@ -52,23 +28,29 @@ button.product-form__submit.button--full-width {
     width: calc(66% - 1rem / 2);
   }
 }
+
+ */
+
 {% comment %}Hide color options for disabled colors {% endcomment %}
+/*
 .product-form__input input[type="radio"][name="Color"].disabled+label,
 .product-form__input input[type="radio"][name="Color"]:disabled+label {display: none;}
 .button {border-radius: 25px;}
 .button:after {inset: unset;}
-section.spaced-section--full-width+section.spaced-section--full-width {margin-top: {{ settings.bannerspace }}px;}
-/*buttons homepage section spacing*/
-.spaced-section {margin: 5rem auto 2rem;}
-/*collection swatches layout fix*/
-ul.product-grid div.card-wrapper {height: auto;}
 
+
+ */
+
+/*collection swatches layout fix*/
+/*
+ul.product-grid div.card-wrapper {height: auto;}
 div.card__information {padding-bottom: .5em;}
-/*banner links and header submenus*/
-div.banner__content {
-  z-index: 1;
-}
+
+
+ */
+
 /*sold out styles fix*/
+/*
 .product-form__input input[type="radio"]:disabled + label, .product-form__input input[type="radio"].disabled + label {
   border-color: rgba(78, 78, 78, 0.4);
   color: rgba(78, 78, 78, 0.4);
@@ -77,8 +59,14 @@ div.banner__content {
 .product-form__input input[type="radio"]:disabled:checked + label, .product-form__input input[type="radio"].disabled:checked + label {
   color: #bfbfbf;
 }
+ */
+
+/*
 img.cart-item__image {object-fit: contain;}
+ */
+
 /* buttons' center dots fix */
+/*
 .button:after {content: none!important;}
 div.pagination-wrapper.more {text-align: center;}
 div.pagination-wrapper.more>a {pointer-events: none;}
@@ -86,6 +74,14 @@ button.product-form__submit.button.button--full-width.button--primary[disabled] 
   opacity: .5;
   pointer-events: none;
 }
+
+ */
+
+
+
+/*
+{% comment %}styling of the Klaviyo back in stock button / text {% endcomment %}
+a.klaviyo-bis-trigger {color: #4E4E4E; line-height: 47px;}
 a.btn.btn--full.btn--large.klaviyo-bis-trigger, p.rd {
   display: inline-flex;
   justify-content: center;
@@ -106,6 +102,10 @@ a.btn.btn--full.btn--large.klaviyo-bis-trigger, p.rd {
   max-width: 44rem;
   width: 100%!important;
 }
+
+*/
+
+/*
 p.rd {
   position: absolute;
   bottom: 0;
@@ -116,6 +116,10 @@ p.rd {
   min-height: unset;
   padding: 7px 20px;
 }
+
+ */
+
+/*
 {% comment %} .banner--large:not(.banner--adapt) {height: 100vh;} {% endcomment %}
 .multicolumn li.multicolumn-list__item.grid__item.slider__slide {margin-left: 0;}
 .background-none .multicolumn-card__image-wrapper {margin: 0;}
@@ -126,7 +130,10 @@ p.rd {
   width: 100%;
   max-height: 100%;
 }
+*/
+
 /*Fake swatches*/
+/*
 label.color.checked, a.color {
   border: var(--variant-pills-border-width) solid transparent;
   background-color: rgb(var(--color-background));
@@ -161,21 +168,13 @@ label.color.checked>img, a.color>img {max-width: 59px;}
 label.color.checked {
   background-color: rgb(var(--color-foreground));
   color: rgb(var(--color-background));
-}
-/*Banner responsive image*/
-a.banner__media.media>picture>img {
-  display: block;
-  max-width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  object-position: center center;
-  transition: opacity .4s cubic-bezier(.25,.46,.45,.94);
-}
+}*/
+
+
+
+
 /*grid products' sizes*/
+/*
 div.product-form__input>a {
   border: var(--variant-pills-border-width) solid rgba(var(--color-foreground), var(--variant-pills-border-opacity));
   border-radius: var(--variant-pills-radius);
@@ -188,22 +187,36 @@ div.product-form__input>a {
   text-decoration: none;
   font-size: 14px;
 }
+*/
 
-/* custom color for outlet category */
+
+/* custom color for outlet category - SEEMS unused
 .list-menu > li:nth-child(3) > a > span {
   color: rgb(238, 75, 43);
   font-weight: bold;
 }
+*/
+
+
 /*iOS bug fix*/
+/*
 .multicolumn-list__item.center .media--adapt, .multicolumn-list__item .media--adapt .multicolumn-card__image {
   max-width: 100%;
   height: auto;
 }
+/*
+
+
 /*product thumbs full height*/
+/*
 li.thumbnail-list__item.slider__slide:before {content: none;}
 li.thumbnail-list__item.slider__slide>button.thumbnail.global-media-settings {position: relative;}
 @media screen and (max-width: 749px){li.thumbnail-list__item.slider__slide {width: calc(25% - .6rem);}}
+/*
+
+ */
 /*mobile menu*/
+/*
 .js .menu-drawer__navigation ul.menu-drawer__menu li:not(:last-child){border-bottom: 1px solid rgba(var(--color-foreground),.75);}
 .js .menu-drawer__navigation ul.menu-drawer__menu {visibility: visible;}
 .js .menu-drawer__navigation ul.menu-drawer__menu .menu-drawer__close-button {display: none;}
@@ -219,29 +232,5 @@ li.thumbnail-list__item.slider__slide>button.thumbnail.global-media-settings {po
   background-color: rgba(var(--color-foreground),.04);
 }
 .js .menu-drawer__navigation ul.menu-drawer__menu details[open].menu-opening > .menu-drawer__submenu a.menu-drawer__menu-item.link {padding-left: 4.5rem;}
-/*usp*/
-ul.product-bullets {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding-left: 0;
-  list-style: none;
-  text-align: center;
-}
-ul.product-bullets>li {width: 30%;}
-ul.product-bullets>li>p {margin-top: 0;}
-/*mobile banner height*/
-@media screen and (max-width: 749px) {
-  .mob--small:not(.banner--adapt) {min-height: 100vw;}
-  .mob--medium:not(.banner--adapt) {min-height: 56rem;}
-  .mob--large:not(.banner--adapt) {min-height: 72rem;}
-  .mob--small:not(.banner--adapt), .mob--medium:not(.banner--adapt), .mob--large:not(.banner--adapt) {position: relative;}
-  .mob--small:not(.banner--adapt)>a.banner__media.media, .mob--medium:not(.banner--adapt)>a.banner__media.media, .mob--large:not(.banner--adapt)>a.banner__media.media {
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-  }
-  product-modal.product-media-modal.media-modal img.global-media-settings {max-width: 150%;}
-}
+
+/*
