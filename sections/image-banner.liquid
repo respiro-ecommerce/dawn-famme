@@ -27,6 +27,18 @@
   #Banner-{{ section.id }}::after {
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
   }
+
+@media screen and (min-width: 750px) {
+    #Banner-{{ section.id }} #mobile-image {
+    display: none;
+    }
+}
+
+@media screen and (max-width: 749px) {
+    #Banner-{{ section.id }} #desktop-image {
+    display: none;
+    }
+}
 {%- endstyle -%}
 
 {%- liquid
@@ -72,26 +84,31 @@
         -%}
         <a href="{{ section.settings.image_url }}">
 
-          <picture>
-            {%- if section.settings.image_mobile != blank -%}
-              <source srcset="{{ section.settings.image_mobile | image_url: width: 750 }}" media="(max-width: 749px)">
-            {%- endif -%}
-            {%- if section.settings.image != blank -%}
-              <source srcset="{{ section.settings.image | img_url: '3840x' }}" media="(min-width: 750px)">
-            {%- endif -%}
+          {{
+          section.settings.image
+          | image_url: width: 3840
+          | image_tag:
+          width: section.settings.image.width,
+          height: image_height,
+          class: image_class,
+          sizes: sizes,
+          widths: widths,
+          id: 'desktop-image',
+          fetchpriority: fetch_priority
+          }}
 
-            {{
-            section.settings.image
-            | image_url: width: 3840
-            | image_tag:
-            width: section.settings.image.width,
-            height: image_height,
-            class: image_class,
-            sizes: sizes,
-            widths: widths,
-            fetchpriority: fetch_priority
-            }}
-          </picture>
+          {{
+          section.settings.image_mobile
+          | image_url: width: 3840
+          | image_tag:
+          width: section.settings.image_mobile.width,
+          height: image_height,
+          class: image_class,
+          sizes: sizes,
+          widths: widths,
+          id: 'mobile-image',
+          fetchpriority: fetch_priority
+          }}
 
         </a>
     </div>
