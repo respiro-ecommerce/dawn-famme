@@ -93,6 +93,18 @@
             }}
           </picture>
 
+          <picture>
+            <source media="(max-width:750px)" sizes="{{ sizes }}"
+                    {% if imgm != blank -%}
+                      {% assign m_height = section.settings.image_mobile.width | divided_by: section.settings.image_mobile.aspect_ratio %}{% assign m_class = image_class | append: ' mob' %}
+                      srcset="{{ section.settings.image_mobile | image_url: width: 750 }}" width="{{ section.settings.image_mobile.width }}" height="{{ m_height }}" class="{{ m_class }}"
+                    {% else %}
+                      srcset="{{ section.settings.image | image_url: width: 750 }}" width="{{ section.settings.image.width }}" height="{{ image_height }}" class="{{ image_class }}"
+                    {% endif %}
+            >
+            <img src="{{ section.settings.image | image_url: width: 1920 }}" width="{{ section.settings.image.width }}" height="{{ image_height }}" class="{{ image_class }}" sizes="{{ sizes }}" alt="{{ section.settings.image.alt | escape }}">
+          </picture>
+
         </a>
     </div>
   {%- elsif section.settings.image_2 == blank -%}
