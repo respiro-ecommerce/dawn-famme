@@ -7,3 +7,4 @@
 * Endless scroll / infinite scroll, main-collection-product-grid.liquid
 * color swatches on product page
 * Collection swatches (available sizes)
+* Custom review app on product page
