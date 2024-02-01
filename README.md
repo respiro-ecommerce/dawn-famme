@@ -10,3 +10,4 @@
 * Custom review app on product page
 * Multi-column usp section (new section)
 * "spaced-button" section
+* custom translation keys / texts in nb.json, da.json etc. all the keys are under "custom" key
