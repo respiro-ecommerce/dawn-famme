@@ -6,7 +6,6 @@
         "image": "shopify:\/\/shop_images\/banner-desktop-back-to-the-gym-1NO.jpg",
         "image_mobile": "shopify:\/\/shop_images\/banner-mobile-back-to-the-gym-9NO.jpg",
         "image_url": "shopify:\/\/collections\/bestsellers",
-        "image2_url": "",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "middle-center",
@@ -151,7 +150,6 @@
         "image": "shopify:\/\/shop_images\/banner-desktop-flared-pants-NO.jpg",
         "image_mobile": "shopify:\/\/shop_images\/banner-mobile-flared-pants-NO.jpg",
         "image_url": "\/products\/grey-flared-yoga-pants-1?_pos=6&_sid=85856e444&_ss=r",
-        "image2_url": "",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "middle-center",
@@ -199,7 +197,6 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/tights-1a.jpg",
-            "url": "https:\/\/famme.no\/collections\/treningstights",
             "title": "",
             "text": "",
             "link_label": "",
@@ -210,7 +207,6 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/langermede-2.jpg",
-            "url": "\/collections\/long-sleeve-tops",
             "title": "",
             "text": "",
             "link_label": "",
@@ -221,7 +217,6 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/sko-1a.jpg",
-            "url": "shopify:\/\/collections\/shoes",
             "title": "",
             "text": "",
             "link_label": "",
@@ -232,7 +227,6 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/sports-bra-1a.jpg",
-            "url": "shopify:\/\/collections\/sports-bh",
             "title": "",
             "text": "",
             "link_label": "",
@@ -275,7 +269,6 @@
         "image": "shopify:\/\/shop_images\/banner-FB-desktopNO.jpg",
         "image_mobile": "shopify:\/\/shop_images\/banner-FB-mobileNO.jpg",
         "image_url": "https:\/\/www.facebook.com\/groups\/fammeproduktutvikling",
-        "image2_url": "",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
