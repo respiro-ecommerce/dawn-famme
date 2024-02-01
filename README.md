@@ -6,4 +6,4 @@
 * theme.liquid: custom.css import, klaviyo js, product review js
 * Endless scroll / infinite scroll, main-collection-product-grid.liquid
 * color swatches on product page
-* Collection swatches
+* Collection swatches (available sizes)
