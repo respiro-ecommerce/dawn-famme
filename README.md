@@ -9,5 +9,4 @@
 * Collection swatches (available sizes)
 * Custom review app on product page
 * Multi-column usp section (new section)
-* "spaced-button" section 
-* 
+* "spaced-button" section
