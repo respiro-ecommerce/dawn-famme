@@ -35,15 +35,16 @@
     "8c7aed88-ded6-435f-8eb0-2b9b6354687d": {
       "type": "upsell",
       "settings": {
-        "title": "Accessories",
+        "title": "Andre kjøpte også",
         "heading_size": "h1",
         "description": "",
         "description_style": "body",
         "prods": [
+          "white-performance-shaker",
           "white-sky-knit-sokker",
+          "seamless-truse",
           "like-nothing-thong-1",
-          "tennis-sokker",
-          "seamless-truse"
+          "tennis-sokker"
         ],
         "products_to_show": 4,
         "columns_desktop": 4,

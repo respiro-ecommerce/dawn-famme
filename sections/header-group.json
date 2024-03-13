@@ -8,7 +8,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "100 Dager Retur | Klarna & Vipps",
+            "text": "Gratis bytte | Klarna & Vipps | Fri frakt over 699",
             "link": ""
           }
         }
@@ -38,6 +38,7 @@
         "sticky_header_type": "always",
         "show_line_separator": true,
         "color_scheme": "background-1",
+        "menu_color_scheme": "",
         "enable_country_selector": false,
         "enable_language_selector": false,
         "mobile_logo_position": "center",

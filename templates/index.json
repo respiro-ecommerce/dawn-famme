@@ -3,9 +3,9 @@
     "2bce6a44-7d65-451b-aef9-8248e1111b73": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/banner-desktop-back-to-the-gym-1NO.jpg",
-        "image_mobile": "shopify:\/\/shop_images\/banner-mobile-back-to-the-gym-9NO.jpg",
-        "image_url": "shopify:\/\/collections\/bestsellers",
+        "image": "shopify:\/\/shop_images\/banner-desktop-oversized-1NO.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/banner-mobile-oversized-1NO.jpg",
+        "image_url": "shopify:\/\/collections\/new-releases",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "middle-center",
@@ -16,37 +16,6 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
-      }
-    },
-    "1663594925b05b51c0": {
-      "type": "featured-collection",
-      "custom_css": [
-
-      ],
-      "settings": {
-        "title": "Bestselgere",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "bestsellers",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "link",
-        "enable_desktop_slider": true,
-        "color_scheme": "background-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 48,
-        "padding_bottom": 16
       }
     },
     "1660654738369bfdd0": {
@@ -114,21 +83,20 @@
     },
     "16463038447a5cbd60": {
       "type": "featured-collection",
-      "disabled": true,
       "custom_css": [
 
       ],
       "settings": {
-        "title": "Bestselgere",
+        "title": "Nyheter",
         "heading_size": "h2",
-        "description": "<p>De mest populære produktene akkurat nå!<\/p>",
+        "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "bestsellers",
+        "collection": "new-releases",
         "products_to_show": 8,
         "columns_desktop": 4,
         "full_width": false,
-        "show_view_all": true,
+        "show_view_all": false,
         "view_all_style": "link",
         "enable_desktop_slider": true,
         "color_scheme": "background-1",
@@ -140,16 +108,16 @@
         "enable_quick_add": false,
         "columns_mobile": "2",
         "swipe_on_mobile": true,
-        "padding_top": 20,
+        "padding_top": 36,
         "padding_bottom": 52
       }
     },
     "9b125fe3-645c-4e1d-ba53-95e8639d56aa": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/banner-desktop-flared-pants-NO.jpg",
-        "image_mobile": "shopify:\/\/shop_images\/banner-mobile-flared-pants-NO.jpg",
-        "image_url": "\/products\/grey-flared-yoga-pants-1?_pos=6&_sid=85856e444&_ss=r",
+        "image": "shopify:\/\/shop_images\/banner-desktop-softy-restock-1NO.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/banner-mobile-softy-restock-2NO.jpg",
+        "image_url": "shopify:\/\/collections\/softy",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "middle-center",
@@ -162,7 +130,7 @@
         "show_text_below": true
       }
     },
-    "2cab4b76-9a8a-4a0c-9231-78b5c6b6de3a": {
+    "featured_collection_9XMyp9": {
       "type": "featured-collection",
       "settings": {
         "title": "",
@@ -170,13 +138,13 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "slengbukser",
+        "collection": "softy",
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
         "show_view_all": false,
         "view_all_style": "solid",
-        "enable_desktop_slider": true,
+        "enable_desktop_slider": false,
         "color_scheme": "",
         "image_ratio": "adapt",
         "image_shape": "default",
@@ -266,8 +234,8 @@
 
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/banner-FB-desktopNO.jpg",
-        "image_mobile": "shopify:\/\/shop_images\/banner-FB-mobileNO.jpg",
+        "image": "shopify:\/\/shop_images\/banner-FB-desktop-NO.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/banner-FB-mobile-NO.jpg",
         "image_url": "https:\/\/www.facebook.com\/groups\/fammeproduktutvikling",
         "image_overlay_opacity": 0,
         "image_height": "medium",
@@ -291,11 +259,10 @@
   },
   "order": [
     "2bce6a44-7d65-451b-aef9-8248e1111b73",
-    "1663594925b05b51c0",
     "1660654738369bfdd0",
     "16463038447a5cbd60",
     "9b125fe3-645c-4e1d-ba53-95e8639d56aa",
-    "2cab4b76-9a8a-4a0c-9231-78b5c6b6de3a",
+    "featured_collection_9XMyp9",
     "166057046086c544fd",
     "162567415706bdadcd",
     "16602879286b7eef4a"

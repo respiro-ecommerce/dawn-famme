@@ -11,7 +11,7 @@
     "16b85b7b-8f7c-42cf-af69-70ffae586769": {
       "type": "custom-liquid",
       "custom_css": [
-        ".title {color: ##8e8e8e; text-align: center; font-weight: 800; font-size: 35px; font-family: \"Montserrat\";}"
+        ".title {color: ##8e8e8e; text-align: center; font-weight: 800; font-size: 25px; line-height: 30px; font-family: \"Montserrat\"; margin-top: 25px; margin-bottom: 20px;}"
       ],
       "settings": {
         "custom_liquid": "<div class=\"title\">SMS AVMELDING<\/div>",
@@ -26,7 +26,7 @@
         "template--19760811966812__c514786a-8824-4b10-b82c-ecc35d1eb0b3-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Takk! Du har bidratt til fellesskapet <\/strong>❤️<br\/>SMS-lesere sørger for lavere priser, som ellers ville gått i lommene på Instagram og Google.<\/p><p><\/p><p><strong>Vi ønsker å gi noe tilbake til deg.<\/strong><\/p>"
+            "text": "<p><strong>Vi ønsker å gi noe tilbake til deg.<\/strong><br\/>Takk for at du har bidratt til fellesskapet.<br\/>SMS-lesere sørger for lavere priser, som ellers ville gått i lommene på Instagram og Google<\/p>"
           }
         }
       },
@@ -42,16 +42,22 @@
         "padding_bottom": 20
       }
     },
-    "f0bf2641-e591-4a2c-a507-a2ac6e815f0f": {
-      "type": "custom-liquid",
-      "custom_css": [
-        "img {display: block; margin-left: auto; margin-right: auto; width: 100%; max-width: 800px; height: auto;}"
-      ],
+    "image_banner_CQ94he": {
+      "type": "image-banner",
       "settings": {
-        "custom_liquid": "<a href=\"https:\/\/famme.no\/discount\/gx200\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0076\/6033\/9297\/files\/banner-mobile-gift-card-2a.jpg?v=1696501675\"> <\/img><\/a>",
-        "color_scheme": "background-1",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "image": "shopify:\/\/shop_images\/banner-mobile-gift-card-NO-desktop_5a3c8f61-d318-40c6-8acd-af1aa552cb26.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/banner-mobile-gift-card-NO-mobile_9fb22a76-aedb-4368-a6ee-609cc311e99a.jpg",
+        "image_url": "",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
       }
     },
     "3e22501b-683b-46bf-9ea9-db5d10c5e10c": {
@@ -66,10 +72,11 @@
     "fccf5209-db19-4562-9a09-57db17ed103f": {
       "type": "custom-liquid",
       "custom_css": [
-        ".title {color: ##8e8e8e; text-align: center; font-weight: 800; font-size: 35px; font-family: \"Montserrat\";}"
+        ".title {color: ##8e8e8e; text-align: center; font-weight: 600; font-size: 25px; line-height: 30px; font-family: \"Montserrat\"; margin: 1rem 0 1rem;}",
+        "img {display: block; margin-left: auto; margin-right: auto; max-width: 150px; margin-bottom: 20px;}"
       ],
       "settings": {
-        "custom_liquid": "<div class=\"title\">Over 200.000 tilfredse kunder i Skandinavien<\/div>",
+        "custom_liquid": "<div class=\"title\">200,000+ fornøyde kunder<\/div>\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0076\/6033\/9297\/files\/5-stars.png?v=1709132064\"<\/img>",
         "color_scheme": "background-1",
         "padding_top": 0,
         "padding_bottom": 0
@@ -90,13 +97,16 @@
     "88525ca0-4df9-4482-8ca6-b6cad8155488": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/banner-facebook-no-2.jpg",
+        "image": "shopify:\/\/shop_images\/banner-FB-desktopNO.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/banner-FB-mobileNO.jpg",
+        "image_url": "",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",
         "color_scheme": "background-1",
+        "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
@@ -105,7 +115,7 @@
     "8199dca2-5d27-4465-9b5f-850aca96136a": {
       "type": "custom-liquid",
       "custom_css": [
-        ".title {color: ##8e8e8e; text-align: center; font-weight: 800; font-size: 35px; font-family: \"Montserrat\";}"
+        ".title {color: ##8e8e8e; text-align: center; font-weight: 600; font-size: 25px; line-height: 30px; font-family: \"Montserrat\"; margin-top: 25px; margin-bottom: 20px;}"
       ],
       "settings": {
         "custom_liquid": "<div class=\"title\">Bestselgere<\/div>",
@@ -147,7 +157,7 @@
     "main",
     "16b85b7b-8f7c-42cf-af69-70ffae586769",
     "c514786a-8824-4b10-b82c-ecc35d1eb0b3",
-    "f0bf2641-e591-4a2c-a507-a2ac6e815f0f",
+    "image_banner_CQ94he",
     "3e22501b-683b-46bf-9ea9-db5d10c5e10c",
     "fccf5209-db19-4562-9a09-57db17ed103f",
     "63ffba0f-9253-46b9-84ec-0ab3f75db803",

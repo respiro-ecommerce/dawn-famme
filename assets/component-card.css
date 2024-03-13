@@ -482,3 +482,43 @@
     clip-path: polygon(var(--shape--blob-5));
   }
 }
+
+
+.product-card-wrapper .card__content {
+  display: block;
+}
+@media (max-width:768px) {
+  .product-card-wrapper .card__heading a {
+    /* white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; */
+    min-height: 32px;
+  }
+  }
+
+
+
+.card__custom-badges {
+  position: absolute;
+  left:0;
+  bottom:10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  grid-gap: 2px;
+}
+.card__custom-badge {
+    text-align: center;
+    white-space: nowrap;
+    padding: 2px 6px;
+    font-size: 11px;
+    color:white;
+    letter-spacing: normal;
+}
+
+.card__custom-badges--top {
+  bottom:auto;
+  left:auto;
+  top:10px;
+  right:0;
+}

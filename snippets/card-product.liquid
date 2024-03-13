@@ -23,6 +23,22 @@
 {{ 'component-rating.css' | asset_url | stylesheet_tag }}
 {{ 'component-volume-pricing.css' | asset_url | stylesheet_tag }}
 
+{%- liquid
+  assign has_badges = false
+  assign badge_1 = null
+  assign badge_2 = null
+  for tag in card_product.tags
+    if tag contains 'badge-'
+      assign has_badges = true
+      if tag contains 'badge-1:'
+        assign badge_1 = tag | remove: 'badge-1:'
+      elsif tag contains 'badge-2:'
+        assign badge_2 = tag | remove: 'badge-2:'
+      endif
+    endif
+  endfor
+-%}
+
 {%- if card_product and card_product != empty -%}
   {%- liquid
     assign ratio = 1
@@ -127,15 +143,41 @@
               >
                 {{- 'products.product.sold_out' | t -}}
               </span>
-            {%- elsif card_product.compare_at_price > card_product.price and card_product.available -%}
-              <span
-                id="NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
-                class="badge badge--bottom-left color-{{ settings.sale_badge_color_scheme }}"
-              >
-                {{- 'products.product.on_sale' | t -}}
-              </span>
             {%- endif -%}
           </div>
+
+          {%- unless hide_badges -%}
+            {%- if card_product.price < card_product.compare_at_price -%}
+              <div class="card__custom-badges">
+                {%- if card_product.compare_at_price > card_product.price and card_product.available -%}
+                  <div class="card__custom-badge card__custom-badge--sale">
+                    {{- 'products.product.on_sale' | t -}}
+                  </div>
+                {%- endif -%}
+
+                {%- if card_product.compare_at_price > card_product.price -%}
+                  {%- assign percentage = card_product.compare_at_price
+                    | minus: card_product.price
+                    | times: 100.0
+                    | divided_by: card_product.compare_at_price
+                    | round: 0
+                    | append: '%'
+                  -%}
+                  <span class="card__custom-badge card__custom-badge--discount">-{{ percentage }}</span>
+                {%- endif -%}
+              </div>
+            {%- endif -%}
+            {%- if has_badges -%}
+              <div class="card__custom-badges card__custom-badges--top">
+                {%- if badge_1 != null -%}
+                  <span class="card__custom-badge card__custom-badge--1">{{ badge_1 }}</span>
+                {%- endif -%}
+                {%- if badge_2 != null -%}
+                  <span class="card__custom-badge card__custom-badge--2">{{ badge_2 }}</span>
+                {%- endif -%}
+              </div>
+            {%- endif -%}
+          {%- endunless -%}
         </div>
       </div>
       <div class="card__content">
@@ -324,6 +366,15 @@
       </div>
     </div>
   </div>
+  {%- if card_product.variants.size > 1 and card_product.options_with_values.size < 2 -%}
+    <div class="product-form__input">
+      {%- for v in card_product.variants -%}
+        {%- if v.available -%}
+          <a href="{{ v.url }}">{{ v.title }}</a>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  {%- endif -%}
 {%- else -%}
   {%- liquid
     assign ratio = 1

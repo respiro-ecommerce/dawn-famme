@@ -3,18 +3,25 @@
     "logo": "shopify:\/\/shop_images\/New-Famme-Logo-1a.png",
     "logo_width": 150,
     "favicon": "shopify:\/\/shop_images\/Famme-favicon.png",
+    "product_badge_sale": "#ca1d1d",
+    "product_sale_badge_width": 40,
     "type_header_font": "roboto_n4",
     "type_body_font": "roboto_n4",
     "page_width": 1400,
     "spacing_sections": 0,
     "animations_reveal_on_scroll": false,
+    "card_title_font_size_desktop": 13,
+    "card_title_font_size_mobile": 12,
+    "badge_corner_radius": 0,
     "sale_badge_color_scheme": "accent-2",
+    "sold_out_badge_color_scheme": "scheme-400fd2b0-35a2-436c-9826-3c3f2fa1e4b1",
     "social_facebook_link": "https:\/\/www.facebook.com\/fammesportswear",
     "social_instagram_link": "https:\/\/www.instagram.com\/famme\/",
     "social_youtube_link": "https:\/\/www.youtube.com\/channel\/UC_Sf81gixIsLXiqrSFnkYPA",
     "social_tiktok_link": "https:\/\/www.tiktok.com\/@fammesportswear",
     "social_snapchat_link": "https:\/\/www.snapchat.com\/add\/fammesportswear",
     "social_pinterest_link": "",
+    "product_badge_width": 50,
     "colors_solid_button_labels": "#ffffff",
     "colors_accent_1": "#345df4",
     "colors_accent_2": "#d3c298",
@@ -116,15 +123,15 @@
         "settings": {
         }
       },
-      "13768625480086291342": {
-        "type": "shopify:\/\/apps\/forms\/blocks\/forms\/8744a304-fcb1-4347-b211-bb6b4759a76a",
-        "disabled": true,
-        "settings": {
-        }
-      },
       "1251128615222945960": {
         "type": "shopify:\/\/apps\/post-checkout-upsells-promos\/blocks\/app-embed\/ea24a4f3-06ec-4555-b927-79ef4ba4841e",
         "disabled": false,
+        "settings": {
+        }
+      },
+      "13768625480086291342": {
+        "type": "shopify:\/\/apps\/forms\/blocks\/forms\/8744a304-fcb1-4347-b211-bb6b4759a76a",
+        "disabled": true,
         "settings": {
         }
       }
@@ -134,11 +141,11 @@
         "settings": {
           "background": "#ffffff",
           "background_gradient": "",
-          "text": "#000000",
-          "button": "#000000",
+          "text": "#414141",
+          "button": "#414141",
           "button_label": "#ffffff",
-          "secondary_button_label": "#000000",
-          "shadow": "#000000"
+          "secondary_button_label": "#414141",
+          "shadow": "#414141"
         }
       },
       "background-2": {
@@ -146,7 +153,7 @@
           "background": "#efefef",
           "background_gradient": "",
           "text": "#121212",
-          "button": "#000000",
+          "button": "#414141",
           "button_label": "#f3f3f3",
           "secondary_button_label": "#000000",
           "shadow": "#000000"
@@ -176,18 +183,18 @@
       },
       "accent-2": {
         "settings": {
-          "background": "#e6e6e6",
+          "background": "#ca1d1d",
           "background_gradient": "",
-          "text": "#000000",
+          "text": "#ffffff",
           "button": "#000000",
           "button_label": "#ffffff",
-          "secondary_button_label": "#4e4e4e",
+          "secondary_button_label": "#414141",
           "shadow": "#000000"
         }
       },
       "scheme-400fd2b0-35a2-436c-9826-3c3f2fa1e4b1": {
         "settings": {
-          "background": "#c91f1f",
+          "background": "#6b6b6b",
           "background_gradient": "",
           "text": "#ffffff",
           "button": "#ffffff",
@@ -397,7 +404,17 @@
       ".product-reviews__submit-review {background-color: #252525;}",
       "button.product-form__submit.button--full-width {background-color: #000;}",
       ".announcement-bar__message {color: #fff;}",
-      ".badge {background-color: #000; color: #fff;}"
+      " \/* Start Product Page *\/.product-bullets {display: flex; justify-content: space-between; align-items: baseline; padding-left: 0; list-style: none; text-align: center;}",
+      ".usp-product-page-1 {max-width: 50%; display: block; margin-left: auto; margin-right: auto;}",
+      ".usp-product-page-1-en {max-width: 70%; display: block; margin-left: auto; margin-right: auto;}",
+      ".usp-product-page-2 {max-width: 55%; display: block; margin-left: auto; margin-right: auto;}",
+      ".usp-product-page-3 {max-width: 75%; display: block; margin-left: auto; margin-right: auto;}",
+      ".usp-product-page-3-dk {max-width: 45%; display: block; margin-left: auto; margin-right: auto;}",
+      ".product-form__input--pill input[type=\"radio\"] + label {border: none; background-color: #dbdada; border-radius: 0px; font-size: 12px;}",
+      "button.product-form__submit.button--full-width {background-color: #333; border-radius: 0px;}",
+      " \/* Finish Product Page *\/ \/* Start Product Card *\/div.product-form__input > a {border: none; border-radius: 0px; color: rgb(var(--color-foreground)); display: inline-block; margin: 0.6rem 0.4rem 0.1rem 0; padding: 0 3px 0 0; line-height: 1; transition: border var(--duration-short) ease; text-decoration: none; font-size: 12px;}",
+      " \/* Finish Product Card *\/.product-reviews__submit-review {border-radius: 0px;}",
+      ".button {border-radius: 0px;}"
     ]
   }
 }
