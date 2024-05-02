@@ -3,9 +3,9 @@
     "2bce6a44-7d65-451b-aef9-8248e1111b73": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/banner-desktop-oversized-1NO.jpg",
-        "image_mobile": "shopify:\/\/shop_images\/banner-mobile-oversized-1NO.jpg",
-        "image_url": "shopify:\/\/collections\/new-releases",
+        "image": "shopify:\/\/shop_images\/banner-desktop-shorts-1NO.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/banner-mobile-shorts-4NO.jpg",
+        "image_url": "shopify:\/\/collections\/treningsshorts",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "middle-center",
@@ -81,90 +81,13 @@
         "padding_bottom": 0
       }
     },
-    "16463038447a5cbd60": {
-      "type": "featured-collection",
-      "custom_css": [
-
-      ],
-      "settings": {
-        "title": "Nyheter",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "new-releases",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "link",
-        "enable_desktop_slider": true,
-        "color_scheme": "background-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 52
-      }
-    },
-    "9b125fe3-645c-4e1d-ba53-95e8639d56aa": {
-      "type": "image-banner",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/banner-desktop-softy-restock-1NO.jpg",
-        "image_mobile": "shopify:\/\/shop_images\/banner-mobile-softy-restock-2NO.jpg",
-        "image_url": "shopify:\/\/collections\/softy",
-        "image_overlay_opacity": 0,
-        "image_height": "large",
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
-    "featured_collection_9XMyp9": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "softy",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "166057046086c544fd": {
       "type": "multicolumn",
       "blocks": {
         "1660570459ecdaf28d-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/tights-1a.jpg",
+            "image": "shopify:\/\/shop_images\/categories-sport-version-tights.jpg",
             "title": "",
             "text": "",
             "link_label": "",
@@ -174,31 +97,31 @@
         "1660570459ecdaf28d-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/langermede-2.jpg",
+            "image": "shopify:\/\/shop_images\/categories-sport-version-langermede.jpg",
             "title": "",
             "text": "",
             "link_label": "",
-            "link": "\/collections\/long-sleeve-tops"
+            "link": "shopify:\/\/collections\/long-sleeve-tops"
           }
         },
         "1660570459ecdaf28d-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/sko-1a.jpg",
+            "image": "shopify:\/\/shop_images\/categories-sport-version-sko.jpg",
             "title": "",
             "text": "",
             "link_label": "",
-            "link": "shopify:\/\/collections\/sports-bh"
+            "link": "shopify:\/\/collections\/shoes"
           }
         },
         "10a7abb5-b911-417a-bfa8-44d013a16de9": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/sports-bra-1a.jpg",
+            "image": "shopify:\/\/shop_images\/web-categories-sport-version-sports-bra-NO.jpg",
             "title": "",
             "text": "",
             "link_label": "",
-            "link": "shopify:\/\/collections\/treningsshorts"
+            "link": "shopify:\/\/collections\/sports-bh"
           }
         }
       },
@@ -228,14 +151,155 @@
         "padding_bottom": 36
       }
     },
+    "9b125fe3-645c-4e1d-ba53-95e8639d56aa": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/banner-desktop-scrunch-gym-2-1NO.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/banner-mobile-scrunch-gym-2-1NO.jpg",
+        "image_url": "\/collections\/scrunch",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "featured_collection_9XMyp9": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "scrunch",
+        "products_to_show": 10,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner_Vtp4MY": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/banner-desktop-softy-restock-1NO_d66abb5f-c6a7-435a-9141-62e61506e625.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/banner-mobile-softy-restock-2NOa.jpg",
+        "image_url": "shopify:\/\/collections\/softy",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "featured_collection_r9R3Dr": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "softy",
+        "products_to_show": 10,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner_Yz8aVT": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/banner-sport-theme-block-desktop-1NO.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/banner-sport-theme-block-mobile-1NO.jpg",
+        "image_url": "shopify:\/\/collections\/bestsellers",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "16463038447a5cbd60": {
+      "type": "featured-collection",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "title": "Bestselgere",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "bestsellers",
+        "products_to_show": 10,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "link",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 52
+      }
+    },
     "162567415706bdadcd": {
       "type": "image-banner",
       "custom_css": [
 
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/banner-FB-desktop-NO.jpg",
-        "image_mobile": "shopify:\/\/shop_images\/banner-FB-mobile-NO.jpg",
+        "image": "shopify:\/\/shop_images\/banner-FB-desktop-NO_7e749f44-8446-466f-9212-044a1a58353e.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/banner-FB-mobile-NO_4126b4b4-687a-4afe-9aa4-3c37160f2846.jpg",
         "image_url": "https:\/\/www.facebook.com\/groups\/fammeproduktutvikling",
         "image_overlay_opacity": 0,
         "image_height": "medium",
@@ -260,10 +324,13 @@
   "order": [
     "2bce6a44-7d65-451b-aef9-8248e1111b73",
     "1660654738369bfdd0",
-    "16463038447a5cbd60",
+    "166057046086c544fd",
     "9b125fe3-645c-4e1d-ba53-95e8639d56aa",
     "featured_collection_9XMyp9",
-    "166057046086c544fd",
+    "image_banner_Vtp4MY",
+    "featured_collection_r9R3Dr",
+    "image_banner_Yz8aVT",
+    "16463038447a5cbd60",
     "162567415706bdadcd",
     "16602879286b7eef4a"
   ]
