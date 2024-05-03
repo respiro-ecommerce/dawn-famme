@@ -1,4 +1,19 @@
 {
+  "custom": {
+    "bullets": {
+      "bullet_1": "Fri frakt över 599kr & 100 dagar öppet köp",
+      "bullet_2": "2 års garanti & snabb kundservice",
+      "bullet_3": "Apple Pay, Paypal, Gpay, kort"
+    },
+    "reviews": {
+      "verified_buyer": "Verifierad köpare",
+      "view_more": "Se mer",
+      "submit_review": "Skicka in en recension",
+      "see_all_photos": "Se alla kundbilder",
+      "based_on_count": "Verifierad Baserat på {{ count }} recensioner",
+      "total_reviews": "{{ count }} recensioner"
+    }
+  },
   "general": {
     "password_page": {
       "login_form_heading": "Ange lösenord för att komma i butiken:",

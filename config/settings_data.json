@@ -1,5 +1,210 @@
 {
-  "current": "Default",
+  "current": {
+    "logo": "shopify:\/\/shop_images\/New-Famme-Logo-1a.png",
+    "logo_width": 150,
+    "favicon": "shopify:\/\/shop_images\/Famme-favicon.png",
+    "product_badge_sale": "#ca1d1d",
+    "product_sale_badge_width": 40,
+    "type_header_font": "roboto_n4",
+    "type_body_font": "roboto_n4",
+    "page_width": 1400,
+    "spacing_sections": 0,
+    "animations_reveal_on_scroll": false,
+    "card_title_font_size_desktop": 13,
+    "card_title_font_size_mobile": 12,
+    "badge_corner_radius": 0,
+    "sale_badge_color_scheme": "accent-2",
+    "sold_out_badge_color_scheme": "scheme-400fd2b0-35a2-436c-9826-3c3f2fa1e4b1",
+    "social_facebook_link": "https:\/\/www.facebook.com\/fammesportswear",
+    "social_instagram_link": "https:\/\/www.instagram.com\/famme\/",
+    "social_youtube_link": "https:\/\/www.youtube.com\/channel\/UC_Sf81gixIsLXiqrSFnkYPA",
+    "social_tiktok_link": "https:\/\/www.tiktok.com\/@fammesportswear",
+    "social_snapchat_link": "https:\/\/www.snapchat.com\/add\/fammesportswear",
+    "social_pinterest_link": "",
+    "product_badge_width": 50,
+    "colors_solid_button_labels": "#ffffff",
+    "colors_accent_1": "#345df4",
+    "colors_accent_2": "#d3c298",
+    "colors_text": "#252525",
+    "colors_outline_button_labels": "#345df4",
+    "colors_background_1": "#ffffff",
+    "colors_background_2": "#252525",
+    "colors": "Red-#FF3131\nKhaki-#8A865D\nYellow-#FFEA00\nBurgundy- Dark red?\nLight Blue-#ADD8E6\nLight Grey-#D3D3D3\nWhite\/Blue-#eeeeee\nLight Green-#A9C6BB\nDark Red\/Blue-#FF3131\nDark Red\/Brown-#FF3131\nBrown-#8c5c2a\nNavy Blue\/Brown-#8c5c2a\nGrey\/Blue-#000\nOrange-#ffaa00\nBlue\/Beige-#0a2d4d\nBlack-#000\nDark Red-#9b012c\nBlue-#3530ab\nBlue\/Blue-#3530ab\nNavy Blue-#35304b\nNavy Blue\/Blue-#3530ab\nDark green-#514b38\nDark Green-#514b38\nGreen-#514b38\nPurple-#513742\nDark grey-#413d47\nDark Grey-#413d47\nGrey-#413d47\nBeige-#e2cab4\nPink-#fdced7\nLight Purple-#d7d7f2\nDark Blue-#3d3f69\nDark Pink-#ca8482\nLight Beige-#faf0e6\nDark Purple-#741b47\nPurple\/Red-#513742\nDark Grey\/White-#413d47\nRed\/Yellow-#FFA0A0\nBlack\/Blue-#3530ab\nBlack\/Green-#514b38\nBlack\/Pink-#FF69B4\nBlack\/Dark Grey-#000\nTriple Black-#000\nBlack\/White-#000\nWhite\/Blue-#eeeeee\nDark Yellow-#E1AD01\nPitch Black-#000\nBurgundy-#8b2e16\nWhite-#eeeeee",
+    "checkout_logo_image": "shopify:\/\/shop_images\/famme-logo.png",
+    "checkout_logo_position": "left",
+    "checkout_heading_font": "Roboto",
+    "checkout_body_font": "Roboto",
+    "checkout_accent_color": "#4e4e4e",
+    "checkout_button_color": "#119da4",
+    "checkout_error_color": "#ec7a7a",
+    "sections": {
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "blocks": {
+          "announcement-bar-0": {
+            "type": "announcement",
+            "settings": {
+              "text": "Vipps & Klarna | Returlapp i Pakken | 100 Dager Åpent Kjøp",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "announcement-bar-0"
+        ],
+        "settings": {
+        }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "logo_position": "middle-left",
+          "menu": "long-horizontal-menu",
+          "menu_type_desktop": "dropdown",
+          "show_line_separator": true,
+          "color_scheme": "background-1",
+          "mobile_logo_position": "center",
+          "margin_bottom": 0,
+          "padding_top": 20,
+          "padding_bottom": 20
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "3b667cc8-80d2-4c77-85d0-d198aff09291": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Informasjon",
+              "menu": "footer"
+            }
+          },
+          "5a66bb68-925b-4a72-9b02-048703aea76a": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Produktinformasjon",
+              "menu": "product-development"
+            }
+          },
+          "3e063503-3f13-4266-942b-f40c646c2175": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Samarbeid",
+              "menu": "partnerships"
+            }
+          }
+        },
+        "block_order": [
+          "3b667cc8-80d2-4c77-85d0-d198aff09291",
+          "5a66bb68-925b-4a72-9b02-048703aea76a",
+          "3e063503-3f13-4266-942b-f40c646c2175"
+        ],
+        "settings": {
+          "color_scheme": "inverse",
+          "newsletter_enable": false,
+          "newsletter_heading": "Tilmeld dig vores nyhedsbrev!",
+          "show_social": true,
+          "enable_country_selector": true,
+          "enable_language_selector": true,
+          "payment_enable": true,
+          "margin_top": 0,
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      }
+    },
+    "content_for_index": [
+
+    ],
+    "blocks": {
+      "855628211100114053": {
+        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "1251128615222945960": {
+        "type": "shopify:\/\/apps\/post-checkout-upsells-promos\/blocks\/app-embed\/ea24a4f3-06ec-4555-b927-79ef4ba4841e",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "13768625480086291342": {
+        "type": "shopify:\/\/apps\/forms\/blocks\/forms\/8744a304-fcb1-4347-b211-bb6b4759a76a",
+        "disabled": true,
+        "settings": {
+        }
+      }
+    },
+    "color_schemes": {
+      "background-1": {
+        "settings": {
+          "background": "#ffffff",
+          "background_gradient": "",
+          "text": "#414141",
+          "button": "#414141",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#414141",
+          "shadow": "#414141"
+        }
+      },
+      "background-2": {
+        "settings": {
+          "background": "#efefef",
+          "background_gradient": "",
+          "text": "#121212",
+          "button": "#414141",
+          "button_label": "#f3f3f3",
+          "secondary_button_label": "#000000",
+          "shadow": "#000000"
+        }
+      },
+      "inverse": {
+        "settings": {
+          "background": "#ffffff",
+          "background_gradient": "",
+          "text": "#000000",
+          "button": "#ffffff",
+          "button_label": "#000000",
+          "secondary_button_label": "#ffffff",
+          "shadow": "#000000"
+        }
+      },
+      "accent-1": {
+        "settings": {
+          "background": "#000000",
+          "background_gradient": "",
+          "text": "#ffffff",
+          "button": "#ffffff",
+          "button_label": "#1c1f0d",
+          "secondary_button_label": "#ffffff",
+          "shadow": "#1c1f0d"
+        }
+      },
+      "accent-2": {
+        "settings": {
+          "background": "#ca1d1d",
+          "background_gradient": "",
+          "text": "#ffffff",
+          "button": "#000000",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#414141",
+          "shadow": "#000000"
+        }
+      },
+      "scheme-400fd2b0-35a2-436c-9826-3c3f2fa1e4b1": {
+        "settings": {
+          "background": "#6b6b6b",
+          "background_gradient": "",
+          "text": "#ffffff",
+          "button": "#ffffff",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#ffffff",
+          "shadow": "#000000"
+        }
+      }
+    }
+  },
   "presets": {
     "Default": {
       "logo_width": 90,
@@ -68,6 +273,8 @@
       "spacing_sections": 0,
       "spacing_grid_horizontal": 8,
       "spacing_grid_vertical": 8,
+      "animations_reveal_on_scroll": true,
+      "animations_hover_elements": "none",
       "buttons_border_thickness": 1,
       "buttons_border_opacity": 100,
       "buttons_radius": 0,
@@ -151,8 +358,11 @@
       "drawer_shadow_blur": 5,
       "badge_position": "bottom left",
       "badge_corner_radius": 40,
-      "sale_badge_color_scheme": "scheme-5",
+      "sale_badge_color_scheme": "scheme-4",
       "sold_out_badge_color_scheme": "scheme-3",
+      "brand_headline": "",
+      "brand_description": "<p><\/p>",
+      "brand_image_width": 100,
       "social_twitter_link": "",
       "social_facebook_link": "",
       "social_pinterest_link": "",
@@ -170,6 +380,7 @@
       "show_vendor": false,
       "show_cart_note": false,
       "cart_drawer_collection": "",
+      "cart_color_scheme": "scheme-1",
       "sections": {
         "main-password-header": {
           "type": "main-password-header",
@@ -185,5 +396,25 @@
         }
       }
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      ".footer {margin-top: 0px;}",
+      ".list-menu > li:nth-child(3) > a > span {color: #0d151f;}",
+      ".product-reviews__submit-review {background-color: #252525;}",
+      "button.product-form__submit.button--full-width {background-color: #000;}",
+      ".announcement-bar__message {color: #fff;}",
+      " \/* Start Product Page *\/.product-bullets {display: flex; justify-content: space-between; align-items: baseline; padding-left: 0; list-style: none; text-align: center;}",
+      ".usp-product-page-1 {max-width: 50%; display: block; margin-left: auto; margin-right: auto;}",
+      ".usp-product-page-1-en {max-width: 70%; display: block; margin-left: auto; margin-right: auto;}",
+      ".usp-product-page-2 {max-width: 55%; display: block; margin-left: auto; margin-right: auto;}",
+      ".usp-product-page-3 {max-width: 75%; display: block; margin-left: auto; margin-right: auto;}",
+      ".usp-product-page-3-en {max-width: 45%; display: block; margin-left: auto; margin-right: auto;}",
+      ".product-form__input--pill input[type=\"radio\"] + label {border: none; background-color: #dbdada; border-radius: 0px; font-size: 12px;}",
+      "button.product-form__submit.button--full-width {background-color: #333; border-radius: 0px;}",
+      " \/* Finish Product Page *\/ \/* Start Product Card *\/div.product-form__input > a {border: none; border-radius: 0px; color: rgb(var(--color-foreground)); display: inline-block; margin: 0.6rem 0.4rem 0.1rem 0; padding: 0 3px 0 0; line-height: 1; transition: border var(--duration-short) ease; text-decoration: none; font-size: 12px;}",
+      " \/* Finish Product Card *\/.product-reviews__submit-review {border-radius: 0px;}",
+      ".button {border-radius: 0px;}"
+    ]
   }
 }

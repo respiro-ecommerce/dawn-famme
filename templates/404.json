@@ -1,10 +1,69 @@
 {
   "sections": {
+    "16449934035d742162": {
+      "type": "rich-text",
+      "blocks": {
+        "1644993403482191b2-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "404 - denne siden finnes ikke",
+            "heading_size": "h2"
+          }
+        },
+        "1644993403482191b2-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Ser ikke ut som vi kan finne siden du leter etter. <\/p>"
+          }
+        },
+        "1644993403482191b2-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Forsett å handle",
+            "button_link": "shopify:\/\/collections\/all",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "1644993403482191b2-0",
+        "1644993403482191b2-1",
+        "1644993403482191b2-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 20
+      }
+    },
     "main": {
-      "type": "main-404"
+      "type": "main-404",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "164499142103c55b38": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Kanskje du liker noe av dette..",
+        "collection": "bestsellers",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "main"
+    "16449934035d742162",
+    "main",
+    "164499142103c55b38"
   ]
 }

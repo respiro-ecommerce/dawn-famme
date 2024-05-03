@@ -8,41 +8,42 @@
         "footer-0": {
           "type": "link_list",
           "settings": {
-            "heading": "Quick links",
+            "heading": "Informasjon",
             "menu": "footer"
           }
         },
         "footer-1": {
           "type": "link_list",
           "settings": {
-            "heading": "Info",
-            "menu": "footer"
+            "heading": "Produktinformasjon",
+            "menu": "product-development"
           }
         },
-        "footer-2": {
-          "type": "text",
+        "5a68e922-1d77-4770-aaa6-f41bbc842d2c": {
+          "type": "link_list",
           "settings": {
-            "heading": "Our mission",
-            "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+            "heading": "Samarbeid",
+            "menu": "partnerships"
           }
         }
       },
       "block_order": [
         "footer-0",
         "footer-1",
-        "footer-2"
+        "5a68e922-1d77-4770-aaa6-f41bbc842d2c"
       ],
       "settings": {
-        "color_scheme": "scheme-1",
+        "color_scheme": "accent-1",
         "newsletter_enable": true,
-        "newsletter_heading": "Subscribe to our emails",
+        "newsletter_heading": "Motta gode tilbud:",
+        "enable_follow_on_shop": true,
         "show_social": true,
         "enable_country_selector": false,
         "enable_language_selector": false,
         "payment_enable": true,
         "show_policy": false,
-        "margin_top": 48,
-        "padding_top": 36,
+        "margin_top": 60,
+        "padding_top": 60,
         "padding_bottom": 36
       }
     }

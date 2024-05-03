@@ -1,4 +1,19 @@
 {
+  "custom": {
+    "bullets": {
+      "bullet_1": "Returlapp i pakken & 100 Dager åpent kjøp",
+      "bullet_2": "Fri frakt over 599,- & 2 År garanti",
+      "bullet_3": "Vipps, Klarna & Kortbetaling"
+    },
+    "reviews": {
+      "verified_buyer": "Verifisert kjøper",
+      "view_more": "Se mer",
+      "submit_review": "Skriv en omtale",
+      "see_all_photos": "Se alle bilder",
+      "based_on_count": "Verifisert Basert på {{ count }} anmeldelser",
+      "total_reviews": "{{ count }} anmeldelser"
+    }
+  },
   "general": {
     "password_page": {
       "login_form_heading": "Gå inn i butikken ved hjelp av passord:",

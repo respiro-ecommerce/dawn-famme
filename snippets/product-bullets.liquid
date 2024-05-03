@@ -1,0 +1,43 @@
+<!-- snippets/product-bullets.liquid -->
+<ul class="product-bullets">
+    <li>
+        <span class="product-bullets__text">{{ 'custom.bullets.bullet_1' | t }}</span>
+    </li>
+    <li>
+        <span class="product-bullets__text">{{ 'custom.bullets.bullet_2' | t }}</span>
+    </li>
+    <li>
+        <span class="product-bullets__text">{{ 'custom.bullets.bullet_3' | t }}</span>
+    </li>
+</ul>
+<style>
+    ul.product-bullets {
+        margin: 20px 0;
+        padding: 10px 20px 10px 40px;
+        background: #f5f5f5;
+        min-height: 140px;
+    }
+
+    ul.product-bullets li {
+        margin: 10px 0;
+        /*list-style: none;*/
+    }
+
+    .product-bullets__text {
+        font-weight: bold;
+        /*position: relative;
+        top: -5px;*/
+    }
+
+    /*usp*/
+    ul.product-bullets {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-left: 0;
+        list-style: none;
+        text-align: center;
+    }
+    ul.product-bullets>li {width: 30%;}
+    ul.product-bullets>li>p {margin-top: 0;}
+</style>

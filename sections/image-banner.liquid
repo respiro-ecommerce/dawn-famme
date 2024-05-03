@@ -51,70 +51,63 @@
   endif
 -%}
 
-<div
-  id="Banner-{{ section.id }}"
+
+<a href="{{ section.settings.image_url }}" id="Banner-{{ section.id }}"
   class="banner banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.image_height == 'adapt' and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
 >
   {%- if section.settings.image != blank -%}
     <div class="banner__media media{% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
-      {%- liquid
-        assign image_height = section.settings.image.width | divided_by: section.settings.image.aspect_ratio
-        if section.settings.image_2 != blank
-          assign image_class = 'banner__media-image-half'
-        endif
-        if section.settings.image_2 != blank and section.settings.stack_images_on_mobile
-          assign sizes = stacked_sizes
-        elsif section.settings.image_2 != blank
-          assign sizes = half_width
-        else
-          assign sizes = full_width
-        endif
-      -%}
-      {{
-        section.settings.image
-        | image_url: width: 3840
-        | image_tag:
-          width: section.settings.image.width,
-          height: image_height,
-          class: image_class,
-          sizes: sizes,
-          widths: widths,
-          fetchpriority: fetch_priority
-      }}
+        {%- liquid
+            assign image_height = section.settings.image.width | divided_by: section.settings.image.aspect_ratio
+            if section.settings.image_2 != blank
+                assign image_class = 'banner__media-image-half'
+            endif
+            if section.settings.image_2 != blank and section.settings.stack_images_on_mobile
+                assign sizes = stacked_sizes
+            elsif section.settings.image_2 != blank
+                assign sizes = half_width
+            else
+                assign sizes = full_width
+            endif
+        -%}
+          <picture>
+            {%- if section.settings.image_mobile != blank -%}
+              <source srcset="{{ section.settings.image_mobile | image_url: width: 750 }}" media="(max-width: 749px)">
+            {%- endif -%}
+            {%- if section.settings.image != blank -%}
+              <source srcset="{{ section.settings.image | img_url: '3840x' }}" media="(min-width: 750px)">
+            {%- endif -%}
+
+            {{
+            section.settings.image
+            | image_url: width: 3840
+            | image_tag:
+            width: section.settings.image.width,
+            height: image_height,
+            class: image_class,
+            sizes: sizes,
+            widths: widths,
+            fetchpriority: fetch_priority
+            }}
+          </picture>
+          <!--picture>
+            <source media="(max-width:750px)" sizes="{{ sizes }}"
+                    {% if imgm != blank -%}
+                      {% assign m_height = section.settings.image_mobile.width | divided_by: section.settings.image_mobile.aspect_ratio %}{% assign m_class = image_class | append: ' mob' %}
+                      srcset="{{ section.settings.image_mobile | image_url: width: 750 }}" width="{{ section.settings.image_mobile.width }}" height="{{ m_height }}" class="{{ m_class }}"
+                    {% else %}
+                      srcset="{{ section.settings.image | image_url: width: 750 }}" width="{{ section.settings.image.width }}" height="{{ image_height }}" class="{{ image_class }}"
+                    {% endif %}
+            >
+            <img src="{{ section.settings.image | image_url: width: 1920 }}" width="{{ section.settings.image.width }}" height="{{ image_height }}" class="{{ image_class }}" sizes="{{ sizes }}" alt="{{ section.settings.image.alt | escape }}">
+          </picture-->
     </div>
   {%- elsif section.settings.image_2 == blank -%}
     <div class="banner__media media{% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
       {{ 'hero-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
     </div>
   {%- endif -%}
-  {%- if section.settings.image_2 != blank -%}
-    <div class="banner__media media{% if section.settings.image != blank %} banner__media-half{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
-      {%- liquid
-        assign image_height_2 = section.settings.image_2.width | divided_by: section.settings.image_2.aspect_ratio
-        if section.settings.image != blank
-          assign image_class_2 = 'banner__media-image-half'
-        endif
-        if section.settings.image != blank and section.settings.stack_images_on_mobile
-          assign sizes = stacked_sizes
-        elsif section.settings.image_2 != blank
-          assign sizes = half_width
-        else
-          assign sizes = full_width
-        endif
-      -%}
-      {{
-        section.settings.image_2
-        | image_url: width: 3840
-        | image_tag:
-          width: section.settings.image_2.width,
-          height: image_height_2,
-          class: image_class_2,
-          sizes: sizes,
-          widths: widths,
-          fetchpriority: fetch_priority
-      }}
-    </div>
-  {%- endif -%}
+
   <div class="banner__content banner__content--{{ section.settings.desktop_content_position }} page-width{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
     <div class="banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient">
       {%- for block in section.blocks -%}
@@ -164,7 +157,7 @@
       {%- endfor -%}
     </div>
   </div>
-</div>
+</a>
 
 {% schema %}
 {
@@ -178,7 +171,17 @@
     {
       "type": "image_picker",
       "id": "image",
-      "label": "t:sections.image-banner.settings.image.label"
+      "label": "Desktop image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mobile",
+      "label": "Mobile image"
+    },
+    {
+      "type": "url",
+      "id": "image_url",
+      "label": "Image link"
     },
     {
       "type": "image_picker",

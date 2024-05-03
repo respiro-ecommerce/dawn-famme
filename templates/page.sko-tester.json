@@ -1,0 +1,171 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "cf182b68-7b23-4110-9f2f-9632dbd65c40": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".title {color: ##8e8e8e; text-align: center; font-weight: 800; font-size: 35px; font-family: \"Montserrat\";}"
+      ],
+      "settings": {
+        "custom_liquid": "<div class=\"title\">Skjema for påmelding er lenger ned på siden<\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "c9bd7e30-d295-41b2-ae01-9bb4621712eb": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19869836804444__c9bd7e30-d295-41b2-ae01-9bb4621712eb-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Famme er ute etter personer som bruker størrelse 35-42 som skal gi tilbakemeldinger på sko under utvikling. Sko prøves enten med oss fysisk i Oslo eller sendes per post. <br\/>Vi kontakter deg om du er en av de heldige.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19869836804444__c9bd7e30-d295-41b2-ae01-9bb4621712eb-text-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "ad118814-0b0f-4bfa-9cfc-def0dfde4c22": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--19869836804444__ad118814-0b0f-4bfa-9cfc-def0dfde4c22-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/shoe-leads-photos-1.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--19869836804444__ad118814-0b0f-4bfa-9cfc-def0dfde4c22-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cloud-sketch-1a.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--19869836804444__ad118814-0b0f-4bfa-9cfc-def0dfde4c22-column-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cloud-photo.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "08585615-2543-44a4-b1c8-1c9656ec1f14": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/endorphin-sketch-1a.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19869836804444__ad118814-0b0f-4bfa-9cfc-def0dfde4c22-column-1",
+        "template--19869836804444__ad118814-0b0f-4bfa-9cfc-def0dfde4c22-column-2",
+        "template--19869836804444__ad118814-0b0f-4bfa-9cfc-def0dfde4c22-column-3",
+        "08585615-2543-44a4-b1c8-1c9656ec1f14"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "95f74831-1c4f-4363-9245-137d35b8a7cc": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "img {display: block; margin-left: auto; margin-right: auto; width: 100%; max-width: 800px; height: auto;}"
+      ],
+      "settings": {
+        "custom_liquid": "<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0076\/6033\/9297\/files\/shoes-reviews_6c6edfee-0e23-459c-93db-9fc453ecc395.jpg?v=1696575473\"> <\/img>",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "c12f5fb7-3ea8-4b32-9a44-8b4755ecefda": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<iframe class=\"airtable-embed\" src=\"https:\/\/airtable.com\/embed\/appPfAEXR7jPlBqLe\/shrQhGWb99DXv2VFv?prefill_country=Norway&amp;hide_country=true\" backgroundColor=purpleLight\" frameborder=\"0\" onmousewheel=\"\" width=\"100%\" height=\"533\" style=\"background: transparent; border: 1px solid #ccc;\"><\/iframe>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "3182d1c8-2d29-4894-8e28-a92be1d6b982": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Våre bestselgere👇",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "shoes",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "cf182b68-7b23-4110-9f2f-9632dbd65c40",
+    "c9bd7e30-d295-41b2-ae01-9bb4621712eb",
+    "ad118814-0b0f-4bfa-9cfc-def0dfde4c22",
+    "95f74831-1c4f-4363-9245-137d35b8a7cc",
+    "c12f5fb7-3ea8-4b32-9a44-8b4755ecefda",
+    "3182d1c8-2d29-4894-8e28-a92be1d6b982"
+  ]
+}

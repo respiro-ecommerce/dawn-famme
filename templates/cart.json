@@ -3,6 +3,7 @@
     "cart-items": {
       "type": "main-cart-items",
       "settings": {
+        "color_scheme": "",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -24,24 +25,67 @@
       "block_order": [
         "subtotal",
         "buttons"
-      ]
-    },
-    "featured-collection": {
-      "type": "featured-collection",
+      ],
       "settings": {
-        "title": "Featured collection",
-        "heading_size": "h2",
-        "collection": "all",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "8c7aed88-ded6-435f-8eb0-2b9b6354687d": {
+      "type": "upsell",
+      "settings": {
+        "title": "Andre kjøpte også",
+        "heading_size": "h1",
+        "description": "",
+        "description_style": "body",
+        "prods": [
+          "white-performance-shaker",
+          "white-sky-knit-sokker",
+          "like-nothing-thong-1",
+          "tennis-sokker"
+        ],
         "products_to_show": 4,
         "columns_desktop": 4,
-        "color_scheme": "scheme-1",
-        "show_view_all": true,
-        "swipe_on_mobile": false,
-        "image_ratio": "square",
+        "full_width": false,
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
+        "enable_quick_add": true,
         "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured-products": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Shop bestselgere",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "bestsellers",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -50,6 +94,7 @@
   "order": [
     "cart-items",
     "cart-footer",
-    "featured-collection"
+    "8c7aed88-ded6-435f-8eb0-2b9b6354687d",
+    "featured-products"
   ]
 }

@@ -1,4 +1,19 @@
 {
+  "custom": {
+    "bullets": {
+      "bullet_1": "Returlabel i pakken & 100 dages fortrydelsesret",
+      "bullet_2": "Fri fragt (400 kr+) & 2 års garanti ",
+      "bullet_3": "MobilePay, Apple Pay & PayPal"
+    },
+    "reviews": {
+      "verified_buyer": "Bekræftet køber",
+      "view_more": "Se mere",
+      "submit_review": "Indsend en anmeldelse",
+      "see_all_photos": "Se alle kundebilleder",
+      "based_on_count": "Bekræftet Baseret på {{ count }} anmeldelser",
+      "total_reviews": "{{ count }} anmeldelser"
+    }
+  },
   "general": {
     "password_page": {
       "login_form_heading": "Brug adgangskode for at få adgang til butikken:",

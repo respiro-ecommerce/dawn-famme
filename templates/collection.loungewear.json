@@ -1,0 +1,40 @@
+{
+  "sections": {
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 20,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "enable_filtering": true,
+        "filter_type": "vertical",
+        "enable_sorting": true
+      }
+    },
+    "1629364797037f49c2": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Alt om vårt loungewear",
+        "blog": "loungewear",
+        "post_limit": 3,
+        "show_image": true,
+        "show_date": false,
+        "show_author": false,
+        "show_view_all": true
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": true
+      }
+    }
+  },
+  "order": [
+    "product-grid",
+    "1629364797037f49c2",
+    "banner"
+  ]
+}

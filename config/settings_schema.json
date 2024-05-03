@@ -2,10 +2,10 @@
   {
     "name": "theme_info",
     "theme_name": "Dawn",
-    "theme_version": "13.0.0",
+    "theme_version": "14.0.0",
     "theme_author": "Shopify",
-    "theme_documentation_url": "https://help.shopify.com/manual/online-store/themes",
-    "theme_support_url": "https://support.shopify.com/"
+    "theme_documentation_url": "https:\/\/help.shopify.com\/manual\/online-store\/themes",
+    "theme_support_url": "https:\/\/support.shopify.com\/"
   },
   {
     "name": "t:settings_schema.logo.name",
@@ -98,6 +98,59 @@
           "on_secondary_button": "secondary_button_label",
           "secondary_button_border": "secondary_button_label"
         }
+      },
+      {
+        "type": "color",
+        "id": "discount_text",
+        "label": "Discount text",
+        "default": "#ca1d1d"
+      },
+      {
+        "type": "header",
+        "content": "Product badges"
+      },
+      {
+        "type": "color",
+        "id": "product_badge_discount",
+        "label": "Product discount badge",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "product_badge_sale",
+        "label": "Product sale badge",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "product_badge_1",
+        "label": "Product badge 1",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "product_badge_2",
+        "label": "Product badge 2",
+        "default": "#000000"
+      }
+    ]
+  },
+  {
+    "name": "Product badges",
+    "settings": [
+      {
+        "type": "number",
+        "id": "product_sale_badge_width",
+        "label": "Product sale badge width",
+        "default": 70,
+        "info": "Width of the product sale badge in pixels"
+      },
+      {
+        "type": "number",
+        "id": "product_custom_badge_width",
+        "label": "Product custom badge width",
+        "default": 100,
+        "info": "Width of the product custom badge in pixels"
       }
     ]
   },
@@ -489,6 +542,32 @@
   {
     "name": "t:settings_schema.cards.name",
     "settings": [
+      {
+        "type": "range",
+        "id": "card_title_font_size_desktop",
+        "min": 10,
+        "max": 40,
+        "step": 1,
+        "unit": "px",
+        "label": "Title font size (desktop)",
+        "default": 13
+      },
+      {
+        "type": "range",
+        "id": "card_title_font_size_mobile",
+        "min": 10,
+        "max": 40,
+        "step": 1,
+        "unit": "px",
+        "label": "Title font size (mobile)",
+        "default": 12
+      },
+      {
+        "type": "checkbox",
+        "id": "single_line_sizes",
+        "label": "Single Line Sizes",
+        "default": true
+      },
       {
         "type": "select",
         "id": "card_style",

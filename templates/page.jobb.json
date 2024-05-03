@@ -1,0 +1,118 @@
+{
+  "sections": {
+    "1631391866ff88557c": {
+      "type": "multicolumn",
+      "blocks": {
+        "1631391866ff88557c-0": {
+          "type": "column",
+          "settings": {
+            "title": "Markedsføring",
+            "text": "<p>Eksempler på arbeidsoppgaver:<\/p><p>* Influencer marketing<\/p><p>* Content marketing<\/p><p>* Ads & analyse<\/p><p>* Email-kampanjer<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "1631391866ff88557c-1": {
+          "type": "column",
+          "settings": {
+            "title": "Grafisk design",
+            "text": "<p>Eksempler på arbeidsoppgaver:<\/p><p>* Lager bannere<\/p><p>* Lage creatives for ads<\/p><p>* Utforme nyhetsbrev <\/p><p>* Logo og annen artwork<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "1631391866ff88557c-2": {
+          "type": "column",
+          "settings": {
+            "title": "Produktutvikling og innkjøp",
+            "text": "<p>Eksempler på arbeidsoppgaver:<\/p><p>* Analyse av salgsdata<\/p><p>* Lage innkjøpsordre<\/p><p>* Produkt sourcing <\/p><p>* Logo og annen artwork<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "a52a1608-f2dd-4f3a-bef5-3c666dd35af3": {
+          "type": "column",
+          "settings": {
+            "title": "Lager og logistikk",
+            "text": "<p>Eksempler på arbeidsoppgaver:<\/p><p>* Varemottak<\/p><p>* Returhåndtering<\/p><p>* Plukk og pakk<\/p><p>* Diverse analyser <\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "e632dd24-3e3a-479f-8996-ee1df0f1e0ee": {
+          "type": "column",
+          "settings": {
+            "title": "Regnskap og finans",
+            "text": "<p>Eksempler på arbeidsoppgaver:<\/p><p>* Bokføring<\/p><p>* Avstemminger<\/p><p>* Lønnskjøring<\/p><p>* Årsoppgjør<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "484ba243-1761-41f4-bd43-e43e3a7e145e": {
+          "type": "column",
+          "settings": {
+            "title": "Utvikling",
+            "text": "<p>Eksempler på arbeidsoppgaver:<\/p><p>* Kode python<\/p><p>* Lage no-code systemer<\/p><p>* front-end (liquid, js, html, css)<\/p><p>* Små webapps (flask)<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "bf654834-4554-47d5-aaac-f32840e1851b": {
+          "type": "column",
+          "settings": {
+            "title": "HR og ledelse",
+            "text": "<p>Eksempler på arbeidsoppgaver:<\/p><p>* Rekruttering<\/p><p>* Oppfølging<\/p><p>* Medarbeidersamtaler<\/p><p>* Kompetansebygging<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "21a5d9c6-ced1-4b16-a180-446012f2909a": {
+          "type": "column",
+          "settings": {
+            "title": "Kundeservice",
+            "text": "<p>Eksempler på arbeidsoppgaver:<\/p><p>* Besvare mails\/dms<\/p><p>* Forbedre rutiner<\/p><p>* Analysere kundetilbakemeldinger<\/p><p>* Forbedre makroer\/ferdigsvar<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1631391866ff88557c-0",
+        "1631391866ff88557c-1",
+        "1631391866ff88557c-2",
+        "a52a1608-f2dd-4f3a-bef5-3c666dd35af3",
+        "e632dd24-3e3a-479f-8996-ee1df0f1e0ee",
+        "484ba243-1761-41f4-bd43-e43e3a7e145e",
+        "bf654834-4554-47d5-aaac-f32840e1851b",
+        "21a5d9c6-ced1-4b16-a180-446012f2909a"
+      ],
+      "settings": {
+        "title": "Jobbmulighetene er mange i en av norges største nettbutikker",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "1631391866ff88557c",
+    "main"
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "rich_text_QjK6d8": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_HcWNmg": {
+          "type": "heading",
+          "settings": {
+            "heading": "Gratis vareprøver",
+            "heading_size": "h1"
+          }
+        },
+        "text_W6Bg9j": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Det er ingen krav for å melde seg på<br\/>Vi gir ut vareprøver i størrelse XS til XL<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_HcWNmg",
+        "text_W6Bg9j"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "custom_liquid_RU8z9G": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "custom_css": [
+        ".title {color: ##8e8e8e; text-align: center; font-weight: 800; font-size: 35px; line-height: 42px; font-family: \"Montserrat\";}",
+        ".subtitle {color: ##8e8e8e; text-align: center; font-weight: 500; font-size: 14px; line-height: 25px; font-family: \"Roboto\"; margin-right: 30px; margin-left: 30px;}"
+      ],
+      "settings": {
+        "custom_liquid": "<div class=\"title\">Gratis vareprøver<\/div>\n<div class=\"subtitle\">Det er ingen krav for å melde seg på<br>\nVi gir ut fine vareprøver i størrelse XS til XL<\/div>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "170721257559af4a46": {
+      "type": "apps",
+      "blocks": {
+        "forms_inline_dyjFGW": {
+          "type": "shopify:\/\/apps\/forms\/blocks\/inline\/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "settings": {
+            "form_id": "62122",
+            "text_color": "#202020",
+            "button_background_color": "#4d9f59",
+            "button_label_color": "#ffffff",
+            "links_color": "#1878b9",
+            "errors_color": "#e02229",
+            "text_alignment": "center",
+            "form_alignment": "center",
+            "padding_top": 30,
+            "padding_bottom": 0,
+            "padding_right": 0,
+            "padding_left": 0
+          }
+        }
+      },
+      "block_order": [
+        "forms_inline_dyjFGW"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "rich_text_URdm9D": {
+      "type": "rich-text",
+      "blocks": {
+        "text_6qB8yB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Vi deler ut tights, sko, topper, jakker og mange overraskelser som aldri lanseres! <br\/>Vareprøvene sendes per post og vi betaler frakten. <br\/>Vi kontakter regelmessig nye påmeldte.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_6qB8yB"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 20,
+        "padding_bottom": 32
+      }
+    },
+    "image_banner_w6niVp": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/tester-sample-moodboard-2_8c0e8eed-2d9f-486e-ac93-66a9c2e265be.jpg",
+        "image_url": "",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "featured_collection_3iDyHg": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Våre bestselgere👇",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "bestsellers",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_QjK6d8",
+    "custom_liquid_RU8z9G",
+    "170721257559af4a46",
+    "rich_text_URdm9D",
+    "image_banner_w6niVp",
+    "featured_collection_3iDyHg"
+  ]
+}

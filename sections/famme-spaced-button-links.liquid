@@ -1,0 +1,112 @@
+{%- if section.settings.pw -%}
+<div class="page-width">{%- endif -%}
+    {%- for link in section.settings.menu.links -%}
+        <a href="{{ link.url }}"
+           style="background:{{ section.settings.bg }};color:{{ section.settings.color }};min-width:{{ section.settings.width }}px;border-radius:{{ section.settings.radius }}px;padding:{{ section.settings.pady }}px {{ section.settings.padx }}px">
+            {{ link.title }}
+        </a>
+    {%- endfor -%}
+    {%- if section.settings.pw -%}</div>{%- endif -%}
+
+<style>
+
+    section.shopify-section.spaced-section.btns, section.shopify-section.spaced-section.btns > div.page-width {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    section.shopify-section.spaced-section.btns a {
+        margin: 0 5px 10px;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    /*buttons homepage section spacing*/
+    .spaced-section {
+        margin: 5rem auto 2rem;
+    }
+
+    section.spaced-section--full-width + section.spaced-section--full-width {
+        margin-top: {{ settings.bannerspace }}px;
+    }
+
+</style>
+
+{% schema %}
+{
+  "name": "Buttons",
+  "tag": "section",
+  "class": "spaced-section btns",
+  "settings": [
+    {
+      "type": "link_list",
+      "id": "menu",
+      "label": "Menu to list its links as buttons"
+    },
+    {
+      "type": "checkbox",
+      "id": "pw",
+      "label": "Enable page container"
+    },
+    {
+      "type": "color",
+      "id": "bg",
+      "label": "Buttons background",
+      "default": "#8a9e93"
+    },
+    {
+      "type": "color",
+      "id": "color",
+      "label": "Buttons color",
+      "default": "#fff"
+    },
+    {
+      "type": "range",
+      "id": "width",
+      "min": 150,
+      "max": 250,
+      "step": 1,
+      "default": 165,
+      "unit": "px",
+      "label": "Minimum button width"
+    },
+    {
+      "type": "range",
+      "id": "padx",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 10,
+      "unit": "px",
+      "label": "Buttons horizontal padding"
+    },
+    {
+      "type": "range",
+      "id": "pady",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 0,
+      "unit": "px",
+      "label": "Buttons vertical padding"
+    },
+    {
+      "type": "range",
+      "id": "radius",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 15,
+      "unit": "px",
+      "label": "Buttons radius"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Buttons"
+    }
+  ]
+}
+{% endschema %}

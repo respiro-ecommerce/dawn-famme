@@ -1,0 +1,53 @@
+{
+  "sections": {
+    "1629961584cabb64e5": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "video_url": "https:\/\/youtu.be\/SUVoJYlJCWw",
+        "cover_image": "shopify:\/\/shop_images\/om-famme-endorphin-rx1-video-cover.jpg",
+        "description": "",
+        "full_width": true,
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1629961534e8e4222a": {
+      "type": "collage",
+      "blocks": {
+        "1629961534e8e4222a-1": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "",
+            "second_image": false
+          }
+        }
+      },
+      "block_order": [
+        "1629961534e8e4222a-1"
+      ],
+      "settings": {
+        "heading": "",
+        "desktop_layout": "left",
+        "mobile_layout": "collage",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "1629961584cabb64e5",
+    "main",
+    "1629961534e8e4222a"
+  ]
+}

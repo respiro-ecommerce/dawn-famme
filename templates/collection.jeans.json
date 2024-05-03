@@ -1,0 +1,41 @@
+{
+  "sections": {
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 20,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_filtering": true,
+        "filter_type": "vertical",
+        "enable_sorting": true
+      }
+    },
+    "16293707771e417396": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Alt om jeans",
+        "blog": "jeans",
+        "post_limit": 3,
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": true
+      }
+    }
+  },
+  "order": [
+    "product-grid",
+    "16293707771e417396",
+    "banner"
+  ]
+}

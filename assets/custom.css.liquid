@@ -1,0 +1,244 @@
+
+{% comment %}Used for showing variant images instead of buttons for choosing color variant{% endcomment %}
+.product-form__input input[type='radio'] + label.color {
+  padding: 0;
+  overflow: hidden;
+  border-color: transparent;
+}
+.product-form__input input[type='radio'] + label.color > img {
+  max-width: 59px;
+  pointer-events: none;
+}
+
+
+
+
+button.product-form__submit.button--full-width {
+  max-width: 550px;
+  transition: .5s;
+}
+@media screen and (min-width: 990px) {
+  .product:not(.product--no-media):not(.featured-product) .product__media-wrapper {
+    max-width: 34%;
+    width: calc(34% - 1rem / 2);
+  }
+  .product:not(.product--no-media):not(.featured-product) .product__info-wrapper {
+    padding-left: 4rem;
+    max-width: 66%;
+    width: calc(66% - 1rem / 2);
+  }
+}
+
+
+
+{% comment %}Hide color options for disabled colors {% endcomment %}
+
+.product-form__input input[type="radio"][name="Color"].disabled+label,
+.product-form__input input[type="radio"][name="Color"]:disabled+label {display: none;}
+.button {border-radius: 25px;}
+.button:after {inset: unset;}
+
+
+
+
+{% comment %}collection swatches layout fix{% endcomment %}
+
+ul.product-grid div.card-wrapper {height: auto;}
+div.card__information {padding-bottom: .5em;}
+
+
+
+
+{% comment %}sold out styles fix{% endcomment %}
+
+.product-form__input input[type="radio"]:disabled + label, .product-form__input input[type="radio"].disabled + label {
+  border-color: rgba(78, 78, 78, 0.4);
+  color: rgba(78, 78, 78, 0.4);
+  text-decoration: line-through;
+}
+.product-form__input input[type="radio"]:disabled:checked + label, .product-form__input input[type="radio"].disabled:checked + label {
+  color: #bfbfbf;
+}
+
+
+
+img.cart-item__image {object-fit: contain;}
+
+
+ {% comment %}buttons' center dots fix {% endcomment %}
+
+.button:after {content: none!important;}
+div.pagination-wrapper.more {text-align: center;}
+div.pagination-wrapper.more>a {pointer-events: none;}
+button.product-form__submit.button.button--full-width.button--primary[disabled] {
+  opacity: .5;
+  pointer-events: none;
+}
+
+
+
+
+
+
+{% comment %}styling of the Klaviyo back in stock button / text {% endcomment %}
+a.klaviyo-bis-trigger {color: #4E4E4E; line-height: 47px;}
+a.btn.btn--full.btn--large.klaviyo-bis-trigger, p.rd {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  padding: 0 3rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: rgb(var(--color-button-text));
+  transition: box-shadow var(--duration-short) ease;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: rgba(var(--color-button),var(--alpha-button-background));
+  border-radius: 25px;
+  min-height: calc(4.5rem + var(--buttons-border-width) * 2);
+  margin-left: 0!important;
+  max-width: 44rem;
+  width: 100%!important;
+}
+
+
+
+
+p.rd {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  width: auto !important;
+  text-transform: uppercase;
+  font-size: 13px;
+  min-height: unset;
+  padding: 7px 20px;
+}
+
+
+
+
+{% comment %} .banner--large:not(.banner--adapt) {height: 100vh;} {% endcomment %}
+.multicolumn li.multicolumn-list__item.grid__item.slider__slide {margin-left: 0;}
+.background-none .multicolumn-card__image-wrapper {margin: 0;}
+.video-section__media.deferred-media video.js-youtube {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-height: 100%;
+}
+
+
+{% comment %}Fake swatches{% endcomment %}
+
+label.color.checked, a.color {
+  border: var(--variant-pills-border-width) solid transparent;
+  background-color: rgb(var(--color-background));
+  color: rgba(var(--color-foreground));
+  border-radius: var(--variant-pills-radius);
+  color: rgb(var(--color-foreground));
+  display: inline-block;
+  margin: 0.7rem 0.5rem 0.2rem 0;
+  padding: 0;
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  line-height: 1;
+  text-align: center;
+  transition: border var(--duration-short) ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+label.color.checked:before, a.color:before {
+  content: '';
+  position: absolute;
+  top: calc(var(--variant-pills-border-width) * -1);
+  right: calc(var(--variant-pills-border-width) * -1);
+  bottom: calc(var(--variant-pills-border-width) * -1);
+  left: calc(var(--variant-pills-border-width) * -1);
+  z-index: -1;
+  border-radius: var(--variant-pills-radius);
+  box-shadow: var(--variant-pills-shadow-horizontal-offset) var(--variant-pills-shadow-vertical-offset) var(--variant-pills-shadow-blur-radius) rgba(var(--color-shadow), var(--variant-pills-shadow-opacity));
+}
+label.color.checked:hover, a.color:hover {border-color: rgb(var(--color-foreground));}
+label.color.checked>img, a.color>img {max-width: 59px;}
+label.color.checked {
+  background-color: rgb(var(--color-foreground));
+  color: rgb(var(--color-background));
+}
+
+
+
+
+{% comment %}grid products' sizes{% endcomment %}
+
+div.product-form__input>a {
+  border: var(--variant-pills-border-width) solid rgba(var(--color-foreground), var(--variant-pills-border-opacity));
+  border-radius: var(--variant-pills-radius);
+  color: rgb(var(--color-foreground));
+  display: inline-block;
+  margin: 0.7rem 0.5rem 0.2rem 0;
+  padding: .5rem .8rem;
+  line-height: 1;
+  transition: border var(--duration-short) ease;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+
+
+ {% comment %}custom color for outlet category - SEEMS unused{% endcomment %}
+.list-menu > li:nth-child(3) > a > span {
+  color: rgb(238, 75, 43);
+  font-weight: bold;
+}
+
+
+
+{% comment %}iOS bug fix{% endcomment %}
+
+.multicolumn-list__item.center .media--adapt, .multicolumn-list__item .media--adapt .multicolumn-card__image {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+{% comment %}product thumbs full height{% endcomment %}
+
+li.thumbnail-list__item.slider__slide:before {content: none;}
+li.thumbnail-list__item.slider__slide>button.thumbnail.global-media-settings {position: relative;}
+@media screen and (max-width: 749px){li.thumbnail-list__item.slider__slide {width: calc(25% - .6rem);}}
+
+
+
+.js .menu-drawer__navigation ul.menu-drawer__menu {visibility: visible;}
+{% comment %}mobile menu{% endcomment %}
+
+.js .menu-drawer__navigation ul.menu-drawer__menu li:not(:last-child){border-bottom: 1px solid rgba(var(--color-foreground),.75);}
+.js .menu-drawer__navigation ul.menu-drawer__menu .menu-drawer__close-button {display: none;}
+.js .menu-drawer__navigation ul.menu-drawer__menu details svg.icon.icon-arrow {
+  transform: rotate(90deg);
+  margin-top: -5px;
+  transition: .3s;
+}
+.js .menu-drawer__navigation ul.menu-drawer__menu details[open] svg.icon.icon-arrow {transform: rotate(270deg);}
+.js .menu-drawer__navigation ul.menu-drawer__menu details[open].menu-opening>.menu-drawer__submenu {
+  position: relative;
+  transition: none;
+  background-color: rgba(var(--color-foreground),.04);
+}
+.js .menu-drawer__navigation ul.menu-drawer__menu details[open].menu-opening > .menu-drawer__submenu a.menu-drawer__menu-item.link {padding-left: 4.5rem;}
+
+/*New image-banner section fix*/
+div.banner__media.media picture, div.banner__media.media picture>img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
