@@ -278,7 +278,7 @@
                             <div class="cart-item__quantity-wrapper quantity-popover-wrapper">
                               <div class="quantity-popover-container{% if has_qty_rules or has_vol_pricing %} quantity-popover-container--hover{% endif %}">
                                 <quantity-input class="quantity cart-quantity">
-                                  <button class="quantity__button" name="minus" type="button">
+                                  <button class="quantity__button no-js-hidden" name="minus" type="button">
                                     <span class="visually-hidden">
                                       {{-
                                         'products.product.quantity.decrease'
@@ -296,8 +296,7 @@
                                     value="{{ item.quantity }}"
                                     {% # theme-check-disable %}
                                     data-cart-quantity="{{ cart | item_count_for_variant: item.variant.id }}"
-                                    min="0"
-                                    data-min="{{ item.variant.quantity_rule.min }}"
+                                    min="{{ item.variant.quantity_rule.min }}"
                                     {% if item.variant.quantity_rule.max != null %}
                                       max="{{ item.variant.quantity_rule.max }}"
                                     {% endif %}
@@ -307,7 +306,7 @@
                                     id="Drawer-quantity-{{ item.index | plus: 1 }}"
                                     data-index="{{ item.index | plus: 1 }}"
                                   >
-                                  <button class="quantity__button" name="plus" type="button">
+                                  <button class="quantity__button no-js-hidden" name="plus" type="button">
                                     <span class="visually-hidden">
                                       {{-
                                         'products.product.quantity.increase'
@@ -360,7 +359,7 @@
                                     {{- 'products.product.volume_pricing.title' | t -}}
                                   </span>
                                 {%- endif -%}
-                                <div class="quantity__rules caption">
+                                <div class="quantity__rules caption no-js-hidden">
                                   {%- if item.variant.quantity_rule.increment > 1 -%}
                                     <span class="divider">
                                       {{-
@@ -372,7 +371,7 @@
                                   {%- if item.variant.quantity_rule.min > 1 -%}
                                     <span class="divider">
                                       {{-
-                                        'products.product.quantity.min_of'
+                                        'products.product.quantity.minimum_of'
                                         | t: quantity: item.variant.quantity_rule.min
                                       -}}
                                     </span>
@@ -380,7 +379,7 @@
                                   {%- if item.variant.quantity_rule.max != null -%}
                                     <span class="divider">
                                       {{-
-                                        'products.product.quantity.max_of'
+                                        'products.product.quantity.maximum_of'
                                         | t: quantity: item.variant.quantity_rule.max
                                       -}}
                                     </span>
@@ -508,6 +507,12 @@
         <!-- CTAs -->
 
         <div class="cart__ctas" {{ block.shopify_attributes }}>
+          <noscript>
+            <button type="submit" class="cart__update-button button button--secondary" form="CartDrawer-Form">
+              {{ 'sections.cart.update' | t }}
+            </button>
+          </noscript>
+
           <button
             type="submit"
             id="CartDrawer-Checkout"
@@ -525,3 +530,24 @@
     </div>
   </div>
 </cart-drawer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    function isIE() {
+      const ua = window.navigator.userAgent;
+      const msie = ua.indexOf('MSIE ');
+      const trident = ua.indexOf('Trident/');
+
+      return msie > 0 || trident > 0;
+    }
+
+    if (!isIE()) return;
+    const cartSubmitInput = document.createElement('input');
+    cartSubmitInput.setAttribute('name', 'checkout');
+    cartSubmitInput.setAttribute('type', 'hidden');
+    document.querySelector('#cart').appendChild(cartSubmitInput);
+    document.querySelector('#checkout').addEventListener('click', function (event) {
+      document.querySelector('#cart').submit();
+    });
+  });
+</script>

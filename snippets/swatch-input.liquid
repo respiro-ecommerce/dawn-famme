@@ -2,40 +2,36 @@
   Renders a swatch input component.
   Accepts:
   - id: {String} unique input id
-  - type: {String} input type. Accepts 'radio' or 'checkbox', defaults to 'radio' (optional)
   - name: {String} input name,
-  - value: {ProductOptionValueDrop} input value
-  - swatch: {SwatchDrop} the swatch drop
+  - value: {ProductOptionValueDrop} input value,
   - product_form_id: {String} id of the form associted with the input
   - checked: {Boolean} default checked status
-  - disabled: {Boolean} default disabled status (optional)
-  - visually_disabled: {Boolean} style the swatch as disabled, but leave the input enabled (optional)
-  - shape: {String} swatch shape. Accepts 'square', defaults to circle (optional)
-  - help_text: {String} additional content to render inside the label (optional)
+  - disabled: {Boolean} default disabled status
+  - shape: {String} swatch shape. Accepts 'square', defaults to circle.
+  - help_text: {String} additional content to render inside the label
 
   Usage:
    {% render 'swatch-input',
       id: input_id,
       name: input_name,
       value: input_value,
-      swatch: swatch,
       product_form_id: product_form_id,
-      checked: checked
+      checked: checked,
+      disabled: disabled,
+      shape: 'square'
+      help_text: 'help text'
     %}
 {% endcomment %}
 
 <input
-  type="{{ type | default: 'radio' }}"
+  type="radio"
   id="{{ id }}"
   name="{{ name }}"
   value="{{ value }}"
   form="{{ product_form_id }}"
-  class="swatch-input__input{% if visually_disabled %} visually-disabled{% endif %}"
+  class="swatch-input__input{% if disabled %} disabled{% endif %}"
   {% if checked %}
     checked
-  {% endif %}
-  {% if disabled %}
-    disabled
   {% endif %}
 >
 <label
@@ -43,6 +39,7 @@
   title="{{ value }}"
   class="swatch-input__label{% if shape == 'square' %} swatch-input__label--square{% endif %}"
 >
-  {% render 'swatch', swatch: swatch, shape: shape %}
+  {% render 'swatch', swatch: value.swatch, shape: shape %}
+  <span class="visually-hidden">{{ value }}</span>
   {{ help_text }}
 </label>

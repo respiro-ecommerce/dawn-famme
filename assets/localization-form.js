@@ -138,15 +138,8 @@ if (!customElements.get('localization-form')) {
         }
       }
 
-      normalizeString(str) {
-        return str
-          .normalize('NFD')
-          .replace(/\p{Diacritic}/gu, '')
-          .toLowerCase();
-      }
-
       filterCountries() {
-        const searchValue = this.normalizeString(this.elements.search.value);
+        const searchValue = this.elements.search.value.toLowerCase();
         const popularCountries = this.querySelector('.popular-countries');
         const allCountries = this.querySelectorAll('a');
         let visibleCountries = allCountries.length;
@@ -158,7 +151,7 @@ if (!customElements.get('localization-form')) {
         }
 
         allCountries.forEach((item) => {
-          const countryName = this.normalizeString(item.querySelector('.country').textContent);
+          const countryName = item.querySelector('.country').textContent.toLowerCase();
           if (countryName.indexOf(searchValue) > -1) {
             item.parentElement.classList.remove('hidden');
             visibleCountries++;

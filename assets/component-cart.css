@@ -155,7 +155,7 @@ cart-items {
   width: 100%;
 }
 
-.cart__ctas > * + * {
+.cart__ctas > *:not(noscript:first-child) + * {
   margin-top: 1rem;
 }
 
