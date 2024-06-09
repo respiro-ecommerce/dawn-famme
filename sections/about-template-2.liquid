@@ -1,0 +1,377 @@
+{% unless template contains 'style2' %}  
+{% if section.settings.pagestyle == "style1" %}
+<div class="about-us"> 
+
+  {% if section.settings.top-text != blank %}
+  <div class="top-text-block">{{ section.settings.top-text}}</div>
+  {% endif %}
+
+  {% for block in section.blocks limit: section.blocks.size %} 
+  {% if block.type == 'image_with_text' %}
+
+  {%- capture image_layout -%}
+  <div class="feature-row__item imgCol wow{% if block.settings.layout == 'right' %} fadeInRight{% else %} fadeInLeft{% endif %}" data-wow-delay="{{delay_time}}ms">
+    {% if block.settings.image != blank %}
+    {%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+    <span class="imgWrapper" style="max-width:{{ block.settings.image.width }}px;">
+      <img class="feature-row__image lazyload" src="{{ block.settings.image | img_url: '100x' }}" width="100%"
+           data-src="{{ img_url }}" data-widths="[180, 360, 540, 720, 900]" data-aspectratio="{{ block.settings.image.aspect_ratio }}" data-sizes="auto" alt="{{ block.settings.image.alt | escape }}">
+    </span>
+    {% else %}
+    {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+    {% endif %}
+  </div>
+  {%- endcapture -%}
+
+  <div class="feature-row row-{{ block.id }}">
+    {{ image_layout }}
+    <div class="feature-row__item feature-row__text {{ block.settings.layout }} wow{% if block.settings.layout == 'right' %} fadeInLeft{% else %} fadeInRight{% endif %}" data-wow-delay="{{delay_time}}ms">
+      <div class="row-text {{block.settings.text_align}}">
+        {% if block.settings.title != blank %}<h3 style="color:{{block.settings.text_clr}};">{{ block.settings.title }}</h3>{% endif %}
+        {% if block.settings.text != blank %}<div class="rte rte-setting featured-row__subtext" style="color:{{block.settings.text_clr}};">{{ block.settings.text }}</div>{% endif %}
+        {% if block.settings.button_label != blank and block.settings.button_link != blank %}
+        <a href="{{ block.settings.button_link }}" class="btn {{block.settings.btn-size-mob}} {{block.settings.btn-size-desk}}">{{ block.settings.button_label }}</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>  
+  
+  {% endif %}        
+  {% endfor %} 
+</div>
+{% endif %}
+{% endunless %}
+
+{% if section.settings.pagestyle == "style2" or template contains 'style2' %}
+<div class="page-width">
+  <div class="about-style-2">  
+    {% if section.settings.top-text != blank %}
+    <div class="top-text-block">{{ section.settings.top-text}}</div>
+    {% endif %}
+    {% for block in section.blocks limit: section.blocks.size%}
+    {% if block.type == 'style2' %}
+    {% if block.settings.aboutimg != blank %}
+    	<p class="imgWrapper" style="max-width:{{block.settings.aboutimg.width}}px;">
+    		{{ block.settings.aboutimg | img_url: 'master' | img_tag: block.settings.aboutimg.alt, 'about_us_image' }}
+    	</p>
+    	<p>&nbsp;</p>
+    {% endif %}
+    <div class="medium-up--four-fifths" style="margin:auto;">
+        <div class="grid about-details">
+          <div class="grid__item medium-up--one-fifth"> {% if block.settings.title1 != blank %}
+            <div class="block-title">{{ block.settings.title1 }}</div>
+            {% endif %} 
+          </div>
+          <div class="grid__item medium-up--four-fifths"> {% if block.settings.title1des != blank %}
+            <div class="block-des">{{ block.settings.title1des }}</div>
+            {% endif %} 
+          </div>             
+          <div class="grid__item medium-up--one-fifth"> {% if block.settings.title2 != blank %}
+            <div class="block-title">{{ block.settings.title2 }}</div>
+            {% endif %} 
+          </div>
+          <div class="grid__item medium-up--four-fifths"> {% if block.settings.title2des != blank %}
+            <div class="block-des">{{ block.settings.title2des }}</div>
+            {% endif %} 
+          </div>              
+          <div class="grid__item medium-up--one-fifth"> {% if block.settings.title3 != blank %}
+            <div class="block-title">{{ block.settings.title3 }}</div>
+            {% endif %} 
+          </div>
+          <div class="grid__item medium-up--four-fifths"> {% if block.settings.title3des != blank %}
+            <div class="block-des">{{ block.settings.title3des }}</div>
+            {% endif %} 
+          </div>           
+          <div class="grid__item medium-up--one-fifth"> {% if block.settings.title4 != blank %}
+            <div class="block-title">{{ block.settings.title4 }}</div>
+            {% endif %} 
+          </div>
+          <div class="grid__item medium-up--four-fifths"> {% if block.settings.title4des != blank %}
+            <div class="block-des">{{ block.settings.title4des }}</div>
+            {% endif %} 
+          </div>             
+          <div class="grid__item medium-up--one-fifth"> {% if block.settings.title5 != blank %}
+            <div class="block-title">{{ block.settings.title5 }}</div>
+            {% endif %} 
+          </div>
+          <div class="grid__item medium-up--four-fifths team-bio">
+            <div class="grid">
+              <div class="grid__item medium-up--one-third text-center">
+                {% if block.settings.team1pic != blank %}<p>{{ block.settings.team1pic | img_url: '300x' | img_tag: block.settings.team1pic.alt, 'team_member_pic' }}</p>{% endif %}
+                {% if block.settings.team1bio != blank %}<div class="team-bio">{{ block.settings.team1bio }}</div>{% endif %}
+                {% if block.settings.socialurl1 != blank %}<div class="social-url">{{block.settings.socialurl1}}</div>{% endif %}
+              </div>
+              <div class="grid__item medium-up--one-third text-center">
+                {% if block.settings.team2pic != blank %}<p>{{ block.settings.team2pic | img_url: '300x' | img_tag: block.settings.team2pic.alt, 'team_member_pic' }}{% endif %}
+                {% if block.settings.team2bio != blank %}<div class="team-bio">{{ block.settings.team2bio }}</div>{% endif %} 
+                {% if block.settings.socialurl2 != blank %}<div class="social-url">{{block.settings.socialurl2}}</div>{% endif %}
+              </div>
+              <div class="grid__item medium-up--one-third text-center">
+                {% if block.settings.team3pic != blank %}<p>{{ block.settings.team3pic | img_url: '300x' | img_tag: block.settings.team3pic.alt, 'team_member_pic' }}{% endif %}
+                {% if block.settings.team3bio != blank %}<div class="team-bio">{{ block.settings.team3bio }}</div>{% endif %} 
+                {% if block.settings.socialurl3 != blank %}<div class="social-url">{{block.settings.socialurl3}}</div>{% endif %}
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endif %}
+        {% endfor %} 
+      </div>
+  </div>
+</div>
+{% endif %}
+
+{% schema %}
+  {
+    "name": "About Page",   
+ 	"max_blocks": 15,
+    "settings": [	
+		 {
+            "type": "richtext",
+            "id": "top-text",
+            "label": "Introduction Text Block"
+		},
+        {
+            "type": "select",
+            "id": "pagestyle",
+            "label": "Page Style",
+            "default": "style1",
+            "options": [
+              {
+                "value": "style1",
+                "label": "Style 1"
+              },
+              {
+                "value": "style2",
+                "label": "Style 2"
+              } 			  
+            ]
+        },
+		{
+          "type": "select",
+          "id": "btn-size-desk",
+          "label": "Page Style 1: Button Size: Desktop",
+          "default": "btn-sm",
+          "options": [
+          {
+          "label": "Small",
+          "value": "btn-sm"
+          },
+          {
+          "label": "Medium",
+          "value": "btn-md"
+          },
+          {
+          "label": "Large",
+          "value": "btn-lg"
+          }	
+          ]
+          }, 
+          {
+          "type": "select",
+          "id": "btn-size-mob",
+          "label": "Page Style 1: Button Size : Mobile",
+          "default": "mob-btn-sm",
+          "options": [
+          {
+          "label": "Small",
+          "value": "mob-btn-sm"
+          },
+          {
+          "label": "Medium",
+          "value": "mob-btn-md"
+          },
+          {
+          "label": "Large",
+          "value": "mob-btn-lg"
+          }	
+          ]
+          }      
+    ],
+  "blocks": [
+      {
+        "type": "image_with_text",
+        "name": "Style 1",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"			
+          },
+          {
+            "type": "select",
+            "id": "layout",
+            "label": "Layout",
+            "default": "left",
+            "options": [
+              {
+                "value": "left",
+                "label": "Image on left"
+              },
+              {
+                "value": "right",
+                "label": "Image on right"
+              }
+            ]
+          },
+          {
+            "type": "textarea",
+            "id": "title",
+            "label": "Heading",
+            "default": "Image with text",
+			"info":"You can use heading tags and <strong> tag for bold font"
+          },
+          {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text",
+            "default": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
+          },
+          {
+            "type": "text",
+            "id": "button_label",
+            "label": "Button label"
+          },
+          {
+            "type": "url",
+            "id": "button_link",
+            "label": "Button link"
+          }
+        ]
+      },
+	  {
+        "type": "style2",
+        "name": "Style 2",
+		"settings": [
+          {
+            "type": "image_picker",
+            "id": "aboutimg",
+            "label": "About Us Image"			
+          },
+		 {
+		 	"type":"header",
+			"content":"Text Block"
+		  },
+		  {
+            "type": "textarea",
+            "id": "title1",
+            "label": "Title 1",
+		    "default":"Title 1"
+          },
+		  {
+            "type": "richtext",
+            "id": "title1des",
+            "label": "Description",
+            "default": "<p>Avon comes with easy-to-use interface and outstanding support. You can implement your own design. You can easily change the store's appearance as per your requirements using our ready sections and options available.</p>"
+          },
+ 		 {
+		 	"type":"header",
+			"content":"Text Block"
+		  },
+		  {
+            "type": "textarea",
+            "id": "title2",
+            "label": "Title 2",
+   			"default":"Title 2"
+          },
+		 {
+            "type": "richtext",
+            "id": "title2des",
+            "label": "Description",
+            "default": "<p>Vestibulum ultricies aliquam convallis. Maecenas ut tellus mi. Proin tincidunt, lectus eu volutpat mattis, ante metus lacinia tellus, vitae condimentum nulla enim bibendum nibh. Praesent turpis risus, interdum nec venenatis id, pretium sit amet purus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>"
+           },
+		 {
+		 	"type":"header",
+			"content":"Text Block"
+		  },
+ 		 {
+            "type": "textarea",
+            "id": "title3",
+            "label": "Title 3",	
+			"default":"Title 3"
+          },		 
+		  {
+            "type": "richtext",
+            "id": "title3des",
+            "label": "Description",
+            "default": "<p>Vestibulum ultricies aliquam convallis. Maecenas ut tellus mi. Proin tincidunt, lectus eu volutpat mattis, ante metus lacinia tellus, vitae condimentum nulla enim bibendum nibh. Praesent turpis risus, interdum nec venenatis id, pretium sit amet purus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>"
+          },
+		 {
+		 	"type":"header",
+			"content":"Text Block"
+		  },
+		  {
+            "type": "textarea",
+            "id": "title4",
+            "label": "Title 4",
+		    "default":"Title 4"
+          },
+          {
+            "type": "richtext",
+            "id": "title4des",
+            "label": "Description",
+            "default":"<p>55 Gallaxy Enque,<br/>2568 steet, 23568 NY</p>"
+          },
+		 {
+		 	"type":"header",
+			"content":"Our Team"
+		  },
+		  {
+            "type": "textarea",
+            "id": "title5",
+            "label": "Title 5",
+		    "default":"Our Team"
+          },
+		  {
+            "type": "image_picker",
+            "id": "team1pic",
+            "label": "Team Member Picture"		    
+          },
+		  {
+            "type": "textarea",
+            "id": "team1bio",
+            "label": "Team Member Bio"	   
+          },
+		 {
+            "type": "textarea",
+            "id": "socialurl1",
+            "label": "Social Profile",
+			"info":"[You can copy code from here](https://codebeautify.org/htmlviewer/cb0edef7)"
+          },
+		 {
+            "type": "image_picker",
+            "id": "team2pic",
+            "label": "Team Member Picture"		    
+          },
+		  {
+            "type": "textarea",
+            "id": "team2bio",
+            "label": "Team Member Bio"	   
+          },
+ 		{
+            "type": "textarea",
+            "id": "socialurl2",
+            "label": "Social Profile",
+			"info":"[You can copy code from here](https://codebeautify.org/htmlviewer/cb0edef7)"
+          },
+		 {
+            "type": "image_picker",
+            "id": "team3pic",
+            "label": "Team Member Picture"		    
+          },
+		  {
+            "type": "textarea",
+            "id": "team3bio",
+            "label": "Team Member Bio"	   
+          },
+		 {
+            "type": "textarea",
+            "id": "socialurl3",
+            "label": "Social Profile",
+			"info":"[You can copy code from here](https://codebeautify.org/htmlviewer/cb0edef7)"
+          }
+		]
+      }
+    ]    
+  }
+{% endschema %} 

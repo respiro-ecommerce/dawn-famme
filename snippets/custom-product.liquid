@@ -1,0 +1,279 @@
+{%- assign product = all_products[block.settings.product] -%}
+{%- if product.empty? -%}{%- assign section_onboarding = true -%}{%- endif -%}
+<div class="ptContainer wow fadeIn" id="ProductSection-{{ block.id }}" data-section-id="{{ block.id }}" data-section-type="product">
+      {% comment %}Get first variant, or deep linked one{% endcomment %}
+      {%- assign current_variant = product.selected_or_first_available_variant -%}
+      {%- assign product_thumb_size = '160x160' -%}
+      {%- assign product_image_zoom_size = '1024x1024' -%}
+      {%- assign enable_zoom = block.settings.enable_zoom -%}
+
+      {%- case block.settings.image_size -%}
+      {% when 'small' %}
+      {%- assign product_image_width = 'medium-up--one-third' -%}
+      {%- assign product_description_width = 'medium-up--two-thirds' -%}
+      {%- assign product_thumbnail_width = 'medium-up--one-third' -%}
+      {%- assign product_image_size = '550x' -%}
+      {% when 'medium' %}
+      {%- assign product_image_width = 'medium-up--one-half' -%}
+      {%- assign product_description_width = 'medium-up--one-half' -%}
+      {%- assign product_thumbnail_width = 'medium-up--one-quarter' -%}
+      {%- assign product_image_size = '900x' -%}
+      {% when 'large' %}
+      {%- assign product_image_width = 'medium-up--two-thirds' -%}
+      {%- assign product_description_width = 'medium-up--one-third' -%}
+      {%- assign product_thumbnail_width = 'medium-up--one-fifth' -%}
+      {%- assign product_image_size = '1200x' -%}
+      {%- endcase -%}
+      <div class="grid grid--table product-single home">
+        <div class="grid__item wow fadeIn table--cell product-single__photos {{ product_image_width }}{% if block.settings.image_size == 'full' %} product-single__photos--full{% endif %}" data-wow-delay="100ms">
+          {%- assign featured_img_src = product.selected_or_first_available_variant.featured_image | default: product.featured_image -%}
+          {%- assign featured_img_alt = current_variant.featured_image.alt | default: product.featured_image.alt -%}
+          <div id="FeaturedImageZoom-{{ block.id }}" class="FeaturedImageZoom-{{ block.id }} product-single__photo{% if product.images.size > 1 %} product-single__photo--has-thumbnails{% endif %}" {% if enable_zoom %}data-zoom="{{ featured_img_src | img_url: product_image_zoom_size }}"{% endif %}>
+            {% unless section_onboarding %}
+            <img src="{{ featured_img_src | img_url: product_image_size}}" alt="{{ featured_img_alt }}" id="FeaturedImage-{{ block.id }}" class="FeaturedImage-{{ block.id }} product-featured-img{% if enable_zoom %} js-zoom-enabled{% endif %}">
+            {% else %}
+            {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
+            {% endunless %}
+          </div>
+        </div>
+        <div class="grid__item table--cell {{ product_description_width }} wow fadeIn" data-wow-delay="200ms">
+          <div class="product-single__meta">
+            {% unless section_onboarding %}
+            {%- assign compare_at_price = current_variant.compare_at_price -%}
+            {%- assign price = current_variant.price -%}
+            {%- assign price_varies = current_variant.price_varies -%}
+            {%- assign available = current_variant.available -%}
+            {% else %}
+            {%- assign compare_at_price = 1999 -%}
+            {%- assign price = 1999 -%}
+            {%- assign price_varies = false -%}
+            {%- assign available = true -%}
+            {% endunless %}
+            {%- if block.settings.show_vendor -%}<div class="product-vendor">{{ product.vendor | link_to_vendor }}</div>{%- endif -%}
+            <h2 itemprop="name" class="product-single__title h2"><a href="{{ product.url | within: collection }}">{{ product.title }}</a></h2>
+
+            {%- if block.settings.spr_review or block.settings.spr_availability or block.settings.spr_sku -%}
+                <div class="product-info">
+                    {%- if block.settings.spr_review -%}<p class="review"><a class="reviewLink" href="#tab2"><span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span></a></p>{%- endif -%}	
+                    {%- if block.settings.spr_availability -%}
+                        <p class="product-stock">{{ 'products.product.availability' | t }}
+                            <span class="instock {% unless product.available %}hide{% endunless %}">{{ 'products.product.available' | t }}</span>
+                            <span class="outstock {% if product.available %}hide{% endif %}">{{ 'products.product.unavailable' | t }}</span>
+                        </p>
+                    {%- endif -%}
+                    {%- if block.settings.spr_sku and current_variant.sku != blank -%}<p class="product-sku">{{ 'products.product.sku' | t }} <span class="variant-sku">{{ current_variant.sku }}</span></p>{%- endif -%}
+                </div>
+            {%- endif -%}
+
+            {%- unless settings.catalog-mode -%}
+              <p class="product-single__price product-single__price-{{ block.id }}{% unless current_variant.available %} product-price--sold-out{% endunless %}">
+                {% if current_variant.compare_at_price > current_variant.price %}
+                  <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+                  <span class="product-price__price product-price__price-{{ block.id }} product-price__sale product-price__sale--single">
+                    <span id="ProductPrice-{{ block.id }}">{{ current_variant.price | money }}</span>            
+                  </span>
+                  <s id="ComparePrice-{{ block.id }}" class="product-price__price">{{ current_variant.compare_at_price | money }}</s>
+
+                  {% if settings.show_saleoff %}  
+                    <span class="discount-badge"><span class="devider">|</span>&nbsp;
+                      <span itemprop="name">{{ 'products.product.you_save' | t}}</span>
+                      <span id="SaveAmount-{{ block.id }}" class="product-single__save-amount">{{ product.compare_at_price | minus: product.price | money }}</span>
+                      <span class="off">(<span>{{ current_variant.compare_at_price | minus: current_variant.price | times: 100 | divided_by: current_variant.compare_at_price }}</span>%{{ 'products.product.off' | t}})</span>              	
+                    </span>
+                  {% endif %}
+
+                {% else %}
+                  <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+                  <s id="ComparePrice-{{ block.id }}" class="product-price__price hide">{{ current_variant.compare_at_price | money }}</s>
+                  <span class="product-price__price product-price__price-{{ block.id }}">
+                    <span id="ProductPrice-{{ block.id }}">{{ current_variant.price | money }}</span>
+                    <span class="product-price__sale-label product-price__sale-label-{{ block.id }} hide">{{ 'products.product.on_sale' | t }}</span>
+                  </span>
+                {% endif %}
+              </p>
+              {%- endunless -%}
+
+              {%- if block.settings.fake_orders -%}
+              {%- assign ordermsg = settings.orders_msg | replace: '[orders]','<strong class="items"></strong>' | replace: '[hours]','<strong class="time"></strong>' -%}
+              <div class="orderMsg" data-user="{{settings.orders}}" data-time="{{settings.orders_time}}"><span class="fire-icon"><i class="ad ad-fire-l"></i></span> {{ordermsg}}</div>
+              {%- endif -%}
+              
+              {% assign meta = product.metafields.meta %}
+                {% assign key = 'countdown' %}
+                {% if block.settings.countdown_lbl != blank and settings.countdown and meta.countdown != blank %} 
+                    <label class="countdown-lbl">{{ settings.countdown_lbl}}</label>
+                {% endif %}
+                {% if block.settings.countdown and meta.countdown != blank %}
+                    <div id="countdown{{block.id}}" class="prcountdown"></div>
+                    <script type="text/javascript">
+                        var countDownDate = new Date("{{ meta.countdown }}").getTime();
+                        var x = setInterval(function() { 
+                            var now = new Date().getTime(),
+                            distance = countDownDate - now,
+                            days = Math.floor(distance / (1000 * 60 * 60 * 24)),
+                            hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+                            minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
+                            seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                            if(days > 99){
+                                days = ("00" + days).substr(-3);
+                            } else {
+                                days = ("00" + days).substr(-2);
+                            }
+                            hours = ("00" + hours).substr(-2);
+                            minutes = ("00" + minutes).substr(-2);
+                            seconds = ("00" + seconds).substr(-2);
+
+                            document.getElementById("countdown{{block.id}}").innerHTML = "<span class='days'>" + days + "<span>{{ 'date_formats.days' | t }}</span></span> <span class='hours'>" + hours + "<span>{{ 'date_formats.hours' | t }}</span></span> <span class='minutes'>"
+                            + minutes + "<span>{{ 'date_formats.minuts' | t }}</span></span> <span class='seconds'>" + seconds + "<span>{{ 'date_formats.seconds' | t }}</span>";
+
+                            if (distance < 0) {
+                                clearInterval(x);
+                                document.getElementById("countdown{{block.id}}").style.display = "none";
+                            }
+                        }, 1000);
+                    </script>
+                {% endif %}
+				
+              {%- if block.settings.short_desc -%}
+              <div class="product-single__description rte">
+                {%- assign meta = product.metafields.meta -%}
+                {%- assign key = 'short_des' -%}
+                {%- if meta.short_des != blank -%}
+                	{{ meta.short_des }}
+                {%- elsif product.empty? -%}
+                	{{ 'homepage.onboarding.product_description' | t }}
+                {%- else -%}
+                	{{ product.description | strip_html | truncatewords: 50 }}
+                {%- endif -%}
+              </div>
+              {% endif %}
+
+              {%- comment -%}****	product variants **** {%- endcomment -%}
+              {%- unless product.empty? -%}
+              {%- if block.settings.show_variant_swatches -%}{% assign hidedropdown = " hidedropdown" %}{%- endif -%}
+              {%- assign formclass = 'product-form product-form-' | append: block.id | append: hidedropdown -%}
+              {% form 'product', product, class: formclass %}
+              {%- unless product.options.size == 1 and product.variants[0].title == 'Default Title' -%}
+              {% for option in product.options_with_values %}
+                <div class="selector-wrapper js product-form__item{% if settings.show_swatch %} hide{% endif %}">
+                  <label {% if option.name == 'default' %}class="label--hidden" {% endif %}for="SingleOptionSelector-{{ forloop.index0 }}">{{ option.name }}</label>
+                  <select class="single-option-selector single-option-selector-{{ block.id }} product-form__input selectbox" id="SingleOptionSelector-{{ forloop.index0 }}" data-index="option{{ forloop.index }}">
+                    {% for value in option.values %}<option value="{{ value | escape }}"{% if option.selected_value == value %} selected="selected"{% endif %}>{{ value }}</option>{% endfor %}
+                  </select>
+                </div>
+              {% endfor %}
+              {%- endunless -%}
+
+              <select name="id" id="ProductSelect-{{ block.id }}" data-section="{{ block.id }}" class="product-form__variants selectbox no-js">
+                {%- for variant in product.variants -%}
+                {%- if variant.available -%}
+                <option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} value="{{ variant.id }}">{{ variant.title }}</option>
+                {%- else -%}
+                <option disabled="disabled">{{ variant.title }} - {{ 'products.product.sold_out' | t }}</option>
+                {%- endif -%}
+                {%- endfor -%}
+              </select>
+
+              {%- comment -%}****	product swatches **** {%- endcomment -%}
+              {%- if block.settings.show_variant_swatches and product.available and product.variants.size > 1 and product.variants[0].title != 'Default Title' -%}
+              {%- for option in product.options -%}{% include 'swatch' with option %}{%- endfor -%}
+              {%- endif -%}
+              {%- unless settings.catalog-mode -%}          
+              <div class="flex product-action">
+                {% if settings.quan-sel %}
+                <div class="qtyField" title="{{ 'products.product.quantity' | t }}">
+                  <a class="qtyBtn minus" href="javascript:void(0);"><i class="ad ad-minus-r" aria-hidden="true"></i></a>
+                  <input type="text" id="quantity" name="quantity" value="1" class="product-form__input qty" />
+                  <a class="qtyBtn plus" href="javascript:void(0);"><i class="ad ad-plus-r" aria-hidden="true"></i></a>
+                </div>
+                {% endif %}
+                <button type="submit" name="add" id="AddToCart-{{ section.id }}" {% unless current_variant.available %}disabled="disabled"{% endunless %} class="btn product-form__cart-submit{% if settings.addto_btn_an %} btnzoom{% endif %}">
+                  {% if template contains 'pre-order' %}
+                  <span id="AddToCartText-{{ section.id }}">{% unless current_variant.available %}{{ 'products.product.sold_out' | t }}{% else %}{{ 'products.product.pre_order' | t }}{% endunless %}</span>
+                  {% else %}
+                  <span id="AddToCartText-{{ section.id }}">{% unless current_variant.available %}{{ 'products.product.sold_out' | t }}{% else %}{{ 'products.product.add_to_cart' | t }}{% endunless %}</span>
+                  {% endif %}
+                </button>
+              </div>
+              {%- endunless -%}
+              {% endform %}
+              <div class="display-table shareRow">
+                <div class="display-table-cell{% unless block.settings.show_share_buttons == false %} medium-up--one-third{% endunless %} infolinks">
+                  {%- if settings.enable_wishlist -%}<a class="wishlist addto-wishlist" href="/pages/wishlist" rel="{{ product.handle | handleize }}"><i class="ad ad-heart-l"></i><span class="msg">{{ 'products.wishlist.add_to' | t}}</span></a>{%- endif -%}
+                </div>
+                {%- if block.settings.show_share_buttons -%}
+                <div class="display-table-cell text-right">{% include 'social-sharing', share_title: product.title, share_permalink: product.url, share_image: product %}</div>
+                {%- endif -%}
+              </div>
+              {%- endunless -%}
+          </div>
+        </div>
+      </div>
+</div>
+<style>
+  .sizelink { display:none; }
+</style>
+{%- unless product.empty? -%}<script type="application/json" id="ProductJson-{{ block.id }}">{{ product | json }}</script>{%- endunless -%}
+<script type="text/javascript">
+  theme.productStrings = {
+    addToCart: {{ 'products.product.add_to_cart' | t | json }},
+    soldOut: {{ 'products.product.sold_out' | t | json }},
+    unavailable: {{ 'products.product.unavailable' | t | json }}
+  }
+  
+  window.addEventListener('load', function() {
+    $('#ProductSection-{{ block.id }} .swatch :radio').change(function() {
+      var optionIndex = $(this).closest('.swatch').attr('data-option-index');
+      var optionValue = $(this).val();
+      $(this).closest('form').find('.single-option-selector').eq(optionIndex).val(optionValue).trigger('change');
+      {%- if settings.show_multiple_currencies and settings.currency_opt == 'script' -%}Currency.convertAll(shopCurrency, $('#currencies li.selected').attr('data-currency'));{%- endif -%}
+    });
+  });
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "Product",
+  "name": "{{ product.title | escape }}",
+  "url": "{{ shop.url }}{{ product.url }}",
+  {%- if product.featured_image -%}
+    {%- assign image_size = product.featured_image.width | append: 'x' -%}
+    "image": [
+      "https:{{ product.featured_image.src | img_url: image_size }}"
+    ],
+  {%- endif -%}
+  "description": "{{ product.description | strip_html | escape }}",
+  {%- if current_variant.sku != blank -%}"sku": "{{current_variant.sku}}",{%- endif -%}
+  {%- if current_variant.barcode != blank -%}"mpn": "{{current_variant.barcode}}",{%- endif -%}
+  "brand": {
+    "@type": "Thing",
+    "name": "{{ product.vendor | escape }}"
+  },
+  "offers": [
+    {%- for variant in product.variants -%}
+      {
+        "@type" : "Offer",
+        {%- if variant.sku != blank -%}"sku": "{{ variant.sku }}",{%- endif -%}
+        {%- if variant.barcode != blank -%}"mpn": "{{ variant.barcode }}",{%- endif -%}
+        "availability" : "http://schema.org/{% if product.available %}InStock{% else %}OutOfStock{% endif %}",
+        "price" : "{{ variant.price | divided_by: 100.00 }}",
+        "priceValidUntil": "{{ "now" | date: '%s' | plus: "86400" | date: "%Y-%m-%d %H:%M" }}",
+        "priceCurrency" : "{{ shop.currency }}",
+        "url" : "{{ shop.url }}{{ variant.url }}"
+      }{% unless forloop.last %},{% endunless %}
+    {%- endfor -%}
+  ]
+  {%- if product.metafields.spr.reviews and product.metafields.spr.reviews != blank -%}
+		{%- assign ratingCount = product.metafields.spr.reviews | split: '"reviewCount": "' | last | split: '"' |first | plus: 0 -%}
+		{%- assign ratingValue = product.metafields.spr.reviews | split: '"ratingValue": "' | last | split: '"' |first | plus: 0  -%}
+		{% if ratingCount > 0 and ratingValue > 0 %},
+			"aggregateRating": {
+				"@type": "AggregateRating",
+				"ratingValue": "{{ratingValue}}",
+				"ratingCount": "{{ratingCount}}"
+			}
+		{%- endif -%}
+	{%- endif -%}
+}
+</script>

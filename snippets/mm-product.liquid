@@ -1,0 +1,14 @@
+{% assign product_box = forloop.index | minus:1 %}
+{% assign delay_time = 50 | times : product_box %} 
+{%- assign img_url = product.featured_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+{%- assign grid_image_scale = '2' -%}
+<div class="grid-view-item style1">
+	<div class="grid-view_image">
+		<a class="grid-view-item__link grid-view-item__image lazyload" href="{{ product.url | within: collection }}" data-bgset="{% include 'prgrid-img', image: product.featured_image %}" data-sizes="auto" data-parent-fit="contain"></a>
+    </div>
+    <div class="details">
+      	{% if settings.show_vendor %}<div class="grid-view-item__vendor">{{ product.vendor }}</div>{% endif %}
+        <a href="{{ product.url | within: collection }}" class="grid-view-item__title">{{ product.title }}</a>
+        <div class="grid-view-item__meta">{% include 'product-price' %}</div>
+	</div>
+</div>

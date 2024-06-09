@@ -1,0 +1,24 @@
+{% assign sold_out = true %} 
+{% if product.available %}{% assign sold_out = false %}{% endif %}
+
+{% unless grid_image_width %}{%- assign grid_image_width = '300x300' -%}{% endunless %}
+
+{% assign product_box = forloop.index | minus:1 %}
+{% assign delay_time = 50 | times : product_box %} 
+
+{%- assign img_url = product.featured_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+{%- assign img_url1 = product.images[1] | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+
+{%- assign grid_image_scale = '2' -%}
+<div class="list-columns flex wow fadeIn" data-wow-delay="{{delay_time}}ms">
+  <div class="grid-view_image">
+    <a class="grid-view-item__link grid-view-item__image lazyload" href="{{ product.url | within: collection }}" data-bgset="{% include 'prgrid-img', image: product.featured_image %}" data-sizes="auto" data-parent-fit="contain"></a>
+    {% if sold_out %}<div class="product-labels {{ settings.select_label_style }}"><label class="lbl sold-out"><span>{{ 'products.product.sold_out' | t}}</span></label></div>{% endif %}
+  </div>
+  <div class="details">
+    <a href="{{ product.url | within: collection }}" class="grid-view-item__title">{{ product.title }}</a>
+    {% if settings.show_vendor %}<div class="grid-view-item__vendor">{{ product.vendor }}</div>{% endif %}
+   	{% unless settings.catalogmode %}<div class="grid-view-item__meta">{% include 'product-price' %}</div>{% endunless %}
+    {% if settings.show_product_review %}<div class="product-review"> {% include 'ratings' %}</div>{% endif %}
+  </div>
+</div>

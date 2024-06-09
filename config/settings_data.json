@@ -1,120 +1,2856 @@
 {
   "current": {
-    "logo": "shopify:\/\/shop_images\/New-Famme-Logo-1a.png",
-    "logo_width": 150,
-    "favicon": "shopify:\/\/shop_images\/Famme-favicon.png",
-    "product_badge_sale": "#ca1d1d",
-    "product_sale_badge_width": 40,
-    "type_header_font": "roboto_n4",
-    "type_body_font": "roboto_n4",
-    "page_width": 1400,
-    "spacing_sections": 0,
-    "animations_reveal_on_scroll": false,
-    "card_title_font_size_desktop": 13,
-    "card_title_font_size_mobile": 12,
-    "badge_corner_radius": 0,
-    "sale_badge_color_scheme": "accent-2",
-    "sold_out_badge_color_scheme": "scheme-400fd2b0-35a2-436c-9826-3c3f2fa1e4b1",
-    "social_facebook_link": "https:\/\/www.facebook.com\/fammesportswear",
-    "social_instagram_link": "https:\/\/www.instagram.com\/famme\/",
-    "social_youtube_link": "https:\/\/www.youtube.com\/channel\/UC_Sf81gixIsLXiqrSFnkYPA",
-    "social_tiktok_link": "https:\/\/www.tiktok.com\/@fammesportswear",
-    "social_snapchat_link": "https:\/\/www.snapchat.com\/add\/fammesportswear",
+    "layout_style": "boxedlayout",
+    "box_width": "1400",
+    "color_body_bg": "#ffffff",
+    "pagebox_bg": "#ffffff",
+    "bodybg_img": "",
+    "color_body_text": "#333333",
+    "bodybg_repeat": "repeat-x",
+    "bodybg_position": "center_center",
+    "bodybg_size": "cover",
+    "bodybg_attach": "fixed",
+    "body_overlay": 0,
+    "top-information-bar": false,
+    "show_sticky_arrow": true,
+    "enable_wishlist": true,
+    "wishlist_page": "favorit",
+    "enable_site_animation": true,
+    "site_animation_mobile": true,
+    "rtl": false,
+    "catalogmode": false,
+    "ajax_cart": true,
+    "shippingTax": false,
+    "show_product_review": true,
+    "enable_search": true,
+    "favicon": "shopify:\/\/shop_images\/favicon.png",
+    "favicon_retina": "shopify:\/\/shop_images\/favicon-152.png",
+    "hm_keywords": "Danmarks officielle Freddy WR.UP forhandler",
+    "hm_author": "Freddybukser.dk",
+    "breadcrumb_cl": true,
+    "breadcrumb_pr": true,
+    "breadcrumb_pg": true,
+    "breadcrumb_blog": true,
+    "br_bg": "#f9f9f9",
+    "bf_text": "#111111",
+    "free_ship": "free-shipping",
+    "free_ship_msg": "Spent $ more for free shipping",
+    "got_free_ship": "You have got <b>FREE SHIPPING<\/b>",
+    "free_ship_minicart": false,
+    "show_free_ship": false,
+    "free_ship_cartpage": false,
+    "show_estimate_ship": true,
+    "estimate_ship": "1\/3",
+    "estimate_shipping_msg": "Forventet levering imellem [startdate] og [enddate]",
+    "terms_checkbox": true,
+    "terms_text": "Jeg accepterer handelsbetingelserne.",
+    "enable_age_varification": false,
+    "enable_birthdate": false,
+    "agevari_popup_bg": "",
+    "agevari_popup_bg_clr": "#111111",
+    "body_font": "poppins_n4",
+    "type_base_size": 13,
+    "header_font": "poppins_n4",
+    "heading_weight": "700",
+    "type_header_base_size_lh": 1.4,
+    "type_header_base_size": 30,
+    "type_header_base_size_2": 26,
+    "type_header_base_size_3": 20,
+    "type_header_base_size_4": 15,
+    "type_header_base_size_5": 13,
+    "type_header_base_size_6": 12,
+    "type_header_letter_space": 2,
+    "color_text": "#111111",
+    "color_text_field_text": "#111111",
+    "color_text_field": "#ffffff",
+    "field_bd": "#dddddd",
+    "btn_style": "flat",
+    "color_button_text": "#ffffff",
+    "color_button": "#111111",
+    "btn1_bd": "rgba(0,0,0,0)",
+    "color_button_text_hov": "#ffffff",
+    "color_button_hov": "#262525",
+    "btn1_bd_hover": "#030505",
+    "color_small_button_text": "#ffffff",
+    "color_small_button": "#e34848",
+    "btn2_bd": "rgba(0,0,0,0)",
+    "color_small_button_text_hov": "#ffffff",
+    "color_small_button_hov": "#111111",
+    "btn2_bd_hove": "rgba(0,0,0,0)",
+    "link_btn_txt": "#139ddd",
+    "link_btn_txt_hv": "#000",
+    "navigation_font_size": 13,
+    "navigation_font_weight": "400",
+    "navigation_txt_case": "uppercase",
+    "navbarbdr": "rgba(0,0,0,0)",
+    "navbar": "#ffffff",
+    "navbar_link": "#111111",
+    "navbar_link_hv": "#f77575",
+    "nav_link_lbl": "#ffffff",
+    "nav_link_lbl1": "#06b608",
+    "nav_link_lbl2": "#1cb5b5",
+    "nav_link_lbl3": "#f48920",
+    "nav_link_lbl4": "#d0a306",
+    "nav_link_lbl5": "#ff0000",
+    "nav_mm_bg": "#ffffff",
+    "nav_mm_title": "#000000",
+    "nav_mm_title_case": "uppercase",
+    "nav_mm_link": "#444444",
+    "nav_mm_link_hv": "#f77575",
+    "nav_dd_link": "#444444",
+    "nav_dd_link_bg": "#ffffff",
+    "nav_dd_link_hv": "#000000",
+    "nav_dd_link_bghv": "#fafafa",
+    "nav_dd_divider": "#eeeeee",
+    "mobile_nav_bg": "#ffffff",
+    "navigation_text": "#333333",
+    "border": "#eeeeee",
+    "subnav_color_shade": "darken",
+    "mobile_nav_cl": "#eee",
+    "mobile_nav_cltxt": "#000",
+    "slideshow_text_1": 12,
+    "slideshow_text_2": 47,
+    "slideshow_text_2_lh": 1.1,
+    "slideshow_text_3": 16,
+    "slideshow_text_3_lh": 1.1,
+    "color_slideshow_image_overlay": "rgba(0,0,0,0)",
+    "image_slideshow_overlay_opacity": 0,
+    "display_overlay": false,
+    "display_overlay_mb": false,
+    "slide_overlay_clr": "#ffffff",
+    "slide_caption_opacity": 0.6,
+    "sec_spacing": 50,
+    "sec_spacing_small": 20,
+    "title_align": "text-center",
+    "section_heading_1_size": 22,
+    "section_heading_1_lh": 1.3,
+    "section_heading_2_size": 13,
+    "headings_clr": "#111111",
+    "tab_font_size": 12,
+    "pr_tab_txt": "#2d2c2c",
+    "pr_tab_txt_ac": "#ffffff",
+    "pr_tab_brd": "rgba(0,0,0,0)",
+    "pr_tab_brd_ac": "rgba(0,0,0,0)",
+    "pr_tab_bg": "rgba(0,0,0,0)",
+    "pr_tab_ac_bg": "#333333",
+    "mob_text_clr": "#ffffff",
+    "mob_bg_clr": "#111111",
+    "mob_text_clr_active": "#111111",
+    "mob_bg_clr_active": "#f5f5f5",
+    "text_size_colle_list": 16,
+    "text_size_colle_list_mbl": 14,
+    "box-text": 16,
+    "box-text_mbl": 14,
+    "text_size_heading": 16,
+    "text_size_content": 14,
+    "pbanner-title": 30,
+    "pbanner-des": 16,
+    "quote-title": 18,
+    "quote-des": 13,
+    "video_ttl": 30,
+    "hero_text_size_heading": 22,
+    "hero_text_size_content": 14,
+    "color_image_overlay_text": "#000000",
+    "text_bg": "#ffffff",
+    "text_bg_opacity": 0.7,
+    "cl_bnr_title": 18,
+    "cl_bnr_des": 13,
+    "sidebar_ttls": "#111111",
+    "sidebar_links": "#000000",
+    "sidebar_links_hv": "#8dc337",
+    "footer_img": "",
+    "footerbg_repeat": "inherit",
+    "footerbg_position": "center_center",
+    "footerbg_size": "auto",
+    "footerbg_attach": "inherit",
+    "footer_top_bdr": "#eeeeee",
+    "footer_top_bg": "#fafafa",
+    "footer_title": "#000000",
+    "top_footer_text": "#111111",
+    "icon_colors": "#191c1c",
+    "footer_bottom_bg": "#ffffff",
+    "footer_bottom_text": "#111111",
+    "footer_border": "#eeeeee",
+    "newsletter_input": "#ffffff",
+    "newsletter_input_txt": "#000000",
+    "newsletter_btn_txt": "#ffffff",
+    "newsletter_btn": "#000000",
+    "ttl-font": 20,
+    "font-style": "700",
+    "cart-header": "#f5f5f5",
+    "cart-summery": "#f5f5f5",
+    "scroll_icon_colors": "#ffad00",
+    "text_link": "#444444",
+    "text_link_hv": "#f06543",
+    "header_bg_clr": "#eee",
+    "color_borders": "#eeeeee",
+    "tooltip_bg": "#000000",
+    "tooltip_text": "#ffffff",
+    "snow_effect": false,
+    "snow_style": "style1",
+    "topbar": false,
+    "topbar_fullwidth": false,
+    "leftTxt": "<a href=\"tel:4400111044%20833\"><i class=\"ad ad-phone-l\"><\/i> +440 0(111) 044 833<\/a>\n<a href=\"mailto:sales@yourstorename.com\"><i class=\"ad ad-envelope-l\"><\/i> sales@yourstorename.com<\/a>",
+    "leftTxt-mobile": true,
+    "centerTxt": "<i class=\"ad ad-telegram-plane\"><\/i> GRATIS FRAGT PÅ ALT",
+    "centerTxt-mobile": false,
+    "rightTxt": "Følg os: [social-icons]",
+    "rightTxt-mobile": true,
+    "tphfont": 12,
+    "top_bar_text": "#f5f5f5",
+    "top_header_clr": "#000000",
+    "main_header_fullwidth": false,
+    "logosvg": "",
+    "logo": "shopify:\/\/shop_images\/download.jpg",
+    "align_logo": "left",
+    "logo_width": "150",
+    "logo_height": "150",
+    "header_height": "80",
+    "mobile_header_height": "60",
+    "logo_width_mbl": "90",
+    "nav_below_logo": false,
+    "hdTxt-block": "",
+    "show_sticky_header": true,
+    "sticky_logo_width": "80",
+    "sticky_logo_height": "30",
+    "sticky_header_height": "50",
+    "main_header_bg": "#ffffff",
+    "mainhead_img": "",
+    "main_header_repeat": "inherit",
+    "main_header_position": "center_center",
+    "main_header_size": "auto",
+    "main_header_attach": "inherit",
+    "header_bd": "#eeeeee",
+    "header_ico": "#030505",
+    "icon_size": 17,
+    "hide_login": true,
+    "my_account_icn": "cog",
+    "icon_style": "bag",
+    "cart_count_clr": "#000000",
+    "cart_count_text": "#ffffff",
+    "home_classic": false,
+    "logo_cl": "",
+    "icon_text_clr": "#000000",
+    "drawer_bg": "#ffffff",
+    "drawer_txt": "#050000",
+    "drawer_bdr": "#eeeeee",
+    "secondary_image": true,
+    "show_vendor": false,
+    "display_countdown": true,
+    "enable_quickshop": true,
+    "prlist_btn_show": false,
+    "btn_mobiles": true,
+    "price_style": "default",
+    "price_lbl": false,
+    "price_lbl_txt": "From",
+    "show_color_swatch": true,
+    "color_type": "vrimage",
+    "vr_bg_position": "50% 50%",
+    "color_size": "medium",
+    "color_style": "rounded_rectangle",
+    "primg_ratio": "130",
+    "primg_size": "cover",
+    "prbox_style": "style1",
+    "color_price_text": "#222222",
+    "color_sale_text": "#f77575",
+    "prbox_bdr": "rgba(0,0,0,0)",
+    "prbox_vendor": "#777777",
+    "acti_swatch_bdr_clr": "#e55151",
+    "grid_btn_style": "round_crn",
+    "prbox_btnbg": "#111111",
+    "prbox_btn_ico": "#ffffff",
+    "grid_countdown_text": "#111111",
+    "grid_countdown_text_bg": "#ffffff",
+    "grid_countdown_border": "#ffffff",
+    "Products_countdown_text_bg_opacity": "0.75",
+    "pr_lbl": true,
+    "select_label_style": "rectangular",
+    "lbl_txt": "#ffffff",
+    "sale_lbl": true,
+    "sale_label_style": "salelabel",
+    "lbl_sale_cl": "#f77575",
+    "lbl_sold": "#000000",
+    "pr_label1": "NYHED",
+    "pr_label1_cl": "#000000",
+    "pr_label2": "BESTSELLER",
+    "pr_label2_cl": "#e9a400",
+    "pr_label3": "POPULÆR",
+    "pr_label3_cl": "#81d53d",
+    "product_fullwidth": false,
+    "product_latyout": "style1",
+    "sticky_cart": true,
+    "enable_zoom": true,
+    "enable_lightbox": true,
+    "thumbnail_pos": "left",
+    "show_saleoff": true,
+    "show_taxlbl": false,
+    "spr_vendor": false,
+    "spr_availability": false,
+    "spr_sku": false,
+    "show_product_type_single": false,
+    "show_short_desc_single": true,
+    "read_more_link": "Læs mere",
+    "askaboutproduct": false,
+    "quan-sel": true,
+    "shippingpopup": true,
+    "shippingpage": "fragt-og-retur",
+    "sizechart_link": true,
+    "sizechart_type": "default",
+    "sizechart_page": "storrelsesguide",
+    "enable_payment_button": false,
+    "show_collection": false,
+    "show_tags": false,
+    "show_share_buttons_single": false,
+    "sharing_lbl": "Share :",
+    "enable_360": false,
+    "max_width_popup": 400,
+    "max_hegiht_popup": 500,
+    "spr_navigation": true,
+    "spr_navigation_mb": true,
+    "countdown": false,
+    "countdown_lbl": "Skynd dig! tilbudet slutter om:",
+    "countdown_text": "#050000",
+    "countdown_text_bg": "#f8f8f8",
+    "countdown_border": "#dddddd",
+    "show_swatch": true,
+    "sw_color_type": "color",
+    "v_bg_position": "50% 0",
+    "sw_color_size": "medium",
+    "sw_color_style": "rounded_rectangle",
+    "var_style": false,
+    "quantity_msg": true,
+    "max_quantity": 3,
+    "product_qunt_text_clr": "#ffffff",
+    "product_qunt_bg": "#000000",
+    "fake_orders": false,
+    "orders": 20,
+    "orders_time": 24,
+    "orders_msg": "[orders] sold in last [hours] hours",
+    "fake_visitors": false,
+    "visitors": 50,
+    "visitors_time": 5,
+    "visitors_msg": "[visitors] PEOPLE LOOKING FOR THIS PRODUCT",
+    "trust_seal_img": "shopify:\/\/shop_images\/checkout.png",
+    "store_ft1": "",
+    "store_ft2": "",
+    "store_ft3": "",
+    "feature_txt": "#111111",
+    "Prod_name_font_size": 21,
+    "prod_title_transform": "capitalize",
+    "prod_font_weight": "600",
+    "Prod_price_font_size": 24,
+    "prod_price_font_weight": "600",
+    "rprice": "#111111",
+    "sprice": "#e34848",
+    "instock": "#76bd1c",
+    "outstock": "#ff9f3b",
+    "checkout_btn_bg": "#e34848",
+    "checkout_btn_text": "#ffffff",
+    "tab_align": "left",
+    "prTab_ft": 13,
+    "pr_tabs_bg": "#eeeeee",
+    "pr_tabs_txt": "#111111",
+    "pr_tabs_bg_act": "#ffffff",
+    "pr_tabs_txt_act": "#000000",
+    "dis_border": true,
+    "pr_tabs_bdr": "#eeeeee",
+    "pr_tabs_bdr_act": "#dddddd",
+    "cart_bg": "#000000",
+    "cart_text": "#f5f5f5",
+    "cart_qty_bdr": "#535353",
+    "cart_btn": "#e34848",
+    "cart_btn_text": "#ffffff",
+    "show_multiple_currencies": false,
+    "currency_opt": "shopify",
+    "auto_currencies": false,
+    "currency_title": "SELECT CURRENCY",
+    "currency_format": "money_with_currency_format",
+    "supported_currencies": "DKK SEK NOK GBP USD EUR",
+    "default_currency": "DKK",
+    "show_language": false,
+    "language_title": "Vælg sprog",
+    "default_language": "Danish",
+    "languages": "language",
+    "crn_lan_btn": "#000000",
+    "crn_lan_btn_act": "#f04343",
+    "show_notification": true,
+    "hide_notification_mb": true,
+    "notify_collection": "hot-collection",
+    "notify_msg": "Someone liked and Bought",
+    "fake_time": false,
+    "time_msg": "Minutes Ago",
+    "location_msg": "From",
+    "notify_location": "Singapore | New York | Dubai | Paris | London | Amsterdam | Sydney",
+    "notify_delay": "5000",
+    "notify_display": "5000",
+    "pnp_boxbg": "#ffffff",
+    "pnp_boxbg_txt": "#000000",
+    "quick_view": true,
+    "show_product_availability": true,
+    "show_product_sku": false,
+    "show_product_type": false,
+    "show_product_vendor": false,
+    "show_short_desc": true,
+    "show_variant_swatches": false,
+    "show_view_full_info": true,
+    "announcement": false,
+    "announcement_mb": false,
+    "announcement_txt": "💕<b>MID SEASON SALE - SPAR OP TIL 50%💕 <\/b>",
+    "announcement_link": "shopify:\/\/collections\/mid-sales",
+    "annouance_bg": "#f7dc67",
+    "promotion_bg": "",
+    "annouance_txt": "#111111",
+    "annouance_fs": 14,
+    "annouance_pd": "style1",
+    "mailChimp_url": "",
+    "newsletter_code": "",
+    "newsletter_popup": false,
+    "newsletter_popup_time": "5000",
+    "newsltr-style": "style2",
+    "newsletter_img": "shopify:\/\/shop_images\/newsletter_540ef5d7-3eab-494d-8605-220423d4a674.jpg",
+    "newsletter_popup_title": "Join Our Mailing List",
+    "ttl1": 16,
+    "newsletter_popup_subtitle": "Stay Informed! Monthly Tips, Tracks and Discount.",
+    "ttl2": 13,
+    "newsletter_popup_bg": "#fafafa",
+    "newsletter_popup_text": "#111",
+    "btn_clr": "#111111",
+    "btn_txt": "#ffffff",
+    "show_social_icons": true,
+    "newsletter_social_icn": "#111111",
+    "newsltr_close": "#111111",
+    "show_gnote": false,
+    "show_closetrext": true,
+    "share_facebook": false,
+    "share_twitter": false,
+    "share_pinterest": false,
+    "share_linkedin": false,
+    "share_whatsapp": false,
+    "share_email": false,
+    "social_twitter_link": "",
+    "social_facebook_link": "https:\/\/www.facebook.com\/freddybukser",
     "social_pinterest_link": "",
-    "product_badge_width": 50,
-    "colors_solid_button_labels": "#ffffff",
-    "colors_accent_1": "#345df4",
-    "colors_accent_2": "#d3c298",
-    "colors_text": "#252525",
-    "colors_outline_button_labels": "#345df4",
-    "colors_background_1": "#ffffff",
-    "colors_background_2": "#252525",
-    "colors": "Red-#FF3131\nKhaki-#8A865D\nYellow-#FFEA00\nBurgundy- Dark red?\nLight Blue-#ADD8E6\nLight Grey-#D3D3D3\nWhite\/Blue-#eeeeee\nLight Green-#A9C6BB\nDark Red\/Blue-#FF3131\nDark Red\/Brown-#FF3131\nBrown-#8c5c2a\nNavy Blue\/Brown-#8c5c2a\nGrey\/Blue-#000\nOrange-#ffaa00\nBlue\/Beige-#0a2d4d\nBlack-#000\nDark Red-#9b012c\nBlue-#3530ab\nBlue\/Blue-#3530ab\nNavy Blue-#35304b\nNavy Blue\/Blue-#3530ab\nDark green-#514b38\nDark Green-#514b38\nGreen-#514b38\nPurple-#513742\nDark grey-#413d47\nDark Grey-#413d47\nGrey-#413d47\nBeige-#e2cab4\nPink-#fdced7\nLight Purple-#d7d7f2\nDark Blue-#3d3f69\nDark Pink-#ca8482\nLight Beige-#faf0e6\nDark Purple-#741b47\nPurple\/Red-#513742\nDark Grey\/White-#413d47\nRed\/Yellow-#FFA0A0\nBlack\/Blue-#3530ab\nBlack\/Green-#514b38\nBlack\/Pink-#FF69B4\nBlack\/Dark Grey-#000\nTriple Black-#000\nBlack\/White-#000\nWhite\/Blue-#eeeeee\nDark Yellow-#E1AD01\nPitch Black-#000\nBurgundy-#8b2e16\nWhite-#eeeeee",
-    "checkout_logo_image": "shopify:\/\/shop_images\/famme-logo.png",
+    "social_instagram_link": "https:\/\/www.instagram.com\/freddybukser.dk",
+    "social_tumblr_link": "",
+    "social_youtube_link": "",
+    "social_vimeo_link": "",
+    "checkout_header_image": "",
+    "checkout_logo_image": "shopify:\/\/shop_images\/download.jpg",
     "checkout_logo_position": "left",
+    "checkout_logo_size": "small",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#ffffff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
     "checkout_heading_font": "Roboto",
-    "checkout_body_font": "Roboto",
-    "checkout_accent_color": "#4e4e4e",
-    "checkout_button_color": "#119da4",
-    "checkout_error_color": "#ec7a7a",
+    "checkout_body_font": "Lato",
+    "checkout_accent_color": "#1990c6",
+    "checkout_button_color": "#262525",
+    "checkout_error_color": "#ff6d6d",
+    "Prod_name_font_size_S": 13,
+    "prod_title_transform_s": "none",
+    "prod_font_weight_s": "normal",
+    "color_product_title": "#111111",
+    "spr_review": true,
+    "spr_review_quick": true,
+    "show_share_buttons": true,
+    "show_product_review_cnt": false,
+    "share_image": "shopify:\/\/shop_images\/01_preview.png",
+    "feature_txt_bg": "#f5f5f5",
+    "newsletter_popup_title_color": "#000000",
     "sections": {
-      "announcement-bar": {
-        "type": "announcement-bar",
-        "blocks": {
-          "announcement-bar-0": {
-            "type": "announcement",
-            "settings": {
-              "text": "Vipps & Klarna | Returlapp i Pakken | 100 Dager Åpent Kjøp",
-              "link": ""
-            }
-          }
-        },
-        "block_order": [
-          "announcement-bar-0"
-        ],
+      "404": {
+        "type": "404",
         "settings": {
-        }
-      },
-      "header": {
-        "type": "header",
-        "settings": {
-          "logo_position": "middle-left",
-          "menu": "long-horizontal-menu",
-          "menu_type_desktop": "dropdown",
-          "show_line_separator": true,
-          "color_scheme": "background-1",
-          "mobile_logo_position": "center",
-          "margin_bottom": 0,
-          "padding_top": 20,
-          "padding_bottom": 20
+          "image": "shopify:\/\/shop_images\/2_1e6f7f5a-3336-45d3-9157-dfae673944ac.jpg",
+          "title": "Page Not Found",
+          "title2": "The page you requested does not exist.",
+          "btntext": "Continue shopping",
+          "btntlnk": "\/"
         }
       },
       "footer": {
         "type": "footer",
         "blocks": {
-          "3b667cc8-80d2-4c77-85d0-d198aff09291": {
-            "type": "link_list",
+          "1561010286273": {
+            "type": "custom",
             "settings": {
-              "heading": "Informasjon",
-              "menu": "footer"
+              "title": "",
+              "logo-width": 150,
+              "custom-text": "<p>Freddybukser.dk<br>\nVølundsvej 19c<br> \n3400 Hillerød<\/p>\n<p><b>Telefon<\/b>: 88 34 15 00<\/p>\n<p><b>CVR <\/b>: 37 19 10 78<\/p>\n<p><b>Email<\/b><a href=\"mailto:info@freddybukser.dk\"> : info@freddybukser.dk<\/a><\/p><p><\/p>",
+              "show_socials": true,
+              "socials_ttl": "",
+              "txt_align": false,
+              "width": "20%"
             }
           },
-          "5a66bb68-925b-4a72-9b02-048703aea76a": {
-            "type": "link_list",
+          "1558678570770": {
+            "type": "menu",
             "settings": {
-              "heading": "Produktinformasjon",
-              "menu": "product-development"
+              "title": "KUNDESERVICE",
+              "menulinks": "footer-1",
+              "width": "20%"
             }
           },
-          "3e063503-3f13-4266-942b-f40c646c2175": {
-            "type": "link_list",
+          "1558678581777": {
+            "type": "menu",
             "settings": {
-              "heading": "Samarbeid",
-              "menu": "partnerships"
+              "title": "OM FREDDY WR.UP®",
+              "menulinks": "footer-3",
+              "width": "20%"
+            }
+          },
+          "1561010652330": {
+            "type": "menu",
+            "settings": {
+              "title": "INFORMATION",
+              "menulinks": "footer-2",
+              "width": "20%"
+            }
+          },
+          "1561010492149": {
+            "type": "newsletter",
+            "settings": {
+              "newltr_align": false,
+              "title": "NYHEDSBREV",
+              "sub_title": "Tilmeld for at modtage gode tilbud og nyheder",
+              "show_socials": false,
+              "socials_ttl": "Stay Connected",
+              "width": "20%"
             }
           }
         },
         "block_order": [
-          "3b667cc8-80d2-4c77-85d0-d198aff09291",
-          "5a66bb68-925b-4a72-9b02-048703aea76a",
-          "3e063503-3f13-4266-942b-f40c646c2175"
+          "1561010286273",
+          "1558678570770",
+          "1558678581777",
+          "1561010652330",
+          "1561010492149"
         ],
         "settings": {
-          "color_scheme": "inverse",
-          "newsletter_enable": false,
-          "newsletter_heading": "Tilmeld dig vores nyhedsbrev!",
-          "show_social": true,
-          "enable_country_selector": true,
-          "enable_language_selector": true,
-          "payment_enable": true,
-          "margin_top": 0,
-          "padding_top": 36,
-          "padding_bottom": 36
+          "section_width": false,
+          "snow_effect": false,
+          "snow_style": "style1",
+          "copyright_text": "© 2022 Freddybukser.dk",
+          "show_designby": false,
+          "show_payment": true,
+          "payment_img_width": "350"
+        }
+      },
+      "cart-template": {
+        "type": "cart-template",
+        "settings": {
+          "layout": "style2",
+          "cart_notes_enable": true,
+          "display_saving": true,
+          "shippingTax": false,
+          "additionalCheckout": false,
+          "currency_notes": "We processes all orders in [shop.currency]. While the content of your cart is currently displayed in [selected.currency], the checkout will use [shop.currency] at the most current exchange rate.",
+          "shipping_calculator": false,
+          "shipping_calculator_heading": "Get shipping estimates",
+          "shipping_calculator_default_country": "United States",
+          "shipping_calculator_submit_button_label": "Calculate shipping",
+          "shipping_calculator_submit_button_label_disabled": "Calculating...",
+          "enable_giftcard": true,
+          "gift_product": "gift-wrapping",
+          "gift_wrap_optin": "diffrent-rate",
+          "gift-wrap-text": "Add a Gift Wrap to your order, For $",
+          "gift-wrap-msg": "Gift Message Note:"
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "blocks": {
+          "1551070915808": {
+            "type": "descriptions",
+            "settings": {
+              "title": "DETALJER"
+            }
+          },
+          "8016bc11-09bb-4051-b4b0-cd1af0f58738": {
+            "type": "custom",
+            "settings": {
+              "title": "STØRRELSEGUIDE",
+              "content": "<p>Denne størrelseguide er gældende for Freddy WR.UP. Ligger du på grænsen mellem 2 størrelser, anbefaler vi, at du vælger en størrelse større for, at få den perfekte pasform. <\/p>\n<div style=\"text-align: left;\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0596\/6246\/7277\/files\/freddy-str.png?v=1641077343\" alt=\"\" style=\"float: none;\"><\/div>\n<h3>Sådan måler du:<\/h3>\n<p><iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/lIdkSK3gLRs\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\"><\/iframe><\/p>\n<p>Hvis du har nogle spørgsmål er du velkommen til at skrive til vores kundeservice som sidder klar til at hjælpe dig med dit valg. Skriv til info@freddybukser.dk ♥<\/p>\n<p> <\/p>\n<p> <\/p>"
+            }
+          },
+          "1551070927092": {
+            "type": "review",
+            "settings": {
+              "title": "ANMELDELSER"
+            }
+          },
+          "1551070946133": {
+            "type": "sizechart",
+            "settings": {
+              "title": "STØRRELSESGUIDE"
+            }
+          },
+          "1551070955235": {
+            "type": "custom",
+            "settings": {
+              "title": "FORSENDELSE & RETUR",
+              "content": "<h4>Gratis levering og gratis ombytning <\/h4>\n\n<p>Hos Freddybukser.dk har vi gratis fragt på alle ordre i hele Danmark. Din ordre vil blive sendt til nærmeste pakkepost som du vælger når du gennemføre din bestilling. Vi af sender alle ordre inden for 24 timer i hverdage og hvis du bestiller inden kl 15.00 i hverdage bliver din ordre afsendt samme dag. Gratis fragt er uden omdeling og bliver afsendt med post nord.\n\nDu har også mulighed for at få sendt din ordre med omdeling eller til dit arbejde, dog koster dette et gebyr på 29 kr.<\/p>\n\n<h4>Hurtig levering<\/h4>\n\n<p>Der går typisk 1-2 hverdage til du kan afhente din pakke. Efter vi har afsendt din pakke, vil du modtage et track and trace via email hvor du kan følge din pakke. Hvis der skulle opstå problemer kan du kontakte post nord kundeservice og oplyse dit track and trace. Hvis dette ikke hjælper er du altid velkommen til at kontakte os på info@freddybukser.dk og så hjælper vi dig.<\/p>\n\n<h4>Nem returnering<\/h4>\n<p>Vi sender returlabel med i din pakke. Hvis du ønsker at returnere din ordre, kan du anvende den medsendte returlabel. Udfyld bagsiden af din faktura og vedlæg denne i pakken. Hvis du har mistet din returlabel, kan du altid skrive til vores kundeservice på info@freddybukser.dk som derefter sender et returlabel via mail til dig. <\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1551070915808",
+          "8016bc11-09bb-4051-b4b0-cd1af0f58738",
+          "1551070927092",
+          "1551070946133",
+          "1551070955235"
+        ],
+        "settings": {
+          "show_product_tabs": true
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "blocks": {
+          "1552451607178": {
+            "type": "filter_by",
+            "settings": {
+              "title": "STØRRELSE",
+              "filter_tags": "XXS, XS, S, M, L, XL",
+              "twocall": true
+            }
+          },
+          "1514544048360": {
+            "type": "by_color",
+            "settings": {
+              "title": "FARVE",
+              "filter_tags": "Sort, Hvid, Blå, Grå, Grøn, Beige, Pink, Brun Lilla, Rød",
+              "color_size": "small",
+              "color_style": "rounded"
+            }
+          },
+          "1e4df467-4843-450e-8206-5894c5ce3866": {
+            "type": "filter_by",
+            "settings": {
+              "title": "TALJE HØJDE",
+              "filter_tags": "Regular waist, High waist, Mid waist, Low waist",
+              "twocall": false
+            }
+          },
+          "4f7f9d24-fd09-4bfd-8adf-db2785bb1a1f": {
+            "type": "filter_by",
+            "settings": {
+              "title": "LÆNGDE",
+              "filter_tags": "Almindelig længde, Ankellængde, Shorts",
+              "twocall": false
+            }
+          }
+        },
+        "block_order": [
+          "1552451607178",
+          "1514544048360",
+          "1e4df467-4843-450e-8206-5894c5ce3866",
+          "4f7f9d24-fd09-4bfd-8adf-db2785bb1a1f"
+        ],
+        "settings": {
+          "fullwidth": false,
+          "show_collection_name": true,
+          "show_collection_image": true,
+          "banner_position": "content-side",
+          "bheight": 240,
+          "bheightipad": 90,
+          "bheightmob": 60,
+          "banner_style": "info-below",
+          "text-align": "text-left",
+          "collection-des": "top",
+          "clr_bg": "rgba(0,0,0,0)",
+          "clr_text": "#111111",
+          "clr_text_des": "#111111",
+          "secondary_image": true,
+          "show_vendor": false,
+          "prlist_btn_show": false,
+          "btn_mobiles": false,
+          "show_color_swatch": true,
+          "color_type": "color",
+          "vr_bg_position": "50% 0",
+          "color_size": "small",
+          "color_style": "rounded",
+          "sort_enable": true,
+          "dis_prod_cnt": true,
+          "dis_grid_icn": true,
+          "prbox_style": "style1",
+          "grid": 3,
+          "tablet-grid": 3,
+          "mobile-grid": 2,
+          "rows": "9",
+          "pagination": "infinite",
+          "collection_sidebar": true,
+          "sidebar_position": "left"
+        }
+      },
+      "contact-template": {
+        "type": "contact-template",
+        "settings": {
+          "layout": "style1",
+          "show_google_map": true,
+          "map_address": "Vølundsvej 19C",
+          "api_key": "AIzaSyBfs0U_8RAYVZGgqMLb_dgO55R4Cw0X30k",
+          "contact_title": "",
+          "contact_text_desc": "Skriv venligst dit navn, email og telefonnummer og i Emne feltet gerne dit ordre nummer henvendelsen omhandler samt selve beskeden i beskedfeltet.",
+          "show_phone": false,
+          "show_subject": false,
+          "store_opening_time": "<strong>Telefonen er åben hverdage mellem 10 og 15.<\/strong>",
+          "cnt_title": "",
+          "store_address": "<strong>ADRESSE :<\/strong> Vølundsvej 19C -\n3400 Hillerød\n<br>\n<strong>TELEFON :<\/strong> 88 34 15 00",
+          "store_phone": "",
+          "store_email": "info@freddybukser.dk",
+          "show_socials": false,
+          "socials_ttl": "<b>STAY CONNECTED<\/b>",
+          "form_bg": "#f8f8f8",
+          "form_text": "#111111"
+        }
+      },
+      "list-collections-template": {
+        "type": "list-collections-template",
+        "blocks": {
+          "ef4c6e05-d9ec-481d-a609-e5ca1dbb31f2": {
+            "type": "collection",
+            "settings": {
+              "collection": "freddy-wr-up",
+              "custom_name": "<strong>ALLE FREDDY WR.UP<\/strong>"
+            }
+          },
+          "5872e2e4-fad0-45a9-9833-db92003c09e2": {
+            "type": "collection",
+            "settings": {
+              "collection": "high-waist",
+              "custom_name": "<strong>FREDDY WR.UP HIGH WAIST <\/strong>"
+            }
+          },
+          "5a4327e9-9217-4846-a9ea-aaf4caee8971": {
+            "type": "collection",
+            "settings": {
+              "collection": "regular-waist",
+              "custom_name": "<strong>FREDDY WR.UP REGULAR WAIST <\/strong>"
+            }
+          },
+          "7c4522ac-f36e-43a9-b31b-815549aad5cc": {
+            "type": "collection",
+            "settings": {
+              "collection": "n-o-w-jeans",
+              "custom_name": "<strong>FREDDY N.O.W<\/strong>"
+            }
+          },
+          "0bcf78db-7a24-40ed-adbb-6eb1d801d2ff": {
+            "type": "collection",
+            "disabled": true,
+            "settings": {
+              "collection": "curvy",
+              "custom_name": "<strong>FREDDY WR.UP CURVY <\/strong>"
+            }
+          },
+          "514901bd-043b-45c3-9330-1c80edca2da0": {
+            "type": "collection",
+            "settings": {
+              "collection": "7-8-regular-waist",
+              "custom_name": "<strong>FREDDY WR.UP 7\/8 REGULAR <\/strong>"
+            }
+          },
+          "afe32846-86c7-465b-8c89-aba0cc9ba001": {
+            "type": "collection",
+            "settings": {
+              "collection": "mid-waist",
+              "custom_name": "<strong>FREDDY WR.UP MID WAIST <\/strong>"
+            }
+          },
+          "f3e95dd1-6930-407b-be45-da8648dbff93": {
+            "type": "collection",
+            "settings": {
+              "collection": "shorts",
+              "custom_name": "<strong>FREDDY WR.UP SHORTS <\/strong>"
+            }
+          }
+        },
+        "block_order": [
+          "ef4c6e05-d9ec-481d-a609-e5ca1dbb31f2",
+          "5872e2e4-fad0-45a9-9833-db92003c09e2",
+          "5a4327e9-9217-4846-a9ea-aaf4caee8971",
+          "7c4522ac-f36e-43a9-b31b-815549aad5cc",
+          "0bcf78db-7a24-40ed-adbb-6eb1d801d2ff",
+          "514901bd-043b-45c3-9330-1c80edca2da0",
+          "afe32846-86c7-465b-8c89-aba0cc9ba001",
+          "f3e95dd1-6930-407b-be45-da8648dbff93"
+        ],
+        "settings": {
+          "section_width": false,
+          "page_title": "<strong>SHOP FREDDY WR.UP® \n<\/strong>",
+          "display_type": "selected",
+          "sort": "alphabetical",
+          "product_count": true,
+          "collection_btn": "Shop Now",
+          "style": "style3",
+          "grid-spacing": 10,
+          "grid": 2,
+          "tablet-grid": 2,
+          "mobile-grid": 1,
+          "collection_ttl_hm": "#ffffff",
+          "collection_ttl_bg_hm": "#020101",
+          "collection_ttl_opt_hm": 0.8
+        }
+      },
+      "blog-template": {
+        "type": "blog-template",
+        "settings": {
+          "layout": "list",
+          "img_ratio": "40",
+          "sidebar_position": "left",
+          "blog_align": "text-left",
+          "grid": 2,
+          "tablet-grid": 2,
+          "mobile-grid": 1,
+          "blog_show_author": true,
+          "blog_show_date": true,
+          "show_comment": true,
+          "show_mini_des": true,
+          "show_tags": true,
+          "number_of_post_to_show": "4",
+          "show_category": true,
+          "category_box_title": "Category",
+          "show_recent_posts": true,
+          "recent_posts_title": "Recent Posts",
+          "show_banner_ad": true,
+          "sidebar_banner": "shopify:\/\/shop_images\/collection-side-banner.png",
+          "banner_link": "",
+          "show_products": true,
+          "collection_title": "Trending Now",
+          "sidebar_collection": "men",
+          "number_of_prodcut": "4"
+        }
+      },
+      "article-template": {
+        "type": "article-template",
+        "settings": {
+          "sidebar_position": "nosidebar",
+          "text_align": "text-center",
+          "featured-img": true,
+          "blog_show_author": true,
+          "blog_show_date": true,
+          "show_share_buttons": true,
+          "show_category": true,
+          "category_box_title": "Category",
+          "show_recent_posts": true,
+          "recent_posts_title": "Recent Posts",
+          "show_banner_ad": true,
+          "sidebar_banner": "",
+          "banner_link": "",
+          "show_products": true,
+          "collection_title": "Trending Now",
+          "sidebar_collection": "frontpage",
+          "number_of_prodcut": "4"
+        }
+      },
+      "image-slideshow": {
+        "type": "image-slideshow",
+        "blocks": {
+          "1514539053861": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "mb_image": "",
+              "link": ""
+            }
+          },
+          "1514540186212": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "mb_image": "",
+              "link": ""
+            }
+          },
+          "1514540219114": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "mb_image": "",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1514539053861",
+          "1514540186212",
+          "1514540219114"
+        ],
+        "settings": {
+          "section_width": true,
+          "top-offeset": "default",
+          "autoplay": true,
+          "autoplay_speed": "7000",
+          "snow_effect": false,
+          "snow_style": "style1"
+        }
+      },
+      "related-products": {
+        "type": "related-products",
+        "settings": {
+          "show_related_products": false,
+          "related_products_autoplay": true,
+          "autoplay_speed": "3000",
+          "related_title": "Related Products",
+          "related_sub_title": "You can stop autoplay, increase\/decrease aniamtion speed and number of grid to show and products from store admin.",
+          "grid": 5,
+          "tablet-grid": 3,
+          "mobile-grid": 2,
+          "related_total_product_to_show": "6"
+        }
+      },
+      "password-content": {
+        "type": "password-content",
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/logo.png",
+          "logo_max_width": "300",
+          "header": "We will launch soon",
+          "newsletter_enable": true,
+          "newsletter_form_heading": "Be the first to know when we launch.",
+          "newsletter_placeholder": "Email address",
+          "newsletter_button_text": "Notify me",
+          "show_share_buttons": true,
+          "show_powered_by": false,
+          "social_message": "Stay in touch",
+          "password_bg": "",
+          "bg_color": "#111111",
+          "cnt_bg": "#ffffff",
+          "cnt_bg_opacity": "0.9",
+          "cnt_txt": "#000000"
+        }
+      },
+      "navigation": {
+        "type": "navigation",
+        "blocks": {
+          "1560070247268": {
+            "type": "megamenu1",
+            "settings": {
+              "title": "SHOP",
+              "url": "shopify:\/\/collections",
+              "newtab": false,
+              "mm_linklist": "shop",
+              "mmcolumns": 1,
+              "imgcall": "right",
+              "columnWidth": 32,
+              "mmimgcolumns": 2,
+              "imageTtl1": "",
+              "imageurl": "shopify:\/\/collections",
+              "imageTtl2": "",
+              "Image2url": "",
+              "imageTtl3": "",
+              "Image3url": "",
+              "imageTtl4": "",
+              "Image4url": "",
+              "custom_size": true,
+              "mm_size": "280",
+              "mm_align": "center"
+            }
+          },
+          "f64d62ad-9044-4186-a62f-fa3946e218a6": {
+            "type": "single_link",
+            "settings": {
+              "title": "NYHEDER",
+              "url": "shopify:\/\/collections\/nyheder",
+              "newtab": false
+            }
+          },
+          "a1b04282-c9d1-4372-aed0-adf51fa79a94": {
+            "type": "single_link",
+            "settings": {
+              "title": "TILBUD",
+              "url": "shopify:\/\/collections\/tilbud",
+              "newtab": false
+            }
+          },
+          "1559988240897": {
+            "type": "dropdown",
+            "settings": {
+              "title": "Lookbook",
+              "url": "",
+              "mm_linklist": ""
+            }
+          },
+          "1560145007901": {
+            "type": "megamenu1",
+            "settings": {
+              "title": "OM FREDDY WR. UP®",
+              "url": "shopify:\/\/pages\/om-freddy-wr-up",
+              "newtab": false,
+              "mm_linklist": "",
+              "mmcolumns": 5,
+              "imgcall": "right",
+              "columnWidth": 50,
+              "mmimgcolumns": 2,
+              "imageTtl1": "",
+              "imageurl": "",
+              "imageTtl2": "",
+              "Image2url": "",
+              "imageTtl3": "",
+              "Image3url": "",
+              "imageTtl4": "",
+              "Image4url": "",
+              "custom_size": false,
+              "mm_size": "600",
+              "mm_align": "left"
+            }
+          },
+          "cfc33999-ddd3-4201-8b8d-cc4ba6872503": {
+            "type": "single_link",
+            "settings": {
+              "title": "Gavekort",
+              "url": "shopify:\/\/products\/gavekort",
+              "newtab": false
+            }
+          }
+        },
+        "block_order": [
+          "1560070247268",
+          "f64d62ad-9044-4186-a62f-fa3946e218a6",
+          "a1b04282-c9d1-4372-aed0-adf51fa79a94",
+          "1559988240897",
+          "1560145007901",
+          "cfc33999-ddd3-4201-8b8d-cc4ba6872503"
+        ],
+        "settings": {
+          "menuarrow": false,
+          "menuAlign": "center",
+          "nm_label1": "New",
+          "nm_label2": "Sale",
+          "nm_label3": "Hot",
+          "nm_label4": "Popular",
+          "nm_label5": "Trending"
+        }
+      },
+      "recently-viewed": {
+        "type": "recently-viewed",
+        "settings": {
+          "show_recently_products": false,
+          "recently_autoplay": true,
+          "autoplay_speed": "3000",
+          "recently_title": "Recently Viewed Products",
+          "recently_sub_title": "You can stop autoplay, increase\/decrease aniamtion speed and number of grid to show and products from store admin.",
+          "grid": 4,
+          "tablet-grid": 3,
+          "mobile-grid": 2,
+          "recently_pr_limit": "6"
+        }
+      },
+      "custom-colors": {
+        "type": "custom-colors",
+        "blocks": {
+          "1551081207547": {
+            "type": "Color",
+            "settings": {
+              "title": "Rød",
+              "color": "#f05454"
+            }
+          },
+          "1556111464421": {
+            "type": "Color",
+            "settings": {
+              "title": "Sort",
+              "color": "#000000"
+            }
+          },
+          "1556166945546": {
+            "type": "Color",
+            "settings": {
+              "title": "Hvid",
+              "color": "#f4f4f4"
+            }
+          },
+          "1556184952859": {
+            "type": "Color",
+            "settings": {
+              "title": "Blå",
+              "color": "#364b59"
+            }
+          },
+          "1556185124126": {
+            "type": "Color",
+            "settings": {
+              "title": "Grøn",
+              "color": "#264832"
+            }
+          },
+          "1556188999672": {
+            "type": "Color",
+            "settings": {
+              "title": "Grå",
+              "color": "#a3a29a"
+            }
+          },
+          "1559895617659": {
+            "type": "Color",
+            "settings": {
+              "title": "Beige",
+              "color": "#efe4d9"
+            }
+          },
+          "1559896163041": {
+            "type": "Color",
+            "settings": {
+              "title": "Pink",
+              "color": "#e9baba"
+            }
+          },
+          "1559896228518": {
+            "type": "Color",
+            "settings": {
+              "title": "Brun",
+              "color": "#714747"
+            }
+          },
+          "1559896270918": {
+            "type": "Color",
+            "settings": {
+              "title": "Lilla",
+              "color": "#84495b"
+            }
+          }
+        },
+        "block_order": [
+          "1551081207547",
+          "1556111464421",
+          "1556166945546",
+          "1556184952859",
+          "1556185124126",
+          "1556188999672",
+          "1559895617659",
+          "1559896163041",
+          "1559896228518",
+          "1559896270918"
+        ],
+        "settings": {
+          "custom_colors": true
+        }
+      },
+      "top-info-panel": {
+        "type": "top-info-panel",
+        "settings": {
+          "fullwidth": false,
+          "topbarmobile": true,
+          "info_bg": "#111111",
+          "text_clr": "#ffffff",
+          "grid": 3,
+          "info_font": 12
+        }
+      },
+      "about-template": {
+        "type": "about-template",
+        "blocks": {
+          "1553578254469": {
+            "type": "style2",
+            "settings": {
+              "aboutimg": "shopify:\/\/shop_images\/fashion_787be7e7-7c09-4366-b4a8-226812bed4ea.jpg",
+              "title1": "<h4><b>WHY WE<\/b><\/h4>",
+              "title1des": "<p>Avon comes with easy-to-use interface and outstanding support. You can implement your own design. You can easily change the store's appearance as per your requirements using our ready sections and options available.You can implement your own design. You can easily change the store's appearance as per your requirements using our ready sections and options available.<\/p>",
+              "title2": "<h4><b>OUR VISION<\/b><\/h4>",
+              "title2des": "<p>Vestibulum ultricies aliquam convallis. Maecenas ut tellus mi. Proin tincidunt, lectus eu volutpat mattis, ante metus lacinia tellus, vitae condimentum nulla enim bibendum nibh. Praesent turpis risus, interdum nec venenatis id, pretium sit amet purus. Interdum et malesuada fames ac ante ipsum primis in faucibus.<\/p>",
+              "title3": "<h4><b>OUR MISSION<\/b><\/h4>",
+              "title3des": "<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. sunt in culpa qui officia deserunt mollit anim id est laborum. sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
+              "title4": "<h4><b>CONTACT US<\/b><\/h4>",
+              "title4des": "<p><strong>55 Gallaxy Enque,<\/strong><br>2568 steet, 23568 NY<\/p>\n<p><strong>Phone<\/strong> : (440) 000 000 0000 <br><strong>Email<\/strong>: sales@yousite.com<\/p>",
+              "title5": "<h4><b>OUR \nTEAM<\/b><\/h4>",
+              "team1pic": "shopify:\/\/shop_images\/demo2-about-3.jpg",
+              "team1bio": "<p><strong>STIVE SMITH<\/strong><\/p>\n<p>FOUNDER & CEO<\/p>",
+              "socialurl1": "<a href=\"#\"><i class=\"ad ad-facebook-f\"><\/i><\/a>\n<a href=\"#\"><i class=\"ad ad-pinterest-p\"><\/i><\/a>\n<a href=\"#\"><i class=\"ad  ad-twitter \"><\/i><\/a>",
+              "team2pic": "shopify:\/\/shop_images\/demo2-about-1.jpg",
+              "team2bio": "<p><strong>STIVE SMITH<\/strong><\/p>\n<p>CREATIVE DIRECTOR<\/p>",
+              "socialurl2": "<a href=\"#\"><i class=\"ad ad-facebook-f\"><\/i><\/a>\n<a href=\"#\"><i class=\"ad ad-pinterest-p\"><\/i><\/a>\n<a href=\"#\"><i class=\"ad  ad-twitter \"><\/i><\/a>",
+              "team3pic": "shopify:\/\/shop_images\/demo2-about-2.jpg",
+              "team3bio": "<p><strong>STIVE SMITH<\/strong><\/p>\n<p>SALES DIRECTOR<\/p>",
+              "socialurl3": "<a href=\"#\"><i class=\"ad ad-facebook-f\"><\/i><\/a>\n<a href=\"#\"><i class=\"ad ad-pinterest-p\"><\/i><\/a>\n<a href=\"#\"><i class=\"ad  ad-twitter \"><\/i><\/a>"
+            }
+          },
+          "1553589884401": {
+            "type": "image_with_text",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/our-mission.jpg",
+              "layout": "left",
+              "title": "<h4><b>Our Mission<\/b><\/h4>",
+              "text": "<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1553589941147": {
+            "type": "image_with_text",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/our-vision.jpg",
+              "layout": "right",
+              "title": "<h4><b>Our Vision<\/b><\/h4>",
+              "text": "<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1553590025679": {
+            "type": "image_with_text",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/the-founder.jpg",
+              "layout": "left",
+              "title": "<h4><b>The Founder<\/b><\/h4>",
+              "text": "<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
+              "button_label": "Read More",
+              "button_link": "#"
+            }
+          }
+        },
+        "block_order": [
+          "1553578254469",
+          "1553589884401",
+          "1553589941147",
+          "1553590025679"
+        ],
+        "settings": {
+          "top-text": "<p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
+          "pagestyle": "style1"
+        }
+      },
+      "custom-template1": {
+        "type": "custom-template1",
+        "blocks": {
+          "5a8199d5-e90b-4893-919b-e3e5d5bd6ff9": {
+            "type": "hero",
+            "settings": {
+              "ds_height": 500,
+              "tb_height": 350,
+              "mb_height": 250,
+              "image": "shopify:\/\/shop_images\/banner-3_4fc2c36d-0765-4af0-958b-c70743743121.jpg",
+              "alignment": "center",
+              "textalign": "rightcenter",
+              "pretext": "ARE YOU READY?",
+              "title": "<b> Start Selling Online Successfully<\/b>",
+              "text": "<p>Creative, Flexible and High Performance shopify theme!<\/p>",
+              "button_label": "Purchase Now",
+              "button_link": "#",
+              "txt_clr": "#ffffff",
+              "bg_clr": "rgba(0,0,0,0)",
+              "bg_opacity": 1,
+              "hero_dealtimer": false,
+              "cnt_date": "12\/03\/2021",
+              "cnt_bg": "#000000",
+              "cnt_text": "#eeeeee",
+              "cnt_bdr": "#000000"
+            }
+          },
+          "02a2863d-3712-42b3-937b-342724fd9c47": {
+            "type": "featuredProduct",
+            "settings": {
+              "product": "mi-10-108mp-quad-camera-sd-865-processor-5g",
+              "width": "100%",
+              "alignment": "bottom-middle",
+              "image_size": "medium",
+              "enable_zoom": false,
+              "show_vendor": false,
+              "spr_review": true,
+              "spr_availability": true,
+              "spr_sku": true,
+              "short_desc": true,
+              "countdown": true,
+              "countdown_lbl": "Hurry up! Sales End In",
+              "show_share_buttons": true,
+              "show_variant_swatches": true,
+              "fake_orders": false,
+              "orders": 20,
+              "orders_time": 24,
+              "orders_msg": "[orders] sold in last [hours] hours"
+            }
+          },
+          "9bdb882a-ad94-483f-a3ae-d7fa5ec8b9bc": {
+            "type": "html",
+            "settings": {
+              "code": "",
+              "width": "100%",
+              "align_text": "left"
+            }
+          },
+          "4b9b4070-884a-42b3-a090-44233a642846": {
+            "type": "text",
+            "settings": {
+              "title": "<h2>Capture the Unseen in the Everyday<\/h2><h3>108MP + 13MP + 2MP + 2MP <\/h3><br>",
+              "text": "<p>Introducing the <strong>highest resolution camera<\/strong> on a smartphone ever. Capture the unseen in every scene with the 108MP sensor. <br\/>Get more control over each image with the RAW mode built into the camera app. Shoot incredible ultra-wide landscapes. <br\/>Try out macro photography or get the perfect bokeh effect for all your portraits. A mighty quad camera setup loaded with professional camera.<\/p>",
+              "btntxt": "Read More",
+              "width": "100%",
+              "alignment": "center",
+              "align_text": "center"
+            }
+          },
+          "5559af71-d412-405c-97a0-97b135e9032d": {
+            "type": "html",
+            "settings": {
+              "code": "",
+              "width": "100%",
+              "align_text": "center"
+            }
+          },
+          "74b941ca-2709-4770-9b54-beed5d537aac": {
+            "type": "text",
+            "settings": {
+              "title": "",
+              "text": "",
+              "btntxt": "Read More",
+              "width": "25%",
+              "alignment": "center",
+              "align_text": "left"
+            }
+          },
+          "842317f0-ce3b-4a7e-8a43-3b180cf2f682": {
+            "type": "text",
+            "settings": {
+              "title": "<h3>LOG Mode<\/h3>",
+              "text": "<p>Add a splash of colour to your photos at the edit table. Add a splash of colour to your photos at the edit table.<\/p>",
+              "btntxt": "Read More",
+              "width": "25%",
+              "alignment": "center",
+              "align_text": "center"
+            }
+          },
+          "b91c0706-7929-4db7-9a64-050b4c9e7724": {
+            "type": "text",
+            "settings": {
+              "title": "<h3>RAW Mode<\/h3>",
+              "text": "<p>Create the perfect shot even under the toughest lighting conditions. Create the perfect shot even under the toughest lighting conditions.<\/p>",
+              "btntxt": "Read More",
+              "width": "25%",
+              "alignment": "center",
+              "align_text": "center"
+            }
+          },
+          "bffa59a9-0a37-4c47-8410-7bfe117365fc": {
+            "type": "text",
+            "settings": {
+              "title": "",
+              "text": "",
+              "btntxt": "Read More",
+              "width": "25%",
+              "alignment": "center",
+              "align_text": "left"
+            }
+          },
+          "e7d08c53-4c58-482d-a82f-eecb6027f3eb": {
+            "type": "html",
+            "settings": {
+              "code": "",
+              "width": "100%",
+              "align_text": "left"
+            }
+          },
+          "117cce40-70ae-40f3-8ea2-d43a1a60dd3e": {
+            "type": "text",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/banner-3.jpg",
+              "title": "",
+              "text": "",
+              "btntxt": "Read More",
+              "width": "100%",
+              "alignment": "center",
+              "align_text": "center"
+            }
+          },
+          "2d5a5246-7d41-4bac-8b58-563070100c84": {
+            "type": "text",
+            "settings": {
+              "title": "<h3>ACCESSORIES<\/h3>",
+              "text": "",
+              "btntxt": "Read More",
+              "width": "100%",
+              "alignment": "center",
+              "align_text": "center"
+            }
+          },
+          "b72c45d7-03c3-49c5-ae43-85d50f6524a2": {
+            "type": "product",
+            "settings": {
+              "product": "mi-10-wireless-charger",
+              "width": "25%"
+            }
+          },
+          "e5665a19-93e9-437c-a3c7-21fe57cadd4a": {
+            "type": "product",
+            "settings": {
+              "product": "bluetooth-speaker-aluminum-body",
+              "width": "25%"
+            }
+          },
+          "65a4cef8-5002-477a-985a-56522530c96c": {
+            "type": "product",
+            "settings": {
+              "product": "hard-back-cover-case-pink",
+              "width": "25%"
+            }
+          },
+          "32ad3ed7-d334-45c3-aa67-2c634e63abb4": {
+            "type": "product",
+            "settings": {
+              "product": "mi-power-bank-blue",
+              "width": "25%"
+            }
+          },
+          "769143cb-8bf1-4f6d-afc0-de46131f5915": {
+            "type": "video",
+            "settings": {
+              "video_url": "",
+              "mp4url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0036\/7306\/3491\/files\/miview.mp4?v=1609674779",
+              "enable_cntrl": false,
+              "is_autoplay": true,
+              "enable_sound": false,
+              "title": "<b>A Lens for Every Style<\/b>",
+              "text_align": "bottomcenter",
+              "color_ttl": "#ffffff",
+              "width": "100%",
+              "alignment": "top-middle"
+            }
+          },
+          "d983ce62-58fe-46a1-b530-8a05d48fbb3f": {
+            "type": "html",
+            "settings": {
+              "code": "",
+              "width": "100%",
+              "align_text": "left"
+            }
+          },
+          "faaa739e-6096-40b8-ad32-c904fe9b33d5": {
+            "type": "text",
+            "settings": {
+              "title": "<h2>All-New Camera Setup<\/h2>",
+              "text": "<p>A mighty quad camera setup loaded with professional camera features like RAW mode<br\/>that elevate the smartphone camera experience.<\/p>",
+              "btntxt": "Read More",
+              "width": "100%",
+              "alignment": "center",
+              "align_text": "left"
+            }
+          },
+          "aac27b80-3b81-4305-a336-c760261a85e7": {
+            "type": "text",
+            "settings": {
+              "title": "<h3>7P Lens<\/h3>",
+              "text": "<p>Impressive light gathering unlocks the full potential of the 108MP camera setup. Try out macro photography or get the perfect bokeh effect for all your portraits.<\/p>",
+              "btntxt": "Read More",
+              "width": "33%",
+              "alignment": "center",
+              "align_text": "left"
+            }
+          },
+          "fe5d787e-8dc7-4a90-bba9-be0e702db08d": {
+            "type": "text",
+            "settings": {
+              "title": "<h2>HEIF<\/h2>",
+              "text": "<p>A JPEG equivalent which takes approximately 50% lesser storage space without losing out on image quality. Try something new every day!<\/p>",
+              "btntxt": "Read More",
+              "width": "33%",
+              "alignment": "center",
+              "align_text": "left"
+            }
+          },
+          "aa8c3b5a-731e-49d9-812f-8ba42b64cc55": {
+            "type": "text",
+            "settings": {
+              "title": "<h2>AI Pixel<\/h2>",
+              "text": "<p>Comprehensive pixel optimization for vibrant pictures. All of this made possible with one mighty quad camera setup<\/p>",
+              "btntxt": "Read More",
+              "width": "33%",
+              "alignment": "center",
+              "align_text": "left"
+            }
+          },
+          "c48a1aa0-d0b5-4aa2-9181-4da0fc0cc22e": {
+            "type": "html",
+            "settings": {
+              "code": "",
+              "width": "100%",
+              "align_text": "left"
+            }
+          },
+          "17d7a71d-7bbd-4b00-afb6-b1db55383692": {
+            "type": "text",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/3E10CADA-AA5C-5C9D-F4B9-864028375CC6.jpg",
+              "title": "",
+              "text": "<p>Before AI Pixel Optimization<\/p>",
+              "btntxt": "Read More",
+              "width": "50%",
+              "alignment": "center",
+              "align_text": "center"
+            }
+          },
+          "112b48cf-70f8-4a0b-b696-41c3f2f695f0": {
+            "type": "text",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/682E99CA-3A10-AEFC-5981-46E76C224511.jpg",
+              "title": "",
+              "text": "<p>After AI Pixel Optimization<\/p>",
+              "btntxt": "Read More",
+              "width": "50%",
+              "alignment": "center",
+              "align_text": "center"
+            }
+          }
+        },
+        "block_order": [
+          "5a8199d5-e90b-4893-919b-e3e5d5bd6ff9",
+          "02a2863d-3712-42b3-937b-342724fd9c47",
+          "9bdb882a-ad94-483f-a3ae-d7fa5ec8b9bc",
+          "4b9b4070-884a-42b3-a090-44233a642846",
+          "5559af71-d412-405c-97a0-97b135e9032d",
+          "74b941ca-2709-4770-9b54-beed5d537aac",
+          "842317f0-ce3b-4a7e-8a43-3b180cf2f682",
+          "b91c0706-7929-4db7-9a64-050b4c9e7724",
+          "bffa59a9-0a37-4c47-8410-7bfe117365fc",
+          "e7d08c53-4c58-482d-a82f-eecb6027f3eb",
+          "117cce40-70ae-40f3-8ea2-d43a1a60dd3e",
+          "2d5a5246-7d41-4bac-8b58-563070100c84",
+          "b72c45d7-03c3-49c5-ae43-85d50f6524a2",
+          "e5665a19-93e9-437c-a3c7-21fe57cadd4a",
+          "65a4cef8-5002-477a-985a-56522530c96c",
+          "32ad3ed7-d334-45c3-aa67-2c634e63abb4",
+          "769143cb-8bf1-4f6d-afc0-de46131f5915",
+          "d983ce62-58fe-46a1-b530-8a05d48fbb3f",
+          "faaa739e-6096-40b8-ad32-c904fe9b33d5",
+          "aac27b80-3b81-4305-a336-c760261a85e7",
+          "fe5d787e-8dc7-4a90-bba9-be0e702db08d",
+          "aa8c3b5a-731e-49d9-812f-8ba42b64cc55",
+          "c48a1aa0-d0b5-4aa2-9181-4da0fc0cc22e",
+          "17d7a71d-7bbd-4b00-afb6-b1db55383692",
+          "112b48cf-70f8-4a0b-b696-41c3f2f695f0"
+        ],
+        "settings": {
+          "title": "",
+          "subtitle": "",
+          "top-offset": false,
+          "hide_ttl": true,
+          "section_width": true,
+          "landing": true,
+          "pad-desk": 30,
+          "pad-ipad": 15,
+          "pad-mbl": 10,
+          "prbox_style": "style1"
+        }
+      },
+      "custom-template2": {
+        "type": "custom-template2",
+        "blocks": {
+          "1b124143-4cc1-48c7-bcbc-dbc54d5e78c6": {
+            "type": "text",
+            "settings": {
+              "title": "",
+              "text": "<p><strong>Shopify<\/strong> is a commerce platform that allows anyone to set up an online store and sell their products. Merchants can also sell their products in person with Shopify POS.<br\/><\/p><p><em>Shopify started over ten years ago<\/em> when our founder Tobi wanted to sell snowboards with his company at that time called Snowdevil. He quickly realized it was incredibly challenging to sell snowboards online without an easy to use <strong>ecommerce platform<\/strong>. So he decided to create it himself, and Shopify was born.<br\/><\/p><p>Shopify is now the leading commerce platform designed for businesses of all sizes. Whether you sell online, on social media, in store, or out of the trunk of your car, Shopify has you covered. The first Shopify store was our own, and it’s been our mission to make commerce better for everyone ever since.<br\/><\/p><p><\/p>",
+              "btntxt": "Read More",
+              "width": "50%",
+              "alignment": "center",
+              "align_text": "left"
+            }
+          },
+          "c2a551ee-1e39-4956-b5dd-ffe2cb41a41f": {
+            "type": "text",
+            "settings": {
+              "title": "",
+              "text": "<p>Whether you’re a budding jewelry designer and want to start selling your products, or a musician and want to sell your latest mixtape, or if you have an established business and want to grow, Shopify can help you. <strong>Hundreds of thousands of entrepreneurs from over 175 countries trust Shopify to help sell their product<\/strong>s.<br\/><\/p><p>Below you’ll find the different products or services that you can sell on Shopify. Even if you know what you’re selling already, it may give you some ideas for other services you could sell to grow your business.<\/p>",
+              "btntxt": "",
+              "width": "50%",
+              "alignment": "top-middle",
+              "align_text": "left"
+            }
+          },
+          "75fc696c-f1e1-4ee3-ab96-93762b0502f5": {
+            "type": "html",
+            "settings": {
+              "code": "",
+              "width": "100%",
+              "align_text": "left"
+            }
+          },
+          "b81c6b73-8321-418f-b7f1-1402d7591b2e": {
+            "type": "text",
+            "settings": {
+              "title": "<h3>Our Mission<\/h3>",
+              "text": "<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
+              "btntxt": "Read More",
+              "width": "50%",
+              "alignment": "center",
+              "align_text": "left"
+            }
+          },
+          "6d90ddcb-f7af-45cc-8f01-1897dabba236": {
+            "type": "video",
+            "settings": {
+              "video_url": "",
+              "mp4url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0036\/7306\/3491\/files\/about-new.mp4?v=1609242230",
+              "enable_cntrl": false,
+              "is_autoplay": true,
+              "enable_sound": false,
+              "title": "",
+              "text_align": "left",
+              "color_ttl": "#ffffff",
+              "width": "50%",
+              "alignment": "top-middle"
+            }
+          },
+          "6892d992-fbc6-475e-b4f8-df92b369cb33": {
+            "type": "image_with_text",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/about.jpg",
+              "layout": "left",
+              "title2": "Why we?",
+              "text2": "Avon comes with easy-to-use interface and outstanding support. You can implement your own design. You can easily change the store's appearance as per your requirements using our ready sections and options available.",
+              "button_label": "READ MORE",
+              "button_link": "#",
+              "text_align": "text-left",
+              "width": "100%",
+              "text_clr": "#111111",
+              "text_bg_clr": "#eeeeee"
+            }
+          },
+          "0be77821-e6b6-4e9b-82e2-1fdd736590e8": {
+            "type": "image_with_text",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/our-vision.jpg",
+              "layout": "right",
+              "title2": "Our Vision",
+              "text2": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+              "button_label": "",
+              "text_align": "text-left",
+              "width": "100%",
+              "text_clr": "#000000",
+              "text_bg_clr": "#eeeeee"
+            }
+          },
+          "3a45c006-af22-4225-9998-ef5bc1e4c05e": {
+            "type": "html",
+            "settings": {
+              "code": "",
+              "width": "100%",
+              "align_text": "left"
+            }
+          },
+          "c4faf458-222a-4ef3-aae3-15c7629df052": {
+            "type": "text",
+            "settings": {
+              "title": "<h4>FOUNDERS<\/h4>",
+              "text": "<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br\/><\/p><p><\/p>",
+              "btntxt": "Read More",
+              "width": "25%",
+              "alignment": "top-middle",
+              "align_text": "left"
+            }
+          },
+          "a3b5944d-823a-4c93-8730-f4d87bb45d19": {
+            "type": "text",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/demo2-about-2.jpg",
+              "title": "",
+              "text": "<p><strong>ANDREA SWIFT<br\/><\/strong>DIRECTOR <\/p><p><\/p>",
+              "btntxt": "Read More",
+              "width": "25%",
+              "alignment": "top-middle",
+              "align_text": "center"
+            }
+          },
+          "02152604-ace8-47fb-ae54-2b184b075167": {
+            "type": "text",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/demo2-about-1.jpg",
+              "title": "",
+              "text": "<p><strong>SIMONA HALEP<\/strong><br\/>FOUNDER &amp; CEO<\/p>",
+              "btntxt": "Read More",
+              "width": "25%",
+              "alignment": "top-middle",
+              "align_text": "center"
+            }
+          },
+          "dba82dd7-1cad-4ef2-8f75-ecf5c1a4349d": {
+            "type": "text",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/demo2-about-3.jpg",
+              "title": "",
+              "text": "<p><strong>STIVE SMITH<br\/><\/strong>CO FOUNDER <br\/><\/p>",
+              "btntxt": "Read More",
+              "width": "25%",
+              "alignment": "top-middle",
+              "align_text": "center"
+            }
+          }
+        },
+        "block_order": [
+          "1b124143-4cc1-48c7-bcbc-dbc54d5e78c6",
+          "c2a551ee-1e39-4956-b5dd-ffe2cb41a41f",
+          "75fc696c-f1e1-4ee3-ab96-93762b0502f5",
+          "b81c6b73-8321-418f-b7f1-1402d7591b2e",
+          "6d90ddcb-f7af-45cc-8f01-1897dabba236",
+          "6892d992-fbc6-475e-b4f8-df92b369cb33",
+          "0be77821-e6b6-4e9b-82e2-1fdd736590e8",
+          "3a45c006-af22-4225-9998-ef5bc1e4c05e",
+          "c4faf458-222a-4ef3-aae3-15c7629df052",
+          "a3b5944d-823a-4c93-8730-f4d87bb45d19",
+          "02152604-ace8-47fb-ae54-2b184b075167",
+          "dba82dd7-1cad-4ef2-8f75-ecf5c1a4349d"
+        ],
+        "settings": {
+          "title": "Our Story",
+          "subtitle": "Est. 2017",
+          "top-offset": false,
+          "hide_ttl": true,
+          "section_width": false,
+          "landing": false,
+          "pad-desk": 55,
+          "pad-ipad": 15,
+          "pad-mbl": 10,
+          "prbox_style": "style1"
+        }
+      },
+      "custom-template3": {
+        "type": "custom-template3",
+        "blocks": {
+          "643ebc0d-e11c-477c-83e2-1dcfb96f3475": {
+            "type": "text",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/custom-banner.png",
+              "title": "<h3>We are Shopify experts. Need help growing your Shopify sales?<\/h3>",
+              "text": "<p>We provide innovative solutions to expand your business. Let us take your online shop to new dimension in success! Boost your store sales and define your brands with Avone.<br\/><\/p>",
+              "btntxt": "Read More",
+              "width": "50%",
+              "alignment": "top-middle",
+              "align_text": "left"
+            }
+          },
+          "4cc6c2ac-58b1-4e07-a382-7e301afab41f": {
+            "type": "text",
+            "settings": {
+              "title": "",
+              "text": "<p><strong>Design Quality<\/strong><\/p><p>First impressions of online store is 94% design related. Quality web design establishes trust and credibility. We provide high quality shopify themes. <br\/><br\/><br\/><strong>One Click Demo Installation<\/strong><\/p><p>It&#x27;s very easy to install the demo just by a single click. It’s totally automatic and save your time.<br\/><br\/><br\/><strong>Top Quality Documentation<br\/><\/strong><br\/>Extensive documentation where each section of the theme and its features are described in a easy way to understand.<\/p><p><br\/><\/p>",
+              "btntxt": "Read More",
+              "width": "25%",
+              "alignment": "top-middle",
+              "align_text": "left"
+            }
+          },
+          "141afeac-4573-4d84-abf4-401f32de95a8": {
+            "type": "text",
+            "settings": {
+              "title": "",
+              "text": "<p><strong>Unlimited power and<br\/> customization possibilities<\/strong><\/p><p>Save time and frustration by visually editing your site. Build professional layouts in just a few minutes.<br\/><br\/><br\/><strong>High Speed &amp; Performance<\/strong><\/p><p>Performance matters the most for your online shop ! We leverage the strategy and help you earn maximum ROI.<br\/><br\/><br\/><strong>Top Notch Support <\/strong><\/p><p>Get the best technical support in 24 hours. If you have questions or problems, we are glad to help you<\/p>",
+              "btntxt": "Read More",
+              "width": "25%",
+              "alignment": "top-middle",
+              "align_text": "left"
+            }
+          },
+          "3e51aa24-bfa7-40ef-8aff-8dcb65194e4c": {
+            "type": "html",
+            "settings": {
+              "code": "",
+              "width": "100%",
+              "align_text": "left"
+            }
+          },
+          "36afb72d-593c-4347-9eeb-00e103dfe63f": {
+            "type": "text",
+            "settings": {
+              "title": "<h3>FEATURED COLLECTION<\/h3>",
+              "text": "<p>Top Rated Shopify themes and Services from certified Shopify Experts<\/p>",
+              "btntxt": "Read More",
+              "width": "100%",
+              "alignment": "center",
+              "align_text": "center"
+            }
+          },
+          "2a5aa2ce-cdb7-4f09-8f7b-566770bfbdb2": {
+            "type": "html",
+            "settings": {
+              "code": "",
+              "width": "100%",
+              "align_text": "left"
+            }
+          },
+          "6699eb65-38ea-4075-bd23-5fffe0d70e26": {
+            "type": "collection",
+            "settings": {
+              "collection": "women",
+              "collection_name": "",
+              "width": "25%"
+            }
+          },
+          "0ba79b26-1f20-4c2c-ad7d-c5a8093f6491": {
+            "type": "collection",
+            "settings": {
+              "collection": "hot-collection",
+              "collection_name": "",
+              "width": "25%"
+            }
+          },
+          "2713c98a-63ef-4168-914f-f5223f074456": {
+            "type": "collection",
+            "settings": {
+              "collection": "beachwear",
+              "collection_name": "",
+              "width": "25%"
+            }
+          },
+          "fb20f1f3-c9dc-4495-8bc9-25feed7b2758": {
+            "type": "collection",
+            "settings": {
+              "collection": "men",
+              "collection_name": "",
+              "width": "25%"
+            }
+          },
+          "d179b4ed-3dac-4e6f-8af9-baaca928e819": {
+            "type": "html",
+            "settings": {
+              "code": "",
+              "width": "100%",
+              "align_text": "left"
+            }
+          },
+          "57daff52-d354-4469-98c7-c88d2e4ffdf5": {
+            "type": "text",
+            "settings": {
+              "title": "<h3>WHY BUY FROM US?<\/h3>",
+              "text": "<p>Use this text to share information about your brand with your customers. <\/p>",
+              "btntxt": "Read More",
+              "width": "100%",
+              "alignment": "center",
+              "align_text": "center"
+            }
+          },
+          "7f0980dd-d619-4c81-933b-9d6197534a22": {
+            "type": "html",
+            "settings": {
+              "code": "",
+              "width": "100%",
+              "align_text": "center"
+            }
+          },
+          "a7267749-7cd9-4eb6-b574-4d5d95b1df9d": {
+            "type": "text",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/truck.jpg",
+              "title": "<h4>FREE SHIPPING<\/h4>",
+              "text": "<p>Lorem Ipsum hasbeen standard daand scrambled.<\/p>",
+              "btntxt": "Read More",
+              "width": "25%",
+              "alignment": "top-middle",
+              "align_text": "center"
+            }
+          },
+          "f5ed9cc8-5f01-4138-9358-865138ffa983": {
+            "type": "text",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/support.jpg",
+              "title": "<h4>24\/7 SUPPORT<\/h4>",
+              "text": "<p>Lorem Ipsum hasbeen standard daand scrambled.<\/p>",
+              "btntxt": "Read More",
+              "width": "25%",
+              "alignment": "top-middle",
+              "align_text": "center"
+            }
+          },
+          "56065bf5-14f9-419f-a7d7-5e462dc0d392": {
+            "type": "text",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/SECURE.jpg",
+              "title": "<h4>SECURE PAYMENT<\/h4>",
+              "text": "<p>Lorem Ipsum hasbeen standard daand scrambled.<\/p>",
+              "btntxt": "Read More",
+              "width": "25%",
+              "alignment": "top-middle",
+              "align_text": "center"
+            }
+          },
+          "db521d26-6451-421c-9ed4-26e8d738252f": {
+            "type": "text",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/money.jpg",
+              "title": "<h4>MONEY GAURNTEE<\/h4>",
+              "text": "<p>Lorem Ipsum hasbeen standard daand scrambled.<\/p>",
+              "btntxt": "Read More",
+              "width": "25%",
+              "alignment": "top-middle",
+              "align_text": "center"
+            }
+          }
+        },
+        "block_order": [
+          "643ebc0d-e11c-477c-83e2-1dcfb96f3475",
+          "4cc6c2ac-58b1-4e07-a382-7e301afab41f",
+          "141afeac-4573-4d84-abf4-401f32de95a8",
+          "3e51aa24-bfa7-40ef-8aff-8dcb65194e4c",
+          "36afb72d-593c-4347-9eeb-00e103dfe63f",
+          "2a5aa2ce-cdb7-4f09-8f7b-566770bfbdb2",
+          "6699eb65-38ea-4075-bd23-5fffe0d70e26",
+          "0ba79b26-1f20-4c2c-ad7d-c5a8093f6491",
+          "2713c98a-63ef-4168-914f-f5223f074456",
+          "fb20f1f3-c9dc-4495-8bc9-25feed7b2758",
+          "d179b4ed-3dac-4e6f-8af9-baaca928e819",
+          "57daff52-d354-4469-98c7-c88d2e4ffdf5",
+          "7f0980dd-d619-4c81-933b-9d6197534a22",
+          "a7267749-7cd9-4eb6-b574-4d5d95b1df9d",
+          "f5ed9cc8-5f01-4138-9358-865138ffa983",
+          "56065bf5-14f9-419f-a7d7-5e462dc0d392",
+          "db521d26-6451-421c-9ed4-26e8d738252f"
+        ],
+        "settings": {
+          "title": "",
+          "subtitle": "",
+          "top-offset": false,
+          "hide_ttl": true,
+          "section_width": false,
+          "landing": false,
+          "pad-desk": 0,
+          "pad-ipad": 0,
+          "pad-mbl": 0,
+          "prbox_style": "style1"
+        }
+      },
+      "faq-template": {
+        "type": "faq-template",
+        "blocks": {
+          "1553603314287": {
+            "type": "faqsection",
+            "settings": {
+              "sectiontitle": "Shopping"
+            }
+          },
+          "1553602500682": {
+            "type": "faqs",
+            "settings": {
+              "question": "What Shipping Methods Are Available?",
+              "answer": "Nullam sed neque luctus, maximus diam sed, facilisis orci. Nunc ultricies neque a aliquam sollicitudin. Vivamus sit amet finibus sapien. Duis est dui, sodales nec pretium a, interdum in lacus. Sed et est vel velit vestibulum tincidunt non a felis. Phasellus convallis, diam eu facilisis tincidunt, ex nibh vulputate dolor, eu maximus massa libero vel eros."
+            }
+          },
+          "1553602843258": {
+            "type": "faqs",
+            "settings": {
+              "question": "How do I place an Order?",
+              "answer": "Duis nec nisi id ligula dapibus maximus nec eu dui. Proin ornare, ipsum vitae tincidunt rutrum, diam neque accumsan turpis, a dignissim nisi libero non lacus. Nulla quis massa nulla. Morbi metus lacus, sagittis sed est vel, aliquet ultrices nibh. Morbi auctor ex eget egestas auctor.   Duis nec nisi id ligula dapibus maximus nec eu dui. Proin ornare, ipsum vitae tincidunt rutrum, diam neque accumsan turpis, a dignissim nisi libero non lacus. Nulla quis massa nulla. Morbi metus lacus, sagittis sed est vel, aliquet ultrices nibh. Morbi auctor ex eget egestas auctor."
+            }
+          },
+          "1553603329876": {
+            "type": "faqsection",
+            "settings": {
+              "sectiontitle": "Payment"
+            }
+          },
+          "1553602722941": {
+            "type": "faqs",
+            "settings": {
+              "question": "What Payment Methods Are Accepted?",
+              "answer": "Nullam sed neque luctus, maximus diam sed, facilisis orci. Nunc ultricies neque a aliquam sollicitudin. Vivamus sit amet finibus sapien. Duis est dui, sodales nec pretium a, interdum in lacus. Sed et est vel velit vestibulum tincidunt non a felis. Phasellus convallis, diam eu facilisis tincidunt"
+            }
+          },
+          "1553602889369": {
+            "type": "faqs",
+            "settings": {
+              "question": "Do You Ship Internationally?",
+              "answer": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+            }
+          },
+          "1553602923016": {
+            "type": "faqs",
+            "settings": {
+              "question": "What Payment Methods Are Accepted?",
+              "answer": "Nullam sed neque luctus, maximus diam sed, facilisis orci. Nunc ultricies neque a aliquam sollicitudin. Vivamus sit amet finibus sapien. Duis est dui, sodales nec pretium a, interdum in lacus. Sed et est vel velit vestibulum tincidunt non a felis. Phasellus convallis, diam eu facilisis tincidunt, ex nibh vulputate dolor, eu maximus massa libero vel eros. In vulputate metus lacus, eu vehicula dolor feugiat id. Nulla vitae nisl in ex consequat porttitor vel a lectus. Vestibulum viverra in velit ac consequat. Nullam porta nulla eu dignissim cursus."
+            }
+          },
+          "1553603400182": {
+            "type": "faqsection",
+            "settings": {
+              "sectiontitle": "Returns"
+            }
+          },
+          "1553603365355": {
+            "type": "faqs",
+            "settings": {
+              "question": "Is Buying On-Line Safe?",
+              "answer": "Nullam sed neque luctus, maximus diam sed, facilisis orci. Nunc ultricies neque a aliquam sollicitudin. Vivamus sit amet finibus sapien. Duis est dui, sodales nec pretium a, interdum in lacus. Sed et est vel velit vestibulum tincidunt non a felis. Phasellus convallis, diam eu facilisis tincidunt, ex nibh vulputate dolor, eu maximus massa libero vel eros. In vulputate metus lacus, eu vehicula dolor feugiat id. Nulla vitae nisl in ex consequat porttitor vel a lectus."
+            }
+          },
+          "1553603427067": {
+            "type": "faqs",
+            "settings": {
+              "question": "Do I have to pay anything to return my items?",
+              "answer": "Nullam sed neque luctus, maximus diam sed, facilisis orci. Nunc ultricies neque a aliquam sollicitudin. Vivamus sit amet finibus sapien. Duis est dui, sodales nec pretium a, interdum in lacus."
+            }
+          },
+          "1553603439453": {
+            "type": "faqs",
+            "settings": {
+              "question": "How do I return an item?",
+              "answer": "In vulputate metus lacus, eu vehicula dolor feugiat id. Nulla vitae nisl in ex consequat porttitor vel a lectus. Vestibulum viverra in velit ac consequat. Nullam porta nulla eu dignissim cursus."
+            }
+          }
+        },
+        "block_order": [
+          "1553603314287",
+          "1553602500682",
+          "1553602843258",
+          "1553603329876",
+          "1553602722941",
+          "1553602889369",
+          "1553602923016",
+          "1553603400182",
+          "1553603365355",
+          "1553603427067",
+          "1553603439453"
+        ],
+        "settings": {
+          "pagestyle": "style1",
+          "sec-title-bg": "#333333",
+          "sec-title": "#eeeeee"
+        }
+      },
+      "lookbook": {
+        "type": "lookbook",
+        "blocks": {
+          "1556020238652": {
+            "type": "lookbook1",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/1_dbda98bd-576d-4147-8929-98a1d295c4db.jpg",
+              "url": "shopify:\/\/collections\/accesories",
+              "title": "<b>WOMEN COLLECTION<\/b>",
+              "title2": "A girl should be two things: classy and fabulous",
+              "width": "50%",
+              "product1": "innerbloom-puffer-jacket",
+              "p1_top": 10,
+              "p1_left": 25,
+              "dis-pstn1": "left",
+              "product2": "black-flower-vase",
+              "p2_top": 65,
+              "p2_left": 64,
+              "dis-pstn2": "right",
+              "product3": "",
+              "p3_top": 1,
+              "p3_left": 1,
+              "dis-pstn3": "left",
+              "product4": "",
+              "p4_top": 1,
+              "p4_left": 1,
+              "dis-pstn4": "left"
+            }
+          },
+          "1559815614407": {
+            "type": "lookbook1",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/5_3600fc4a-acb5-4946-ae8c-d986623413dd.jpg",
+              "url": "",
+              "title": "SUPPERS TOPS",
+              "title2": "Jacket Retired",
+              "width": "50%",
+              "product1": "",
+              "p1_top": 1,
+              "p1_left": 1,
+              "dis-pstn1": "left",
+              "product2": "",
+              "p2_top": 1,
+              "p2_left": 1,
+              "dis-pstn2": "left",
+              "product3": "",
+              "p3_top": 1,
+              "p3_left": 1,
+              "dis-pstn3": "left",
+              "product4": "",
+              "p4_top": 1,
+              "p4_left": 1,
+              "dis-pstn4": "left"
+            }
+          },
+          "1556080853264": {
+            "type": "lookbook1",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/4_4a96e254-b439-4ab2-92e8-0207612a2c17.jpg",
+              "url": "",
+              "title": "WOMEN WHO WEAR BLACK HAVE COLORFUL LIVES",
+              "title2": "",
+              "width": "50%",
+              "product1": "",
+              "p1_top": 1,
+              "p1_left": 1,
+              "dis-pstn1": "left",
+              "product2": "",
+              "p2_top": 1,
+              "p2_left": 1,
+              "dis-pstn2": "left",
+              "product3": "",
+              "p3_top": 1,
+              "p3_left": 1,
+              "dis-pstn3": "left",
+              "product4": "",
+              "p4_top": 1,
+              "p4_left": 1,
+              "dis-pstn4": "left"
+            }
+          },
+          "1559981974663": {
+            "type": "lookbook1",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/10.jpg",
+              "url": "",
+              "title": "",
+              "title2": "",
+              "width": "50%",
+              "product1": "",
+              "p1_top": 1,
+              "p1_left": 1,
+              "dis-pstn1": "left",
+              "product2": "",
+              "p2_top": 1,
+              "p2_left": 1,
+              "dis-pstn2": "left",
+              "product3": "",
+              "p3_top": 1,
+              "p3_left": 1,
+              "dis-pstn3": "left",
+              "product4": "",
+              "p4_top": 1,
+              "p4_left": 1,
+              "dis-pstn4": "left"
+            }
+          },
+          "1559980055256": {
+            "type": "lookbook1",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/9.jpg",
+              "url": "",
+              "title": "",
+              "title2": "<b>SHOP SHORTS<\/b>",
+              "width": "50%",
+              "product1": "",
+              "p1_top": 1,
+              "p1_left": 1,
+              "dis-pstn1": "left",
+              "product2": "",
+              "p2_top": 1,
+              "p2_left": 1,
+              "dis-pstn2": "left",
+              "product3": "",
+              "p3_top": 1,
+              "p3_left": 1,
+              "dis-pstn3": "left",
+              "product4": "",
+              "p4_top": 1,
+              "p4_left": 1,
+              "dis-pstn4": "left"
+            }
+          },
+          "1556020391737": {
+            "type": "lookbook1",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/3_ea402b5a-bb79-43e6-8349-3eb831e519f7.jpg",
+              "url": "",
+              "title": "",
+              "title2": "What you wear is how you present yourself to the world",
+              "width": "50%",
+              "product1": "",
+              "p1_top": 1,
+              "p1_left": 1,
+              "dis-pstn1": "left",
+              "product2": "",
+              "p2_top": 1,
+              "p2_left": 1,
+              "dis-pstn2": "left",
+              "product3": "",
+              "p3_top": 1,
+              "p3_left": 1,
+              "dis-pstn3": "left",
+              "product4": "",
+              "p4_top": 1,
+              "p4_left": 1,
+              "dis-pstn4": "left"
+            }
+          },
+          "1559973313518": {
+            "type": "lookbook1",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/12_9b24afa0-807a-4f16-b705-93089b386ddf.jpg",
+              "url": "",
+              "title": "",
+              "title2": "<b>WHITE HEAT <\/b>",
+              "width": "50%",
+              "product1": "",
+              "p1_top": 1,
+              "p1_left": 1,
+              "dis-pstn1": "left",
+              "product2": "",
+              "p2_top": 1,
+              "p2_left": 1,
+              "dis-pstn2": "left",
+              "product3": "",
+              "p3_top": 1,
+              "p3_left": 1,
+              "dis-pstn3": "left",
+              "product4": "",
+              "p4_top": 1,
+              "p4_left": 1,
+              "dis-pstn4": "left"
+            }
+          },
+          "1559814826450": {
+            "type": "lookbook1",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/14_7a9f6610-bfdb-44f0-ab8b-20c5a3bf0382.jpg",
+              "url": "",
+              "title": "Fast fashion",
+              "title2": "Clothing is designed to fall apart",
+              "width": "50%",
+              "product1": "",
+              "p1_top": 1,
+              "p1_left": 1,
+              "dis-pstn1": "left",
+              "product2": "",
+              "p2_top": 1,
+              "p2_left": 1,
+              "dis-pstn2": "left",
+              "product3": "",
+              "p3_top": 1,
+              "p3_left": 1,
+              "dis-pstn3": "left",
+              "product4": "",
+              "p4_top": 1,
+              "p4_left": 1,
+              "dis-pstn4": "left"
+            }
+          },
+          "1556020206822": {
+            "type": "lookbook1",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/2_e1cbf9e9-4921-43e2-b3b5-d88e8cafe354.jpg",
+              "url": "shopify:\/\/collections\/accesories",
+              "title": "<b>FASHION IT<\/b>",
+              "title2": "Girls You May Not Know About but Should",
+              "width": "50%",
+              "product1": "",
+              "p1_top": 1,
+              "p1_left": 1,
+              "dis-pstn1": "left",
+              "product2": "",
+              "p2_top": 1,
+              "p2_left": 1,
+              "dis-pstn2": "left",
+              "product3": "",
+              "p3_top": 1,
+              "p3_left": 1,
+              "dis-pstn3": "left",
+              "product4": "",
+              "p4_top": 1,
+              "p4_left": 1,
+              "dis-pstn4": "left"
+            }
+          },
+          "1559974370545": {
+            "type": "lookbook1",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/7.jpg",
+              "url": "",
+              "title": "",
+              "title2": "",
+              "width": "50%",
+              "product1": "",
+              "p1_top": 1,
+              "p1_left": 1,
+              "dis-pstn1": "left",
+              "product2": "",
+              "p2_top": 1,
+              "p2_left": 1,
+              "dis-pstn2": "left",
+              "product3": "",
+              "p3_top": 1,
+              "p3_left": 1,
+              "dis-pstn3": "left",
+              "product4": "",
+              "p4_top": 1,
+              "p4_left": 1,
+              "dis-pstn4": "left"
+            }
+          },
+          "1559974380773": {
+            "type": "lookbook1",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/13.jpg",
+              "url": "",
+              "title": "",
+              "title2": "",
+              "width": "50%",
+              "product1": "",
+              "p1_top": 1,
+              "p1_left": 1,
+              "dis-pstn1": "left",
+              "product2": "",
+              "p2_top": 1,
+              "p2_left": 1,
+              "dis-pstn2": "left",
+              "product3": "",
+              "p3_top": 1,
+              "p3_left": 1,
+              "dis-pstn3": "left",
+              "product4": "",
+              "p4_top": 1,
+              "p4_left": 1,
+              "dis-pstn4": "left"
+            }
+          }
+        },
+        "block_order": [
+          "1556020238652",
+          "1559815614407",
+          "1556080853264",
+          "1559981974663",
+          "1559980055256",
+          "1556020391737",
+          "1559973313518",
+          "1559814826450",
+          "1556020206822",
+          "1559974370545",
+          "1559974380773"
+        ],
+        "settings": {
+          "fullwidth": false,
+          "lb-style": "gallery",
+          "grid-spacing": 10,
+          "grid-spacing-mbl": 5,
+          "grid-spacing-col": 2,
+          "cap_bg": "#000000",
+          "cap_text": "#ffffff",
+          "zoom_bg": "#ffffff",
+          "zoom_text": "#111111"
+        }
+      },
+      "1561726660568": {
+        "type": "slideshow",
+        "blocks": {
+          "1561726660568-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/HOMEBANNER_SALE_DK_29.png",
+              "mb_image": "shopify:\/\/shop_images\/Mobilbanner_3.png",
+              "alignment": "center",
+              "smalltitle": "",
+              "heading1": "#000000",
+              "title": "",
+              "heading2": "#000000",
+              "subheading": "",
+              "heading3": "#000000",
+              "slide_button_text": "SHOP HER",
+              "link": "shopify:\/\/collections",
+              "newTab": false,
+              "text_align": "bottomcenter"
+            }
+          },
+          "1561726660568-1": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/HOMEBANNER_DK_2023_1.png",
+              "mb_image": "shopify:\/\/shop_images\/Freddy_916.png",
+              "alignment": "top",
+              "smalltitle": "",
+              "heading1": "#000000",
+              "title": "",
+              "heading2": "#000000",
+              "subheading": "",
+              "heading3": "#000000",
+              "slide_button_text": "",
+              "link": "https:\/\/freddybukser.dk\/collections",
+              "newTab": false,
+              "text_align": "bottomcenter"
+            }
+          },
+          "6fe13afb-bfd1-4c1b-a653-38c2a3fa5df4": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/HOMEBANNER_DK_2023_72.png",
+              "mb_image": "shopify:\/\/shop_images\/HOMEBANNER_DK_2023_72.png",
+              "alignment": "top",
+              "smalltitle": "",
+              "heading1": "#000000",
+              "title": "",
+              "heading2": "#000000",
+              "subheading": "",
+              "heading3": "#000000",
+              "slide_button_text": "Shop her",
+              "link": "https:\/\/freddybukser.dk\/collections",
+              "newTab": false,
+              "text_align": "bottomcenter"
+            }
+          }
+        },
+        "block_order": [
+          "1561726660568-0",
+          "1561726660568-1",
+          "6fe13afb-bfd1-4c1b-a653-38c2a3fa5df4"
+        ],
+        "settings": {
+          "section_width": false,
+          "box-width": 1500,
+          "top-offeset": "none",
+          "snow_effect": false,
+          "snow_style": "style2",
+          "autoplay": true,
+          "autoplay_speed": "7000",
+          "arrow": true,
+          "dots": true,
+          "txtanimation": true,
+          "animation-style": "style1",
+          "text-align": "center",
+          "btn-size-desk": "btn-md",
+          "btn-size-mob": "mob-btn-sm",
+          "ds_height": 620,
+          "tb_height": 550,
+          "mb_height": 250
+        }
+      },
+      "1561784085337": {
+        "type": "store-features",
+        "blocks": {
+          "1561784085337-0": {
+            "type": "text_block",
+            "settings": {
+              "icons": "ad-free-delivery",
+              "title": "GRATIS FRAGT",
+              "text": "<p>PÅ HELE DIN ORDRE<\/p>",
+              "texturl": ""
+            }
+          },
+          "1561784085337-1": {
+            "type": "text_block",
+            "settings": {
+              "icons": "ad-money",
+              "title": "GRATIS OMBYTNING",
+              "text": "<p>VI DÆKKER FRAGTEN<\/p>",
+              "texturl": ""
+            }
+          },
+          "b771aca2-04ff-4682-9b86-50f20e0e03f0": {
+            "type": "text_block",
+            "settings": {
+              "icons": "ad-truck-l",
+              "title": "NEM OG HURTIG RETUR",
+              "text": "<p>INKL. RETURLABEL I PAKKEN<\/p>",
+              "texturl": ""
+            }
+          },
+          "1561784085337-2": {
+            "type": "text_block",
+            "settings": {
+              "icons": "ad-phone-24",
+              "title": "KUNDESERVICE",
+              "text": "<p>SVAR INDEFOR 24 TIMER<\/p>",
+              "texturl": ""
+            }
+          }
+        },
+        "block_order": [
+          "1561784085337-0",
+          "1561784085337-1",
+          "b771aca2-04ff-4682-9b86-50f20e0e03f0",
+          "1561784085337-2"
+        ],
+        "settings": {
+          "hide_mobile": true,
+          "top-offeset": "small",
+          "title": "",
+          "subtitle": "",
+          "style": "style2",
+          "enable_icons": true,
+          "icon-type": "icon",
+          "iconsize": "40",
+          "section_cov": true,
+          "sec_bg_clr": "#131313",
+          "icons_clr": "#eeeeee",
+          "text_clr": "#ffffff",
+          "border_sep": "rgba(0,0,0,0)"
+        }
+      },
+      "1565076450760": {
+        "type": "product-slider",
+        "settings": {
+          "title": "<b>NYHEDER<\/b>",
+          "subtitle": "",
+          "collection": "regular-waist",
+          "secondary_image": true,
+          "show_vendor": false,
+          "prlist_btn_show": false,
+          "btn_mobiles": false,
+          "show_view_all": "",
+          "show_color_swatch": false,
+          "color_type": "color",
+          "vr_bg_position": "50% 0",
+          "color_size": "small",
+          "color_style": "rounded",
+          "top-offeset": "none",
+          "section_cov": false,
+          "sec_bg_clr": "#fafafa",
+          "prbox_style": "style1",
+          "grid": 4,
+          "tablet-grid": 3,
+          "mobile-grid": 2,
+          "rows": "10",
+          "autoplay": false,
+          "autoplay_speed": 5
+        }
+      },
+      "sub-collections": {
+        "type": "sub-collections",
+        "settings": {
+          "section_width": false,
+          "pad-desk": 55,
+          "pad-ipad": 15,
+          "pad-mbl": 10,
+          "show_collection_image": true,
+          "bheight": 200,
+          "bheightipad": 200,
+          "bheightmob": 100,
+          "clr_text": "#000",
+          "clr_bg": "#eeeeee",
+          "style": "style3",
+          "product_count": true,
+          "masonary_grid": false,
+          "grid-spacing": 4,
+          "grid": 4,
+          "tablet-grid": 3,
+          "mobile-grid": 2,
+          "collection_ttl_hm": "#fff",
+          "collection_ttl_bg_hm": "#000000",
+          "collection_ttl_opt_hm": 1
+        }
+      },
+      "about-template-2": {
+        "type": "about-template-2",
+        "blocks": {
+          "1590669262380": {
+            "type": "style2",
+            "settings": {
+              "aboutimg": "shopify:\/\/shop_images\/fashion_787be7e7-7c09-4366-b4a8-226812bed4ea.jpg",
+              "title1": "<h4>WHY WE<\/h4>",
+              "title1des": "<p>Avon comes with easy-to-use interface and outstanding support. You can implement your own design. You can easily change the store's appearance as per your requirements using our ready sections and options available.<\/p>",
+              "title2": "<h4>OUR VISION<\/h4>",
+              "title2des": "<p>Vestibulum ultricies aliquam convallis. Maecenas ut tellus mi. Proin tincidunt, lectus eu volutpat mattis, ante metus lacinia tellus, vitae condimentum nulla enim bibendum nibh. Praesent turpis risus, interdum nec venenatis id, pretium sit amet purus. Interdum et malesuada fames ac ante ipsum primis in faucibus.<\/p>",
+              "title3": "<h4>OUR MISSION<\/h4>",
+              "title3des": "<p>Vestibulum ultricies aliquam convallis. Maecenas ut tellus mi. Proin tincidunt, lectus eu volutpat mattis, ante metus lacinia tellus, vitae condimentum nulla enim bibendum nibh. Praesent turpis risus, interdum nec venenatis id, pretium sit amet purus. Interdum et malesuada fames ac ante ipsum primis in faucibus.<\/p>",
+              "title4": "<h4>CONTACT US<\/h4>",
+              "title4des": "<p><strong>55 Gallaxy Enque,<\/strong><br>2568 steet, 23568 NY<\/p>\n<p><strong>Phone<\/strong> : (440) 000 000 0000 <br><strong>Email<\/strong>: sales@yousite.com<\/p>",
+              "title5": "<h4>OUR TEAM<\/h4>",
+              "team1pic": "shopify:\/\/shop_images\/demo2-about-3.jpg",
+              "team1bio": "<p><strong>STIVE SMITH<\/strong><\/p>\n<p>FOUNDER & CEO<\/p>",
+              "socialurl1": "<a href=\"#\"><i class=\"ad ad-facebook-f\"><\/i><\/a>\n<a href=\"#\"><i class=\"ad ad-pinterest-p\"><\/i><\/a>\n<a href=\"#\"><i class=\"ad ad-twitter \"><\/i><\/a>",
+              "team2pic": "shopify:\/\/shop_images\/demo2-about-2.jpg",
+              "team2bio": "<p><strong>STIVE SMITH<\/strong><\/p>\n<p>FOUNDER & CEO<\/p>",
+              "socialurl2": "<a href=\"#\"><i class=\"ad ad-facebook-f\"><\/i><\/a>\n<a href=\"#\"><i class=\"ad ad-pinterest-p\"><\/i><\/a>\n<a href=\"#\"><i class=\"ad ad-twitter \"><\/i><\/a>",
+              "team3pic": "shopify:\/\/shop_images\/demo2-about-1.jpg",
+              "team3bio": "<p><strong>STIVE SMITH<\/strong><\/p>\n<p>FOUNDER & CEO<\/p>",
+              "socialurl3": "<a href=\"#\"><i class=\"ad ad-facebook-f\"><\/i><\/a>\n<a href=\"#\"><i class=\"ad ad-pinterest-p\"><\/i><\/a>\n<a href=\"#\"><i class=\"ad ad-twitter \"><\/i><\/a>"
+            }
+          }
+        },
+        "block_order": [
+          "1590669262380"
+        ],
+        "settings": {
+          "top-text": "<p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
+          "pagestyle": "style2"
+        }
+      },
+      "faq-template-2": {
+        "type": "faq-template-2",
+        "blocks": {
+          "1590669949255": {
+            "type": "faqsection",
+            "settings": {
+              "sectiontitle": "Shopping"
+            }
+          },
+          "1590669957934": {
+            "type": "faqs",
+            "settings": {
+              "question": "What Shipping Methods Are Available?",
+              "answer": "Nullam sed neque luctus, maximus diam sed, facilisis orci. Nunc ultricies neque a aliquam sollicitudin. Vivamus sit amet finibus sapien. Duis est dui, sodales nec pretium a, interdum in lacus. Sed et est vel velit vestibulum tincidunt non a felis. Phasellus convallis, diam eu facilisis tincidunt, ex nibh vulputate dolor, eu maximus massa libero vel eros."
+            }
+          },
+          "1590669982356": {
+            "type": "faqs",
+            "settings": {
+              "question": "How do I place an Order?",
+              "answer": "Duis nec nisi id ligula dapibus maximus nec eu dui. Proin ornare, ipsum vitae tincidunt rutrum, diam neque accumsan turpis, a dignissim nisi libero non lacus. Nulla quis massa nulla. Morbi metus lacus, sagittis sed est vel, aliquet ultrices nibh. Morbi auctor ex eget egestas auctor. Duis nec nisi id ligula dapibus maximus nec eu dui. Proin ornare, ipsum vitae tincidunt rutrum, diam neque accumsan turpis, a dignissim nisi libero non lacus. Nulla quis massa nulla. Morbi metus lacus, sagittis sed est vel, aliquet ultrices nibh. Morbi auctor ex eget egestas auctor."
+            }
+          },
+          "1590669992592": {
+            "type": "faqsection",
+            "settings": {
+              "sectiontitle": "Payment"
+            }
+          },
+          "1590670000653": {
+            "type": "faqs",
+            "settings": {
+              "question": "What Payment Methods Are Accepted?",
+              "answer": "Nullam sed neque luctus, maximus diam sed, facilisis orci. Nunc ultricies neque a aliquam sollicitudin. Vivamus sit amet finibus sapien. Duis est dui, sodales nec pretium a, interdum in lacus. Sed et est vel velit vestibulum tincidunt non a felis. Phasellus convallis, diam eu facilisis tincidunt"
+            }
+          },
+          "1590670011943": {
+            "type": "faqs",
+            "settings": {
+              "question": "Do You Ship Internationally?",
+              "answer": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+            }
+          },
+          "1590670021435": {
+            "type": "faqs",
+            "settings": {
+              "question": "What Payment Methods Are Accepted?",
+              "answer": "Nullam sed neque luctus, maximus diam sed, facilisis orci. Nunc ultricies neque a aliquam sollicitudin. Vivamus sit amet finibus sapien. Duis est dui, sodales nec pretium a, interdum in lacus. Sed et est vel velit vestibulum tincidunt non a felis. Phasellus convallis, diam eu facilisis tincidunt, ex nibh vulputate dolor, eu maximus massa libero vel eros. In vulputate metus lacus, eu vehicula dolor feugiat id. Nulla vitae nisl in ex consequat porttitor vel a lectus. Vestibulum viverra in velit ac consequat. Nullam porta nulla eu dignissim cursus."
+            }
+          },
+          "1590670033579": {
+            "type": "faqsection",
+            "settings": {
+              "sectiontitle": "Returns"
+            }
+          },
+          "1590670039182": {
+            "type": "faqs",
+            "settings": {
+              "question": "Is Buying On-Line Safe?",
+              "answer": "Nullam sed neque luctus, maximus diam sed, facilisis orci. Nunc ultricies neque a aliquam sollicitudin. Vivamus sit amet finibus sapien. Duis est dui, sodales nec pretium a, interdum in lacus. Sed et est vel velit vestibulum tincidunt non a felis. Phasellus convallis, diam eu facilisis tincidunt, ex nibh vulputate dolor, eu maximus massa libero vel eros. In vulputate metus lacus, eu vehicula dolor feugiat id. Nulla vitae nisl in ex consequat porttitor vel a lectus."
+            }
+          },
+          "1590670048272": {
+            "type": "faqs",
+            "settings": {
+              "question": "Do I have to pay anything to return my items?",
+              "answer": "Nullam sed neque luctus, maximus diam sed, facilisis orci. Nunc ultricies neque a aliquam sollicitudin. Vivamus sit amet finibus sapien. Duis est dui, sodales nec pretium a, interdum in lacus."
+            }
+          },
+          "1590670056034": {
+            "type": "faqs",
+            "settings": {
+              "question": "How do I return an item?",
+              "answer": "In vulputate metus lacus, eu vehicula dolor feugiat id. Nulla vitae nisl in ex consequat porttitor vel a lectus. Vestibulum viverra in velit ac consequat. Nullam porta nulla eu dignissim cursus."
+            }
+          }
+        },
+        "block_order": [
+          "1590669949255",
+          "1590669957934",
+          "1590669982356",
+          "1590669992592",
+          "1590670000653",
+          "1590670011943",
+          "1590670021435",
+          "1590670033579",
+          "1590670039182",
+          "1590670048272",
+          "1590670056034"
+        ],
+        "settings": {
+          "pagestyle": "style2",
+          "sec-title-bg": "#333",
+          "sec-title": "#eeeeee"
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "show_product_recommendations": true,
+          "recommanded_products_autoplay": false,
+          "autoplay_speed": "3000",
+          "recommanded_title": "RELATEREDE PRODUKTER",
+          "recommanded_sub_title": "",
+          "grid": 4,
+          "tablet-grid": 3,
+          "mobile-grid": 2,
+          "recommanded_total_product_to_show": "8"
+        }
+      },
+      "16295840207b7106a1": {
+        "type": "grid-banners",
+        "blocks": {
+          "e95a6955-7a73-4700-8666-499c80c56676": {
+            "type": "style3",
+            "settings": {
+              "image1": "shopify:\/\/shop_images\/Untitled_design_1.jpg",
+              "text1": "",
+              "text1-large": "",
+              "bnr1align": "center",
+              "link1": "shopify:\/\/collections\/freddy-wr-up",
+              "image2": "shopify:\/\/shop_images\/box_04_now.jpg",
+              "text2": "",
+              "text2-large": "",
+              "bnr2align": "center",
+              "link2": "shopify:\/\/collections\/n-o-w-jeans",
+              "image3": "shopify:\/\/shop_images\/box_04_shop_by.jpg",
+              "text3": "",
+              "text3-large": "",
+              "bnr3align": "center",
+              "link3": ""
+            }
+          }
+        },
+        "block_order": [
+          "e95a6955-7a73-4700-8666-499c80c56676"
+        ],
+        "settings": {
+          "title": "",
+          "subtitle": "",
+          "top-offeset": "small",
+          "fullwidth": true,
+          "pad-desk": 0,
+          "pad-ipad": 0,
+          "pad-mbl": 0,
+          "hide_mobile": false,
+          "bnr_ttl": "#000000",
+          "bnr_ttl_bg": "#ffffff",
+          "bnr_ttl_bg_op": 0.7,
+          "disable_zoom": false,
+          "snow_effect": false,
+          "snow_style": "style1"
+        }
+      },
+      "1640612661e4085cde": {
+        "type": "products-rows",
+        "settings": {
+          "title": "",
+          "subtitle": "",
+          "collection": "freddy-wr-up",
+          "secondary_image": true,
+          "show_vendor": false,
+          "prlist_btn_show": true,
+          "btn_mobiles": true,
+          "show_view_all": "",
+          "btn-size-desk": "btn-sm",
+          "btn-size-mob": "mob-btn-sm",
+          "show_color_swatch": false,
+          "color_type": "color",
+          "vr_bg_position": "50% 0",
+          "color_size": "small",
+          "color_style": "rounded",
+          "top-offeset": "none",
+          "section_cov": true,
+          "sec_bg_clr": "#fafafa",
+          "prbox_style": "style1",
+          "grid": 4,
+          "tablet-grid": 3,
+          "mobile-grid": 2,
+          "rows": "8"
+        }
+      },
+      "1640646313af2d3765": {
+        "type": "maestrooo-instagram",
+        "settings": {
+          "title": "SE VORES INSTAGRAM",
+          "subheading": "",
+          "button_text": "",
+          "button_link": "",
+          "layout": "grid",
+          "image_size": "small",
+          "full_width": true,
+          "add_spacing": true,
+          "rows_count": 2,
+          "show_author": false,
+          "show_caption": true,
+          "show_date": true,
+          "click_action": "open_instagram",
+          "heading_color": "#000000",
+          "subheading_color": "#000000",
+          "button_background": "#000000",
+          "button_color": "#ffffff",
+          "overlay_color": "#000000",
+          "overlay_text_color": "#ffffff",
+          "overlay_opacity": 65
+        }
+      },
+      "16407331207a5a91c7": {
+        "type": "video",
+        "settings": {
+          "top-offeset": "small",
+          "section_width": false,
+          "hide_mobile": false,
+          "snow_effect": true,
+          "snow_style": "style1",
+          "pad-desk": 55,
+          "pad-ipad": 15,
+          "pad-mbl": 10,
+          "video_url": "",
+          "mp4url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0596\/6246\/7277\/files\/Freddy_WR.UP_Community_Commercial.mp4?v=1640733692",
+          "title": "",
+          "hide_text": false,
+          "btntxt": "",
+          "btnurl": "shopify:\/\/collections",
+          "hide_btn": false,
+          "text_align": "bottomcenter",
+          "color_ttl": "#ffffff"
+        }
+      },
+      "1640733944a8b01089": {
+        "type": "info-lines",
+        "settings": {
+          "fullwidth": true,
+          "top-offeset": "small",
+          "infolines": "BESTSELLERS",
+          "text-size": 26,
+          "sec_bg_clr": "#fafafa",
+          "text_clr": "#111111",
+          "text-padding": 20
+        }
+      },
+      "164073418830952a9a": {
+        "type": "quotes",
+        "blocks": {
+          "164073418830952a9a-0": {
+            "type": "quote",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/60078604_10156345102203602_1915176627965263872_n.jpg",
+              "quote": "<p>Jeg elsker mine freddy bukser, jeg har efterhåeden en hel del af dem, og jeg elsker alt ved dem <\/p>",
+              "author": "Lærke Bro Knudsen"
+            }
+          },
+          "164073418830952a9a-1": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+              "author": "Author's name"
+            }
+          },
+          "164073418830952a9a-2": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+              "author": "Author's name"
+            }
+          }
+        },
+        "block_order": [
+          "164073418830952a9a-0",
+          "164073418830952a9a-1",
+          "164073418830952a9a-2"
+        ],
+        "disabled": true,
+        "settings": {
+          "section_width": true,
+          "top-offeset": "small",
+          "title": "DET SIGER VORES KUNDER",
+          "autoplay": true,
+          "autoplay_speed": 5,
+          "arrow": true,
+          "dots": true,
+          "testimonials_bg": "#f5f5f5",
+          "testimonials_text": "#444444"
         }
       }
     },
     "content_for_index": [
-
+      "1561726660568",
+      "1561784085337",
+      "16295840207b7106a1",
+      "1565076450760",
+      "16407331207a5a91c7",
+      "164073418830952a9a",
+      "1640733944a8b01089",
+      "1640612661e4085cde",
+      "1640646313af2d3765"
     ],
     "blocks": {
       "855628211100114053": {
@@ -123,304 +2859,81 @@
         "settings": {
         }
       },
-      "1251128615222945960": {
-        "type": "shopify:\/\/apps\/post-checkout-upsells-promos\/blocks\/app-embed\/ea24a4f3-06ec-4555-b927-79ef4ba4841e",
+      "6610233760104865948": {
+        "type": "shopify:\/\/apps\/pushowl\/blocks\/pushowl-app-embed-3d2ff2b5\/fa20c3ba-38bf-43e0-ba5c-431f6ae07d95",
         "disabled": false,
         "settings": {
-        }
-      },
-      "13768625480086291342": {
-        "type": "shopify:\/\/apps\/forms\/blocks\/forms\/8744a304-fcb1-4347-b211-bb6b4759a76a",
-        "disabled": true,
-        "settings": {
-        }
-      },
-      "17676059084223943535": {
-        "type": "shopify:\/\/apps\/triplewhale\/blocks\/triple_pixel_snippet\/483d496b-3f1a-4609-aea7-8eee3b6b7a2a",
-        "disabled": false,
-        "settings": {
-        }
-      }
-    },
-    "color_schemes": {
-      "background-1": {
-        "settings": {
-          "background": "#ffffff",
-          "background_gradient": "",
-          "text": "#414141",
-          "button": "#414141",
-          "button_label": "#ffffff",
-          "secondary_button_label": "#414141",
-          "shadow": "#414141"
-        }
-      },
-      "background-2": {
-        "settings": {
-          "background": "#efefef",
-          "background_gradient": "",
-          "text": "#121212",
-          "button": "#414141",
-          "button_label": "#f3f3f3",
-          "secondary_button_label": "#000000",
-          "shadow": "#000000"
-        }
-      },
-      "inverse": {
-        "settings": {
-          "background": "#ffffff",
-          "background_gradient": "",
-          "text": "#000000",
-          "button": "#ffffff",
-          "button_label": "#000000",
-          "secondary_button_label": "#ffffff",
-          "shadow": "#000000"
-        }
-      },
-      "accent-1": {
-        "settings": {
-          "background": "#000000",
-          "background_gradient": "",
-          "text": "#ffffff",
-          "button": "#ffffff",
-          "button_label": "#1c1f0d",
-          "secondary_button_label": "#ffffff",
-          "shadow": "#1c1f0d"
-        }
-      },
-      "accent-2": {
-        "settings": {
-          "background": "#ca1d1d",
-          "background_gradient": "",
-          "text": "#ffffff",
-          "button": "#000000",
-          "button_label": "#ffffff",
-          "secondary_button_label": "#414141",
-          "shadow": "#000000"
-        }
-      },
-      "scheme-400fd2b0-35a2-436c-9826-3c3f2fa1e4b1": {
-        "settings": {
-          "background": "#6b6b6b",
-          "background_gradient": "",
-          "text": "#ffffff",
-          "button": "#ffffff",
-          "button_label": "#ffffff",
-          "secondary_button_label": "#ffffff",
-          "shadow": "#000000"
         }
       }
     }
   },
   "presets": {
     "Default": {
-      "logo_width": 90,
-      "color_schemes": {
-        "scheme-1": {
+      "color_text": "#3d4246",
+      "color_body_text": "#788188",
+      "color_sale_text": "#7796A8",
+      "color_borders": "#e8e9eb",
+      "color_button": "#7796A8",
+      "color_button_text": "#fff",
+      "color_small_button": "#fff",
+      "color_small_button_text": "#3d4246",
+      "color_text_field": "#fff",
+      "color_text_field_text": "#000",
+      "color_image_overlay_text": "#fff",
+      "color_image_overlay": "#3d4246",
+      "image_overlay_opacity": "0.25",
+      "color_body_bg": "#fff",
+      "type_header_family": "Google_Work+Sans_600_sans",
+      "type_header_base_size": "26px",
+      "type_base_family": "Google_Work+Sans_400_sans",
+      "type_base_size": "16px",
+      "type_bold_product_titles": false,
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "sections": {
+        "hero": {
+          "type": "hero",
           "settings": {
-            "background": "#FFFFFF",
-            "background_gradient": "",
-            "text": "#121212",
-            "button": "#121212",
-            "button_label": "#FFFFFF",
-            "secondary_button_label": "#121212",
-            "shadow": "#121212"
           }
         },
-        "scheme-2": {
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slideshow-0": {
+              "type": "image",
+              "settings": {
+              }
+            },
+            "slideshow-1": {
+              "type": "image",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "slideshow-0",
+            "slideshow-1"
+          ],
           "settings": {
-            "background": "#F3F3F3",
-            "background_gradient": "",
-            "text": "#121212",
-            "button": "#121212",
-            "button_label": "#F3F3F3",
-            "secondary_button_label": "#121212",
-            "shadow": "#121212"
           }
         },
-        "scheme-3": {
+        "feature-row": {
+          "type": "feature-row",
           "settings": {
-            "background": "#242833",
-            "background_gradient": "",
-            "text": "#FFFFFF",
-            "button": "#FFFFFF",
-            "button_label": "#000000",
-            "secondary_button_label": "#FFFFFF",
-            "shadow": "#121212"
           }
         },
-        "scheme-4": {
+        "footer": {
+          "type": "footer",
           "settings": {
-            "background": "#121212",
-            "background_gradient": "",
-            "text": "#FFFFFF",
-            "button": "#FFFFFF",
-            "button_label": "#121212",
-            "secondary_button_label": "#FFFFFF",
-            "shadow": "#121212"
-          }
-        },
-        "scheme-5": {
-          "settings": {
-            "background": "#334FB4",
-            "background_gradient": "",
-            "text": "#FFFFFF",
-            "button": "#FFFFFF",
-            "button_label": "#334FB4",
-            "secondary_button_label": "#FFFFFF",
-            "shadow": "#121212"
           }
         }
       },
-      "type_header_font": "assistant_n4",
-      "heading_scale": 100,
-      "type_body_font": "assistant_n4",
-      "body_scale": 100,
-      "page_width": 1200,
-      "spacing_sections": 0,
-      "spacing_grid_horizontal": 8,
-      "spacing_grid_vertical": 8,
-      "animations_reveal_on_scroll": true,
-      "animations_hover_elements": "none",
-      "buttons_border_thickness": 1,
-      "buttons_border_opacity": 100,
-      "buttons_radius": 0,
-      "buttons_shadow_opacity": 0,
-      "buttons_shadow_horizontal_offset": 0,
-      "buttons_shadow_vertical_offset": 4,
-      "buttons_shadow_blur": 5,
-      "variant_pills_border_thickness": 1,
-      "variant_pills_border_opacity": 55,
-      "variant_pills_radius": 40,
-      "variant_pills_shadow_opacity": 0,
-      "variant_pills_shadow_horizontal_offset": 0,
-      "variant_pills_shadow_vertical_offset": 4,
-      "variant_pills_shadow_blur": 5,
-      "inputs_border_thickness": 1,
-      "inputs_border_opacity": 55,
-      "inputs_radius": 0,
-      "inputs_shadow_opacity": 0,
-      "inputs_shadow_horizontal_offset": 0,
-      "inputs_shadow_vertical_offset": 4,
-      "inputs_shadow_blur": 5,
-      "card_style": "standard",
-      "card_image_padding": 0,
-      "card_text_alignment": "left",
-      "card_color_scheme": "scheme-2",
-      "card_border_thickness": 0,
-      "card_border_opacity": 10,
-      "card_corner_radius": 0,
-      "card_shadow_opacity": 0,
-      "card_shadow_horizontal_offset": 0,
-      "card_shadow_vertical_offset": 4,
-      "card_shadow_blur": 5,
-      "collection_card_style": "standard",
-      "collection_card_image_padding": 0,
-      "collection_card_text_alignment": "left",
-      "collection_card_color_scheme": "scheme-2",
-      "collection_card_border_thickness": 0,
-      "collection_card_border_opacity": 10,
-      "collection_card_corner_radius": 0,
-      "collection_card_shadow_opacity": 0,
-      "collection_card_shadow_horizontal_offset": 0,
-      "collection_card_shadow_vertical_offset": 4,
-      "collection_card_shadow_blur": 5,
-      "blog_card_style": "standard",
-      "blog_card_image_padding": 0,
-      "blog_card_text_alignment": "left",
-      "blog_card_color_scheme": "scheme-2",
-      "blog_card_border_thickness": 0,
-      "blog_card_border_opacity": 10,
-      "blog_card_corner_radius": 0,
-      "blog_card_shadow_opacity": 0,
-      "blog_card_shadow_horizontal_offset": 0,
-      "blog_card_shadow_vertical_offset": 4,
-      "blog_card_shadow_blur": 5,
-      "text_boxes_border_thickness": 0,
-      "text_boxes_border_opacity": 10,
-      "text_boxes_radius": 0,
-      "text_boxes_shadow_opacity": 0,
-      "text_boxes_shadow_horizontal_offset": 0,
-      "text_boxes_shadow_vertical_offset": 4,
-      "text_boxes_shadow_blur": 5,
-      "media_border_thickness": 1,
-      "media_border_opacity": 5,
-      "media_radius": 0,
-      "media_shadow_opacity": 0,
-      "media_shadow_horizontal_offset": 0,
-      "media_shadow_vertical_offset": 4,
-      "media_shadow_blur": 5,
-      "popup_border_thickness": 1,
-      "popup_border_opacity": 10,
-      "popup_corner_radius": 0,
-      "popup_shadow_opacity": 5,
-      "popup_shadow_horizontal_offset": 0,
-      "popup_shadow_vertical_offset": 4,
-      "popup_shadow_blur": 5,
-      "drawer_border_thickness": 1,
-      "drawer_border_opacity": 10,
-      "drawer_shadow_opacity": 0,
-      "drawer_shadow_horizontal_offset": 0,
-      "drawer_shadow_vertical_offset": 4,
-      "drawer_shadow_blur": 5,
-      "badge_position": "bottom left",
-      "badge_corner_radius": 40,
-      "sale_badge_color_scheme": "scheme-4",
-      "sold_out_badge_color_scheme": "scheme-3",
-      "brand_headline": "",
-      "brand_description": "<p><\/p>",
-      "brand_image_width": 100,
-      "social_twitter_link": "",
-      "social_facebook_link": "",
-      "social_pinterest_link": "",
-      "social_instagram_link": "",
-      "social_tiktok_link": "",
-      "social_tumblr_link": "",
-      "social_snapchat_link": "",
-      "social_youtube_link": "",
-      "social_vimeo_link": "",
-      "predictive_search_enabled": true,
-      "predictive_search_show_vendor": false,
-      "predictive_search_show_price": false,
-      "currency_code_enabled": true,
-      "cart_type": "notification",
-      "show_vendor": false,
-      "show_cart_note": false,
-      "cart_drawer_collection": "",
-      "cart_color_scheme": "scheme-1",
-      "sections": {
-        "main-password-header": {
-          "type": "main-password-header",
-          "settings": {
-            "color_scheme": "scheme-1"
-          }
-        },
-        "main-password-footer": {
-          "type": "main-password-footer",
-          "settings": {
-            "color_scheme": "scheme-1"
-          }
-        }
-      }
+      "content_for_index": [
+        "hero",
+        "feature-row",
+        "slideshow"
+      ]
     }
-  },
-  "platform_customizations": {
-    "custom_css": [
-      ".footer {margin-top: 0px;}",
-      ".list-menu > li:nth-child(3) > a > span {color: #0d151f;}",
-      ".product-reviews__submit-review {background-color: #252525;}",
-      "button.product-form__submit.button--full-width {background-color: #000;}",
-      ".announcement-bar__message {color: #fff;}",
-      " \/* Start Product Page *\/.product-bullets {display: flex; justify-content: space-between; align-items: baseline; padding-left: 0; list-style: none; text-align: center;}",
-      ".usp-product-page-1 {max-width: 50%; display: block; margin-left: auto; margin-right: auto;}",
-      ".usp-product-page-1-en {max-width: 70%; display: block; margin-left: auto; margin-right: auto;}",
-      ".usp-product-page-2 {max-width: 55%; display: block; margin-left: auto; margin-right: auto;}",
-      ".usp-product-page-3 {max-width: 75%; display: block; margin-left: auto; margin-right: auto;}",
-      ".usp-product-page-3-en {max-width: 45%; display: block; margin-left: auto; margin-right: auto;}",
-      ".product-form__input--pill input[type=\"radio\"] + label {border: none; background-color: #dbdada; border-radius: 0px; font-size: 12px;}",
-      "button.product-form__submit.button--full-width {background-color: #333; border-radius: 0px;}",
-      " \/* Finish Product Page *\/ \/* Start Product Card *\/div.product-form__input > a {border: none; border-radius: 0px; color: rgb(var(--color-foreground)); display: inline-block; margin: 0.6rem 0.4rem 0.1rem 0; padding: 0 3px 0 0; line-height: 1; transition: border var(--duration-short) ease; text-decoration: none; font-size: 12px;}",
-      " \/* Finish Product Card *\/.product-reviews__submit-review {border-radius: 0px;}",
-      ".button {border-radius: 0px;}"
-    ]
   }
 }

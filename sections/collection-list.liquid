@@ -1,292 +1,413 @@
-{{ 'section-collection-list.css' | asset_url | stylesheet_tag }}
-{{ 'component-card.css' | asset_url | stylesheet_tag }}
-{{ 'component-slider.css' | asset_url | stylesheet_tag }}
+{%- capture collectionList -%}
+<div class="content-indent {{ section.settings.top-offeset}}{% if section.settings.section_cov %} section-cover{% endif%}" {% if section.settings.section_cov %}style="background-color:{{section.settings.sec_bg_clr}};"{% endif%}>
+  <div class="collection-box cl{{ section.id }} {{section.settings.style}} {% unless section.settings.section_width %}page-width {% else %}fullwidth-{{section.id}} fullwidth{% endunless %}{% if section.settings.hide_mobile %} small--hide{% endif %}" id="sliderbox-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="carousel">   	
+    {%- if section.settings.title != blank  or section.settings.subtitle != blank -%}
+    <div class="sec-ttl {{ settings.title_align}} wow fadeIn">
+      <h3 class="h3">{{ section.settings.title }}</h3>
+      {%- if section.settings.subtitle != blank -%}<span>{{section.settings.subtitle}}</span>{%- endif -%}                 
+    </div>
+    {% endif %}
 
-{%- style -%}
-  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-  }
+    {% case section.settings.grid %}
+    {% when 2 %}{%- assign grid_ds = 'large-up--one-half' -%}
+    {% when 3 %}{%- assign grid_ds = 'large-up--one-third' -%}
+    {% when 4 %}{%- assign grid_ds = 'large-up--one-quarter' -%}
+    {% when 5 %}{%- assign grid_ds = 'large--one-quarter widescreen--one-fifth' -%}
+    {% when 6 %}{%- assign grid_ds = 'large--one-fifth widescreen--one-sixth' -%}
+    {% when 7 %}{%- assign grid_ds = 'large--one-fifth widescreen--one-seventh' -%}
+    {% endcase %}
+    
+    {% case section.settings.tablet-grid %}
+    {% when 2 %}{%- assign grid_tb = 'medium--one-half' -%}
+    {% when 3 %}{%- assign grid_tb = 'medium--one-third' -%}
+    {% when 4 %}{%- assign grid_tb = 'medium--one-quarter' -%}
+    {% when 5 %}{%- assign grid_tb = 'medium--one-fifth' -%}
+    {% endcase %}
+    
+    {% case section.settings.mobile-grid %}
+    {% when 1 %}{%- assign grid_mb = 'small--one-whole' -%}
+    {% when 2 %}{%- assign grid_mb = 'small--one-half' -%}
+    {% when 3 %}{%- assign grid_mb = 'small--one-third' -%}
+    {% endcase %}
 
-  @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
-  }
-{%- endstyle -%}
-
-{%- liquid
-  assign columns_mobile_int = section.settings.columns_mobile | plus: 0
-  assign show_mobile_slider = false
-  if section.settings.swipe_on_mobile and section.blocks.size > columns_mobile_int
-    assign show_mobile_slider = true
-  endif
--%}
-
-<div class="color-{{ section.settings.color_scheme }} gradient">
-  <div class="collection-list-wrapper page-width isolate{% if show_mobile_slider %} page-width-desktop{% endif %}{% if section.settings.title == blank %} no-heading{% endif %}{% if section.settings.show_view_all == false or section.blocks.size > collections.size %} no-mobile-link{% endif %} section-{{ section.id }}-padding">
-    {%- unless section.settings.title == blank -%}
-      <div class="title-wrapper-with-link{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% else %} title-wrapper--self-padded-mobile{% endif %} title-wrapper--no-top-margin">
-        <h2
-          id="SectionHeading-{{ section.id }}"
-          class="collection-list-title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-        >
-          {{ section.settings.title }}
-        </h2>
-
-        {%- if section.settings.show_view_all and show_mobile_slider -%}
-          <a
-            href="{{ routes.collections_url }}"
-            id="ViewAll-{{ section.id }}"
-            class="link underlined-link large-up-hide{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-            aria-labelledby="ViewAll-{{ section.id }} SectionHeading-{{ section.id }}"
-          >
-            {{- 'sections.collection_list.view_all' | t -}}
-          </a>
-        {%- endif -%}
-      </div>
-    {%- endunless -%}
-
-    <slider-component class="slider-mobile-gutter{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-      <ul
-        class="collection-list contains-card contains-card--collection{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down{% if section.settings.swipe_on_mobile %} slider slider--tablet grid--peek{% endif %} collection-list--{{ section.blocks.size }}-items"
-        id="Slider-{{ section.id }}"
-        role="list"
-      >
-        {%- liquid
-          assign columns = section.blocks.size
-          if columns > 3
-            assign columns = 3
-          endif
-        -%}
-        {%- for block in section.blocks -%}
-          <li
-            id="Slide-{{ section.id }}-{{ forloop.index }}"
-            class="collection-list__item grid__item{% if show_mobile_slider %} slider__slide{% endif %}{% if block.settings.collection.featured_image == nil %} collection-list__item--no-media{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-            {{ block.shopify_attributes }}
-            {% if settings.animations_reveal_on_scroll %}
-              data-cascade
-              style="--animation-order: {{ forloop.index }};"
-            {% endif %}
-          >
-            {%- assign placeholder_image_index = forloop.index0 | modulo: 4 | plus: 1 -%}
-            {%- assign placeholder_image = 'collection-apparel-' | append: placeholder_image_index -%}
-            {% render 'card-collection',
-              card_collection: block.settings.collection,
-              media_aspect_ratio: section.settings.image_ratio,
-              columns: columns,
-              placeholder_image: placeholder_image
-            %}
-          </li>
-        {%- endfor -%}
-      </ul>
-      {%- if show_mobile_slider -%}
-        <div class="slider-buttons no-js-hidden">
-          <button
-            type="button"
-            class="slider-button slider-button--prev"
-            name="previous"
-            aria-label="{{ 'general.slider.previous_slide' | t }}"
-          >
-            {% render 'icon-caret' %}
-          </button>
-          <div class="slider-counter caption">
-            <span class="slider-counter--current">1</span>
-            <span aria-hidden="true"> / </span>
-            <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
-            <span class="slider-counter--total">{{ section.blocks.size }}</span>
+      <div class="grid grid-mr-{{ section.settings.grid-spacing}} box-{{section.id}} collection-grid{% if section.settings.enable_carousel %} carousel{% else %} grid--uniform listing{% endif %}{% if section.settings.disable_zoom %} no-zoom{% endif %}" {% if section.settings.enable_carousel %}data-slick='{"slidesToShow": {{ section.settings.grid }},"slidesToScroll": 1, {%- if settings.rtl -%}"rtl": true,{%- endif -%} "infinite": true, "responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": {{ section.settings.tablet-grid }} }},{"breakpoint": 768,"settings":{"slidesToShow":{{ section.settings.mobile-grid }} }} ]}'{% endif %}>
+        {% for block in section.blocks limit: section.blocks.size %}
+          {% assign product_box = forloop.index | minus:1 %}
+          {% assign delay_time = 50 | times : product_box %}
+          <div class="grid__item {{grid_mb}} {{grid_tb}} {{grid_ds}} pd-mb-{{section.settings.grid-spacing-mbl}} pd-{{ section.settings.grid-spacing}} wow fadeIn" {{ block.shopify_attributes }} data-wow-delay="{{delay_time}}ms">
+            {%- assign collection = collections[block.settings.collection] -%}
+       		 {% include 'collection-grid-item', collection_image_size: image_size, text_align:{{section.settings.txt-align}} %}
           </div>
-          <button
-            type="button"
-            class="slider-button slider-button--next"
-            name="next"
-            aria-label="{{ 'general.slider.next_slide' | t }}"
-          >
-            {% render 'icon-caret' %}
-          </button>
-        </div>
-      {%- endif -%}
-    </slider-component>
-
-    {%- if section.settings.show_view_all and section.blocks.size < collections.size -%}
-      <div
-        class="center collection-list-view-all{% if show_mobile_slider %} small-hide medium-hide{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-        {% if settings.animations_reveal_on_scroll %}
-          data-cascade
-        {% endif %}
-      >
-        <a
-          href="{{ routes.collections_url }}"
-          class="button"
-          id="ViewAllButton-{{ section.id }}"
-          aria-labelledby="ViewAllButton-{{ section.id }} SectionHeading-{{ section.id }}"
-        >
-          {{- 'sections.collection_list.view_all' | t -}}
-        </a>
-      </div>
-    {%- endif -%}
+        {% endfor %}
+      </div>    
+    {% if section.blocks.size == 0 %}{% include 'no-blocks' %}{% endif %}
   </div>
 </div>
 
+<style>
+  .collection-box .box-{{section.id}} .collection-grid-item .collection-grid-item__title,
+  .collection-box .box-{{section.id}} .collection-grid-item .counts{ color:{{ section.settings.collection_ttl_hm}}; }
+  .collection-box .box-{{section.id}} .collection-grid-item .details { background:{{section.settings.collection_ttl_bg_hm | color_modify: 'alpha', section.settings.collection_ttl_opt_hm}}; }
+  @media only screen and (max-width: 767px) {
+      .collection-box .box-{{section.id}} .collection-grid-item .details { background:{{section.settings.collection_ttl_bg_hm_responsive}}; }
+  }
+  {% if section.settings.section_width %}
+  @media only screen and (min-width: 1025px) {
+    .fullwidth-{{section.id}} { padding-left:{{ section.settings.pad-desk}}px; padding-right:{{ section.settings.pad-desk}}px; }
+  } 
+  @media only screen and (max-width: 1024px) {
+    .fullwidth-{{section.id}} { padding-left:{{ section.settings.pad-ipad}}px; padding-right:{{ section.settings.pad-ipad}}px; }
+  } 
+  @media only screen and (max-width: 767px) {
+    .fullwidth-{{section.id}} { padding-left:{{ section.settings.pad-mbl}}px; padding-right:{{ section.settings.pad-mbl}}px; }
+  }
+  {% endif %}
+
+</style>
+{%- endcapture -%}
+{{collectionList | strip_newlines | remove: "  " | remove: "	" }}
+
 {% schema %}
+  {
+    "name": "Collection List",
+    "class": "index-section",
+    "max_blocks": 15,
+    "settings": [	 	 
+      {
+        "type": "textarea",
+        "id": "title",
+        "label": "Heading",
+        "default": "Collection list",
+		"info":"Use <strong>text here</strong> to make headings bold"
+      },
+      {
+        "type": "textarea",
+        "id": "subtitle",
+        "label": "Sub Heading",
+        "default": "Describe your products, collection, content etc..."
+      },	  	 
+	  {
+        "type": "header",
+        "content": "Appearance"
+      },
+      {
+		 "type": "paragraph",
+		 "content":"[checkout different possible style for this section](https://www.adornthemes.com/different-style-for-collection-list/)"
+      }, 	
+	  {
+		 "type": "paragraph",
+		 "content":"Section==="
+      },	  
+	  {
+            "type": "select",
+            "id": "top-offeset",
+            "label": "Top OffSet",
+            "default": "default",
+            "options": [
+              {
+                "value": "default",
+                "label": "Default"
+              },
+              {
+                "value": "small",
+                "label": "Small"
+              },
+			  {
+                "value": "none",
+                "label": "None"
+              }
+			]
+        }, 
+	  {
+		"type":"checkbox",
+		"id":"section_width",
+		"label":"Fullwidth?",
+		"default": true
+	   },
+	  {
+        "type": "paragraph",
+        "content": "Left/Right Padding : Fullwidth Section Only==="
+      }, 	
+      {
+        "type": "range",
+        "id": "pad-desk",
+        "label": "Desktop",
+        "default": 55,
+        "min": 0,
+        "max": 100,
+        "step": 1
+      },
+      {
+        "type": "range",
+        "id": "pad-ipad",
+        "label": "Tablet",
+        "default": 15,
+        "min": 0,
+        "max": 30,
+        "step": 1
+      },
+      {
+        "type": "range",
+        "id": "pad-mbl",
+        "label": "Mobile",
+        "default": 10,
+        "min": 0,
+        "max": 20,
+        "step": 1
+      },
+	   {
+        "type": "checkbox",
+        "id": "section_cov",
+        "label": "Use Background?",
+        "default": false
+      },	
+	  {
+        "type": "color",
+        "id": "sec_bg_clr",
+        "label": "Background",
+		"default":"#fafafa"	
+	  },		  
+	  {
+           "type": "checkbox",
+           "id": "hide_mobile",
+           "label": "Hide Section in Mobile?",
+           "default": false
+        },
+	  {
+        "type": "paragraph",
+        "content": "Grid==="
+      },
+ 	 {
+		"type":"checkbox",
+		"id":"enable_carousel",
+		"label":"Enable Carousel",
+		"default": true
+	  },
+	  {
+        "type": "range",
+        "id": "grid-spacing",
+        "label": "Spacing : Desktop",
+        "default": 15,
+        "min": 0,
+        "max": 30,
+        "step": 1,
+		"unit":"px",
+		"info":"space between two grid/box."
+      },
+     {
+        "type": "range",
+        "id": "grid-spacing-mbl",
+        "label": "Spacing : Mobile",
+        "default": 5,
+        "min": 0,
+        "max": 30,
+        "step": 1,
+		"unit":"px"		
+      },
+      {
+        "type": "select",
+        "id": "style",
+        "label": "Style",
+        "default": "style1",
+        "options": [
+			{ "value": "style1", "label": "Style 1" },
+			{ "value": "style2", "label": "Style 2" },
+			{ "value": "style3", "label": "Style 3" },
+			{ "value": "style4", "label": "Style 4" }
+        ]
+      }, 	
+		{
+        "type": "select",
+        "id": "textalign",
+        "label": "Text Aligment",
+        "default": "text-center",
+        "options": [
+			{ "value": "text-left", "label": "Left" },	
+			{ "value": "text-center", "label": "Center" }
+        ]
+      }, 
+	  {
+		"type":"checkbox",
+		"id":"leftpadzero",
+		"label":"Text Left Padding Zero",
+		"default": false,
+		"info":"Enable this if you want to display text on left and transparent background as displayed in Jewellery demo"
+	  }, 
+ 	  {
+		"type":"checkbox",
+		"id":"product_count",
+		"label":"Show Products Count?",
+		"default": false
+	  }, 
+		{
+		"type":"checkbox",
+		"id":"show_buttons",
+		"label":"Show Buttons?",
+		"default": false
+	  },
 {
-  "name": "t:sections.collection-list.name",
-  "tag": "section",
-  "class": "section section-collection-list",
-  "max_blocks": 15,
-  "disabled_on": {
-    "groups": ["header", "footer"]
-  },
-  "settings": [
-    {
-      "type": "inline_richtext",
-      "id": "title",
-      "default": "Collections",
-      "label": "t:sections.collection-list.settings.title.label"
-    },
-    {
-      "type": "select",
-      "id": "heading_size",
-      "options": [
-        {
-          "value": "h2",
-          "label": "t:sections.all.heading_size.options__1.label"
+          "type": "select",
+          "id": "btn-size-desk",
+          "label": "Button Size: Desktop",
+          "default": "btn-sm",
+          "options": [
+          {
+          "label": "Small",
+          "value": "btn-sm"
+          },
+          {
+          "label": "Medium",
+          "value": "btn-md"
+          },
+          {
+          "label": "Large",
+          "value": "btn-lg"
+          }	
+          ]
+          }, 
+          {
+          "type": "select",
+          "id": "btn-size-mob",
+          "label": "Button Size : Mobile",
+          "default": "mob-btn-sm",
+          "options": [
+          {
+          "label": "Small",
+          "value": "mob-btn-sm"
+          },
+          {
+          "label": "Medium",
+          "value": "mob-btn-md"
+          },
+          {
+          "label": "Large",
+          "value": "mob-btn-lg"
+          }	
+          ]
+          },      
+	  {
+        "type": "paragraph",
+        "content": "Items per row ==="
+      }, 	
+      {
+        "type": "range",
+        "id": "grid",
+        "label": "Desktop",
+        "default": 4,
+        "min": 2,
+        "max": 7,
+        "step": 1
+      },
+      {
+        "type": "range",
+        "id": "tablet-grid",
+        "label": "Tablet",
+        "default": 3,
+        "min": 1,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "type": "range",
+        "id": "mobile-grid",
+        "label": "Mobile",
+        "default": 2,
+        "min": 1,
+        "max": 3,
+        "step": 1
+      },
+	 {
+        "type": "color",
+        "id": "collection_ttl_hm",
+        "label": "Title",
+        "default": "#fff"
+      },
+      {
+        "type": "color",
+        "id": "collection_ttl_bg_hm",
+        "label": "Title Background",
+        "default": "#000"
+      },
+ 		{
+        "type": "color",
+        "id": "collection_ttl_bg_hm_responsive",
+        "label": "Title Background Responsive View",
+        "default": "#000",
+		"info":"When you transparent background for title but you need set background color for mobile view"
+      },
+      {
+        "type": "range",
+        "id": "collection_ttl_opt_hm",
+        "min": 0,
+        "max": 1,
+        "step": 0.1,
+        "label": "Background Opacity",
+        "unit": "%",
+        "default": 0.7
+      },
+		{
+		"type":"checkbox",
+		"id":"disable_zoom",
+		"label":"Disable Image Hover Zoom Effect?",
+		"default": false
+	  },
+	   {
+        "type": "paragraph",      
+        "content": "Set font size from --> Theme Settings --> Fonts, Colors and Styles --> Collection List"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "featured_collection",
+        "name": "Collection",
+        "settings": [
+          {
+            "label": "Collection",
+            "id": "collection",
+            "type": "collection"
+          },
+		  {
+			"type":"image_picker",
+			"id":"collection_image",
+			"label":"Upload Image"			
+		  },
+		  {
+ 			"type":"textarea",
+			"id":"collection_name",
+			"label":"Custom Name",
+			"info":"use <strong>your text here</strong> to make your text bold"
+		  },
+          {
+            "type": "text",
+            "id": "collection_btn",
+            "label": "Collection Button",
+            "default": "Shop Now"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Collection Carousel or List",
+        "category": "2. Collection",
+        "settings": {
+          "grid": 4
         },
-        {
-          "value": "h1",
-          "label": "t:sections.all.heading_size.options__2.label"
-        },
-        {
-          "value": "h0",
-          "label": "t:sections.all.heading_size.options__3.label"
-        }
-      ],
-      "default": "h1",
-      "label": "t:sections.all.heading_size.label"
-    },
-    {
-      "type": "select",
-      "id": "image_ratio",
-      "options": [
-        {
-          "value": "adapt",
-          "label": "t:sections.collection-list.settings.image_ratio.options__1.label"
-        },
-        {
-          "value": "portrait",
-          "label": "t:sections.collection-list.settings.image_ratio.options__2.label"
-        },
-        {
-          "value": "square",
-          "label": "t:sections.collection-list.settings.image_ratio.options__3.label"
-        }
-      ],
-      "default": "square",
-      "label": "t:sections.collection-list.settings.image_ratio.label",
-      "info": "t:sections.collection-list.settings.image_ratio.info"
-    },
-    {
-      "type": "range",
-      "id": "columns_desktop",
-      "min": 1,
-      "max": 5,
-      "step": 1,
-      "default": 3,
-      "label": "t:sections.collection-list.settings.columns_desktop.label"
-    },
-    {
-      "type": "color_scheme",
-      "id": "color_scheme",
-      "label": "t:sections.all.colors.label",
-      "info": "t:sections.all.colors.has_cards_info",
-      "default": "scheme-1"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_view_all",
-      "default": false,
-      "label": "t:sections.collection-list.settings.show_view_all.label"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.collection-list.settings.header_mobile.content"
-    },
-    {
-      "type": "select",
-      "id": "columns_mobile",
-      "options": [
-        {
-          "value": "1",
-          "label": "t:sections.collection-list.settings.columns_mobile.options__1.label"
-        },
-        {
-          "value": "2",
-          "label": "t:sections.collection-list.settings.columns_mobile.options__2.label"
-        }
-      ],
-      "default": "1",
-      "label": "t:sections.collection-list.settings.columns_mobile.label"
-    },
-    {
-      "type": "checkbox",
-      "id": "swipe_on_mobile",
-      "default": false,
-      "label": "t:sections.collection-list.settings.swipe_on_mobile.label"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.all.padding.section_padding_heading"
-    },
-    {
-      "type": "range",
-      "id": "padding_top",
-      "min": 0,
-      "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "t:sections.all.padding.padding_top",
-      "default": 36
-    },
-    {
-      "type": "range",
-      "id": "padding_bottom",
-      "min": 0,
-      "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "t:sections.all.padding.padding_bottom",
-      "default": 36
-    }
-  ],
-  "blocks": [
-    {
-      "type": "featured_collection",
-      "name": "t:sections.collection-list.blocks.featured_collection.name",
-      "settings": [
-        {
-          "type": "collection",
-          "id": "collection",
-          "label": "t:sections.collection-list.blocks.featured_collection.settings.collection.label"
-        }
-      ]
-    }
-  ],
-  "presets": [
-    {
-      "name": "t:sections.collection-list.presets.name",
-      "blocks": [
-        {
-          "type": "featured_collection"
-        },
-        {
-          "type": "featured_collection"
-        },
-        {
-          "type": "featured_collection"
-        }
-      ]
-    }
-  ]
-}
+        "blocks": [
+          {
+            "type": "featured_collection"
+          },
+          {
+            "type": "featured_collection"
+          },
+          {
+            "type": "featured_collection"
+          },
+		  {
+            "type": "featured_collection"
+          }
+        ]
+      }
+    ]
+  }
 {% endschema %}

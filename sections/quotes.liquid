@@ -1,0 +1,185 @@
+<div class="content-indent {{ section.settings.top-offeset}}">
+  <div class="{% unless section.settings.section_width %}page-width {% endunless %}wow fadeInUp" data-section-id="{{ section.id }}" data-section-type="quotes">
+    <div class="quote-wraper">
+      {%- if section.settings.title != blank -%}
+      <div class="sec-ttl {{ settings.title_align}}">
+        <h3 class="h3">{{ section.settings.title }}</h3>     
+      </div>
+      {%- endif -%}
+
+      {% if section.blocks.size > 0 %}
+      <div class="quotes-wrapper">
+        <div class="quotes-slider" id="Quotes-{{ section.id }}" data-count="{{ section.blocks.size }}"data-slick='{"autoplay":{{ section.settings.autoplay }}, "autoplaySpeed":{{section.settings.autoplay_speed | times: 1000}},"arrows":{{section.settings.arrow}},"dots":{{section.settings.dots}} }'>
+          {% for block in section.blocks %}
+          <div class="quotes-slide--{{ block.id }}" {{ block.shopify_attributes }}>
+            {% if block.settings.image != blank %}
+            	<span class="author-pic"><img src="{{block.settings.image | img_url:'100x100',crop: 'center'}}" alt="" /> </span>
+            {% endif %}
+            <blockquote class="quotes-slider__text text-center">             
+              {% if block.settings.quote != blank %}
+              <div class="rte-setting">{{ block.settings.quote }}</div>
+              {% endif %}
+              {% if block.settings.author != blank %}
+              <p class="authour">{{ block.settings.author }}</p>
+              {% endif %}
+            </blockquote>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+      
+      {% if section.blocks.size == 0 %}
+      {% include 'no-blocks' %}
+      {% endif %}
+
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Testimonials",
+    "class": "index-section index-section--flush",
+    "max_blocks": 9,
+    "settings": [	 
+	  {
+		"type":"checkbox",
+		"id":"section_width",
+		"label":"Fullwidth?",
+		"default": true
+	  },
+	  {
+            "type": "select",
+            "id": "top-offeset",
+            "label": "Top OffSet",
+            "default": "default",
+            "options": [
+              {
+                "value": "default",
+                "label": "Default"
+              },
+              {
+                "value": "small",
+                "label": "Small"
+              },
+			  {
+                "value": "none",
+                "label": "None"
+              }
+			]
+        }, 	  
+      {
+        "type": "textarea",
+        "id": "title",
+        "label": "Heading",
+        "default": "Testimonials"
+      }, 	  
+	  {
+        "type": "checkbox",
+        "id": "autoplay",
+        "label": "Auto-rotate slides",
+        "default": false
+      },
+      {
+        "type": "range",
+        "id": "autoplay_speed",
+        "label": "Autoplay Speed",
+        "default": 5,
+        "min": 1,
+        "max": 30,
+        "step": 1
+      },
+	  {
+        "type": "checkbox",
+        "id": "arrow",
+        "label": "Show Next/Previous Arrows?",
+        "default": true
+      },
+	  {
+        "type": "checkbox",
+        "id": "dots",
+        "label": "Show Dotted Navigation?",
+        "default": false
+      },
+	  {
+        "type": "header",
+        "content":"Appearance"
+      },
+	  {
+        "type": "color",
+        "id": "testimonials_bg",
+        "label": "Background Color",
+        "default": "#f5f5f5"
+      },
+ 	  {
+        "type": "paragraph",
+        "content":"OR"
+      },
+      {
+        "type": "image_picker",
+        "id": "testimonials_bg_img",
+        "label": "Background Image"
+      },
+      {
+        "type": "color",
+        "id": "testimonials_text",
+        "label": "Text",
+        "default": "#444"
+      },
+	  {
+        "type": "paragraph",      
+        "content": "Set Font Size From --> Theme Settings --> Fonts, Colors and Styles --> Testimonials"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "quote",
+        "name": "Testimonial",
+        "settings": [
+ 		  {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Upload Image"			
+          },
+          {
+            "type": "richtext",
+            "id": "quote",
+            "label": "Text",
+            "default": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>"
+          },
+          {
+            "type": "textarea",
+            "id": "author",
+            "label": "Author",
+            "default": "Author's name"
+          } 		 
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Testimonials",
+        "category": "4. Text",
+        "blocks": [
+          {
+            "type": "quote"
+          },
+          {
+            "type": "quote"
+          },
+          {
+            "type": "quote"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+<style>
+  .quote-wraper { 
+  	background-color:{{section.settings.testimonials_bg}}; {% if section.settings.testimonials_bg_img != blank %} background-image:url('{{section.settings.testimonials_bg_img | img_url:'master'}}'); background-repeat:no-repeat; background-position:50% 50%; {% endif %}
+  }
+  .quote-wraper .sec-ttl h3,
+  .quotes-slider p { color:{{section.settings.testimonials_text}}; }
+</style>

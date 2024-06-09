@@ -1,0 +1,43 @@
+{%- assign colorStyle = section.settings.color_style | default: settings.color_style -%}
+{%- assign colorType = section.settings.color_type | default: settings.color_type -%}
+{%- assign colorSize = section.settings.color_size | default: settings.color_size -%}
+{%- assign imgPosition = section.settings.vr_bg_position | default: settings.vr_bg_position -%}
+
+{%- if colorSwatch and product.options.size > 0 -%}
+{% capture colorSwatches %}
+  <ul class="gridSwatches">
+    {% for option in product.options %}
+        {% assign downcased_opt = option | downcase %}
+          {% if downcased_opt contains 'color' or downcased_opt contains 'colour' or downcased_opt contains 'couleur' or downcased_opt contains 'farbe' %}
+            {% assign index = forloop.index0 %}
+            {% assign colorlist = '' %}
+            {% assign color = '' %}
+
+            {% if product.variants.size > 1 %}
+           {% for variant in product.variants %}
+              {% capture color %}{{ variant.options[index] }}{% endcapture %}
+              {% assign colorloop = colorlist | split: "," %}
+              {% unless colorloop contains color %}
+              {% assign text = color | handleize %}
+              {% if colorType == "color" %}
+                <li class="swatch {{colorSize}} {{colorStyle}} swt{{color | handle}}{% if variant.image == null %} noImg{% endif %}" style="background-color: {{ color | handle }};"
+                    {% if variant.image != null %}rel="{{ variant.image.src | product_img_url: '400x' }}"{% endif %} title="{{color | split:' '}}">
+                  <span class="tooltip-label">{{color}}</span>
+                </li>
+              {% elsif variant.image != null %}
+                <li class="swatch lazyload {{colorSize}} {{colorStyle}}" title="{{color}}" rel="{{ variant.image.src | product_img_url: '400x' }}"
+                    data-bgset="{% include 'swatch-bg', image: variant.image %}" data-sizes="auto" data-parent-fit="contain"
+                    style="background-image:url({{'spacer.png' | asset_img_url: 'master' }});background-position:{{imgPosition}};"><span class="tooltip-label">{{color}}</span>
+                </li>
+              {% endif %}
+              {% capture tempList %}{{ colorlist | append: color | append: ',' }}{% endcapture %}
+              {% assign colorlist = tempList %}
+              {% endunless %}
+          {% endfor %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </ul>
+{% endcapture %}
+{{colorSwatches | strip_newlines | remove: "  " | remove: "	" }}
+{%- endif -%}

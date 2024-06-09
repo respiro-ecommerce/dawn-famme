@@ -1,0 +1,671 @@
+{%- assign current_variant = product.selected_or_first_available_variant -%}
+{%- assign product_thumb_size = '160x' -%}
+{%- assign product_image_zoom_size = '1800x1800' -%}
+{%- assign enable_zoom = settings.enable_zoom -%}
+{%- if settings.product_latyout == "style2" or settings.product_latyout == "style5" -%}
+	{%- assign product_image_width = 'medium-up--three-fifths' -%}
+	{%- assign product_description_width = 'medium-up--two-fifths' -%}
+	{%- assign product_image_zoom_size = '1200x1200' -%}
+	{%- assign product_image_size = '400x' -%}
+	{%- if settings.layout_style =="fullwidth" or settings.product_fullwidth -%}
+		{%- assign product_image_size = '600x' -%}
+	{%- endif -%}
+{%- elsif settings.product_latyout == "style4" -%}
+	{%- assign product_image_width = 'medium-up--three-fifths' -%}
+	{%- assign product_description_width = 'medium-up--two-fifths' -%}
+	{%- assign product_image_size = '700x' -%}
+	{%- if settings.layout_style =="fullwidth" or settings.product_fullwidth -%}
+		{%- assign product_image_width = 'medium-up--one-half' -%}
+		{%- assign product_description_width = 'medium-up--one-half' -%}
+		{%- assign product_image_size = '1100x' -%}
+	{%- endif -%}
+{%- else -%}
+	{%- assign product_image_width = 'medium-up--one-half' -%}
+	{%- assign product_description_width = 'medium-up--one-half' -%}
+	{%- assign product_image_size = '650x' -%}
+	{%- if settings.layout_style =="fullwidth" or settings.product_fullwidth -%}
+		{%- assign product_image_size = '950x' -%}
+	{%- endif -%}
+{%- endif -%}
+
+{%- assign product_thumbnail_width = 'small--one-third large-up--one-fifth' -%}
+{%- assign featured_img_src = current_variant.featured_image.src | default: product.featured_image.src -%}
+
+<div class="ptContainer {{settings.product_latyout}}{% if settings.product_latyout != "style6" %} page-width{% if settings.product_fullwidth %} fullwidth{%endif%}{%endif%}" data-style="{{settings.product_latyout}}" id="ProductSection-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="product" data-enable-history-state="true">
+	{% capture productImages %}
+		<div class="prod-large-img" data-product-single-media-group>
+          	{%- liquid
+              	assign slidetoshow = 1
+              	assign slidefade = true
+              	assign centermode = false
+              	assign slideloop = false
+              	
+          		if settings.product_latyout == "style2"
+                  	assign slidetoshow = 2
+                  	assign slidefade = false
+          		elsif settings.product_latyout == "style7"
+          			assign slidetoshow = 3
+                    assign slidefade = false
+                    assign centermode = true
+                    assign slideloop = true
+              	endif
+          	-%}
+			<div class="primgSlider" data-slick='{"slidesToShow":{{slidetoshow}},"slidesToScroll": 1, "centerMode": {{centermode}}, "infinite": {{slideloop}}, "fade": {{slidefade}},{% if settings.rtl %} "rtl": true,{% endif %} "asNavFor": ".product-single__thumbnails-product-template", "responsive":[{"breakpoint": 767,"settings":{"slidesToShow": 1 }} ]}'>
+				{% for media in product.media %}
+					{%- assign imgNo = forloop.index0 -%}
+              		{% case media.media_type %}
+      					{% when 'image' %}
+                            {%- unless media.alt == '360' -%}
+                            <div id="{{media.id}}" class="FeaturedImageZoom-{{section.id}} product-single__photo{% if enable_zoom %} zoomcr{% endif %}" {% if enable_zoom %}data-zoom="{{ media | img_url: product_image_zoom_size }}"{% endif %} data-slide="{{imgNo}}">
+                                {%- assign primg_url = media | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                                <span class="imgWrapper" style="max-width:{% if settings.pimg_maxHt != blank %}{{ settings.pimg_maxHt | times: media.aspect_ratio }}{% else %}{{media.width}}{% endif %}px;">
+                                    <img class="imgFl lazyload FeaturedImage-{{ section.id }} product-featured-img{% if enable_zoom %} js-zoom-enabled{% endif %}" src="{{ media | img_url: "120x" }}" width="120"
+                                        data-src="{{ primg_url }}" data-widths="[350, 500, 650, 800, 1000, 1300]" data-aspectratio="{{ media.aspect_ratio }}" data-sizes="auto" alt="{{ media.alt | escape }}">
+                                </span>
+                            </div>
+                            {%- endunless -%}
+              			{% when 'external_video' %}
+                          <div class="product-single__photo product-single__media videoSlide" data-media-id="{{ media.id }}" data-slide="{{imgNo}}">
+                            <div class="video-wrapper">{{ media | external_video_tag }}</div>
+              			  </div>
+              			{% when 'video' %}
+                          <div class="product-single__photo product-single__media videoSlide" data-media-id="{{ media.id }}" data-slide="{{imgNo}}">
+                            {%- assign videoThumb = media | img_url: '700x' -%}
+                            {{ media | video_tag: poster: videoThumb, controls: true, muted: true, loop: true, playsinline: true, webkit-playsinline: true }}
+                          </div>
+              			{% when 'model' %}
+                            <div class="product-single__photo product-single__media" id="FeaturedMedia-{{ section.id }}-{{ media.id }}-wrapper" data-product-media-type-model data-product-single-media-wrapper data-media-id="{{ section.id }}-{{ media.id }}">
+                              <div class="prMedia" style="padding-top:100%">{{ media | model_viewer_tag: image_size: product_image_size, reveal: 'interaction', toggleable: true, data-model-id: media.id }}</div>
+                            </div>
+                          {% else %}
+                            <div class="product-single__photo product-single__media" style="padding-top: 100%;" data-media-id="{{ media.id }}">
+                              {{ media | media_tag }}
+                            </div>
+              		{% endcase %}
+				{% endfor %}
+			</div>
+          
+          {% assign first_3d_model = product.media | where: "media_type", "model" | first %}
+
+      {%- if first_3d_model -%}
+        <button aria-label="view in space" class="product-single__view-in-space visually-hidden" data-shopify-xr data-shopify-model3d-id="{{ first_3d_model.id }}" data-shopify-title="{{ product.title | escape }}" data-shopify-xr-hidden>
+          <span class='product-single__view-in-space-text'>view in space</span>
+        </button>
+      {%- endif -%}
+          
+			<div class="product-btn">
+				{% comment %}*** product video *** {% endcomment %}
+				{%- assign meta = product.metafields.meta -%}
+				{%- assign key = 'video' -%}
+				{%- if meta.video != blank -%}<a href="{{meta.video}}" class="btn popup-video"><i class="ad ad-video2" aria-hidden="true"></i> <span class="tooltip-label">{{ 'products.product.video' | t }}</span></a>{%- endif -%}
+
+				{%- if settings.enable_lightbox -%}<a href="#" class="btn prlightbox"><i class="ad ad-expand-l-arrows" aria-hidden="true"></i> <span class="tooltip-label">{{ 'products.product.zoom' | t }}</span></a>{%- endif -%}
+				{%- assign enable_three60 = false -%}
+				{%- for image in product.images -%}{%- if image.alt == '360' -%}{%- assign enable_three60 = true -%}{%- endif -%}{%- endfor -%}
+				{%- if settings.enable_360 and enable_three60 -%}<a href="#threesixty" class="btn pr360view"><i class="ad ad-repeat-r"></i> <span class="tooltip-label">{{ 'products.product.360_view' | t }}</span></a>{%- endif -%}
+			</div>
+			{% if settings.pr_lbl %}
+			<span class="product-labels {{ settings.select_label_style }}">
+				{%- if settings.sale_lbl and product.compare_at_price > product.price -%}<label class="lbl on-sale">{{ 'products.product.on_sale' | t}}</label>{%- endif -%}
+				{%- if product.tags contains settings.pr_label1 -%}<label class="lbl pr-label1">{{settings.pr_label1}}</label>{%- endif -%}
+				{%- if product.tags contains settings.pr_label2 -%}<label class="lbl pr-label2">{{settings.pr_label2}}</label>{%- endif -%}
+				{%- if product.tags contains settings.pr_label3 -%}<label class="lbl pr-label3">{{settings.pr_label3}}</label>{%- endif -%}
+			</span>
+			{% endif %}
+		</div>
+
+		{% if product.media.size > 0 %}
+  			{%- liquid
+              	assign verticle = true
+              	assign thumbcount = 5
+              	
+                if settings.product_latyout == "style2"
+                	assign thumbcount = 3
+                endif
+          		if settings.thumbnail_pos == "bottom"
+                  	assign verticle = false
+                  	assign thumbcount = 6
+              	endif
+          	-%}
+			<div class="thumbnails-wrapper text-center{% if product.images.size > 4 %} thumbnails-slider--active{% endif %}{% if  settings.product_latyout == "style4" or settings.product_latyout == "style5" or settings.product_latyout == "style7" %} hide{% endif %}{% if product.media.size == 1 %} hide{% endif %}">
+				<div class="product-single__thumbnails product-single__thumbnails-{{ section.id }}"
+                     data-slick='{"slidesToShow":{{thumbcount}},"slidesToScroll": 1, "infinite": false, "verticalSwiping": {{verticle}}, "vertical": {{verticle}}, "asNavFor": ".primgSlider", "focusOnSelect": true,{% if settings.rtl %} "rtl": true,{%- endif -%}
+                  	"responsive":[{"breakpoint": 767,"settings":{"slidesToShow": 5, "vertical": false, "swipe": true, "verticalSwiping": false }} ]}'>
+					{% for media in product.media %}
+						{%- assign imgNo = forloop.index0 -%}
+						{%- unless media.alt == '360' -%}
+						<div class="prThumb product-single__thumbnails-item{% if media.media_type == 'video' or media.media_type == 'external_video'  %} video-thumb{% endif %}" data-slide="{{imgNo}}">
+							<a id="{{media.id}}" href="{{ media | img_url: '120x' }}" class="product-single__thumbnail lazyload{% unless media.media_type == 'video' or media.media_type == 'external_video' %} primgthumb{% endunless %} product-single__thumbnail--{{ section.id }}{% if featured_img_src == media %} activeSlide{% endif %}" {% if settings.enable_lightbox %}data-image="{{ media | img_url: "master" }}" data-size="{{media.width}}x{{media.height}}"{% endif %}
+                                data-bgset="{% if media.media_type == 'image' %}{% render 'prgrid-img', image: media, sizes: "100,200,300" %}{% else %}{{ media | img_url: '300x' }}{% endif %}" data-sizes="auto" data-parent-fit="contain">
+                              	{% if media.media_type == 'video' or media.media_type == 'external_video'  %}<i class="ad ad-play"></i>{% endif %}
+							</a>
+						</div>
+						{%- endunless -%}
+					{% endfor %}
+				</div>
+			</div>
+		{% endif %}
+
+		<!-- product share -->
+		{% if settings.show_share_buttons_single %}
+			{% include 'social-sharing', share_title: product.title, share_permalink: product.url, share_image: product, sharing_lbl: settings.sharing_lbl %}
+		{% endif %}
+{% endcapture %}
+{% capture infoLinks %}
+    {%- if settings.enable_wishlist or settings.askaboutproduct or settings.shippingpopup -%}
+        <div class="infolinks mfp-link"> 
+            {%- if settings.enable_wishlist -%}<a class="inLink wishlist addto-wishlist" href="/pages/wishlist" rel="{{ product.handle | handleize }}"><i class="ad ad-heart-l"></i><span class="msg">{{ 'products.wishlist.add_to' | t}}</span></a>{%- endif -%}
+            {%- if settings.shippingpopup -%}<a href="#ShippingInfo" data-effect="mfp-zoom-in" class="inLink mfp"><i class="ad ad-paper-l-plane"></i> {{'products.product.shipping_link' | t}}</a>{%- endif -%}
+            {%- if settings.askaboutproduct -%}
+          		<a href="#productInquiry" data-effect="mfp-zoom-in" class="mfp{% if settings.catalogmode %} btn btn-enquiry brt--large{% else %} inLink{% endif %}"><i class="ad ad-envelope-l"></i> {{'products.enquiry.link' | t}}</a>
+          	{%- endif -%}
+        </div>
+    {%- endif -%}
+{% endcapture %}
+{% capture productDetails %}
+	{% if settings.spr_vendor %}{{ product.vendor | link_to_vendor: class: "product-vendor" }}{% endif %}
+	<h1 class="product-single__title">{{ product.title }}</h1>
+	{%- if settings.show_product_review or settings.spr_availability or settings.spr_sku -%}
+		<div class="product-info">
+			{%- if settings.show_product_review -%}
+          		{%- assign reviewtabId = "" -%}
+          		{% for block in section.blocks %}
+					{% if block.type == "review" %}
+          				{%- assign reviewtabId = block.id -%}
+          			{% endif %}
+          		{% endfor %}
+          		<div class="review">
+                  <a class="reviewLink" href="#tab{{reviewtabId}}">
+                      {% include 'ratings' %}
+                  </a></div>
+          	{%- endif -%}
+			{%- if settings.spr_availability -%}
+				<div class="product-stock">{{ 'products.product.availability' | t }}
+                  	{%- liquid
+                        assign classNm = 'instock'
+                        assign stickLbl = 'products.product.available' | t
+                        if current_variant.inventory_management == "shopify"
+                            if current_variant.available and current_variant.inventory_quantity < 1
+                                assign classNm = 'preorder'
+                                assign stickLbl = 'products.product.pre_order' | t
+                            elsif current_variant.available
+                            	assign classNm = 'instock'
+                        		assign stickLbl = 'products.product.available' | t
+                            else
+                                assign classNm = 'outstock'
+                                assign stickLbl = 'products.product.unavailable' | t
+                            endif
+                        endif
+                    -%}
+					<span class="stockLbl {{classNm}}" data-in="{{ 'products.product.available' | t }}" data-out="{{ 'products.product.unavailable' | t }}" data-pre="{{ 'products.product.pre_order' | t }}">{{stickLbl}}</span>
+				</div>
+			{%- endif -%}
+			{%- if settings.spr_sku and current_variant.sku != blank -%}<div class="product-sku">{{ 'products.product.sku' | t }} <span class="variant-sku">{{ current_variant.sku }}</span></div>{%- endif -%}
+		</div>
+	{%- endif -%}
+
+	{%- if settings.fake_orders -%}
+		{%- assign ordermsg = settings.orders_msg | replace: '[orders]','<strong id="odItems"></strong>' | replace: '[hours]','<strong id="odTime"></strong>' -%}
+		<div class="orderMsg" data-user="{{settings.orders}}" data-time="{{settings.orders_time}}"><i class="ad ad-fire-l"></i> {{ordermsg}}</div>
+  		<script>document.getElementById("odItems").innerHTML = Math.floor(Math.random() * {{settings.orders}}) + 1;document.getElementById("odTime").innerHTML = Math.floor(Math.random() * {{settings.orders_time}}) + 1;</script>
+	{%- endif -%}
+
+  	{%- unless settings.catalogmode and linklists[product.handle].links.size == 0 -%}
+      <p class="flex product-single__price product-single__price-{{ section.id }}{% unless current_variant.available %} product-price--sold-out{% endunless %}">
+          {% if current_variant.compare_at_price > current_variant.price %}
+              <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+              <span class="product-price__price product-price__price-{{ section.id }} product-price__sale"><span id="ProductPrice-{{ section.id }}">{{ current_variant.price | money }}</span></span>
+              <s id="ComparePrice-{{ section.id }}" class="product-price__price">{{ current_variant.compare_at_price | money }}</s>
+          {% else %}
+              <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+              <span class="product-price__price product-price__price-{{ section.id }}"><span id="ProductPrice-{{ section.id }}">{{ current_variant.price | money }}</span></span>
+        	  <s id="ComparePrice-{{ section.id }}" class="product-price__price hide">{{ current_variant.compare_at_price | money }}</s>
+          {% endif %}
+          {% if settings.show_saleoff %}
+              <span class="discount-badge{% unless current_variant.compare_at_price > current_variant.price %} hide{% endunless %}">
+                  <span class="small--hide medium--hide"> | </span>
+                  <span itemprop="name">{{ 'products.product.you_save' | t}}</span>
+                  <span id="SaveAmount-{{ section.id }}" class="product-single__save-amount">{{ current_variant.compare_at_price | minus: current_variant.price | money }}</span>
+                  <span class="off">(<span>{{ current_variant.compare_at_price | minus: current_variant.price | times: 100 | divided_by: current_variant.compare_at_price }}</span>%{{ 'products.product.off' | t}})</span>
+              </span>
+          {% endif %}
+          <span class="price__unit{% unless current_variant.unit_price_measurement %} hide{% endunless %}">
+              <br /><span data-unit-price>{{ current_variant.unit_price | money }}</span> /
+              <span data-unit-base>
+                    {%- if current_variant.unit_price_measurement -%}
+                      {%- if current_variant.unit_price_measurement.reference_value != 1 -%}{{- current_variant.unit_price_measurement.reference_value -}}{%- endif -%}
+                      {{ current_variant.unit_price_measurement.reference_unit }}
+                    {%- endif -%}
+              </span>
+          </span>
+      </p>
+      <div style="margin: -5px 0 10px 0;color: #000;font-size: 13.5px;"> 
+     	<anyday-price-tag total-price-selector="#ProductPrice-product-template" total-price="" price-tag-token="2fe59ea20d2d4418bd90553f8e44dd10" currency="DKK" price-format-locale="da"></anyday-price-tag>
+</div>
+
+  	  {% if settings.show_taxlbl %}
+        {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
+          <div class="product__policies rte" data-product-policies>
+              {% if shop.taxes_included %}{{ 'products.product.include_taxes' | t }}{% endif %}
+              {% if shop.shipping_policy.body != blank %}{{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}{% endif %}
+          </div>
+  		{%- endif -%}
+    {%- endif -%}
+  
+  	{%- endunless -%}
+
+	{% assign meta = product.metafields.meta %}
+	{% assign key = 'countdown' %}
+	{% if settings.countdown and meta.countdown != blank %}
+  		{% if settings.countdown_lbl != blank %}<label id="countdownLbl" class="countdown-lbl">{{ settings.countdown_lbl}}</label>{% endif %}
+		<div id="countdown" class="prcountdown" data-date="{{ meta.countdown }}"></div>
+	{% endif %}
+
+	{% if settings.show_short_desc_single %}
+		<div class="product-single__description rte" itemprop="description">          
+            {%- assign desctabId = "" -%}
+              {% for block in section.blocks %}
+             	 {% if block.type == "descriptions" %}
+              {%- assign desctabId = block.id -%}
+              {% endif %}
+            {% endfor %}
+          
+			{% assign meta = product.metafields.meta %}
+			{% assign key = 'short_des' %}
+			{% if meta.short_des != blank %}
+				{{ meta.short_des }}
+			{% elsif product.empty? %}
+          {{ 'homepage.onboarding.product_description' | t }}
+			{% else %}
+				{{ product.description | strip_html | truncatewords: 40 }}
+			{% endif %}            
+		</div>
+        {% if settings.read_more_link != blank %}<div class="moredetail"><a href="#tab{{desctabId}}">{{settings.read_more_link}}</a></div>{% endif %}
+	{% endif %}
+
+	{%- if settings.quantity_msg -%}
+		{%- assign enableqtyMsg = true -%}
+		{%- if current_variant.inventory_management == "shopify" and current_variant.inventory_quantity < settings.max_quantity and current_variant.inventory_quantity > 0 -%}
+			{%- assign enableqtyMsg = flase -%}
+		{%- endif -%}
+		{% assign qtyMsg = 'products.product.quantity_message' | t | split: '{{items}}' %}
+		<div id="quantity_message" data-qty="{{settings.max_quantity}}"{%- if enableqtyMsg -%}style="display:none;"{%- endif -%}>{{qtyMsg[0]}} <span class="items">{{product.selected_or_first_available_variant.inventory_quantity}}</span> {{qtyMsg[1]}}</div>
+	{%- endif -%}
+  	{%- if settings.quantity_msg or settings.spr_availability -%}
+  		<div class="hide">{% for variant in product.variants %}<span id="pvr-{{ variant.id }}">{{variant.inventory_quantity}}</span>{% endfor %}</div>
+  	{%- endif -%}
+  	
+        {%- if linklists[product.handle].links.size > 0 -%}
+            {%- include 'products-group' -%}
+        {%- else -%}
+            {%- capture "form_classes" -%}product-form-{{ product.id }} productForm{% if settings.enable_payment_button and product.has_only_default_variant%} product-form--payment-button-no-variants{% endif %}{%- endcapture %}
+            {% form 'product', product, class:form_classes, novalidate: 'novalidate' %}
+                <div class="product-form mfp-link">
+                    {% unless product.options.size == 1 and product.variants[0].title == 'Default Title' %}
+                        {% assign sizechart = false %}
+                        {% for option in product.options_with_values %}
+                            <div class="selector-wrapper js product-form__item{% if settings.show_swatch %} hide{% endif %}">
+                                <label {% if option.name == 'default' %}class="label--hidden" {% endif %}for="SingleOptionSelector-{{ forloop.index0 }}">{{ option.name }}
+                                  	{% assign optionName = option.name | downcase %}
+                                    {% if settings.sizechart_link and optionName contains "size" or optionName contains "taille" or optionName contains "talla" or optionName contains "tamaño" or optionName contains "größe" %}
+                                        <a href="#sizechart" class="mfp sizelink" data-effect="mfp-zoom-in"><i class="ad ad-ruler"></i> {{ 'products.product.size_chart' | t}}</a>
+                                        {% assign sizechart = true %}
+                                        {%- assign sizechartcontent = true -%}
+                                    {% endif %}
+                                </label>
+                                <select class="single-option-selector single-option-selector-{{ section.id }} product-form__input selectbox" id="SingleOptionSelector-{{ forloop.index0 }}" data-index="option{{ forloop.index }}">
+                                    {% for value in option.values %}<option value="{{ value | escape }}"{% if option.selected_value == value %} selected="selected"{% endif %}>{{ value }}</option>{% endfor %}
+                                </select>
+                            </div>
+                        {% endfor %}
+                    {% endunless %}
+
+                    <select name="id" id="ProductSelect-{{ section.id }}" data-section="{{ section.id }}" class="product-form__variants selectbox no-js hide">
+                        {% for variant in product.variants %}
+                            {% if variant.available %}
+                                <option{% if variant == current_variant %} selected="selected"{% endif %} value="{{ variant.id }}">{{ variant.title }}</option>
+                            {% else %}
+                                <option disabled="disabled">{{ variant.title }} - {{ 'products.product.sold_out' | t }}</option>
+                            {% endif %}
+                        {% endfor %}
+                    </select>
+                    <!-- product swatches -->
+                    {% if settings.show_swatch and product.available and product.variants.size > 0 and product.variants[0].title != 'Default Title' %}
+                        {% for option in product.options %}{% include 'swatch' with option %}{% endfor %}
+                    {% endif %}
+                </div>
+
+                {{infoLinks}}
+				{%- unless settings.catalogmode -%}
+                  <!-- add to cart -->
+                  <div class="flex product-action">
+                      {% if settings.quan-sel %}
+                          <div class="qtyField" title="{{ 'products.product.quantity' | t }}">
+                              <a class="qtyBtn minus" href="javascript:void(0);"><i class="ad ad-minus-r" aria-hidden="true"></i></a>
+                              <input type="text" id="quantity" name="quantity" value="1" class="product-form__input qty" />
+                              <a class="qtyBtn plus" href="javascript:void(0);"><i class="ad ad-plus-r" aria-hidden="true"></i></a>
+                          </div>
+                      {% endif %}
+                          <button type="submit" name="add" id="AddToCart-{{ section.id }}" {% unless current_variant.available %}disabled="disabled"{% endunless %} class="btn product-form__cart-submit{% if settings.addto_btn_an %} btnzoom{% endif %}">
+                              {% if template contains 'pre-order' %}
+                                  <span id="AddToCartText-{{ section.id }}">{% unless current_variant.available %}{{ 'products.product.sold_out' | t }}{% else %}{{ 'products.product.pre_order' | t }}{% endunless %}</span>
+                              {% else %}
+                                  <span id="AddToCartText-{{ section.id }}">{% unless current_variant.available %}{{ 'products.product.sold_out' | t }}{% else %}{{ 'products.product.add_to_cart' | t }}{% endunless %}</span>
+                              {% endif %}
+                          </button>
+                  </div>
+                  {% if settings.enable_payment_button %}
+                      {%- if settings.terms_checkbox -%}
+                          <p class="cart_tearm">
+                              <input type="checkbox" name="tearm" id="prTearm" class="checkbox custCheck" value="tearm" required />
+                              <label for="prTearm"><span class="checkbox"></span> {{settings.terms_text}}</label>
+                          </p>
+                      {%- endif -%}
+                      {{ form | payment_button }}
+                  {% endif %}
+  				{%- endunless -%}
+            {% endform %}
+        {%- endif -%}
+  	
+	{%- if settings.show_free_ship and settings.free_ship != blank and settings.free_ship_msg != blank -%}
+	  	{%- assign shipProd = all_products[settings.free_ship] -%}
+		<p id="freeShipMsg" class="freeShipMsg" data-price="{{shipProd.price}}"><i class="ad ad-truck-l"></i> {{settings.free_ship_msg | replace: '$','<b class="freeShip"></b>' }}</p>
+		<p id="freeShipclaim" class="freeShipMsg freeShipclaim hide"><i class="ad ad-truck-l"></i> {{settings.got_free_ship }}</p>
+	{%- endif -%}
+
+	{%- if settings.show_estimate_ship -%}
+		{%- if product.metafields.meta.shipping != blank %}
+			{%- assign days = product.metafields.meta.shipping | split: "/" -%}
+		{%- else %}
+			{%- assign days = settings.estimate_ship | split: "/" -%}
+		{%- endif %}
+        
+  		{% assign day1 = days[0] | times: 86400 %}
+  		{% assign day2 = days[1] | times: 86400 %}
+  
+  		{% assign day1day = "now" | date: "%s" | plus: day1 | date: '%A' %}
+  		{%- if day1day == 'Saturday' %}
+        	{% assign day1 = days[0] | plus: 2 | times: 86400 %}
+  			{% assign day2 = days[1] | plus: 2 | times: 86400 %}
+        {%- elsif day1day == 'Sunday' %}
+        	{% assign day1 = days[0] | plus: 1 | times: 86400 %}
+  			{% assign day2 = days[1] | plus: 1 | times: 86400 %}
+  		{%- endif %}
+      
+        {% assign day2day = "now" | date: "%s" | plus: day2 | date: '%A' %}
+  		{%- if day2day == 'Saturday' %}
+  			{% assign day2 = days[1] | plus: 2 | times: 86400 %}
+        {%- elsif day2day == 'Sunday' %}
+  			{% assign day2 = days[1] | plus: 1 | times: 86400 %}
+  		{%- endif %}
+      	{% capture startdate %}<b>{{ "now" | date: "%s" | plus: day1 | time_tag: format: 'day_month' }}</b>{% endcapture %}
+      	{% capture enddate %}<b>{{ "now" | date: "%s" | plus: day2 | time_tag: format: 'day_month' }}</b>{% endcapture %}
+  		{%- if settings.estimate_shipping_msg != blank -%}
+			<p class="shippingMsg"><i class="ad ad-clock"></i> {{settings.estimate_shipping_msg | replace:'[startdate]', startdate | replace:'[enddate]',enddate }}</p>
+		{%- endif -%}
+	{%- endif -%}
+
+
+	{%- if settings.fake_visitors -%}
+		<div class="userViewMsg"><i class="ad ad-eye-r"></i> {{settings.visitors_msg | replace: '[visitors]','<strong id="uersView"></strong>'}}</div>
+  		<script>document.getElementById("uersView").innerHTML = Math.floor(Math.random() * {{settings.visitors}}) + 1;setInterval(function(){ document.getElementById("uersView").innerHTML = Math.floor(Math.random() * {{settings.visitors}}) + 1 }, {{settings.visitors_time | times:1000}});</script>
+	{%- endif -%}
+
+	{%- if settings.trust_seal_img != blank -%}<div class="trustseal-img"><img class="lazyload" data-src="{{ settings.trust_seal_img | img_url: "600x" }}" alt="{{settings.trust_seal_img.alt}}"></div>{%- endif -%}
+
+	{%- if settings.product_latyout != "style6" -%}
+		{%- if settings.store_ft1 != blank or settings.store_ft2 != blank or settings.store_ft3 != blank -%}
+		<div class="flex storeFeatures">
+			{%- if settings.store_ft1 != blank -%}<p>{{settings.store_ft1}}</p>{%- endif -%}
+			{%- if settings.store_ft2 != blank -%}<p>{{settings.store_ft2}}</p>{%- endif -%}
+			{%- if settings.store_ft3 != blank -%}<p>{{settings.store_ft3}}</p>{%- endif -%}
+		</div>
+		{%- endif -%}
+	{%- endif -%}
+
+	{%- if settings.show_product_type_single or settings.show_collection or settings.show_tags -%}
+		<div class="product-info other">
+			{%- if settings.show_product_type_single -%}<p class="product-type"><span class="lbl">{{ 'products.product.type' | t }} </span> {{ product.type }}</p>{%- endif -%}
+			{%- assign found_a_collection = false -%}
+			{%- if collection and collection.all_products_count > 1 -%}
+				{%- unless exclusions contains collection.handle -%}{% assign found_a_collection = true %}{%- endunless -%}
+			{% endif %}
+			{% unless found_a_collection %}
+				{% for c in product.collections %}
+					{% unless exclusions contains c.handle or c.all_products_count < 2 %}
+						{% assign found_a_collection = true %}
+						{% assign collection = c %}
+						{% break %}
+					{% endunless %}
+				{% endfor %}
+			{% endunless %}
+			{% if settings.show_collection and found_a_collection %}
+				<p class="product-cat">
+					<span class="lbl">{{ 'products.product.collection' | t }} </span>
+					{%- for c in product.collections limit:10 -%}{%- unless exclusions contains c.handle or c.all_products_count < 2 -%}{{ c.title | link_to: c.url }}, &nbsp;{%- endunless -%}{%- endfor -%}
+				</p>
+			{% endif %}
+
+			{% if product.tags.size > 0 and settings.show_tags %}
+				<p class="product-tags">
+					<span class="lbl">{{ 'products.product.tags' | t }} </span>
+					{%- for collection in product.collections limit:1 -%}
+						{%- for tag in product.tags limit:10 -%}<a href="{{ collection.url }}?constraint={{ tag | handle }}">{{ tag | remove:'type ' | remove:'Type ' }}</a>{% unless forloop.last %}, {% endunless %}{%- endfor -%}
+					{%- endfor -%}
+				</p>
+			{% endif %}
+		</div>
+	{% endif %}
+{% endcapture %}
+{% capture sizechartData %}
+	<div id="sizechart" class="mfpbox mfp-hide rte mfp-with-anim">
+		{%- assign meta = product.metafields.meta -%}
+        {%- assign key = 'sizechart' -%}
+        {%- assign prtype = product.type | handleize | append: "-size-chart" -%}
+        {%- assign prbrand = product.vendor | handleize | append: "-size-chart" -%}
+        {%- if meta.sizechart != blank -%}
+            {{ meta.sizechart }}
+        {%- elsif settings.sizechart_type == "type" and pages[prtype].content != empty -%}
+            {{ pages[prtype].content }}
+        {%- elsif settings.sizechart_type == "brand" and pages[prbrand].content != empty -%}
+            {{ pages[prbrand].content }}
+        {%- else -%}
+			{{ pages[settings.sizechart_page].content }}
+        {%- endif -%}
+	</div>
+{% endcapture %}
+{% capture productTabs %}
+  	
+  {% include 'upsell' %}
+  
+	{% if section.blocks.size > 0 %}
+		<div class="tabs-listing prTabs wow fadeIn">
+			{% if section.settings.show_product_tabs and settings.product_latyout != "style3" %}
+				<ul class="product-tabs flex small--hide">
+					{% for block in section.blocks %}
+						{%- if block.type == 'metafields' -%}
+							{%- assign meta = product.metafields.meta -%}
+							{%- assign key = block.settings.key -%}
+							{%- if meta[block.settings.key] != blank -%}
+								<li><a class="tablink" href="#tab{{block.id}}">{{block.settings.title}}</a></li>
+							{%- endif -%}
+                  		{%- elsif block.type == 'sizechart' -%}
+                  			{% if sizechart %}<li><a class="tablink" href="#tab{{block.id}}">{{block.settings.title}}</a></li>{% endif %}
+						{%- else -%}
+							<li><a class="tablink" href="#tab{{block.id}}">{{block.settings.title}}</a></li>
+						{%- endif -%}
+					{% endfor %}
+				</ul>
+			{% endif %}
+			<div class="tab-container{% unless section.settings.show_product_tabs %} noTabs{% endunless %}">
+				{% for block in section.blocks %}
+					{% capture blockTitle %}
+						{%- if section.settings.show_product_tabs -%}
+							<h3 class="acor-ttl{% if settings.product_latyout != "style3" %} medium-up--hide{% endif %}"><a class="tablink" href="#tab{{block.id}}">{{block.settings.title}} <i class="ad ad-angle-down-r" aria-hidden="true"></i></a></h3>
+						{%- else -%}
+							<h3 class="h2">{{block.settings.title}}</h3>
+						{%- endif -%}
+					{% endcapture %}
+              
+              		{%- assign tabClass = "tabSpace" -%}
+              		{%- if section.settings.show_product_tabs -%}
+              			{%- assign tabClass = "tab-content" -%}
+              			{% if settings.product_latyout == "style3" %}
+              				{%- assign tabClass = "tab-content acrd" -%}
+              			{% endif %}
+              		{%- endif -%}
+              
+					{%- case block.type -%}
+						{% when 'descriptions' %}
+							{{blockTitle}}
+							<div id="tab{{block.id}}" class="{{tabClass}} product-description rte">{{ product.description }}</div>
+						{% when 'review' %}
+							{{blockTitle}}
+							<div id="tab{{block.id}}" class="{{tabClass}} reviewtab">
+                             {% include 'reviews' %}
+              				</div>
+						{% when 'sizechart' %}
+              				{%- assign sizechartcontent = false -%}
+              				{% if sizechart %}
+                              {{blockTitle}}
+                              <div id="tab{{block.id}}" class="{{tabClass}}">{{sizechartData}}</div>
+              				{% endif %}
+						{% when 'custom' %}
+							{{blockTitle}}
+							<div id="tab{{block.id}}" class="{{tabClass}} rte">{{block.settings.content}}</div>
+						{% when 'metafields' %}
+							{%- assign meta = product.metafields.meta -%}
+							{%- assign key = block.settings.key -%}
+							{%- if meta[block.settings.key] != blank -%}
+								{{blockTitle}}
+								<div id="tab{{block.id}}" class="{{tabClass}}">{{meta[block.settings.key]}}</div>
+							{%- endif -%}
+					{%- endcase -%}
+				{% endfor %}
+			</div>
+		</div>
+	{% endif %}
+{% endcapture %}
+
+{% if settings.product_latyout != "style7" %}
+	<div class="grid product-single">
+		<div class="grid__item {{ product_image_width }} product-single__photos {{settings.thumbnail_pos}}">{{productImages}}</div>
+		<div class="grid__item {{ product_description_width }} product-single__meta">
+			{{productDetails}}
+			{% if settings.product_latyout == "style3" %}{{productTabs}}{% endif %}
+		</div>
+	</div>
+{% else %}
+	<div class="product-single">
+		<div class="product-single__photos {{settings.thumbnail_pos}}">{{productImages}}</div>
+		<div class="product-single__meta text-center">{{productDetails}}</div>
+	</div>
+{% endif %}
+{% if settings.product_latyout != "style3" %}{{productTabs}}{% endif %}
+</div>
+{%- unless product.empty? -%}
+	<script type="application/json" id="ProductJson-{{ section.id }}">{{ product | json }}</script>
+	<script type="application/json" id="ModelJson-{{ section.id }}">{{ product.media | where: 'media_type', 'model' | json }}</script>
+{%- endunless -%}
+{%- if sizechartcontent -%}<div class="hide">{{sizechartData}}</div>{%- endif -%}
+{% schema %}
+{
+"name": "Product Descriptions Tabs",
+  "settings": [               	 
+  {
+    "type": "header",       
+    "content": "Product Tabs"
+  },
+  {
+    "type": "checkbox",
+    "id": "show_product_tabs",
+    "label": "Show Product Tabs?",
+    "default": true,
+	"info":"[set different tabs for each product](https://www.adornthemes.com/knowledge-base/how-to-set-meta-fields-to-display-different-data-for-products/)"
+
+  },
+  {
+    "type": "paragraph",       
+    "content": "Add tabs by click on add content below."
+  }
+  ],
+  "blocks": [
+  {
+    "type": "descriptions",
+    "name": "Description",
+    "limit": 1,
+    "settings": [
+      { 
+      "type":"text",
+      "id":"title",
+      "label":"Title",
+      "default":"Product Details"
+      }
+    ]
+  },
+  {
+    "type": "review",
+    "name": "Review",
+    "limit": 1,
+    "settings": [
+      { 
+      "type":"text",
+      "id":"title",
+      "label":"Title",
+      "default":"Reviews"
+      }
+    ]
+  },
+  {
+    "type": "sizechart",
+    "name": "Sizechart",
+    "limit": 1,
+    "settings": [
+      { 
+      "type":"text",
+      "id":"title",
+      "label":"Title",
+      "default":"Size & Fit",
+	  "info":"Set content for size chart from Theme Settings -> Product Page -> Size Chart Type" 
+      }
+    ]
+  },
+  {
+    "type": "custom",
+    "name": "Global Text Block",
+    "limit": 3,
+    "settings": [
+      { 
+      "type":"text",
+      "id":"title",
+      "label":"Title",
+      "default":"Custom Text"
+      },
+      {
+      "type": "textarea",
+      "id": "content",
+      "label": "Content"
+      }
+    ]
+  },
+  {
+    "type": "metafields",
+    "name": "Metafields Data",
+    "settings": [
+      { 
+      "type":"text",
+      "id":"title",
+      "label":"Title",
+      "default":"Metafields"
+      },
+      {
+      "type": "text",
+      "id": "key",
+      "label": "Key Name",
+      "info":"[How to set metafields to display different data for each products](https://www.adornthemes.com/knowledge-base/how-to-set-meta-fields-to-display-different-data-for-products/)"
+      }
+    ]
+  }
+ ]
+}
+{% endschema %}

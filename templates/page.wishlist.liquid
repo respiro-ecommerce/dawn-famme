@@ -1,0 +1,99 @@
+{%- if settings.breadcrumb_pg -%}{%- include 'breadcrumb' -%}{%- else -%}<div class="topSpace"></div>{%- endif -%}
+
+<div class="page-width">
+  <h1 class="page-title">{{ page.title }}</h1>
+  <div class="grid">
+    <div class="grid__item">   
+          <ul class="wishlist-product">
+            <li class="first">
+              <div class="product_img"></div>
+              <div class="product_name">{{ 'customer.order.product' | t }}</div>
+              <div class="product_price text-center">{{ 'customer.order.price' | t }}</div>
+              <div class="product_stock text-center">{{ 'products.product.availability' | t }}</div>
+              <div class="product_add"></div>
+              <div class="product_remove text-right"></div>
+            </li>
+            <li class="wishlist-empty text-center" style="display:none;">{{ 'products.wishlist.wishlist-empty' | t }}</li>
+          </ul>
+    </div>
+  </div>
+</div>
+<p>&nbsp;</p><p>&nbsp;</p>
+<script src="{{ 'api.jquery.js' | shopify_asset_url }}" defer="defer"></script>
+<script>
+window.addEventListener('load', function() {
+      var cookieName = "wishlistList";
+
+      try {
+        if($.cookie(cookieName) != null && $.cookie(cookieName) != '__' && $.cookie(cookieName) != '') {
+          var str = String($.cookie(cookieName)).split("__");
+          for(var i=0; i<str.length; i++) {
+            if(str[i] != ''){
+              Shopify.getProduct(str[i],function(product){
+              	wishlist_product(product);
+              });
+            }
+          }
+        } else {
+          $('.wishlist-empty').show();
+        }
+      }
+      catch (err) {} // ignore errors reading cookies
+
+	  function wishlist_product(product) {
+          window.myprice = {{ shop.money_format | strip_html | json }};
+          var pimg = product.featured_image,
+              pimg_path = pimg.replace(/(\.[^\.]*$|$)/, '_small' + '$&');
+        
+          var $pname = '<div class="product_name"><a href="'+product.url+'" class="product-title">'+product.title+'</a></div>',
+              $pImg = '<div class="product_img"><a href="'+product.url+'" class="product-grid-image"><img src="'+pimg_path+'" alt=""></a></div>',
+              $price = '<div class="product_price text-center"><p class="product-price__price regular-product"><span class="money">'+Shopify.formatMoney(product.price, window.myprice)+'</span></p></div>',
+              $stock = '',
+              $buttom = '<div class="action product_add"><a href="'+product.url+'" class="btn btn-view">{{ 'products.wishlist.view_product' | t }}</a></div>',
+          	  $remove = '<div class="product_remove text-right"><a class="btn btn-remove-wishlist btn--secondary" title="{{ 'products.wishlist.remove' | t }}"><i class="ad ad-times-r" aria-hidden="true"></i></a></div>';
+              
+          if (product.available) {
+          	  $stock = '<div class="product_stock text-center instock">{{ 'products.product.available' | t }}</div>';
+          } else {
+              $stock = '<div class="product_stock text-center outstock">{{ 'products.product.unavailable' | t }}</div>';
+          }
+
+          $('.wishlist-product .first').after("<li class='grid_item product-item wishlistRow' rel='"+product.handle+"'>"+$pImg+$pname+$price+$stock+$buttom+$remove+"</li>");
+          {%- if settings.show_multiple_currencies and settings.currency_opt == 'script' -%}currenciesChange(".wishlistRow .product_price span.money");{% endif %}
+          
+          $('.wishlistRow .btn-remove-wishlist').click(function(event) {
+            event.preventDefault();
+            var item = $(this).parents('.wishlistRow');
+            var str = $.cookie(cookieName);
+            str = str.replace(item.attr("rel"), '');
+            str = str.replace('____', '__');
+            $.cookie(cookieName, str, {expires:30, path:'/'});
+
+            item.fadeOut(500);
+            updateWishlist();
+            setTimeout(removeItem, 500, item);
+          });
+        }
+        function removeItem(item) {
+          item.remove();
+          if($.cookie(cookieName) == '__' || $.cookie(cookieName) == ''){
+            $('.wishlist-empty').show();
+            $('.favCount').addClass('hide');
+          }
+        }
+     	function updateWishlist() {
+           var cookieName = "wishlistList";
+           try {
+             if($.cookie(cookieName) != null && $.cookie(cookieName) != '__' && $.cookie(cookieName) != '') {
+               var str = String($.cookie(cookieName)).split("__");
+               for (var i=0; i<str.length; i++) {
+                 if (str[i] != '') {
+                   $('.favCount').text(i);
+                 }
+               }
+             }
+           }
+           catch (err) {}
+         }
+      });
+</script>

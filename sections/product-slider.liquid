@@ -1,0 +1,348 @@
+{% capture productslider %}
+<div class="content-indent {{ section.settings.top-offeset}}">
+  {% if section.settings.section_cov %}<div class="section-cover" style="background-color:{{section.settings.sec_bg_clr}};">{% endif%}
+  <div class="page-width" id="{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="carousel">
+    {%- if section.settings.title != blank  or section.settings.subtitle != blank -%}
+    <div class="sec-ttl {{ settings.title_align}} wow fadeIn">
+      <h3 class="h3">{{ section.settings.title }}</h3>     
+      {%- if section.settings.subtitle != blank -%}<span>{{section.settings.subtitle}}</span>{%- endif -%}
+    </div>
+    {%- endif -%}
+
+    {%- liquid
+    	case section.settings.grid
+      		when 2
+    			assign grid_ds = 'large-up--one-half'
+    			assign image_size = '150,350,550,750,950'
+      		when 3 
+    			assign grid_ds = 'large-up--one-third'
+                assign image_size = '150,350,550,750'
+      		when 4 
+    			assign grid_ds = 'large-up--one-quarter'
+                assign image_size = '150,350,550,750'
+      		when 5 
+    			assign grid_ds = 'large-up--one-fifth'
+                assign image_size = '150,350,550'
+      		when 6 
+    			assign grid_ds = 'large-up--one-sixth'
+                assign image_size = '130,300,500'
+      		when 7
+    			assign grid_ds = 'large-up--one-seventh'
+                assign image_size = '130,280,400'
+    	endcase
+    -%}
+    {% case section.settings.tablet-grid %}
+      {% when 2 %}{%- assign grid_tb = 'medium--one-half' -%}
+      {% when 3 %}{%- assign grid_tb = 'medium--one-third' -%}
+      {% when 4 %}{%- assign grid_tb = 'medium--one-quarter' -%}
+      {% when 5 %}{%- assign grid_tb = 'medium--one-fifth' -%}
+    {% endcase %}
+    {% case section.settings.mobile-grid %}
+      {% when 1 %}{%- assign grid_mb = 'small--one-whole' -%}
+      {% when 2 %}{%- assign grid_mb = 'small--one-half' -%}
+      {% when 3 %}{%- assign grid_mb = 'small--one-third' -%}
+    {% endcase %}
+
+    {% if section.settings.collection != blank %}
+    <div id="productSlider-{{ section.id }}" class="grid grid-products carousel" data-slick='{"slidesToShow": {{ section.settings.grid }},"slidesToScroll": 1, "autoplay":{{ section.settings.autoplay }}, "autoplaySpeed":{{section.settings.autoplay_speed | times: 1000}}, {%- if settings.rtl -%}"rtl": true,{%- endif -%} "infinite": true, "responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": {{ section.settings.tablet-grid }} }},{"breakpoint": 767,"settings":{"slidesToShow":{{ section.settings.mobile-grid }} }} ]}'>
+      {%- assign collection = collections[section.settings.collection] -%}
+      {% for product in collection.products limit: section.settings.rows %}
+      <div class="grid__item item {{grid_mb}} {{grid_tb}} {{grid_ds}}">{% include 'product-card-grid', sizes: image_size %}</div>
+      {% else %}
+      {% for i in (1..section.settings.rows) %}
+      <div class="grid__item item {{grid_mb}} {{grid_tb}} {{grid_ds}}">
+        <div class="grid-view-item">
+          <a href="#" class="grid-view-item__link">
+            <div class="grid-view_image">{% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}{{ 'product-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}</div><br/>
+            <div class="h4 grid-view-item__title">{{ 'homepage.onboarding.product_title' | t }}</div>
+            <div class="grid-view-item__meta"> {% include 'product-price' %} </div>
+          </a>
+        </div>
+      </div>
+      {% endfor %}
+      {% endfor %}
+    </div>
+    {% else %}
+    <p class="text-center">Please select a collection to display the products</p>
+    {% endif %}
+   {% if section.settings.show_view_all != blank %}<div class="text-center"><a href="{{ collection.url }}" class="btn">{{ section.settings.show_view_all}}</a></div>{% endif %}
+  </div>
+  {% if section.settings.section_cov %}</div> {% endif%}
+</div>
+{% endcapture %}
+{{ productslider | strip_newlines | remove: "  " | remove: "	" }}
+{% schema %}
+  {
+    "name": "Products Slider",
+    "class": "index-section",
+    "settings": [	  		
+      {
+        "type": "textarea",
+        "id": "title",
+        "label": "Heading",
+        "default": "Our Collection",
+		 "info":"Use <strong>text here</strong> to make headings bold"
+      },	  
+	  {
+         "type": "textarea",
+         "id": "subtitle",
+         "label": "Sub Heading",
+         "default": "Describe your products, collection etc..."		
+      },
+      {
+         "id": "collection",
+         "type": "collection",
+         "label": "Select Collection"
+      },
+      {
+        "type": "checkbox",
+        "id": "secondary_image",
+        "label": "Show Second Image on hover?",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_vendor",
+        "label": "Show Vendor Name?",
+        "default": false
+      },         
+      {
+        "type": "checkbox",
+        "id": "prlist_btn_show",
+        "label": "Hide Buttons?",
+        "default": false,
+        "info": "add to cart,wishlist,quickview"
+      },
+      {
+        "type": "checkbox",
+        "id": "btn_mobiles",
+        "label": "Hide Buttons on Mobile?",
+        "default": false
+      },
+ 	{
+	 
+        "type": "text",
+        "id": "show_view_all",
+        "label": "Button Text",
+		"info":"display button below products to visit collection page"
+		
+      },
+      {
+        "type": "header",
+        "content": "Color Swatches"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_color_swatch",
+        "label": "Show ?",
+        "default": true
+      },
+      {
+        "type": "select",
+        "id": "color_type",
+        "label": "Swatch Type",
+        "default": "color",
+        "info": "Custom color name should be predefined in 'Custom Colors' section.",
+        "options": [
+          {
+            "value": "color",
+            "label": "Color Swatch"
+          },
+          {
+            "value": "vrimage",
+            "label": "Variant Image"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "vr_bg_position",
+        "label": "Variant Image Position",
+        "default": "50% 0",
+        "options": [
+          {
+            "value": "50% 0",
+            "label": "Center Top"
+          },
+          {
+            "value": "50% 50%",
+            "label": "Center Center"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "color_size",
+        "label": "Swatch Size",
+        "default": "small",
+        "options": [
+          {
+            "value": "small",
+            "label": "Small"
+          },
+          {
+            "value": "medium",
+            "label": "Medium"
+          },
+          {
+            "value": "large",
+            "label": "Large"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "color_style",
+        "label": "Swatch Style",
+        "default": "rounded",
+        "options": [
+          {
+            "value": "rounded",
+            "label": "Rounded"
+          },
+          {
+            "value": "rectangle",
+            "label": "Square"
+          },
+          {
+            "value": "rounded_rectangle",
+            "label": "Rounded Rectangle"
+          }
+        ]
+      },
+      {
+        "type": "header",
+        "content": "Appearance"
+      },
+	  {
+        "type": "paragraph",
+        "content": "Section ==="
+      },
+	  {
+            "type": "select",
+            "id": "top-offeset",
+            "label": "Top OffSet",
+            "default": "default",
+            "options": [
+              {
+                "value": "default",
+                "label": "Default"
+              },
+              {
+                "value": "small",
+                "label": "Small"
+              },
+			  {
+                "value": "none",
+                "label": "None"
+              }
+			]
+      }, 		
+      {
+        "type": "checkbox",
+        "id": "section_cov",
+        "label": "Use Background?",
+        "default": false
+      },
+	  {
+        "type": "color",
+        "id": "sec_bg_clr",
+        "label": "Background",
+		"default":"#fafafa",
+		"info":"select light color"
+	  },
+	  {
+        "type": "paragraph",
+        "content": "Grid ==="
+      },
+	  {
+        "type": "select",
+        "id": "prbox_style",
+        "label": "Select Style",
+        "default": "style1",
+        "options": [
+          {
+            "value": "style1",
+            "label": "Style 1 - Default Info Center"
+          },
+          {
+            "value": "style2",
+            "label": "Style 2 - Info Hover Image"
+          },
+          {
+            "value": "style3",
+            "label": "Style 3 - Info Below Image"
+          },
+          {
+            "value": "style4",
+            "label": "Style 4 - Default Info Left"
+          },
+		   {
+            "value": "style5",
+            "label": "Style 5 - Display Text Button"
+          }
+        ],
+		"info":"[chekout grid style](https://avon-demo.myshopify.com/pages/grid-style)"      
+      },
+      {
+        "type": "paragraph",
+        "content": "Products Per Row ==="
+      },
+      {
+        "type": "range",
+        "id": "grid",
+        "label": "Desktop",
+        "default": 4,
+        "min": 2,
+        "max": 7,
+        "step": 1
+      },
+      {
+        "type": "range",
+        "id": "tablet-grid",
+        "label": "Tablet",
+        "default": 3,
+        "min": 1,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "type": "range",
+        "id": "mobile-grid",
+        "label": "Mobile",
+        "default": 2,
+        "min": 1,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "type": "text",
+        "id": "rows",
+        "label": "Number of Product to show",
+        "default": "5"
+      }, 	  
+	  {
+        "type": "checkbox",
+        "id": "autoplay",
+        "label": "Auto-rotate Product",
+        "default": false
+      },
+      {
+        "type": "range",
+        "id": "autoplay_speed",
+        "label": "Change Product Every",
+        "default": 5,
+        "min": 1,
+        "max": 30,
+        "step": 1,
+		"unit": "Sec"
+      }
+	 ],
+    "presets": [
+      {
+        "name": "Products Slider",
+        "category": "1. Products"
+      }
+    ]
+  }
+{% endschema %}

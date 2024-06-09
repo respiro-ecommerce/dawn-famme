@@ -1,0 +1,25 @@
+{% if settings.newsletter_code != blank %}
+	{{settings.newsletter_code}}
+{% elsif settings.mailChimp_url != blank %}
+	<form role="form" action="{{ settings.mailChimp_url | replace: '/post?u', '/post-json?u' | append: "&c=?" }}" class="mcNewsletter" method="post">
+		<div class="input-group">
+			<input type="email" class="input-group__field newsletter__input" name="EMAIL" value="{% if customer %}{{ customer.email }}{% endif %}" placeholder="{{ 'general.newsletter_form.email_placeholder' | t }}" required>
+			<span class="input-group__btn"><button type="submit" class="btn newsletter__submit mcNsBtn" name="commit"><span class="newsletter__submit-text--large">{{ 'general.newsletter_form.submit' | t }}</span></button></span>
+		</div>
+		<p class="form--success" style="display:none;">{{ 'general.newsletter_form.mailChimp_confirmation' | t }}</p>
+		<p class="errors" style="display:none;">{{ 'general.newsletter_form.mailChimp_error' | t }}</p>
+	</form>
+{% else %}
+	{% form 'customer', id: formId, novalidate: 'novalidate', class: 'newsletter-form form-single-field' %}
+		{{ form.errors | default_errors }}
+		{%- if form.posted_successfully? -%}
+			<p class="form--success">{{ 'general.newsletter_form.confirmation' | t }}</p>
+		{%- else -%}
+			<div class="input-group">
+				<input type="hidden" name="contact[tags]" value="newsletter">
+				<input type="email" name="contact[email]" id="Email" class="input-group__field newsletter__input" value="{% if customer %}{{ customer.email }}{% endif %}" placeholder="{{ 'general.newsletter_form.email_placeholder' | t }}" autocorrect="off" autocapitalize="off">
+				<span class="input-group__btn"><button type="submit" class="btn newsletter__submit" name="commit" id="Subscribe">{{ 'general.newsletter_form.submit' | t }}</button></span>
+			</div>
+		{%- endif -%}
+	{% endform %}
+{% endif %}

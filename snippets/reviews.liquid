@@ -1,0 +1,43 @@
+{% if settings.reviews == 'shopify' %}	
+	<div id="shopify-product-reviews" data-id="{{product.id}}">{{ product.metafields.spr.reviews }}</div>
+
+
+{% elsif settings.reviews == 'loox' %}
+{% if product.metafields.loox.num_reviews %}
+<script id="looxSchemaJson" type="application/ld+json">
+{
+	"@context": "http://schema.org",
+	"@type": "Product",
+	"@id": {{ canonical_url | json }},
+	"aggregateRating": {
+		"@type": "AggregateRating",
+		"ratingValue": "{{ product.metafields.loox.avg_rating }}",
+		"reviewCount": "{{ product.metafields.loox.num_reviews }}"
+	},
+	"name": {{ product.title | json }}
+}
+</script>
+{% endif %}
+<div id="looxReviews" data-product-id="{{product.id}}" class="loox-reviews-default">{{ product.metafields.loox.reviews }}</div>
+
+{% elsif settings.reviews == 'growave' %}
+	
+    {% capture the_snippet_reviews %}{% render 'socialshopwave-widget-recommends' with 1 %}{% endcapture %}
+    {% unless the_snippet_reviews contains 'Liquid error' %}
+    {{ the_snippet_reviews }}
+    {% endunless %}
+                              
+
+{% elsif settings.reviews == 'other' %}
+
+	{% comment %} Please add your app reviews code below {% endcomment %}
+
+
+{% endif %}
+
+
+      
+
+
+
+

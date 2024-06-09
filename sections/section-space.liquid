@@ -1,0 +1,32 @@
+<div class="sec-empty {{ section.settings.top-offeset}}"></div>
+{% schema %}
+  {
+    "name": "Section Spacing",
+    "class":"index-section",
+    "settings": [
+	{
+            "type": "select",
+            "id": "top-offeset",
+            "label": "Section Space",
+            "default": "default",
+            "options": [
+              {
+                "value": "default",
+                "label": "Default"
+              },
+              {
+                "value": "small",
+                "label": "Small"
+              }			  
+			]
+        } 	  
+    ],
+	 "presets": [
+      {
+        "name": "Section Empty Space",
+        "category": "6. Other"       
+      }
+    ]
+  }
+{% endschema %}
+

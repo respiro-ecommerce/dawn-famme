@@ -1,0 +1,10 @@
+{%- if image != blank -%}
+	{%- if sizes == blank -%}{% assign sizes = '150,350,550,750,950,1200,1500' %}{%- endif -%}
+	{%- assign imgsizes = sizes | split: ',' -%}
+	{%- for size in imgsizes -%}
+		{%- assign width = size | append: 'x' -%}
+		{%- assign lsize = size | plus: 0 -%}
+		{%- if image.width >= lsize -%}{{ image | img_url: width }} {{size}}w {{ size | divided_by: image.aspect_ratio | round }}h,{%- endif -%}
+	{%- endfor -%}
+	{{ image | img_url: 'master' }} {{ image.width }}w {{ image.height }}h
+{%- endif -%}

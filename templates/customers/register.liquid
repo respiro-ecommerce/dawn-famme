@@ -1,0 +1,32 @@
+{%- include 'breadcrumb' -%}
+
+<div class="page-width">   
+  	<h1 class="page-title text-center">{{ 'customer.register.page_title' | t }}</h1>
+	<div class="login-register medium-up--one-half" style="margin:auto;">
+          <div class="form-vertical">
+            {%- assign formId = 'RegisterForm' -%}
+        	{% form 'create_customer', id: formId, novalidate: 'novalidate' %}
+              {% include 'form-status', form: form, form_id: formId %}
+              <label for="FirstName" class="hide">{{ 'customer.register.first_name' | t }}</label>
+              <input type="text" name="customer[first_name]" placeholder="{{ 'customer.register.first_name' | t }}" id="FirstName" {% if form.first_name %}value="{{ form.first_name }}"{% endif %} autofocus>
+
+              <label for="LastName" class="hide">{{ 'customer.register.last_name' | t }}</label>
+              <input type="text" name="customer[last_name]" placeholder="{{ 'customer.register.last_name' | t }}" id="LastName" {% if form.last_name %}value="{{ form.last_name }}"{% endif %}>
+
+              <label for="Email" class="hide">{{ 'customer.register.email' | t }}</label>
+              <input type="email" name="customer[email]" id="{{ formId }}-email" placeholder="{{ 'customer.register.email' | t }}" class="{% if form.errors contains 'email' %} input--error{% endif %}" {% if form.email %} value="{{ form.email }}"{% endif %} required autocorrect="off" autocapitalize="off">
+
+              <label for="CreatePassword" class="hide">{{ 'customer.register.password' | t }}</label>
+              <input type="password" name="customer[password]" placeholder="{{ 'customer.register.password' | t }}" id="{{ formId }}-password" class="{% if form.errors contains 'password' %} input--error{% endif %}" required>
+            	
+             <p>
+  				<input type="hidden" name="customer[accepts_marketing]" value="" />
+  				<input type="checkbox" id="accepts_marketing" name="customer[accepts_marketing]" class="custCheck" checked="checked" />
+               	<label for="accepts_marketing"><span class="checkbox"></span>{{ 'customer.register.accepts_marketing' | t }}</label>
+			 </p>
+
+              <p class="text-center"><input type="submit" value="{{ 'customer.register.submit' | t }}" class="btn"></p>
+            {% endform %}          
+        </div>
+    </div>
+</div>

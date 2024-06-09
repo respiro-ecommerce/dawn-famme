@@ -1,0 +1,78 @@
+{% for block in section.blocks %}
+{%- assign enableSlideshow = false -%}
+{% if block.settings.cat-bnr-1 != blank or block.settings.cat-bnr-2 != blank  or block.settings.cat-bnr-3 != blank  or block.settings.cat-bnr-4 != blank  or block.settings.cat-bnr-5 != blank %}
+	{%- assign enableSlideshow = true -%}
+{% endif %}
+{% if block.type == 'slideshow' and enableSlideshow %}
+<div class="catBanners {% unless block.settings.display_mobile %}small--hide{% endunless %} imageSlideshow">
+  <div class="slideshow-wrapper">
+    <div class="slideshow" id="collection-slideshow" data-slick='{"slidesToShow":1,"slidesToScroll":1, "autoplay":true,"autoplaySpeed":6000,{%- if settings.rtl -%}"rtl": true,{%- endif -%} "infinite": true }'>
+      {% if block.settings.cat-bnr-1 != blank %}
+      <div class="slideshow__slide">
+        {% if block.settings.cat-bnr--url-1 != blank %}<a href="{{block.settings.cat-bnr--url-1}}" class="slideshow__link">{% endif %}
+          {%- assign img_url = block.settings.cat-bnr-1 | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+          <img class="imgFl lazyload" src="{{ block.settings.cat-bnr-1 | img_url: '50x' }}"
+               data-src="{{ img_url }}" data-widths="[540, 720, 900, 1200, 1500, 2000]" data-aspectratio="{{ block.settings.cat-bnr-1.aspect_ratio }}"
+               data-sizes="auto" alt="{{ block.settings.cat-bnr-1.alt | escape }}">
+          {% if block.settings.cat-bnr--url-1 != blank %}</a>{% endif %}
+      </div>
+      {% endif %}
+
+      {% if block.settings.cat-bnr-2 != blank %}
+      <div class="slideshow__slide">
+        {% if block.settings.cat-bnr--url-2 != blank %}
+        <a href="{{block.settings.cat-bnr--url-2}}" class="slideshow__link">
+          {% endif %}
+          {%- assign img_url = block.settings.cat-bnr-2 | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+          <img class="imgFl lazyload" src="{{ block.settings.cat-bnr-2 | img_url: '50x' }}"
+               data-src="{{ img_url }}" data-widths="[540, 720, 900, 1200, 1500, 2000]" data-aspectratio="{{ block.settings.cat-bnr-2.aspect_ratio }}"
+               data-sizes="auto" alt="{{ block.settings.cat-bnr-2.alt | escape }}">
+          {% if block.settings.cat-bnr--url-2 != blank %}
+        </a>
+        {% endif %}
+      </div>
+      {% endif %}
+
+      {% if block.settings.cat-bnr-3 != blank %}
+      <div class="slideshow__slide">
+        {% if block.settings.cat-bnr--url-3 != blank %}
+        <a href="{{block.settings.cat-bnr--url-3}}" class="slideshow__link">
+          {% endif %}
+          {%- assign img_url = block.settings.cat-bnr-3 | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+          <img class="imgFl lazyload" src="{{ block.settings.cat-bnr-3 | img_url: '50x' }}"
+               data-src="{{ img_url }}" data-widths="[540, 720, 900, 1200, 1500, 2000]" data-aspectratio="{{ block.settings.cat-bnr-3.aspect_ratio }}"
+               data-sizes="auto" alt="{{ block.settings.cat-bnr-3.alt | escape }}">
+          {% if block.settings.cat-bnr--url-3 != blank %}
+        </a>
+        {% endif %}
+      </div>
+      {% endif %}
+
+      {% if block.settings.cat-bnr-4 != blank %}
+      <div class="slideshow__slide">
+        {% if block.settings.cat-bnr--url-4 != blank %}<a href="{{block.settings.cat-bnr--url-4}}" class="slideshow__link">{% endif %}
+          {%- assign img_url = block.settings.cat-bnr-4 | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+          <img class="imgFl lazyload" src="{{ block.settings.cat-bnr-4 | img_url: '50x' }}"
+               data-src="{{ img_url }}" data-widths="[540, 720, 900, 1200, 1500, 2000]"
+               data-aspectratio="{{ block.settings.cat-bnr-4.aspect_ratio }}" data-sizes="auto" alt="{{ block.settings.cat-bnr-4.alt | escape }}">
+          {% if block.settings.cat-bnr--url-4 != blank %}</a>{% endif %}
+      </div>
+      {% endif %}
+
+      {% if block.settings.cat-bnr-5 != blank %}
+      <div class="slideshow__slide">
+        {% if block.settings.cat-bnr--url-5 != blank %}
+        <a href="{{block.settings.cat-bnr--url-5}}" class="slideshow__link">
+          {% endif %}
+          {%- assign img_url = block.settings.cat-bnr-5 | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+          <img class="imgFl lazyload" src="{{ block.settings.cat-bnr-5 | img_url: '50x' }}"
+               data-src="{{ img_url }}" data-widths="[540, 720, 900, 1200, 1500, 2000]" data-aspectratio="{{ block.settings.cat-bnr-5.aspect_ratio }}"
+               data-sizes="auto" alt="{{ block.settings.cat-bnr-5.alt | escape }}">
+          {% if block.settings.cat-bnr--url-5 != blank %}</a>{% endif %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endif %}
+{% endfor %}

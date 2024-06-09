@@ -1,0 +1,854 @@
+{%- capture logobar -%}
+  <div class="brand-logo-list wow fadeIn" id="carousel-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="carousel">
+
+    {%- if section.settings.title != blank  -%}<div class="{{ settings.title_align}}"><h3 class="h4">{{ section.settings.title }}</h3></div>{%- endif -%}
+
+    {% case section.settings.grid %}
+      {% when 2 %}{%- assign grid_ds = 'large-up--one-half' -%}
+      {% when 3 %}{%- assign grid_ds = 'large-up--one-third' -%}
+      {% when 4 %}{%- assign grid_ds = 'large-up--one-quarter' -%}
+      {% when 5 %}{%- assign grid_ds = 'large--one-quarter widescreen--one-fifth' -%}
+      {% when 6 %}{%- assign grid_ds = 'large--one-fifth widescreen--one-sixth' -%}
+      {% when 7 %}{%- assign grid_ds = 'large--one-fifth widescreen--one-seventh' -%}
+      {% when 8 %}{%- assign grid_ds = 'large--one-sixth widescreen--one-eighth' -%}
+    {% endcase %}
+    
+    {% case section.settings.tablet-grid %}
+      {% when 2 %}{%- assign grid_tb = 'medium--one-half' -%}
+      {% when 3 %}{%- assign grid_tb = 'medium--one-third' -%}
+      {% when 4 %}{%- assign grid_tb = 'medium--one-quarter' -%}
+      {% when 5 %}{%- assign grid_tb = 'medium--one-fifth' -%}
+      {% when 6 %}{%- assign grid_ds = 'medium--one-sixth' -%}
+    {% endcase %}
+    
+    {% case section.settings.mobile-grid %}
+      {% when 1 %}{%- assign grid_mb = 'small--one-whole' -%}
+      {% when 2 %}{%- assign grid_mb = 'small--one-half' -%}
+      {% when 3 %}{%- assign grid_mb = 'small--one-third' -%}
+      {% when 4 %}{%- assign grid_mb = 'small--one-quarter' -%}
+    {% endcase %}
+
+    {% if section.blocks.size > 0 %}
+    <div class="grid{% if section.settings.carousel %} carousel{% else %} grid--uniform{% endif %}" {% if section.settings.carousel %}data-slick='{"slidesToShow": {{ section.settings.grid }},"slidesToScroll": 1, {%- if settings.rtl -%}"rtl": true,{%- endif -%} "infinite": true, "responsive":[{"breakpoint": 1025,"settings":{"slidesToShow": {{ section.settings.tablet-grid }} }},{"breakpoint": 768,"settings":{"slidesToShow":{{ section.settings.mobile-grid }} }} ]}'{% endif %}>
+      {% for block in section.blocks %}
+      <div class="grid__item {{grid_mb}} {{grid_tb}} {{grid_ds}}" {{ block.shopify_attributes }}>
+        <a{% if block.settings.link != blank %} href="{{ block.settings.link }}"{% endif %} class="logo-bar__link">
+          {% if block.settings.image != blank %}
+          	{%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+          	<img class="logo-bar__image lazyload" data-src="{{ block.settings.image | img_url: '200x150' }}" alt="{{section.settings.image.alt}}" />
+          {% else %}
+          	{{ 'logo' | placeholder_svg_tag: 'placeholder-svg' }}
+          {% endif %}
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+
+{%- if section.settings.alphaList -%}
+	{%- if section.settings.navigation -%}
+      <div class="filterbrand flex">
+        <a href="#bra">A</a>
+        <a href="#brb">B</a>
+        <a href="#brc">C</a>
+        <a href="#brd">D</a>
+        <a href="#bre">E</a>
+        <a href="#brf">F</a>
+        <a href="#brg">G</a>
+        <a href="#brh">H</a>
+        <a href="#bri">I</a>
+        <a href="#brj">J</a>
+        <a href="#brk">K</a>
+        <a href="#brl">L</a>
+        <a href="#brm">M</a>
+        <a href="#brn">N</a>
+        <a href="#bro">O</a>
+        <a href="#brp">P</a>
+        <a href="#brq">Q</a>
+        <a href="#brr">R</a>
+        <a href="#brs">S</a>
+        <a href="#brt">T</a>
+        <a href="#bru">U</a>
+        <a href="#brv">V</a>
+        <a href="#brw">W</a>
+        <a href="#brx">X</a>
+        <a href="#bry">Y</a>
+        <a href="#brz">Z</a>
+        <a href="#br09">0/9</a>
+      </div>
+    {%- endif -%}
+
+  {% assign counter = 0 %}
+  {% for vendor in shop.vendors %}
+  {% assign counter = counter | plus: 1 %}
+  {% endfor %}
+  {% assign counter_divided_by_3 = counter | divided_by: 3 | floor %}
+
+  <div class="brandList flex">
+    <div id="bra" class="ttl">A</div>
+    <ul class="list flex-item">
+      {% for vendor in shop.vendors %}
+      {% assign vendorName = vendor | split: "" | first | downcase %}
+      {% if vendorName == "a" %}
+      {% assign its_a_match = false %}
+      {% capture my_collection_handle %}{{ vendor | handleize | strip | escape  }}{% endcapture %}
+      {% assign my_collection_handle_stripped = my_collection_handle | strip | escape %}
+
+      {% for collection in collections %}
+      {% if my_collection_handle_stripped == collection.handle %}
+      {% assign its_a_match = true %}
+      {% endif %}
+      {% endfor %}
+
+      {% if its_a_match %}
+      <li class="vendor-list-item"><a href="/collections/{{ vendor | handleize }}">{{ vendor }}</a></li>
+      {% else %}
+      <li class="vendor-list-item">{{ vendor | link_to_vendor }}</li>
+      {% endif %}
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="brandList flex">
+    <div id="brb" class="ttl">B</div>
+    <ul class="list flex-item">
+      {% for vendor in shop.vendors %}
+      {% assign vendorName = vendor | split: "" | first | downcase %}
+      {% if vendorName == "b" %}
+      {% assign its_a_match = false %}
+      {% capture my_collection_handle %}{{ vendor | handleize | strip | escape  }}{% endcapture %}
+      {% assign my_collection_handle_stripped = my_collection_handle | strip | escape %}
+
+      {% for collection in collections %}
+      {% if my_collection_handle_stripped == collection.handle %}
+      {% assign its_a_match = true %}
+      {% endif %}
+      {% endfor %}
+
+      {% if its_a_match %}
+      <li class="vendor-list-item"><a href="/collections/{{ vendor | handleize }}">{{ vendor }}</a></li>
+      {% else %}
+      <li class="vendor-list-item">{{ vendor | link_to_vendor }}</li>
+      {% endif %}
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="brandList flex">
+    <div id="brc" class="ttl">C</div>
+    <ul class="list flex-item">
+      {% for vendor in shop.vendors %}
+      {% assign vendorName = vendor | split: "" | first | downcase %}
+      {% if vendorName == "c" %}
+      {% assign its_a_match = false %}
+      {% capture my_collection_handle %}{{ vendor | handleize | strip | escape  }}{% endcapture %}
+      {% assign my_collection_handle_stripped = my_collection_handle | strip | escape %}
+
+      {% for collection in collections %}
+      {% if my_collection_handle_stripped == collection.handle %}
+      {% assign its_a_match = true %}
+      {% endif %}
+      {% endfor %}
+
+      {% if its_a_match %}
+      <li class="vendor-list-item"><a href="/collections/{{ vendor | handleize }}">{{ vendor }}</a></li>
+      {% else %}
+      <li class="vendor-list-item">{{ vendor | link_to_vendor }}</li>
+      {% endif %}
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="brandList flex">
+    <div id="brd" class="ttl">D</div>
+    <ul class="list flex-item">
+      {% for vendor in shop.vendors %}
+      {% assign vendorName = vendor | split: "" | first | downcase %}
+      {% if vendorName == "d" %}
+      {% assign its_a_match = false %}
+      {% capture my_collection_handle %}{{ vendor | handleize | strip | escape  }}{% endcapture %}
+      {% assign my_collection_handle_stripped = my_collection_handle | strip | escape %}
+
+      {% for collection in collections %}
+      {% if my_collection_handle_stripped == collection.handle %}
+      {% assign its_a_match = true %}
+      {% endif %}
+      {% endfor %}
+
+      {% if its_a_match %}
+      <li class="vendor-list-item"><a href="/collections/{{ vendor | handleize }}">{{ vendor }}</a></li>
+      {% else %}
+      <li class="vendor-list-item">{{ vendor | link_to_vendor }}</li>
+      {% endif %}
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="brandList flex">
+    <div id="bre" class="ttl">E</div>
+    <ul class="list flex-item">
+      {% for vendor in shop.vendors %}
+      {% assign vendorName = vendor | split: "" | first | downcase %}
+      {% if vendorName == "e" %}
+      {% assign its_a_match = false %}
+      {% capture my_collection_handle %}{{ vendor | handleize | strip | escape  }}{% endcapture %}
+      {% assign my_collection_handle_stripped = my_collection_handle | strip | escape %}
+
+      {% for collection in collections %}
+      {% if my_collection_handle_stripped == collection.handle %}
+      {% assign its_a_match = true %}
+      {% endif %}
+      {% endfor %}
+
+      {% if its_a_match %}
+      <li class="vendor-list-item"><a href="/collections/{{ vendor | handleize }}">{{ vendor }}</a></li>
+      {% else %}
+      <li class="vendor-list-item">{{ vendor | link_to_vendor }}</li>
+      {% endif %}
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="brandList flex">
+    <div id="brf" class="ttl">F</div>
+    <ul class="list flex-item">
+      {% for vendor in shop.vendors %}
+      {% assign vendorName = vendor | split: "" | first | downcase %}
+      {% if vendorName == "f" %}
+      {% assign its_a_match = false %}
+      {% capture my_collection_handle %}{{ vendor | handleize | strip | escape  }}{% endcapture %}
+      {% assign my_collection_handle_stripped = my_collection_handle | strip | escape %}
+
+      {% for collection in collections %}
+      {% if my_collection_handle_stripped == collection.handle %}
+      {% assign its_a_match = true %}
+      {% endif %}
+      {% endfor %}
+
+      {% if its_a_match %}
+      <li class="vendor-list-item"><a href="/collections/{{ vendor | handleize }}">{{ vendor }}</a></li>
+      {% else %}
+      <li class="vendor-list-item">{{ vendor | link_to_vendor }}</li>
+      {% endif %}
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="brandList flex">
+    <div id="brg" class="ttl">G</div>
+    <ul class="list flex-item">
+      {% for vendor in shop.vendors %}
+      {% assign vendorName = vendor | split: "" | first | downcase %}
+      {% if vendorName == "g" %}
+      {% assign its_a_match = false %}
+      {% capture my_collection_handle %}{{ vendor | handleize | strip | escape  }}{% endcapture %}
+      {% assign my_collection_handle_stripped = my_collection_handle | strip | escape %}
+
+      {% for collection in collections %}
+      {% if my_collection_handle_stripped == collection.handle %}
+      {% assign its_a_match = true %}
+      {% endif %}
+      {% endfor %}
+
+      {% if its_a_match %}
+      <li class="vendor-list-item"><a href="/collections/{{ vendor | handleize }}">{{ vendor }}</a></li>
+      {% else %}
+      <li class="vendor-list-item">{{ vendor | link_to_vendor }}</li>
+      {% endif %}
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="brandList flex">
+    <div id="brh" class="ttl">H</div>
+    <ul class="list flex-item">
+      {% for vendor in shop.vendors %}
+      {% assign vendorName = vendor | split: "" | first | downcase %}
+      {% if vendorName == "h" %}
+      {% assign its_a_match = false %}
+      {% capture my_collection_handle %}{{ vendor | handleize | strip | escape  }}{% endcapture %}
+      {% assign my_collection_handle_stripped = my_collection_handle | strip | escape %}
+
+      {% for collection in collections %}
+      {% if my_collection_handle_stripped == collection.handle %}
+      {% assign its_a_match = true %}
+      {% endif %}
+      {% endfor %}
+
+      {% if its_a_match %}
+      <li class="vendor-list-item"><a href="/collections/{{ vendor | handleize }}">{{ vendor }}</a></li>
+      {% else %}
+      <li class="vendor-list-item">{{ vendor | link_to_vendor }}</li>
+      {% endif %}
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="brandList flex">
+    <div id="bri" class="ttl">I</div>
+    <ul class="list flex-item">
+      {% for vendor in shop.vendors %}
+      {% assign vendorName = vendor | split: "" | first | downcase %}
+      {% if vendorName == "i" %}
+      {% assign its_a_match = false %}
+      {% capture my_collection_handle %}{{ vendor | handleize | strip | escape  }}{% endcapture %}
+      {% assign my_collection_handle_stripped = my_collection_handle | strip | escape %}
+
+      {% for collection in collections %}
+      {% if my_collection_handle_stripped == collection.handle %}
+      {% assign its_a_match = true %}
+      {% endif %}
+      {% endfor %}
+
+      {% if its_a_match %}
+      <li class="vendor-list-item"><a href="/collections/{{ vendor | handleize }}">{{ vendor }}</a></li>
+      {% else %}
+      <li class="vendor-list-item">{{ vendor | link_to_vendor }}</li>
+      {% endif %}
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="brandList flex">
+    <div id="brj" class="ttl">J</div>
+    <ul class="list flex-item">
+      {% for vendor in shop.vendors %}
+      {% assign vendorName = vendor | split: "" | first | downcase %}
+      {% if vendorName == "j" %}
+      {% assign its_a_match = false %}
+      {% capture my_collection_handle %}{{ vendor | handleize | strip | escape  }}{% endcapture %}
+      {% assign my_collection_handle_stripped = my_collection_handle | strip | escape %}
+
+      {% for collection in collections %}
+      {% if my_collection_handle_stripped == collection.handle %}
+      {% assign its_a_match = true %}
+      {% endif %}
+      {% endfor %}
+
+      {% if its_a_match %}
+      <li class="vendor-list-item"><a href="/collections/{{ vendor | handleize }}">{{ vendor }}</a></li>
+      {% else %}
+      <li class="vendor-list-item">{{ vendor | link_to_vendor }}</li>
+      {% endif %}
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="brandList flex">
+    <div id="brk" class="ttl">K</div>
+    <ul class="list flex-item">
+      {% for vendor in shop.vendors %}
+      {% assign vendorName = vendor | split: "" | first | downcase %}
+      {% if vendorName == "k" %}
+      {% assign its_a_match = false %}
+      {% capture my_collection_handle %}{{ vendor | handleize | strip | escape  }}{% endcapture %}
+      {% assign my_collection_handle_stripped = my_collection_handle | strip | escape %}
+
+      {% for collection in collections %}
+      {% if my_collection_handle_stripped == collection.handle %}
+      {% assign its_a_match = true %}
+      {% endif %}
+      {% endfor %}
+
+      {% if its_a_match %}
+      <li class="vendor-list-item"><a href="/collections/{{ vendor | handleize }}">{{ vendor }}</a></li>
+      {% else %}
+      <li class="vendor-list-item">{{ vendor | link_to_vendor }}</li>
+      {% endif %}
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="brandList flex">
+    <div id="brl" class="ttl">L</div>
+    <ul class="list flex-item">
+      {% for vendor in shop.vendors %}
+      {% assign vendorName = vendor | split: "" | first | downcase %}
+      {% if vendorName == "l" %}
+      {% assign its_a_match = false %}
+      {% capture my_collection_handle %}{{ vendor | handleize | strip | escape  }}{% endcapture %}
+      {% assign my_collection_handle_stripped = my_collection_handle | strip | escape %}
+
+      {% for collection in collections %}
+      {% if my_collection_handle_stripped == collection.handle %}
+      {% assign its_a_match = true %}
+      {% endif %}
+      {% endfor %}
+
+      {% if its_a_match %}
+      <li class="vendor-list-item"><a href="/collections/{{ vendor | handleize }}">{{ vendor }}</a></li>
+      {% else %}
+      <li class="vendor-list-item">{{ vendor | link_to_vendor }}</li>
+      {% endif %}
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="brandList flex">
+    <div id="brm" class="ttl">M</div>
+    <ul class="list flex-item">
+      {% for vendor in shop.vendors %}
+      {% assign vendorName = vendor | split: "" | first | downcase %}
+      {% if vendorName == "m" %}
+      {% assign its_a_match = false %}
+      {% capture my_collection_handle %}{{ vendor | handleize | strip | escape  }}{% endcapture %}
+      {% assign my_collection_handle_stripped = my_collection_handle | strip | escape %}
+
+      {% for collection in collections %}
+      {% if my_collection_handle_stripped == collection.handle %}
+      {% assign its_a_match = true %}
+      {% endif %}
+      {% endfor %}
+
+      {% if its_a_match %}
+      <li class="vendor-list-item"><a href="/collections/{{ vendor | handleize }}">{{ vendor }}</a></li>
+      {% else %}
+      <li class="vendor-list-item">{{ vendor | link_to_vendor }}</li>
+      {% endif %}
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="brandList flex">
+    <div id="brn" class="ttl">N</div>
+    <ul class="list flex-item">
+      {% for vendor in shop.vendors %}
+      {% assign vendorName = vendor | split: "" | first | downcase %}
+      {% if vendorName == "n" %}
+      {% assign its_a_match = false %}
+      {% capture my_collection_handle %}{{ vendor | handleize | strip | escape  }}{% endcapture %}
+      {% assign my_collection_handle_stripped = my_collection_handle | strip | escape %}
+
+      {% for collection in collections %}
+      {% if my_collection_handle_stripped == collection.handle %}
+      {% assign its_a_match = true %}
+      {% endif %}
+      {% endfor %}
+
+      {% if its_a_match %}
+      <li class="vendor-list-item"><a href="/collections/{{ vendor | handleize }}">{{ vendor }}</a></li>
+      {% else %}
+      <li class="vendor-list-item">{{ vendor | link_to_vendor }}</li>
+      {% endif %}
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="brandList flex">
+    <div id="bro" class="ttl">O</div>
+    <ul class="list flex-item">
+      {% for vendor in shop.vendors %}
+      {% assign vendorName = vendor | split: "" | first | downcase %}
+      {% if vendorName == "o" %}
+      {% assign its_a_match = false %}
+      {% capture my_collection_handle %}{{ vendor | handleize | strip | escape  }}{% endcapture %}
+      {% assign my_collection_handle_stripped = my_collection_handle | strip | escape %}
+
+      {% for collection in collections %}
+      {% if my_collection_handle_stripped == collection.handle %}
+      {% assign its_a_match = true %}
+      {% endif %}
+      {% endfor %}
+
+      {% if its_a_match %}
+      <li class="vendor-list-item"><a href="/collections/{{ vendor | handleize }}">{{ vendor }}</a></li>
+      {% else %}
+      <li class="vendor-list-item">{{ vendor | link_to_vendor }}</li>
+      {% endif %}
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="brandList flex">
+    <div id="brp" class="ttl">P</div>
+    <ul class="list flex-item">
+      {% for vendor in shop.vendors %}
+      {% assign vendorName = vendor | split: "" | first | downcase %}
+      {% if vendorName == "p" %}
+      {% assign its_a_match = false %}
+      {% capture my_collection_handle %}{{ vendor | handleize | strip | escape  }}{% endcapture %}
+      {% assign my_collection_handle_stripped = my_collection_handle | strip | escape %}
+
+      {% for collection in collections %}
+      {% if my_collection_handle_stripped == collection.handle %}
+      {% assign its_a_match = true %}
+      {% endif %}
+      {% endfor %}
+
+      {% if its_a_match %}
+      <li class="vendor-list-item"><a href="/collections/{{ vendor | handleize }}">{{ vendor }}</a></li>
+      {% else %}
+      <li class="vendor-list-item">{{ vendor | link_to_vendor }}</li>
+      {% endif %}
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="brandList flex">
+    <div id="brq" class="ttl">Q</div>
+    <ul class="list flex-item">
+      {% for vendor in shop.vendors %}
+      {% assign vendorName = vendor | split: "" | first | downcase %}
+      {% if vendorName == "q" %}
+      {% assign its_a_match = false %}
+      {% capture my_collection_handle %}{{ vendor | handleize | strip | escape  }}{% endcapture %}
+      {% assign my_collection_handle_stripped = my_collection_handle | strip | escape %}
+
+      {% for collection in collections %}
+      {% if my_collection_handle_stripped == collection.handle %}
+      {% assign its_a_match = true %}
+      {% endif %}
+      {% endfor %}
+
+      {% if its_a_match %}
+      <li class="vendor-list-item"><a href="/collections/{{ vendor | handleize }}">{{ vendor }}</a></li>
+      {% else %}
+      <li class="vendor-list-item">{{ vendor | link_to_vendor }}</li>
+      {% endif %}
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="brandList flex">
+    <div id="brr" class="ttl">R</div>
+    <ul class="list flex-item">
+      {% for vendor in shop.vendors %}
+      {% assign vendorName = vendor | split: "" | first | downcase %}
+      {% if vendorName == "r" %}
+      {% assign its_a_match = false %}
+      {% capture my_collection_handle %}{{ vendor | handleize | strip | escape  }}{% endcapture %}
+      {% assign my_collection_handle_stripped = my_collection_handle | strip | escape %}
+
+      {% for collection in collections %}
+      {% if my_collection_handle_stripped == collection.handle %}
+      {% assign its_a_match = true %}
+      {% endif %}
+      {% endfor %}
+
+      {% if its_a_match %}
+      <li class="vendor-list-item"><a href="/collections/{{ vendor | handleize }}">{{ vendor }}</a></li>
+      {% else %}
+      <li class="vendor-list-item">{{ vendor | link_to_vendor }}</li>
+      {% endif %}
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="brandList flex">
+    <div id="brs" class="ttl">S</div>
+    <ul class="list flex-item">
+      {% for vendor in shop.vendors %}
+      {% assign vendorName = vendor | split: "" | first | downcase %}
+      {% if vendorName == "s" %}
+      {% assign its_a_match = false %}
+      {% capture my_collection_handle %}{{ vendor | handleize | strip | escape  }}{% endcapture %}
+      {% assign my_collection_handle_stripped = my_collection_handle | strip | escape %}
+
+      {% for collection in collections %}
+      {% if my_collection_handle_stripped == collection.handle %}
+      {% assign its_a_match = true %}
+      {% endif %}
+      {% endfor %}
+
+      {% if its_a_match %}
+      <li class="vendor-list-item"><a href="/collections/{{ vendor | handleize }}">{{ vendor }}</a></li>
+      {% else %}
+      <li class="vendor-list-item">{{ vendor | link_to_vendor }}</li>
+      {% endif %}
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="brandList flex">
+    <div id="brt" class="ttl">T</div>
+    <ul class="list flex-item">
+      {% for vendor in shop.vendors %}
+      {% assign vendorName = vendor | split: "" | first | downcase %}
+      {% if vendorName == "t" %}
+      {% assign its_a_match = false %}
+      {% capture my_collection_handle %}{{ vendor | handleize | strip | escape  }}{% endcapture %}
+      {% assign my_collection_handle_stripped = my_collection_handle | strip | escape %}
+
+      {% for collection in collections %}
+      {% if my_collection_handle_stripped == collection.handle %}
+      {% assign its_a_match = true %}
+      {% endif %}
+      {% endfor %}
+
+      {% if its_a_match %}
+      <li class="vendor-list-item"><a href="/collections/{{ vendor | handleize }}">{{ vendor }}</a></li>
+      {% else %}
+      <li class="vendor-list-item">{{ vendor | link_to_vendor }}</li>
+      {% endif %}
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="brandList flex">
+    <div id="bru" class="ttl">U</div>
+    <ul class="list flex-item">
+      {% for vendor in shop.vendors %}
+      {% assign vendorName = vendor | split: "" | first | downcase %}
+      {% if vendorName == "u" %}
+      {% assign its_a_match = false %}
+      {% capture my_collection_handle %}{{ vendor | handleize | strip | escape  }}{% endcapture %}
+      {% assign my_collection_handle_stripped = my_collection_handle | strip | escape %}
+
+      {% for collection in collections %}
+      {% if my_collection_handle_stripped == collection.handle %}
+      {% assign its_a_match = true %}
+      {% endif %}
+      {% endfor %}
+
+      {% if its_a_match %}
+      <li class="vendor-list-item"><a href="/collections/{{ vendor | handleize }}">{{ vendor }}</a></li>
+      {% else %}
+      <li class="vendor-list-item">{{ vendor | link_to_vendor }}</li>
+      {% endif %}
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="brandList flex">
+    <div id="brv" class="ttl">V</div>
+    <ul class="list flex-item">
+      {% for vendor in shop.vendors %}
+      {% assign vendorName = vendor | split: "" | first | downcase %}
+      {% if vendorName == "v" %}
+      {% assign its_a_match = false %}
+      {% capture my_collection_handle %}{{ vendor | handleize | strip | escape  }}{% endcapture %}
+      {% assign my_collection_handle_stripped = my_collection_handle | strip | escape %}
+
+      {% for collection in collections %}
+      {% if my_collection_handle_stripped == collection.handle %}
+      {% assign its_a_match = true %}
+      {% endif %}
+      {% endfor %}
+
+      {% if its_a_match %}
+      <li class="vendor-list-item"><a href="/collections/{{ vendor | handleize }}">{{ vendor }}</a></li>
+      {% else %}
+      <li class="vendor-list-item">{{ vendor | link_to_vendor }}</li>
+      {% endif %}
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="brandList flex">
+    <div id="brw" class="ttl">W</div>
+    <ul class="list flex-item">
+      {% for vendor in shop.vendors %}
+      {% assign vendorName = vendor | split: "" | first | downcase %}
+      {% if vendorName == "w" %}
+      {% assign its_a_match = false %}
+      {% capture my_collection_handle %}{{ vendor | handleize | strip | escape  }}{% endcapture %}
+      {% assign my_collection_handle_stripped = my_collection_handle | strip | escape %}
+
+      {% for collection in collections %}
+      {% if my_collection_handle_stripped == collection.handle %}
+      {% assign its_a_match = true %}
+      {% endif %}
+      {% endfor %}
+
+      {% if its_a_match %}
+      <li class="vendor-list-item"><a href="/collections/{{ vendor | handleize }}">{{ vendor }}</a></li>
+      {% else %}
+      <li class="vendor-list-item">{{ vendor | link_to_vendor }}</li>
+      {% endif %}
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="brandList flex">
+    <div id="brx" class="ttl">X</div>
+    <ul class="list flex-item">
+      {% for vendor in shop.vendors %}
+      {% assign vendorName = vendor | split: "" | first | downcase %}
+      {% if vendorName == "x" %}
+      {% assign its_a_match = false %}
+      {% capture my_collection_handle %}{{ vendor | handleize | strip | escape  }}{% endcapture %}
+      {% assign my_collection_handle_stripped = my_collection_handle | strip | escape %}
+
+      {% for collection in collections %}
+      {% if my_collection_handle_stripped == collection.handle %}
+      {% assign its_a_match = true %}
+      {% endif %}
+      {% endfor %}
+
+      {% if its_a_match %}
+      <li class="vendor-list-item"><a href="/collections/{{ vendor | handleize }}">{{ vendor }}</a></li>
+      {% else %}
+      <li class="vendor-list-item">{{ vendor | link_to_vendor }}</li>
+      {% endif %}
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="brandList flex">
+    <div id="bry" class="ttl">Y</div>
+    <ul class="list flex-item">
+      {% for vendor in shop.vendors %}
+      {% assign vendorName = vendor | split: "" | first | downcase %}
+      {% if vendorName == "y" %}
+      {% assign its_a_match = false %}
+      {% capture my_collection_handle %}{{ vendor | handleize | strip | escape  }}{% endcapture %}
+      {% assign my_collection_handle_stripped = my_collection_handle | strip | escape %}
+
+      {% for collection in collections %}
+      {% if my_collection_handle_stripped == collection.handle %}
+      {% assign its_a_match = true %}
+      {% endif %}
+      {% endfor %}
+
+      {% if its_a_match %}
+      <li class="vendor-list-item"><a href="/collections/{{ vendor | handleize }}">{{ vendor }}</a></li>
+      {% else %}
+      <li class="vendor-list-item">{{ vendor | link_to_vendor }}</li>
+      {% endif %}
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="brandList flex">
+    <div id="brz" class="ttl">Z</div>
+    <ul class="list flex-item">
+      {% for vendor in shop.vendors %}
+      {% assign vendorName = vendor | split: "" | first | downcase %}
+      {% if vendorName == "z" %}
+      {% assign its_a_match = false %}
+      {% capture my_collection_handle %}{{ vendor | handleize | strip | escape  }}{% endcapture %}
+      {% assign my_collection_handle_stripped = my_collection_handle | strip | escape %}
+
+      {% for collection in collections %}
+      {% if my_collection_handle_stripped == collection.handle %}
+      {% assign its_a_match = true %}
+      {% endif %}
+      {% endfor %}
+
+      {% if its_a_match %}
+      <li class="vendor-list-item"><a href="/collections/{{ vendor | handleize }}">{{ vendor }}</a></li>
+      {% else %}
+      <li class="vendor-list-item">{{ vendor | link_to_vendor }}</li>
+      {% endif %}
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="brandList flex">
+    <div id="br09" class="ttl">0/9</div>
+    <ul class="list flex-item">
+      {% for vendor in shop.vendors %}
+      {% assign vendorName = vendor | split: "" | first | downcase %}
+      {% if vendorName == "0" or vendorName == "1" or vendorName == "2" or vendorName == "3" or vendorName == "4" or vendorName == "5" or vendorName == "6" or vendorName == "7" or vendorName == "8" or vendorName == "9" %}
+      {% assign its_a_match = false %}
+      {% capture my_collection_handle %}{{ vendor | handleize | strip | escape  }}{% endcapture %}
+      {% assign my_collection_handle_stripped = my_collection_handle | strip | escape %}
+
+      {% for collection in collections %}
+      {% if my_collection_handle_stripped == collection.handle %}
+      {% assign its_a_match = true %}
+      {% endif %}
+      {% endfor %}
+
+      {% if its_a_match %}
+      <li class="vendor-list-item"><a href="/collections/{{ vendor | handleize }}">{{ vendor }}</a></li>
+      {% else %}
+      <li class="vendor-list-item">{{ vendor | link_to_vendor }}</li>
+      {% endif %}
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+{%- endif -%}
+
+{%- endcapture -%}
+{{logobar | strip_newlines | remove: "  " | remove: "	" }}
+{% schema %}
+  {
+    "name": "Brands List",
+    "class": "index-section",
+    "settings": [	  	 	   
+      {
+        "type": "header",
+        "content": "Alphabetically list"
+      },
+      {
+        "type": "checkbox",
+        "id": "alphaList",
+        "label": "Display ?",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "navigation",
+        "label": "Display Navigation ?",
+        "default": true
+      },
+	  {
+        "type": "header",
+        "content": "Logo list"
+      },
+      {
+        "type": "checkbox",
+        "id": "carousel",
+        "label": "Enable carousel",
+        "default": true
+      },
+      {
+        "type": "paragraph",
+        "content": "Logos per row ==="
+      },
+      {
+        "type": "range",
+        "id": "grid",
+        "label": "Desktop",
+        "default": 6,
+        "min": 1,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "type": "range",
+        "id": "tablet-grid",
+        "label": "Tablet",
+        "default": 5,
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "type": "range",
+        "id": "mobile-grid",
+        "label": "Mobile",
+        "default": 3,
+        "min": 1,
+        "max": 4,
+        "step": 1
+      },
+ 	  {
+        "type": "paragraph",
+        "content": "Upload all logo of same size"        
+      }
+    ],
+    "blocks": [
+      {
+        "type": "logo_image",
+        "name": "Logo",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "url",
+            "id": "link",
+            "label": "Link",
+            "info": "Optional"
+          }
+        ]
+      }
+    ]   
+  }
+{% endschema %}

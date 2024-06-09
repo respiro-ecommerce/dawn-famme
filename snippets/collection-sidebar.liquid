@@ -1,0 +1,129 @@
+<div class="closeFilter hidden-sm hidden-md hidden-lg"><i class="ad ad-times-r" aria-hidden="true"></i></div>
+<div class="sidebar_tags">
+  {% for block in section.blocks %}
+  {% comment %} *** Categories ... *** {% endcomment %}
+  {% if block.type == 'categories' %}
+  <div class="sidebar_widget categories">            
+    <div class="widget-title">{{block.settings.title}}</div>
+    <div class="widget-content">
+      <ul class="sidebar_cate">{% for link in linklists[block.settings.side_categories].links %}{% include 'mm-links' %}{% endfor %}</ul>
+    </div>
+  </div>
+  {% endif %}
+
+  {% if current_tags and forloop.first %}
+  <div class="sidebar_widget crFilters">
+    <div class="widget-title">{{'collections.filters.by' | t}}</div>
+    <div class="widget-content">
+      {% for tag in current_tags %}<span class="actFilter" data-value="{{ tag | handleize}}">{{tag}}<i class="ad ad-times-l"></i></span>{% endfor %}
+      <p><a href="{{collection.url}}" class="btn-link">{{'collections.filters.clear' | t}}</a></p>
+    </div>
+  </div>
+  {% endif %}
+
+  {% comment %} *** Filters BY ... *** {% endcomment %}
+  {% if block.type == 'filter_by' %}
+  <div class="sidebar_widget filterBox">            
+    <div class="widget-title">{{block.settings.title}}</div>
+      {% assign tags = block.settings.filter_tags | split: ',' %}
+      <ul class="widget-content opt {% if block.settings.twocall%}twoCall{% endif %}">
+        {% for filter_t in tags %}
+        {% assign tag = filter_t | strip %}
+        {% assign tag_value = tag | handleize %}
+        {% assign filtertag = forloop.index | minus:1 %}
+        {% assign filtertagid = 2 | times : filtertag %}
+        {% if collection.tags contains tag %}
+        <li>
+          <input class="custCheck" type="checkbox" value="{{ tag_value }}" id="{{block.id}}-{{filtertagid}}" {% if current_tags contains tag %}checked{% endif %} />
+          <label for="{{block.id}}-{{filtertagid}}"><span class="checkbox"></span>{{tag}}</label>
+        </li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+  </div>
+  {% endif %}
+
+  {% comment %} *** Filters BY Color *** {% endcomment %}
+  {% if block.type == 'by_color' %}
+  <div class="sidebar_widget filterBox">            
+    <div class="widget-title">{{block.settings.title}}</div>
+    <div class="widget-content">
+      {% assign tags = block.settings.filter_tags | split: ',' %}
+      <ul class="clr">
+        {% for filter_t in tags %}
+        {% assign tag = filter_t | strip %}
+        {% assign tag_value = tag | handleize %}
+        {% assign filtertag = forloop.index | minus:1 %}
+        {% assign filtertagid = 2 | times : filtertag %}
+        {% if collection.tags contains tag %}
+        <li>                       
+          <input class="custCheck" type="checkbox" value="{{ tag_value }}" id="{{block.id}}-{{ filtertagid }}" {% if current_tags contains tag %}checked{% endif %} />
+          <label for="{{block.id}}-{{ filtertagid }}" class="swt{{tag_value}} {{block.settings.color_size}} {{block.settings.color_style}} clrbox" style="background-color:{{tag_value}};"></label>
+          <span class="tooltip-label">{{tag}}</span>
+        </li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  {% endif %}
+
+  {% comment %} *** Product Slider *** {% endcomment %}
+  {% if block.type == 'products' %}
+  <div class="sidebar_widget small--hide medium--hide">
+    <div class="widget-title {% if section.settings.enable_clps_blocks %} collapsible{% endif %}">{{block.settings.title}}</div>
+    <div class="widget-content">
+      {% if block.settings.sidebar_products != blank %}
+      <div class="side-pr-{{block.settings.side_prod_opt}}" {% if block.settings.side_prod_opt == "slider" %}id="sideProdSlider" data-slick='{"slidesToShow":1,"slidesToScroll":1, "autoplay":true,"autoplaySpeed":6000,{%- if settings.rtl -%}"rtl": true,{%- endif -%} "infinite": true }'{% endif %}>
+          {% for product in collections[block.settings.sidebar_products].products limit:block.settings.num_of_products %}
+          {% if block.settings.side_prod_opt == "slider" %}
+          	<div class="item">{% include 'product-card-grid' %}</div>
+          {% else %}
+          	{% include 'product-card-grid-columns' %}
+          {% endif %}
+          {% endfor %}
+        {% if block.settings.side_all_products %}
+        <div class="text-center"><a href="{{block.settings.sidebar_products}}" class="btn">{{ block.settings.btn_txt}}</a></div>
+        {% endif %} 
+      </div>
+      {% else %}
+      <p>Please select collection from store admin > customize > Collection page > sidebar</p>
+      {% endif %} 
+    </div>
+  </div>
+  {% endif %}
+
+  {% comment %} *** Image Banner *** {% endcomment %}
+  {% if block.type == 'image_bnr' %}
+  <div class="sidebar_widget static-banner small--hide medium--hide">
+    {% if block.settings.side_bnr_link != blank %}
+    <a href="{{ block.settings.side_bnr_link }}">
+      {% endif %}
+      {% if block.settings.side_bnr_img != blank %}
+      {{ block.settings.side_bnr_img | img_url: '300x' | img_tag }}
+      {% else %}
+      {% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
+      {{ 'product-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
+      {% endif %}
+      {% if block.settings.side_bnr_link != blank %}
+    </a>
+    {% endif %}
+  </div>
+  {% endif %}
+
+  {% comment %} *** Static Text Block *** {% endcomment %}
+  {% if block.type == 'static_text' %}
+  <div class="sidebar_widget small--hide medium--hide">
+    <div class="widget-title">{{block.settings.title}}</div>
+    <div class="widget-content">
+      {% if block.settings.text != blank %}
+      {{ block.settings.text }}
+      {% else %}
+      <p>Please select collection from store admin > customize > Collection page > sidebar</p>
+      {% endif %} 
+    </div>
+  </div>
+  {% endif %}
+
+  {% endfor %}
+</div>

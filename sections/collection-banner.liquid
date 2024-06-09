@@ -1,0 +1,375 @@
+{%- capture collectionBanner -%}
+<div class="content-indent{% if section.settings.hide_mobile %} small--hide{% endif %} {{ section.settings.top-offeset}}">
+  <div class="collection-banners sec-{{ section.id}}{% unless section.settings.section_width %} page-width{% else %} fullwidth-{{section.id}}{% endunless %}{% if section.settings.snow_effect %} falling-snow{% endif %}{% if section.settings.snow_style == "style2" %} style2{% else %} style1{% endif %}" id="{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="masonary">
+   
+    {%- if section.settings.title != blank or section.settings.subtitle != blank -%}
+    <div class="sec-ttl {{ settings.title_align}} wow fadeIn">
+      <h3 class="h3">{{ section.settings.title }}</h3>
+      {%- if section.settings.subtitle != blank -%}<span>{{section.settings.subtitle}}</span>{%- endif -%}
+    </div>
+    {% endif %}  
+    
+      <div class="grid grid-mr-{{ section.settings.grid-spacing}} grid-masonary{% if section.settings.disable_zoom %} no-zoom{% endif %}">            
+        <div class="grid-sizer-{{section.id}} col-{{section.settings.grid-spacing-col}}"></div>
+        {% for block in section.blocks limit: section.blocks.size %}      
+        	{% case block.settings.width %}
+              {% when '20%' %}{%- assign block_width = 'medium-up--one-fifth' -%}{%- assign image_size = '150,350,550,750' -%}
+              {% when '25%' %}{%- assign block_width = 'medium-up--one-quarter' -%}{%- assign image_size = '150,350,550,750' -%}
+              {% when '33%' %}{%- assign block_width = 'medium-up--one-third' -%}{%- assign image_size = '150,350,550,750' -%}
+              {% when '40%' %}{%- assign block_width = 'medium-up--two-fifths' -%}{%- assign image_size = '150,350,550,750' -%}
+              {% when '50%' %}{%- assign block_width = 'medium-up--one-half' -%}{%- assign image_size = '150,350,550,750,950' -%}
+              {% when '60%' %}{%- assign block_width = 'medium-up--tree-fifths' -%}{%- assign image_size = '550,750,950,1200,1500' -%}
+              {% when '66%' %}{%- assign block_width = 'medium-up--two-thirds' -%}{%- assign image_size = '550,750,950,1200,1500' -%}
+              {% when '75%' %}{%- assign block_width = 'medium-up--three-quarters' -%}{%- assign image_size = '550,750,950,1200,1500,1800' -%}
+              {% when '80%' %}{%- assign block_width = 'medium-up--four-fifths' -%}{%- assign image_size = '550,750,950,1200,1500,1800' -%}
+              {% when '100%' %}{%- assign block_width = 'one-whole' -%}
+            {% endcase %}
+        {% assign product_box = forloop.index | minus:1 %}
+        {% assign delay_time = 50 | times : product_box %}      		
+        <div class="grid__item ms-item {{ block_width }} pd-mb-{{section.settings.grid-spacing-mbl}} pd-{{ section.settings.grid-spacing}} wow fadeInUp" {{ block.shopify_attributes }} data-wow-delay="{{delay_time}}ms">
+          {%- assign collection = collections[block.settings.collection] -%}
+          {% include 'collection-grid-item', sizes: image_size %}
+        </div>
+        {% endfor %}
+      </div>
+    {% if section.blocks.size == 0 %}{% include 'no-blocks' %}{% endif %}
+  </div>
+</div>
+<style>
+  .collection-banners.sec-{{ section.id}} .details { background-color:{{section.settings.box_bg}}; color:{{section.settings.box_txt}}; }
+  .collection-banners.sec-{{ section.id}} .details h3 {color:{{section.settings.box_txt}}; }
+  {% if section.settings.section_width %}
+  @media only screen and (min-width: 1025px) {
+    .fullwidth-{{section.id}} { padding-left:{{ section.settings.pad-desk}}px; padding-right:{{ section.settings.pad-desk}}px; }
+  } 
+  @media only screen and (max-width: 1024px) {
+    .fullwidth-{{section.id}} { padding-left:{{ section.settings.pad-ipad}}px; padding-right:{{ section.settings.pad-ipad}}px; }
+  } 
+  @media only screen and (max-width: 767px) {
+    .fullwidth-{{section.id}} { padding-left:{{ section.settings.pad-mbl}}px; padding-right:{{ section.settings.pad-mbl}}px; }
+  }
+  {% endif %}
+  .collection-banners.fullwidth-{{section.id}} .grid-mr-{{ section.settings.grid-spacing}} { margin:0; }
+</style>
+{%- endcapture -%}
+{{collectionBanner | strip_newlines | remove: "  " | remove: "	" }}
+
+{% schema %}
+  {
+    "name": "Collection Banner",
+    "class": "index-section",
+    "max_blocks": 15,
+    "settings": [	
+      {
+        "type": "textarea",
+        "id": "title",
+        "label": "Heading",
+        "default": "Collection Banner",
+		"info":"Use <strong>text here</strong> to make headings bold"
+      },
+      {
+        "type": "textarea",
+        "id": "subtitle",
+        "label": "Sub Heading",
+        "default": "Describe your products, collection, content etc..."
+      }, 	  	             
+	  {
+        "type": "header",
+        "content": "Appearance"
+      },
+     {
+		 "type": "paragraph",
+		 "content":"[Lots of grid style possible with this section](https://www.adornthemes.com/different-collection-banner-style/)"
+     },	 
+	  {
+        "type": "paragraph",      
+        "content": "Section==="
+      },	 
+	  {
+            "type": "select",
+            "id": "top-offeset",
+            "label": "Top OffSet",
+            "default": "default",
+            "options": [
+              {
+                "value": "default",
+                "label": "Default"
+              },
+              {
+                "value": "small",
+                "label": "Small"
+              },
+			  {
+                "value": "none",
+                "label": "None"
+              }
+			]
+        }, 
+		 {
+		"type":"checkbox",
+		"id":"section_width",
+		"label":"Fullwidth?",
+		"default": false
+	  },
+ 	 {
+           "type": "checkbox",
+           "id": "hide_mobile",
+           "label": "Hide Section in Mobile?",
+           "default": false
+        },
+	  {
+        "type": "paragraph",
+        "content": "Left/Right Padding : Fullwidth Section Only==="
+      }, 	
+      {
+        "type": "range",
+        "id": "pad-desk",
+        "label": "Desktop",
+        "default": 55,
+        "min": 0,
+        "max": 100,
+        "step": 1
+      },
+      {
+        "type": "range",
+        "id": "pad-ipad",
+        "label": "Tablet",
+        "default": 15,
+        "min": 0,
+        "max": 30,
+        "step": 1
+      },
+      {
+        "type": "range",
+        "id": "pad-mbl",
+        "label": "Mobile",
+        "default": 10,
+        "min": 0,
+        "max": 20,
+        "step": 1
+      },
+	 {
+        "type": "paragraph",
+        "content": "Grid==="
+      }, 
+	 {
+        "type": "range",
+        "id": "grid-spacing",
+        "label": "Spacing : Desktop",
+        "default": 15,
+        "min": 0,
+        "max": 30,
+        "step": 1,
+		"unit":"px",
+		"info":"space between two grid/box."
+      },
+     {
+        "type": "range",
+        "id": "grid-spacing-mbl",
+        "label": "Spacing : Mobile",
+        "default": 5,
+        "min": 0,
+        "max": 30,
+        "step": 1,
+		"unit":"px"		
+      },
+	 {
+        "type": "range",
+        "id": "grid-spacing-col",
+        "label": "Select Column",
+        "default": 2,
+        "min": 2,
+        "max": 5,
+        "step": 1,
+		"info":"[Column Selection guide](https://www.adornthemes.com/masonry-column-selection/)"
+      },		
+	  {
+        "type": "range",
+        "id": "box-width",
+        "label": "Detail Box Width",
+        "default": 50,
+        "min": 30,
+        "max": 90,
+        "step": 10,
+		"unit":"%"
+      },
+	  {
+        "type": "color",
+        "id": "box_bg",
+        "label": "Detail Box Background",
+        "default": "#fff"
+      },
+	   {
+        "type": "color",
+        "id": "box_txt",
+        "label": "Detail Box Text",
+        "default": "#000"
+      },	
+ 		{
+		"type":"checkbox",
+		"id":"disable_zoom",
+		"label":"Disable Image Hover Zoom Effect?",
+		"default": false
+	  },
+	 {
+		"type":"checkbox",
+		"id":"show_buttons",
+		"label":"Show Buttons?",
+		"default": true
+	  },
+ {
+          "type": "select",
+          "id": "btn-size-desk",
+          "label": "Button Size: Desktop",
+          "default": "btn-sm",
+          "options": [
+          {
+          "label": "Small",
+          "value": "btn-sm"
+          },
+          {
+          "label": "Medium",
+          "value": "btn-md"
+          },
+          {
+          "label": "Large",
+          "value": "btn-lg"
+          }	
+          ]
+          }, 
+          {
+          "type": "select",
+          "id": "btn-size-mob",
+          "label": "Button Size : Mobile",
+          "default": "mob-btn-sm",
+          "options": [
+          {
+          "label": "Small",
+          "value": "mob-btn-sm"
+          },
+          {
+          "label": "Medium",
+          "value": "mob-btn-md"
+          },
+          {
+          "label": "Large",
+          "value": "mob-btn-lg"
+          }	
+          ]
+          },      
+		{
+		"type":"checkbox",
+		"id":"snow_effect",
+		"label":"Enable Snow Effect?",
+		"default": false,
+		"info":"For Christmas"
+	   },
+        {
+          "type": "select",
+          "id": "snow_style",
+          "label": "Snow Style",
+          "default": "style1",         
+          "options": [
+            {
+            "value": "style1",
+            "label": "Falling Down"
+            },
+            {
+            "value": "style2",
+            "label": "Falling From Left"
+            }
+            ]
+          },
+	 {
+        "type": "paragraph",      
+        "content": "Set font size from --> Theme Settings --> Fonts, Colors and Styles --> Collection Banner"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "featured_collection",
+        "name": "Collection",
+        "settings": [
+          {
+            "label": "Collection",
+            "id": "collection",
+            "type": "collection"
+          },
+		  {
+			"type":"image_picker",
+			"id":"collection_image",
+			"label":"Upload Image"			
+		  },
+		  {
+ 			"type":"textarea",
+			"id":"collection_name",
+			"label":"Custom Name",
+			"info":"use <strong>your text here</strong> for bold font"
+		  },
+		 {
+ 			"type":"textarea",
+			"id":"collection_name2",
+			"label":"Detail Text"			
+		  },
+		  {
+            "type": "select",
+            "id": "textalign",
+            "label": "Text Position",
+            "default": "center",
+            "options": [            
+ 			  { "value":"left", "label":"Left" },
+              { "value":"center", "label":"Center" },
+			  { "value":"right", "label":"Right" }
+            ]
+         },
+	    {
+ 			"type":"checkbox",
+			"id":"text-left",
+			"label":"Text Align Left",
+			"default":false,
+			"info":"Optional : You can enable this option for Text Position left"
+		  },
+		  {
+            "type": "text",
+            "id": "collection_btn",
+            "label": "Button Text",
+            "default": "Shop Now"
+          },         
+		 {
+            "type": "select",
+            "id": "width",
+            "label": "Column Width",
+            "default": "50%",
+			"info":"Total width of all block must not be more than 100%",
+            "options": [
+			  { "value": "20%", "label": "20%" },
+              { "value": "25%", "label": "25%" },
+              { "value": "33%", "label": "33%" },
+              { "value": "40%", "label": "40%" },
+              { "value": "50%", "label": "50%" },
+              { "value": "60%", "label": "60%" },
+              { "value": "66%", "label": "66%" },
+              { "value": "75%", "label": "75%" },
+              { "value": "80%", "label": "80%" },
+              { "value": "100%", "label": "100%" }
+            ]
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Collection Banners Masonry",
+        "category": "2. Collection",        
+        "blocks": [
+          {
+            "type": "featured_collection"
+          },
+          {
+            "type": "featured_collection"
+          }          	  
+        ]
+      }
+    ]
+  }
+{% endschema %}

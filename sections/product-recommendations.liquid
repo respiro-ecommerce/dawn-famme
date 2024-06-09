@@ -1,0 +1,156 @@
+{%- if section.settings.show_product_recommendations -%}
+
+  {% if template == "cart" %}
+      {%- for item in cart.items -%}
+          {%- assign product_rec = item.product -%}
+      {%- endfor -%}
+  {%- else -%}
+      {%- assign product_rec = product -%}
+  {%- endif -%}
+	
+  {%- if recommendations.performed -%}
+    {%- if recommendations.products_count > 0 -%}
+      {% case section.settings.grid %}
+      {% when 3 %}{%- assign grid_ds = 'large-up--one-third' -%}
+      {% when 4 %}{%- assign grid_ds = 'large-up--one-quarter' -%}
+      {% when 5 %}{%- assign grid_ds = 'large--one-quarter widescreen--one-fifth' -%}
+      {% when 6 %}{%- assign grid_ds = 'large--one-fifth widescreen--one-sixth' -%}
+      {% when 7 %}{%- assign grid_ds = 'large--one-fifth widescreen--one-seventh' -%}
+      {% endcase %}
+
+      {% case section.settings.tablet-grid %}
+      {% when 2 %}{%- assign grid_tb = 'medium--one-half' -%}
+      {% when 3 %}{%- assign grid_tb = 'medium--one-third' -%}
+      {% when 4 %}{%- assign grid_tb = 'medium--one-quarter' -%}
+      {% when 5 %}{%- assign grid_tb = 'medium--one-fifth' -%}
+      {% endcase %}
+
+      {% case section.settings.mobile-grid %}
+      {% when 1 %}{%- assign grid_mb = 'small--one-whole' -%}
+      {% when 2 %}{%- assign grid_mb = 'small--one-half' -%}
+      {% when 3 %}{%- assign grid_mb = 'small--one-third' -%}
+      {% endcase %}
+
+        <div class="product-recommendations" id="{{ section.id }}">
+          <div class="{% if settings.product_latyout != "style6" %}page-width{% if settings.product_fullwidth %} fullwidth{% endif %}{% endif %}">
+
+            {%- if section.settings.recommanded_title != blank -%}
+            <div class="sec-ttl {{ settings.title_align}}">
+              <h3 class="h3">{{ section.settings.recommanded_title | escape }}</h3>
+              {%- if section.settings.recommanded_sub_title != blank -%}<span>{{section.settings.recommanded_sub_title}}</span>{%- endif -%}        
+            </div> 
+            {%- endif -%}
+
+            {% assign number_of_rows = section.settings.recommanded_total_product_to_show %}	
+
+            {% if settings.product_latyout != "style6" %}
+            <div id="productSlider-{{ section.id }}" class="grid-products carousel" data-slick='{"slidesToShow": {{ section.settings.grid }},"slidesToScroll": 1, {%- if settings.rtl -%}"rtl": true,{%- endif -%} "infinite": true, "autoplay":{{section.settings.recommanded_products_autoplay}}, "autoplaySpeed": {{section.settings.autoplay_speed}},"responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": {{ section.settings.tablet-grid }} }},{"breakpoint": 767,"settings":{"slidesToShow":{{ section.settings.mobile-grid }} }} ]}'>
+              {%- for product in recommendations.products limit : number_of_rows -%}
+              <div class="grid__item {{ grid_mb }} {{ grid_tb }} {{grid_ds}}">{% include 'product-card-grid', max_height: 250 %}</div>
+              {%- endfor -%}
+            </div>
+            {% else %}
+
+             <div class="grid grid--uniform collection-columns">
+              {%- for product in recommendations.products limit : number_of_rows -%}
+               <div class="grid__item">{% include 'product-card-grid-columns' %}</div>
+              {%- endfor -%}
+            </div>
+            {%- endif -%}
+
+          </div>
+        </div>
+    {%- endif -%}
+
+    {%- else  -%}
+      <div class="page-width" data-base-url="{{ routes.product_recommendations_url }}" data-product-id="{{ product_rec.id }}" data-section-id="{{ section.id }}" data-section-type="carousel" data-limit="{{ section.settings.recommanded_total_product_to_show }}"></div>
+    {%- endif -%}
+  {%- endif -%}
+
+{% schema %}
+  {
+    "name": "Recommended Products",    
+    "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_product_recommendations",
+      "label": "Show dynamic recommendations", 
+	  "info":"Dynamic recommendations change and improve with time. [Learn more](https://help.shopify.com/en/themes/development/recommended-products)",         
+      "default": true
+    },
+	 {
+        "type": "checkbox",
+        "id": "recommanded_products_autoplay",
+        "label": "Carousel Autoplay",
+        "default": false
+      },
+ 	 {
+        "type": "select",
+        "id": "autoplay_speed",
+        "label": "Carousel Autoplay Speed",
+        "options": [
+          { "value": "3000", "label": "3 seconds" },
+          { "value": "4000", "label": "4 seconds" },
+          { "value": "5000", "label": "5 seconds" },
+          { "value": "6000", "label": "6 seconds" },
+          { "value": "7000", "label": "7 seconds" },
+          { "value": "8000", "label": "8 seconds" },
+          { "value": "9000", "label": "9 seconds" },
+          { "value": "10000", "label": "10 seconds" },
+		  { "value": "12000", "label": "12 seconds" },
+		  { "value": "15000", "label": "15 seconds" }
+        ],
+        "default": "3000"
+      },
+     {
+        "id": "recommanded_title",
+        "type": "text",
+        "label": "Section Title",
+        "default": "Recommended Products"
+      },
+ 	  {
+        "id": "recommanded_sub_title",
+        "type": "text",
+        "label": "Section Sub title",
+        "default": "You can stop autoplay, increase/decrease aniamtion speed and number of grid to show and products from store admin."
+      },
+	  {
+        "type": "paragraph",
+        "content": "Products Per Row"
+      },
+      {
+        "type": "range",
+        "id": "grid",
+        "label": "Desktop",
+        "default": 4,
+        "min": 2,
+        "max": 7,
+        "step": 1
+      },
+      {
+        "type": "range",
+        "id": "tablet-grid",
+        "label": "Tablet",
+        "default": 3,
+        "min": 2,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "type": "range",
+        "id": "mobile-grid",
+        "label": "Mobile",
+        "default": 2,
+        "min": 1,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "type": "text",
+        "id": "recommanded_total_product_to_show",
+        "label": "Number of Product to Show",
+        "default": "8"        
+      }
+	]
+}
+{% endschema %}

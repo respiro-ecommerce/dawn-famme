@@ -1,0 +1,189 @@
+{%- capture imageSlideShow -%}
+<div class="content-indent {{ section.settings.top-offeset}}">
+  <div data-section-id="{{ section.id }}" data-section-type="slideshow-section">
+
+    {% if section.blocks.size > 0 %}
+    <div class="slideshow-wrapper{% unless section.settings.section_width %} page-width{% endunless %}{% if section.settings.snow_effect %} falling-snow{% endif %}{% if section.settings.snow_style == "style2" %} style2{% else %} style1{% endif %}">
+      <div class="slideshow" id="Slideshow-{{ section.id }}" data-arrow="{{ section.settings.arrow }}" data-dots="{{ section.settings.dots }}" data-autoplay="{{ section.settings.autoplay }}" data-speed="{{ section.settings.autoplay_speed }}">
+        {% for block in section.blocks %}
+        <div class="slideshow__slide slideshow__slide--{{ block.id }}" {{ block.shopify_attributes }}>
+          {% if block.settings.link != blank %}<a href="{{ block.settings.link }}" class="slideshow__link" {% if block.settings.newTab %}target="_blank"{% endif %}>{% endif %}
+            <div class="slideshow__image {{ block.settings.text_align }}">
+              {%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+              {% if block.settings.image != blank %}
+              <img class="lazyload js{% if block.settings.mb_image != blank %} small--hide{% endif %}" src="{{ block.settings.image | img_url: '50x' }}"
+                   data-src="{{ img_url }}" data-widths="[360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                   data-aspectratio="{{ block.settings.image.aspect_ratio }}" data-sizes="auto" alt="{{ block.settings.image.alt | escape }}">
+              
+                  {% if block.settings.mb_image != blank %}
+              		{%- assign img_url1 = block.settings.mb_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                    <img class="lazyload js medium-up--hide" src="{{ block.settings.mb_image | img_url: '50x' }}"
+                       data-src="{{ img_url1 }}" data-widths="[360, 540, 720, 900, 1080, 1296]"
+                       data-aspectratio="{{ block.settings.image.aspect_ratio }}" data-sizes="auto" alt="{{ block.settings.image.alt | escape }}">
+                  {% endif %}
+
+              {% else %}
+                <div class="placeholder-background">
+                  {% capture current %}{% cycle 1, 2 %}{% endcapture %}
+                  {{ 'lifestyle-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
+                </div>
+              {% endif %}
+            </div>
+            {% if block.settings.link != blank %}</a>{% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+
+    {% if section.blocks.size == 0 %}
+    <div class="placeholder-noblocks">
+      {{ 'homepage.onboarding.no_content' | t }}
+    </div>
+    {% endif %}
+  </div>
+</div>
+{%- endcapture -%}
+{{imageSlideShow | strip_newlines | remove: "  " | remove: "	" }}
+{% schema %}
+  {
+    "name": "Image Slideshow",
+    "class": "index-section index-section--flush imageSlideshow slideshowOuter",
+    "max_blocks": 6,
+    "settings": [
+	  {
+		"type":"checkbox",
+		"id":"section_width",
+		"label":"Fullwidth?",
+		"default": true
+	  },
+	 {
+            "type": "select",
+            "id": "top-offeset",
+            "label": "Top OffSet",
+            "default": "default",
+            "options": [
+              {
+                "value": "default",
+                "label": "Default"
+              },
+              {
+                "value": "small",
+                "label": "Small"
+              },
+			  {
+                "value": "none",
+                "label": "None"
+              }
+			]
+        },
+	  {
+        "type": "checkbox",
+        "id": "autoplay",
+        "label": "Auto-rotate slides",
+        "default": true
+      },
+      {
+        "type": "select",
+        "id": "autoplay_speed",
+        "label": "Change slides every",
+        "options": [
+          { "value": "5000", "label": "5 seconds" },
+          { "value": "6000", "label": "6 seconds" },
+          { "value": "7000", "label": "7 seconds" },
+          { "value": "8000", "label": "8 seconds" },
+          { "value": "9000", "label": "9 seconds" },
+          { "value": "10000", "label": "10 seconds" },
+		  { "value": "12000", "label": "12 seconds" },
+		  { "value": "15000", "label": "15 seconds" }
+        ],
+        "default": "7000"
+      },
+	{
+        "type": "checkbox",
+        "id": "arrow",
+        "label": "Show Next/Previous Arrows?",
+        "default": true
+      },
+	  {
+        "type": "checkbox",
+        "id": "dots",
+        "label": "Show Dotted Navigation?",
+        "default": false
+      },	  
+	  {
+		"type":"checkbox",
+		"id":"snow_effect",
+		"label":"Enable Snow Effect?",
+		"default": false,
+		"info":"For Christmas"
+	   },
+        {
+          "type": "select",
+          "id": "snow_style",
+          "label": "Snow Style",
+          "default": "style1",         
+          "options": [
+            {
+            "value": "style1",
+            "label": "Falling Down"
+            },
+            {
+            "value": "style2",
+            "label": "Falling From Left"
+            }
+            ]
+          },
+	  {
+		"type":"paragraph",
+		"content":"For Best Resoultion recommanded image width: 1900px for Desktop and 780px for Mobile. try to keep all image with same size."
+	  }
+    ],
+    "blocks": [
+      {
+        "type": "image",
+        "name": "Image slide",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+		  {
+            "type": "image_picker",
+            "id": "mb_image",
+            "label": "Mobile Image",
+			"info": "Select image here if want to display different image for mobile devices"
+          },
+          {
+            "type": "url",
+            "id": "link",
+            "label": "Slide link"
+          },
+		  {
+            "type": "checkbox",
+            "id": "newTab",
+            "label": "Open in new Tab?",
+			"info":"On click link open in new window"
+          }
+        ]
+      }
+    ],
+    "presets": [{
+      "name": "Image Slideshow",
+      "category": "3. Banners",
+      "settings": {
+        "autoplay": true,
+        "autoplay_speed": "5000"
+      },
+      "blocks": [
+        {
+          "type": "image"
+        },
+        {
+          "type": "image"
+        }
+      ]
+    }]
+  }
+{% endschema %}

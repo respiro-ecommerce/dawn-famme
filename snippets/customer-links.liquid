@@ -1,0 +1,61 @@
+<div id="settingsBox" style="">
+  {% if shop.customer_accounts_enabled %}
+  <div class="customer-links">
+    {% if customer %}
+    	<p><a href="{{ routes.account_url }}" class="btn test1">{{ 'customer.account.title' | t }}</a> </p>
+    	<p class="text-center"><a href="{{ routes.account_logout_url }}" class="logout ctLink"><b>{{ 'customer.account.logout' | t }}</b></a> </p>
+    {% else %}
+    	<p><a href="{{ routes.account_login_url }}" class="btn test2">{{ 'customer.login.form_title' | t }}</a></p>
+    	<p class="text-center">{{ 'customer.register.new' | t }} <a href="{{routes.account_register_url}}" class="register ctLink">{{ 'customer.register.link' | t }}</a></p>
+    	
+    {% endif %}
+    {% if settings.enable_wishlist %}<p class="text-center large-up--hide"><a href="{{pages[settings.wishlist_page].url}}" class="wishlist ctLink" title="{{ 'products.wishlist.title' | t }}">{{ 'products.wishlist.title' | t }}</a></p>{% endif %}
+  </div>
+  {% endif %}
+
+  {% if settings.show_multiple_currencies %}
+  	{% if settings.currency_opt == 'shopify' %}
+        {%- form 'localization', class: 'selectors-form' -%}
+              {%- if shop.enabled_currencies.size > 1 -%}
+              <div class="currency-picker">
+                <span class="ttl">{{ settings.currency_title }}</span>
+                <span class="selected-currency">{{ shop.currency }}</span>
+                <ul id="currencies" class="cnrLangList" data-disclosure-list>
+                    {% for currency in form.available_currencies %}
+                        <li class="disclosure-list__item {% if currency.iso_code == form.current_currency.iso_code %}selected{% endif %}">
+                            <a class="currencyOpt" href="#" {% if currency.iso_code == form.current_currency.iso_code %}aria-current="true"{% endif %} data-value="{{ currency.iso_code }}">{{ currency.iso_code }} {%- if currency.symbol -%}{{ currency.symbol }}{%- endif -%}</a>
+                        </li>
+                    {%- endfor -%}
+                </ul>
+                <input type="hidden" name="currency_code" id="CurrencySelector" value="{{ form.current_currency.iso_code }}" data-disclosure-input/>
+                <button type="button" class="currencyBtn hide" aria-expanded="false" aria-controls="currency-list" aria-describedby="currency-heading" data-disclosure-toggle>{{ form.current_currency.iso_code }} {%- if form.current_currency.symbol -%}{{ form.current_currency.symbol }}{%- endif -%}</button>    
+              </div>
+          {% endif %}
+        {%- endform -%}
+    {% else %}
+      <div class="currency-picker">
+        {% assign codes = 'USD,EUR,GBP,CAD,ARS,AUD,BBD,BDT,BSD,BHD,BRL,BOB,BND,BGN,ILS,MMK,KYD,CLP,CNY,COP,CRC,HRK,CZK,DKK,DOP,XCD,EGP,XPF,FJD,GHS,GTQ,GYD,GEL,HKD,HUF,ISK,INR,IDR,NIS,JMD,JPY,JOD,KZT,KES,KWD,LVL,LTL,MXN,MYR,MUR,MDL,MAD,MNT,MZN,ANG,NZD,NGN,NOK,OMR,PKR,PYG,PEN,PHP,PLN,QAR,RON,RUB,SAR,RSD,SCR,SGD,SYP,ZAR,KRW,LKR,SEK,CHF,TWD,THB,TZS,TTD,TRY,UAH,AED,UYU,VEB,VND,ZMK' | split: ',' %}
+        {% assign supported_codes = settings.supported_currencies | split: ' ' %}
+        <span class="ttl">{{ settings.currency_title }}</span>
+        <span class="selected-currency">{{ shop.currency }}</span>
+        <ul id="currencies" class="cnrLangList">
+          {% for code in supported_codes %}
+          {% if codes contains code %}
+          <li data-currency="{{ code }}" class="{% if shop.currency == '{{ code }}' %}selected {% endif %}"><a>{{ code }}</a></li>
+          {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+  	{% endif %}
+  {% endif %}
+  {% if settings.show_language %}
+  <div class="language-picker">
+    <span class="ttl">{{ settings.language_title }}</span>
+    <ul id="language" class="cnrLangList">
+      {% for link in linklists[settings.languages].links %}
+      <li><a href="{{ link.url }}">{{ link.title | split: '[' | first }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+</div>

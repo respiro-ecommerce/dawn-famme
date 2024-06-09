@@ -1,0 +1,852 @@
+{% if section.settings.show_collection_image and section.settings.banner_position == 'top' %}
+  <div class="clPageBnr flex lazyload{% if collection.image %} with-image {% endif %}" {% if section.settings.show_collection_image and collection.image %}data-bgset="{% include 'bgset', image: collection.image %}" data-sizes="auto" data-parent-fit="contain" style="background-image:url({{ collection.image | img_url: '300x' }});"{% endif %}>
+	{% if section.settings.show_collection_name %}<h1 class="collection-title" itemprop="name">{{ collection.title }}</h1>{% endif %}
+  </div>  
+{% endif %}
+{%- if settings.breadcrumb_cl -%}{%- include 'breadcrumb' -%}{%- else -%}<div class="topSpace"></div>{%- endif -%}
+  
+{% if template contains 'list' %}
+	{%- assign limit = 16 -%}
+{% else %}
+	{%- assign limit = section.settings.rows -%}
+{% endif %}
+
+{% paginate collection.products by limit %}
+
+<div data-section-id="{{ section.id }}" id="{{ section.id }}" data-section-type="collection-template">
+  <div class="page-width{% if section.settings.fullwidth %} fullwidth {% endif %}" id="Collection">
+    <div class="grid">
+      {%- assign sidebarPosition = '' -%}
+      {% case section.settings.sidebar_position %}
+      {% when 'left' %}
+      {%- assign sidebar_position = 'left' -%}
+      {%- assign content_position = 'right' -%}
+      {% when 'right' %}
+      {%- assign sidebar_position = 'right' -%}
+      {%- assign content_position = 'left' -%}
+      {% when 'popup' %}
+      {%- assign sidebar_position = 'popup' -%}
+      {% endcase %}
+      {%- assign conentClass = '' -%}
+      {% if section.settings.collection_sidebar %}
+      {% if sidebar_position == 'popup' %}
+      {%- assign conentClass = '' -%}
+      {% else %}
+      {%- assign conentClass = 'large-up--three-quarters' -%}
+      {% endif %}
+      {% endif %}
+
+      <!-- Right sidebar -->
+      <div class="grid__item {{conentClass}} main-col {{content_position}}">
+
+        {% include 'collection-slideshow' %}
+		
+        {% if section.settings.show_collection_image and section.settings.banner_position == 'content-side' %}
+	        <div class="clPageBnr{% if section.settings.banner_style == "info-over" %} flex{% endif %} {{section.settings.banner_style}} {{section.settings.text-align}}{% if collection.image %} with-image {% endif %}"
+    	         {% if section.settings.banner_style == 'info-over' and collection.image %} style="background-image:url({{ collection.image | img_url: '900x400', crop: 'center' }});" {% endif %}>  		                         
+
+              {% if collection.image and section.settings.banner_style == 'info-below' %}
+              {%- assign climg_url = collection.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+              <img class="lazyload collection-image imgFl" src="{{ collection.image | img_url: 'master' }}" width="{{collection.image.width}}" height="{{collection.image.height}}"
+                   data-src="{{ climg_url }}" data-widths="[540,720,1000,1400,1900]" data-aspectratio="{{ collection.image.aspect_ratio }}" data-sizes="auto" alt="{{ collection.image.alt | escape }}" />
+              {% endif %}
+              {% if section.settings.show_collection_name %}<h1 class="collection-title" itemprop="name">{{ collection.title }}</h1>{% endif %}
+            </div>
+        {% endif %}
+        
+        {% if section.settings.show_collection_image == false and section.settings.show_collection_name %} 
+        	<h1 class="collection-title" itemprop="name">{{ collection.title }}</h1>
+        {% endif %}
+		
+        {% if section.settings.collection-des == "top" and collection.description != blank %}
+			<div class="rte collection-description top">{{ collection.description }}</div>
+        {% endif %}      
+        <div class="productList">
+          <!-- Toolbar -->
+          {% include 'collection-filter' %}
+
+          {%- liquid
+              case section.settings.grid
+                  when 2
+                      assign grid_ds = 'large-up--one-half'
+                      assign image_size = '150,350,550,750,950'
+                  when 3 
+                      assign grid_ds = 'large-up--one-third'
+                      assign image_size = '150,350,550,750'
+                  when 4 
+                      assign grid_ds = 'large-up--one-quarter'
+                      assign image_size = '150,350,550,750'
+                  when 5 
+                      assign grid_ds = 'large-up--one-fifth'
+                      assign image_size = '150,350,550'
+                  when 6 
+                      assign grid_ds = 'large-up--one-sixth'
+                      assign image_size = '130,300,500'
+                  when 7
+                      assign grid_ds = 'large-up--one-seventh'
+                      assign image_size = '130,280,400'
+              endcase
+          -%}
+          {% case section.settings.tablet-grid %}
+          {% when 2 %}{%- assign grid_tb = 'medium--one-half' -%}
+          {% when 3 %}{%- assign grid_tb = 'medium--one-third' -%}
+          {% when 4 %}{%- assign grid_tb = 'medium--one-quarter' -%}
+          {% when 5 %}{%- assign grid_tb = 'medium--one-fifth' -%}
+          {% endcase %}
+          {% case section.settings.mobile-grid %}
+          {% when 1 %}{%- assign grid_mb = 'small--one-whole' -%}
+          {% when 2 %}{%- assign grid_mb = 'small--one-half' -%}
+          {% when 3 %}{%- assign grid_mb = 'small--one-third' -%}
+          {% endcase %}
+
+          {% unless template contains 'list' %}
+          <div class="grid grid--uniform grid-products{% if collection.products_count > 0 %} grid--view-items{% endif %}">
+            {% for product in collection.products %}               					                  
+            <div class="grid__item {{ grid_mb }} {{ grid_tb }} {{grid_ds}}">{% include 'product-card-grid', sizes: image_size %}</div>
+            {% else %}
+            {% if collection.handle == 'all' and collection.all_vendors.size == 0 and collection.all_types.size == 0 %}
+            <div class="grid__item {{ grid_item_width }}">
+              <div class="grid grid--uniform">
+                {% for i in (1..limit) %}
+                <div class="grid__item {{ grid_mb }} {{ grid_tb }} {{grid_ds}}">
+                  <div class="grid-view-item">
+                    <a href="#" class="grid-view-item__link">
+                      <div class="grid-view-item__image">
+                        {% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
+                        {{ 'product-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
+                      </div>
+                      <div class="h4 grid-view-item__title">{{ 'homepage.onboarding.product_title' | t }}</div>
+                      <div class="grid-view-item__meta"> <span class="product-price__price">$19.99</span></div>
+                    </a>
+                  </div>
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+            {% else %}
+            {%- assign is_empty_collection = true -%}
+            {% endif %}
+            {% endfor %} 
+          </div>
+          {% endunless %}
+
+          {% if template contains 'list' %}
+          <div class="list-view-items">
+            {% for product in collection.products %}
+            {% assign box_animation_time = forloop.index | minus:1 %}
+            {% assign delay_time = 100 | times : box_animation_time %}
+            <div class="list-view-item wow fadeInUp" data-wow-delay="{{delay_time}}ms">
+              {% include 'product-card-list', product: product %}
+            </div>
+            {% else %}
+
+            {% comment %}          
+            The onboarding styles and products are only loaded if the
+            store has no products.
+            {% endcomment %}
+            {% if collection.handle == 'all' and collection.all_vendors.size == 0 and collection.all_types.size == 0%}
+            {% for i in (1..4) %} <a href="#" class="list-view-item">
+            <div class="list-view-item__image-column">
+              <div class="list-view-item__image-wrapper">
+                <div class="list-view-item__image"> {%- assign placeholder = 'placeholder-product-' | append: i -%}
+                  {% include placeholder %} </div>
+              </div>
+            </div>
+            <div class="list-view-item__title-column">
+              <div class="list-view-item__title">{{ 'homepage.onboarding.product_title' | t }}</div>
+            </div>
+            <div class="list-view-item__price-column"> <span class="product-price__price">$19.99</span> </div>
+            </a> {% endfor %}
+            {% else %}
+            {%- assign is_empty_collection = true -%}
+            {% endif %}
+            {% endfor %} 
+          </div>
+          {% endif %}
+
+          {% if is_empty_collection %}
+          <div class="grid__item small--text-center">
+            <p class="text-center">{{ 'collections.general.no_matches' | t }}</p>
+          </div>
+          {% endif %}
+        </div>
+
+        {% if paginate.pages > 1 %}
+        {% if section.settings.pagination == "infinite" or section.settings.pagination == "button" %}
+        {% if paginate.next %}
+        <div class="infinitpaginOuter" data-type="{{section.settings.pagination}}">
+          <div class="infinitpagin">
+            {% if section.settings.pagination == "infinite" %}
+            <a href="{{paginate.next.url}}" class="infinite"><img src="{{ 'ajax-loader.gif' | asset_url }}" alt="{{ 'general.pagination.loading' | t }}" /><p>{{ 'general.pagination.loading' | t }}</p></a>
+            {% else %}
+            <a href="{{paginate.next.url}}" class="btn loadMore">{{ 'general.pagination.loadmore' | t }}</a>
+            {% endif %}
+          </div>
+        </div>
+        {% endif %}
+        {% else %}
+        <hr class="clear" />
+        {% include 'pagination' %}
+        {% endif %}
+        {% endif %}
+        
+        {% if section.settings.collection-des == "bottom" %}
+          {% if collection.description != blank %}
+          <br/>
+          <div class="rte collection-description top">{{ collection.description }}</div>
+          {% endif %}
+        {% endif %}
+        
+      </div>
+
+      <!-- Left sidebar -->
+      {% if section.settings.collection_sidebar %}<div class="grid__item large-up--one-quarter sidebar filterbar {{sidebar_position}}">{% include 'collection-sidebar' %}</div>{% endif %}
+    </div>
+  </div>
+  
+</div>
+{% endpaginate %}
+{% include 'filter-js' %}
+<style>
+  {% if section.settings.show_collection_image %}
+  	.clPageBnr {background-color:{{section.settings.clr_bg}}; {% unless section.settings.banner_position == 'content-side' and section.settings.banner_style == "info-below" %}min-height:{{section.settings.bheight}}px;{% endunless %} }
+  	{% unless section.settings.banner_position == 'content-side' and section.settings.banner_style == "info-below" %}
+      @media only screen and (max-width:1024px){ .clPageBnr { min-height:{{section.settings.bheightipad}}px;} }
+      @media only screen and (max-width:767px) { .clPageBnr { min-height:{{section.settings.bheightmob}}px;} }
+  	{% endunless %}
+  {% endif %}
+  .collection-title { color:{{section.settings.clr_text}};}
+  .collection-description { color:{{section.settings.clr_text_des}};}
+</style>
+{% schema %}
+  {
+    "name": "Collection pages",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Click on 'Add content' link above to add sidebar block."
+      },
+	  {
+         "type": "checkbox",
+		 "id": "fullwidth",
+		 "label": "Fullwidth?",
+		 "default": true
+      },
+	 {
+        "type": "header",
+        "content": "Collection Banner and Title",
+		"info":"display collection name, description or image. You can upload image from each collection or select background color"
+      },
+ 	{
+        "type": "checkbox",
+        "id": "show_collection_name",
+        "label": "Show Collection Name?",
+        "default": true	
+      },
+      {
+        "type": "checkbox",
+        "id": "show_collection_image",
+        "label": "Show Collection Banner?",
+        "default": true	
+      },	 	 
+     {
+        "type": "select",
+        "id": "banner_position",
+        "label": "Display Position",
+        "default": "top",
+        "options": [        
+          { "value": "top", "label": "Style 1 - On Top" },
+          { "value": "content-side", "label": "Style 2 - In Content Area" }         
+        ]
+      }, 	
+ 	  {
+        "type": "range",
+        "id": "bheight",
+        "label": "Banner Height : Desktop",
+        "default": 300,
+        "min": 50,
+        "max": 400,
+        "step": 10,
+		"unit":"px"		
+      }, 
+ 	  {
+        "type": "range",
+        "id": "bheightipad",
+        "label": "Banner Height : Tablet",
+        "default": 200,
+        "min": 50,
+        "max": 400,
+        "step": 10,
+		"unit":"px"		
+      }, 	
+     {
+        "type": "range",
+        "id": "bheightmob",
+        "label": "Banner Height : Mobile",
+        "default": 100,
+        "min": 50,
+        "max": 400,
+        "step": 10,
+		"unit":"px"		
+      }, 	{
+        "type": "paragraph",      
+        "content": "Additinal Settings for Style 2 - In Content Area ==="
+      },
+	  {
+        "type": "select",
+        "id": "banner_style",
+        "label": "Select Style",
+        "default": "info-below",	
+        "options": [   
+ 		  { "value": "info-below", "label": "Default" },
+          { "value": "info-over", "label": "Info. Over Image" }
+		 
+        ]
+      },
+	 {
+        "type": "select",
+        "id": "text-align",
+        "label": "Text Align",
+        "default": "text-center",		
+        "options": [        
+          { "value": "text-left", "label": "Left" },
+          { "value": "text-center", "label": "Center" }         
+        ]
+      },
+		{
+        "type": "select",
+        "id": "collection-des",
+        "label": "Description Position",
+        "default": "top",		
+        "options": [        
+          { "value": "top", "label": "Display Above Products" },
+          { "value": "bottom", "label": "Display Below Products" }         
+        ]
+      },
+	 {
+        "type": "header",
+        "content": "Appearance"
+      },	
+	 {
+        "type": "color",
+        "id": "clr_bg",
+        "label": "Background Color",
+        "default": "#eee",
+		"info":"if background image is not available"
+      },
+	 {
+        "type": "color",
+        "id": "clr_text",
+        "label": "Collection Name",
+        "default": "#111"		
+      },
+ 	  {
+        "type": "color",
+        "id": "clr_text_des",
+        "label": "Collection Description",
+        "default": "#111"		
+      },
+	 {
+        "type": "paragraph",      
+        "content": "Set Font Size From --> Theme Settings --> Fonts, Colors and Styles --> Collection Page"
+      },
+	  {
+        "type": "header",
+        "content": "Products Grid"		
+      },      
+      {
+        "type": "checkbox",
+        "id": "secondary_image",
+        "label": "Show Second Image on hover?",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_vendor",
+        "label": "Show Vendor Name?",
+        "default": false
+      },     
+      {
+        "type": "checkbox",
+        "id": "prlist_btn_show",
+        "label": "Hide Buttons?",
+        "default": false,
+        "info": "add to cart,wishlist,quickview"
+      },
+      {
+        "type": "checkbox",
+        "id": "btn_mobiles",
+        "label": "Hide Buttons on Mobile?",
+        "default": false
+      },
+      {
+        "type": "header",
+        "content": "Color Swatches"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_color_swatch",
+        "label": "Show ?",
+        "default": true
+      },
+      {
+        "type": "select",
+        "id": "color_type",
+        "label": "Swatch Type",
+        "default": "color",
+        "info": "Custom color name should be predefined in 'Custom Colors' section.",
+        "options": [
+          {
+            "value": "color",
+            "label": "Color Swatch"
+          },
+          {
+            "value": "vrimage",
+            "label": "Variant Image"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "vr_bg_position",
+        "label": "Variant Image Position",
+        "default": "50% 0",
+        "options": [
+          {
+            "value": "50% 0",
+            "label": "Center Top"
+          },
+          {
+            "value": "50% 50%",
+            "label": "Center Center"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "color_size",
+        "label": "Swatch Size",
+        "default": "small",
+        "options": [
+          {
+            "value": "small",
+            "label": "Small"
+          },
+          {
+            "value": "medium",
+            "label": "Medium"
+          },
+          {
+            "value": "large",
+            "label": "Large"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "color_style",
+        "label": "Swatch Style",
+        "default": "rounded",
+        "options": [
+          {
+            "value": "rounded",
+            "label": "Rounded"
+          },
+          {
+            "value": "rectangle",
+            "label": "Square"
+          },
+          {
+            "value": "rounded_rectangle",
+            "label": "Rounded Rectangle"
+          }
+        ]
+      },
+      {
+        "type": "header",
+        "content": "Appearance"
+      },
+	  {
+        "type": "checkbox",
+        "id": "sort_enable",
+        "label": "Enable sorting",
+        "default": true
+      },
+     {
+        "type": "checkbox",
+        "id": "dis_prod_cnt",
+        "label": "Display Product Count?",
+        "default": true
+      },
+ 	  {
+        "type": "checkbox",
+        "id": "dis_grid_icn",
+        "label": "Display Grid Icons?",
+        "default": true
+      },
+	  {
+        "type": "select",
+        "id": "prbox_style",
+        "label": "Products Grid Style",
+        "default": "style1",
+        "options": [
+          {
+            "value": "style1",
+            "label": "Style 1 - Default Info Center"
+          },
+          {
+            "value": "style2",
+            "label": "Style 2 - Info Hover Image"
+          },
+          {
+            "value": "style3",
+            "label": "Style 3 - Info Below Image"
+          },
+          {
+            "value": "style4",
+            "label": "Style 4 - Default Info Left"
+          },
+		 {
+            "value": "style5",
+            "label": "Style 5 - Display Text Button"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "Products per row (grid only)"
+      },
+      {
+        "type": "range",
+        "id": "grid",
+        "label": "Desktop",
+        "default": 4,
+        "min": 2,
+        "max": 7,
+        "step": 1
+      },
+      {
+        "type": "range",
+        "id": "tablet-grid",
+        "label": "Tablet",
+        "default": 3,
+        "min": 2,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "type": "range",
+        "id": "mobile-grid",
+        "label": "Mobile",
+        "default": 2,
+        "min": 1,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "type": "text",
+        "id": "rows",
+        "label": "Products per page (grid only)",
+        "default": "24"
+      },
+      {
+        "type": "select",
+        "id": "pagination",
+        "label": "Pagination type",
+        "default": "button",
+        "options": [
+          { "value": "default", "label": "Classic" },
+          { "value": "infinite", "label": "Infinite Scroll" },
+          { "value": "button", "label": "Load more button" }
+        ]
+      },
+      {
+        "type": "header",
+        "content": "Sidebar & Filters"
+      },
+      {
+        "type": "checkbox",
+        "id": "collection_sidebar",
+        "label": "Enable Sidebar",
+        "default": true
+      },
+      {
+        "type": "select",
+        "id": "sidebar_position",
+        "label": "Sidebar Position",
+        "default": "left",
+		"info":"Only filter blocks show while select Popup Box option.",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          },
+          {
+            "value": "popup",
+            "label": "Popup Box"
+          }
+        ]
+      }
+    ],
+	"blocks": [
+      {
+        "type": "categories",
+        "name": "Categories",        
+        "settings": [
+         	{ 
+              "type":"text",
+              "id":"title",
+              "label":"Categories",
+              "default":"Categories"
+          	},
+            {
+              "type": "link_list",
+              "id": "side_categories",
+              "label": "Select Categories",
+              "default": "main-menu"
+            }
+        ]
+      },
+	  {
+        "type": "filter_by",
+        "name": "Filter By",
+        "settings": [
+            {
+                "type": "text",
+                "id": "title",
+                "label": "Filter By Title",
+				"default": "Filter By Title",
+                "info": "i.e 'Filter by Size, Filter by Brands'"
+            },
+            {
+                "type": "textarea",
+                "id": "filter_tags",
+                "label": "Add Filter tags",
+                "info": "Separate by a comma, i.e \"Tag1, Tag2, Tag3\"."
+            },
+            {
+              "type": "checkbox",
+              "id": "twocall",
+              "label": "Show List in two column",
+              "default": false
+            }
+      	]
+     },
+     {
+        "type": "by_color",
+        "name": "Filter by Colors",
+        "limit": 1,
+        "settings": [
+         	{ 
+              "type":"text",
+              "id":"title",
+              "label":"Filter by section title",
+              "default":"Filter by Color"
+          	},
+            {
+             "type": "textarea",
+             "id": "filter_tags",
+             "label": "Add Filter tags",
+             "info": "Separate by a comma, i.e \"Black, Red, Blue\". Filter will not work untill you don't assign the same TAG NAME to relavant products.  Custom color name should be predefined in 'Custom Colors' section."
+           },                      
+			{
+        "type": "select",
+        "id": "color_size",
+        "label": "Swatch Size",
+        "default": "small",
+        "options": [
+          {
+            "value": "small",
+            "label": "Small"
+          },
+          {
+            "value": "medium",
+            "label": "Medium"
+          },
+		  {
+            "value": "large",
+            "label": "Large"
+          } 
+        ]
+      },
+      {
+        "type": "select",
+        "id": "color_style",
+        "label": "Swatch Style",
+        "default": "rounded",
+        "options": [
+          {
+            "value": "rounded",
+            "label": "Rounded"
+          },
+          {
+            "value": "rectangle",
+            "label": "Square"
+          },
+          {
+            "value": "rounded_rectangle",
+            "label": "Rounded Rectangle"
+          }          
+         ]
+      	}
+       ]
+     },
+     {
+        "type": "products",
+        "name": "Products",
+		"limit": 1,
+        "settings": [
+         	{ 
+              "type":"text",
+              "id":"title",
+              "label":"Title Text",
+              "default":"Popular Products"
+          	},
+            {
+              "type": "collection",
+              "id": "sidebar_products",
+              "label": "Select Collection"
+            },
+            {
+              "type": "text",
+              "id": "num_of_products",
+              "label": "Number of products to show",
+              "default": "3"
+            },
+			{
+              "type": "checkbox",
+              "id": "side_all_products",
+              "label": "View all products button",
+              "default": false
+            },
+			{
+              "type": "text",
+              "id": "btn_txt",
+              "label": "Button Text",
+              "default": "View All"
+            },
+            {
+              "type": "select",
+              "id": "side_prod_opt",
+              "label": "Display Type",
+              "default": "slider",
+              "options": [
+                {
+                  "value": "slider",
+                  "label": "Slider"
+                },
+                {
+                  "value": "list",
+                  "label": "List"
+                }
+              ]
+            }
+        ]
+      },
+	  {
+        "type": "image_bnr",
+        "name": "Image Banner",
+        "settings": [
+            {
+              "type": "image_picker",
+              "id": "side_bnr_img",
+              "label": "Banner Image"
+            },
+            {
+              "type": "url",
+              "id": "side_bnr_link",
+              "label": "Banner"
+            }
+      	]
+      },
+	  {
+        "type": "static_text",
+        "name": "Static Text",
+        "settings": [
+            { 
+              "type":"text",
+              "id":"title",
+              "label":"Title Text",
+              "default":"Static Block Title"
+          	},
+            {
+              "type": "richtext",
+              "id": "text",
+              "label": "Text",
+              "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+            }
+      	]
+      },
+	  {
+        "type": "slideshow",
+        "name": "Slideshow at content area",
+        "settings": [
+            {
+              "type": "paragraph",
+              "content": "Upload all the images of same size"
+            },
+			{
+              "type": "checkbox",
+              "id": "display_mobile",
+              "label": "Display Slideshow on Mobile",
+              "default": true
+            },
+            {
+              "type": "image_picker",
+              "id": "cat-bnr-1",
+              "label": "Banner 1"
+            },
+            {
+              "type": "url",
+              "id": "cat-bnr--url-1",
+              "label": "Banner 1 Url"
+            },
+            {
+              "type": "image_picker",
+              "id": "cat-bnr-2",
+              "label": "Banner 2"
+            },
+            {
+              "type": "url",
+              "id": "cat-bnr--url-2",
+              "label": "Banner 2 Url"
+            },
+            {
+              "type": "image_picker",
+              "id": "cat-bnr-3",
+              "label": "Banner 3"
+            },
+            {
+              "type": "url",
+              "id": "cat-bnr--url-3",
+              "label": "Banner 3 Url"
+            },
+            {
+              "type": "image_picker",
+              "id": "cat-bnr-4",
+              "label": "Banner 4"
+            },
+            {
+              "type": "url",
+              "id": "cat-bnr--url-4",
+              "label": "Banner 4 Url"
+            },
+            {
+              "type": "image_picker",
+              "id": "cat-bnr-5",
+              "label": "Banner 5"
+            },
+            {
+              "type": "url",
+              "id": "cat-bnr--url-5",
+              "label": "Banner 5 Url"
+            }
+      	]
+      }
+	]
+  }
+{% endschema %}

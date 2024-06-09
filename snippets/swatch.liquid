@@ -1,31 +1,59 @@
-{% comment %}
-  Renders a swatch component.
-  Accepts:
-  - swatch: {Object} a swatch object
-  - shape: {String} swatch shape. Accepts 'square', defaults to circle.
+{% capture colorSwatches %}
 
-  Usage:
-  {% render 'swatch',
-    swatch: value.swatch
-    shape: 'square'
-  %}
-{% endcomment %}
+{% assign found_option = false %}
+{% assign is_color = false %}
+{% assign is_size = false %}
+{% assign option_index = 0 %}
 
-{%- liquid
-  assign swatch_value = nil
-  if swatch.image
-    assign image_url = swatch.image | image_url: width: 50
-    assign swatch_value = 'url(' | append: image_url | append: ')'
-  elsif swatch.color
-    assign swatch_value = 'rgb(' | append: swatch.color.rgb | append: ')'
-  endif
--%}
+{% for option in product.options %}
+    {% if option == swatch %}
+      {% assign found_option = true %}
+      {% assign option_index = forloop.index0 %}
+      {% assign downcased_option = swatch | downcase %}
+      {% if downcased_option contains 'color' or downcased_option contains 'colour' or downcased_option contains 'couleur' or downcased_option contains 'farbe' %}
+        {% assign is_color = true %}
+      {% endif %}
+	{% if downcased_option contains 'size' or downcased_option contains 'talla' or downcased_option contains 'taille' or downcased_option contains 'tamaño' or downcased_option contains 'größe' %}
+        {% assign is_size = true %}
+      {% endif %}
+    {% endif %}
+{% endfor %}
 
-<span
-  {% if swatch_value %}
-    class="swatch{% if shape == 'square' %} swatch--square{% endif %}"
-    style="--swatch--background: {{ swatch_value }}"
-  {% else %}
-    class="swatch swatch--unavailable{% if shape == 'square' %} swatch--square{% endif %}"
-  {% endif %}
-></span>
+<div class="swatch clearfix option{{option_index |plus: 1}}" data-option-index="{{ option_index }}">
+    <label class="header">{{ swatch }}: <span class="slVariant"></span>
+      {% if settings.sizechart_link %}
+        {% if is_size %}
+        	<a href="#sizechart" class="mfp sizelink" data-effect="mfp-zoom-in" ><i class="ad ad-ruler"></i> {{ 'products.product.size_chart' | t}}</a>
+        {% endif %} 
+      {% endif %}                                   
+    </label>
+    {% assign values = '' %}
+    {% for variant in product.variants %}
+      {% assign value = variant.options[option_index] %}
+      {% unless values contains value %}
+        {% assign values = values | join: ',' %}
+        {% assign values = values | append: ',' | append: value %} 
+        {% assign values = values | split: ',' %}
+        {% assign colorname = value | handleize %}
+          <div data-value="{{ value | escape }}" class="swatch-element{% unless variant.available %} soldout{% endunless %}">
+            <input class="swatchInput hide" id="{{product.id}}-{{ option_index }}-{{ value | handle }}" data-var="{{ value | handle }}" type="radio" name="option-{{ option_index }}" value="{{ value | escape }}"{% if option.selected_value == value %} checked{% endif %} />
+            {% if is_color %}
+            {% if settings.sw_color_type == "color" %}
+            <label class="swatchLbl color {{settings.sw_color_size}} {{settings.sw_color_style}} swt{{value | handle}}" for="{{product.id}}-{{ option_index }}-{{ value | handle }}" style="background-color:{{ value | handle }};"></label>
+            <span class="tooltip-label">{{ value }}</span>
+            {% else %}
+            <label class="swatchLbl lazyload color {{settings.sw_color_size}} {{settings.sw_color_style}}" for="{{product.id}}-{{ option_index }}-{{ value | handle }}"
+                   data-bgset="{% include 'swatch-bg', image: variant.image %}" data-sizes="auto" data-parent-fit="contain"
+                   style="background-image:url({{ 'spacer.png' | asset_img_url: 'master' }});"></label>
+            <span class="tooltip-label">{{ value }}</span>
+            {% endif %}
+            {% else %}
+            <label class="swatchLbl {{settings.sw_color_style}}{% if settings.var_style %} square-only{% endif %}" for="{{product.id}}-{{ option_index }}-{{ value | handle }}">{{ value }}</label>            	
+            {% endif %}
+          </div>
+      {% endunless %}
+    {% endfor %}
+</div>
+
+{% endcapture %}
+{{colorSwatches | strip_newlines | remove: "  " | remove: "	" }}

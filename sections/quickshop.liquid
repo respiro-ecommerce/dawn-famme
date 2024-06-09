@@ -1,0 +1,91 @@
+{% if product == empty %}
+  {%- assign section_onboarding = true -%}
+{% endif %}
+<div id="ProductSection-{{ product.id }}" data-section-id="{{ product.id }}" data-section-type="quickshop">
+  <a class="closeShop" href="#;"><i class="ad ad-times-r"></i></a>
+  <div class="flex product-single">
+    <div class="flex productWrap">      
+    {% unless section_onboarding %}
+      {%- assign price = current_variant.price -%}
+      {%- assign available = current_variant.available -%}
+    {% else %}
+      {%- assign price = 1999 -%}
+      {%- assign available = true -%}
+    {% endunless %}
+
+    {%- assign current_variant = product.selected_or_first_available_variant -%}
+
+    <!-- price-->
+    <p class="product-single__price product-single__price-{{ product.id }}{% unless current_variant.available %} product-price--sold-out{% endunless %}">
+      {% if current_variant.compare_at_price > current_variant.price %}
+      <s id="ComparePrice-{{ product.id }}" class="product-price__price">{{ current_variant.compare_at_price | money }}</s>
+      <span class="product-price__price product-price__price-{{ product.id }} product-price__sale product-price__sale--single">
+        <span id="ProductPrice-{{ product.id }}">{{ current_variant.price | money }}</span>            
+      </span>
+      {% else %}
+      <s id="ComparePrice-{{ product.id }}" class="product-price__price hide">{{ current_variant.compare_at_price | money }}</s>
+      <span class="product-price__price product-price__price-{{ product.id }}">
+        <span id="ProductPrice-{{ product.id }}">{{ current_variant.price | money }}</span>
+       </span>
+      {% endif %}
+    </p>
+
+    {% if section_onboarding %}
+    <div class="product-form__item product-form__item--submit{% if product.has_only_default_variant %} product-form__item--no-variants{% endif %}">
+      <button type="submit" name="add" id="AddToCart-{{ product.id }}" disabled class="btn product-form__cart-submit"><span id="AddToCartText-{{ product.id }}">{{ 'products.product.sold_out' | t }}</span></button>
+    </div>
+    {% else %}    
+      {%- capture "form_classes" -%}product-form quickshopForm quickshop-form-{{ product.id }} hidedropdown{%- endcapture %}
+
+      {% form 'product', product, class:form_classes, novalidate: 'novalidate' %}
+        {% unless section_onboarding %}
+            {% unless product.has_only_default_variant %}
+              {% for option in product.options_with_values %}
+              <div class="selector-wrapper js{% if settings.show_swatch %} hide{% endif %}">
+                <label {% if option.name == 'default' %}class="label--hidden" {% endif %}for="SingleOptionSelector-{{ product.id }}-{{ forloop.index0 }}">{{ option.name }}</label>
+                <select class="quickshop-option-selector quickshop-option-selector-{{ product.id }} product-form__input" id="SingleOptionSelector-{{ product.id }}-{{ forloop.index0 }}" data-index="option{{ forloop.index }}">
+                  {% for value in option.values %}
+                  <option value="{{ value | escape }}"{% if option.selected_value == value %} selected="selected"{% endif %}>{{ value }}</option>
+                  {% endfor %}
+                </select>
+              </div>
+              {% endfor %}
+            {% endunless %}
+            <select name="id" id="ProductSelect-{{ product.id }}" class="product-form__variants no-js">
+              {% for variant in product.variants %}
+              {% if variant.available %}
+              <option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} value="{{ variant.id }}">{{ variant.title }}</option>
+              {% else %}
+              <option disabled="disabled">{{ variant.title }} - {{ 'products.product.sold_out' | t }}</option>
+              {% endif %}
+              {% endfor %}
+            </select>
+        {% endunless %}
+        {% if product.variants.size > 0 and product.variants[0].title != 'Default Title'  %}
+          {% unless product.has_only_default_variant %}
+            {% for option in product.options %}{% include 'swatch' with option %}{% endfor %}
+          {% endunless %}
+        {% endif %}
+        <div class="product-form__item product-form__item--quantity">
+          <label for="Quantity-{{ product.id }}">{{ 'products.product.quantity' | t }}</label>
+          <input type="number" id="Quantity-{{ product.id }}" name="quantity" value="1" min="1" class="product-form__input" pattern="[0-9]*">
+        </div>
+
+        <div class="product-form__item product-form__item--submit{% if section.settings.enable_payment_button %} product-form__item--payment-button{% endif %}{% if product.has_only_default_variant %} product-form__item--no-variants{% endif %}">
+          <button type="submit" name="add" id="AddToCart-{{ product.id }}" {% unless current_variant.available %}disabled="disabled"{% endunless %} class="btn quickshop-cart">
+            <span id="AddToCartText-{{ product.id }}">{% unless current_variant.available %}{{ 'products.product.sold_out' | t }}{% else %}{{ 'products.product.add_to_cart' | t }}{% endunless %}</span>
+          </button>
+        </div>
+      {% endform %}
+    {% endif %}
+  </div>
+  </div>
+  </div>
+{% unless product == empty %}<script type="application/json" id="quickshopJson-{{ product.id }}">{{ product | json }}</script>{% endunless %}
+
+{% schema %}
+  {
+    "name": "Qick Shop",
+    "settings": []
+  }
+{% endschema %}

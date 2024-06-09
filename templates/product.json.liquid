@@ -1,0 +1,179 @@
+{%- layout none -%}
+<meta name="robots" content="noindex">
+<a class="closeShop" href="#"><i class="ad ad-times-r"></i></a>
+{% if product == empty %}
+  {%- assign section_onboarding = true -%}
+{% endif %}
+<div class="quickshopWrap" id="ProductSection-{{ product.id }}" data-section-id="{{ product.id }}" data-section-type="quickshop">
+    {% unless section_onboarding %}
+      {%- assign price = current_variant.price -%}
+      {%- assign available = current_variant.available -%}
+    {% else %}
+      {%- assign price = 1999 -%}
+      {%- assign available = true -%}
+    {% endunless %}
+
+    {%- assign current_variant = product.selected_or_first_available_variant -%}
+
+    <!-- price-->
+    <p class="product-single__price product-single__price-{{ product.id }}{% unless current_variant.available %} product-price--sold-out{% endunless %}">
+      {% if current_variant.compare_at_price > current_variant.price %}
+      <s id="ComparePrice-{{ product.id }}" class="product-price__price">{{ current_variant.compare_at_price | money }}</s>
+      <span class="product-price__price product-price__price-{{ product.id }} product-price__sale product-price__sale--single">
+        <span id="ProductPrice-{{ product.id }}">{{ current_variant.price | money }}</span>            
+      </span>
+      {% else %}
+      <s id="ComparePrice-{{ product.id }}" class="product-price__price hide">{{ current_variant.compare_at_price | money }}</s>
+      <span class="product-price__price product-price__price-{{ product.id }}">
+        <span id="ProductPrice-{{ product.id }}">{{ current_variant.price | money }}</span>
+       </span>
+      {% endif %}
+    </p>
+
+    {% if section_onboarding %}
+    <div class="product-form__item product-form__item--submit{% if product.has_only_default_variant %} product-form__item--no-variants{% endif %}">
+      <button type="submit" name="add" id="AddToCart-{{ product.id }}" disabled class="btn product-form__cart-submit"><span id="AddToCartText-{{ product.id }}">{{ 'products.product.sold_out' | t }}</span></button>
+    </div>
+    {% else %}    
+      {%- capture "form_classes" -%}product-form quickshopForm quickshop-form-{{ product.id }} hidedropdown{%- endcapture %}
+
+      {% form 'product', product, class:form_classes, novalidate: 'novalidate' %}
+        {% unless section_onboarding %}
+            {% unless product.has_only_default_variant %}
+              {% for option in product.options_with_values %}
+              <div class="selector-wrapper js{% if settings.show_swatch %} hide{% endif %}">
+                <label {% if option.name == 'default' %}class="label--hidden" {% endif %}for="SingleOptionSelector-{{ product.id }}-{{ forloop.index0 }}">{{ option.name }}</label>
+                <select class="quickshop-option-selector quickshop-option-selector-{{ product.id }} product-form__input" id="SingleOptionSelector-{{ product.id }}-{{ forloop.index0 }}" data-index="option{{ forloop.index }}">
+                  {% for value in option.values %}
+                  <option value="{{ value | escape }}"{% if option.selected_value == value %} selected="selected"{% endif %}>{{ value }}</option>
+                  {% endfor %}
+                </select>
+              </div>
+              {% endfor %}
+            {% endunless %}
+            <select name="id" id="ProductSelect-{{ product.id }}" class="product-form__variants no-js">
+              {% for variant in product.variants %}
+              {% if variant.available %}
+              <option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} value="{{ variant.id }}">{{ variant.title }}</option>
+              {% else %}
+              <option disabled="disabled">{{ variant.title }} - {{ 'products.product.sold_out' | t }}</option>
+              {% endif %}
+              {% endfor %}
+            </select>
+        {% endunless %}
+        {% if product.variants.size > 0 and product.variants[0].title != 'Default Title'  %}
+          {% unless product.has_only_default_variant %}
+            {% for option in product.options %}{% include 'swatch' with option %}{% endfor %}
+          {% endunless %}
+        {% endif %}
+        <div class="hide">
+          <input type="number" id="Quantity-{{ product.id }}" name="quantity" value="1" min="1" class="product-form__input" pattern="[0-9]*">
+        </div>
+
+        <div class="product-form__item product-form__item--submit{% if section.settings.enable_payment_button %} product-form__item--payment-button{% endif %}{% if product.has_only_default_variant %} product-form__item--no-variants{% endif %}">
+          <button type="submit" name="add" id="AddToCart-{{ product.id }}" {% unless current_variant.available %}disabled="disabled"{% endunless %} class="btn quickshop-cart">
+            <span id="AddToCartText-{{ product.id }}">{% unless current_variant.available %}{{ 'products.product.sold_out' | t }}{% else %}{{ 'products.product.add_to_cart' | t }}{% endunless %}</span>
+          </button>
+        </div>
+      {% endform %}
+    {% endif %}
+</div>
+{% unless product == empty %}<script type="application/json" id="quickshopJson-{{ product.id }}">{{ product | json }}</script>{% endunless %}
+
+<script src="{{ 'quickshop.js' | asset_url }}"></script>
+<script type="text/javascript">
+	theme.productStrings = {
+    	addToCart: {{ 'products.product.add_to_cart' | t | json }},
+    	soldOut: {{ 'products.product.sold_out' | t | json }},
+    	unavailable: {{ 'products.product.unavailable' | t | json }}
+  	}
+    
+var Shopify = Shopify || {};
+Shopify.optionsMap = {};
+Shopify.updateOptionsInSelector = function(selectorIndex) {
+  switch (selectorIndex) {
+    case 0:
+      var key = 'root';
+      var selector = $('.quickshop-option-selector:eq(0)');
+      break;
+    case 1:
+      var key = $('.quickshop-option-selector:eq(0)').val();
+      var selector = $('.quickshop-option-selector:eq(1)');
+      break;
+    case 2:
+      var key = $('.quickshop-option-selector:eq(0)').val();  
+      key += ' / ' + $('.quickshop-option-selector:eq(1)').val();
+      var selector = $('.quickshop-option-selector:eq(2)');
+  }
+
+  var initialValue = selector.val();
+  //selector.empty();    
+  var availableOptions = Shopify.optionsMap[key];
+  /*for (var i=0; i<availableOptions.length; i++) {
+    var option = availableOptions[i];
+    var newOption = $('<option></option>').val(option).html(option);
+    selector.append(newOption);
+  }*/
+  $('.quickshopForm .swatch[data-option-index="' + selectorIndex + '"] .swatch-element').each(function() {
+    if ($.inArray($(this).attr('data-value'), availableOptions) !== -1) {
+      $(this).removeClass('soldout').find(':radio').removeAttr('disabled','disabled').removeAttr('checked');
+    } else {
+      $(this).addClass('soldout').find(':radio').removeAttr('checked').attr('disabled','disabled');
+    }
+  });
+  if ($.inArray(initialValue, availableOptions) !== -1) {
+    selector.val(initialValue);
+  }
+  selector.trigger('change');  
+  
+};
+Shopify.linkOptionSelectors = function(product) {
+  for (var i=0; i<product.variants.length; i++) {
+    var variant = product.variants[i];
+    if (variant.available) {
+      Shopify.optionsMap['root'] = Shopify.optionsMap['root'] || [];
+      Shopify.optionsMap['root'].push(variant.option1);
+      Shopify.optionsMap['root'] = Shopify.uniq(Shopify.optionsMap['root']);
+      if (product.options.length > 1) {
+        var key = variant.option1;
+        Shopify.optionsMap[key] = Shopify.optionsMap[key] || [];
+        Shopify.optionsMap[key].push(variant.option2);
+        Shopify.optionsMap[key] = Shopify.uniq(Shopify.optionsMap[key]);
+      }
+      if (product.options.length === 3) {
+        var key = variant.option1 + ' / ' + variant.option2;
+        Shopify.optionsMap[key] = Shopify.optionsMap[key] || [];
+        Shopify.optionsMap[key].push(variant.option3);
+        Shopify.optionsMap[key] = Shopify.uniq(Shopify.optionsMap[key]);
+      }
+    }
+  }
+  Shopify.updateOptionsInSelector(0);
+  if (product.options.length > 1) Shopify.updateOptionsInSelector(1);
+  if (product.options.length === 3) Shopify.updateOptionsInSelector(2);
+  $(".quickshop-option-selector:eq(0)").change(function() {
+    Shopify.updateOptionsInSelector(1);
+    if (product.options.length === 3) Shopify.updateOptionsInSelector(2);
+    return true;
+  });
+  $(".quickshop-option-selector:eq(1)").change(function() {
+    if (product.options.length === 3) Shopify.updateOptionsInSelector(2);
+    return true;
+  });
+};
+
+{% if product.available and product.options.size > 1 %}
+  var $addToCartForm = $('form[action="/cart/add"]');
+  if (window.MutationObserver && $addToCartForm.length) {
+    if (typeof observer === 'object' && typeof observer.disconnect === 'function') {
+      observer.disconnect();
+    }
+    var config = { childList: true, subtree: true };
+    var observer = new MutationObserver(function(){
+      observer.disconnect();
+    });  
+    observer.observe($addToCartForm[0], config);
+  }
+  Shopify.linkOptionSelectors(JSON.parse(document.getElementById('quickshopJson-{{product.id}}').innerHTML));
+{% endif %}
+</script>

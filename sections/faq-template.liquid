@@ -1,0 +1,116 @@
+<div class="faq-{% if section.settings.pagestyle == "style2" or template contains 'faq-style2' %}style2{% else %}style1{% endif %}">
+  <div id="faq">        	            
+    {% for block in section.blocks limit: section.blocks.size%}                 
+      {% if section.settings.pagestyle == 'style2' or template contains 'faq-style2' %}         
+        {% if block.type == 'faqsection' %}                   
+          {% if block.settings.sectiontitle != blank %}
+              <h3>{{block.settings.sectiontitle}}</h3>
+          {% endif %}         
+        {% endif %}    
+      {% endif %} 
+    
+      {% if block.type == 'faqs' %} 
+      <div class="faq-body">
+        <h4 class="panel-title">{{ block.settings.question}} </h4>
+        <div id="{{ block.id }}" class="panel-content">
+          {{ block.settings.answer}}
+        </div>
+      </div>
+      {% endif %}
+    
+    {% endfor %}
+  </div>
+</div>  
+
+<script type="text/javascript">
+window.addEventListener('load', function() {
+  {% if section.settings.pagestyle =='style1' %}
+    $(".faq-style1 #faq .panel-title").click(function() {
+        $(this).toggleClass("active");
+        $(this).next().slideToggle();
+    }); 
+   $(".faq-style1 #faq .faq-body:first-child .panel-title").addClass("active");
+  {% endif %} 
+  
+   $(".faq-style2 #faq .panel-title").off("click");
+});
+</script>
+
+{% schema %}
+  {
+    "name": "FAQ Page",
+	"max_blocks":50,
+    "settings": [
+	  {
+        "type": "paragraph",
+       	"content":"Add more content on this page from pages => Faqs page"
+      },
+	  {
+            "type": "select",
+            "id": "pagestyle",
+            "label": "Page Style",
+            "default": "style1",
+            "options": [
+              {
+                "value": "style1",
+                "label": "Style 1"
+              },
+              {
+                "value": "style2",
+                "label": "Style 2"
+              }
+            ]
+       },	 
+	 {
+        "type": "header",
+        "content": "Style2"
+      },
+	  {
+        "type": "color",
+        "id": "sec-title-bg",
+        "label": "Section Title Background",
+        "default": "#333"
+      },
+      {
+        "type": "color",
+        "id": "sec-title",
+        "label": "Section Title",
+        "default": "#eee"
+      }
+	],
+   "blocks":[
+     {
+        "type": "faqsection",
+        "name": "Section Title",
+		"settings": [
+          {
+            "type": "text",
+            "id": "sectiontitle",
+            "label": "Section Title"
+          }
+		]
+      },
+	  {
+	    "type":"faqs",
+		"name":"FAQs",
+		"settings":[			
+			{
+			"type":"text",
+			"id":"question",
+			"label":"Question"
+			},
+			{
+			"type":"textarea",
+			"id":"answer",
+			"label":"Answer"
+			}
+		 ]
+      }
+	]
+ }
+{% endschema %} 
+
+<style>
+  .faq-style2 #faq h3 {font-weight:600;	background:{{section.settings.sec-title-bg}}; color:{{section.settings.sec-title}}; }
+
+</style>

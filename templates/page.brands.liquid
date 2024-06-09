@@ -1,0 +1,20 @@
+{%- if settings.breadcrumb_pg -%}{%- include 'breadcrumb' -%}{%- else -%}<div class="topSpace"></div>{%- endif -%}
+<div class="page-width">
+  <h1 class="page-title">{{page.title}}</h1>
+  <div class="rte">{{ page.content }}</div>
+  {%- section 'brand-list' -%}
+</div>
+{% if settings.show_sticky_header %}
+<script>
+$(document).ready(function() {
+    $('.filterbrand a').on('click', function(e){
+      e.preventDefault();
+      var targetTab = $(this).attr('href'),
+        tabposition = $(targetTab).offset(),
+        headerHt = $("#headerWrapper").height(),
+        totalSpace = headerHt + 10;
+      $("html, body").animate({ scrollTop: tabposition.top - totalSpace }, 500);
+    });
+});
+</script>
+{% endif %}

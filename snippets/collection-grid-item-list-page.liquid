@@ -1,0 +1,32 @@
+{% if block.settings.custom_image != blank %}
+	{%- assign collection_image = block.settings.custom_image -%}
+{% elsif collection.image != blank %}
+	{%- assign collection_image = collection.image -%}
+{% elsif collection.products.first and collection.products.first.images != empty %}
+	{%- assign collection_image = collection.products.first.featured_image -%}
+{% else %}
+	{% assign collection_image = blank %}
+{% endif %}
+
+{%- assign img_url = collection_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+<div class="collection-grid-item">
+  <a href="{% if collection.empty? %}#{% else %}{{ collection.url }}{% endif %}" class="collection-grid-item__link">
+    <div class="img lazyload" {% if collection_image != blank %}data-bgset="{% include 'prgrid-img', image: collection_image %}" data-sizes="auto" data-parent-fit="contain" style="padding-bottom:{{ 1 | divided_by: collection_image.aspect_ratio | times: 100}}%;"{% endif %}>
+      {% if collection.empty? %}
+	      {% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
+    	  {{ 'collection-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
+      {% endif %}
+    </div>
+    <div class="details">
+        <h3 class="collection-grid-item__title {{section.settings.text_size}} {{ section.settings.font_weight}}">
+          {% if collection.empty? %}
+			{{ 'homepage.onboarding.collection_title' | t }}     
+          {% else %}
+            {% if block.settings.custom_name != blank %}{{ block.settings.custom_name }}{% else %}{{ collection.title }}{% endif %}
+          {% endif %}
+        </h3>
+        {% if section.settings.product_count %}<span class="counts">{{ 'collections.general.items_with_count' | t: count: collection.all_products_count }}</span>{% endif %}
+        {% if block.settings.collection_btn != blank %}<button class="btn" type="button">{{block.settings.collection_btn}}</button>{% endif %}
+    </div>
+  </a>
+</div>

@@ -1,0 +1,124 @@
+{%- capture topInfoBar -%} 
+<div class="top-bar {% if section.settings.topbarmobile %}small--hide{% endif %}">
+  <div class="page-width{% if section.settings.fullwidth %} fullwidth{% endif %}" id="carousel-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="carousel">
+   <div class="flex carousel top-info-bar" data-slick='{"slidesToShow": {{ section.settings.grid }},"slidesToScroll": 1, {%- if settings.rtl -%}"rtl": true,{%- endif -%} "infinite": true, "autoplay": true,"arrows": false, "autoplaySpeed": 5000, "responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": 1 }},{"breakpoint": 776,"settings":{"slidesToShow":1 }} ]}' >    
+    {% for block in section.blocks limit: section.blocks.size %}
+          {% if block.settings.title %}
+            <div class="flex-item {{ block.settings.align_text}}" {{ block.shopify_attributes }}>
+              <a href="{{ block.settings.url}}">{% if block.settings.image %}<img src="{{block.settings.image | img_url: '50x' }}" alt="" /> {% endif %}{{ block.settings.title}}</a>
+            </div>
+          {% endif %}
+        {% endfor %}
+      {% if section.blocks.size == 0 %}{% include 'no-blocks' %}{% endif %}
+    </div>
+  </div>
+</div>
+{%- endcapture -%}
+{{ topInfoBar | strip_newlines | remove: "  " | remove: "	" }}
+
+<style>	
+    {%- if settings.classic_header %}
+  		.template-index #shopify-section-top-information-bar {display:none;}
+    {%- endif -%}
+  .top-bar { background:{{section.settings.info_bg}}; }
+  .top-bar a,
+  .top-bar { color:{{ section.settings.text_clr}}; font-size:{{section.settings.info_font}}px;}
+  
+  .top-bar .slick-prev, 
+  .top-bar .slick-next { background:none;}
+  
+   .top-bar .slick-prev:before,
+  .top-bar .slick-next:before {  color:{{ section.settings.text_clr}}; }
+</style>
+
+{% schema %}
+  {
+    "name": "Top Information Bar",
+    "class": "index-section",   
+	"max_blocks": 4,
+	"settings":[				
+		{
+          "type": "checkbox",
+          "id": "fullwidth",
+          "label": "Fullwidth?",
+          "default": false
+        },
+		{ 
+          "type":"checkbox",
+          "id":"topbarmobile",
+          "label":"Hide in Mobile?",
+          "default":true,
+          "info":"Hide this option for mobile view"
+	    },
+		{
+          "type": "color",
+          "id": "info_bg",
+          "label": "Background",
+          "default": "#111"
+        },
+		{
+          "type": "color",
+          "id": "text_clr",
+          "label": "Text",
+          "default": "#fff"
+        },
+		{
+        "type": "range",
+        "id": "grid",
+        "label": "Number Of Column to display",
+        "default": 3,
+        "min": 1,
+        "max": 3,
+        "step": 1
+        },
+		  {
+        "type": "range",
+        "id": "info_font",
+        "label": "Font Size",
+        "default": 12,
+        "min": 10,
+        "max": 16,
+        "step": 1,
+        "unit": "px"
+      }
+	],
+    "blocks": [
+      {
+        "type": "text_block",
+        "name": "Column",
+        "settings": [         
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Upload Image"			
+		  }, 		 
+          {
+            "type": "textarea",
+            "id": "title",
+            "label": "Heading",
+            "default": "Add a title or tagline",
+		 	"info":"use <strong> for bold text, [Find icons here](http:\/\/adornthemes.com\/ad-icons\/)"
+          },
+		  {
+            "type": "select",
+            "id": "align_text",
+            "label": "Horizontal alignment",
+            "default": "center",
+            "options": [
+              {"value": "left", "label": "Left"},
+              {"value": "center", "label": "Centered"},
+              {"value": "right", "label": "Right"}
+            ]
+          },
+          {
+            "type": "url",
+            "id": "url",
+            "label": "URL"           
+          }         
+         
+        ]
+      }
+    ]    
+  }
+{% endschema %} 
+

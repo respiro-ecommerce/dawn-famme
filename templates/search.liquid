@@ -1,0 +1,57 @@
+{%- paginate search.results by 16 -%}
+<!-- breadcrumb -->
+{% include 'breadcrumb' %}
+
+<div class="page-width">
+	
+{% if search.results_count == 0 or search.performed == false %}
+    <div class="empty-page-content text-center">
+      <h1 class="h2">{{ 'general.search.title' | t }}</h1>
+      {% else %}
+      <div class="section-header text-center">
+        <h1 class="page-title">{{ 'general.search.results_with_count' | t: terms: search.terms, count: search.results_count }}</h1>
+        {% endif %}
+
+        {% if search.performed and search.results_count == 0 %}
+        <hr class="hr--small hr--invisible">
+        <p>{{ 'general.search.no_results_html' | t: terms: search.terms }}</p>
+        {% endif %}
+      </div>
+    </div>
+  
+  {%- assign isproducts = false -%}
+  {% for item in search.results %}
+      {% if item.object_type == 'product' %}
+          {%- assign isproducts = true -%}
+      {% endif %}
+  {% endfor %}	
+  
+  {% if search.performed %}
+      {% if isproducts %}
+          <div data-section-id="collection-template" id="collection-template" data-section-type="collection-template">
+              <div class="page-width" id="Collection">
+                  <div class="productList">
+                      <div class="grid grid--uniform grid-products grid--view-items">
+                          {% for item in search.results %}
+                          <div class="grid__item small--one-half medium--one-third large-up--one-quarter">{% include 'product-card-grid', product: item %}</div>
+                          {% endfor %}
+                      </div>
+                  </div>
+              </div>
+          </div>
+      {% else %}
+          <div class="page-width list-view-items">
+          {% for item in search.results %}
+              <div class="grid__item medium-up--one-third">{% include 'blog-card-grid', article: item %}</div>
+          {% endfor %}
+          </div>
+      {% endif %}
+    </div>
+
+    {% if paginate.pages > 1 %}
+      {%- include 'pagination' -%}
+    {% endif %}
+
+{% endif %}
+
+{%- endpaginate -%}

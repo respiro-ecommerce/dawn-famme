@@ -1,0 +1,252 @@
+<div class="collection-banner top{% if collection.image %} with-image{% endif %}"{% if section.settings.show_collection_image and collection.image %} style="background-image:url({{ collection.image | img_url: '1920x' }});"{% endif %}>
+    <div class="block-ttl">
+      <h1 class="collection-title" itemprop="name">{{ collection.title }}</h1>
+    </div>
+</div>  
+{%- if settings.breadcrumb_cl -%}{%- include 'breadcrumb' -%}{%- else -%}<div class="topSpace"></div>{%- endif -%}
+
+<div class="collection-box {{section.settings.style}}{% unless section.settings.section_width %} page-width{% else %} fullwidth-{{section.id}} fullwidth{% endunless %}" id="{{ section.id }}"
+     data-section-id="{{ section.id }}" {% if section.settings.masonary_grid %}data-section-type="masonary"{% endif %}>
+  {% if collection.description != blank %}<div class="rte collection-description top">{{ collection.description }}</div>{% endif %}  
+  {% case section.settings.grid %}
+    {% when 2 %}{%- assign grid_ds = 'large-up--one-half' -%}
+    {% when 3 %}{%- assign grid_ds = 'large-up--one-third' -%}
+    {% when 4 %}{%- assign grid_ds = 'large-up--one-quarter' -%}
+    {% when 5 %}{%- assign grid_ds = 'large--one-quarter widescreen--one-fifth' -%}
+    {% when 6 %}{%- assign grid_ds = 'large--one-fifth widescreen--one-sixth' -%}
+    {% when 7 %}{%- assign grid_ds = 'large--one-fifth widescreen--one-seventh' -%}
+  {% endcase %}
+
+  {% case section.settings.tablet-grid %}
+    {% when 2 %}{%- assign grid_tb = 'medium--one-half' -%}
+    {% when 3 %}{%- assign grid_tb = 'medium--one-third' -%}
+    {% when 4 %}{%- assign grid_tb = 'medium--one-quarter' -%}
+    {% when 5 %}{%- assign grid_tb = 'medium--one-fifth' -%}
+  {% endcase %}
+
+  {% case section.settings.mobile-grid %}
+    {% when 1 %}{%- assign grid_mb = 'small--one-whole' -%}
+    {% when 2 %}{%- assign grid_mb = 'small--one-half' -%}
+    {% when 3 %}{%- assign grid_mb = 'small--one-third' -%}
+  {% endcase %}
+  
+  <div class="grid-mr-{{ section.settings.grid-spacing}}">
+    <div class="grid collection-grid{% if section.settings.masonary_grid %} grid-masonary{% else %} grid--uniform{% endif %} {{section.settings.style}} pd-{{ section.settings.grid-spacing}}">
+      {% if section.settings.masonary_grid %}<div class="grid-sizer-{{section.id}} {{grid_mb}} {{grid_tb}} {{grid_ds}}"></div>{% endif %}
+      	{%- assign navName = collection.handle -%}
+      	{% for link in linklists[navName].links %}
+            <div class="grid__item ms-item {{grid_mb}} {{grid_tb}} {{grid_ds}}">
+              {%- assign linkUrl = link.url | split: "/" | last -%}
+              {% include 'collection-grid-item-list-page', collection: collections[linkUrl] %}
+            </div>
+        {% endfor %}
+    </div>
+  </div>
+</div>
+<style>
+  .fullwidth-{{section.id}} { padding-left:{{ section.settings.pad-desk}}px; padding-right:{{ section.settings.pad-desk}}px; }
+  .collection-banner {background-color:{{section.settings.clr_bg}}; height:{{section.settings.bheight}}px;}
+  .collection-title, .collection-description { color:{{section.settings.clr_text}}; }
+  .collection-box .collection-grid-item .collection-grid-item__title,
+  .collection-box .collection-grid-item .counts { color:{{ section.settings.collection_ttl_hm}}; }
+  .collection-box .collection-grid-item .details { background:{{section.settings.collection_ttl_bg_hm | color_modify: 'alpha', section.settings.collection_ttl_opt_hm}}; }
+  @media only screen and (max-width: 1024px) { 
+    .fullwidth-{{section.id}} { padding-left:{{ section.settings.pad-ipad}}px; padding-right:{{ section.settings.pad-ipad}}px; }
+    .collection-banner { height:{{section.settings.bheightipad}}px; }
+  }
+  @media only screen and (max-width: 767px) { 
+    .fullwidth-{{section.id}} { padding-left:{{ section.settings.pad-mbl}}px; padding-right:{{ section.settings.pad-mbl}}px; }
+    .collection-banner { height:{{section.settings.bheightmob}}px;}
+    .collection-box .box-{{section.id}} .collection-grid-item .details { background:{{section.settings.collection_ttl_bg_hm_responsive}}; }
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Sub Collections List Page",
+    "settings": [
+	 {
+		"type":"checkbox",
+		"id":"section_width",
+		"label":"Fullwidth?",
+		"default": true
+	  },
+	  {
+        "type": "paragraph",
+        "content": "Left/Right Padding : Fullwidth Section Only==="
+      }, 	
+      {
+        "type": "range",
+        "id": "pad-desk",
+        "label": "Desktop",
+        "default": 55,
+        "min": 0,
+        "max": 100,
+        "step": 1
+      },
+      {
+        "type": "range",
+        "id": "pad-ipad",
+        "label": "Tablet",
+        "default": 15,
+        "min": 0,
+        "max": 30,
+        "step": 1
+      },
+      {
+        "type": "range",
+        "id": "pad-mbl",
+        "label": "Mobile",
+        "default": 10,
+        "min": 0,
+        "max": 20,
+        "step": 1
+      },
+	  {
+        "type": "header",
+        "content": "Collection Banner and Title",
+		"info":"display collection name, description or image. You can upload image from each collection or select background color"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_collection_image",
+        "label": "Show Collection Image?",
+        "default": true
+      }, 	
+ 	  {
+        "type": "range",
+        "id": "bheight",
+        "label": "Banner Height : Desktop",
+        "default": 300,
+        "min": 50,
+        "max": 400,
+        "step": 10,
+		"unit":"px"		
+      }, 
+ 	  {
+        "type": "range",
+        "id": "bheightipad",
+        "label": "Banner Height : Tablet",
+        "default": 200,
+        "min": 50,
+        "max": 400,
+        "step": 10,
+		"unit":"px"		
+      }, 	
+     {
+        "type": "range",
+        "id": "bheightmob",
+        "label": "Banner Height : Mobile",
+        "default": 100,
+        "min": 50,
+        "max": 400,
+        "step": 10,
+		"unit":"px"		
+      },
+      {
+        "type": "color",
+        "id": "clr_text",
+        "label": "Title Text",
+        "default": "#000"
+      },
+      {
+        "type": "color",
+        "id": "clr_bg",
+        "label": "Background",
+        "default": "#eee"
+      },
+ 	  {
+        "type": "header",
+        "content": "Appearance"
+      },
+      {
+        "type": "select",
+        "id": "style",
+        "label": "Box style",
+        "default": "style3",
+        "options": [
+			{ "value": "style1", "label": "Style 1" },
+			{ "value": "style2", "label": "Style 2" },
+			{ "value": "style3", "label": "Style 3" },
+			{ "value": "style4", "label": "Style 4" }
+        ]
+      },
+	  {
+		"type":"checkbox",
+		"id":"product_count",
+		"label":"Show Products Count",
+		"default": true
+	  },  
+	  {
+		"type":"checkbox",
+		"id":"masonary_grid",
+		"label":"Masonary Grid",
+		"default": false
+	  },
+	  {
+        "type": "range",
+        "id": "grid-spacing",
+        "label": "Grid Spacing",
+        "default": 4,
+        "min": 0,
+        "max": 30,
+        "step": 2,
+		"unit":"px",
+		"info":"Space between two box/grid"
+      },	 
+	   {
+        "type": "paragraph",
+        "content": "=== Collections per row ==="
+      }, 	
+      {
+        "type": "range",
+        "id": "grid",
+        "label": "Desktop",
+        "default": 4,
+        "min": 2,
+        "max": 7,
+        "step": 1
+      },
+      {
+        "type": "range",
+        "id": "tablet-grid",
+        "label": "Tablet",
+        "default": 3,
+        "min": 1,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "type": "range",
+        "id": "mobile-grid",
+        "label": "Mobile",
+        "default": 2,
+        "min": 1,
+        "max": 3,
+        "step": 1
+      },           
+	   {
+        "type": "color",
+        "id": "collection_ttl_hm",
+        "label": "Title",
+        "default": "#fff"
+      },
+      {
+        "type": "color",
+        "id": "collection_ttl_bg_hm",
+        "label": "Title Background",
+        "default": "#000"
+      },
+      {
+        "type": "range",
+        "id": "collection_ttl_opt_hm",
+        "min": 0,
+        "max": 1,
+        "step": 0.1,
+        "label": "Background Opacity",
+        "unit": "%",
+        "default": 0.7
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,225 @@
+{%- capture storeFeatures -%}
+<div class="content-indent {{ section.settings.top-offeset}}{% if section.settings.hide_mobile %} small--hide{% endif %}">  
+  {% if section.settings.section_cov %} <div class="section-cover small-pd" style="background-color:{{section.settings.sec_bg_clr}};"> {% endif%}
+  	<div class="page-width wow fadeIn">       
+   
+   {%- if section.settings.title != blank  or section.settings.subtitle != blank -%}
+      <div class="sec-ttl {{ settings.title_align}}">
+      <h3 class="h3">{{ section.settings.title }}</h3>     
+      {%- if section.settings.subtitle != blank -%}<span>{{section.settings.subtitle}}</span>{%- endif -%}
+    </div>
+   {% endif %}
+
+      <ul class="flex store-info {{ section.settings.style}}">
+          {% for block in section.blocks limit: section.blocks.size %}
+          <li class="item" {{ block.shopify_attributes }}>
+			<a class="{% if section.settings.style == 'style2' %} flex text-left{% else %} medium-up--text-center{% endif %}" {% if block.settings.texturl != blank %}href="{{block.settings.texturl}}"{% endif %}>
+              	{% if section.settings.enable_icons %}
+            		{% if section.settings.icon-type == 'image' %}
+            			<img class="ad lazyload" data-src="{{block.settings.image | img_url: '200x' }}" style="width:{{section.settings.iconsize}}px;" />
+            		{% else %}
+            			<i class="ad {{ block.settings.icons}}" aria-hidden="true" style="color:{{section.settings.icons_clr}};font-size:{{section.settings.iconsize}}px;width:{{section.settings.iconsize | plus: 10}}px;"></i>
+            		{% endif %}
+            	{% endif %}
+            	<div class="text">
+                	{% if block.settings.title %}<h5>{{ block.settings.title}}</h5>{% endif %}
+                	{% if block.settings.text %}<span class="sub-text"> {{ block.settings.text}} </span>{% endif %} 
+            	</div>
+            </a>
+          </li>
+          {% endfor %}
+      </ul>
+      {% if section.blocks.size == 0 %}
+      {% include 'no-blocks' %}
+      {% endif %} 
+  </div>
+  {% if section.settings.section_cov %} </div> {% endif%}
+</div>
+
+<style>
+  .store-info h5, .store-info,
+  .store-info a { color:{{ section.settings.text_clr }}; }
+  .store-info li + li { border-left:1px dotted {{section.settings.border_sep}}; }
+</style>
+{%- endcapture -%}
+{{storeFeatures | strip_newlines | remove: "  " | remove: "	" }}
+{% schema %}
+  {
+    "name": "Store Features",
+    "class": "index-section",   
+	"max_blocks": 4,
+	"settings":[
+	 {
+           "type": "checkbox",
+           "id": "hide_mobile",
+           "label": "Hide Section in Mobile?",
+           "default": false
+     },
+	 {
+            "type": "select",
+            "id": "top-offeset",
+            "label": "Top OffSet",
+            "default": "default",
+            "options": [
+              {
+                "value": "default",
+                "label": "Default"
+              },
+              {
+                "value": "small",
+                "label": "Small"
+              },
+			  {
+                "value": "none",
+                "label": "None"
+              }
+			]
+        },		
+		{
+        "type": "text",
+        "id": "title",
+        "label": "Heading"       
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Sub Heading"         
+        },
+		{
+            "type": "select",
+            "id": "style",
+            "label": "Select Style",
+            "default": "style1",
+            "options": [
+              {
+                "value": "style1",
+                "label": "Style 1"
+              },
+              {
+                "value": "style2",
+                "label": "Style 2"
+              }			  
+			]
+        },
+ 		{
+            "type": "checkbox",
+            "id": "enable_icons",
+            "label": "Show Icons?",
+            "default": true
+        },
+		{
+            "type": "select",
+            "id": "icon-type",
+            "label": "Icon Type",
+            "default": "icon",
+            "options": [
+              {
+                "value": "image",
+                "label": "Image"
+              },
+              {
+                "value": "icon",
+                "label": "Font Icon"
+              }			  
+			]
+        },
+        {
+          "type": "text",
+          "id": "iconsize",
+          "label": "Icon size",
+		  "default": "40"
+        },
+		{
+        "type": "header",
+        "content":"Appearance"
+        },
+		{
+            "type": "checkbox",
+            "id": "section_cov",
+            "label": "Use Background?",
+            "default": true
+        },
+		 {
+            "type": "color",
+            "id": "sec_bg_clr",
+            "label": "Background",
+			"default":"#fafafa"	
+		 },
+        {
+            "type": "color",
+            "id": "icons_clr",
+            "label": "Icon",
+			"default":"#a9a9a9"	
+		 },
+		 {
+            "type": "color",
+            "id": "text_clr",
+            "label": "Text",
+			"default":"#111"	
+		 },
+		 {
+            "type": "color",
+            "id": "border_sep",
+            "label": "Separation Border",
+			"default":"#eee"	
+		 }
+	],
+    "blocks": [
+      {
+        "type": "text_block",
+        "name": "Column",
+        "settings": [
+		  {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "icons",
+            "label": "Icon class name",
+			"default":"ad-truck-l",
+			"info":"[Find icons here](http:\/\/adornthemes.com\/ad-icons\/)"
+
+		  }, 		 
+          {
+            "type": "textarea",
+            "id": "title",
+            "label": "Heading",
+            "default": "Add a title or tagline",
+		    "info":"use <strong>your text here</strong> to make bold font"
+          },
+          {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text",
+            "default":"<p>Use this text to display your store information</p>"
+          },
+		  {
+            "type": "url",
+            "id": "texturl",
+            "label": "Url"            
+          }   
+         
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Store Info",
+        "category": "4. Text",
+        "blocks": [
+          {
+            "type": "text_block"
+          },
+          {
+            "type": "text_block"
+          },
+          {
+            "type": "text_block"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

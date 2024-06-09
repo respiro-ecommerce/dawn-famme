@@ -1,0 +1,70 @@
+{%- if settings.breadcrumb_blog -%}{%- include 'breadcrumb' -%}{%- else -%}<div class="topSpace"></div>{%- endif -%}
+
+{%- assign new_comment = false -%}
+{% if comment and comment.created_at %}
+  {%- assign new_comment = true -%}
+  {%- assign new_comment_id = comment.id -%}
+{% endif %}
+
+{% if new_comment %}
+  {%- assign duplicate_comment = false %}
+  {% for comment in article.comments %}
+    {% if comment.id == new_comment_id %}
+      {%- assign duplicate_comment = true %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+
+  {% if duplicate_comment %}
+    {%- assign number_of_comments = article.comments_count -%}
+  {% else %}
+    {%- assign number_of_comments = article.comments_count | plus: 1 -%}
+  {% endif %}
+{% else %}
+  {%- assign number_of_comments = article.comments_count -%}
+{% endif %}
+
+<article class="page-width">
+  <div class="grid">{% section 'article-template' %}</div>
+</article>
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "articleBody": "{{ article.content | strip_html | escape }}",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ shop.url }}{{ page.url }}"
+  },
+  "headline": "{{ article.title }}",
+  {% if article.excerpt != blank %}
+    "description": "{{ article.excerpt | strip_html }}",
+  {% endif %}
+  {% if article.image %}
+    {% assign image_size = article.image.width | append: 'x' %}
+    "image": [
+      "https:{{ article | img_url: image_size }}"
+    ],
+  {% endif %}
+  "datePublished": "{{ article.published_at | date: '%Y-%m-%dT%H:%M:%SZ' }}",
+  "dateCreated": "{{ article.created_at | date: '%Y-%m-%dT%H:%M:%SZ' }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ article.author }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    {% if settings.share_image %}
+      {% assign image_size = article | img_url: 'master' | append: 'x' %}
+      "logo": {
+        "@type": "ImageObject",
+        "height": "{{ settings.share_image.height }}",
+        "url": "https:{{ settings.share_image | img_url: image_size }}",
+        "width": "{{ settings.share_image.width }}"
+      },
+    {% endif %}
+    "name": "{{ shop.name }}"
+  }
+}
+</script>

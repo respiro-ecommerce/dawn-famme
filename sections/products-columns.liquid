@@ -1,0 +1,146 @@
+{%- capture productsColumn -%}
+<div class="content-indent {{ section.settings.top-offeset}}">
+   {% if section.settings.section_cov %} <div class="section-cover" style="background-color:{{section.settings.sec_bg_clr}};"> {% endif%}  
+  		<div class="page-width collection-columns" id="{{ section.id }}"   data-section-id="{{ section.id }}">
+      		  <!-- collection column start -->	
+              {% case section.settings.grid %}
+              {% when '2' %}
+                {%- assign grid_item_ds = 'small--one-whole medium-up--one-half large-up--one-half' -%}   			 
+              {% when '3' %}
+                {%- assign grid_item_ds = 'small--one-whole medium-up--one-half large-up--one-third' -%}      			  
+              {% when '4' %}
+                {%- assign grid_item_ds = 'small--one-whole medium-up--one-half large-up--one-quarter' -%}      			  
+              {% endcase %}
+
+              <div class="grid">
+              {% for block in section.blocks limit: section.blocks.size %}
+                <div class="grid__item {{grid_item_ds}}">
+                {%- assign collection = collections[block.settings.collection] -%}
+                  <h4 class="column-ttl"><a class="tablink" href="#collection-{{ block.id }}">{{ block.settings.tab_name }}</a></h4>
+                  <div id="collection-{{ block.id }}" class="grid-products"> {% if block.settings.collection != blank %}
+                    <div class="grid">
+                      {% for product in collection.products limit: section.settings.rows %}
+                          <div class="grid__item item">{% include 'product-card-grid-columns', grid_image_width: image_size %}</div>
+                        {% else %}
+                          {% for i in (1..section.settings.rows) %}
+                          <div class="grid__item item">
+                              <div class="grid-view-item"> <a href="#" class="grid-view-item__link">
+                                  <div class="grid-view-item__image"> {% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
+                                      {{ 'product-' | append: current | placeholder_svg_tag: 'placeholder-svg' }} </div>
+                                  <div class="h4 grid-view-item__title">{{ 'homepage.onboarding.product_title' | t }}</div>
+                                  <div class="grid-view-item__meta"> {% include 'product-price' %} </div>
+                                  </a>
+                              </div>
+                          </div>
+                          {% endfor %}
+                        {% endfor %}
+                    </div>
+                    {% else %}
+                    <p class="text-left">Please select collection to display the products</p>
+                    {% endif %}
+                </div>
+                </div>
+              {% endfor %}
+              </div>      	
+      <!-- collection tab end --> 	
+  	</div>
+  {% if section.settings.section_cov %}</div> {% endif%}
+</div>
+{%- endcapture -%}
+{{productsColumn | strip_newlines | remove: "  " | remove: "	" }}
+{% schema %}
+  {
+    "name": "Products Columns",
+    "class": "index-section",
+    "max_blocks": 8,
+    "settings": [ 
+	  {
+            "type": "select",
+            "id": "top-offeset",
+            "label": "Top OffSet",
+            "default": "default",
+            "options": [
+              {
+                "value": "default",
+                "label": "Default"
+              },
+              {
+                "value": "small",
+                "label": "Small"
+              },
+			  {
+                "value": "none",
+                "label": "None"
+              }
+			]
+      }, 		
+	  {
+        "type": "checkbox",
+        "id": "section_cov",
+        "label": "Use Background?",
+        "default": false
+      },
+	  {
+        "type": "color",
+        "id": "sec_bg_clr",
+        "label": "Background",
+		"default":"#fafafa",
+		"info":"select light color"
+	  },
+	  {
+        "type": "select",
+        "id": "grid",
+        "label": "Columns Per Row",
+        "default": "3",
+        "options": [        
+          { "value": "2", "label": "2" },
+          { "value": "3", "label": "3" },
+          { "value": "4", "label": "4" }          
+        ]
+      },
+	  {
+        "type": "text",
+        "id": "rows",
+        "label": "Products Per Column",
+        "default": "4"
+      }
+	],
+	"blocks": [
+      {
+        "type": "collection_column",
+        "name": "Collection",
+        "settings": [			 
+ 		{
+          "type": "textarea",
+          "id": "tab_name",
+          "label": "Column Name",
+          "default": "Column Name",
+		  "info":"Use <strong>text here</strong> to make tab bold"
+        },
+       	 {
+          "id": "collection",
+          "type": "collection",
+          "label": "Select Collection"
+    	  }          
+      	]
+     }
+	],
+    "presets": [
+      {
+        "name": "Products Columns",
+        "category": "1. Products",       
+        "blocks": [
+          {
+            "type": "collection_column"
+          },
+          {
+            "type": "collection_column"
+          },
+          {
+            "type": "collection_column"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %} 

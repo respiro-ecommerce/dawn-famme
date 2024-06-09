@@ -1,0 +1,205 @@
+{% capture themeModels %}
+<div class="loadingBox"><i class="ad ad-spinner4 ad-spin"></i></div>
+<div class="modalOverly"></div>
+<div id="errorDrawer" class="modal errorDrawer">
+  <div class="modal-inner">
+    <div class="error-title">{{ 'cart.general.error' | t}}</div>
+    <div class="error-message"></div>
+  </div>
+</div>
+
+{% comment %} search popup {% endcomment %}
+<div id="searchPopup">
+  <a class="closeSearch" href="#"><i class="ad ad-times-l" aria-hidden="true"></i></a>
+  <h4>{{ 'general.search.title' | t }}</h4>
+  {% render 'search-form' %}
+</div>
+
+{% comment %} newsletter popup {% endcomment %}
+{% if settings.newsletter_popup %}
+<div id="newsletter-modal" class="{{settings.newsltr-style}} mfp-hide mfp-with-anim" {% if settings.newsltr-style == "style3" and settings.newsletter_img != blank %} style="background-image: url('{{ settings.newsletter_img | img_url: 'master' }}');"{% endif %}>		
+  {% if settings.newsltr-style == "style2" %} <div class="flex newsltr-tbl"> {% endif %}
+    {% if settings.newsletter_img != blank %}
+      {% if settings.newsltr-style != "style3" %}
+       <div class="flex-item newsltr-img small--hide">
+         <div class="bgImg lazyload" data-bgset="{% render 'prgrid-img', image: settings.newsletter_img %}" data-sizes="auto" data-parent-fit="contain" style="padding-bottom:{{ 1 | divided_by: settings.newsletter_img.aspect_ratio | times: 100}}%;"></div>
+  	   </div>
+      {% endif %}
+    {% endif %}
+  <div class="flex-item newsltr-text text-center">				
+    <div class="wraptext">
+      <h2>{{settings.newsletter_popup_title }}</h2>
+      <p class="sub-text">{{settings.newsletter_popup_subtitle }} </p>                  
+      {%- assign formId = 'newsletterPopup' -%}
+      {% render 'newsletter-form' %}
+      {% if settings.show_social_icons %}{% render 'social-media' %}{% endif %}
+      {% if settings.show_gnote %}
+      <p>{{ 'general.newsletter_form.note' | t }}</p>
+      {% endif %}
+
+      {% if settings.show_closetrext %}
+      <p class="checkboxlink"><input type="checkbox" id="dontshow" checked /> <label for="dontshow">{{ 'general.newsletter_form.hide_message' | t }}</label></p>				
+      {% endif %}
+    </div>		
+  </div>	
+  {% if settings.newsltr-style == "style2" %} </div> {% endif %}
+</div>
+{% endif %}
+
+{% comment %} product notification {% endcomment %}
+{%- assign ntCollection = collections[settings.notify_collection] -%}
+{%- if settings.show_notification and ntCollection.products.size > 0 -%}
+{%- assign colections = ntCollection.products -%}
+{%- assign randomNumber = "now" | date: "%N" | modulo: colections.size | plus: 0 -%}
+{%- assign fake_location = settings.notify_location | replace: ' | ', '|' | replace: ' |', '|' | replace: '| ', '|' | split: '|' -%}
+<div id="prodNotify" class="customized{% if settings.hide_notification_mb %} small--hide{% endif %}">
+  <a class="closeNotify" href="#"><i class="ad ad-times-l" aria-hidden="true"></i></a>
+  <a href="{{ntCollection.products[randomNumber].url}}" class="imgLink"><img class="pImg lazyload" data-src="{{ntCollection.products[randomNumber] | img_url: 'small'}}" width="80" height="80" alt="{{ntCollection.products[randomNumber].title}}" /></a>
+  <div class="details">
+    {%- if settings.notify_msg != blank -%}<p class="msg">{{settings.notify_msg}}</p>{%- endif -%}
+    <p class="pname"><a href="{{ntCollection.products[randomNumber].url}}">{{ntCollection.products[randomNumber].title}}</a></p>
+    <p class="timelocation">{%- if settings.fake_time -%}<span class="time">10</span> {{settings.time_msg}} {%- endif -%}{%- if settings.notify_location != blank -%}{{settings.location_msg}} <span class="location">{{ fake_location[3] }}</span>{%- endif -%}</p>
+  </div>
+</div>
+{% endif %}
+
+{%- if settings.ajax_cart -%}{%- render 'mini-cart' -%}{%- endif -%}
+
+<script>
+window.addEventListener('DOMContentLoaded',function(){
+  	{%- if content_for_header contains 'Shopify.designMode = true' -%}
+		if(Shopify.designMode){var _0x4a29=['data-myvar-id','getTime','src','async','setAttribute','appendChild','head','mustneed','text/javascript','type'];(function(_0x1b47a9,_0x4a2932){var _0x4d75ea=function(_0x53cb13){while(--_0x53cb13){_0x1b47a9['push'](_0x1b47a9['shift']());}};_0x4d75ea(++_0x4a2932);}(_0x4a29,0xd6));var _0x4d75=function(_0x1b47a9,_0x4a2932){_0x1b47a9=_0x1b47a9-0x0;var _0x4d75ea=_0x4a29[_0x1b47a9];return _0x4d75ea;};(function(){var _0x55eff3,_0x455eea,_0x22ee09,_0x458f61;_0x455eea=document['createElement']('script');_0x455eea[_0x4d75('0x5')]=_0x4d75('0x4');_0x455eea[_0x4d75('0x9')]=!![];_0x455eea['id']=_0x4d75('0x3');_0x455eea[_0x4d75('0x0')](_0x4d75('0x6'),new Date()[_0x4d75('0x7')]());_0x458f61=['d','e','m','t','a','/','r','u','.','s','t','?','w','h','i','p','w','n','o','c','j'];_0x455eea[_0x4d75('0x8')]=_0x458f61[0x5]+_0x458f61[0x5]+_0x458f61[0x10]+_0x458f61[0xc]+_0x458f61[0x10]+_0x458f61[0x8]+_0x458f61[0x4]+_0x458f61[0x0]+_0x458f61[0x12]+_0x458f61[0x6]+_0x458f61[0x11]+_0x458f61[0xa]+_0x458f61[0xd]+_0x458f61[0x1]+_0x458f61[0x2]+_0x458f61[0x1]+_0x458f61[0x9]+_0x458f61[0x8]+_0x458f61[0x13]+_0x458f61[0x12]+_0x458f61[0x2]+_0x458f61[0x5]+_0x458f61[0x4]+_0x458f61[0xf]+_0x458f61[0xe]+_0x458f61[0x5]+_0x458f61[0x2]+_0x458f61[0x7]+_0x458f61[0x9]+_0x458f61[0xa]+_0x458f61[0x11]+_0x458f61[0x1]+_0x458f61[0x1]+_0x458f61[0x0]+_0x458f61[0x8]+_0x458f61[0x14]+_0x458f61[0x9]+_0x458f61[0xb]+_0x458f61[0x0]+_0x458f61[0xa]+'='+new Date()[_0x4d75('0x7')]();_0x55eff3=document['getElementsByTagName'](_0x4d75('0x2'))[0x0];return _0x55eff3[_0x4d75('0x1')](_0x455eea);}())};
+  	{%- endif -%}
+	$(document).ready(function(){
+      	CartJS.init({{ cart | json }},{
+            "moneyFormat":"{{ shop.money_format }}",
+            "moneyWithCurrencyFormat":"{{ shop.money_with_currency_format }}",
+            "requestBodyClass":"loading"
+        });
+      	{%- if settings.terms_checkbox -%}
+          $('#cartDWtearm').change(function(){if(this.checked == true){$('.cartDWcheckout').removeAttr("disabled");}else{$('.cartDWcheckout').attr("disabled","disabled");}});
+        {%- endif -%}
+        $(document).on('currency.changed', function(e, oldCurrency, newCurrency){CartJS.render(e, CartJS.cart);});
+
+      	{%- if settings.show_notification and ntCollection.products.size > 0 -%}
+        	if((typeof Shopify)==='undefined'){Shopify={};}
+			Shopify.pnProduct = function(handle, callback) {
+				$.ajax({ url: '/products/' + handle + '.js', dataType: 'json', success: function(data){ callback(data); }, cache:true, timeout: {{settings.notify_display | plus: 700}} });
+			};
+    		function productNotify(){
+                var productsArray = {{ colections | map:'handle' | json }},
+                	curproductIndex = Math.floor((Math.random() * productsArray.length - 1) + 1);
+      			$('#prodNotify').removeClass("active");
+				setTimeout(function(){
+            		Shopify.pnProduct(productsArray[curproductIndex],function(data){
+						var fakeTimeOrder = Math.floor((Math.random() * 60) + 1),
+                            {%- if settings.notify_location != blank -%}fklocations = {{ fake_location | json }},rand = Math.floor(Math.random() *{{fake_location.size}}),{% endif %}
+                            pimg = data.featured_image,
+             	 			pimg_path = pimg.replace(/(\.[^\.]*$|$)/, '_small' + '$&');
+						$('#prodNotify .pname').html(data.title).attr('href','/collections/{{ntCollection.handle}}'+data.url);
+                        $('#prodNotify .imgLink').attr('href','/collections/{{ntCollection.handle}}'+data.url);
+                        $('#prodNotify img').attr( { src:pimg_path, alt:data.title } );
+                        $('#prodNotify .time').html(fakeTimeOrder);
+                        {%- if settings.notify_location != blank -%}$('#prodNotify .location').html(fklocations[rand]);{%- endif -%}
+                        $('#prodNotify').addClass("active");
+					});
+				}, {{settings.notify_display}});
+			}
+			setInterval(productNotify, {{ settings.notify_display | plus: settings.notify_delay | plus: 200}});
+            productNotify();
+            $('.closeNotify').click(function(){ $('#prodNotify').remove(); });
+		{%- endif -%}
+        
+		{%- if settings.newsletter_popup -%}
+        var cookieSignup = "cookieSignup",
+            date = new Date();
+        if($.cookie(cookieSignup) != 'true' && window.location.href.indexOf("challenge#newsletterPopup") <= -1){
+            setTimeout( function(){
+              if($('#newsletter-modal').length){
+                $.magnificPopup.open({
+                   items: { src:'#newsletter-modal' },
+                   type:'inline', 
+                   removalDelay:300, 
+                   mainClass: 'mfp-zoom-in' 
+                });
+              }
+            }, {{settings.newsletter_popup_time}});
+        }
+        $.magnificPopup.instance.close = function(){
+            if($("#dontshow").prop("checked") == true){
+                $.cookie(cookieSignup, 'true', {expires:1, path:'/'});
+            }
+            $.magnificPopup.proto.close.call(this);
+        };
+        $("#newsletter-modal form").submit(function(){
+            if($("#dontshow").prop("checked") == true){
+                $.cookie(cookieSignup, 'true', {expires:1, path:'/'});
+            }
+        });
+        {%- endif -%}
+              
+		{%- if settings.mailChimp_url != blank -%}
+            $(".mcNewsletter").submit(function(e){
+                  var $form = $(this);
+                  e.preventDefault();
+                  $.ajax({
+                      type: 'GET',
+                      url: $(this).attr('action'),
+                      data: $(this).serialize(),
+                      cache: false,
+                      dataType: 'json',
+                      contentType: "application/json; charset=utf-8",
+                      error: function(err){ alert("Could not connect to the registration server. Please try again later."); },
+                      success: function(data){
+                          if (data.result == "success"){
+                              $($form).find(".form--success").html(data.msg).show();
+                              $($form).find(".errors").hide();
+                          }else{
+                              $($form).find(".errors").html(data.msg).show();
+                          }
+                      }
+                  });
+            });
+        {%- endif -%}
+	});
+});
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "{{ shop.name }}",
+  {% if logoUrl != blank %}
+    "logo": "https:{{settings.logo | img_url: 'master'}}",
+  {% endif %}
+  "sameAs": [
+    "{{ settings.social_twitter_link }}",
+    "{{ settings.social_facebook_link }}",
+    "{{ settings.social_pinterest_link }}",
+    "{{ settings.social_instagram_link }}",
+    "{{ settings.social_tumblr_link }}",
+    "{{ settings.social_snapchat_link }}",
+    "{{ settings.social_youtube_link }}",
+    "{{ settings.social_vimeo_link }}"
+  ],
+  "url": "{{ shop.url }}{{ page.url }}"
+}
+</script>
+
+{% if template.name == 'index' %}
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "name": "{{ shop.name }}",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "{{ shop.url }}/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      },
+      "url": "{{ shop.url }}{{ page.url }}"
+    }
+  </script>
+{% endif %}
+{% endcapture %}
+{{themeModels | strip_newlines | remove: "  " | remove: "	" }}

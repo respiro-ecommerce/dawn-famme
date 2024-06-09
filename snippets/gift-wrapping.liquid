@@ -1,0 +1,66 @@
+{% assign product = all_products[section.settings.gift_product] %}
+{% assign productPrice = product.price | money %}
+{% assign id = product.selected_or_first_available_variant.id %}
+{% if product.title != blank %}
+<div id="is-a-gift" class="clearfix">
+  <p class="cart-options-ttl">
+    <input type="hidden" name="attributes[gift-wrapping]" value="" />
+    <input id="gift-wrapping" class="custCheck" type="checkbox" name="attributes[gift-wrapping]" value="yes" {% if cart.attributes.gift-wrapping %} checked="checked"{% endif %} />             
+    {% assign giftmsg = section.settings.gift-wrap-text | replace: "$", productPrice %}
+    <label for="gift-wrapping"><span class="checkbox"> </span>{{giftmsg}}</label>
+  </p>
+  <label style="display:block" for="gift-note">{{ section.settings.gift-wrap-msg}}</label>
+  <textarea name="attributes[gift-note]" id="gift-note">{{ cart.attributes.gift-note }}</textarea>
+</div>
+{% assign gift_wraps_in_cart = 0 %}
+{% for item in cart.items %}{% if item.id == id %}{% assign gift_wraps_in_cart = item.quantity %}{% endif %}{% endfor %}
+{% if section.settings.gift_wrap_optin == 'diffrent-rate' %}{% assign items_in_cart = cart.item_count | minus: gift_wraps_in_cart %}{% endif %}
+
+<script>
+  window.onload = function () {
+      $(document).ready(function() {
+        Shopify.Cart = Shopify.Cart || {};
+        Shopify.Cart.GiftWrap = {};
+
+        Shopify.Cart.GiftWrap.set = function() {
+          $.ajax({
+            type: 'POST',
+            url: '/cart/update.js', 
+            data: { updates: { {{ id }}: {% if section.settings.gift_wrap_optin == 'diffrent-rate' %}{{ items_in_cart }}{% else %}1{% endif %} }, attributes: { 'gift-wrapping': true }}, 
+            dataType: 'json',
+            success: function() { location.href = '/cart'; }
+          });
+        }
+        Shopify.Cart.GiftWrap.remove = function(){
+          $.ajax({
+            type: 'POST',
+            url: '/cart/update.js', 
+            data: { updates: { {{ id }}: 0 }, attributes: { 'gift-wrapping': '' } }, 
+            dataType: 'json',
+            success: function() { location.href = '/cart'; }
+          });
+        }
+
+        // If we have nothing but gift-wrap items in the cart.
+        {% if cart.items.size == 1 and gift_wraps_in_cart > 0 %}
+            Shopify.Cart.GiftWrap.remove();
+            // If we have a gift-wrap item in the cart but our gift-wrapping cart attribute has not been set.
+        {% elsif gift_wraps_in_cart > 0 and cart.attributes.gift-wrapping == blank  %}
+            Shopify.Cart.GiftWrap.set();
+            // If we have no gift-wrap item in the cart but our gift-wrapping cart attribute has been set.
+        {% elsif gift_wraps_in_cart == 0 and cart.attributes.gift-wrapping != blank  %}
+            Shopify.Cart.GiftWrap.set();
+        {% endif %}
+
+        // When the gift-wrapping checkbox is checked or unchecked.
+        $('[name="attributes\[gift-wrapping\]"]').change(function(){
+          if ($(this).is(':checked')){
+            Shopify.Cart.GiftWrap.set();
+          } else {
+            Shopify.Cart.GiftWrap.remove();
+          }
+        });
+      });
+  }
+</script>
+{% endif %}

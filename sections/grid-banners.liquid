@@ -1,0 +1,1214 @@
+{%- capture gridBanners -%}
+<div class="content-indent {{ section.settings.top-offeset}}"> 
+  {% capture imageGallery %}
+  <div class="imgBnrOuter{% if section.settings.hide_mobile %} small--hide{% endif %} sec-{{section.id}}">
+    
+    <div class="{% if section.settings.fullwidth %}fullwidth-{{section.id}}{% else %}page-width{%endif%}">
+
+      {%- if section.settings.title != blank  or section.settings.subtitle != blank -%}
+      <div class="sec-ttl {{ settings.title_align}} fadeIn">
+        <h3 class="h3">{{ section.settings.title }}</h3>
+        {%- if section.settings.subtitle != blank -%}<span>{{section.settings.subtitle}}</span>{%- endif -%}                 
+      </div>
+      {% endif %}
+
+      {% if section.settings.snow_effect %} 
+      <div class="falling-snow{% if section.settings.snow_style == "style2" %} style2{% else %} style1{% endif %}">
+      {% endif %}
+        
+     
+      {%- for block in section.blocks -%}
+      {%- if block.type == 'style1' -%}
+      <div class="grid{% if section.settings.disable_zoom %} no-zoom{% endif %}" {{ block.shopify_attributes }}>
+        <div class="grid__item large-up--one-half img-bnr wow fadeInUp" data-wow-delay="0ms">
+          <div class="inner {{block.settings.bnr1align}}">{% include 'image-grid', image: block.settings.image1, title: block.settings.text1, subtitle: block.settings.text1-large, link: block.settings.link1, imgSize: '930x620' %}</div>
+        </div>
+        <div class="grid__item medium-up--one-half large-up--one-quarter img-bnr wow fadeInUp" data-wow-delay="50ms">
+          <div class="inner {{block.settings.bnr2align}}">{% include 'image-grid', image: block.settings.image2, title: block.settings.text2, subtitle: block.settings.text2-large, link: block.settings.link2, imgSize: '460x300' %}</div>
+        </div>
+        <div class="grid__item medium-up--one-half large-up--one-quarter img-bnr wow fadeInUp" data-wow-delay="100ms">
+          <div class="inner {{block.settings.bnr3align}}">{% include 'image-grid', image: block.settings.image3, title: block.settings.text3, subtitle: block.settings.text3-large, link: block.settings.link3, imgSize: '460x300' %}</div>
+        </div>
+        <div class="grid__item large-up--one-half img-bnr wow fadeInUp" data-wow-delay="150ms">
+          <div class="inner {{block.settings.bnr4align}}">{% include 'image-grid', image: block.settings.image4, title: block.settings.text4, subtitle: block.settings.text4-large, link: block.settings.link4, imgSize: '930x300' %}</div>
+        </div>
+      </div>
+      {%- endif -%}
+
+      {%- if block.type == 'style2' -%}
+      <div class="grid{% if section.settings.disable_zoom %} no-zoom{% endif %}" {{ block.shopify_attributes }}>
+        <div class="grid__item medium-up--one-quarter">
+          <div class="img-bnr wow fadeInUp" data-wow-delay="0ms">
+            <div class="inner {{block.settings.bnr1align}}">{% include 'image-grid', image: block.settings.image1, title: block.settings.text1, subtitle: block.settings.text1-large, link: block.settings.link1, imgSize: '460x460' %}</div>
+          </div>
+          <div class="img-bnr wow fadeInUp" data-wow-delay="50ms">
+            <div class="inner {{block.settings.bnr2align}}">{% include 'image-grid', image: block.settings.image2, title: block.settings.text2, subtitle: block.settings.text2-large, link: block.settings.link2, imgSize: '460x460' %}</div>
+          </div>
+        </div>
+        <div class="grid__item medium-up--one-half img-bnr wow fadeInUp" data-wow-delay="100ms">
+          <div class="inner {{block.settings.bnr3align}}">{% include 'image-grid', image: block.settings.image3, title: block.settings.text3, subtitle: block.settings.text3-large, link: block.settings.link3, imgSize: '930x930' %}</div>
+        </div>
+        <div class="grid__item medium-up--one-quarter">
+          <div class="img-bnr wow fadeInUp" data-wow-delay="150ms">
+            <div class="inner {{block.settings.bnr4align}}">{% include 'image-grid', image: block.settings.image4, title: block.settings.text4, subtitle: block.settings.text4-large, link: block.settings.link4, imgSize: '460x460' %}</div>
+          </div>
+          <div class="img-bnr wow fadeInUp" data-wow-delay="200ms">
+            <div class="inner {{block.settings.bnr5align}}">{% include 'image-grid', image: block.settings.image5, title: block.settings.text5, subtitle: block.settings.text5-large, link: block.settings.link5, imgSize: '460x460' %}</div>
+          </div>
+        </div>
+      </div>
+      {%- endif -%}
+
+      {%- if block.type == 'style3' -%}
+      <div class="grid{% if section.settings.disable_zoom %} no-zoom{% endif %}" {{ block.shopify_attributes }}>
+        <div class="grid__item medium-up--one-half img-bnr wow fadeInUp" data-wow-delay="0ms">
+          <div class="inner {{block.settings.bnr1align}}">{% include 'image-grid', image: block.settings.image1, title: block.settings.text1, subtitle: block.settings.text1-large, link: block.settings.link1, imgSize: '930x930' %}</div>
+        </div>
+        <div class="grid__item medium-up--one-half img-bnr wow fadeInUp" data-wow-delay="50ms">
+          <div class="inner mb20 {{block.settings.bnr2align}}">{% include 'image-grid', image: block.settings.image2, title: block.settings.text2, subtitle: block.settings.text2-large, link: block.settings.link2, imgSize: '930x455' %}</div>
+          <div class="inner mb20 {{block.settings.bnr3align}}">{% include 'image-grid', image: block.settings.image3, title: block.settings.text3, subtitle: block.settings.text3-large, link: block.settings.link3, imgSize: '930x455' %}</div>             
+        </div>                    
+      </div>
+      {%- endif -%}
+
+      {%- if block.type == 'style4' -%}
+      <div class="grid{% if section.settings.disable_zoom %} no-zoom{% endif %}" {{ block.shopify_attributes }}>
+        <div class="grid__item one-whole medium-up--one-whole large-up--one-half img-bnr wow fadeInUp" data-wow-delay="0ms">
+          <div class="inner {{block.settings.bnr1align}}">{% include 'image-grid', image: block.settings.image1, title: block.settings.text1, subtitle: block.settings.text1-large, link: block.settings.link1, imgSize: '930x700' %}</div>
+        </div>
+        <div class="grid__item one-half medium-up--one-half large-up--one-quarter img-bnr wow fadeInUp" data-wow-delay="50ms">
+          <div class="inner {{block.settings.bnr2align}}">{% include 'image-grid', image: block.settings.image2, title: block.settings.text2, subtitle: block.settings.text2-large, link: block.settings.link2, imgSize: '460x718' %}</div>
+        </div>
+        <div class="grid__item one-half medium-up--one-half large-up--one-quarter img-bnr wow fadeInUp" data-wow-delay="100ms">
+          <div class="inner mb20 {{block.settings.bnr3align}}">{% include 'image-grid', image: block.settings.image3, title: block.settings.text3, subtitle: block.settings.text3-large, link: block.settings.link3, imgSize: '460x342' %}</div>
+          <div class="inner mb20 {{block.settings.bnr4align}}">{% include 'image-grid', image: block.settings.image4, title: block.settings.text4, subtitle: block.settings.text4-large, link: block.settings.link4, imgSize: '460x342' %}</div>                    
+        </div>
+      </div>
+      {%- endif -%}
+
+      {%- if block.type == 'style5' -%}
+      <div class="grid{% if section.settings.disable_zoom %} no-zoom{% endif %}" {{ block.shopify_attributes }}>
+        <div class="grid__item large-up--two-fifths">
+          <div class="grid__item img-bnr medium-up--one-half large-up--one-whole wow fadeInUp" data-wow-delay="0ms">
+            <div class="inner {{block.settings.bnr1align}}">{% include 'image-grid', image: block.settings.image1, title: block.settings.text1, subtitle: block.settings.text1-large, link: block.settings.link1, imgSize: '712x340' %}</div>
+          </div>
+          <div class="grid__item img-bnr medium-up--one-half large-up--one-whole wow fadeInUp" data-wow-delay="50ms">
+            <div class="inner {{block.settings.bnr2align}}">{% include 'image-grid', image: block.settings.image2, title: block.settings.text2, subtitle: block.settings.text2-large, link: block.settings.link2, imgSize: '712x340' %}</div>
+          </div>
+        </div>
+        <div class="grid__item medium-one--whole large-up--three-fifths img-bnr wow fadeInUp" data-wow-delay="100ms">
+          <div class="inner {{block.settings.bnr3align}}">{% include 'image-grid', image: block.settings.image3, title: block.settings.text3, subtitle: block.settings.text3-large, link: block.settings.link3, imgSize: '1068x700' %}</div>
+        </div>
+      </div>
+      {%- endif -%}
+
+      {%- if block.type == 'style6' -%}
+      <div class="grid style6{% if section.settings.disable_zoom %} no-zoom{% endif %}" {{ block.shopify_attributes }}>
+        <div class="grid__item medium-up--one-third img-bnr wow fadeInUp" data-wow-delay="0ms">                        
+          <div class="inner {{block.settings.bnr1align}}">{% include 'image-grid', image: block.settings.image1, title: block.settings.text1, subtitle: block.settings.text1-large, link: block.settings.link1, imgSize: '640x640' %}</div>
+
+        </div>
+        <div class="grid__item medium-up--one-third img-bnr wow fadeInUp" data-wow-delay="50ms">
+          <div class="inner {{block.settings.bnr2align}}">{% include 'image-grid', image: block.settings.image2, title: block.settings.text2, subtitle: block.settings.text2-large, link: block.settings.link2, imgSize: '640x640' %}</div>
+        </div>
+        <div class="grid__item medium-up--one-third img-bnr wow fadeInUp" data-wow-delay="100ms">
+          <div class="inner {{block.settings.bnr3align}}">{% include 'image-grid', image: block.settings.image3, title: block.settings.text3, subtitle: block.settings.text3-large, link: block.settings.link3, imgSize: '640x640' %}</div>                                                  
+        </div>
+      </div>
+      {%- endif -%}
+
+
+      {%- endfor -%}
+      {%- if section.blocks.size == 0 -%}{% include 'no-blocks' %}{%- endif -%}
+        
+       {% if section.settings.snow_effect %} 
+      </div>
+      {% endif %}
+                  
+        
+    </div>
+  </div>
+  {% endcapture %}
+  {{imageGallery | strip_newlines | remove: "  " | remove: "	" }}
+</div>
+
+
+<style>
+  .imgBnrOuter.sec-{{section.id}} .inner .ttl { z-index:1; {% if section.settings.bnr_ttl_bg != blank %} background-color:rgba({{ section.settings.bnr_ttl_bg}},0.8); {% endif %}
+    color:{{ section.settings.bnr_ttl }};
+  }
+  .imgBnrOuter.sec-{{section.id}} .inner .ttl:before {
+    position:absolute; left:0; top:0; content:""; width:100%; height:100%; background:{{section.settings.bnr_ttl_bg}};
+    opacity:{{ section.settings.bnr_ttl_bg_op}}; z-index:-1;
+  }
+  {% if section.settings.fullwidth %}
+    .fullwidth-{{section.id}} { padding-left:{{ section.settings.pad-desk}}px; padding-right:{{ section.settings.pad-desk}}px; }
+  	@media only screen and (max-width: 1024px) {
+     .fullwidth-{{section.id}} { padding-left:{{ section.settings.pad-ipad}}px; padding-right:{{ section.settings.pad-ipad}}px; }
+   	} 
+  	@media only screen and (max-width: 767px) {
+     .fullwidth-{{section.id}} { padding-left:{{ section.settings.pad-mbl}}px; padding-right:{{ section.settings.pad-mbl}}px; }
+   	} 
+  {% endif %}
+</style>
+{%- endcapture -%}
+{{gridBanners | strip_newlines | remove: "  " | remove: "	" }}
+
+{% schema %}
+  {
+    "name": "Grid Banners",
+    "class": "index-section imgBanners",
+    "settings": [	
+     {
+        "type": "textarea",
+        "id": "title",
+        "label": "Heading",
+        "default": "Heading",
+		"info":"Use <strong>text here</strong> to make headings bold"
+      }, 		
+     {
+        "type": "textarea",
+        "id": "subtitle",
+        "label": "Sub Heading",
+        "default": "Describe your products, collection etc..."
+      },
+	  {
+        "type": "header",
+        "content": "Appearance"
+      },
+	 {
+		 "type": "paragraph",
+		 "content":"[check all 6 style for this section](https://www.adornthemes.com/different-grid-style/)"
+      },  	
+	 {
+		 "type": "paragraph",
+		 "content":"Section==="
+      }, 	 
+	  {
+            "type": "select",
+            "id": "top-offeset",
+            "label": "Top OffSet",
+            "default": "default",
+            "options": [
+              {
+                "value": "default",
+                "label": "Default"
+              },
+              {
+                "value": "small",
+                "label": "Small"
+              },
+			  {
+                "value": "none",
+                "label": "None"
+              }
+			]
+        }, 
+		 {
+         "type": "checkbox",
+		 "id": "fullwidth",
+		 "label": "Fullwidth?",
+		 "default": true
+      }, {
+        "type": "paragraph",
+        "content": "Left/Right Padding : Fullwidth Section Only==="
+      }, 	
+      {
+        "type": "range",
+        "id": "pad-desk",
+        "label": "Desktop",
+        "default": 55,
+        "min": 0,
+        "max": 100,
+        "step": 1
+      },
+      {
+        "type": "range",
+        "id": "pad-ipad",
+        "label": "Tablet",
+        "default": 15,
+        "min": 0,
+        "max": 30,
+        "step": 1
+      },
+      {
+        "type": "range",
+        "id": "pad-mbl",
+        "label": "Mobile",
+        "default": 10,
+        "min": 0,
+        "max": 20,
+        "step": 1
+      },
+        {
+           "type": "checkbox",
+           "id": "hide_mobile",
+           "label": "Hide Section in Mobile?",
+           "default": false
+        },
+	 {
+		 "type": "paragraph",
+		 "content":"Grid==="
+      }, 	
+      {
+        "type": "color",
+        "id": "bnr_ttl",
+        "label": "Text Color",
+        "default": "#000"
+      },
+      {
+        "type": "color",
+        "id": "bnr_ttl_bg",
+        "label": "Text Background",
+        "default": "#fff"
+      },
+	 {
+        "type": "range",
+        "id": "bnr_ttl_bg_op",
+        "min": 0,
+        "max": 1,
+        "step": 0.1,
+        "label": "Background Opacity",
+        "unit": "%",
+        "default": 0.7
+      },
+    {
+		"type":"checkbox",
+		"id":"disable_zoom",
+		"label":"Disable Image Hover Zoom Effect?",
+		"default": false
+	  },
+		{
+		"type":"checkbox",
+		"id":"snow_effect",
+		"label":"Enable Snow Effect?",
+		"default": false,
+		"info":"For Christmas"
+	   },
+        {
+          "type": "select",
+          "id": "snow_style",
+          "label": "Snow Style",
+          "default": "style1",         
+          "options": [
+            {
+            "value": "style1",
+            "label": "Falling Down"
+            },
+            {
+            "value": "style2",
+            "label": "Falling From Left"
+            }
+            ]
+          }
+    ],
+    "blocks": [
+      {
+        "type": "style1",
+        "name": "Style 1",
+        "settings": [
+		  {
+			"type":"header",
+			"content":"Image 1"
+		  },
+		  {
+			"type":"image_picker",
+			"id":"image1",
+			"label":"Banner Image"			
+		  },
+		  {
+ 			"type":"textarea",
+			"id":"text1",
+			"label":"Small Text",
+			"info":"bold text = <strong>"
+		  },
+	 	  {
+ 			"type":"textarea",
+			"id":"text1-large",
+			"label":"Big Text",
+			"info":"bold text = <strong>"
+		  },
+          {
+            "type": "select",
+            "id": "bnr1align",
+            "label": "Text Position",
+            "default": "center",
+            "options": [
+              { "value": "topleft", "label": "Top Left" },
+			  { "value": "topright", "label": "Top Right" },
+              { "value": "center", "label": "center" },
+			  { "value": "btmleft", "label": "Bottom Left" },
+			  { "value": "btmright", "label": "Bottom Right" }
+            ]
+          },
+		  {
+            "type": "url",
+			"id": "link1",
+			"label": "Banner Link"
+          },
+		  {
+			"type":"header",
+			"content":"Image 2"
+		  },
+		  {
+			"type":"image_picker",
+			"id":"image2",
+			"label":"Banner Image"			
+		  },
+		  {
+ 			"type":"textarea",
+			"id":"text2",
+			"label":"Small Text",
+			"info":"bold text = <strong>"
+		  },
+		{
+ 			"type":"textarea",
+			"id":"text2-large",
+			"label":"Big Text",
+			"info":"bold text = <strong>"
+		  },
+          {
+            "type": "select",
+            "id": "bnr2align",
+            "label": "Text Position",
+            "default": "center",
+            "options": [
+              { "value": "topleft", "label": "Top Left" },
+			  { "value": "topright", "label": "Top Right" },
+              { "value": "center", "label": "center" },
+			  { "value": "btmleft", "label": "Bottom Left" },
+			  { "value": "btmright", "label": "Bottom Right" }
+            ]
+          },
+		  {
+            "type": "url",
+			"id": "link2",
+			"label": "Banner Link"
+          },
+	 	  {
+			"type":"header",
+			"content":"Image 3"
+		  },
+		  {
+			"type":"image_picker",
+			"id":"image3",
+			"label":"Banner Image"			
+		  },
+		  {
+ 			"type":"textarea",
+			"id":"text3",
+			"label":"Small Text",
+			"info":"bold text = <strong>"
+		  },
+	      {
+ 			"type":"textarea",
+			"id":"text3-large",
+			"label":"Big Text",
+			"info":"bold text = <strong>"
+		  },
+          {
+            "type": "select",
+            "id": "bnr3align",
+            "label": "Text Position",
+            "default": "center",
+            "options": [
+              { "value": "topleft", "label": "Top Left" },
+			  { "value": "topright", "label": "Top Right" },
+              { "value": "center", "label": "center" },
+			  { "value": "btmleft", "label": "Bottom Left" },
+			  { "value": "btmright", "label": "Bottom Right" }
+            ]
+          },
+		  {
+            "type": "url",
+			"id": "link3",
+			"label": "Banner Link"
+          },
+		  {
+			"type":"header",
+			"content":"Image 4"
+		  },
+		  {
+			"type":"image_picker",
+			"id":"image4",
+			"label":"Banner Image"			
+		  },
+		  {
+ 			"type":"textarea",
+			"id":"text4",
+			"label":"Small Text",
+			"info":"bold text = <strong>"
+		  },
+		  {
+ 			"type":"textarea",
+			"id":"text4-large",
+			"label":"Big Text",
+			"info":"bold text = <strong>"
+		  },
+          {
+            "type": "select",
+            "id": "bnr4align",
+            "label": "Text Position",
+            "default": "center",
+            "options": [
+              { "value": "topleft", "label": "Top Left" },
+			  { "value": "topright", "label": "Top Right" },
+              { "value": "center", "label": "center" },
+			  { "value": "btmleft", "label": "Bottom Left" },
+			  { "value": "btmright", "label": "Bottom Right" }
+            ]
+          },
+		  {
+            "type": "url",
+			"id": "link4",
+			"label": "Banner Link"
+          }
+        ]
+      },
+	  {
+        "type": "style2",
+        "name": "Style 2",
+        "settings": [
+		  {
+			"type":"header",
+			"content":"Image 1"
+		  },
+		  {
+			"type":"image_picker",
+			"id":"image1",
+			"label":"Banner Image"			
+		  },
+		  {
+ 			"type":"textarea",
+			"id":"text1",
+			"label":"Small Text",
+			"info":"bold text = <strong>"
+		  },
+		 {
+ 			"type":"textarea",
+			"id":"text1-large",
+			"label":"Big Text",
+			"info":"bold text = <strong>"
+		  },
+          {
+            "type": "select",
+            "id": "bnr1align",
+            "label": "Text Position",
+            "default": "center",
+            "options": [
+              { "value": "topleft", "label": "Top Left" },
+			  { "value": "topright", "label": "Top Right" },
+              { "value": "center", "label": "center" },
+			  { "value": "btmleft", "label": "Bottom Left" },
+			  { "value": "btmright", "label": "Bottom Right" }
+            ]
+          },
+		  {
+            "type": "url",
+			"id": "link1",
+			"label": "Banner Link"
+          },
+		  {
+			"type":"header",
+			"content":"Image 2"
+		  },
+		  {
+			"type":"image_picker",
+			"id":"image2",
+			"label":"Banner Image"			
+		  },
+		  {
+ 			"type":"textarea",
+			"id":"text2",
+			"label":"Small Text",
+			"info":"bold text = <strong>"
+		  },
+		  {
+ 			"type":"textarea",
+			"id":"text2-large",
+			"label":"Big Text",
+			"info":"bold text = <strong>"
+		  },
+          {
+            "type": "select",
+            "id": "bnr2align",
+            "label": "Text Position",
+            "default": "center",
+            "options": [
+
+              { "value": "topleft", "label": "Top Left" },
+			  { "value": "topright", "label": "Top Right" },
+              { "value": "center", "label": "center" },
+			  { "value": "btmleft", "label": "Bottom Left" },
+			  { "value": "btmright", "label": "Bottom Right" }
+            ]
+          },
+		  {
+            "type": "url",
+			"id": "link2",
+			"label": "Banner Link"
+          },
+	 	  {
+			"type":"header",
+			"content":"Image 3"
+		  },
+		  {
+			"type":"image_picker",
+			"id":"image3",
+			"label":"Banner Image"			
+		  },
+		   {
+ 			"type":"textarea",
+			"id":"text3",
+			"label":"Small Text",
+			"info":"bold text = <strong>"
+		  },
+		  {
+ 			"type":"textarea",
+			"id":"text3-large",
+			"label":"Big Text",
+			"info":"bold text = <strong>"
+		  },
+          {
+            "type": "select",
+            "id": "bnr3align",
+           "label": "Text Position",
+            "default": "center",
+            "options": [
+              { "value": "topleft", "label": "Top Left" },
+			  { "value": "topright", "label": "Top Right" },
+              { "value": "center", "label": "center" },
+			  { "value": "btmleft", "label": "Bottom Left" },
+			  { "value": "btmright", "label": "Bottom Right" }
+            ]
+          },
+		  {
+            "type": "url",
+			"id": "link3",
+			"label": "Banner Link"
+          },
+		  {
+			"type":"header",
+			"content":"Image 4"
+		  },
+		  {
+			"type":"image_picker",
+			"id":"image4",
+			"label":"Banner Image"			
+		  },
+		   {
+ 			"type":"textarea",
+			"id":"text4",
+			"label":"Small Text",
+			"info":"bold text = <strong>"
+		  },
+		  {
+ 			"type":"textarea",
+			"id":"text4-large",
+			"label":"Big Text",
+			"info":"bold text = <strong>"
+		  },
+          {
+            "type": "select",
+            "id": "bnr4align",
+            "label": "Text Position",
+            "default": "center",
+            "options": [
+              { "value": "topleft", "label": "Top Left" },
+			  { "value": "topright", "label": "Top Right" },
+              { "value": "center", "label": "center" },
+			  { "value": "btmleft", "label": "Bottom Left" },
+			  { "value": "btmright", "label": "Bottom Right" }
+            ]
+          },
+		  {
+            "type": "url",
+			"id": "link4",
+			"label": "Banner Link"
+          },
+		  {
+			"type":"header",
+			"content":"Image 5"
+		  },
+		  {
+			"type":"image_picker",
+			"id":"image5",
+			"label":"Banner Image"			
+		  },
+		   {
+ 			"type":"textarea",
+			"id":"text5",
+			"label":"Small Text",
+			"info":"bold text = <strong>"
+		  },
+		  {
+ 			"type":"textarea",
+			"id":"text5-large",
+			"label":"Big Text",
+			"info":"bold text = <strong>"
+		  },
+          {
+            "type": "select",
+            "id": "bnr5align",
+            "label": "Text Position",
+            "default": "center",
+            "options": [
+              { "value": "topleft", "label": "Top Left" },
+			  { "value": "topright", "label": "Top Right" },
+              { "value": "center", "label": "center" },
+			  { "value": "btmleft", "label": "Bottom Left" },
+			  { "value": "btmright", "label": "Bottom Right" }
+            ]
+          },
+		  {
+            "type": "url",
+			"id": "link5",
+			"label": "Banner Link"
+          }
+        ]
+      },
+	  {
+        "type": "style3",
+        "name": "Style 3",
+        "settings": [
+		  {
+			"type":"header",
+			"content":"Image 1"
+		  },
+		  {
+			"type":"image_picker",
+			"id":"image1",
+			"label":"Banner Image"
+		  },
+		  {
+ 			"type":"textarea",
+			"id":"text1",
+			"label":"Small Text",
+			"info":"bold text = <strong>"
+		  },
+		  {
+ 			"type":"textarea",
+			"id":"text1-large",
+			"label":"Big Text",
+			"info":"bold text = <strong>"
+		  },
+          {
+            "type": "select",
+            "id": "bnr1align",
+             "label": "Text Position",
+            "default": "center",
+            "options": [
+              { "value": "topleft", "label": "Top Left" },
+			  { "value": "topright", "label": "Top Right" },
+              { "value": "center", "label": "center" },
+			  { "value": "btmleft", "label": "Bottom Left" },
+			  { "value": "btmright", "label": "Bottom Right" }
+            ]
+          },
+		  {
+            "type": "url",
+			"id": "link1",
+			"label": "Banner Link"
+          },
+		  {
+			"type":"header",
+			"content":"Image 2"
+		  },
+		  {
+			"type":"image_picker",
+			"id":"image2",
+			"label":"Banner Image"
+		  },
+		   {
+ 			"type":"textarea",
+			"id":"text2",
+			"label":"Small Text",
+			"info":"bold text = <strong>"
+		  },
+		  {
+ 			"type":"textarea",
+			"id":"text2-large",
+			"label":"Big Text",
+			"info":"bold text = <strong>"
+		  },
+          {
+            "type": "select",
+            "id": "bnr2align",
+            "label": "Text Position",
+            "default": "center",
+            "options": [
+              { "value": "topleft", "label": "Top Left" },
+			  { "value": "topright", "label": "Top Right" },
+              { "value": "center", "label": "center" },
+			  { "value": "btmleft", "label": "Bottom Left" },
+			  { "value": "btmright", "label": "Bottom Right" }
+            ]
+          },
+		  {
+            "type": "url",
+			"id": "link2",
+			"label": "Banner Link"
+          },
+	 	  {
+			"type":"header",
+			"content":"Image 3"
+		  },
+		  {
+			"type":"image_picker",
+			"id":"image3",
+			"label":"Banner Image"
+		  },
+		   {
+ 			"type":"textarea",
+			"id":"text3",
+			"label":"Small Text",
+			"info":"bold text = <strong>"
+		  },
+		  {
+ 			"type":"textarea",
+			"id":"text3-large",
+			"label":"Big Text",
+			"info":"bold text = <strong>"
+		  },
+          {
+            "type": "select",
+            "id": "bnr3align",
+            "label": "Text Position",
+            "default": "center",
+            "options": [
+              { "value": "topleft", "label": "Top Left" },
+			  { "value": "topright", "label": "Top Right" },
+              { "value": "center", "label": "center" },
+			  { "value": "btmleft", "label": "Bottom Left" },
+			  { "value": "btmright", "label": "Bottom Right" }
+            ]
+          },
+		  {
+            "type": "url",
+			"id": "link3",
+			"label": "Banner Link"
+          }
+        ]
+      },
+	  {
+        "type": "style4",
+        "name": "Style 4",
+        "settings": [
+		  {
+			"type":"header",
+			"content":"Image 1"
+		  },
+		  {
+			"type":"image_picker",
+			"id":"image1",
+			"label":"Banner Image"			
+		  },
+		   {
+ 			"type":"textarea",
+			"id":"text1",
+			"label":"Small Text",
+			"info":"bold text = <strong>"
+		  },
+		  {
+ 			"type":"textarea",
+			"id":"text1-large",
+			"label":"Big Text",
+			"info":"bold text = <strong>"
+		  },
+          {
+            "type": "select",
+            "id": "bnr1align",
+            "label": "Text Position",
+            "default": "center",
+            "options": [
+              { "value": "topleft", "label": "Top Left" },
+			  { "value": "topright", "label": "Top Right" },
+              { "value": "center", "label": "center" },
+			  { "value": "btmleft", "label": "Bottom Left" },
+			  { "value": "btmright", "label": "Bottom Right" }
+            ]
+          },
+		  {
+            "type": "url",
+			"id": "link1",
+			"label": "Banner Link"
+          },
+		  {
+			"type":"header",
+			"content":"Image 2"
+		  },
+		  {
+			"type":"image_picker",
+			"id":"image2",
+			"label":"Banner Image",
+			"info":"For fullwidth section recommaded size is 460x712"
+		  },
+		   {
+ 			"type":"textarea",
+			"id":"text2",
+			"label":"Small Text",
+			"info":"bold text = <strong>"
+		  },
+		  {
+ 			"type":"textarea",
+			"id":"text2-large",
+			"label":"Big Text",
+			"info":"bold text = <strong>"
+		  },
+          {
+            "type": "select",
+            "id": "bnr2align",
+            "label": "Text Position",
+            "default": "center",
+            "options": [
+              { "value": "topleft", "label": "Top Left" },
+			  { "value": "topright", "label": "Top Right" },
+              { "value": "center", "label": "center" },
+			  { "value": "btmleft", "label": "Bottom Left" },
+			  { "value": "btmright", "label": "Bottom Right" }
+            ]
+          },
+		  {
+            "type": "url",
+			"id": "link2",
+			"label": "Banner Link"
+          },
+	 	  {
+			"type":"header",
+			"content":"Image 3"
+		  },
+		  {
+			"type":"image_picker",
+			"id":"image3",
+			"label":"Banner Image"			
+		  },
+		  {
+ 			"type":"textarea",
+			"id":"text3",
+			"label":"Small Text",
+			"info":"bold text = <strong>"
+		  },
+		  {
+ 			"type":"textarea",
+			"id":"text3-large",
+			"label":"Big Text",
+			"info":"bold text = <strong>"
+		  },
+          {
+            "type": "select",
+            "id": "bnr3align",
+            "label": "Text Position",
+            "default": "center",
+            "options": [
+              { "value": "topleft", "label": "Top Left" },
+			  { "value": "topright", "label": "Top Right" },
+              { "value": "center", "label": "center" },
+			  { "value": "btmleft", "label": "Bottom Left" },
+			  { "value": "btmright", "label": "Bottom Right" }
+            ]
+          },
+		  {
+            "type": "url",
+			"id": "link3",
+			"label": "Banner Link"
+          },
+		  {
+			"type":"header",
+			"content":"Image 4"
+		  },
+		  {
+			"type":"image_picker",
+			"id":"image4",
+			"label":"Banner Image"			
+		  },
+		  {
+ 			"type":"textarea",
+			"id":"text4",
+			"label":"Small Text",
+			"info":"bold text = <strong>"
+		  },
+		  {
+ 			"type":"textarea",
+			"id":"text4-large",
+			"label":"Big Text",
+			"info":"bold text = <strong>"
+		  },
+          {
+            "type": "select",
+            "id": "bnr4align",
+            "label": "Text Position",
+            "default": "center",
+            "options": [
+              { "value": "topleft", "label": "Top Left" },
+			  { "value": "topright", "label": "Top Right" },
+              { "value": "center", "label": "center" },
+			  { "value": "btmleft", "label": "Bottom Left" },
+			  { "value": "btmright", "label": "Bottom Right" }
+            ]
+          },
+		  {
+            "type": "url",
+			"id": "link4",
+			"label": "Banner Link"
+          }
+        ]
+      },
+	  {
+        "type": "style5",
+        "name": "Style 5",
+        "settings": [
+		  {
+			"type":"header",
+			"content":"Image 1"
+		  },
+		  {
+			"type":"image_picker",
+			"id":"image1",
+			"label":"Banner Image"			
+		  },
+		   {
+ 			"type":"textarea",
+			"id":"text1",
+			"label":"Small Text",
+			"info":"bold text = <strong>"
+		  },
+		  {
+ 			"type":"textarea",
+			"id":"text1-large",
+			"label":"Big Text",
+			"info":"bold text = <strong>"
+		  },
+          {
+            "type": "select",
+            "id": "bnr1align",
+            "label": "Text Position",
+            "default": "center",
+            "options": [
+              { "value": "topleft", "label": "Top Left" },
+			  { "value": "topright", "label": "Top Right" },
+              { "value": "center", "label": "center" },
+			  { "value": "btmleft", "label": "Bottom Left" },
+			  { "value": "btmright", "label": "Bottom Right" }
+            ]
+          },
+		  {
+            "type": "url",
+			"id": "link1",
+			"label": "Banner Link"
+          },
+		  {
+			"type":"header",
+			"content":"Image 2"
+		  },
+		  {
+			"type":"image_picker",
+			"id":"image2",
+			"label":"Banner Image"			
+		  },
+		   {
+ 			"type":"textarea",
+			"id":"text2",
+			"label":"Small Text",
+			"info":"bold text = <strong>"
+		  },
+		  {
+ 			"type":"textarea",
+			"id":"text2-large",
+			"label":"Big Text",
+			"info":"bold text = <strong>"
+		  },
+          {
+            "type": "select",
+            "id": "bnr2align",
+            "label": "Text Position",
+            "default": "center",
+            "options": [
+              { "value": "topleft", "label": "Top Left" },
+			  { "value": "topright", "label": "Top Right" },
+              { "value": "center", "label": "center" },
+			  { "value": "btmleft", "label": "Bottom Left" },
+			  { "value": "btmright", "label": "Bottom Right" }
+            ]
+          },
+		  {
+            "type": "url",
+			"id": "link2",
+			"label": "Banner Link"
+          },
+	 	  {
+			"type":"header",
+			"content":"Image 3"
+		  },
+		  {
+			"type":"image_picker",
+			"id":"image3",
+			"label":"Banner Image"			
+		  },
+		   {
+ 			"type":"textarea",
+			"id":"text3",
+			"label":"Small Text",
+			"info":"bold text = <strong>"
+		  },
+		  {
+ 			"type":"textarea",
+			"id":"text3-large",
+			"label":"Big Text",
+			"info":"bold text = <strong>"
+		  },
+          {
+            "type": "select",
+            "id": "bnr3align",
+           "label": "Text Position",
+            "default": "center",
+            "options": [
+              { "value": "topleft", "label": "Top Left" },
+			  { "value": "topright", "label": "Top Right" },
+              { "value": "center", "label": "center" },
+			  { "value": "btmleft", "label": "Bottom Left" },
+			  { "value": "btmright", "label": "Bottom Right" }
+            ]
+          },
+		  {
+            "type": "url",
+			"id": "link3",
+			"label": "Banner Link"
+          }
+        ]
+      },
+		  {
+        "type": "style6",
+        "name": "Style 6",
+        "settings": [
+		  {
+			"type":"header",
+			"content":"Image 1"
+		  },
+		  {
+			"type":"image_picker",
+			"id":"image1",
+			"label":"Banner Image",
+			"info":"image height is flexible"
+		  },
+		  {
+ 			"type":"textarea",
+			"id":"text1",
+			"label":"Small Text",
+			"info":"bold text = <strong>"
+		  },
+		  {
+ 			"type":"textarea",
+			"id":"text1-large",
+			"label":"Big Text",
+			"info":"bold text = <strong>"
+		  },
+          {
+            "type": "select",
+            "id": "bnr1align",
+             "label": "Text Position",
+            "default": "center",
+            "options": [
+              { "value": "topleft", "label": "Top Left" },
+			  { "value": "topright", "label": "Top Right" },
+              { "value": "center", "label": "center" },
+			  { "value": "btmleft", "label": "Bottom Left" },
+			  { "value": "btmright", "label": "Bottom Right" }
+            ]
+          },
+		  {
+            "type": "url",
+			"id": "link1",
+			"label": "Banner Link"
+          },
+		  {
+			"type":"header",
+			"content":"Image 2"
+		  },
+		  {
+			"type":"image_picker",
+			"id":"image2",
+			"label":"Banner Image",
+			"info":"image height is flexible"
+		  },
+		   {
+ 			"type":"textarea",
+			"id":"text2",
+			"label":"Small Text",
+			"info":"bold text = <strong>"
+		  },
+		  {
+ 			"type":"textarea",
+			"id":"text2-large",
+			"label":"Big Text",
+			"info":"bold text = <strong>"
+		  },
+          {
+            "type": "select",
+            "id": "bnr2align",
+            "label": "Text Position",
+            "default": "center",
+            "options": [
+              { "value": "topleft", "label": "Top Left" },
+			  { "value": "topright", "label": "Top Right" },
+              { "value": "center", "label": "center" },
+			  { "value": "btmleft", "label": "Bottom Left" },
+			  { "value": "btmright", "label": "Bottom Right" }
+            ]
+          },
+		  {
+            "type": "url",
+			"id": "link2",
+			"label": "Banner Link"
+          },
+	 	  {
+			"type":"header",
+			"content":"Image 3"
+		  },
+		  {
+			"type":"image_picker",
+			"id":"image3",
+			"label":"Banner Image",
+			"info":"image height is flexible"
+		  },
+		   {
+ 			"type":"textarea",
+			"id":"text3",
+			"label":"Small Text",
+			"info":"bold text = <strong>"
+		  },
+		  {
+ 			"type":"textarea",
+			"id":"text3-large",
+			"label":"Big Text",
+			"info":"bold text = <strong>"
+		  },
+          {
+            "type": "select",
+            "id": "bnr3align",
+            "label": "Text Position",
+            "default": "center",
+            "options": [
+              { "value": "topleft", "label": "Top Left" },
+			  { "value": "topright", "label": "Top Right" },
+              { "value": "center", "label": "center" },
+			  { "value": "btmleft", "label": "Bottom Left" },
+			  { "value": "btmright", "label": "Bottom Right" }
+            ]
+          },
+		  {
+            "type": "url",
+			"id": "link3",
+			"label": "Banner Link"
+          }
+        ]
+      }
+		
+    ],
+    "presets": [
+      {
+        "name": "Grid Banners",
+        "category": "3. Banners"
+      }
+    ]
+  }
+{% endschema %}

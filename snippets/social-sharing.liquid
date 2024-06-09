@@ -1,0 +1,39 @@
+<div class="social-sharing">
+  
+  {% if sharing_lbl != blank %}<span class="lbl">{{settings.sharing_lbl}}</span>{% endif %}
+  
+  {% if settings.share_facebook %}
+  <a href="//www.facebook.com/sharer.php?u={{ shop.url | append: share_permalink }}" class="btn--share share-facebook" title="{{ 'general.social.alt_text.share_on_facebook' | t }}" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=380,width=660');return false;">
+    <i class="ad ad-facebook-f" aria-hidden="true"></i> <span class="share-title" aria-hidden="true">{{ 'general.social.share_on_facebook' | t }}</span>
+  </a>
+  {% endif %}
+
+  {% if settings.share_twitter %}
+  <a href="//twitter.com/share?text={{ share_title | url_param_escape }}&amp;url={{ shop.url | append: share_permalink }}" class="btn--share share-twitter" title="{{ 'general.social.alt_text.share_on_twitter' | t }}" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=380,width=660');return false;">
+    <i class="ad ad-twitter" aria-hidden="true"></i> <span class="share-title" aria-hidden="true">{{ 'general.social.share_on_twitter' | t }}</span>
+  </a>
+  {% endif %}
+  {% if settings.share_pinterest %}
+  <a href="//pinterest.com/pin/create/button/?url={{ shop.url | append: share_permalink }}&amp;media={{ share_image | img_url: '1024x1024' }}&amp;description={{ share_title | url_param_escape }}" class="btn--share share-pinterest" title="{{ 'general.social.alt_text.share_on_pinterest' | t }}" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=380,width=660');return false;">
+    <i class="ad ad-pinterest-p" aria-hidden="true"></i> <span class="share-title" aria-hidden="true">{{ 'general.social.share_on_pinterest' | t }}</span>
+  </a>
+  {% endif %}
+  
+  {% if settings.share_linkedin %}
+  <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ shop.url | append: share_permalink }}&title={{ share_title | url_param_escape }}&source={{ shop.name }}" class="btn--share share-pinterest" title="{{ 'general.social.alt_text.share_on_linkedin' | t }}" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=380,width=660');return false;">
+    <i class="ad ad-linkedin-in" aria-hidden="true"></i> <span class="share-title" aria-hidden="true">{{ 'general.social.share_on_linkedin' | t }}</span>
+  </a>
+  {% endif %}
+  
+  {% if settings.share_whatsapp %}
+  <a href="whatsapp://send?text={{ shop.url | append: share_permalink }}" class="btn--share share-whatsapp large-up--hide" title="{{ 'general.social.alt_text.share_on_whatsapp' | t }}" target="_blank">
+    <i class="ad ad-whatsapp"></i> <span class="share-title" aria-hidden="true">{{ 'general.social.share_on_whatsapp' | t }}</span>
+  </a>
+  {% endif %}
+  
+  {% if settings.share_email %}
+  <a href="mailto:?subject=Check this {{ shop.url | append: share_permalink }}" class="btn--share share-pinterest" title="{{ 'general.social.alt_text.share_on_email' | t }}" target="_blank">
+    <i class="ad ad-envelope-l"></i> <span class="share-title" aria-hidden="true">{{ 'general.social.share_on_email' | t }}</span>
+  </a>
+  {% endif %}
+</div>

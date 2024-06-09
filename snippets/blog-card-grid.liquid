@@ -1,0 +1,18 @@
+<div class="wrap-blog text-center">
+  {% if article.image %}
+  <a href="{{ article.url }}" class="article__grid-image lazyload" style="padding-bottom:{{section.settings.img_ratio}}%"
+     data-bgset="{% include 'prgrid-img', image: article.image, sizes: sizes %}" data-sizes="auto" data-parent-fit="contain" style="padding-bottom:{{ 1 | divided_by: collection_image.aspect_ratio | times: 100}}%;"></a>
+  {% endif %}
+  <div class="article__grid-meta {{ section.settings.blog_align }}{% if article.image %} article__grid-meta--has-image{% endif %}">
+      <a class="h4 article__title" href="{{ article.url }}">{{ article.title }}</a>
+      <ul class="publish-detail">
+        {% if section.settings.blog_show_date %}<li class="article__date">{{ article.published_at | time_tag: format: 'date' }}</li>{% endif %}
+        {% if section.settings.blog_show_author %}<li class="article__author">{{ 'blogs.article.by_author' | t: author: article.author }}</li>{% endif %}
+        {% if section.settings.show_comment and blog.comments_enabled? and article.comments_count > 0 %}<li><i class="ad ad-comments-l" aria-hidden="true"></i><a href="{{ article.url }}#comments" class="btn-link">{{ 'blogs.comments.comments_with_count' | t: count: article.comments_count }}</a></li>{% endif %}
+      </ul>
+      {% if section.settings.show_mini_des %}
+      <div class="rte article__grid-excerpt">{% if article.excerpt.size > 0 %}{{ article.excerpt }}{% else %}{{ article.content | strip_html | truncate: 150 }}{% endif %}</div>
+      {% endif %}
+      {% if section.settings.show_read_more %}<a href="{{ article.url }}" class="btn {{section.settings.btn-size-mob}} {{section.settings.btn-size-desk}} btn-link">{{ 'blogs.article.read_more' | t }}</a>{% endif %}
+  </div>
+</div>

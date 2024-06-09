@@ -1,0 +1,50 @@
+{% if section.settings.image != blank %}
+<p><img src="{{section.settings.image | img_url: 'master'}}" alt="" /> </p>
+{% endif %}
+
+{% if section.settings.title != blank %}
+<h1>{{ section.settings.title }}</h1>
+{% endif %}
+
+{% if section.settings.title2 != blank %}
+<p>{{ section.settings.title2 }}</p>
+{% endif %}
+
+{% if section.settings.btntext != blank %}
+<p><a href="{{ section.settings.btntlnk }}" class="btn btn--has-icon-after">{{ section.settings.btntext }}</a></p>
+{% endif %}
+
+{% schema %}
+  {
+    "name": "404 Page",   
+    "settings": [	
+ 		  {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Top Image"			
+          },
+		 {
+            "type": "textarea",
+            "id": "title",
+            "label": "Heading"
+		},
+        {
+            "type": "textarea",
+            "id": "title2",
+            "label": "Sub Heading"
+		},
+		{
+            "type": "text",
+            "id": "btntext",
+            "label": "Button Text"
+		},
+		{
+            "type": "url",
+            "id": "btntlnk",
+            "label": "Button Link",
+			"default":"/"
+			
+		}
+    ]   
+  }
+{% endschema %} 

@@ -1,0 +1,4 @@
+{%- if image != blank -%}
+{%- if image.width > 90 -%}{{ image | img_url: '80x' }} 80w {{ 80 | divided_by: image.aspect_ratio | round }}h,{%-endif -%}
+{%- if image.width > 120 -%}{{ image | img_url: '120x' }} 120w {{ 120 | divided_by: image.aspect_ratio | round }}h{%-endif -%}
+{%- endif -%}

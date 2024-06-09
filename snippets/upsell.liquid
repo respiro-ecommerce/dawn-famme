@@ -1,0 +1,152 @@
+{%- assign crProduct = product -%}
+{%- assign fbtCollection = product.metafields.meta.fbt-collection -%}
+{%- assign collection = collections[fbtCollection] -%}
+{% if product.metafields.meta.fbt-collection != blank and collection.products.size > 1 %}
+    <div class="fbtSec">
+        <hr style="margin-top:0;" />
+        <h4>{{ 'products.fbt.title' | t}}</h4>
+        {%- form 'product', product, id: "fbtForm", class:'fbtFrm', novalidate: 'novalidate' -%}
+            <div class="fbtGroup flex">
+                <div class="fbtImgWrap">
+                  	<div class="flex grid">
+                    {% for product in collection.products %}
+                        {%- assign current_variant = product.selected_or_first_available_variant -%}
+                        {%- assign index = forloop.index -%}
+                        {%- assign cu_pr = current_variant.price -%}
+                        {%- assign price = price | plus:cu_pr -%}
+                         <div class="grid__item fbtImgCall fbtImg{{index}}">
+                           <a class="grid-view-item__link" href="{{ product.url | within: collection }}">
+                              {%- assign img_url = product.featured_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                              <img class="fbtImg{{index}}" src="{{ product.featured_image | img_url: '150x' }}" width="100" alt="{{ product.featured_image.alt | escape }}">
+                            </a>
+                         </div>
+                    {% endfor %}
+                  	</div>
+                  	<br>
+                    {% for product in collection.products limit: product_limit %}
+                        {%- assign current_variant = product.selected_or_first_available_variant -%}
+                        {%- assign index = forloop.index -%}
+                        <div class="fbtRow checked" data-img=".fbtImg{{index}}">
+                            <input type="checkbox" id="fbtCk{{index}}" class="custCheck fbtCheck" checked="checked">
+                            <label {% unless crProduct == product %}for="fbtCk{{index}}"{% endunless %}><span class="checkbox"></span> {% if crProduct == product %}<b>{{ 'products.fbt.this_item' | t}}</b>:{% endif %} {{product.title | truncatewords: 12}}</label>
+                            <b class="price">{{current_variant.price | money}}</b>
+                            <select name="items[][id]" id="PrSelect-{{ product.id }}" data-section="{{ product.id }}" class="fbtVr{% if product.variants[0].title == 'Default Title'  %} hide{% endif %}">
+                            {% for variant in product.variants %}
+                                {% if variant.available %}
+                                <option{% if variant == current_variant %} selected="selected"{% endif %} value="{{ variant.id }}" data-img="{{variant.image | default:pr.featured_image | img_url:'150x'}}" data-price="{{variant.price}}">{{ variant.title }}</option>
+                                {% endif %}
+                            {% endfor %}
+                            </select>
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="fbtbtnCall medium-up--text-center">
+                  <p>{{ 'products.fbt.total' | t}}: <b class="fbtPrice" data-total="{{price}}" data-pr="{{price}}">{{price | money}}</b></p>
+                  <p><button type="submit" name="upselladd" id="upsellAddToCart" class="btn upsellAddToCart">{{ 'products.fbt.add_to_cart' | t}}</button></p>
+                  {{collection.description}}
+                </div>
+            </div>
+        {%- endform -%}
+    </div>
+    <br />
+<script type="text/javascript">
+window.addEventListener('load', function() {
+    ajaxFbt = function(){
+        if ($('.fbtCheck').length == 0) return;
+
+        var time,
+            tt_price = $('.fbtPrice'),
+            price_old;
+
+        $('.fbtRow>label').click(function(e){
+            clearTimeout(time);
+            var frm = $(this).closest('.fbtRow'),
+                img = $(frm.data('img')),
+                fbtVr = frm.find('.fbtVr');
+
+            time = setTimeout(function(){
+                if (frm.find('.fbtCheck').is(':checked')) {
+                   frm.addClass('checked');
+                   img.fadeIn(300);
+                   fbtVr.prop('disabled', false);
+                   fbt_update(fbtVr,true);
+                } else {
+                   frm.removeClass('checked');
+                   img.fadeOut(300);
+                   fbtVr.prop('disabled', true);
+                   fbt_update(fbtVr,false);
+                }
+            },100);
+        });
+        $('.fbtVr').off('mousedown click').on('mousedown click', function(e){
+            // Store the current value on focus and on change
+            var _this = $(this),
+                optCked = _this.find('option:checked');
+
+                price_old = optCked.data('price');
+
+           }).on('change', function(e){
+            var _this = $(this),
+                fbtRow = _this.closest('.fbtRow'),
+                fbtPrice = fbtRow.find('.price'),
+                optCked = _this.find('option:checked'),
+                price = optCked.data('price'),
+                img = optCked.data('img'),
+                fbtImg = fbtRow.data('img');
+
+                $('img'+fbtImg).attr('src',img);
+
+              var b = price_old - price;
+              fbtPrice.html(theme.Currency.formatMoney(price, theme.moneyFormat));
+
+              // update total
+              tt_update(b,false);
+
+         });
+
+            function fbt_update(fbtVr,bl) {
+                var optCked = fbtVr.find('option:checked'),
+                    price = optCked.attr('data-price');
+                tt_update(price,bl);
+            };
+            function tt_update(price,bl) {
+              if (bl) {
+                var price = parseInt(tt_price.attr('data-pr')) + parseInt(price);
+              } else {
+                var price = parseInt(tt_price.attr('data-pr')) - parseInt(price);
+              }
+              tt_price.attr('data-pr',price);
+              tt_price.html(theme.Currency.formatMoney(price, theme.moneyFormat));
+            };
+       }
+
+    $(document).ready(function(){
+      ajaxFbt();
+      if (theme.ajax_cart) {
+            var touchmoved;
+            $(document).on('click touchend', '.upsellAddToCart', function(i){
+                i.preventDefault()
+                if (touchmoved != true) {
+                    $('.fbtRow .fbtVr').each(function(){
+                      if (!this.hasAttribute("disabled")){
+                        var value = $(this).val();
+                        $("body").addClass("loading");
+                        CartJS.addItem(value, 1,);
+                      }
+                    });
+                }
+            }).on('touchmove', function(e){
+                touchmoved = true;
+            }).on('touchstart', function(){
+                touchmoved = false;
+            });
+            $(document).on('cart.requestComplete', function(event, cart) {
+                $("body").removeClass("loading showOverly");
+                $(".block-cart").addClass("active");
+            });
+
+          }
+    });
+});
+</script>
+{% endif %}

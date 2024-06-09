@@ -1,0 +1,190 @@
+<div class="content-indent {{ section.settings.top-offeset}}">          
+  <div class="section-cover id-{{section.id}} wow fadeIn" style="background-color:{{section.settings.sec_bg_clr}}; color:{{ section.settings.text_clr}};">  		      
+    <div class="{% if section.settings.fullwidth %}fullwidth{% else %}page-width{%endif%}">
+      {% if section.settings.image != blank %}        
+      	{%- assign img_url = section.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+          <p class="text-center"><img class="lazyload" src="{{ section.settings.image | img_url: '50x' }}" width="{{section.settings.image.width}}" data-src="{{ img_url }}" data-widths="[180, 360, 540, 720, 900]"
+                  data-aspectratio="{{ section.settings.image.aspect_ratio }}" data-sizes="auto" alt="{{ section.settings.image.alt | escape }}"></p>
+      {%- endif -%}
+
+      <div class="wrap-block">                   
+        <div class="simple-text text-{{section.id}} text-center">
+          {% if section.settings.title != blank %}<span>{{ section.settings.title}}</span> {% endif %}
+
+          {% if section.settings.richtxt != blank %}
+          {{ section.settings.richtxt }}
+          {% endif %}                                  
+        </div>
+        {% if section.settings.btntxt and section.settings.btnurl != blank %}                             
+        <a class="btn {{section.settings.btn-size-mob}} {{section.settings.btn-size-desk}}" href="{{section.settings.btnurl}}">{{ section.settings.btntxt }}</a>
+        {% endif %}
+      </div>
+    </div> 
+  </div>
+</div>   
+
+<style> 
+  .section-cover.id-{{section.id}} .wrap-block {margin:0 auto;}
+  .simple-text.text-{{section.id}}  a {color:{{section.settings.text_clr}}; text-decoration:none; }
+   @media only screen and (min-width: 1023px) {
+      .section-cover.id-{{section.id}} .wrap-block { max-width:{{section.settings.max-width}}%; width:100%; }
+   }
+   @media only screen and (min-width: 768px) {
+    .simple-text.text-{{section.id}} { font-size:{{section.settings.text-size}}px;}    
+    .simple-text.text-{{section.id}} span { font-size:{{section.settings.ttl-text-size}}px;}    
+   }  
+</style>
+
+
+{% schema %}
+  {
+    "name": "Rich Text Block",
+    "class": "index-section",   	
+	"settings":[
+	 {
+         "type": "checkbox",
+		 "id": "fullwidth",
+		 "label": "Fullwidth?",
+		 "default": true
+      },
+	 {
+            "type": "select",
+            "id": "top-offeset",
+            "label": "Top OffSet",
+            "default": "default",
+            "options": [
+              {
+                "value": "default",
+                "label": "Default"
+              },
+              {
+                "value": "small",
+                "label": "Small"
+              },
+			  {
+                "value": "none",
+                "label": "None"
+              }
+			]
+        },	
+		{
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+		{
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+		"default": "Section Title"		
+        },
+		{
+            "type": "range",
+            "id": "ttl-text-size",
+            "label": "Title Font Size",
+            "min": 12,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "default": 16
+         },
+		{
+        "type": "richtext",
+        "id": "richtxt",
+        "label": "Information",
+		"default": "<p>Display store promotion text, collection information or store information</p>"		
+        },      	
+		 {
+            "type": "range",
+            "id": "text-size",
+            "label": "Font Size",
+            "min": 12,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "default": 16
+         },	
+	    {
+            "type": "text",
+            "id": "btntxt",
+            "label": "Button Text",
+            "default": "Read More"
+          },
+		  {
+            "type": "url",
+            "id": "btnurl",
+            "label": "URL"          
+          },	
+{
+          "type": "select",
+          "id": "btn-size-desk",
+          "label": "Button Size: Desktop",
+          "default": "btn-sm",
+          "options": [
+          {
+          "label": "Small",
+          "value": "btn-sm"
+          },
+          {
+          "label": "Medium",
+          "value": "btn-md"
+          },
+          {
+          "label": "Large",
+          "value": "btn-lg"
+          }	
+          ]
+          }, 
+          {
+          "type": "select",
+          "id": "btn-size-mob",
+          "label": "Button Size : Mobile",
+          "default": "mob-btn-sm",
+          "options": [
+          {
+          "label": "Small",
+          "value": "mob-btn-sm"
+          },
+          {
+          "label": "Medium",
+          "value": "mob-btn-md"
+          },
+          {
+          "label": "Large",
+          "value": "mob-btn-lg"
+          }	
+          ]
+          },      
+		{
+              "type": "range",
+              "id": "max-width",
+              "label": "Content Width for Desktop",
+              "default": 60,
+              "min": 50,
+              "max": 100,
+              "step": 5,
+              "unit": "%"
+        },
+		{
+            "type": "color",
+            "id": "sec_bg_clr",
+            "label": "Background Color",
+			"default":"#fafafa"	
+		 },
+		{
+            "type": "color",
+            "id": "text_clr",
+            "label": "Text Color",
+			"default":"#111"	
+		 }
+		
+	],
+	"presets": [
+      {
+		 "name": "Rich Text Block",
+         "category": "4. Text"
+	 }
+   ]
+  }
+{% endschema %}
+

@@ -1,0 +1,83 @@
+<form action="/cart" method="post" class="group_table" id="cart-form">
+<ul class="group-prod">
+{%- for link in linklists[product.handle].links -%}
+{% if link.type == 'product_link' %}
+{% assign gppr = link.object %}
+{%- assign sold_out = true -%}
+{%- if gppr.available  -%}{%- assign sold_out = false -%}{%- endif -%}
+
+{%- unless sold_out -%}
+   {%- assign current_variant = gppr.selected_or_first_available_variant -%}
+   {%- assign image = current_variant.featured_image | default: gppr.featured_image -%}
+   {%- assign on_sale = false -%}
+   {%- if current_variant.compare_at_price > current_variant.price -%}
+      {%- assign on_sale = true -%}
+   {%- endif -%}
+      <li class="group-prod-item clearfix">
+		<div  class="img">
+        	<img alt="{{image.alt | split:'|' | last | escape }}" src="{{ image | img_url: '80x' }}" srcset="{{ image | img_url: '80x' }} 1x, {{ image | img_url: '80x', scale: 2 }} 2x" class="attachment-shop_single size-shop_single">
+        </div>
+        <div  class="details">
+            <div class="product-name"><a href="{{  current_variant.url | within: collection }}">{{ gppr.title }}</a></div>
+            {%- if gppr.has_only_default_variant -%}
+               	<input type="hidden" name="[]" class="product-form_group_variants" value="{{ current_variant.id}}">
+          <div class="no-var">{{ current_variant.price | money }}</div>
+               {%- else -%}
+              		<div class="gpprVariants">
+                      <span class="gprvrAct"><span>{{ current_variant.title }} - {{ current_variant.price | money }}</span> <i class="ad ad-angle-down-l"></i></span>
+                      <ul>
+                          {%- for variant in gppr.variants -%}
+                           {%- if variant.available -%}
+                             <li class="gprvr{% if variant == current_variant %} active{% endif %}" data-prod="{{ gppr.id }}" data-id="{{ variant.id }}" data-price="{{ variant.price }}" data-quantity="{%- if variant.inventory_management == blank or variant.inventory_policy == 'continue' -%}999{%- else -%}{{ variant.inventory_quantity }}{%- endif -%}">{{ variant.title }} - {{ variant.price | money }}</li>
+                           {%- endif -%}
+                         {%- endfor -%}
+                      </ul>
+              		</div>
+            {%- endif -%}
+            <div class="qtyField">
+                <a class="gprQty minus" href="javascript:void(0);"><i class="ad ad-minus-r"></i></a>
+                <input type="text" value="1" class="product-form__input qty" name="updates[{{ current_variant.id }}]" id="qty{{ gppr.id }}" min="0" max="{%- if current_variant.inventory_quantity <= 0 and current_variant.available and current_variant.inventory_management != null -%}999{%- elsif current_variant.inventory_management != null -%}{{current_variant.inventory_quantity}}{%- else -%}999{%- endif -%}" />
+                <a class="gprQty plus" href="javascript:void(0);"><i class="ad ad-plus-r"></i></a>
+        	</div>
+        </div>
+      </li>
+  {%- endunless -%}
+  {%- endif -%}
+{%- endfor -%}
+</ul>
+{{infoLinks}}
+<div class="flex product-action">
+	<button type="submit" name="add" id="gprAddToCart-{{ section.id }}" class="btn btn--large gpr-form-cart">
+    	<span id="AddToCartText-{{ section.id }}">{%- unless current_variant.available -%}{{ 'products.product.unavailable' | t }}{%- else -%}{{ 'products.product.add_to_cart' | t }}{%- endunless -%}</span>
+	</button>
+</div>
+</form>
+<script type="text/javascript">
+  window.addEventListener('DOMContentLoaded',function(){
+    
+    $(".gprQty").on("click", function() {
+      var qtyField = $(this).parent(".qtyField"),
+         oldValue = $(qtyField).find(".qty").val(),
+          newVal = '0';
+
+      if ($(this).is(".plus")) {
+        newVal = parseInt(oldValue) + 1;
+      } else if (oldValue != 0 ) {
+        newVal = parseInt(oldValue) - 1;
+      }
+      $(qtyField).find(".qty").val(newVal);
+    });
+
+    $('.gpprVariants .gprvrAct').click(function(){
+  		$(this).next().slideToggle();
+	});
+    $('.gprvr').click(function(){
+      	var name = $(this).html(),
+            pr = $(this).data('prod'),
+      		id = $(this).data('id');
+      	$(this).parents('.gpprVariants').find('.gprvrAct span').html(name);
+      	$('#qty'+pr).attr('name','updates['+id+']');
+  		$(this).parent().slideUp();
+	});
+  });
+</script>

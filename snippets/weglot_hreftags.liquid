@@ -1,0 +1,18 @@
+{%- comment -%} Variables set by Weglot's preferences panel {%- endcomment -%}
+{%- assign original_language = "en" -%}
+{%- assign destination_languages = "fr,de" | split: ',' -%}
+{%- assign sub_domains = false -%}
+
+{%- unless false -%}
+<link rel="alternate" hreflang="{{ original_language }}" href="{{ canonical_url }}">
+  {%- if sub_domains -%}
+    {%- assign main_domain = canonical_url | split: '://' | last | split: '/' | first | split: 'www.' | last -%}
+    {% for language in destination_languages %}
+<link rel="alternate" hreflang="{{ language }}" href="https://{{ language }}.{{ main_domain }}{{ request.path }}">
+    {% endfor %}
+  {%- else -%}
+    {% for language in destination_languages %}
+<link rel="alternate" hreflang="{{ language }}" href="https://{{ request.host }}/a/l/{{ language }}{{ request.path }}">
+    {% endfor %}
+  {%- endif -%}
+{%- endunless -%}

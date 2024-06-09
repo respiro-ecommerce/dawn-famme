@@ -1,0 +1,219 @@
+{% capture productPopup %}
+<!-- product navigation -->
+{% if settings.spr_navigation %}
+  {% if collection.previous_product or collection.next_product %}
+    {% if collection.previous_product %}
+    <a href="{{ collection.previous_product }}" class="sprnav prev{% if settings.spr_navigation_mb %} small--hide medium--hide{% endif %}" title="{{ 'products.product.prev' | t }}">
+      <span class="details">{{ collection.previous_product.title | truncate: 30 }}<br /><span class="nav-price">{{ collection.previous_product.price |money }}</span></span>
+      <span class="img"><img class="imgFl lazyload" data-src="{{ collection.previous_product.images[0].src | img_url: '80x' }}" alt="" /></span>
+    </a>
+    {% endif %}
+    {% if collection.next_product %}
+    <a href="{{ collection.next_product }}" class="sprnav next{% if settings.spr_navigation_mb %} small--hide medium--hide{% endif %}" title="{{ 'products.product.next' | t }}">
+      <span class="img"><img class="imgFl lazyload" data-src="{{ collection.next_product.images[0].src | img_url: '80x' }}" alt="" /></span>
+      <span class="details">{{ collection.next_product.title | truncate: 30 }}<br /><span class="nav-price">{{ collection.next_product.price |money }}</span></span>
+    </a>
+    {% endif %}
+  {% endif %}
+{% endif %}
+
+{%- if settings.sticky_cart -%}
+<div class="stickyCart">
+  {% form 'product', product, id:stickyCart, class:'flex', novalidate: 'novalidate' %}
+  {%- assign current_variant = product.selected_or_first_available_variant -%}
+  {%- assign featured_img_src = current_variant.featured_image.src | default: product.featured_image.src -%}
+  <div class="img small--hide"><img src="{{ featured_img_src | img_url: '60x60' }}" class="FeaturedImage-{{ section.id }} product-featured-img" alt="{{ image.alt | escape }}"></div>
+  <div class="sticky-title small--hide">{{ product.title }}</div>
+  {% if product.available and product.variants.size > 0 and product.variants[0].title != 'Default Title'  %}
+  <div class="stickyOptions">         
+    <div class="selectedOpt">{{ product.selected_or_first_available_variant.title }} - {{ product.selected_or_first_available_variant.price | money }}</div>
+    <ul>
+      {%- for variant in product.variants -%}
+        {%- assign vrNo = forloop.index0 -%}
+        {%- if variant.available -%}
+           <li class="vrOpt" data-val="{{ variant.id }}" data-no="{{vrNo}}">{{ variant.title }} - {{ variant.price | money }}</li>
+        {%- else -%}
+          <li class="soldout">{{ variant.title }} - {{ 'products.product.sold_out' | t }}</li>
+        {%- endif -%}
+      {%- endfor -%}
+    </ul>
+  </div>
+  <select name="id" id="variantOptions1" data-section="{{section.id}}" class="hide product-form__variants selectbox no-js">
+    {%- for variant in product.variants -%}
+    {%- if variant.available -%}
+    <option{% if variant == current_variant %} selected="selected"{% endif %} value="{{ variant.id }}">{{ variant.title }}</option>
+    {%- else -%}
+    <option disabled="disabled">{{ variant.title }} - {{ 'products.product.sold_out' | t }}</option>
+    {%- endif -%}
+    {%- endfor -%}
+  </select>
+  {% else %}
+  	 <select name="id" id="variantOptions1" data-section="{{section.id}}" class="hide product-form__variants selectbox no-js">
+        {%- for variant in product.variants -%}
+        <option{% if variant == current_variant %} selected="selected"{% endif %} value="{{ variant.id }}">{{ variant.title }}</option>
+        {%- endfor -%}
+      </select>  
+  {% endif %}
+  <div class="wrapQtyBtn small--hide" title="{{ 'products.product.quantity' | t }}">
+    <div class="qtyField">
+      <a class="qtyBtn minus" href="javascript:void(0);"><i class="ad ad-minus-r" aria-hidden="true"></i></a>
+      <input type="text" id="quantity1" name="quantity" value="1" class="product-form__input qty" />
+      <a class="qtyBtn plus" href="javascript:void(0);"><i class="ad ad-plus-r" aria-hidden="true"></i></a>
+    </div>
+  </div>
+  <button type="submit" name="add" id="AddToCart-{{ section.id }}" {% unless current_variant.available %}disabled="disabled"{% endunless %} class="btn product-form__cart-submit{% if product.options.size == 1 and product.variants[0].title == 'Default Title' %} product-form__cart-submit--small{% endif %}"><span id="AddToCartText-{{ section.id }}">{% unless current_variant.available %}{{ 'products.product.sold_out' | t }}{% else %}{{ 'products.product.add_to_cart' | t }}{% endunless %}</span></button>
+  {% endform %}
+</div>
+{%- endif -%}
+
+{%- if settings.enable_lightbox -%}
+{{ 'photoswipe.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'photoswipe.min.js' | asset_url }}" defer="defer"></script>
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true"><div class="pswp__bg"></div><div class="pswp__scroll-wrap"><div class="pswp__container"><div class="pswp__item"></div><div class="pswp__item"></div><div class="pswp__item"></div></div><div class="pswp__ui pswp__ui--hidden"><div class="pswp__top-bar"><div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button><button class="pswp__button pswp__button--share" title="Share"></button><button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button><button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button><div class="pswp__preloader"><div class="pswp__preloader__icn"><div class="pswp__preloader__cut"><div class="pswp__preloader__donut"></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class="pswp__share-tooltip"></div></div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button><button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button><div class="pswp__caption"><div class="pswp__caption__center"></div></div></div></div></div>
+{%- endif -%}
+
+{%- assign enable_three60 = false -%}
+{%- for image in product.images -%}{%- if image.alt == '360' -%}{%- assign enable_three60 = true -%}{%- endif -%}{%- endfor -%}
+{%- if settings.enable_360 and enable_three60 -%}
+<script src="{{ 'jquery.threesixty.min.js' | asset_url }}" defer="defer"></script>
+<style>
+  #threesixty { max-width:{{ settings.max_width_popup}}px;}
+.threesixty { overflow:hidden; }
+.threesixty .threesixty_images { display: none; list-style: none; margin: 0; padding: 0; }
+.threesixty .threesixty_images img { position:absolute; top:0; left:50%; height:auto; max-height:{{ settings.max_hegiht_popup}}px; transform:translateX(-50%); }
+.threesixty .threesixty_images img.previous-image { visibility:hidden; }
+.threesixty .threesixty_images img.current-image { visibility:visible; }
+.threesixty .spinner { width: 60px; display: block; margin: 0 auto; height: 30px; background: #333; background: rgba(0, 0, 0, 0.7); -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
+.threesixty .spinner span { font-family: Arial, "MS Trebuchet", sans-serif; font-size: 12px; font-weight: bolder; color: #FFF; text-align: center; line-height: 30px; display: block; }
+.threesixty .nav_bar { position:absolute; bottom:20px; left:50%; z-index:11; transform:translateX(-50%); }
+.threesixty .nav_bar a { font-size:0; width:40px; line-height:40px; height:40px; float:left; background-color:#fff; text-align:center; }
+.threesixty .nav_bar a:before { display:inline-block; font-size:24px; font-family:"adorn-icons"; }
+.threesixty .nav_bar a.nav_bar_play:before { content: "\ebdf"; }
+.threesixty .nav_bar a.nav_bar_stop:before { content: "\ebd8"; }
+.threesixty .nav_bar a.nav_bar_previous:before { content: "\ea46"; }
+.threesixty .nav_bar a.nav_bar_next:before { content: "\ea47"; }
+.threesixty:-webkit-full-screen, .threesixty:-moz-full-screen { background: #ffffff; width: 100%; height: 100%; margin-top: 0; padding-top: 200px; }
+</style>
+{%- endif -%}
+
+{%- if settings.askaboutproduct %}
+	<div id="productInquiry" class="mfpbox mfp-hide mfp-with-anim">
+      	<div class="form-vertical">
+          <h3>{{ product.title }}</h3>
+          {% form 'contact' %}
+              {% if form.posted_successfully? %}<p class="note form--success"> {{ 'products.enquiry.post_success' | t }} </p>{% endif %}
+              {{ form.errors | default_errors }}
+              <div class="formFeilds">
+                  <input type="hidden"  name="contact[product name]" value="{{ product.title }}">
+                  <input type="hidden"  name="contact[product link]" value="{{ shop.url }}{{ product.url }}">
+                  <input type="text" id="ContactFormName" name="contact[name]" placeholder="{{ 'products.enquiry.name' | t }}"  value="{% if form[name] %}{{ form[name] }}{% elsif customer %}{{ customer.name }}{% endif %}" required>
+                  <div class="grid grid--half-gutters">
+                      <div class="grid__item medium-up--one-half">
+                          <input type="email" id="ContactFormEmail" name="contact[email]" placeholder="{{ 'products.enquiry.email' | t }}"  autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}" required>
+                      </div>
+                      <div class="grid__item medium-up--one-half">
+                          <input type="tel" id="ContactFormPhone" name="contact[phone]" pattern="[0-9\-]*" placeholder="{{ 'products.enquiry.phone' | t }}"  value="{% if form[phone] %}{{ form[phone] }}{% elsif customer %}{{ customer.phone }}{% endif %}">
+                      </div>
+                  </div>
+                  <textarea required rows="10" id="ContactFormMessage" name="contact[body]" placeholder="{{ 'products.enquiry.message' | t }}" >{% if form.body %}{{ form.body }}{% endif %}</textarea>
+                  <input type="hidden" name="challenge" value="false">
+                  <input type="submit" class="btn" value="{{ 'products.enquiry.submit' | t }}">
+              </div>
+          {% endform %}
+      </div>
+	</div>
+{%- endif -%}
+{%- if settings.shippingpopup %}<div id="ShippingInfo" class="rte mfpbox mfp-hide mfp-with-anim">{{ pages[settings.shippingpage].content }}</div> {%- endif -%}
+{%- if settings.enable_360 and enable_three60 -%}<div class="mfpbox mfp-hide threesixty mfp-with-anim" id="threesixty"><div class="spinner"><span>0%</span></div><ul class="threesixty_images"></ul></div>{%- endif -%}
+{% endcapture %}
+{{productPopup | strip_newlines | remove: "  " | remove: "	" }}
+<script type="text/javascript">
+window.addEventListener('load', function() {
+    $(document).ready(function(){
+      {%- if settings.askaboutproduct %}
+        if(location.search.indexOf('contact_posted=true') == 1){
+              //alert("yes");
+              $("#productInquiry .formFeilds").hide();
+              $.magnificPopup.open({
+                items: {
+                  src: '#productInquiry'
+                },
+                type: 'inline'
+              });
+        }
+      {%- endif -%}
+
+      {%- if settings.enable_lightbox -%}
+        var $pswp = $('.pswp')[0],
+            image = [],
+            getItems = function(){
+                var items = [];
+                $('.primgthumb').each(function(){
+                    var $href = $(this).data('image'),
+                        $size = $(this).data('size').split('x'),
+                        item  = { src: $href, w: $size[0], h: $size[1] }
+                    items.push(item);
+                });
+                return items;
+            }
+        var items = getItems();
+
+        $.each(items, function(index, value) {
+            image[index] = new Image();
+            image[index].src = value['src'];
+        });
+        $('.prlightbox').click(function(event) {
+            event.preventDefault();
+            var $index = $(".primgthumb.active-thumb").parent().attr('data-slick-index');
+            $index++;
+            $index = $index-1;
+
+            var options = { index: $index, bgOpacity: 0.9, showHideOpacity: true }
+            var lightBox = new PhotoSwipe($pswp, PhotoSwipeUI_Default, items, options);
+            lightBox.init();
+        });
+      {%- endif -%}
+
+      {%- if product.metafields.meta.video != blank -%}
+          $('.popup-video').magnificPopup({ type: 'iframe', mainClass: 'mfp-zoom-in', removalDelay: 160, preloader: false, fixedContentPos: false });
+      {%- endif -%}
+
+      {%- capture threeSixtyImg -%}
+        {%- for image in product.images -%}{%- if image.alt == '360' -%}{{image.src | img_url: "800x" }}{%- unless forloop.last -%},{%- endunless -%}{%- endif -%}{%- endfor -%}
+      {%- endcapture -%}
+      {%- assign three60imgs = threeSixtyImg | split: ',' -%}
+      {%- if settings.enable_360 and enable_three60 -%}
+      $('.pr360view').magnificPopup({
+        type: 'inline',
+        removalDelay: 500, 
+        midClick: true,
+        callbacks: {
+          beforeOpen: function() {   
+             $('.stickyHeader,.stickyCart').addClass('popup');
+             this.st.mainClass = 'mfp-zoom-in';       
+          },
+          open: function(){
+            if(!$(".threesixty_images li").length){
+              $('.threesixty').ThreeSixty({
+                totalFrames: {{three60imgs.size | json}},
+                endFrame: {{three60imgs.size | json}},
+                currentFrame: 1,
+                imgList: '.threesixty_images',
+                progress: '.spinner',
+                imgArray: {{three60imgs | json}},
+                height: {{settings.max_hegiht_popup}},
+                width: 800,
+                responsive: true,
+                navigation: true
+              });
+            }
+          },
+           close:function(){
+                $('.stickyHeader,.stickyCart').removeClass('popup');
+            }
+        }
+      });
+      {%- endif -%}
+    });
+});
+</script>

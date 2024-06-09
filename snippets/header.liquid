@@ -1,0 +1,129 @@
+{%- capture navigation -%}{% section 'navigation' %}{%- endcapture -%}
+{%- if navigation contains '<!--mmobile-->' -%}{% assign endiv = '</div>'  %}{%- endif -%}
+{%- assign desktopnav = navigation | split: '<!--mmobile-->' | first | append: endiv  -%}
+{%- assign mobilenav = navigation | split: '<!--mmobile-->' | last | split: '<!--mmobileend -->' | first   -%}
+{%- capture siteHeader -%}
+{% if settings.snow_effect %}<div class="snow-wrap falling-snow{% if settings.snow_style == "style2" %} style2{% else %} style1{% endif %}">{% endif %}
+
+{%- comment -%}*** Top Announcement ***{%- endcomment -%}
+{%- if settings.announcement -%}
+<div class="notification-bar{% if settings.announcement_mb %} small--hide{% endif %}">
+	{%- if settings.announcement_link != blank -%}
+		<a href="{{ settings.announcement_link }}" class="notification-bar__message">{{ settings.announcement_txt }}</a>
+	{%- else -%}
+		<span class="notification-bar__message">{{ settings.announcement_txt }}</span>
+	{%- endif -%}
+	<span class="close-announcement"><i class="ad ad-times-l" aria-hidden="true"></i></span>
+</div>
+{%- endif -%}
+
+{% comment %}*** Top Bar ***{% endcomment %}
+{% assign topheaderMb = '' %}
+{%- if settings.leftTxt-mobile and settings.centerTxt-mobile and settings.rightTxt-mobile -%}
+	{% assign topheaderMb = 'small--hide medium--hide' %}
+{%- endif -%}
+{%- if settings.topbar -%}
+<div class="top-header-wrapper">
+	<div class="top-header{% unless settings.topbar_fullwidth %} page-width{% endunless %} {{topheaderMb}}">
+		{%- if settings.leftTxt != blank -%}
+			<div class="header-txt left-hdr{% if settings.leftTxt-mobile %} small--hide medium--hide{% else %} small--text-center{% endif %}">
+				{%- if settings.leftTxt contains "[social-icons]"-%}
+					{%- assign topLeftTxt = settings.leftTxt | split: "[social-icons]" -%}
+					{{topLeftTxt[0]}} {% render 'social-media' %} {{topLeftTxt[1]}}
+				{%- else -%}
+					{{ settings.leftTxt }}
+				{%- endif -%}
+			</div>
+		{%- endif -%}
+		{%- if settings.centerTxt != blank -%}
+			<div class="header-txt middle-hdr text-center{% if settings.centerTxt-mobile %} small--hide medium--hide{% endif %}">{{ settings.centerTxt }}</div>
+		{%- endif -%}
+		{%- if settings.rightTxt != blank -%}
+			<div class="header-social right-hdr text-right{% if settings.rightTxt-mobile %} small--hide medium--hide{% else %} small--text-center{% endif %}">
+				{%- if settings.rightTxt contains "[social-icons]"-%}
+					{% assign topRightTxt = settings.rightTxt | split: "[social-icons]" %}
+					{{topRightTxt[0]}} {% render 'social-media' %} {{topRightTxt[1]}}
+				{%- else -%}
+					{{settings.rightTxt}}
+				{%- endif -%}
+			</div>
+		{%- endif -%}
+	</div>
+</div>
+{%- endif -%}
+
+{% comment %}*** Main Header ***{% endcomment %}
+{%- capture logo -%}
+  	{%- capture logoWidth -%}{{ settings.logo_width | escape }}x{%- endcapture -%}
+	<{% if template == 'index'%}h1 {% else %}div {% endif %}class="header-logo">
+		<a href="{{ routes.root_url }}" class="header-logo-link">
+			{%- if settings.home_classic and template == 'index' and settings.logo_cl != blank -%}
+				<img src="{{ settings.logo_cl | img_url: logoWidth }}" class="cllogo" alt="{{ settings.logo_cl.alt | default: shop.name }}" srcset="{{ settings.logo_cl | img_url: logoWidth, scale: 2 }} 1x, {{ settings.logo_cl | img_url: logoWidth, scale: 4 }} 1.1x">
+                {%- if settings.logosvg != blank -%}
+              		{{settings.logosvg | replace: '<svg', '<svg class="stlogo"' }}
+          		{%- else settings.logo != blank -%}
+                    <img src="{{ settings.logo | img_url: logoWidth }}" class="stlogo" alt="{{ settings.logo.alt | default: shop.name }}" srcset="{{ settings.logo | img_url: logoWidth, scale: 2 }} 1x, {{ settings.logo | img_url: logoWidth, scale: 4 }} 1.1x">
+                {%- endif -%}
+			{%- elsif settings.logosvg != blank -%}
+				{{settings.logosvg }}
+          	{%- elsif settings.logo != blank -%}
+				<img src="{{ settings.logo | img_url: logoWidth }}" alt="{{ settings.logo.alt | default: shop.name }}" srcset="{{ settings.logo | img_url: logoWidth, scale: 1 }} 1x, {{ settings.logo | img_url: logoWidth, scale: 2 }} 2x">
+			{%- else -%}
+				{{ shop.name }}
+			{%- endif -%}
+			<span class="visually-hidden">{{ shop.name }}</span>
+		</a>
+	</{% if template == 'index'%}h1{% else %}div{% endif %}>
+{%- endcapture -%}
+{%- capture textblock -%}
+	{%- if settings.hdTxt-block contains "[social-icons]"-%}
+		{%- assign headerTxt = settings.hdTxt-block | split: "[social-icons]" -%}
+		{{headerTxt[0]}} {% render 'social-media' %} {{headerTxt[1]}}
+	{%- else -%}
+		{{ settings.hdTxt-block }}
+	{%- endif -%}
+{%- endcapture -%}
+<div id="header" data-section-id="header" data-section-type="header-section" {% if settings.home_classic and template == "index" %}class="classic-style"{% endif %}>
+		<header class="site-header {{settings.align_logo}}{% if settings.nav_below_logo %} nav-below{% endif %}{% unless settings.main_header_fullwidth %} page-width{% endunless %}">
+			<div class="mobile-nav large-up--hide">
+				<a href="#" class="hdicon js-mobile-nav-toggle open"><i class="ad ad-bars-l" aria-hidden="true"></i></a>
+				{% if settings.enable_search %}
+              		<a href="#" class="hdicon searchIco" title="{{ 'general.search.tool_tip' | t }}"><i class="ad ad-search-l"></i></a>
+                {% endif %}
+			</div>
+			{%- if settings.align_logo == "left" -%}{{logo}}{%- endif -%}
+			{%- if settings.nav_below_logo -%}
+				<div class="txtBlock small--hide medium--hide{% if settings.align_logo == "left" %} text-center{% endif %}">{{textblock}}</div>
+			{%- else -%}
+				{{desktopnav}}
+			{%- endif -%}
+			{% if settings.align_logo == "center" %}{{logo}}{% endif %}
+				<div class="icons-col flex">
+                  	{% if settings.enable_search %}
+						<a href="#" class="hdicon searchIco small--hide medium--hide" title="{{ 'general.search.tool_tip' | t }}"><i class="ad ad-search-l"></i></a>
+                  	{% endif %}
+                  
+                    {% unless settings.hide_login %}
+                  	{% if shop.customer_accounts_enabled or settings.show_multiple_currencies or settings.show_language %}
+					<a href="#" class="hdicon site-settings" title="{{ 'layout.header_settingbox.icon_tooltip' | t }}">
+                      	{% if settings.my_account_icn == 'cog' %}
+                      		<i class="ad ad-cog-l"></i>
+                        {% else %}
+                      		<i class="ad ad-user-al"></i>{% endif %}
+                  	</a> 
+                  	{% endif %}
+                    {% render 'customer-links' %}                  
+                  	{% endunless %}
+                  
+					{% if settings.enable_wishlist %}<a href="{{pages[settings.wishlist_page].url}}" class="hdicon wishlist small--hide medium--hide" title="{{ 'products.wishlist.title' | t }}"><i class="ad ad-heart-l"></i><span class="favCount hide">0</span></a>{% endif %}
+					{%- unless settings.catalogmode -%}<a href="{{ routes.cart_url }}" class="hdicon{% if settings.ajax_cart %} header-cart{% endif %}" title="{{ 'layout.cart.title' | t }}">{% if settings.icon_style == "trolly" %}<i class="ad ad-cart-l"></i>{% elsif settings.icon_style == "bag" %}<i class="ad ad-sq-bag"></i>{% else %}<i class="ad ad-basket-l"></i>{% endif %}<span id="CartCount" class="site-header__cart-count" data-cart-render="item_count">{{ cart.item_count }}</span></a>{%- endunless -%}
+					
+				</div>
+		</header>
+		{%- if settings.nav_below_logo -%}{{desktopnav}}{%- endif -%}
+</div>
+<div class="stickySpace"></div>
+{%- if settings.snow_effect -%}</div>{%- endif -%}
+{{mobilenav}}
+{%- endcapture -%}
+{{siteHeader | strip_newlines | remove: "  " | remove: "	" }}

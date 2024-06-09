@@ -1,0 +1,53 @@
+{% if block.settings.collection_image != blank %}
+  {%- assign collection_image = block.settings.collection_image -%}
+  {%- assign aspectratio = block.settings.collection_image.aspect_ratio -%}
+{% elsif collection.products.first and collection.products.first.images != empty %}
+  {%- assign collection_image = collection.products.first.featured_image -%}
+  {%- assign aspectratio = collection.products.first.featured_image.aspect_ratio -%}
+{% else %}
+  {% assign collection_image = blank %}
+{% endif %}
+
+{%- assign img_url = collection_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+<div class="collection-grid-item">
+  <a href="{% if collection.empty? %}#{% else %}{{ collection.url }}{% endif %}" class="collection-grid-item__link">
+    <div class="imgWrap">
+      <div class="img lazyload" {% if collection_image != blank %}data-bgset="{% include 'prgrid-img', image: collection_image, sizes: sizes %}" data-sizes="auto" data-parent-fit="contain" style="padding-bottom:{{ 1 | divided_by: collection_image.aspect_ratio | times: 100}}%;"{% endif %}>
+        {% if collection.empty? %}
+            {% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
+            {{ 'collection-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
+        {% endif %}
+      </div>
+    </div>
+     <div class="details{% if section.settings.textalign %} {{ section.settings.textalign}}{% endif %}{% if section.settings.leftpadzero %} pad-0{% endif %} wd-{{ section.settings.box-width}} {{ block.settings.textalign}}{% if block.settings.text-left %} text-left{% endif %}">
+        <h3 class="collection-grid-item__title {{section.settings.text_size}} {{ section.settings.font_weight}}">
+          {% if collection.empty? %}
+            {% if block.settings.collection_name != blank %}
+               {{ block.settings.collection_name }}
+            {% else %}
+           	   {{ 'homepage.onboarding.collection_title' | t }}
+            {% endif %}                  	
+          {% else %}
+            {% if block.settings.collection_name != blank %}
+           	   {{ block.settings.collection_name }}
+            {% else %}
+              {{ collection.title }}
+            {% endif %}                  		
+          {% endif %}
+        </h3>
+        {% if block.settings.collection_name2 != blank %}
+        	<p> {{ block.settings.collection_name2 }} </p>                       
+        {% endif %}   
+
+        {% if section.settings.product_count %}
+        	<span class="counts">{{ 'collections.general.items_with_count' | t: count: collection.all_products_count }}</span>
+        {% endif %}                          
+
+        {% if section.settings.show_buttons %}
+          {% if  block.settings.collection_btn != blank %} 
+         	 <button class="btn {{section.settings.btn-size-mob}} {{section.settings.btn-size-desk}}" type="button">{{block.settings.collection_btn}}</button>
+          {% endif %}
+        {% endif %}                              
+    </div>
+  </a>
+</div>

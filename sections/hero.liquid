@@ -1,0 +1,387 @@
+{%- capture heroBanner -%}
+<div class="content-indent {{ section.settings.top-offeset}}">
+  <div class="{% unless section.settings.section_width %}page-width{% else %}fullwidth-{{section.id}} {% endunless %}">
+   
+    {% if section.settings.button_link != blank and section.settings.link_image %}<a href="{{section.settings.button_link}}" class="hero-outer"> {% endif %} 
+    
+    <div class="lazyload hero flex{% if section.settings.snow_effect %} falling-snow{% if section.settings.snow_style == "style2" %} style2{% else %} style1{% endif %}{% endif %} hero-{{ section.id }} wow fadeIn"
+      	{% if section.settings.image %}
+         	data-bgset="{% include 'bgset', image: section.settings.image %}" data-sizes="auto" data-parent-fit="contain"
+         	style="background-image: url('{{ section.settings.image | img_url: '100x' }}'); background-position: center {{ section.settings.alignment }};"
+         {% endif %}
+        {% if section.settings.parallax_scroll %} data-stellar-background-ratio="0.08" data-stellar-vertical-offset="0" {% endif %}>
+
+    	{% if section.settings.image == blank %}<div class="placeholder-background">{{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' }}</div>{% endif %}
+      
+      <div class="hero__inner">
+        	<div class="page-width">
+              {% if section.settings.pretext != blank or section.settings.title != blank or section.settings.text != blank %}
+              <div class="wrap-text {{section.settings.textalign}}">
+                {% if section.settings.pretext != blank %}<span class="pretext heroTxt">{{ section.settings.pretext }}</span>{% endif %}
+                {% if section.settings.title != blank %}<h2 class="mega-title heroTxt">{{ section.settings.title }}</h2>{% endif %}
+                {% if section.settings.hero_dealtimer %}<div class="heroSaleTime desktop" data-date="{{section.settings.cnt_date}}"></div>{% endif %}
+                {% if section.settings.text != blank %}<div class="rte-setting mega-subtitle heroTxt">{{ section.settings.text }}</div>{% endif %}
+                {% if section.settings.button_label != blank and section.settings.button_link != blank %}
+                    {% if section.settings.link_image %}
+                        <span class="btn {{section.settings.btn-size-mob}} {{section.settings.btn-size-desk}}">{{ section.settings.button_label }}</span>
+                    {% else %}
+                        <a href="{{section.settings.button_link}}" class="btn {{section.settings.btn-size-mob}} {{section.settings.btn-size-desk}}">{{ section.settings.button_label }}</a>
+                    {% endif %}
+                {% endif %}
+              </div>
+              {% endif %}
+        	</div>
+      </div>      
+    </div>
+    
+    {% if  section.settings.button_link != blank  %}</a> {% endif %} 
+    
+  </div>
+</div>
+<style> 
+  {% if section.settings.parallax_scroll %}.hero-{{section.id}} { background-attachment:fixed; }{% endif %}
+  
+  .hero-{{section.id}} { height:{{section.settings.ds_height}}px; }
+  
+  {% if section.settings.section_width %}
+  	.fullwidth-{{section.id}} { padding-left:{{section.settings.pad-desk}}px; padding-right:{{section.settings.pad-desk}}px; }
+  {% endif %}
+  @media only screen and (min-width:768px) and (max-width: 1024px) { 
+    .hero-{{section.id}} { height:{{section.settings.tb_height}}px; }
+    {% if section.settings.section_width %}
+    	.fullwidth-{{section.id}} { padding-left:{{section.settings.pad-ipad}}px; padding-right:{{section.settings.pad-ipad}}px; }
+    {% endif %}
+  }
+  
+  @media only screen and (max-width:767px){
+    .hero-{{section.id}} { height:{{section.settings.mb_height}}px; }
+    {% if section.settings.section_width %}
+    .fullwidth-{{section.id}} { padding-left:{{section.settings.pad-mbl}}px; padding-right:{{section.settings.pad-mbl}}px; }
+    {% endif %}
+  }
+  {% if section.settings.bg_clr != "rgba(0,0,0,0)" %}
+  .hero-{{ section.id }} .wrap-text {  background-color:rgba({{ section.settings.bg_clr | color_to_rgb | remove:'rgb(' | remove: ')' }},{{ section.settings.bg_opacity}}); }
+  {% endif %}
+  .hero-{{ section.id }} .wrap-text .heroTxt,
+  .hero-{{ section.id }} .wrap-text .heroTxt a {color:{{ section.settings.txt_clr}}; }   
+  
+  {% if section.settings.hero_dealtimer %}
+  .hero-{{section.id}} .heroSaleTime, .hero-{{section.id}} .heroSaleTime span { color:{{section.settings.cnt_text}};}
+  .hero-{{section.id}} .heroSaleTime > span { background:{{section.settings.cnt_bg}}; border:1px dashed {{section.settings.cnt_bdr}}; }
+  {% endif %}
+
+</style>
+
+
+{%- endcapture -%}
+{{heroBanner | strip_newlines | remove: "  " | remove: "	" }}
+
+{% schema %}
+  {
+    "name": "Parallax Banner",
+    "class": "index-section",
+    "settings": [
+	 {
+		 "type": "paragraph",
+		 "content":"[checkout different style](https://www.adornthemes.com/parallax-banner/)"
+      },
+	 {
+		 "type": "paragraph",
+		 "content":"Section==="
+      },
+	 {
+            "type": "select",
+            "id": "top-offeset",
+            "label": "Top OffSet",
+            "default": "default",
+            "options": [
+              {
+                "value": "default",
+                "label": "Default"
+              },
+              {
+                "value": "small",
+                "label": "Small"
+              },
+			  {
+                "value": "none",
+                "label": "None"
+              }
+			]
+        },
+		{
+		"type":"checkbox",
+		"id":"section_width",
+		"label":"Fullwidth?",
+		"default": false
+	  },
+	{
+        "type": "paragraph",
+        "content": "Left/Right Padding : Fullwidth Section Only==="
+      }, 	
+      {
+        "type": "range",
+        "id": "pad-desk",
+        "label": "Desktop",
+        "default": 0,
+        "min": 0,
+        "max": 100,
+        "step": 1
+      },
+      {
+        "type": "range",
+        "id": "pad-ipad",
+        "label": "Tablet",
+        "default": 0,
+        "min": 0,
+        "max": 30,
+        "step": 1
+      },
+      {
+        "type": "range",
+        "id": "pad-mbl",
+        "label": "Mobile",
+        "default": 0,
+        "min": 0,
+        "max": 20,
+        "step": 1
+      },
+	  {
+        "type": "header",
+        "content": "Banner"
+      },	 
+	  {
+		"type":"paragraph",
+		"content":"Height ==="
+	  },
+      {
+        "type": "range",
+        "id": "ds_height",
+        "label": "Desktop",
+        "default": 600,
+        "min": 100,
+        "max": 1000,
+        "step": 10
+      },
+      {
+        "type": "range",
+        "id": "tb_height",
+        "label": "Tablet",
+        "default": 350,
+        "min": 100,
+        "max": 1000,
+        "step": 10
+      },  
+	  {
+        "type": "range",
+        "id": "mb_height",
+        "label": "Mobile",
+        "default": 250,
+        "min": 100,
+        "max": 1000,
+        "step": 10
+      },  
+	 {
+        "type": "checkbox",
+        "id": "parallax_scroll",
+        "label": "Enable Parallax Scrolling",
+        "default":true,
+		"info":"For Parallax Effect Recommanded Image Size 1900x1000"
+      },
+	  {
+		"type":"paragraph",
+		"content":"For Best Resolution recommended image for fullwidth: 1920px for Desktop & 760px for Mobile. Image height should be as per your above selections."
+	  },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "select",
+        "id": "alignment",
+        "label": "Image Alignment",
+        "default": "center",
+        "options": [
+          {
+            "value": "top",
+            "label": "Top"
+          },
+          {
+            "value": "center",
+            "label": "Middle"
+          },
+          {
+            "value": "bottom",
+            "label": "Bottom"
+          }
+        ]
+      },
+ 	  {
+            "type": "select",
+            "id": "textalign",
+            "label": "Text Position",
+            "default": "center",
+            "options": [
+              { "value":"topleft", "label":"Top Left" },
+  			  { "value":"topright", "label":"Top Right" },
+ 			  { "value":"leftcenter", "label":"Left Center" },
+              { "value":"center", "label":"Center" },
+ 			  { "value":"rightcenter", "label":"Right Center" },
+              { "value":"bottomleft", "label":"Bottom Left" },
+			  { "value":"bottomright", "label":"Bottom Right" }
+            ]
+      },
+      {
+        "type": "textarea",
+        "id": "pretext",
+        "label": "Pre Text",
+        "default": "Pre Heading",
+		"info":"use <strong>your text here</strong> to make font bold"
+      },
+      {
+        "type": "textarea",
+        "id": "title",
+        "label": "Heading",
+        "default": "Heading",
+	  	"info":"use <strong>your text here</strong> to make font bold"
+      },
+      {
+        "type": "richtext",
+        "id": "text",
+        "label": "Text",
+        "default": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.</p>"
+      },               
+	  {
+        "type": "color",
+        "id": "txt_clr",
+        "label": "Text Color",
+        "default": "#000"
+      },
+	 {
+        "type": "color",
+        "id": "bg_clr",
+        "label": "Background Color",
+        "default": "#fff"
+      },      
+	 {
+        "type": "range",
+        "id": "bg_opacity",
+        "min": 0,
+        "max": 1,
+        "step": 0.1,
+        "label": "Background Opacity",
+        "unit": "%",
+        "default": 0.3
+      },
+	  {
+        "type": "text",
+        "id": "button_label",
+        "label": "Button Label"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button Link"
+      },
+ 	  {
+        "type": "checkbox",
+        "id": "link_image",
+        "label": "Display link on entire image",
+		"info":"This option will add link on entire image instead of only button",
+		"default":false
+      },
+	  {
+          "type": "select",
+          "id": "btn-size-desk",
+          "label": "Button Size: Desktop",
+          "default": "btn-sm",
+          "options": [
+            { "label": "Small", "value": "btn-sm" },
+            { "label": "Medium", "value": "btn-md" },
+            { "label": "Large", "value": "btn-lg" }	
+          ]
+	  }, 
+      {
+          "type": "select",
+          "id": "btn-size-mob",
+          "label": "Button Size : Mobile",
+          "default": "mob-btn-sm",
+          "options": [
+          	{ "label": "Small", "value": "mob-btn-sm" },
+          	{ "label": "Medium", "value": "mob-btn-md" },
+          	{ "label": "Large", "value": "mob-btn-lg" }
+          ]
+      }, 	 
+	  {
+		"type":"checkbox",
+		"id":"snow_effect",
+		"label":"Enable Snow Effect?",
+		"default": false,
+		"info":"For Christmas"
+	  },
+      {
+          "type": "select",
+          "id": "snow_style",
+          "label": "Snow Style",
+          "default": "style1",         
+          "options": [
+            {
+            "value": "style1",
+            "label": "Falling Down"
+            },
+            {
+            "value": "style2",
+            "label": "Falling From Left"
+            }
+            ]
+      },
+	  {
+        "type": "header",
+        "content": "Countdown Timer"
+      },
+ 	  {
+		"type":"checkbox",
+		"id":"hero_dealtimer",
+		"label":"Display?",
+		"default": false,
+		"info":"please click save button to view"
+	  },
+	  {
+        "type": "text",
+        "id": "cnt_date",
+        "label": "Enter Date",
+        "info": "Date Formate should be Month\/Day\/Year.i.e mm\/dd\/year, 11\/25\/2020",
+        "default": "12\/20\/2020"
+      },
+      {
+        "type": "color",
+        "id": "cnt_bg",
+        "label": "Background",
+        "default": "#000"
+      },
+      {
+        "type": "color",
+        "id": "cnt_text",
+        "label": "Text",
+        "default": "#eee"
+      },
+      {
+        "type": "color",
+        "id": "cnt_bdr",
+        "label": "Border",
+        "default": "#000"
+      },
+	 {
+        "type": "paragraph",      
+        "content": "Set font size from --> Theme Settings --> Fonts, Colors and Styles --> Parallax Banner"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Parallax Banner",
+        "category": "3. Banners"
+      }
+    ]
+  }
+{% endschema %}

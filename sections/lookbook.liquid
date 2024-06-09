@@ -1,0 +1,451 @@
+<div class="page-width {% if section.settings.fullwidth %}fullwidth{% endif %}" id="{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="masonary">     
+  <div class="grid-mr-{{ section.settings.grid-spacing}}">
+    <div class="flex lookbook grid-masonary {{ section.settings.lb-style}}">
+      <div class="grid-sizer-{{section.id}} col-{{section.settings.grid-spacing-col}}"></div>
+      {% for block in section.blocks limit: section.blocks.size %}
+      {% case block.settings.width %}
+      {% when '20%' %}
+      {%- assign block_width = 'small--one-whole medium-up--one-fifth' -%}
+      {% when '25%' %}
+      {%- assign block_width = 'small--one-whole medium-up--one-quarter' -%}
+      {% when '33%' %}
+      {%- assign block_width = 'small--one-whole medium-up--one-third' -%}
+      {% when '40%' %}
+      {%- assign block_width = 'small--one-whole medium-up--two-fifths' -%}
+      {% when '50%' %}
+      {%- assign block_width = 'small--one-whole medium-up--one-half' -%}
+      {% when '60%' %}
+      {%- assign block_width = 'small--one-whole medium-up--tree-fifths' -%}
+      {% when '66%' %}
+      {%- assign block_width = 'small--one-whole medium-up--two-thirds' -%}
+      {% when '75%' %}
+      {%- assign block_width = 'small--one-whole medium-up--three-quarters' -%}
+      {% when '80%' %}        
+      {%- assign block_width = 'small--one-whole medium-up--four-fifths' -%}
+      {% when '100%' %}          
+      {%- assign block_width = 'one-whole' -%}
+      {% endcase %}       
+
+      {% if block.settings.image!= blank %}
+      <div class="ms-item grid-lookbook {{ block_width }} pd-mb-{{section.settings.grid-spacing-mbl}} pd-{{ section.settings.grid-spacing}}">
+        <div class="collection-grid-item {{ section.settings.lb-style}}">
+
+          {% if section.settings.lb-style == 'gallery' %}<span class="zoom-img zoom"><i class="ad ad-expand"></i></span>{% endif %}
+
+          <a class="zoom" href="{{ block.settings.image | img_url:'master' }}" data-size="{{block.settings.image.width}}x{{block.settings.image.height}}">                  		                     	                                        
+            {%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+            <img class="imgFl lazyload" src="{{ block.settings.image | img_url: '50x' }}" data-src="{{ img_url }}"
+           		data-widths="[300, 500, 750, 1000, 1350, 1600, 2000]" data-aspectratio="{{ block.settings.image.aspect_ratio }}" data-sizes="auto" alt="{{ block.settings.image.alt | escape }}" />
+          </a>
+
+          {% comment %} lookbook shop {% endcomment %}
+          {% if section.settings.lb-style == 'shop' %}
+          {% if  block.settings.product1 != blank %}
+          <div class="products" style="top:{{ block.settings.p1_top}}%;left:{{ block.settings.p1_left}}%;">
+            <span class="btn-shop"><i class="ad ad-plus"></i></span>
+            {% include 'product-card-grid-lookbook', slproduct: block.settings.product1, postion: block.settings.dis-pstn1 %}
+          </div>
+          {% endif %}
+
+          {% if  block.settings.product2 != blank %}
+          <div class="products" style="top:{{ block.settings.p2_top}}%;left:{{ block.settings.p2_left}}%;">
+            <span class="btn-shop"><i class="ad ad-plus"></i></span>                              	                            	 
+            {% include 'product-card-grid-lookbook',slproduct: block.settings.product2, postion: block.settings.dis-pstn2 %}
+          </div>
+          {% endif %}
+
+          {% if  block.settings.product3 != blank %}
+          <div class="products" style="top:{{ block.settings.p3_top}}%;left:{{ block.settings.p3_left}}%;">
+            <span class="btn-shop"><i class="ad ad-plus"></i></span>                               	                          
+            {% include 'product-card-grid-lookbook',slproduct: block.settings.product3, postion: block.settings.dis-pstn3 %}
+          </div>
+          {% endif %}
+
+          {% if  block.settings.product4 != blank %}
+          <div class="products"	style="top:{{ block.settings.p4_top}}%;left:{{ block.settings.p4_left}}%;">
+            <span class="btn-shop"><i class="ad ad-plus"></i></span>                                 
+            {% include 'product-card-grid-lookbook',slproduct: block.settings.product4, postion: block.settings.dis-pstn4 %}
+          </div>
+          {% endif %}
+
+          {% endif %}
+
+          {% if section.settings.lb-style == 'gallery' %}
+          {% if block.settings.title != blank or  block.settings.title2 != blank %}
+          <div class="lookbook-caption">
+            {% if block.settings.url != blank %}<a href="{{ block.settings.url}}">{% endif %}  
+            {% if block.settings.title != blank %}
+            <span class="text-1">{{ block.settings.title }}</span>
+            {% endif %}
+
+            {% if block.settings.title2 != blank %}
+            <span class="text-2">{{ block.settings.title2 }}</span>
+            {% endif %}
+            {% if block.settings.url != blank %}</a>{% endif %}  
+          </div>
+          {% endif %}
+          {% endif %}
+
+        </div>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<style>
+  .lookbook-caption { background:{{ section.settings.cap_bg}}; }
+  .lookbook-caption span { color:{{ section.settings.cap_text}}; }
+  .zoom-img { background:{{ section.settings.zoom_bg}}; }
+  .zoom-img .ad { color:{{ section.settings.zoom_text }}; }
+</style>
+
+{{ 'photoswipe.css' | asset_url | stylesheet_tag }}
+{{ 'photoswipe.min.js' | asset_url | script_tag }}
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true"><div class="pswp__bg"></div><div class="pswp__scroll-wrap"><div class="pswp__container"><div class="pswp__item"></div><div class="pswp__item"></div><div class="pswp__item"></div></div><div class="pswp__ui pswp__ui--hidden"><div class="pswp__top-bar"><div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button><button class="pswp__button pswp__button--share" title="Share"></button><button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button><button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button><div class="pswp__preloader"><div class="pswp__preloader__icn"><div class="pswp__preloader__cut"><div class="pswp__preloader__donut"></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class="pswp__share-tooltip"></div></div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button><button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button><div class="pswp__caption"><div class="pswp__caption__center"></div></div></div></div></div>
+<script>
+  window.onload = function(){
+    $(window).load(function(){
+
+      var $pswp = $('.pswp')[0],
+            image = [],
+            getItems = function(){
+                var items = [];
+                $('a.zoom').each(function() {
+                    var $href = $(this).attr('href'),
+                        $size = $(this).data('size').split('x'),
+                        item  = { src: $href, w: $size[0], h: $size[1] }
+                    items.push(item);
+                });
+                return items;
+            }
+        var items = getItems();
+        $('.zoom').click(function(event) {
+            event.preventDefault();
+            var $index = $(this).parents(".grid-lookbook").index();
+            $index = $index-1;
+            var options = {
+                index: $index,
+                bgOpacity: 0.9,
+                showHideOpacity: true
+            }
+            var lightBox = new PhotoSwipe($pswp, PhotoSwipeUI_Default, items, options);
+            lightBox.init();
+        });
+      }(jQuery));
+  }
+</script>
+
+{% schema %}
+  {
+    "name": "Lookbook Page",	
+    "settings": [
+	  {
+		 "type": "paragraph",
+		 "content":"[Lots of grid style possible with this section](https://www.adornthemes.com/different-collection-banner-style/)"
+      },
+	  {
+         "type": "checkbox",
+		 "id": "fullwidth",
+		 "label": "Fullwidth?",
+		 "default": false
+        },
+		{
+            "type": "select",
+            "id": "lb-style",
+            "label": "Select Style",
+            "default": "gallery",
+			"info":"Text will not be visible for Lookbook Shop",
+            "options": [
+			 {
+                "value": "gallery",
+                "label": "Gallery With Text Info."
+              },
+              {
+                "value": "shop",
+                "label": "Lookbook Shop"
+              }
+			]
+		},
+	 {
+        "type": "paragraph",
+        "content": "Grid==="
+      }, 
+	 {
+        "type": "range",
+        "id": "grid-spacing",
+        "label": "Spacing : Desktop",
+        "default": 15,
+        "min": 0,
+        "max": 30,
+        "step": 1,
+		"unit":"px",
+		"info":"space between two grid/box."
+      },
+     {
+        "type": "range",
+        "id": "grid-spacing-mbl",
+        "label": "Spacing : Mobile",
+        "default": 5,
+        "min": 0,
+        "max": 30,
+        "step": 1,
+		"unit":"px"		
+      },
+	 {
+        "type": "range",
+        "id": "grid-spacing-col",
+        "label": "Select Column",
+        "default": 2,
+        "min": 2,
+        "max": 5,
+        "step": 1,
+		"info":"[Column Selection guide](https://www.adornthemes.com/masonry-column-selection/)"
+      },			   
+		{
+			"type":"color",
+			"id":"cap_bg",
+		    "label":"Text Background",
+			"default":"#fff"
+		},
+		{
+			"type":"color",
+			"id":"cap_text",
+		    "label":"Text",
+			"default":"#111"
+		},
+		{
+			"type":"color",
+			"id":"zoom_bg",
+		    "label":"Zoom Icon Background",
+			"default":"#fff"
+		},
+		{
+			"type":"color",
+			"id":"zoom_text",
+		    "label":"Zoom Icon",
+			"default":"#111"
+		}
+	 ],
+	"blocks":[
+		{
+			"name":"Lookbook",
+			"type":"lookbook1",
+		 	"settings":[
+			{
+			"type":"image_picker",
+			"id":"image",
+		     "label":"Add Image"			 
+		    },
+			{
+			"type":"url",
+			"id":"url",
+		     "label":"Link"
+		    },
+			{
+			"type":"textarea",
+			"id":"title",
+		    "label":"Text Line 1"				
+		    },			
+	      {
+			"type":"textarea",
+			"id":"title2",
+		    "label":"Text Line 2"				
+		    },
+		 	 {
+            "type": "select",
+            "id": "width",
+            "label": "Column width",
+            "default": "50%",
+			"info":"Total width of all block must not more than 100%",
+            "options": [
+			  { "value": "20%", "label": "20%" },
+              { "value": "25%", "label": "25%" },
+              { "value": "33%", "label": "33%" },
+              { "value": "40%", "label": "40%" },
+              { "value": "50%", "label": "50%" },
+              { "value": "60%", "label": "60%" },
+              { "value": "66%", "label": "66%" },
+              { "value": "75%", "label": "75%" },
+              { "value": "80%", "label": "80%" },
+              { "value": "100%", "label": "100%" }
+            ]
+          },
+		  {
+            "type":"header",
+            "content":"Lookbook Shop"		
+           },
+		  {
+            "type": "product",
+            "id": "product1",
+            "label": "Select Product 1"
+          },
+           {
+            "type": "range",
+            "id": "p1_top",
+            "label": "Top Position",
+            "default": 1,
+            "min": 1,
+            "max": 90,
+            "step": 1,
+            "unit": "%"
+          },
+		  {
+            "type": "range",
+            "id": "p1_left",
+            "label": "Left Position",
+            "default": 1,
+            "min": 1,
+            "max": 90,
+            "step": 1,
+            "unit": "%"
+          },
+	 	  {
+            "type": "select",
+            "id": "dis-pstn1",
+            "label": "Display From",
+            "default": "left",
+			"info":"display product box either from left or right",
+            "options": [
+			 {
+                "value": "left",
+                "label": "Left"
+              },
+              {
+                "value": "right",
+                "label": "Right"
+              }
+			]
+		},
+		 {
+            "type": "product",
+            "id": "product2",
+            "label": "Select Product 2"
+          },
+		 {		
+            "type": "range",
+            "id": "p2_top",
+            "label": "Top Position",
+            "default": 1,
+            "min": 1,
+            "max": 90,
+            "step": 1,
+            "unit": "%"
+          },
+		  {
+            "type": "range",
+            "id": "p2_left",
+            "label": "Left Position",
+            "default": 1,
+            "min": 1,
+            "max": 90,
+            "step": 1,
+            "unit": "%"
+          },
+		 {
+            "type": "select",
+            "id": "dis-pstn2",
+            "label": "Display From",
+            "default": "left",
+			"info":"display product box either from left or right",
+            "options": [
+			 {
+                "value": "left",
+                "label": "Left"
+              },
+              {
+                "value": "right",
+                "label": "Right"
+              }
+			]
+		},
+		{
+            "type": "product",
+            "id": "product3",
+            "label": "Select Product 3"
+          },
+		 {		
+            "type": "range",
+            "id": "p3_top",
+            "label": "Top Position",
+            "default": 1,
+            "min": 1,
+            "max": 90,
+            "step": 1,
+            "unit": "%"
+          },
+		  {
+            "type": "range",
+            "id": "p3_left",
+            "label": "Left Position",
+            "default": 1,
+            "min": 1,
+            "max": 90,
+            "step": 1,
+            "unit": "%"
+          },
+		{
+            "type": "select",
+            "id": "dis-pstn3",
+            "label": "Display From",
+            "default": "left",
+			"info":"display product box either from left or right",
+            "options": [
+			 {
+                "value": "left",
+                "label": "Left"
+              },
+              {
+                "value": "right",
+                "label": "Right"
+              }
+			]
+		},
+		{
+            "type": "product",
+            "id": "product4",
+            "label": "Select Product 4"
+          },
+		 {		
+            "type": "range",
+            "id": "p4_top",
+            "label": "Top Position",
+            "default": 1,
+            "min": 1,
+            "max": 90,
+            "step": 1,
+            "unit": "%"
+          },
+		  {
+            "type": "range",
+            "id": "p4_left",
+            "label": "Left Position",
+            "default": 1,
+            "min": 1,
+            "max": 90,
+            "step": 1,
+            "unit": "%"
+          },
+		{
+            "type": "select",
+            "id": "dis-pstn4",
+            "label": "Display From",
+            "default": "left",
+			"info":"display product box either from left or right",
+            "options": [
+			 {
+                "value": "left",
+                "label": "Left"
+              },
+              {
+                "value": "right",
+                "label": "Right"
+              }
+			]
+		}
+		 ]
+	   }       
+     ]	
+  }
+{% endschema %} 
+

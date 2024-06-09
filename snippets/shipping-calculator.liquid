@@ -1,0 +1,41 @@
+<div id="shipping-calculator">
+  <span class="cart-options-ttl">{{ section.settings.shipping_calculator_heading | default: 'Get shipping estimates' }}</span>
+  <div class="field">
+    <label for="address_country">{{ 'customer.addresses.country' | t }}</label>
+    <div><select id="address_country" name="address[country]" data-default="{% if shop.customer_accounts_enabled and customer %}{{ customer.default_address.country }}{% elsif section.settings.shipping_calculator_default_country != '' %}{{ section.settings.shipping_calculator_default_country }}{% endif %}">{{ country_option_tags }}</select></div>
+  </div>
+  <div class="field" id="address_province_container" style="display:none;">
+    <label for="address_province" id="address_province_label">{{ 'customer.addresses.province' | t }}</label>
+    <div><select id="address_province" name="address[province]" data-default="{% if shop.customer_accounts_enabled and customer and customer.default_address.province != '' %}{{ customer.default_address.province }}{% endif %}"></select></div>
+  </div>  
+  <div class="field">
+    <label for="address_zip">{{ 'customer.addresses.zip' | t }}</label>
+    <div><input type="text" id="address_zip" name="address[zip]"{% if shop.customer_accounts_enabled and customer %} value="{{ customer.default_address.zip }}"{% endif %} /></div>
+  </div>
+  <div class="field text-center"><input type="button" class="btn btn--secondary get-rates" value="{{ section.settings.shipping_calculator_submit_button_label | default: 'Calculate shipping' }}" /></div>
+  <div id="wrapper-response"></div>
+</div>
+
+<script id="shipping-calculator-response-template" type="text/template">
+  {% raw %}
+  <p id="shipping-rates-feedback" {{#if success}} class="success" {{else}} class="error" {{/if}}>
+  {{#if success}}
+    {{#if rates}}
+      {{#rates}}
+        {{#if @first}}
+            {% endraw %}{{ 'cart.general.shipping_rate_start_at' | t }}{% raw %} {{{price}}}.
+        {{/if}}
+      {{/rates}}
+    {{else}}
+      {% endraw %}{{ 'cart.general.do_not_ship_to_country' | t }}{% raw %}
+    {{/if}}    
+  {{else}}
+    {{ errorFeedback }}
+  {{/if}}
+  </p>
+  {% endraw %}
+</script>
+
+<!--[if lte IE 8]>
+<style> #shipping-calculator { display: none; } </style>
+<![endif]-->

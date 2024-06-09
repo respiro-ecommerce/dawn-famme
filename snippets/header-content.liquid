@@ -1,0 +1,17 @@
+{%- capture asrc -%}async="async" data-src{%- endcapture -%}
+{%- capture src -%}defer="defer" data-src{%- endcapture -%}
+{%- capture asyncLoad -%}
+document.addEventListener('StartAsyncLoading', function(event){asyncLoad();});if(window.attachEvent) {
+{%- endcapture -%}
+{%- capture aLoad -%}window.attachEvent('onload', function(){});{%- endcapture -%}
+{%- capture aaLoad -%}window.addEventListener('load', function(){}, false);{%- endcapture -%}
+{%- capture endScript -%}appendChild(eventsListenerScript);});{%- endcapture -%}
+{{content_for_header|replace: "if(window.attachEvent) {", asyncLoad 
+|replace:"window.attachEvent('onload', asyncLoad);",aLoad 
+|replace:"window.addEventListener('load', asyncLoad, false);",aaLoad
+|replace: "var customDocumentWrite", "document.addEventListener('StartKernelLoading', function() { document.dispatchEvent(new CustomEvent('StartShopifyLoading')); var customDocumentWrite"
+|replace: "appendChild(eventsListenerScript);",endScript
+|replace:'defer="defer" src',src
+|replace:'async="async" src',asrc
+|replace :'DOMContentLoaded','StartAsyncLoading'
+}}

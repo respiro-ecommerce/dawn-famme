@@ -1,0 +1,250 @@
+{%- if settings.breadcrumb_pr -%}{%- include 'breadcrumb' -%}{%- else -%}<div class="topSpace"></div>{%- endif -%}
+{%- if settings.product_latyout == "style6" -%}
+	<div class="page-width{% if settings.product_fullwidth %} fullwidth{%endif%}">
+      <div class="grid">
+        <div class="grid__item large-up--three-quarters">{% section 'product-template' %}</div>
+        <div class="grid__item large-up--one-quarter">
+          	{%- if settings.store_ft1 != blank or settings.store_ft2 != blank or settings.store_ft3 != blank -%}
+                <div class="flex storeFeatures">
+                    {%- if settings.store_ft1 != blank -%}<p>{{settings.store_ft1}}</p>{%- endif -%}
+                    {%- if settings.store_ft2 != blank -%}<p>{{settings.store_ft2}}</p>{%- endif -%}
+                    {%- if settings.store_ft3 != blank -%}<p>{{settings.store_ft3}}</p>{%- endif -%}
+                </div>
+            {%- endif -%}
+          	{% section 'related-products' %}
+          	{% section 'product-recommendations' %}
+          	{% section 'recently-viewed' %}
+        </div>
+      </div>
+	</div>
+{%- else -%}
+	{% section 'product-template' %}
+	{% section 'related-products' %}
+	{% section 'product-recommendations' %}
+	{% section 'recently-viewed' %}
+{%- endif -%}
+{%- include 'product-popup' -%}
+
+{%- assign current_variant = product.selected_or_first_available_variant -%}
+<script type="text/javascript">
+	// Override default values of shop.strings for each template.
+	// Alternate product templates can change values of
+	// add to cart button, sold out, and unavailable states here.
+	theme.productStrings = {
+    	addToCart: {{ 'products.product.add_to_cart' | t | json }},
+    	soldOut: {{ 'products.product.sold_out' | t | json }},
+    	unavailable: {{ 'products.product.unavailable' | t | json }},
+      	prStyle: {{settings.product_latyout | json }}
+  	}
+    
+	window.addEventListener('DOMContentLoaded',function(){
+      $('.product-form-{{product.id}} .swatch :radio').change(function(){
+            var optionIndex = $(this).closest('.swatch').attr('data-option-index'),
+                optionValue = $(this).val();
+            $(this).closest('form').find('.single-option-selector').eq(optionIndex).val(optionValue).trigger('change');
+            {%- if settings.show_multiple_currencies and settings.currency_opt == 'script' -%}Currency.convertAll(shopCurrency, $('#currencies li.selected').attr('data-currency'));{%- endif -%}
+		});
+      	$('#variantOptions').change(function(){
+            var optionValue = $(this).val(),
+                form = $('form[action="/cart/add"]');
+            $(form).find('.product-form__variants').val(optionValue).trigger('change');
+		});
+  
+        {%- if settings.terms_checkbox -%}
+          var $buyinoneclick = $('.shopify-payment-button');
+          if($buyinoneclick.length){
+            $buyinoneclick.first().bind('DOMNodeInserted', function() {
+              setTimeout(function(){
+                var $shopifypaymentbutton = $('.shopify-payment-button').find(".shopify-payment-button__button");
+                if($shopifypaymentbutton.length){
+                  $buyinoneclick.hide();
+                  setTimeout(function(){
+                    $(".shopify-payment-button__button").attr('disabled', true);
+                    $buyinoneclick.fadeIn()
+                  }, 300);
+                }
+              }, 0);
+            });
+          }
+
+          {%- if settings.terms_checkbox -%}
+            $('#prTearm').change(function(){
+              if(this.checked == true){
+                $('.shopify-payment-button__button').removeAttr("disabled");
+              } else {
+                $('.shopify-payment-button__button').attr("disabled", "disabled");
+              }
+            });
+          {%- endif -%}
+        {%- endif -%}
+});
+  
+  	{%- if product.variants.size > 1 -%}
+      var variantImages={},thumbnails,variant,variantImage,optionValue,productOptions = [];
+        {%- for variant in product.variants -%}
+           variant ={{ variant | json }};
+           if ( typeof variant.featured_image !== 'undefined' && variant.featured_image !== null){
+             variantImage =  variant.featured_image.src.split('?')[0].replace(/http(s)?:/,'');
+             variantImages[variantImage] = variantImages[variantImage] || {};
+             {%- for option in product.options -%}
+               {%- assign option_value = variant.options[forloop.index0] -%}
+               {%- assign option_key = 'option-' | append: forloop.index0 -%}
+               if (typeof variantImages[variantImage][{{ option_key | json }}] === 'undefined'){
+                 variantImages[variantImage][{{ option_key | json }}] = {{ option_value | json }};
+               } else {
+                 var oldValue = variantImages[variantImage][{{ option_key | json }}];
+                 if(oldValue !== null && oldValue !== {{ option_value | json }}){variantImages[variantImage][{{ option_key | json }}] = null;}
+               }
+             {%- endfor -%}
+           }
+           productOptions.push(variant);
+        {%- endfor -%}
+    {%- endif -%}
+
+{%- if product.variants.size > 0 -%}
+	var Shopify = Shopify || {};
+	Shopify.optionsMap = {};
+	Shopify.updateOptionsInSelector = function(selectorIndex){
+      switch (selectorIndex) {
+        case 0:
+          var key = 'root';
+          var selector = $('.single-option-selector:eq(0)');
+          break;
+        case 1:
+          var key = $('.single-option-selector:eq(0)').val();
+          var selector = $('.single-option-selector:eq(1)');
+          break;
+        case 2:
+          var key = $('.single-option-selector:eq(0)').val();  
+          key += ' / ' + $('.single-option-selector:eq(1)').val();
+          var selector = $('.single-option-selector:eq(2)');
+      }
+
+      var initialValue = selector.val();
+      //selector.empty();    
+      var availableOptions = Shopify.optionsMap[key];
+      /*for (var i=0; i<availableOptions.length; i++) {
+        var option = availableOptions[i];
+        var newOption = $('<option></option>').val(option).html(option);
+        //selector.append(newOption);
+      }*/
+      $('.swatch[data-option-index="' + selectorIndex + '"] .swatch-element').each(function() {
+        if ($.inArray($(this).attr('data-value'), availableOptions) !== -1) {
+          $(this).removeClass('soldout');
+          //$(this).removeClass('soldout').find(':radio').removeAttr('disabled','disabled').removeAttr('checked');
+        }
+        else {
+          $(this).addClass('soldout');
+        }
+      });
+      if ($.inArray(initialValue, availableOptions) !== -1) {
+        selector.val(initialValue);
+      }
+      selector.trigger('change');  
+	};
+    Shopify.linkOptionSelectors = function(product) {
+      // Building our mapping object.
+      for (var i=0; i<product.variants.length; i++) {
+        var variant = product.variants[i];
+        if (variant.available) {
+          // Gathering values for the 1st drop-down.
+          Shopify.optionsMap['root'] = Shopify.optionsMap['root'] || [];
+          Shopify.optionsMap['root'].push(variant.option1);
+          Shopify.optionsMap['root'] = Shopify.uniq(Shopify.optionsMap['root']);
+          // Gathering values for the 2nd drop-down.
+          if (product.options.length > 1) {
+            var key = variant.option1;
+            Shopify.optionsMap[key] = Shopify.optionsMap[key] || [];
+            Shopify.optionsMap[key].push(variant.option2);
+            Shopify.optionsMap[key] = Shopify.uniq(Shopify.optionsMap[key]);
+          }
+          // Gathering values for the 3rd drop-down.
+          if (product.options.length === 3) {
+            var key = variant.option1 + ' / ' + variant.option2;
+            Shopify.optionsMap[key] = Shopify.optionsMap[key] || [];
+            Shopify.optionsMap[key].push(variant.option3);
+            Shopify.optionsMap[key] = Shopify.uniq(Shopify.optionsMap[key]);
+          }
+        }
+      }
+      // Update options right away.
+      Shopify.updateOptionsInSelector(0);
+      if (product.options.length > 1) Shopify.updateOptionsInSelector(1);
+      if (product.options.length === 3) Shopify.updateOptionsInSelector(2);
+      // When there is an update in the first dropdown.
+      $(".single-option-selector:eq(0)").change(function() {
+        Shopify.updateOptionsInSelector(1);
+        if (product.options.length === 3) Shopify.updateOptionsInSelector(2);
+        return true;
+      });
+      // When there is an update in the second dropdown.
+      $(".single-option-selector:eq(1)").change(function() {
+        if (product.options.length === 3) Shopify.updateOptionsInSelector(2);
+        return true;
+      });
+    };
+    {%- if product.available and product.options.size > 1 -%}
+    window.addEventListener('load', function() {
+      var $addToCartForm = $('form[action="/cart/add"]');
+      if (window.MutationObserver && $addToCartForm.length) {
+        if (typeof observer === 'object' && typeof observer.disconnect === 'function') {
+          observer.disconnect();
+        }
+        var config = { childList: true, subtree: true };
+        var observer = new MutationObserver(function(){
+          observer.disconnect();
+        });
+        observer.observe($addToCartForm[0], config);
+      }
+      Shopify.linkOptionSelectors(JSON.parse(document.getElementById('ProductJson-product-template').innerHTML));
+    });
+    {%- endif -%}
+{%- endif -%}
+
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "Product",
+  "name": "{{ product.title | escape }}",
+  "url": "{{ shop.url }}{{ product.url }}",
+  {%- if product.featured_image -%}
+    {%- assign image_size = product.featured_image.width | append: 'x' -%}
+    "image": [
+      "https:{{ product.featured_image.src | img_url: image_size }}"
+    ],
+  {%- endif -%}
+  "description": "{{ product.description | strip_html | escape }}",
+  {%- if current_variant.sku != blank -%}"sku": "{{current_variant.sku}}",{%- endif -%}
+  {%- if current_variant.barcode != blank -%}"mpn": "{{current_variant.barcode}}",{%- endif -%}
+  "brand": {
+    "@type": "Thing",
+    "name": "{{ product.vendor | escape }}"
+  },
+  "offers": [
+    {%- for variant in product.variants -%}
+      {
+        "@type" : "Offer",
+        {%- if variant.sku != blank -%}"sku": "{{ variant.sku }}",{%- endif -%}
+        {%- if variant.barcode != blank -%}"mpn": "{{ variant.barcode }}",{%- endif -%}
+        "availability" : "http://schema.org/{% if product.available %}InStock{% else %}OutOfStock{% endif %}",
+        "price" : "{{ variant.price | divided_by: 100.00 }}",
+        "priceValidUntil": "{{ "now" | date: '%s' | plus: "86400" | date: "%Y-%m-%d %H:%M" }}",
+        "priceCurrency" : "{{ shop.currency }}",
+        "url" : "{{ shop.url }}{{ variant.url }}"
+      }{% unless forloop.last %},{% endunless %}
+    {%- endfor -%}
+  ]
+  {%- if product.metafields.spr.reviews and product.metafields.spr.reviews != blank -%}
+		{%- assign ratingCount = product.metafields.spr.reviews | split: '"reviewCount": "' | last | split: '"' |first | plus: 0 -%}
+		{%- assign ratingValue = product.metafields.spr.reviews | split: '"ratingValue": "' | last | split: '"' |first | plus: 0  -%}
+		{% if ratingCount > 0 and ratingValue > 0 %},
+			"aggregateRating": {
+				"@type": "AggregateRating",
+				"ratingValue": "{{ratingValue}}",
+				"ratingCount": "{{ratingCount}}"
+			}
+		{%- endif -%}
+	{%- endif -%}
+}
+</script>

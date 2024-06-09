@@ -1,0 +1,1204 @@
+<h1 class="page-title{% if section.settings.hide_ttl %} hide{% endif %}">{{ page.title }}</h1>
+<div class="custom-page custom-block {{section.settings.style}}{% unless section.settings.section_width %} page-width {% else %}fullwidth-{{section.id}} {% endunless %}">  
+  {%- if section.settings.title != blank  or section.settings.subtitle != blank -%}
+  <div class="sec-ttl {{ settings.title_align}} wow fadeIn">
+    <h3 class="h3">{{ section.settings.title }}</h3>
+    {%- if section.settings.subtitle != blank -%}<span>{{section.settings.subtitle}}</span>{%- endif -%}                 
+  </div>
+  {% endif %}
+
+  <div class="custom-content">
+    {% for block in section.blocks %}
+
+    {%- assign custom_box = forloop.index | minus:1 -%}	 
+    {%- assign delay_time = 50 | times : custom_box -%}
+
+    {% case block.settings.width %}
+    {% when '25%' %}         
+    	{%- assign block_width = 'small--one-half medium-up--one-quarter' -%}
+    	{%- assign image_size = '350x' -%}
+    {% when '33%' %}        
+    	{%- assign block_width = 'small--one-whole medium-up--one-third' -%}
+    	{%- assign image_size = '530x' -%}
+    {% when '50%' %}
+    	{%- assign block_width = 'small--one-whole medium-up--one-half' -%}
+    	{%- assign image_size = '800x' -%}
+    {% when '66%' %}         
+    	{%- assign block_width = 'medium-up--two-thirds' -%}
+    	{%- assign image_size = '850x' -%}
+    {% when '75%' %}        
+    	{%- assign block_width = 'medium-up--three-quarters' -%}
+    	{%- assign image_size = '850x' -%}
+    {% when '100%' %}          
+    	{%- assign block_width = 'one-whole' -%}
+    	{%- assign image_size = '1920x' -%}
+    {% endcase %}    
+
+    <div class="custom__item {{block.type}} custom__item--{{block.id}} {{ block_width }} {% if block.settings.alignment %}align--{{ block.settings.alignment }}{% endif %}" {{ block.shopify_attributes }}>
+      <div class="custom__item-inner custom__item-inner--{{ block.type }} wow fadeIn" data-wow-delay="{{delay_time}}ms">
+        {% case block.type %}
+
+        {% when 'text' %}
+        <div class="text-{{ block.settings.align_text }}">
+          {% if block.settings.image != blank %}
+          {%- assign image_alt = block.settings.image.alt -%}
+          {% if block.settings.btnurl != blank %} <a href="{{block.settings.btnurl}}"> {% endif %}
+          	  {%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+              <span class="imgWrapper" style="max-width:{{ block.settings.image.width }}px;">
+                  <img class="custom__image lazyload" src="{{ block.settings.image | img_url: '100x' }}" width="100%"
+                      data-src="{{ img_url }}" data-widths="[300,600,760,900,1200,1600,2000]" data-aspectratio="{{ block.settings.image.aspect_ratio }}" data-sizes="auto" alt="{{ block.settings.image.alt | escape }}">
+              </span>
+          {% if block.settings.btnurl != blank %} </a> {% endif %}
+          {% endif %}
+          <div class="custom-text">                	
+            {% if block.settings.title != blank %}<div>{{ block.settings.title }}</div>{% endif %}
+            {% if block.settings.text != blank %}<div class="rte-setting">{{ block.settings.text }}</div>{% endif %}
+            {% if block.settings.btntxt != blank and  block.settings.btnurl != blank %}<a class="btn {{section.settings.btn-size-mob}} {{section.settings.btn-size-desk}}" href="{{block.settings.btnurl}}">{{ block.settings.btntxt }}</a>{% endif %}
+          </div>
+        </div>
+
+        {% when 'image_with_text' %}        
+
+          {%- capture image_layout -%}
+          <div class="feature-row__item imgCol wow{% if block.settings.layout == 'right' %} fadeInRight{% else %} fadeInLeft{% endif %}" data-wow-delay="{{delay_time}}ms">
+            {% if block.settings.image != blank %}
+              {%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+              <span class="imgWrapper" style="max-width:{{ block.settings.image.width }}px;">
+                  <img class="feature-row__image lazyload" src="{{ block.settings.image | img_url: '100x' }}" width="100%"
+                      data-src="{{ img_url }}" data-widths="[180, 360, 540, 720, 900]" data-aspectratio="{{ block.settings.image.aspect_ratio }}" data-sizes="auto" alt="{{ block.settings.image.alt | escape }}">
+              </span>
+            {% else %}
+                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+            {% endif %}
+          </div>
+          {%- endcapture -%}
+          <div class="feature-row {% if section.settings.snow_effect %}falling-snow {% endif %}{% if section.settings.snow_style == "style2" %}style2 {% else %}style1 {% endif %}row-{{ block.id }}"
+               style="background-color:{{block.settings.text_bg_clr}};">
+            {{ image_layout }}
+            <div class="feature-row__item feature-row__text {{ block.settings.layout }} wow{% if block.settings.layout == 'right' %} fadeInLeft{% else %} fadeInRight{% endif %}" data-wow-delay="{{delay_time}}ms">
+              <div class="row-text {{block.settings.text_align}}">
+                {% if block.settings.title2 != blank %}<h3 style="color:{{block.settings.text_clr}};">{{ block.settings.title2 }}</h3>{% endif %}
+              	{% if block.settings.text2 != blank %}<div class="rte rte-setting" style="color:{{block.settings.text_clr}};">{{ block.settings.text2 }}</div>{% endif %}
+              	{% if block.settings.button_label != blank and block.settings.button_link != blank %}<a href="{{ block.settings.button_link }}" class="btn {{section.settings.btn-size-mob}} {{section.settings.btn-size-desk}}">{{ block.settings.button_label }}</a>{% endif %}
+              </div>
+            </div>
+          </div>
+ 
+      {% when 'video' %}
+              <div class="video-sec">   
+             {% if block.settings.video_url == blank and block.settings.mp4url == blank	%}
+                <div class="video-wrapper">
+                  <iframe src="//www.youtube.com/embed/_9VUPq3SxOc?rel=0&showinfo=0&vq=720" width="850" height="480" frameborder="0" allowfullscreen></iframe>
+                </div>
+              {% else %}         
+                {% if block.settings.video_url.type == "youtube" %}        
+                <div class="video-wrapper"><iframe src="//www.youtube.com/embed/{{ block.settings.video_url.id }}?rel=0&showinfo=0&vq=720" width="850" height="480" frameborder="0" allowfullscreen></iframe></div>
+                {% endif %}
+                {% if block.settings.video_url.type == "vimeo" %}
+                <div class="video-wrapper"><iframe src="//player.vimeo.com/video/{{ block.settings.video_url.id }}?byline=0&portrait=0&badge=0" width="850" height="480" frameborder="0" allowfullscreen></iframe></div>
+                {% endif %}     
+
+                  {% if block.settings.video_url == blank and block.settings.mp4url != blank %}
+                  <video {% if block.settings.enable_cntrl %}controls {% endif %}width="100%" {% if block.settings.is_autoplay and block.settings.enable_sound == true %}autoplay {% elsif block.settings.is_autoplay and block.settings.enable_sound == false %}autoplay muted {% endif %}{% if block.settings.enable_sound == false %}muted {% endif %}loop playsinline>
+                    <source src="{{block.settings.mp4url}}" codecs="avc1.4d002a, mp4a.40.2" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </source>
+                  </video>    
+                {% endif %}    
+              {% endif %} 
+          		
+              {%- if block.settings.title != blank -%}
+              <div class="video-text {{ block.settings.text_align }}">
+                <span class="ttl" style="color:{{block.settings.color_ttl}};">{{ block.settings.title }}</span>                     
+              </div>
+              {% endif %}
+          
+            </div>
+      {% when 'product' %}
+          {%- assign product = all_products[block.settings.product] -%}
+          {% if product.title.size > 0 %}
+          	{% include 'product-card-grid', grid_image_width: image_size %}
+          {% else %}         
+            <div class="grid-view-item">
+              <a class="grid-view-item__link" href="#">
+                <div class="grid-view-item__image">
+                  {% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
+                  {{ 'product-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
+                </div>
+                <div class="h4 grid-view-item__title">{{ 'homepage.onboarding.product_title' | t }}</div>
+                <div class="grid-view-item__meta">
+                  {{ 1999 | money }}
+                </div>
+              </a>
+            </div>
+          {% endif %}
+
+      {% when 'featuredProduct' %}
+      	{% include 'custom-product' %}
+      
+
+      {% when 'collection' %}
+      {%- assign collection = collections[block.settings.collection] -%}
+      {% include 'collection-grid-item', collection_image_size: image_size %}
+      
+      {% when 'hero' %}
+      	{%- capture heroBanner -%}
+
+            {% if  section.settings.button_link != blank  %}<a href="{{section.settings.button_link}}"> {% endif %} 
+
+            <div class="lazyload hero{% if block.settings.snow_effect %} falling-snow{% endif %}{% if block.settings.snow_style == "style2" %} style2{% else %} style1{% endif %} hero-{{ block.id }}{% if block.settings.title != blank or section.settings.text != blank or block.settings.button_label != blank %} hero__overlay{% endif %} wow fadeIn"
+                {% if block.settings.image %}
+                    data-bgset="{% include 'bgset', image: block.settings.image %}" data-sizes="auto" data-parent-fit="contain"
+                    style="background-image: url('{{ block.settings.image | img_url: '100x' }}'); background-position: center {{ block.settings.alignment }};"
+                 {% endif %}
+                {% if block.settings.parallax_scroll %} data-stellar-background-ratio="0.08" data-stellar-vertical-offset="0" {% endif %}>
+
+                {% if block.settings.image == blank %}<div class="placeholder-background">{{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' }}</div>{% endif %}
+              <div class="hero__inner">
+                <div class="page-width">
+                  {% if block.settings.pretext != blank or block.settings.title != blank or block.settings.text != blank %}
+                  <div class="wrap-text {{block.settings.textalign}}">
+                    {% if block.settings.pretext != blank %}<span class="pretext">{{ block.settings.pretext }}</span>{% endif %}
+                    {% if block.settings.title != blank %}<h2 class="mega-title heroTxt">{{ block.settings.title }}</h2>{% endif %}
+                    {% if block.settings.hero_dealtimer %}<div class="heroSaleTime desktop" data-date="{{block.settings.cnt_date}}"></div>{% endif %}
+                    {% if block.settings.text != blank %}<div class="rte-setting mega-subtitle heroTxt">{{ block.settings.text }}</div>{% endif %}
+                    {% if block.settings.button_label != blank and block.settings.button_link != blank %}<span class="btn {{section.settings.btn-size-mob}} {{section.settings.btn-size-desk}}">{{ block.settings.button_label }}</span>{% endif %}
+                  </div>
+                  {% endif %}
+                </div>
+              </div>      
+            </div>
+
+           {% if  block.settings.button_link != blank  %}</a> {% endif %} 
+
+        <style> 
+          .hero-{{block.id}} { height:{{block.settings.ds_height}}px; }
+          @media only screen and (min-width:768px) and (max-width: 1024px) { 
+            .hero-{{block.id}} { height:{{block.settings.tb_height}}px; }
+          }
+          @media only screen and (max-width:767px){
+            .hero-{{block.id}} { height:{{block.settings.mb_height}}px; }
+          }
+          .hero-{{ block.id }} .wrap-text:before {  background-color:{{ block.settings.bg_clr}}; opacity:{{ block.settings.bg_opacity}}; }
+          .hero-{{ block.id }} .wrap-text .heroTxt,
+          .hero-{{ block.id }} .wrap-text .heroTxt a, 
+          .hero-{{ block.id }} .wrap-text .pretext {color:{{ block.settings.txt_clr}}; }   
+
+          {% if block.settings.hero_dealtimer %}
+          .hero-{{block.id}} .heroSaleTime, .hero-{{block.id}} .heroSaleTime span { color:{{block.settings.cnt_text}};}
+          .hero-{{block.id}} .heroSaleTime > span { background:{{block.settings.cnt_bg}}; border:1px dashed {{block.settings.cnt_bdr}}; }
+          {% endif %}
+        </style>
+        {%- endcapture -%}
+        {{heroBanner | strip_newlines | remove: "  " | remove: "	" }}
+      
+
+      {% when 'html' %}
+        <div class="html-block {{block.settings.align_text}}">
+          {% if block.settings.code != blank %}
+          {{ block.settings.code }}
+          {% endif %}
+        </div>
+      {% endcase %}
+    </div>
+  </div>
+
+  {% endfor %}
+</div>
+  {% if section.settings.landing %}
+  <style>
+    .top-header-wrapper,#header,.top-bar,.bredcrumbWrap,#shopify-section-footer,.notification-bar { display:none !important; }
+    #PageContainer { padding:40px 0; }
+  </style>
+  {% endif %}
+  {% if section.settings.top-offset %}
+ 	<style>
+	#PageContainer { padding-top:0;}
+   </style>
+  {% endif %}
+</div>
+{% schema %}
+  {
+    "name": "Custom Block",
+    "class": "index-section",
+    "settings": [	 
+      {
+        "type": "textarea",
+        "id": "title",
+        "label": "Heading",
+        "default": "Custom content",
+		"info":"Use <strong>text here</strong> to make headings bold. Add <br/> tag to add more space above or below text"
+      },
+ 	  {
+        "type": "textarea",
+        "id": "subtitle",
+        "label": "Sub Heading",
+        "default": "Describe your products, collection, content etc... Add <br/> tag to add more space above or below text"
+      },
+	  {
+        "type":"checkbox",
+        "id":"top-offset",
+        "label":"Top offset none",
+        "default": false,
+		"info":"Remove padding from top of the page"
+      },
+      {
+        "type":"checkbox",
+        "id":"hide_ttl",
+        "label":"Hide Page Title?",
+        "default": false
+      },
+	{
+		"type":"checkbox",
+		"id":"section_width",
+		"label":"Fullwidth?",
+		"default": false
+	  },
+  	{
+		"type":"checkbox",
+		"id":"landing",
+		"label":"Hide header/footer?",
+		"default": false
+	  },
+	 {
+        "type": "paragraph",
+        "content": "Left/Right Padding : Fullwidth Section Only==="
+      }, 	
+      {
+        "type": "range",
+        "id": "pad-desk",
+        "label": "Desktop",
+        "default": 55,
+        "min": 0,
+        "max": 100,
+        "step": 1
+      },
+      {
+        "type": "range",
+        "id": "pad-ipad",
+        "label": "Tablet",
+        "default": 15,
+        "min": 0,
+        "max": 30,
+        "step": 1
+      },
+      {
+        "type": "range",
+        "id": "pad-mbl",
+        "label": "Mobile",
+        "default": 10,
+        "min": 0,
+        "max": 20,
+        "step": 1
+      },	
+	  {
+        "type": "select",
+        "id": "prbox_style",
+        "label": "Products Grid Style",
+        "default": "style1",
+        "options": [
+          {
+            "value": "style1",
+            "label": "Style 1 - Default Info Center"
+          },
+          {
+            "value": "style2",
+            "label": "Style 2 - Info Hover Image"
+          },
+          {
+            "value": "style3",
+            "label": "Style 3 - Info Below Image"
+          },
+          {
+            "value": "style4",
+            "label": "Style 4 - Default Info Left"
+          }
+        ],
+		"info":"[Only for Product. Preview grid style](https://avon-demo.myshopify.com/pages/grid-style)"      
+      },
+		{
+          "type": "select",
+          "id": "btn-size-desk",
+          "label": "Button Size: Desktop",
+          "default": "btn-sm",	
+		  "info":"Not applicable on Add to Cart Button",
+          "options": [
+          {
+          "label": "Small",
+          "value": "btn-sm"
+          },
+          {
+          "label": "Medium",
+          "value": "btn-md"
+          },
+          {
+          "label": "Large",
+          "value": "btn-lg"
+          }	
+          ]
+          }, 
+          {
+          "type": "select",
+          "id": "btn-size-mob",
+          "label": "Button Size : Mobile",
+          "default": "mob-btn-sm",
+          "options": [
+          {
+          "label": "Small",
+          "value": "mob-btn-sm"
+          },
+          {
+          "label": "Medium",
+          "value": "mob-btn-md"
+          },
+          {
+          "label": "Large",
+          "value": "mob-btn-lg"
+          }	
+          ]
+          }      
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "name": "Text/Image",
+        "settings": [
+		  {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "textarea",
+            "id": "title",
+            "label": "Heading", 
+			"default":"Title",
+			"info":"Use h2, h3 h4 or h5 for headings. Add <br/> tag to add more space above or below text"
+          },		 
+          {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text",
+            "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+  			"info":"[Copy code from here for social media icons use](https://codebeautify.org/htmlviewer/cb0edef7)"
+  
+          },
+		{
+            "type": "text",
+            "id": "btntxt",
+            "label": "Button Text",
+            "default": "Read More"
+          },
+		  {
+            "type": "url",
+            "id": "btnurl",
+            "label": "URL"          
+          },	
+          {
+            "type": "select",
+            "id": "width",
+            "label": "Column width",
+            "default": "50%",
+            "options": [
+              {
+                "value": "25%",
+                "label": "25%"
+              },
+              {
+                "value": "33%",
+                "label": "33%"
+              },
+              {
+                "value": "50%",
+                "label": "50%"
+              },
+              {
+                "value": "66%",
+                "label": "66%"
+              },
+              {
+                "value": "75%",
+                "label": "75%"
+              },
+              {
+                "value": "100%",
+                "label": "100%"
+              }
+            ]
+          },
+          {
+            "type": "select",
+            "id": "alignment",
+            "label": "Vertical alignment",
+            "default": "center",
+            "options": [
+              {"value": "top-middle", "label": "Top"},
+              {"value": "center", "label": "Middle"},
+              {"value": "bottom-middle", "label": "Bottom"}
+            ]
+          },
+          {
+            "type": "select",
+            "id": "align_text",
+            "label": "Horizontal alignment",
+            "default": "left",
+            "options": [
+              {"value": "left", "label": "Left"},
+              {"value": "center", "label": "Centered"},
+              {"value": "right", "label": "Right"}
+            ]
+          }
+        ]
+      },
+      {
+        "type": "image_with_text",
+        "name": "Feature Row",
+        "settings": [
+           {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },  
+       {
+            "type": "select",
+            "id": "layout",
+			"label":"Image alignment",
+ 			"default": "left",
+			"options": [
+        		{ "value": "left","label":"Left"},
+				{ "value": "right","label":"Right"}
+			]
+      },	  
+      {
+        "type": "textarea",
+        "id": "title2",
+        "label": "Heading",
+        "default": "Image with text",
+		"info":"Use <strong>text here</strong> to make heading bold. Add <br/> tag to add more space above or below text"
+      },
+      {
+        "type": "textarea",
+        "id": "text2",
+        "label": "Text",
+        "default": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
+		
+      },
+      {
+        "type": "text",
+        "id": "button_label",
+        "label": "Button label"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button link"
+      },
+ 	  {
+            "type": "select",
+            "id": "text_align",
+            "label": "Text Align",
+            "default": "text-left",
+            "options": [
+              {
+                "value": "text-left",
+                "label": "Left"
+              },
+              {
+                "value": "text-center",
+                "label": "Center"
+              },
+              {
+                "value": "text-right",
+                "label": "Right"
+              }
+            ]
+      },
+	{
+            "type": "select",
+            "id": "width",
+            "label": "Column width",
+            "default": "100%",
+            "options": [             
+              {
+                "value": "50%",
+                "label": "50%"
+              },             
+              {
+                "value": "100%",
+                "label": "100%"
+              }
+            ]
+          },
+		 {
+        "type": "color",
+        "id": "text_clr",
+        "label": "Text Color",
+        "default": "#000"
+      },
+	 {
+        "type": "color",
+        "id": "text_bg_clr",
+        "label": "Background Color",
+        "default": "#f5f5f5"
+      }
+      ]
+     },
+     {
+        "type": "video",
+        "name": "Video",
+        "settings": [
+          {
+        "type": "header",
+        "content": "YouTube or Vimeo link"
+      },
+          {
+          "type": "video_url",
+          "id": "video_url",
+          "label": "Video link",
+          "accept": ["youtube", "vimeo"]
+          },     
+         {
+            "type": "header",
+            "content": "Or MP4 Video [recommended]"
+          }, 
+         {
+          "type": "textarea",
+          "id": "mp4url",
+          "label": "Mp4 video link",
+          "info":"Paste video url. Upload and copy video url from Settings --> File. Video  size must not exceed 20 mb. It is shopify limit for video"      
+          },
+			{
+            "type":"checkbox",
+            "id":"enable_cntrl",
+            "label":"Enable Controls",
+            "default": false,
+			"info":"Display video play/pause buttons"
+          },
+          {
+            "type":"checkbox",
+            "id":"is_autoplay",
+            "label":"Enable Autoplay",
+            "default": false,
+			"info":"Autoplay will not work on Mobile with SOUND"
+          },
+ 		 {
+            "type":"checkbox",
+            "id":"enable_sound",
+            "label":"Enable Sound?",
+            "default": false,
+			"info":"If Video is Autoplay with Sound, autoplay will not work on Mobile."
+          },
+       {
+            "type": "textarea",
+            "id": "title",
+            "label": "Text to be display over video",
+            "default": "Title",
+            "info":"Use <strong>text here</strong> to make text bold"
+          },
+        {
+                "type": "select",
+                "id": "text_align",
+                "label": "Text Position",
+                "default": "left",
+				"info":"Text position work only in large screen",
+                "options": [
+                  { "label": "Left", "value": "left" },
+                  { "label": "Left Bottom", "value": "leftbottom" },
+                  { "label": "Top Center", "value": "topcenter" },
+                  { "label": "Center", "value": "center" },
+                  { "label": "Bottom Center", "value": "bottomcenter" },
+                  { "label": "Right Bottom", "value": "rightbottom" },
+                  { "label": "Right", "value": "right" }
+                ]
+              },
+          {
+            "type": "color",
+            "id": "color_ttl",
+            "label": "Text Color",
+            "default": "#fff"
+          },	
+         {
+            "type": "paragraph",      
+            "content": "Set font size from --> Theme Settings --> Fonts, Colors and Styles --> Video"
+          },
+          {
+            "type": "select",
+            "id": "width",
+            "label": "Column width",
+            "default": "100%",
+            "options": [
+              {
+                "value": "25%",
+                "label": "25%"
+              },
+              {
+                "value": "33%",
+                "label": "33%"
+              },
+              {
+                "value": "50%",
+                "label": "50%"
+              },
+              {
+                "value": "66%",
+                "label": "66%"
+              },
+              {
+                "value": "75%",
+                "label": "75%"
+              },
+              {
+                "value": "100%",
+                "label": "100%"
+              }
+            ]
+          },
+          {
+            "type": "select",
+            "id": "alignment",
+            "label": "Vertical alignment",
+            "default": "top-middle",
+            "options": [
+              {
+                "value": "top-middle",
+                "label": "Top"
+              },
+              {
+                "value": "center",
+                "label": "Middle"
+              },
+              {
+                "value": "bottom-middle",
+                "label": "Bottom"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "featuredProduct",
+        "name": "Featured Product",
+        "settings": [
+          {
+            "type": "product",
+            "id": "product",
+            "label": "Product"
+          },
+          {
+            "type": "select",
+            "id": "width",
+            "label": "Column width",
+            "default": "100%",
+            "options": [
+              {
+                "value": "50%",
+                "label": "50%"
+              },
+              {
+                "value": "66%",
+                "label": "66%"
+              },
+              {
+                "value": "75%",
+                "label": "75%"
+              },
+              {
+                "value": "100%",
+                "label": "100%"
+              }
+            ]
+          },
+          {
+            "type": "select",
+            "id": "alignment",
+            "label": "Vertical alignment",
+            "default": "center",
+            "options": [
+              {
+                "value": "top-left",
+                "label": "Top left"
+              },
+              {
+                "value": "top-middle",
+                "label": "Top middle"
+              },
+              {
+                "value": "top-right",
+                "label": "Top right"
+              },
+              {
+                "value": "middle-left",
+                "label": "Middle left"
+              },
+              {
+                "value": "center",
+                "label": "Middle"
+              },
+              {
+                "value": "middle-right",
+                "label": "Middle right"
+              },
+              {
+                "value": "bottom-left",
+                "label": "Bottom left"
+              },
+              {
+                "value": "bottom-middle",
+                "label": "Bottom middle"
+              },
+              {
+                "value": "bottom-right",
+                "label": "Bottom right"
+              }
+            ]
+          },	
+      	  {
+              "type": "select",
+              "id": "image_size",
+              "label": "Image size",
+              "options": [
+                { "value": "small", "label": "Small" },
+                { "value": "medium", "label": "Medium" },
+                { "value": "large", "label": "Large" }
+              ],
+              "default": "medium"
+            },
+            {
+              "type": "checkbox",
+              "id": "enable_zoom",
+              "label": "Enable Image Zoom?",
+              "default": true
+            },            
+            {
+              "type": "checkbox",
+              "id": "show_vendor",
+              "label": "Show Vendor?",
+              "default": false
+            },
+            {
+              "type": "checkbox",
+              "id": "spr_review",
+              "label": "Show Product Review?",
+              "default": true
+            },
+            {
+              "type": "checkbox",
+              "id": "spr_availability",
+              "label": "Show Product Availability?",
+              "default": true
+            },
+            {
+              "type": "checkbox",
+              "id": "spr_sku",
+              "label": "Show Product SKU?",
+              "default": true
+            },
+            {
+              "type": "checkbox",
+              "id": "short_desc",
+              "label": "Show Short Description?",
+              "default": true
+            },
+            {
+              "type": "checkbox",
+              "id": "countdown",
+              "label": "Show Countdown?",
+              "default": false
+            },
+            {
+              "type": "text",
+              "id": "countdown_lbl",
+              "label": "Label",
+              "default": "Hurry up! Sales End In"
+            },		
+            {
+              "type": "checkbox",
+              "id": "show_share_buttons",
+              "label": "Show Social Sharing Buttons?",
+              "default": true
+            },
+            {
+              "type": "header",       
+              "content": "Variant style"
+            },
+            {
+              "type": "checkbox",
+              "id": "show_variant_swatches",
+              "label": "Show Variant Swatches?",
+              "default": true
+            },        
+            {
+              "type": "header",
+              "content": "Fake Orders"
+            },
+            {
+              "type": "checkbox",
+              "id": "fake_orders",
+              "label": "Enable Fake Orders",
+              "default": false
+            },
+            {
+              "type": "range",
+              "id": "orders",
+              "label": "Max Items",
+              "min": 1,
+              "max": 50,
+              "step": 1,
+              "default": 20
+            },
+            {
+              "type": "range",
+              "id": "orders_time",
+              "label": "Order time",
+              "min": 5,
+              "max": 48,
+              "step": 1,
+              "default": 24
+            },
+            {
+              "type": "text",
+              "id": "orders_msg",
+              "label": "Orders Message",
+              "default": "[orders] sold in last [hours] hours",
+              "info":"Use '[orders]' for items counts and '[hours]' for hours counts"
+            }
+        ]
+      },
+      {
+        "type": "product",
+        "name": "Product",
+        "settings": [
+          {
+            "type": "product",
+            "id": "product",
+            "label": "Product"
+          },
+          {
+            "type": "select",
+            "id": "width",
+            "label": "Column width",
+            "default": "50%",
+            "options": [
+              {
+                "value": "25%",
+                "label": "25%"
+              },
+              {
+                "value": "33%",
+                "label": "33%"
+              },
+              {
+                "value": "50%",
+                "label": "50%"
+              },
+              {
+                "value": "66%",
+                "label": "66%"
+              },
+              {
+                "value": "75%",
+                "label": "75%"
+              },
+              {
+                "value": "100%",
+                "label": "100%"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "collection",
+        "name": "Collection",
+        "settings": [
+         {
+			"type":"image_picker",
+			"id":"collection_image",
+			"label":"Upload Image"			
+		  },
+          {
+            "type": "collection",
+            "id": "collection",
+            "label": "Collection"
+          },
+		  {
+ 			"type":"textarea",
+			"id":"collection_name",
+			"label":"Custom Name",
+			"info":"use <strong>your text here</strong> to make font bold"
+		  },
+          {
+            "type": "select",
+            "id": "width",
+            "label": "Column width",
+            "default": "50%",
+            "options": [
+              {
+                "value": "25%",
+                "label": "25%"
+              },
+              {
+                "value": "33%",
+                "label": "33%"
+              },
+              {
+                "value": "50%",
+                "label": "50%"
+              },
+              {
+                "value": "66%",
+                "label": "66%"
+              },
+              {
+                "value": "75%",
+                "label": "75%"
+              },
+              {
+                "value": "100%",
+                "label": "100%"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "hero",
+        "name": "Hero Banner",
+        "settings": [      	 
+	  {
+		"type":"paragraph",
+		"content":"Height ==="
+	  },
+      {
+        "type": "range",
+        "id": "ds_height",
+        "label": "Desktop",
+        "default": 600,
+        "min": 100,
+        "max": 1000,
+        "step": 10
+      },
+      {
+        "type": "range",
+        "id": "tb_height",
+        "label": "Tablet",
+        "default": 350,
+        "min": 100,
+        "max": 1000,
+        "step": 10
+      },  
+	  {
+        "type": "range",
+        "id": "mb_height",
+        "label": "Mobile",
+        "default": 250,
+        "min": 100,
+        "max": 1000,
+        "step": 10
+      },  
+	  {
+		"type":"paragraph",
+		"content":"For Best Resolution recommended image for fullwidth: 1920px for Desktop & 760px for Mobile. Image height should be as per your above selections."
+	  },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "select",
+        "id": "alignment",
+        "label": "Image Alignment",
+        "default": "center",
+        "options": [
+          {
+            "value": "top",
+            "label": "Top"
+          },
+          {
+            "value": "center",
+            "label": "Middle"
+          },
+          {
+            "value": "bottom",
+            "label": "Bottom"
+          }
+        ]
+      },
+ 	  {
+            "type": "select",
+            "id": "textalign",
+            "label": "Text Position",
+            "default": "center",
+            "options": [
+              { "value":"topleft", "label":"Top Left" },
+  			  { "value":"topright", "label":"Top Right" },
+ 			  { "value":"leftcenter", "label":"Left Center" },
+              { "value":"center", "label":"Center" },
+ 			  { "value":"rightcenter", "label":"Right Center" },
+              { "value":"bottomleft", "label":"Bottom Left" },
+			  { "value":"bottomright", "label":"Bottom Right" }
+            ]
+      },
+      {
+        "type": "textarea",
+        "id": "pretext",
+        "label": "Pre Text",
+        "default": "Pre Heading",
+		"info":"use <strong>your text here</strong> to make font bold"
+      },
+      {
+        "type": "textarea",
+        "id": "title",
+        "label": "Heading",
+        "default": "Heading",
+	  	"info":"use <strong>your text here</strong> to make font bold"
+      },
+      {
+        "type": "richtext",
+        "id": "text",
+        "label": "Text",
+        "default": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.</p>"
+      },       
+      {
+        "type": "text",
+        "id": "button_label",
+        "label": "Button Label"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button Link"
+      },	  
+	  {
+        "type": "color",
+        "id": "txt_clr",
+        "label": "Text Color",
+        "default": "#000"
+      },
+	 {
+        "type": "color",
+        "id": "bg_clr",
+        "label": "Background Color",
+        "default": "#fff"
+      },
+	 {
+        "type": "range",
+        "id": "bg_opacity",
+        "min": 0,
+        "max": 1,
+        "step": 0.1,
+        "label": "Background Opacity",
+        "unit": "%",
+        "default": 0.3
+      }, 
+	 {
+        "type": "header",
+        "content": "Countdown Timer"
+      },
+ 	  {
+		"type":"checkbox",
+		"id":"hero_dealtimer",
+		"label":"Display?",
+		"default": false,
+		"info":"please click save button to view"
+	  },
+	  {
+        "type": "text",
+        "id": "cnt_date",
+        "label": "Enter Date",
+        "info": "Date Formate should be Month\/Day\/Year.i.e mm\/dd\/year, 11\/25\/2020",
+        "default": "12\/20\/2020"
+      },
+      {
+        "type": "color",
+        "id": "cnt_bg",
+        "label": "Background",
+        "default": "#000"
+      },
+      {
+        "type": "color",
+        "id": "cnt_text",
+        "label": "Text",
+        "default": "#eee"
+      },
+      {
+        "type": "color",
+        "id": "cnt_bdr",
+        "label": "Border",
+        "default": "#000"
+      },
+	 {
+        "type": "paragraph",      
+        "content": "Set font size from --> Theme Settings --> Fonts, Colors and Styles --> Parallax Banner"
+      }
+        ]
+      },
+      {
+        "type": "html",
+        "name": "Custom HTML / Block Space",
+        "settings": [
+          {
+            "type": "html",
+            "id": "code",
+            "label": "HTML"
+          },
+          {
+            "type": "select",
+            "id": "width",
+            "label": "Column width",
+            "default": "50%",
+            "options": [
+              {
+                "value": "25%",
+                "label": "25%"
+              },
+              {
+                "value": "33%",
+                "label": "33%"
+              },
+              {
+                "value": "50%",
+                "label": "50%"
+              },
+              {
+                "value": "66%",
+                "label": "66%"
+              },
+              {
+                "value": "75%",
+                "label": "75%"
+              },
+              {
+                "value": "100%",
+                "label": "100%"
+              }
+            ]
+          },
+  			{
+            "type": "select",
+            "id": "align_text",
+            "label": "Text Alignment",
+            "default": "left",
+            "options": [
+              {"value": "left", "label": "Left"},
+              {"value": "center", "label": "Centered"}             
+  			]
+          }
+        ]
+      }
+    ]   
+  }
+{% endschema %}
+
+<style>
+ @media only screen and (min-width: 1025px) {
+    .fullwidth-{{section.id}} { padding-left:{{ section.settings.pad-desk}}px; padding-right:{{ section.settings.pad-desk}}px; }
+  } 
+  @media only screen and (max-width: 1024px) {
+     .fullwidth-{{section.id}} { padding-left:{{ section.settings.pad-ipad}}px; padding-right:{{ section.settings.pad-ipad}}px; }
+   } 
+  @media only screen and (max-width: 767px) {
+     .fullwidth-{{section.id}} { padding-left:{{ section.settings.pad-mbl}}px; padding-right:{{ section.settings.pad-mbl}}px; }
+   } 
+</style>

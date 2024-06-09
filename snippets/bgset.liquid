@@ -1,0 +1,15 @@
+{%- if image != blank -%}
+{%- if image.width > 540 -%}{{ image | img_url: '540x' }} 540w {{ 540 | divided_by: image.aspect_ratio | round }}h,{%-endif -%}
+{%- if image.width > 700 -%}{{ image | img_url: '700x' }} 700w {{ 700 | divided_by: image.aspect_ratio | round }}h,{%-endif -%}
+{%- if image.width > 900 -%}{{ image | img_url: '900x' }} 900w {{ 900 | divided_by: image.aspect_ratio | round }}h,{%-endif -%}
+{%- if image.width > 1296 -%}{{ image | img_url: '1296x' }} 1296w {{ 1296 | divided_by: image.aspect_ratio | round }}h,{%-endif -%}
+{%- if image.width > 1512 -%}{{ image | img_url: '1512x' }} 1512w {{ 1512 | divided_by: image.aspect_ratio | round }}h,{%-endif -%}
+{%- if image.width > 1728 -%}{{ image | img_url: '1728x' }} 1728w {{ 1728 | divided_by: image.aspect_ratio | round }}h,{%-endif -%}
+{%- if image.width > 1920 -%}{{ image | img_url: '1920x' }} 1920w {{ 1920 | divided_by: image.aspect_ratio | round }}h,{%-endif -%}
+{%- if image.width > 2260 -%}{{ image | img_url: '2260x' }} 2260w {{ 2260 | divided_by: image.aspect_ratio | round }}h,{%-endif -%}
+{%- if image.width > 2450 -%}{{ image | img_url: '2450x' }} 2450w {{ 2450 | divided_by: image.aspect_ratio | round }}h,{%-endif -%}
+{%- if image.width > 2700 -%}{{ image | img_url: '2700x' }} 2700w {{ 2700 | divided_by: image.aspect_ratio | round }}h,{%-endif -%}
+{%- if image.width > 3350 -%}{{ image | img_url: '3350x' }} 3350w {{ 3350 | divided_by: image.aspect_ratio | round }}h,{%-endif -%}
+{%- if image.width > 4100 -%}{{ image | img_url: '4100x' }} 4100w {{ 4100 | divided_by: image.aspect_ratio | round }}h,{%-endif -%}
+{{ image | img_url: 'master' }} {{ image.width }}w {{ image.height }}h
+{%- endif -%}

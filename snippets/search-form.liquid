@@ -1,0 +1,12 @@
+<form action="{{ routes.search_url }}" method="get" class="search-header search" role="search">
+  <input type="hidden" name="type" value="product" />
+  <input type="hidden" name="options[prefix]" value="none">
+  <div class="input-group">
+    <input class="input-group__field search__input" type="search" name="q" placeholder="{{ 'general.search.placeholder' | t }}" value="{{ search.terms | escape }}" autocomplete="off" />
+    <input type="hidden" name="options[prefix]" value="last" aria-hidden="true" />
+    <span class="input-group__btn">
+      <button class="btn search__submit" type="submit"><i class="ad ad-search"></i> <span class="icon__fallback-text">{{ 'general.search.submit' | t }}</span></button>
+    </span>
+  </div>
+  <ul class="search-results" style="display:none;"></ul>
+</form>

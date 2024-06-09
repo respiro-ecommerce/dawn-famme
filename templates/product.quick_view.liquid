@@ -1,0 +1,303 @@
+{%- layout none -%}
+{% comment %}
+	{%- layout none -%}
+  	The contents of the product.liquid template can be found in /sections/product-template.liquid
+{% endcomment %}
+<meta name="robots" content="noindex">
+<div class="ptContainer" id="quickView" data-section-id="quickView" data-section-type="product">
+ 
+  {%- assign current_variant = product.selected_or_first_available_variant -%}
+  {%- assign product_thumb_size = '480x' %}
+  {%- assign product_image_width = 'medium-up--one-half' -%}
+  {%- assign product_description_width = 'medium-up--one-half' -%}
+
+  <div class="grid product-single">
+    <div class="grid__item product-single__photos {{ product_image_width }}">
+      {% comment %} product thumbs {% endcomment %}
+          <div class="product-photos">
+            <div class="grid product-photoslider">
+              {% for image in product.images %}
+                <div class="grid__item item" data-src="https:{{ image.src | img_url: 'master' }}"><img class="product-single__thumbnail-image" src="{{ image.src | img_url: product_thumb_size }}" alt="{{ image.alt | escape }}"></div>
+              {% endfor %}
+            </div>
+          </div>      
+        {% comment %} product full details link {% endcomment %}         
+         {% if settings.show_view_full_info %}
+        	<a href="{{product.url}}" class="view-full btn btn--small">{{ 'products.quickview.Show_view_full_details_button' | t }} <i class="ad ad-long-arrow-right"></i></a>
+         {% endif %}        
+    </div>
+
+    <div class="grid__item {{ product_description_width }}">
+      <div class="product-single__meta">
+        
+        {% if settings.show_product_vendor %}{{ product.vendor | link_to_vendor: class: "product-vendor" }}{% endif %}
+        <h1 itemprop="name" class="product-single__title"><a href="{{product.url}}">{{ product.title }}</a></h1>
+        
+        {% comment %} stock, price and sku {% endcomment %} 
+        <div class="product-info">
+           {%- if settings.show_product_review -%}
+          	<div class="review">              
+                 {% include 'ratings' %}             
+          	</div>{%- endif -%}
+          
+           {% if settings.show_product_availability %}
+          	<div class="product-stock" itemprop="availability">
+              	{{ 'products.product.availability' | t }}
+	            <span class="instock {% unless product.available %}hide{% endunless %}">{{ 'products.product.available' | t }}</span>
+    	        <span  class="outstock {% if product.available %}hide{% endif %}">{{ 'products.product.unavailable' | t }}</span>
+          	</div>
+          {% endif %}   
+
+          {% if settings.show_product_type %}<div class="product-type">{{ 'products.product.type' | t }} <span>{{ product.type }}</span></div>{% endif %}  
+          {% if settings.show_product_sku and product.variants.first.sku != blank %}
+          		<div class="product-sku">{{ 'products.product.sku' | t }} <span>{{ product.variants.first.sku }}</span></div>
+           {% endif %}   
+        </div>
+        
+        {% comment %} price {% endcomment %}
+        {% unless settings.catalogmode %}
+            <p class="product-single__price product-single__price-quickView{% unless current_variant.available %} product-price--sold-out{% endunless %}">
+              {% if current_variant.compare_at_price > current_variant.price %}
+                  <span class="product-price__price product-price__price-quickView product-price__sale product-price__sale--single">
+                    <span id="ProductPrice-quickView">{{ current_variant.price | money }}</span>            
+                  </span>
+                  <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+                  <s id="ComparePrice-quickView" class="product-price__price">{{ current_variant.compare_at_price | money }}</s>         
+              {% else %}
+                 <span class="product-price__price product-price__price-quickView">
+                   <span id="ProductPrice-quickView">{{ current_variant.price | money }}</span>
+                   <span class="product-price__sale-label product-price__sale-label-quickView hide">{{ 'products.product.on_sale' | t }}</span>
+                 </span>
+                 <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+                 <s id="ComparePrice-quickView" class="product-price__price hide">{{ current_variant.compare_at_price | money }}</s>         
+              {% endif %}
+              <span class="price__unit{% unless current_variant.unit_price_measurement %} hide{% endunless %}">
+                  <br /><span data-unit-price>{{ current_variant.unit_price | money }}</span> /
+                  <span data-unit-base>
+                        {%- if current_variant.unit_price_measurement -%}
+                          {%- if current_variant.unit_price_measurement.reference_value != 1 -%}
+                            {{- current_variant.unit_price_measurement.reference_value -}}
+                          {%- endif -%}
+                          {{ current_variant.unit_price_measurement.reference_unit }}
+                        {%- endif -%}
+                  </span>
+              </span>
+            </p>
+        	{%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
+                <div class="product__policies rte" data-product-policies>
+                    {% if shop.taxes_included %}{{ 'products.product.include_taxes' | t }}{% endif %}
+                    {% if shop.shipping_policy.body != blank %}{{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}{% endif %}
+                </div>
+            {%- endif -%}
+        {% endunless %}
+        
+        {% comment %} short description {% endcomment %}
+        {% if settings.show_short_desc %}
+           <div class="product-single__description rte" itemprop="description">
+            {%- assign meta = product.metafields.meta -%}
+              {%- assign key = 'short_des' -%}
+              {% if meta.short_des != blank %}
+                {{ meta.short_des }}
+              {% elsif product.empty? %}
+                  {{ 'homepage.onboarding.product_description' | t }}
+              {% else %}
+                  {{ product.description | strip_html | truncatewords: 30 }}
+              {% endif %}
+           </div>
+         {% endif %}       
+
+         {%- capture "form_classes" -%}product-form-{{ product.id }} productForm{% if settings.enable_payment_button and product.has_only_default_variant%} product-form--payment-button-no-variants{% endif %}{%- endcapture %}
+		 {% form 'product', product, class:form_classes, novalidate: 'novalidate' %}
+            <div class="product-form ">
+                {% unless product.options.size == 1 and product.variants[0].title == 'Default Title' %}
+                  {% for option in product.options_with_values %}
+                    <div class="selector-wrapper js product-form__item{% if settings.show_variant_swatches %} hide{% endif %}">
+                      <label {% if option.name == 'default' %}class="label--hidden" {% endif %}for="SingleOptionSelector-{{ forloop.index0 }}">
+                        {{ option.name }}
+                      </label>
+                      <select class="single-option-selector single-option-selector-quickView product-form__input selectbox" id="SingleOptionSelector-{{ forloop.index0 }}" data-index="option{{ forloop.index }}">
+                        {% for value in option.values %}
+                          <option value="{{ value | escape }}"{% if option.selected_value == value %} selected="selected"{% endif %}>{{ value }}</option>
+                        {% endfor %}
+                      </select>
+                    </div>
+                  {% endfor %}
+                {% endunless %}
+
+                <select name="id" id="ProductSelect-quickView" data-section="quickView" class="product-form__variants selectbox no-js">
+                  {% for variant in product.variants %}
+                    {% if variant.available %}
+                      <option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} value="{{ variant.id }}">
+                        {{ variant.title }}
+                      </option>
+                    {% else %}
+                      <option disabled="disabled">{{ variant.title }} - {{ 'products.product.sold_out' | t }}</option>
+                    {% endif %}
+                  {% endfor %}
+                </select>
+            
+               {% comment %} swatches {% endcomment %}
+               {% if settings.show_variant_swatches %}
+                  {% if product.available and product.variants.size > 1 %}
+                    {% for option in product.options %}
+                      {% include 'swatch' with option %}
+                    {% endfor %}
+                  {% endif %}
+                {% endif %}       
+           </div>
+        	{% unless settings.catalogmode %}
+               <div class="flex product-action">
+                  {% if settings.quan-sel %}
+                      <div class="qtyField" title="{{ 'products.product.quantity' | t }}">
+                        <a class="qtyBtn minus" href="javascript:void(0);"><i class="ad ad-minus-r" aria-hidden="true"></i></a>
+                        <input type="text" id="Quantity" name="quantity" value="1" class="product-form__input qty" />
+                        <a class="qtyBtn plus" href="javascript:void(0);"><i class="ad ad-plus-r" aria-hidden="true"></i></a>
+                  </div>
+                 {% endif %} 
+
+                  <button type="submit" name="add" id="AddToCart-quickView" {% unless current_variant.available %}disabled="disabled"{% endunless %} class="btn product-quickview-submit">
+                    <span id="AddToCartText-quickView">{% unless current_variant.available %}{{ 'products.product.sold_out' | t }}{% else %}{{ 'products.product.add_to_cart' | t }}{% endunless %}</span>
+                  </button>
+               </div>
+        	{% endunless %}
+           {%- if settings.enable_wishlist -%}<a class="wishlist addto-wishlist" href="/pages/wishlist" rel="{{ product.handle | handleize }}"><i class="ad ad-heart-l"></i><span class="msg">{{ 'products.wishlist.add_to' | t}}</span></a>{%- endif -%}             
+         {% endform %}
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+{% unless product.empty? %}<script type="application/json" id="ProductJson-quickView">{{ product | json }}</script>{% endunless %}
+<script src="{{ 'quickview.js' | asset_url }}" defer="defer"></script>
+{%- assign current_variant = product.selected_or_first_available_variant -%}
+<script>
+  // Override default values of shop.strings for each template.
+  // Alternate product templates can change values of
+  // add to cart button, sold out, and unavailable states here.
+  theme.productStrings = {
+    addToCart: {{ 'products.product.add_to_cart' | t | json }},
+    soldOut: {{ 'products.product.sold_out' | t | json }},
+    unavailable: {{ 'products.product.unavailable' | t | json }}
+  }
+  
+  $(function(){
+    $('.swatch :radio').change(function() {
+      var optionIndex = $(this).closest('.swatch').attr('data-option-index');
+      var optionValue = $(this).val();
+      $(this).closest('form').find('.single-option-selector-quickView').eq(optionIndex).val(optionValue).trigger('change');
+      {%- if settings.show_multiple_currencies and settings.currency_opt == 'script' -%}
+		Currency.convertAll(shopCurrency, $('#currencies li.selected').attr('data-currency'));
+      {%- endif -%}
+    });
+  });
+  
+// (c) Copyright 2016 Caroline Schnapp. All Rights Reserved. Contact: mllegeorgesand@gmail.com
+// See https://docs.shopify.com/themes/customization/navigation/link-product-options-in-menus
+var Shopify = Shopify || {};
+Shopify.optionsMap = {};
+Shopify.updateOptionsInSelector = function(selectorIndex) {
+    
+  switch (selectorIndex) {
+    case 0:
+      var key = 'root';
+      var selector = $('.single-option-selector-quickView:eq(0)');
+      break;
+    case 1:
+      var key = $('.single-option-selector-quickView:eq(0)').val();
+      var selector = $('.single-option-selector-quickView:eq(1)');
+      break;
+    case 2:
+      var key = $('.single-option-selector-quickView:eq(0)').val();  
+      key += ' / ' + $('.single-option-selector-quickView:eq(1)').val();
+      var selector = $('.ssingle-option-selector-quickView:eq(2)');
+  }
+  
+  var initialValue = selector.val();
+  //selector.empty();    
+  var availableOptions = Shopify.optionsMap[key];
+  /*for (var i=0; i<availableOptions.length; i++) {
+    var option = availableOptions[i];
+    var newOption = $('<option></option>').val(option).html(option);
+    selector.append(newOption);
+  }*/
+  $('.swatch[data-option-index="' + selectorIndex + '"] .swatch-element').each(function() {
+    if (jQuery.inArray($(this).attr('data-value'), availableOptions) !== -1) {
+      $(this).removeClass('soldout').find(':radio').removeAttr('disabled','disabled').removeAttr('checked');
+    }
+    else {
+      $(this).addClass('soldout').find(':radio').removeAttr('checked').attr('disabled','disabled');
+    }
+  });
+  if (jQuery.inArray(initialValue, availableOptions) !== -1) {
+    selector.val(initialValue);
+  }
+  selector.trigger('change');  
+  
+};
+Shopify.linkOptionSelectors = function(product) {
+  // Building our mapping object.
+  for (var i=0; i<product.variants.length; i++) {
+    var variant = product.variants[i];
+    if (variant.available) {
+      // Gathering values for the 1st drop-down.
+      Shopify.optionsMap['root'] = Shopify.optionsMap['root'] || [];
+      Shopify.optionsMap['root'].push(variant.option1);
+      Shopify.optionsMap['root'] = Shopify.uniq(Shopify.optionsMap['root']);
+      // Gathering values for the 2nd drop-down.
+      if (product.options.length > 1) {
+        var key = variant.option1;
+        Shopify.optionsMap[key] = Shopify.optionsMap[key] || [];
+        Shopify.optionsMap[key].push(variant.option2);
+        Shopify.optionsMap[key] = Shopify.uniq(Shopify.optionsMap[key]);
+      }
+      // Gathering values for the 3rd drop-down.
+      if (product.options.length === 3) {
+        var key = variant.option1 + ' / ' + variant.option2;
+        Shopify.optionsMap[key] = Shopify.optionsMap[key] || [];
+        Shopify.optionsMap[key].push(variant.option3);
+        Shopify.optionsMap[key] = Shopify.uniq(Shopify.optionsMap[key]);
+      }
+    }
+  }
+  // Update options right away.
+  Shopify.updateOptionsInSelector(0);
+  if (product.options.length > 1) Shopify.updateOptionsInSelector(1);
+  if (product.options.length === 3) Shopify.updateOptionsInSelector(2);
+  // When there is an update in the first dropdown.
+  $(".single-option-selector-quickView:eq(0)").change(function() {
+    Shopify.updateOptionsInSelector(1);
+    if (product.options.length === 3) Shopify.updateOptionsInSelector(2);
+    return true;
+  });
+  // When there is an update in the second dropdown.
+  $(".single-option-selector-quickView:eq(1)").change(function() {
+    if (product.options.length === 3) Shopify.updateOptionsInSelector(2);
+    return true;
+  });  
+};
+
+{%- if product.available and product.options.size > 1 -%}
+  var $addToCartForm = $('form[action="/cart/add"]');
+  if (window.MutationObserver && $addToCartForm.length) {
+    if (typeof observer === 'object' && typeof observer.disconnect === 'function') {
+      observer.disconnect();
+    }
+    var config = { childList: true, subtree: true };
+    var observer = new MutationObserver(function(){
+      observer.disconnect();
+    });  
+    observer.observe($addToCartForm[0], config);
+  }
+  Shopify.linkOptionSelectors(JSON.parse(document.getElementById('ProductJson-quickView').innerHTML));
+{%- endif -%}
+{%- if product.options.size == 1 -%}
+  {%- for variant in product.variants -%}
+    {%- unless variant.available -%}
+    $('.single-option-selector-quickView option').filter(function() { return $(this).html() === {{ variant.title | json }}; }).remove();
+    $(".swatch-element.{{ variant.title | handleize }}").remove();
+    {%- endunless -%}
+  {%- endfor -%}
+  $('.single-option-selector-quickView').trigger('change');
+{%- endif -%}
+</script>

@@ -1,0 +1,272 @@
+<div class="content-indent {{ section.settings.top-offeset}}">
+  {% if section.settings.section_cov %}<div class="section-cover" style="background-color:{{section.settings.sec_bg_clr}};">{% endif%}
+  <div class="{% unless section.settings.section_width %} page-width{% endunless %}">
+
+    {% for block in section.blocks limit: section.blocks.size %}    
+      {% assign box-delay = forloop.index | minus:1 %}
+      {% assign delay_time = 50 | times : box-delay %}
+
+      {%- capture image_layout -%}
+      <div class="feature-row__item imgCol wow{% if block.settings.layout == 'right' %} fadeInRight{% else %} fadeInLeft{% endif %}" data-wow-delay="{{delay_time}}ms">
+        {% if block.settings.image != blank %}
+          {%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+          <span class="imgWrapper" style="max-width:{{ block.settings.image.width }}px;">
+              <img class="feature-row__image lazyload" src="{{ block.settings.image | img_url: '100x' }}" width="100%"
+                  data-src="{{ img_url }}" data-widths="[180, 360, 540, 720, 900]" data-aspectratio="{{ block.settings.image.aspect_ratio }}" data-sizes="auto" alt="{{ block.settings.image.alt | escape }}">
+          </span>
+        {% else %}
+        	{{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+        {% endif %}
+      </div>
+      {%- endcapture -%}
+
+      <div class="feature-row {% if section.settings.snow_effect %}falling-snow {% endif %}{% if section.settings.snow_style == "style2" %}style2 {% else %}style1 {% endif %}row-{{ block.id }}"
+           style="background-color:{{block.settings.text_bg_clr}};">
+        {{ image_layout }}
+        <div class="feature-row__item feature-row__text {{ block.settings.layout }} wow{% if block.settings.layout == 'right' %} fadeInLeft{% else %} fadeInRight{% endif %}" data-wow-delay="{{delay_time}}ms">
+          <div class="row-text {{block.settings.text_align}}">
+            {% if block.settings.title != blank %}<h3 style="color:{{block.settings.text_clr}};">{{ block.settings.title }}</h3>{% endif %}
+            {% if block.settings.text != blank %}<div class="rte rte-setting featured-row__subtext" style="color:{{block.settings.text_clr}};">{{ block.settings.text }}</div>{% endif %}
+            {% if block.settings.button_label != blank and block.settings.button_link != blank %}
+              <a href="{{ block.settings.button_link }}" class="btn {{block.settings.btn-size-mob}} {{block.settings.btn-size-desk}}">{{ block.settings.button_label }}</a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      <style type="text/css">
+        .row-{{ block.id }} .btn { background:{{block.settings.button_bg_clr}}; border:2px solid {{ block.settings.button_bdr_clr}}; 
+          color:{{block.settings.button_text_clr}};}
+        .row-{{ block.id }} .btn:hover {opacity:0.9;}
+      </style>
+
+    {% endfor %}  
+
+  </div>
+  {% if section.settings.section_cov %}</div> {% endif%}
+</div>
+
+{% schema %}
+  {
+    "name": "Image with text",
+    "class": "index-section image-with-text",
+    "settings": [	  	 
+	  {
+            "type": "select",
+            "id": "top-offeset",
+            "label": "Top OffSet",
+            "default": "default",
+            "options": [
+              {
+                "value": "default",
+                "label": "Default"
+              },
+              {
+                "value": "small",
+                "label": "Small"
+              },
+			  {
+                "value": "none",
+                "label": "None"
+              }
+			]
+        },
+		 {
+		"type":"checkbox",
+		"id":"section_width",
+		"label":"Fullwidth?",
+		"default": true
+	  },
+		 {
+        "type": "checkbox",
+        "id": "section_cov",
+        "label": "Use Background?",
+        "default": false
+      },	
+	  {
+        "type": "color",
+        "id": "sec_bg_clr",
+        "label": "Background",
+		"default":"#fafafa"	
+	  },
+	 {
+		"type":"checkbox",
+		"id":"snow_effect",
+		"label":"Enable Snow Effect?",
+		"default": false,
+		"info":"For Christmas"
+	   },
+        {
+          "type": "select",
+          "id": "snow_style",
+          "label": "Snow Style",
+          "default": "style1",         
+          "options": [
+            {
+            "value": "style1",
+            "label": "Falling Down"
+            },
+            {
+            "value": "style2",
+            "label": "Falling From Left"
+            }
+            ]
+          },
+	   {
+        "type": "paragraph",      
+        "content": "Set font size from --> Theme Settings --> Fonts, Colors and Styles --> Banner With Text"
+      }
+    ],
+	 "blocks": [
+      {
+        "type": "image_with_text",
+        "name": "Block",
+        "settings": [
+           {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },  
+       {
+            "type": "select",
+            "id": "layout",
+			"label":"Image alignment",
+ 			"default": "left",
+			"options": [
+        		{ "value": "left","label":"Left"},
+				{ "value": "right","label":"Right"}
+			]
+      },	  
+      {
+        "type": "textarea",
+        "id": "title",
+        "label": "Heading",
+        "default": "Image with text",
+		"info":"Use <strong>text here</strong> to make heading bold"
+      },
+      {
+        "type": "richtext",
+        "id": "text",
+        "label": "Text",
+        "default": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
+		
+      },
+      {
+        "type": "text",
+        "id": "button_label",
+        "label": "Button label"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button link"
+      },
+{
+          "type": "select",
+          "id": "btn-size-desk",
+          "label": "Button Size: Desktop",
+          "default": "btn-sm",
+          "options": [
+          {
+          "label": "Small",
+          "value": "btn-sm"
+          },
+          {
+          "label": "Medium",
+          "value": "btn-md"
+          },
+          {
+          "label": "Large",
+          "value": "btn-lg"
+          }	
+          ]
+          }, 
+          {
+          "type": "select",
+          "id": "btn-size-mob",
+          "label": "Button Size : Mobile",
+          "default": "mob-btn-sm",
+          "options": [
+          {
+          "label": "Small",
+          "value": "mob-btn-sm"
+          },
+          {
+          "label": "Medium",
+          "value": "mob-btn-md"
+          },
+          {
+          "label": "Large",
+          "value": "mob-btn-lg"
+          }	
+          ]
+          },      
+ 	  {
+            "type": "select",
+            "id": "text_align",
+            "label": "Text Align",
+            "default": "text-left",
+            "options": [
+              {
+                "value": "text-left",
+                "label": "Left"
+              },
+              {
+                "value": "text-center",
+                "label": "Center"
+              },
+              {
+                "value": "text-right",
+                "label": "Right"
+              }
+            ]
+      },
+	 {
+        "type": "header",
+        "content": "Appearance"
+      },
+      {
+        "type": "color",
+        "id": "text_clr",
+        "label": "Text Color",
+        "default": "#000"
+      },
+	 {
+        "type": "color",
+        "id": "text_bg_clr",
+        "label": "Background Color",
+        "default": "#f5f5f5"
+      },
+	  {
+        "type": "color",
+        "id": "button_bg_clr",
+        "label": "Button Background Color",
+		"default":"#000"
+      },
+	  {
+        "type": "color",
+        "id": "button_bdr_clr",
+        "label": "Button Border Color", 
+		"default":"#000"
+      },
+ 	 {
+        "type": "color",
+        "id": "button_text_clr",
+        "label": "Button Text Color",
+		"default":"#fff"
+      }
+      ]
+     }
+   ],
+    "presets": [
+      {
+        "name": "Banner With Text",
+        "category": "3. Banners",
+		"blocks": [
+          {
+            "type": "image_with_text"
+          }          
+        ]
+      }
+    ]
+  }
+{% endschema %}

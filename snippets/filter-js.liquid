@@ -1,0 +1,80 @@
+<script type="text/javascript">
+window.addEventListener('load', function() {
+  $(document).ready(function(){
+    {% comment %}Toggle between collection.liquid and collection.list.liquid with the ?view= parameter.{% endcomment %}
+    
+    {%- if section.settings.dis_grid_icn -%}
+	function replaceUrlParam(url, paramName, paramValue) {
+      	var pattern = new RegExp('('+paramName+'=).*?(&|$)'),
+      		newUrl = url.replace(pattern,'$1' + paramValue + '$2');
+      	if ( newUrl == url ) {
+      		newUrl = newUrl + (newUrl.indexOf('?')>0 ? '&' : '?') + paramName + '=' + paramValue;
+  	}
+    	return newUrl;
+	}
+
+    $('.change-view').on('click', function() {
+      var view = $(this).data('view'),
+          url = document.URL,
+          hasParams = url.indexOf('?') > -1;
+
+      if (hasParams) {
+        window.location = replaceUrlParam(url, 'view', view);
+      } else {
+        window.location = url + '?view=' + view;
+      }
+    });
+	{%- endif -%}
+
+  {% comment %}Ajax filters{% endcomment %}
+  {%- if section.settings.collection_sidebar -%}
+  
+  	$(document).on('click', '.actFilter', function(i){
+      var filter = $(this).attr("data-value");
+      $(".filterBox input[value='"+filter+"']").trigger("click");
+    });
+      check_filters = (function(url){
+        $('.filterBox').each(function(){
+          var filter = $(this).find("li");
+          if(filter.length <= 0){
+            $(this).hide();
+          }
+        });
+        $('.sidebar_tags input:checkbox').on( "change", function(){
+          var productFilters = $('.sidebar_tags input:checkbox'), 
+              newTags = [],
+              url = '';
+
+          productFilters.each(function() {
+            if ($(this).val() && $(this).is(":checked") == true) {
+              newTags.push($(this).val());                        
+            }
+          });
+
+          if (newTags.length) {
+                    var query = newTags.join('+');
+                    var t = '{{ 'tag' | link_to_tag: 'tag' }}';
+                    url += $(t).attr('href').replace('tag', query);
+                } else {
+                    {% if collection.handle %}
+                        {% if collection.url contains "vendors?" %}
+                  			url += '{{ collection.title | url_for_vendor }}';
+                        {% elsif collection.url contains "types?" %}
+                            url += '{{ collection.title | url_for_type }}';
+                  		{% else %}
+                            url += '/collections/{{ collection.handle }}'+window.location.search;
+                  		{% endif %}
+                    {% elsif collection.products.first.type == collection.title %}
+                        url += '{{ collection.title | url_for_type }}'+window.location.search;
+                    {% elsif collection.products.first.vendor == collection.title %}
+                        url += '{{ collection.title | url_for_vendor }}'+window.location.search;
+                    {% endif %}
+                }
+          ajaxfilter(url);
+        });
+      });
+      check_filters();
+  {%- endif -%}
+  });
+});
+</script>

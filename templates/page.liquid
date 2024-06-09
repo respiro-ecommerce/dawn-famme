@@ -1,0 +1,5 @@
+{%- if settings.breadcrumb_pg -%}{%- include 'breadcrumb' -%}{%- else -%}<div class="topSpace"></div>{%- endif -%}
+<div class="page-width">
+  <h1 class="page-title">{{page.title}}</h1>
+  <div class="rte">{{ page.content }}</div>
+</div>

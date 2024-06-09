@@ -1,0 +1,15 @@
+{%- if link != blank -%}<a href="{{link}}">{%- endif -%}
+{%- if image != blank -%}
+{%- assign img_url1 = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+<img class="lazyload" src="{{ image | img_url: "50x" }}"
+     data-src="{{ img_url1 }}" data-widths="[200, 400, 600, 800, 1000, 1200, 1400]" data-sizes="auto" alt="{{ block.settings.image1.alt | escape }}">
+{%- else -%}
+{{ 'https://dummyimage.com/' | append: imgSize | append: '/F4F4F4/ccc' | img_tag }}
+{%- endif -%}
+{%- if title != blank or subtitle != blank %}
+<div class="ttl">
+  {%- if title != blank -%}<span class="tt-small">{{title}}</span>{%- endif -%}
+  {%- if subtitle != blank -%}<span class="tt-big">{{subtitle}}</span>{%- endif -%}
+</div>
+{%- endif -%}
+{%- if link != blank -%}</a>{%- endif -%}

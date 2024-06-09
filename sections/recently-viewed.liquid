@@ -1,0 +1,131 @@
+{% if section.settings.show_recently_products == true %}
+<div class="recent-product" id="{{ section.id }}" data-pr="{{ product.handle | handleize }}" data-section-id="{{ section.id }}"
+     data-section-type="carousel">
+  <div class="{% if settings.product_latyout != "style6" %}page-width{% if settings.product_fullwidth %} fullwidth{% endif %}{% endif %}">
+    {%- if section.settings.recently_title != blank  or section.settings.recently_sub_title != blank -%}
+    <div class="sec-ttl {{ settings.title_align}}">
+      <h3 class="h3">{{ section.settings.recently_title | escape }}</h3>     
+      {%- if section.settings.recently_sub_title != blank -%}<span>{{section.settings.recently_sub_title}}</span>{%- endif -%}           
+    </div>
+    {%- endif -%}
+    <div id="products-{{ section.id }}">
+      {%- if settings.product_latyout == "style6" -%}
+      <div id="productSlider-{{ section.id }}" class="grid collection-columns"></div>
+      {%- else -%}
+      <div id="productSlider-{{ section.id }}" class="grid-products carousel" data-slick='{"slidesToShow": {{ section.settings.grid }},"slidesToScroll": 1, {%- if settings.rtl -%}"rtl": true,{%- endif -%} "infinite": true, "autoplay":{{section.settings.recently_autoplay}}, "autoplaySpeed": {{section.settings.autoplay_speed}}, "responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": {{ section.settings.tablet-grid }} }},{"breakpoint": 767,"settings":{"slidesToShow":{{ section.settings.mobile-grid }} }} ]}'></div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+<script>
+	window.addEventListener('load', function() {
+    	var recentcookie = "recentproducts",
+      		pr = "{{ product.handle | handleize }}";
+        if($.cookie(recentcookie) == null) {
+               var str = pr;
+        } else {
+          	var ctrItems = String($.cookie(recentcookie)).split("+");
+          	//alert(ctrItems.length);
+	        if(ctrItems.length < {{section.settings.recently_pr_limit | plus: 1}}){
+            	if($.cookie(recentcookie).indexOf(pr) == -1) {
+    	        	var str = pr + '+' + $.cookie(recentcookie);
+        		}
+        	} else {
+              	if($.cookie(recentcookie).indexOf(pr) == -1) {
+    	        	var str = pr + '+' + ctrItems.slice(0, -1).join("+");
+        		}
+              	//alert(ctrItems.slice(0, -1).join("+"));
+        	}
+		}
+		$.cookie(recentcookie, str, {expires:1, path:'/'});
+    });
+</script>
+{% endif %}
+
+{% schema %}
+  {
+    "name": "Recently Viewed Products",
+    "settings": [
+		{
+        "type": "checkbox",
+        "id": "show_recently_products",
+        "label": "Show Recently Products",
+        "default": true,
+		"info": "Need to create and setup page for this. Check [How to setup recently view](https://www.adornthemes.com/knowledge-base/how-to-setup-recently-viewed-products-section/)"
+      },
+	 {
+        "type": "checkbox",
+        "id": "recently_autoplay",
+        "label": "Carousel Autoplay",
+        "default": false
+      },
+ 	 {
+        "type": "select",
+        "id": "autoplay_speed",
+        "label": "Carousel Autoplay Speed",
+        "options": [
+          { "value": "3000", "label": "3 seconds" },
+          { "value": "4000", "label": "4 seconds" },
+          { "value": "5000", "label": "5 seconds" },
+          { "value": "6000", "label": "6 seconds" },
+          { "value": "7000", "label": "7 seconds" },
+          { "value": "8000", "label": "8 seconds" },
+          { "value": "9000", "label": "9 seconds" },
+          { "value": "10000", "label": "10 seconds" },
+		  { "value": "12000", "label": "12 seconds" },
+		  { "value": "15000", "label": "15 seconds" }
+        ],
+        "default": "3000"
+      },
+ 	 {
+        "id": "recently_title",
+        "type": "text",
+        "label": "Section Title",
+        "default": "Recently Viewed Products"
+      },
+ 	  {
+        "id": "recently_sub_title",
+        "type": "text",
+        "label": "Section Sub title",
+        "default": "You can stop autoplay, increase/decrease aniamtion speed and number of grid to show and products from store admin."
+      },
+      {
+        "type": "paragraph",
+        "content": "Products Per Row"
+      },
+      {
+        "type": "range",
+        "id": "grid",
+        "label": "Desktop",
+        "default": 4,
+        "min": 2,
+        "max": 7,
+        "step": 1
+      },
+      {
+        "type": "range",
+        "id": "tablet-grid",
+        "label": "Tablet",
+        "default": 3,
+        "min": 1,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "type": "range",
+        "id": "mobile-grid",
+        "label": "Mobile",
+        "default": 2,
+        "min": 1,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "type": "text",
+        "id": "recently_pr_limit",
+        "label": "Number of Products to Show",
+        "default": "8"
+      }
+	]
+  }
+{% endschema %}

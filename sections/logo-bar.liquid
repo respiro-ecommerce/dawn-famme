@@ -1,0 +1,179 @@
+{%- capture logobar -%}
+<div class="content-indent {{ section.settings.top-offeset}}">
+  <div class="logo-bar page-width wow fadeIn" id="carousel-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="carousel">
+
+    {%- if section.settings.title != blank  or section.settings.subtitle != blank -%}
+    <div class="sec-ttl {{ settings.title_align}}">
+      {%- if section.settings.title != blank -%}<h3 class="h3">{{ section.settings.title }}</h3>{%- endif -%}
+      {%- if section.settings.subtitle != blank -%}<span>{{section.settings.subtitle}}</span>{%- endif -%}
+    </div>
+    {%- endif -%}
+
+    {% case section.settings.grid %}
+      {% when 2 %}{%- assign grid_ds = 'large-up--one-half' -%}
+      {% when 3 %}{%- assign grid_ds = 'large-up--one-third' -%}
+      {% when 4 %}{%- assign grid_ds = 'large-up--one-quarter' -%}
+      {% when 5 %}{%- assign grid_ds = 'large--one-quarter widescreen--one-fifth' -%}
+      {% when 6 %}{%- assign grid_ds = 'large--one-fifth widescreen--one-sixth' -%}
+      {% when 7 %}{%- assign grid_ds = 'large--one-fifth widescreen--one-seventh' -%}
+      {% when 8 %}{%- assign grid_ds = 'large--one-sixth widescreen--one-eighth' -%}
+    {% endcase %}
+    
+    {% case section.settings.tablet-grid %}
+      {% when 2 %}{%- assign grid_tb = 'medium--one-half' -%}
+      {% when 3 %}{%- assign grid_tb = 'medium--one-third' -%}
+      {% when 4 %}{%- assign grid_tb = 'medium--one-quarter' -%}
+      {% when 5 %}{%- assign grid_tb = 'medium--one-fifth' -%}
+      {% when 6 %}{%- assign grid_ds = 'medium--one-sixth' -%}
+    {% endcase %}
+    
+    {% case section.settings.mobile-grid %}
+      {% when 1 %}{%- assign grid_mb = 'small--one-whole' -%}
+      {% when 2 %}{%- assign grid_mb = 'small--one-half' -%}
+      {% when 3 %}{%- assign grid_mb = 'small--one-third' -%}
+      {% when 4 %}{%- assign grid_mb = 'small--one-quarter' -%}
+    {% endcase %}
+
+    {% if section.blocks.size > 0 %}
+    <div class="grid carousel" data-slick='{"slidesToShow": {{ section.settings.grid }},"slidesToScroll": 1, {%- if settings.rtl -%}"rtl": true,{%- endif -%} "infinite": true, "responsive":[{"breakpoint": 1025,"settings":{"slidesToShow": {{ section.settings.tablet-grid }} }},{"breakpoint": 768,"settings":{"slidesToShow":{{ section.settings.mobile-grid }} }} ]}'>
+      {% for block in section.blocks %}
+      <div class="grid__item {{grid_mb}} {{grid_tb}} {{grid_ds}}" {{ block.shopify_attributes }}>
+        <a{% if block.settings.link != blank %} href="{{ block.settings.link }}"{% endif %} class="logo-bar__link" style="max-width:{{ block.settings.image.width}}px">
+          {% if block.settings.image != blank %}
+          <div class="logoImg lazyload" style="padding-bottom:{{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100}}%"
+               data-bgset="{% render 'prgrid-img', image: block.settings.image, sizes: "100,200,300" %}" data-sizes="auto" data-parent-fit="contain"></div>
+          {% else %}
+          	{{ 'logo' | placeholder_svg_tag: 'placeholder-svg' }}
+          {% endif %}
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+    {% if section.blocks.size == 0 %}{% include 'no-blocks' %}{% endif %}
+  </div>
+</div>  
+{%- endcapture -%}
+{{logobar | strip_newlines | remove: "  " | remove: "	" }}
+{% schema %}
+  {
+    "name": "Logo list",
+    "class": "index-section",
+    "max_blocks": 20,
+    "settings": [
+	  {
+            "type": "select",
+            "id": "top-offeset",
+            "label": "Top OffSet",
+            "default": "default",
+            "options": [
+              {
+                "value": "default",
+                "label": "Default"
+              },
+              {
+                "value": "small",
+                "label": "Small"
+              },
+			  {
+                "value": "none",
+                "label": "None"
+              }
+			]
+       },  		 	   
+      {
+        "type": "textarea",
+        "id": "title",
+        "label": "Heading",
+        "default": "Logo list",
+		"info":"Use <strong>text here</strong> to make headings bold"
+      },
+ 	  {
+        "type": "textarea",
+        "id": "subtitle",
+        "label": "Sub Heading",
+        "default": "Describe your products, collection, content etc..."
+      },
+      {
+        "type": "paragraph",
+        "content": "Logos per row ==="
+      },
+      {
+        "type": "range",
+        "id": "grid",
+        "label": "Desktop",
+        "default": 6,
+        "min": 1,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "type": "range",
+        "id": "tablet-grid",
+        "label": "Tablet",
+        "default": 5,
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "type": "range",
+        "id": "mobile-grid",
+        "label": "Mobile",
+        "default": 3,
+        "min": 1,
+        "max": 4,
+        "step": 1
+      },
+ 	  {
+        "type": "paragraph",
+        "content": "Upload all logo of same size"        
+      }
+    ],
+    "blocks": [
+      {
+        "type": "logo_image",
+        "name": "Logo",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "url",
+            "id": "link",
+            "label": "Link",
+            "info": "Optional"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Logo List",
+        "category": "6. Other", 
+        "blocks": [
+          {
+            "type": "logo_image"
+          },
+          {
+            "type": "logo_image"
+          },
+          {
+            "type": "logo_image"
+          },
+          {
+            "type": "logo_image"
+          },
+ 		 {
+            "type": "logo_image"
+          },
+          {
+            "type": "logo_image"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

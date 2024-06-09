@@ -1,0 +1,102 @@
+<div class="content-indent {{ section.settings.top-offeset}}">    
+  <div class="{% if section.settings.fullwidth %}fullwidth{% else %}page-width{%endif%}">     
+    <div class="section-cover id-{{section.id}} wow fadeIn" style="background-color:{{section.settings.sec_bg_clr}}; color:{{ section.settings.text_clr}};">  		      
+      <div class="simple-text text-{{section.id}} text-center">
+        {%- if section.settings.infolines != blank %}
+        {{ section.settings.infolines }}
+        {%- endif -%}  
+      </div>
+    </div> 
+  </div>
+</div>   
+
+<style> 
+  .section-cover.id-{{section.id}} { padding:10px 0;}
+  .simple-text.text-{{section.id}}  a {color:{{section.settings.text_clr}}; text-decoration:none; }
+   @media only screen and (min-width: 768px) {
+    .simple-text.text-{{section.id}} { font-size:{{section.settings.text-size}}px;}
+    .section-cover.id-{{section.id}}{ padding:{{ section.settings.text-padding}}px 10px;}
+   }  
+</style>
+
+
+{% schema %}
+  {
+    "name": "Text Line",
+    "class": "index-section",   	
+	"settings":[
+	 {
+         "type": "checkbox",
+		 "id": "fullwidth",
+		 "label": "Fullwidth?",
+		 "default": true
+      },
+	 {
+            "type": "select",
+            "id": "top-offeset",
+            "label": "Top OffSet",
+            "default": "default",
+            "options": [
+              {
+                "value": "default",
+                "label": "Default"
+              },
+              {
+                "value": "small",
+                "label": "Small"
+              },
+			  {
+                "value": "none",
+                "label": "None"
+              }
+			]
+        },			 	    
+		{
+        "type": "textarea",
+        "id": "infolines",
+        "label": "Information",
+        "default": "Display store promotion text, collection information or store information",
+		"info":"Use <strong> your text Here </strong> to make text bold"
+        },
+		{
+            "type": "range",
+            "id": "text-size",
+            "label": "Font Size",
+            "min": 12,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "default": 16
+         },
+		{
+            "type": "color",
+            "id": "sec_bg_clr",
+            "label": "Background Color",
+			"default":"#fafafa"	
+		 },
+		{
+            "type": "color",
+            "id": "text_clr",
+            "label": "Text Color",
+			"default":"#111"	
+		 },
+		 {
+            "type": "range",
+            "id": "text-padding",
+            "label": "Text Padding",
+            "min": 5,
+            "max": 50,
+            "step": 1,
+            "unit": "px",
+            "default": 20
+         }
+	],
+	"presets": [
+      {
+		 "name": "Text Line",
+         "category": "4. Text"
+	 }
+   ]
+  }
+{% endschema %}
+

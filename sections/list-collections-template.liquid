@@ -1,0 +1,263 @@
+{%- if settings.breadcrumb_pg -%}{%- include 'breadcrumb' -%}{%- else -%}<div class="topSpace"></div>{%- endif -%}
+<div class="collection-box cl{{ section.id }} {{section.settings.style}}{% unless section.settings.section_width %} page-width{% else %} fullwidth{% endunless %}" id="{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="masonary">
+  <h1 class="page-title">{{ section.settings.page_title }}</h1>   
+  {%- assign blocks = section.blocks | sort: 'collection.all_products_count' -%}	
+
+  {% case section.settings.grid %}
+  {% when 2 %}{%- assign grid_ds = 'large-up--one-half' -%}
+  {% when 3 %}{%- assign grid_ds = 'large-up--one-third' -%}
+  {% when 4 %}{%- assign grid_ds = 'large-up--one-quarter' -%}
+  {% when 5 %}{%- assign grid_ds = 'large--one-quarter widescreen--one-fifth' -%}
+  {% when 6 %}{%- assign grid_ds = 'large--one-fifth widescreen--one-sixth' -%}
+  {% when 7 %}{%- assign grid_ds = 'large--one-fifth widescreen--one-seventh' -%}
+  {% endcase %}
+  
+  {% case section.settings.tablet-grid %}
+  {% when 2 %}{%- assign grid_tb = 'medium--one-half' -%}
+  {% when 3 %}{%- assign grid_tb = 'medium--one-third' -%}
+  {% when 4 %}{%- assign grid_tb = 'medium--one-quarter' -%}
+  {% when 5 %}{%- assign grid_tb = 'medium--one-fifth' -%}
+  {% endcase %}
+  
+  {% case section.settings.mobile-grid %}
+  {% when 1 %}{%- assign grid_mb = 'small--one-whole' -%}
+  {% when 2 %}{%- assign grid_mb = 'small--one-half' -%}
+  {% when 3 %}{%- assign grid_mb = 'small--one-third' -%}
+  {% endcase %}
+  
+
+  <div class="grid grid-mr-{{ section.settings.grid-spacing}} collection-grid grid-masonary {{section.settings.style}} pd-{{ section.settings.grid-spacing}}">
+    <div class="grid-sizer-{{section.id}} {{grid_mb}} {{grid_tb}} {{grid_ds}}"></div>
+    {% if section.settings.display_type == 'all' %}
+
+    {% case section.settings.sort %}
+    {% when 'products_high' or 'products_low' %}
+    {%- assign collections = collections | sort: 'all_products_count' -%}
+    {% when 'date' or 'date_reversed' %}
+    {%- assign collections = collections | sort: 'published_at' -%}
+    {% endcase %}
+
+    {% if section.settings.sort == 'products_low' or section.settings.sort == 'date' or section.settings.sort == 'alphabetical' %}
+    {% for collection in collections %}       		           
+    <div class="grid__item ms-item {{grid_mb}} {{grid_tb}} {{grid_ds}}">
+      {% include 'collection-grid-item-list-page', collection_image_size: image_size %}
+    </div>
+    {% endfor %}
+    {% else %}
+    {% for collection in collections reversed %}
+    <div class="grid__item ms-item {{grid_mb}} {{grid_tb}} {{grid_ds}}">
+      {% include 'collection-grid-item-list-page', collection_image_size: image_size %}
+    </div>
+    {% endfor %}
+    {% endif %}
+
+    {% else %}
+    {% for block in section.blocks %}
+    <div class="grid__item ms-item {{grid_mb}} {{grid_tb}} {{grid_ds}}">
+      {%- assign collection = collections[block.settings.collection] -%}
+      {% include 'collection-grid-item-list-page', collection_image_size: image_size %}
+    </div>
+    {% endfor %}
+    {% endif %}
+  </div>
+ 
+</div>
+<style>
+  .cl{{ section.id }} .collection-grid-item .collection-grid-item__title,
+  .cl{{ section.id }} .collection-grid-item .counts{ color:{{ section.settings.collection_ttl_hm}}; }
+  .cl{{ section.id }} .collection-grid-item .details { background:{{section.settings.collection_ttl_bg_hm | color_modify: 'alpha', section.settings.collection_ttl_opt_hm}}; }
+  @media screen and (max-width:768px){
+    .cl{{ section.id }} .collection-grid-item .details { background:{{section.settings.collection_ttl_bg_hm}}; }
+  }
+</style>
+<script> 
+$( window ).load( function(){
+    $( '.collection-grid' ).masonry( { itemSelector: '.grid__item' } );
+});
+</script>
+
+{% schema %}
+  {
+    "name": "Collections List Page",
+    "settings": [
+	 {
+		"type":"checkbox",
+		"id":"section_width",
+		"label":"Fullwidth?",
+		"default": true
+	  },   
+ 	  {
+            "label": "Page Title",
+            "id": "page_title",
+            "type": "textarea",
+			"default":"Collections"
+      },
+      {
+        "type": "select",
+        "id": "display_type",
+        "label": "Select Collections to Show",
+        "default": "all",
+		"info":"All collections are listed by default. To customize your list, choose 'Selected' and add collections.",
+        "options": [
+          {
+            "value": "all",
+            "label": "All"
+          },
+          {
+            "value": "selected",
+            "label": "Selected"
+          }
+        ]
+	  },
+      {
+        "type": "select",
+        "id": "sort",
+        "label": "Sort Collections By:",
+        "info": "Sorting only applies when 'All' is selected",
+        "default": "alphabetical",
+        "options": [
+          {
+            "value": "products_high",
+            "label": "Product count, high to low"
+          },
+          {
+            "value": "products_low",
+            "label": "Product count, low to high"
+          },
+          {
+            "value": "alphabetical",
+            "label": "Alphabetically, A-Z"
+          },
+          {
+            "value": "alphabetical_reversed",
+            "label": "Alphabetically, Z-A"
+          },
+          {
+            "value": "date",
+            "label": "Date, old to new"
+          },
+          {
+            "value": "date_reversed",
+            "label": "Date, new to old"
+          }
+        ]
+      },  
+	  {
+		"type":"checkbox",
+		"id":"product_count",
+		"label":"Show Products Count",
+		"default": true
+	  },
+      {
+        "type": "text",
+        "id": "collection_btn",
+        "label": "Collection Button",
+        "default": "Shop Now"		
+      },
+ 	 {
+        "type": "header",
+        "content": "Appearance"
+      },
+      {
+        "type": "select",
+        "id": "style",
+        "label": "Box style",
+        "default": "style3",
+        "options": [
+			{ "value": "style1", "label": "Style 1" },
+			{ "value": "style2", "label": "Style 2" },
+			{ "value": "style3", "label": "Style 3" },
+			{ "value": "style4", "label": "Style 4" }
+        ]
+      },
+	  {
+        "type": "range",
+        "id": "grid-spacing",
+        "label": "Grid Spacing",
+        "default": 4,
+        "min": 0,
+        "max": 30,
+        "step": 2,
+		"unit":"px",
+		"info":"Space between two box/grid"
+      },	 
+	   {
+        "type": "paragraph",
+        "content": "=== Collections per row ==="
+      }, 	
+      {
+        "type": "range",
+        "id": "grid",
+        "label": "Desktop",
+        "default": 4,
+        "min": 2,
+        "max": 7,
+        "step": 1
+      },
+      {
+        "type": "range",
+        "id": "tablet-grid",
+        "label": "Tablet",
+        "default": 3,
+        "min": 1,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "type": "range",
+        "id": "mobile-grid",
+        "label": "Mobile",
+        "default": 2,
+        "min": 1,
+        "max": 3,
+        "step": 1
+      },           
+	   {
+        "type": "color",
+        "id": "collection_ttl_hm",
+        "label": "Title",
+        "default": "#fff"
+      },
+      {
+        "type": "color",
+        "id": "collection_ttl_bg_hm",
+        "label": "Title Background",
+        "default": "#000"
+      },
+      {
+        "type": "range",
+        "id": "collection_ttl_opt_hm",
+        "min": 0,
+        "max": 1,
+        "step": 0.1,
+        "label": "Background Opacity",
+        "unit": "%",
+        "default": 0.7
+      }
+    ],
+    "blocks": [
+      {
+        "type": "collection",
+        "name": "Collection",
+        "settings": [
+          {
+            "label": "Collection",
+            "id": "collection",
+            "type": "collection"
+          },
+		 {
+			"type":"image_picker",
+			"id":"custom_image",
+			"label":"Upload Image"			
+		  },
+		  {
+ 			"type":"textarea",
+			"id":"custom_name",
+			"label":"Custom Name",
+			"info":"use <strong>your text here</strong> for bold font"
+		  }
+        ]
+      }
+    ]
+  }
+{% endschema %}

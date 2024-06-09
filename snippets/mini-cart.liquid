@@ -1,0 +1,49 @@
+<div id="cart-drawer" class="block block-cart">
+	<a href="javascript:void(0);" class="close-cart"><i class="ad ad-times-r " aria-hidden="true"></i></a>
+	<h4>{{ 'cart.general.title' | t }}</h4>
+	<ul class="mini-products-list" data-cart-view="data-cart-view">
+		<li id="cart-title" rv-show="cart.item_count | lt 1">{{ 'cart.general.empty' | t }}</li>
+		<li class="grid" rv-each-item="cart.items">
+			<a class="grid__item one-third medium-up--one-quarter product-image" rv-href="item.url"><img class="imgFl" rv-src="item.image | productImageSize 'small'" rv-alt="item.title" /></a>
+			<div class="grid__item two-thirds medium-up--three-quarters product-details">
+              	<a href="#" class="remove" rv-data-cart-remove="index | plus 1"><i class="ad ad-times-sql" aria-hidden="true"></i></a>
+              	<a class="pName" rv-href="item.url" rv-text="item.product_title"></a>
+				<div class="vropts" rv-text="item.variant_title"></div>
+				<ul rv-hide="item.propertyArray | empty">
+					<li rv-each-property="item.propertyArray < properties"><small class="text-muted">{property.name}: {property.value}</small></li>
+				</ul>
+				<div class="priceRow flex">
+                  <span class="product-price" rv-html="item.price | money"></span>
+                  <div class="qtyField" title="{{ 'products.product.quantity' | t }}">
+                    <a class="qtyBtn" href="#" rv-data-cart-update="index | plus 1" rv-data-cart-quantity="item.quantity | minus 1">-</a>
+                    <span class="qtyBtn" rv-text="item.quantity"></span>
+                    <a class="qtyBtn" href="#" rv-data-cart-update="index | plus 1" rv-data-cart-quantity="item.quantity | plus 1">+</a>
+                   </div>
+              	</div>
+			</div>
+		</li>
+	</ul>
+  	<ul class="minicartTol" data-cart-view="data-cart-view" rv-show="cart.item_count | gt 0">
+      	{%- if settings.free_ship_minicart and settings.free_ship != blank and settings.free_ship_msg != blank -%}
+				{%- assign shipProd = all_products[settings.free_ship] -%}
+      <li id="freeShipMsg" class="freeShipMsg" data-price="{{shipProd.price}}"><i class="ad ad-truck-l"></i><p>{{settings.free_ship_msg | replace: '$','<b class="freeShip"></b>' }}</p></li>
+      <li id="freeShipclaim" class="freeShipMsg freeShipclaim"><i class="ad ad-truck-l"></i><p>{{settings.got_free_ship }}</p></li>
+			{%- endif -%}
+		<li class="cart-subtotal-row flex"> <span>{{ 'cart.general.subtotal' | t }}:</span> <span class="product-price" rv-html="cart.total_price | money currency.currentCurrency"></span> </li>
+		<li class="buttonSet">
+          	{%- if settings.shippingTax -%}<p class="cart__shipping">{{ 'cart.general.shipping_at_checkout' | t }}</p>{%- endif -%}
+          	{% unless settings.hide_checkout_cart == true %}
+			{%- if settings.terms_checkbox -%}
+				<div class="cart_tearm">
+					<input type="checkbox" name="tearm" id="cartDWtearm" class="checkbox custCheck" value="tearm" required />
+					<label for="cartDWtearm"><span class="checkbox"></span> {{ settings.terms_text}}</label>
+				</div>
+			{%- endif -%}          	
+			<form action="{{ routes.cart_url }}" method="post" novalidate>
+				<input type="submit" name="checkout" id="cartDWcheckout" class="btn cartDWcheckout" value="{{ 'cart.general.checkout' | t }}" {% if settings.terms_checkbox %}disabled="disabled"{% endif %} />
+			</form>
+            {% endunless %}
+          	<a id="inlinecheckout-cart" href="{{ routes.cart_url }}" class="btn btn--secondary">{{ 'cart.general.view_cart' | t }}</a>
+		</li>
+	</ul>
+</div>
