@@ -56,8 +56,8 @@
       "name": "Médias sociaux",
       "settings": {
         "social_twitter_link": {
-          "label": "X",
-          "info": "https:\/\/twitter.com\/shopify"
+          "label": "X \/ Twitter",
+          "info": "https:\/\/x.com\/shopify"
         },
         "social_facebook_link": {
           "label": "Facebook",
@@ -610,7 +610,7 @@
             "label": "Portrait"
           },
           "options__3": {
-            "label": "Square"
+            "label": "Carré"
           },
           "info": "Pour ajouter des images, modifiez vos collections. [En savoir plus](https:\/\/help.shopify.com\/manual\/products\/collections)"
         },
@@ -728,7 +728,7 @@
             "label": "Portrait"
           },
           "options__3": {
-            "label": "Square"
+            "label": "Carré"
           }
         },
         "show_secondary_image": {
@@ -1473,7 +1473,7 @@
             "label": "Portrait"
           },
           "options__3": {
-            "label": "Square"
+            "label": "Carré"
           }
         },
         "show_secondary_image": {
@@ -1495,10 +1495,6 @@
         "show_rating": {
           "label": "Afficher la note du produit",
           "info": "Pour afficher une note, ajoutez une application d'évaluation de produits. [En savoir plus](https:\/\/help.shopify.com\/manual\/online-store\/themes\/theme-structure\/page-types#product-grid-section-settings)"
-        },
-        "enable_quick_buy": {
-          "label": "Activer le bouton d'ajout rapide",
-          "info": "Optimal avec un type de panier pop-up ou à tiroir."
         },
         "columns_desktop": {
           "label": "Nombre de colonnes sur ordinateur"
@@ -1527,6 +1523,15 @@
             "label": "Tiroir"
           },
           "info": "Le tiroir correspond à la mise en page par défaut sur les appareils mobiles."
+        },
+        "quick_add": {
+          "label": "Ajout rapide",
+          "info": "La fonction En gros est optimisée pour les articles achetés en grande quantité.",
+          "options": {
+            "option_1": "Aucun",
+            "option_2": "Standard",
+            "option_3": "En gros"
+          }
         }
       }
     },
@@ -1566,7 +1571,7 @@
             "label": "Portrait"
           },
           "options__3": {
-            "label": "Square"
+            "label": "Carré"
           },
           "info": "Pour ajouter des images, modifiez vos collections. [En savoir plus](https:\/\/help.shopify.com\/manual\/products\/collections)"
         },
@@ -1900,7 +1905,7 @@
               "label": "Rapport d’aspect de l’image",
               "options": {
                 "option_1": "Portrait",
-                "option_2": "Carrés"
+                "option_2": "Carré"
               }
             },
             "enable_quick_add": {
@@ -2102,7 +2107,7 @@
             "label": "Portrait"
           },
           "options__3": {
-            "label": "Square"
+            "label": "Carré"
           }
         },
         "show_secondary_image": {
@@ -2172,7 +2177,7 @@
             "label": "Portrait"
           },
           "options__3": {
-            "label": "Square"
+            "label": "Carré"
           },
           "options__4": {
             "label": "Cercle"
@@ -3118,7 +3123,10 @@
       "name": "Adresses"
     },
     "main-login": {
-      "name": "Se connecter"
+      "name": "Se connecter",
+      "shop_login_button": {
+        "enable": "Activer la connexion avec Shop"
+      }
     },
     "main-order": {
       "name": "Commande"

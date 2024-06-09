@@ -8,47 +8,70 @@
         "footer-0": {
           "type": "link_list",
           "settings": {
-            "heading": "Informasjon",
+            "heading": "INFORMATION",
             "menu": "footer"
           }
         },
         "footer-1": {
           "type": "link_list",
           "settings": {
-            "heading": "Produktinformasjon",
-            "menu": "product-development"
+            "heading": "HJÆLP",
+            "menu": "footer-2"
           }
         },
         "5a68e922-1d77-4770-aaa6-f41bbc842d2c": {
           "type": "link_list",
           "settings": {
-            "heading": "Samarbeid",
-            "menu": "partnerships"
+            "heading": "SHOP",
+            "menu": "footer-3"
+          }
+        },
+        "text_fY4DAc": {
+          "type": "text",
+          "settings": {
+            "heading": "Shapeit.dk Aps",
+            "subtext": "<p>Vølundsvej 19 C<\/p><p>3400 Hillerød<\/p><p>info@shapeit.dk<\/p>"
           }
         }
       },
       "block_order": [
         "footer-0",
         "footer-1",
-        "5a68e922-1d77-4770-aaa6-f41bbc842d2c"
+        "5a68e922-1d77-4770-aaa6-f41bbc842d2c",
+        "text_fY4DAc"
       ],
       "settings": {
-        "color_scheme": "accent-1",
+        "color_scheme": "inverse",
         "newsletter_enable": true,
-        "newsletter_heading": "Motta gode tilbud:",
+        "newsletter_heading": "KLUB SHAPEIT",
         "enable_follow_on_shop": true,
         "show_social": true,
         "enable_country_selector": false,
         "enable_language_selector": false,
-        "payment_enable": true,
+        "payment_enable": false,
         "show_policy": false,
         "margin_top": 60,
         "padding_top": 60,
-        "padding_bottom": 36
+        "padding_bottom": 0
+      }
+    },
+    "custom_liquid_bm6yhz": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "img {display: block; margin-left: auto; margin-right: auto; height: auto; max-width: 350px;}",
+        "@media only screen and (max-width: 800px) {.payment-icons-desktop {display: none; }}",
+        "@media only screen and (min-width: 800px) {.payment-icons-mobile {display: none; }}"
+      ],
+      "settings": {
+        "custom_liquid": "<div class=\"payment-icons-desktop\"><a href=\"https:\/\/shapeit.dk\/pages\/kontakt-os\" target=\"_blank\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2238\/9777\/files\/payment-icons-mobile.jpg?v=1716882560\"<\/img><\/a><\/div>\n\n<div class=\"payment-icons-mobile\"><a href=\"https:\/\/shapeit.dk\/pages\/kontakt-os\" target=\"_blank\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2238\/9777\/files\/payment-icons-mobile.jpg?v=1716882560\"<\/img><\/a><\/div>",
+        "color_scheme": "inverse",
+        "padding_top": 12,
+        "padding_bottom": 52
       }
     }
   },
   "order": [
-    "footer"
+    "footer",
+    "custom_liquid_bm6yhz"
   ]
 }

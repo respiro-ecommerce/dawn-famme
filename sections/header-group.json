@@ -8,7 +8,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Gratis bytte | Klarna & Vipps | Fri frakt over 699",
+            "text": "Gratis ombytning | MobilePay | Fri fragt over 499,-",
             "link": ""
           }
         }
@@ -33,7 +33,7 @@
       ],
       "settings": {
         "logo_position": "top-center",
-        "menu": "main-menu",
+        "menu": "new-header-menu",
         "menu_type_desktop": "dropdown",
         "sticky_header_type": "always",
         "show_line_separator": true,

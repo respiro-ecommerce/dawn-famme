@@ -1,0 +1,75 @@
+{
+  "parent": "product.json",
+  "context": {
+    "market": "dk"
+  },
+  "sections": {
+    "main": {
+      "settings": {
+      },
+      "blocks": {
+        "stamped_product_reviews_ugc_star_rating_badge_AkQE3": {
+          "type": "shopify:\/\/apps\/stamped-product-reviews-ugc\/blocks\/star-rating-badge\/a103faaf-2125-4b0e-89fa-de5149736723",
+          "disabled": false,
+          "settings": {
+            "header-47ef81bfb2fa2b60d1a304845cf966e8": null,
+            "paragraph-6d163480923e2148533d6764bdae751f": null,
+            "use_metafields": false,
+            "sku_tagtype": "sku",
+            "is_featured_product": false,
+            "featured_product_handle": ""
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "stamped_product_reviews_ugc_star_rating_badge_AkQE3",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "share"
+      ]
+    },
+    "1717569371e3985870": {
+      "type": "apps",
+      "disabled": false,
+      "settings": {
+        "include_margins": true
+      },
+      "blocks": {
+        "stamped_product_reviews_ugc_main_widget_eyrDn": {
+          "type": "shopify:\/\/apps\/stamped-product-reviews-ugc\/blocks\/main-widget\/a103faaf-2125-4b0e-89fa-de5149736723",
+          "disabled": false,
+          "settings": {
+            "header-619e25b1e9c1e8e5e7684deddfa43f44": null,
+            "paragraph-a14c3afd3800f36cc3f0f873a68eeeed": null,
+            "header-0b6025866d0d2449fd5db88faf864759": null,
+            "take_questions": null,
+            "animation": true,
+            "offset": null,
+            "offset_mobile": null,
+            "tags_exclude": "",
+            "tags_include": "",
+            "search": "",
+            "linkify": true,
+            "header-1d1503b67f5711db4796212600b784ea": null,
+            "paragraph-cf511f386b13090054f72888a9c95a51": null,
+            "use_metafields": false,
+            "sku_tagtype": "sku"
+          }
+        }
+      },
+      "block_order": [
+        "stamped_product_reviews_ugc_main_widget_eyrDn"
+      ]
+    }
+  },
+  "order": [
+    "main",
+    "1717569371e3985870",
+    "related-products"
+  ]
+}

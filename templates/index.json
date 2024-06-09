@@ -3,9 +3,9 @@
     "2bce6a44-7d65-451b-aef9-8248e1111b73": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/banner-desktop-shorts-1NO.jpg",
-        "image_mobile": "shopify:\/\/shop_images\/banner-mobile-shorts-4NO.jpg",
-        "image_url": "shopify:\/\/collections\/treningsshorts",
+        "image": "shopify:\/\/shop_images\/Famme-homebanner-desktop-DK.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/Famme-homebanner-mobil-DK.jpg",
+        "image_url": "\/collections\/shorts?sort_by=manual&filter.v.price.gte=&filter.v.price.lte=&filter.p.vendor=FAMME",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "middle-center",
@@ -18,34 +18,58 @@
         "show_text_below": true
       }
     },
-    "1660654738369bfdd0": {
-      "type": "multicolumn-usp",
+    "custom_liquid_abTf3Q": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "img {display: block; margin-left: auto; margin-right: auto; width: 100%; max-width: 1300px; height: auto;}",
+        "@media only screen and (max-width: 800px) {.trustpilot-banner-desktop {display: none; }}",
+        "@media only screen and (min-width: 800px) {.trustpilot-banner-mobile {display: none; }}"
+      ],
+      "settings": {
+        "custom_liquid": "<div class=\"trustpilot-banner-desktop\"><a href=\"https:\/\/dk.trustpilot.com\/review\/shapeit.dk\" target=\"_blank\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2238\/9777\/files\/trustpilot-banner-desktop-top-bar.jpg?v=1716658178\"<\/img><\/a><\/div>\n\n<div class=\"trustpilot-banner-mobile\"><a href=\"https:\/\/dk.trustpilot.com\/review\/shapeit.dk\" target=\"_blank\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2238\/9777\/files\/trustpilot-banner-mobile-top-bar.jpg?v=1716658178\"<\/img><\/a><\/div>",
+        "color_scheme": "background-2",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn_WQxXkE": {
+      "type": "multicolumn",
       "blocks": {
-        "16606547378d6748fc-0": {
+        "column_Wt78gj": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/usp-icons-product-04.png",
-            "title": "Returlapp i pakken og gratis bytte",
+            "image": "shopify:\/\/shop_images\/usp-freeshipping-DK.jpg",
+            "title": "",
             "text": "",
             "link_label": "",
             "link": ""
           }
         },
-        "16606547378d6748fc-1": {
+        "column_Pd6RqQ": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/usp-icons-product-03.png",
-            "title": "Kjøp nå, betal senere",
+            "image": "shopify:\/\/shop_images\/usp-free-returns-DK.jpg",
+            "title": "",
             "text": "",
             "link_label": "",
             "link": ""
           }
         },
-        "16606547378d6748fc-2": {
+        "column_ryQcV7": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/usp-icons-product-05.png",
-            "title": "Fri frakt over 599",
+            "image": "shopify:\/\/shop_images\/usp-fast-shipping-DK.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_JJ46Gr": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/usp-contact-DK.jpg",
+            "title": "",
             "text": "",
             "link_label": "",
             "link": ""
@@ -53,83 +77,155 @@
         }
       },
       "block_order": [
-        "16606547378d6748fc-0",
-        "16606547378d6748fc-1",
-        "16606547378d6748fc-2"
+        "column_Wt78gj",
+        "column_Pd6RqQ",
+        "column_ryQcV7",
+        "column_JJ46Gr"
       ],
-      "disabled": true,
-      "custom_css": [
-        ".background-none .multicolumn-card__image-wrapper + .multicolumn-card__info {padding-top: 1.5rem;}"
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 28,
+        "padding_bottom": 16
+      }
+    },
+    "multicolumn_7FHRDA": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_AJAwaf": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/banners-home-news-DK.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/collections\/nyheder"
+          }
+        },
+        "column_E9XWDp": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/banner-home-freddy-DK.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/collections\/freddy"
+          }
+        },
+        "column_qrTbJP": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/banner-home-famme-DK.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/collections\/famme"
+          }
+        }
+      },
+      "block_order": [
+        "column_AJAwaf",
+        "column_E9XWDp",
+        "column_qrTbJP"
       ],
       "settings": {
         "title": "",
         "heading_size": "h1",
         "image_width": "full",
-        "image_max": 68,
         "image_ratio": "adapt",
         "columns_desktop": 3,
         "column_alignment": "center",
-        "sizet": 13,
-        "size": 10,
         "background_style": "none",
         "button_label": "",
         "button_link": "",
-        "color_scheme": "background-2",
-        "columns_mobile": "3",
+        "color_scheme": "",
+        "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 16,
-        "padding_bottom": 0
+        "padding_top": 12,
+        "padding_bottom": 32
       }
     },
     "166057046086c544fd": {
       "type": "multicolumn",
       "blocks": {
-        "1660570459ecdaf28d-0": {
+        "column_HTBzNm": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/categories-sport-version-tights.jpg",
+            "image": "shopify:\/\/shop_images\/logo-famme.jpg",
             "title": "",
             "text": "",
             "link_label": "",
-            "link": "shopify:\/\/collections\/treningstights"
+            "link": "shopify:\/\/collections\/famme"
           }
         },
-        "1660570459ecdaf28d-2": {
+        "column_7TtihL": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/categories-sport-version-langermede.jpg",
+            "image": "shopify:\/\/shop_images\/logo-freddy.jpg",
             "title": "",
             "text": "",
             "link_label": "",
-            "link": "shopify:\/\/collections\/long-sleeve-tops"
+            "link": "shopify:\/\/collections\/freddy"
           }
         },
-        "1660570459ecdaf28d-1": {
+        "column_4HidrD": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/categories-sport-version-sko.jpg",
+            "image": "shopify:\/\/shop_images\/logo-2xu.jpg",
             "title": "",
             "text": "",
             "link_label": "",
-            "link": "shopify:\/\/collections\/shoes"
+            "link": "\/collections\/all\/2xu"
           }
         },
-        "10a7abb5-b911-417a-bfa8-44d013a16de9": {
+        "column_Cd39xf": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/web-categories-sport-version-sports-bra-NO.jpg",
+            "image": "shopify:\/\/shop_images\/logo-iciw.jpg",
             "title": "",
             "text": "",
             "link_label": "",
-            "link": "shopify:\/\/collections\/sports-bh"
+            "link": "\/collections\/all\/icaniwill"
+          }
+        },
+        "column_PbTfJ6": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-hummel.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/collections\/hummel"
+          }
+        },
+        "column_BybxRy": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-gymone.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/collections\/gymone"
           }
         }
       },
       "block_order": [
-        "1660570459ecdaf28d-0",
-        "1660570459ecdaf28d-2",
-        "1660570459ecdaf28d-1",
-        "10a7abb5-b911-417a-bfa8-44d013a16de9"
+        "column_HTBzNm",
+        "column_7TtihL",
+        "column_4HidrD",
+        "column_Cd39xf",
+        "column_PbTfJ6",
+        "column_BybxRy"
       ],
       "custom_css": [
 
@@ -139,7 +235,7 @@
         "heading_size": "h0",
         "image_width": "full",
         "image_ratio": "adapt",
-        "columns_desktop": 4,
+        "columns_desktop": 6,
         "column_alignment": "center",
         "background_style": "none",
         "button_label": "",
@@ -147,16 +243,16 @@
         "color_scheme": "background-1",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 0,
+        "padding_bottom": 16
       }
     },
-    "9b125fe3-645c-4e1d-ba53-95e8639d56aa": {
+    "image_banner_GcKM48": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/banner-desktop-scrunch-gym-2-1NO.jpg",
-        "image_mobile": "shopify:\/\/shop_images\/banner-mobile-scrunch-gym-2-1NO.jpg",
-        "image_url": "\/collections\/scrunch",
+        "image": "shopify:\/\/shop_images\/banner-desktop-gymone-DK.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/banner-mobile-gymone-DK.jpg",
+        "image_url": "shopify:\/\/collections\/gymone",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "middle-center",
@@ -177,7 +273,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "scrunch",
+        "collection": "gymone",
         "products_to_show": 10,
         "columns_desktop": 4,
         "full_width": false,
@@ -190,19 +286,86 @@
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
-        "enable_quick_add": false,
+        "quick_add": "none",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
-        "padding_top": 36,
+        "padding_top": 0,
         "padding_bottom": 36
       }
     },
-    "image_banner_Vtp4MY": {
+    "multicolumn_mAf8iN": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_wwmq9Y": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/category-banners-home-bestsellers.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/collections\/bestsellere"
+          }
+        },
+        "column_HrjzfY": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/category-banners-home-shoes.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/collections\/sko"
+          }
+        },
+        "column_7XNGMk": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/category-banners-home-tights.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/collections\/tights"
+          }
+        },
+        "column_Jbq9Rx": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/category-banners-home-news.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/collections\/nyheder"
+          }
+        }
+      },
+      "block_order": [
+        "column_wwmq9Y",
+        "column_HrjzfY",
+        "column_7XNGMk",
+        "column_Jbq9Rx"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
+    "9b125fe3-645c-4e1d-ba53-95e8639d56aa": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/banner-desktop-softy-restock-1NO_d66abb5f-c6a7-435a-9141-62e61506e625.jpg",
-        "image_mobile": "shopify:\/\/shop_images\/banner-mobile-softy-restock-2NOa.jpg",
-        "image_url": "shopify:\/\/collections\/softy",
+        "image": "shopify:\/\/shop_images\/Freddy-homebanner-desktop-DK.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/Freddy-homebanner-mobil-DK.jpg",
+        "image_url": "shopify:\/\/collections\/freddy",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "middle-center",
@@ -215,64 +378,15 @@
         "show_text_below": true
       }
     },
-    "featured_collection_r9R3Dr": {
+    "16463038447a5cbd60": {
       "type": "featured-collection",
       "settings": {
         "title": "",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "softy",
-        "products_to_show": 10,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "solid",
-        "enable_desktop_slider": true,
-        "color_scheme": "",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "image_banner_Yz8aVT": {
-      "type": "image-banner",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/banner-sport-theme-block-desktop-1NO.jpg",
-        "image_mobile": "shopify:\/\/shop_images\/banner-sport-theme-block-mobile-1NO.jpg",
-        "image_url": "shopify:\/\/collections\/bestsellers",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
-    "16463038447a5cbd60": {
-      "type": "featured-collection",
-      "custom_css": [
-
-      ],
-      "settings": {
-        "title": "Bestselgere",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "bestsellers",
+        "collection": "freddy",
         "products_to_show": 10,
         "columns_desktop": 4,
         "full_width": false,
@@ -285,53 +399,43 @@
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
-        "enable_quick_add": false,
+        "quick_add": "none",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 52
       }
     },
-    "162567415706bdadcd": {
+    "image_banner_Gnfhpf": {
       "type": "image-banner",
-      "custom_css": [
-
-      ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/banner-FB-desktop-NO_7e749f44-8446-466f-9212-044a1a58353e.jpg",
-        "image_mobile": "shopify:\/\/shop_images\/banner-FB-mobile-NO_4126b4b4-687a-4afe-9aa4-3c37160f2846.jpg",
-        "image_url": "https:\/\/www.facebook.com\/groups\/fammeproduktutvikling",
+        "image": "shopify:\/\/shop_images\/COSTUMERSERVICE-DESKTOP-DK.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/customer-service-banner-mobile.jpg",
+        "image_url": "shopify:\/\/pages\/kontakt-os",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
+        "color_scheme": "",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
-    },
-    "16602879286b7eef4a": {
-      "type": "apps",
-      "disabled": true,
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
     "2bce6a44-7d65-451b-aef9-8248e1111b73",
-    "1660654738369bfdd0",
+    "custom_liquid_abTf3Q",
+    "multicolumn_WQxXkE",
+    "multicolumn_7FHRDA",
     "166057046086c544fd",
-    "9b125fe3-645c-4e1d-ba53-95e8639d56aa",
+    "image_banner_GcKM48",
     "featured_collection_9XMyp9",
-    "image_banner_Vtp4MY",
-    "featured_collection_r9R3Dr",
-    "image_banner_Yz8aVT",
+    "multicolumn_mAf8iN",
+    "9b125fe3-645c-4e1d-ba53-95e8639d56aa",
     "16463038447a5cbd60",
-    "162567415706bdadcd",
-    "16602879286b7eef4a"
+    "image_banner_Gnfhpf"
   ]
 }

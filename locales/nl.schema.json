@@ -56,8 +56,8 @@
       "name": "Social media",
       "settings": {
         "social_twitter_link": {
-          "label": "Twitter",
-          "info": "https:\/\/twitter.com\/shopify"
+          "label": "X \/ voorheen Twitter",
+          "info": "https:\/\/x.com\/shopify"
         },
         "social_facebook_link": {
           "label": "Facebook",
@@ -610,7 +610,7 @@
             "label": "Portret"
           },
           "options__3": {
-            "label": "Square"
+            "label": "Vierkant"
           },
           "info": "Voeg afbeeldingen toe door je collecties bij te werken. [Meer informatie](https:\/\/help.shopify.com\/manual\/products\/collections)"
         },
@@ -728,7 +728,7 @@
             "label": "Portret"
           },
           "options__3": {
-            "label": "Square"
+            "label": "Vierkant"
           }
         },
         "show_secondary_image": {
@@ -1466,7 +1466,7 @@
             "label": "Portret"
           },
           "options__3": {
-            "label": "Square"
+            "label": "Vierkant"
           }
         },
         "show_secondary_image": {
@@ -1511,10 +1511,6 @@
             "label": "2 kolommen"
           }
         },
-        "enable_quick_buy": {
-          "label": "Knop 'Snel toevoegen' inschakelen",
-          "info": "Optimaal met een pop-up of een winkelwagentype."
-        },
         "filter_type": {
           "label": "Opmaak voor desktopfilter",
           "options__1": {
@@ -1527,6 +1523,15 @@
             "label": "Lade"
           },
           "info": "Lade is de standaardopmaak voor mobiele apparaten"
+        },
+        "quick_add": {
+          "label": "Snel toevoegen",
+          "info": "Bulk is geoptimaliseerd voor artikelen waar hogere aantallen van zijn gekocht.",
+          "options": {
+            "option_1": "Geen",
+            "option_2": "Standaard",
+            "option_3": "Bulk"
+          }
         }
       }
     },
@@ -1566,7 +1571,7 @@
             "label": "Portret"
           },
           "options__3": {
-            "label": "Square"
+            "label": "Vierkant"
           },
           "info": "Voeg afbeeldingen toe door je collecties bij te werken. [Meer informatie](https:\/\/help.shopify.com\/manual\/products\/collections)"
         },
@@ -2102,7 +2107,7 @@
             "label": "Portret"
           },
           "options__3": {
-            "label": "Square"
+            "label": "Vierkant"
           }
         },
         "show_secondary_image": {
@@ -2172,7 +2177,7 @@
             "label": "Portret"
           },
           "options__3": {
-            "label": "Square"
+            "label": "Vierkant"
           },
           "options__4": {
             "label": "Cirkel"
@@ -3118,7 +3123,10 @@
       "name": "Adressen"
     },
     "main-login": {
-      "name": "Inloggen"
+      "name": "Inloggen",
+      "shop_login_button": {
+        "enable": "Inloggen met Shop inschakelen"
+      }
     },
     "main-order": {
       "name": "Bestelling"
