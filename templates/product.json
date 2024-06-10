@@ -82,7 +82,6 @@
     },
     "custom_liquid_9qczp4": {
       "type": "custom-liquid",
-      "disabled": true,
       "settings": {
         "custom_liquid": "<div id=\"stamped-main-widget\" \ndata-widget-style=\"standard\"\ndata-product-id=\"{{ product.id }}\" \ndata-name=\"{{ product.title | escape }}\" \ndata-url=\"{{ shop.url }}{{ product.url }}\" \ndata-image-url=\"{{ product.featured_image | product_img_url: \"large\" |replace: '?', '%3F' | replace: '&','%26'}}\" \ndata-description=\"{{ product.description | escape }}\" \ndata-product-sku=\"{{product.selected_or_first_available_variant.sku}}\"\ndata-product-type=\"{{product.type}}\"\ndata-widget-language =\"{{ request.locale.iso_code }}\"> \n<\/div>",
         "color_scheme": "",
