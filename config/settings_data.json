@@ -3,8 +3,8 @@
     "logo": "shopify:\/\/shop_images\/logo-tm.png",
     "logo_width": 170,
     "favicon": "shopify:\/\/shop_images\/favicon-shapeit-1.jpg",
-    "discount_text": "#6bc993",
-    "product_badge_sale": "#6bc993",
+    "discount_text": "#2c3f4e",
+    "product_badge_sale": "#dff8ce",
     "product_sale_badge_width": 40,
     "type_header_font": "helvetica_n4",
     "type_body_font": "helvetica_n4",
@@ -174,7 +174,7 @@
       },
       "accent-1": {
         "settings": {
-          "background": "#000000",
+          "background": "#2c3f4e",
           "background_gradient": "",
           "text": "#ffffff",
           "button": "#ffffff",
@@ -185,9 +185,9 @@
       },
       "accent-2": {
         "settings": {
-          "background": "#6bc993",
+          "background": "#dff8ce",
           "background_gradient": "",
-          "text": "#ffffff",
+          "text": "#2c3f4e",
           "button": "#000000",
           "button_label": "#ffffff",
           "secondary_button_label": "#414141",
