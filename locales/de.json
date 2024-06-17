@@ -512,5 +512,14 @@
       "expanded": "Formular für den Empfänger des Geschenkgutscheins erweitert",
       "collapsed": "Formular für den Empfänger des Geschenkgutscheins minimiert"
     }
+  },
+  "custom": {
+    "bullets": {
+      "bullet_2": "Kostenloser Versand ab 599 NOK und 2 Jahre Garantie"
+    },
+    "reviews": {
+      "submit_review": "Eine Rezension schreiben",
+      "see_all_photos": "Alle Fotos ansehen"
+    }
   }
 }
