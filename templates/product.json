@@ -62,11 +62,11 @@
         "share"
       ],
       "custom_css": [
-        "button.product-form__submit.button--full-width {background-color: #6bc993; color: white;}"
+        "button.product-form__submit.button--full-width {background-color: #2c3f4e; color: #dff8ce;}"
       ],
       "settings": {
         "enable_sticky_info": true,
-        "color_scheme": "scheme-1",
+        "color_scheme": "background-1",
         "media_size": "large",
         "constrain_to_viewport": true,
         "media_fit": "contain",
