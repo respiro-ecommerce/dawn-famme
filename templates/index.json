@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "2bce6a44-7d65-451b-aef9-8248e1111b73": {
@@ -105,7 +114,7 @@
         "column_AJAwaf": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/banners-home-news-DK.jpg",
+            "image": "shopify:\/\/shop_images\/banners-home-nyheder-EN.jpg",
             "title": "",
             "text": "",
             "link_label": "",
@@ -115,7 +124,7 @@
         "column_E9XWDp": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/banner-home-freddy-DK.jpg",
+            "image": "shopify:\/\/shop_images\/banners-home-freddy-EN.jpg",
             "title": "",
             "text": "",
             "link_label": "",
@@ -125,7 +134,7 @@
         "column_qrTbJP": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/banner-home-famme-DK.jpg",
+            "image": "shopify:\/\/shop_images\/banners-home-famme-EN.jpg",
             "title": "",
             "text": "",
             "link_label": "",
