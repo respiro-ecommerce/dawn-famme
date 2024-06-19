@@ -1,10 +1,19 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "2bce6a44-7d65-451b-aef9-8248e1111b73": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/banner-desktop-shorts-1NO.jpg",
-        "image_mobile": "shopify:\/\/shop_images\/banner-mobile-shorts-4NO.jpg",
+        "image": "shopify:\/\/shop_images\/banner-desktop-4flex-1NO.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/banner-mobile-4flex-2NO.jpg",
         "image_url": "shopify:\/\/collections\/treningsshorts",
         "image_overlay_opacity": 0,
         "image_height": "large",
