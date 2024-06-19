@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
@@ -106,11 +115,28 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "17187814966459e1fa": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_GpNNGE": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_GpNNGE"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "main",
     "custom_liquid_9qczp4",
-    "related-products"
+    "related-products",
+    "17187814966459e1fa"
   ]
 }
