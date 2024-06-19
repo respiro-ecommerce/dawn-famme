@@ -14,7 +14,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/banner-desktop-4flex-1NO.jpg",
         "image_mobile": "shopify:\/\/shop_images\/banner-mobile-4flex-2NO.jpg",
-        "image_url": "shopify:\/\/collections\/treningsshorts",
+        "image_url": "\/collections\/4flex",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "middle-center",
