@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "current": {
     "layout_style": "boxedlayout",
@@ -473,31 +482,11 @@
       "footer": {
         "type": "footer",
         "blocks": {
-          "1561010286273": {
-            "type": "custom",
-            "settings": {
-              "title": "",
-              "logo-width": 150,
-              "custom-text": "<p>Freddybukser.dk<br>\nVølundsvej 19c<br> \n3400 Hillerød<\/p>\n<p><b>Telefon<\/b>: 88 34 15 00<\/p>\n<p><b>CVR <\/b>: 37 19 10 78<\/p>\n<p><b>Email<\/b><a href=\"mailto:info@freddybukser.dk\"> : info@freddybukser.dk<\/a><\/p><p><\/p>",
-              "show_socials": true,
-              "socials_ttl": "",
-              "txt_align": false,
-              "width": "20%"
-            }
-          },
           "1558678570770": {
             "type": "menu",
             "settings": {
               "title": "KUNDESERVICE",
               "menulinks": "footer-1",
-              "width": "20%"
-            }
-          },
-          "1558678581777": {
-            "type": "menu",
-            "settings": {
-              "title": "OM FREDDY WR.UP®",
-              "menulinks": "footer-3",
               "width": "20%"
             }
           },
@@ -522,9 +511,7 @@
           }
         },
         "block_order": [
-          "1561010286273",
           "1558678570770",
-          "1558678581777",
           "1561010652330",
           "1561010492149"
         ],
