@@ -12,8 +12,8 @@
     "2bce6a44-7d65-451b-aef9-8248e1111b73": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Famme-homebanner-desktop-DK.jpg",
-        "image_mobile": "shopify:\/\/shop_images\/Famme-homebanner-mobil-DK.jpg",
+        "image": "shopify:\/\/shop_images\/banner-desktop-famme-shorts-en-2.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/banner-mobile-famme-shorts-en-2.jpg",
         "image_url": "\/collections\/shorts?sort_by=manual&filter.v.price.gte=&filter.v.price.lte=&filter.p.vendor=FAMME",
         "image_overlay_opacity": 0,
         "image_height": "large",
@@ -259,8 +259,8 @@
     "image_banner_GcKM48": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/banner-desktop-gymone-DK.jpg",
-        "image_mobile": "shopify:\/\/shop_images\/banner-mobile-gymone-DK.jpg",
+        "image": "shopify:\/\/shop_images\/banner-desktop-gymone-en-2.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/banner-mobile-gymone-en-2.jpg",
         "image_url": "shopify:\/\/collections\/gymone",
         "image_overlay_opacity": 0,
         "image_height": "large",
@@ -372,8 +372,8 @@
     "9b125fe3-645c-4e1d-ba53-95e8639d56aa": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Freddy-homebanner-desktop-DK.jpg",
-        "image_mobile": "shopify:\/\/shop_images\/Freddy-homebanner-mobil-DK.jpg",
+        "image": "shopify:\/\/shop_images\/banner-desktop-freddy-wr-up-en-2.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/banner-mobile-freddy-wr-up-en-2.jpg",
         "image_url": "shopify:\/\/collections\/freddy",
         "image_overlay_opacity": 0,
         "image_height": "large",
