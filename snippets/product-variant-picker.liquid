@@ -57,16 +57,27 @@
       endpaginate
     -%}
     {%- if prods != '' -%}
-      <div class="product-form_input">
-        {%- if product.available -%}
-          <label class="color checked" title="{{ product.title | escape }}">{{ product.featured_image | image_url: width: 60 | image_tag  }}</label>
-        {%- endif -%}
-        {%- assign prods = prods | split: ',' -%}
-        {%- for prod in prods -%}
-          <a class="color" href="{{ all_products[prod].url }}" title="{{ all_products[prod].title | escape }}">
-            {{ all_products[prod].featured_image | image_url: width: 60 | image_tag  }}
-          </a>
-        {%- endfor -%}
+      <div class="swiper color-variants-carousel">
+        <div class="product-form_input swiper-wrapper">
+          {%- if product.available -%}
+            <label class="color swiper-slide checked" title="{{ product.title | escape }}">
+              {{- product.featured_image | image_url: width: 60 | image_tag -}}
+            </label>
+          {%- endif -%}
+          {%- assign prods = prods | split: ',' -%}
+          {%- for prod in prods -%}
+            <a
+              class="color swiper-slide"
+              href="{{ all_products[prod].url }}"
+              title="{{ all_products[prod].title | escape }}"
+            >
+              {{ all_products[prod].featured_image | image_url: width: 60 | image_tag }}
+            </a>
+          {%- endfor -%}
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
     {%- endif -%}
     {%- for option in product.options_with_values -%}
@@ -144,3 +155,68 @@
     </script>
   </variant-selects>
 {%- endunless -%}
+
+<style>
+  .color-variants-carousel label.color.checked {
+    background: none !important;
+  }
+  .color-variants-carousel .swiper-button-next,
+  .color-variants-carousel .swiper-button-prev {
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+  }
+  .color-variants-carousel .swiper-button-next {
+    padding-left: 2px;
+    right: 5px;
+  }
+
+  .color-variants-carousel .swiper-button-prev {
+    padding-right: 2px;
+    left: 5px;
+  }
+  .color-variants-carousel .swiper-button-next:after,
+  .color-variants-carousel .swiper-button-prev:after {
+    color: white !important;
+    font-size: 12px !important;
+  }
+  .color-variants-carousel .swiper-button-disabled {
+    opacity: 0;
+  }
+
+  .color-variants-carousel .color {
+    width: 59px;
+  }
+</style>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const swiper = new Swiper('.color-variants-carousel', {
+      loop: false,
+      slidesPerView: 'auto',
+      spaceBetween: 0,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      // breakpoints: {
+      //   1024: {
+      //     slidesPerView: 8,
+      //   },
+      //   1200: {
+      //     slidesPerView: 10,
+      //   },
+      //   1400: {
+      //     slidesPerView: 12,
+      //   },
+      // },
+    });
+  });
+</script>
