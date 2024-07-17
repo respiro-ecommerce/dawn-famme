@@ -326,12 +326,15 @@
       <script
         type="module"
       >
+      function isMobile() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
                     import PhotoSwipeLightbox from "{{'photoswipe-lightbox.esm.js' | asset_url}}";
                     const lightbox = new PhotoSwipeLightbox({
                       gallery: '.product__media-list',
                       children: 'a',
                       pswpModule: () => import('{{ 'photoswipe.esm.js' | asset_url }}'),
-                      initialZoomLevel: 'fill',
+                      initialZoomLevel: isMobile() ? 'fill' : 'fit',
                       });
                       lightbox.on('change', () => {
                       const currentIndex = lightbox.pswp.currIndex;
