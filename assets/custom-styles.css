@@ -20,3 +20,56 @@
     height:100%;
     object-fit: cover;
 }
+
+
+/*
+    Photoswipe
+*/
+
+.pswp__scroll-wrap {
+    background-color: white
+}
+.pswp--touch .pswp__button--arrow {
+    visibility: visible !important;
+}
+.pswp__button--arrow svg *, .pswp__button--close svg * {
+    fill:black;
+}
+.pswp__button--close svg * {
+    stroke: none !important
+}
+.pswp__button--zoom, .pswp__counter {
+    display: none !important;
+}
+.pswp__button--arrow {
+    background-color: white !important;
+    width:60px !important;
+    height:60px !important;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* top:auto !important;
+    bottom:150px !important; */
+    transform: scale(.6) !important;
+}
+/* .pswp__button--arrow--next {
+    right:20% !important;
+}
+.pswp__button--arrow--prev {
+    left:20% !important;
+} */
+.pswp__button--arrow svg {
+    transform:scale(.4) !important
+}
+.pswp__button--arrow--next .pswp__icn {
+    transform:scale(.4) rotate(180deg) !important;
+    right:4px !important
+}
+.pswp__button--arrow--prev .pswp__icn {
+    left:4px !important
+}
+
+.product__media-icon--lightbox {
+    pointer-events: none;
+}

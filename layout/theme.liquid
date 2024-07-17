@@ -322,6 +322,32 @@
       >
     {%- endif -%}
 
+    {%- if template.name == 'product' -%}
+      <script
+        type="module"
+      >
+                    import PhotoSwipeLightbox from "{{'photoswipe-lightbox.esm.js' | asset_url}}";
+                    const lightbox = new PhotoSwipeLightbox({
+                      gallery: '.product__media-list',
+                      children: 'a',
+                      pswpModule: () => import('{{ 'photoswipe.esm.js' | asset_url }}'),
+                      initialZoomLevel: 'fill',
+                      });
+                      lightbox.on('change', () => {
+                      const currentIndex = lightbox.pswp.currIndex;
+                      console.log("Current image index:", currentIndex);
+                      document.querySelector(`.thumbnail-list li:nth-child(${currentIndex + 1}) button`).click();
+                    });
+
+                    lightbox.init();
+      </script>
+
+      <link
+        rel="stylesheet"
+        href="{{ 'photoswipe.css' | asset_url }}"
+      >
+    {%- endif -%}
+
     <script>
       if (Shopify.designMode) {
         document.documentElement.classList.add('shopify-design-mode');
