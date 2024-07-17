@@ -45,10 +45,10 @@
 
                         {%- if link.type == 'collection_link' -%}
                           {%- assign link_collection = link.object -%}
-                          {%- if link_collection.image != blank -%}
+                          {%- if link_collection.metafields.custom.mobile_menu_image -%}
                             <div class="menu__image">
                               {{
-                                link_collection.image
+                                link_collection.metafields.custom.mobile_menu_image
                                 | image_url: width: 80, height: 80
                                 | image_tag: loading: 'lazy', width: 40, height: 40, srcset: none
                               }}
@@ -84,10 +84,10 @@
                                   >
                                     {%- if childlink.type == 'collection_link' -%}
                                       {%- assign link_collection = childlink.object -%}
-                                      {%- if link_collection.image != blank -%}
+                                      {%- if link_collection.metafields.custom.mobile_menu_image -%}
                                         <div class="menu__image">
                                           {{
-                                            link_collection.image
+                                            link_collection.metafields.custom.mobile_menu_image
                                             | image_url: width: 60, height: 60
                                             | image_tag: loading: 'lazy', width: 30, height: 30, srcset: none
                                           }}
@@ -105,10 +105,10 @@
                                     >
                                       {%- if childlink.type == 'collection_link' -%}
                                         {%- assign link_collection = childlink.object -%}
-                                        {%- if link_collection.image != blank -%}
+                                        {%- if link_collection.metafields.custom.mobile_menu_image -%}
                                           <div class="menu__image">
                                             {{
-                                              link_collection.image
+                                              link_collection.metafields.custom.mobile_menu_image
                                               | image_url: width: 60, height: 60
                                               | image_tag: loading: 'lazy', width: 30, height: 30, srcset: none
                                             }}
@@ -130,10 +130,10 @@
                                         {% render 'icon-arrow' %}
                                         {%- if childlink.type == 'collection_link' -%}
                                           {%- assign link_collection = childlink.object -%}
-                                          {%- if link_collection.image != blank -%}
+                                          {%- if link_collection.metafields.custom.mobile_menu_image -%}
                                             <div class="menu__image">
                                               {{
-                                                link_collection.image
+                                                link_collection.metafields.custom.mobile_menu_image
                                                 | image_url: width: 60, height: 60
                                                 | image_tag: loading: 'lazy', width: 30, height: 30, srcset: none
                                               }}
@@ -160,10 +160,10 @@
                                             >
                                               {%- if grandchildlink.type == 'collection_link' -%}
                                                 {%- assign link_collection = grandchildlink.object -%}
-                                                {%- if link_collection.image != blank -%}
+                                                {%- if link_collection.metafields.custom.mobile_menu_image -%}
                                                   <div class="menu__image">
                                                     {{
-                                                      link_collection.image
+                                                      link_collection.metafields.custom.mobile_menu_image
                                                       | image_url: width: 60, height: 60
                                                       | image_tag: loading: 'lazy', width: 30, height: 30, srcset: none
                                                     }}
@@ -196,10 +196,10 @@
                     >
                       {%- if link.type == 'collection_link' -%}
                         {%- assign link_collection = link.object -%}
-                        {%- if link_collection.image != blank -%}
+                        {%- if link_collection.metafields.custom.mobile_menu_image -%}
                           <div class="menu__image">
                             {{
-                              link_collection.image
+                              link_collection.metafields.custom.mobile_menu_image
                               | image_url: width: 80, height: 80
                               | image_tag: loading: 'lazy', width: 40, height: 40, srcset: none
                             }}
