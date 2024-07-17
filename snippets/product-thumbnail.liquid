@@ -84,7 +84,7 @@
           widths: '246, 493, 600, 713, 823, 990, 1100, 1206, 1346, 1426, 1646, 1946'
       }}
       {%- assign caption = null -%}
-      {%- if media.alt contains: '[' -%}
+      {%- if media.alt contains '[' -%}
         {%- assign caption = media.alt | split: '[' | last | split: ']' | first -%}
       {%- endif -%}
       {%- if caption -%}
