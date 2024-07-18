@@ -326,23 +326,25 @@
       <script
         type="module"
       >
-      function isMobile() {
-  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-}
-                    import PhotoSwipeLightbox from "{{'photoswipe-lightbox.esm.js' | asset_url}}";
-                    const lightbox = new PhotoSwipeLightbox({
-                      gallery: '.product__media-list',
-                      children: 'a',
-                      pswpModule: () => import('{{ 'photoswipe.esm.js' | asset_url }}'),
-                      initialZoomLevel: isMobile() ? 'fill' : 'fit',
-                      });
-                      lightbox.on('change', () => {
-                      const currentIndex = lightbox.pswp.currIndex;
-                      console.log("Current image index:", currentIndex);
-                      document.querySelector(`.thumbnail-list li:nth-child(${currentIndex + 1}) button`).click();
-                    });
+        function isMobile() {
+          return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        }
+        
+        import PhotoSwipeLightbox from "{{'photoswipe-lightbox.esm.js' | asset_url}}";
+        const lightbox = new PhotoSwipeLightbox({
+          gallery: '.product__media-list',
+          children: 'a',
+          pswpModule: () => import('{{ 'photoswipe.esm.js' | asset_url }}'),
+          initialZoomLevel: isMobile() ? 'fill' : 'fit',
+        });
 
-                    lightbox.init();
+        lightbox.on('change', () => {
+          const currentIndex = lightbox.pswp.currIndex;
+          console.log("Current image index:", currentIndex);
+          document.querySelector(`.thumbnail-list li:nth-child(${currentIndex + 1}) button`).click();
+        });
+
+        lightbox.init();
       </script>
 
       <link
