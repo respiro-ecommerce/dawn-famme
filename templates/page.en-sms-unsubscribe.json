@@ -1,0 +1,157 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "fdd10fc6-73c4-497c-a47d-572fac356611": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".title {color: ##8e8e8e; text-align: center; font-weight: 800; font-size: 30px; line-height: 35px; font-family: \"Montserrat\"; margin-left: 10px; margin-right: 10px}"
+      ],
+      "settings": {
+        "custom_liquid": "<div class=\"title\">SMS UNSUBSCRIBE<\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "e2774c8c-55f3-4b9f-9ca0-1b66331ae60f": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19946784129372__e2774c8c-55f3-4b9f-9ca0-1b66331ae60f-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>You're welcome! You have contributed to the community ❤️ <\/strong><br\/>SMS readers ensure lower prices that would otherwise end up in the pockets of Instagram and Google. <br\/><strong><br\/>We want to give something back to you.<\/strong><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19946784129372__e2774c8c-55f3-4b9f-9ca0-1b66331ae60f-text-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "61af347d-675b-409c-beb9-145d7795a264": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "img {display: block; margin-left: auto; margin-right: auto; width: 100%; max-width: 800px; height: auto;}"
+      ],
+      "settings": {
+        "custom_liquid": "<a href=\"https:\/\/fammesportswear.com\/discount\/IGX20\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0076\/6033\/9297\/files\/banner-mobile-gift-card-EN.jpg?v=1697808314\"> <\/img><\/a>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "eabf392e-062e-47a5-ad8c-23b7919ba197": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"klaviyo-form-VR2LLy\"><\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "60247d01-ec45-4163-97df-e85a8c73382d": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".title {color: ##8e8e8e; text-align: center; font-weight: 800; font-size: 30px; line-height: 35px; font-family: \"Montserrat\"; margin-left: 10px; margin-right: 10px;}"
+      ],
+      "settings": {
+        "custom_liquid": "<div class=\"title\">Over 200,000 satisfied customers worldwide.<\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "910c0380-7eee-4b5b-b7cb-58d7c2a0b391": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "img {display: block; margin-left: auto; margin-right: auto; width: 100%; max-width: 800px; height: auto;}"
+      ],
+      "settings": {
+        "custom_liquid": "<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0076\/6033\/9297\/files\/banner-mobile-reviews-sms-page-EN.jpg?v=1697807816\">",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "1c1839df-6442-4b16-8110-0524ae92a5a5": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/banner-facebook-en_8003354b-08f3-42cc-ac82-9074fdc5600a.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "d2426187-6a5d-4dd3-9e69-ef412c087bfd": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".title {color: ##8e8e8e; text-align: center; font-weight: 800; font-size: 35px; font-family: \"Montserrat\";}"
+      ],
+      "settings": {
+        "custom_liquid": "<div class=\"title\">Bestsellers<\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "b9df0d5a-3cb0-4b45-a8f7-7d2482bee984": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "bestsellers",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "fdd10fc6-73c4-497c-a47d-572fac356611",
+    "e2774c8c-55f3-4b9f-9ca0-1b66331ae60f",
+    "61af347d-675b-409c-beb9-145d7795a264",
+    "eabf392e-062e-47a5-ad8c-23b7919ba197",
+    "60247d01-ec45-4163-97df-e85a8c73382d",
+    "910c0380-7eee-4b5b-b7cb-58d7c2a0b391",
+    "1c1839df-6442-4b16-8110-0524ae92a5a5",
+    "d2426187-6a5d-4dd3-9e69-ef412c087bfd",
+    "b9df0d5a-3cb0-4b45-a8f7-7d2482bee984"
+  ]
+}
