@@ -43,7 +43,7 @@
                           {{ link.title | escape | split: '[' | first }}
                         {% endcomment %}
 
-                        {%- if link.type == 'collection_link' -%}
+                        {%- if link.type == 'collection_link' and section.settings.enable_mobile_menu_images -%}
                           {%- assign link_collection = link.object -%}
                           {%- if link_collection.metafields.custom.mobile_menu_image -%}
                             <div class="menu__image">
@@ -82,7 +82,9 @@
                                       aria-current="page"
                                     {% endif %}
                                   >
-                                    {%- if childlink.type == 'collection_link' -%}
+                                    {%- if childlink.type == 'collection_link'
+                                      and section.settings.enable_mobile_menu_images
+                                    -%}
                                       {%- assign link_collection = childlink.object -%}
                                       {%- if link_collection.metafields.custom.mobile_menu_image -%}
                                         <div class="menu__image">
@@ -103,7 +105,9 @@
                                       id="HeaderDrawer-{{ link.handle }}-{{ childlink.handle }}"
                                       class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                     >
-                                      {%- if childlink.type == 'collection_link' -%}
+                                      {%- if childlink.type == 'collection_link'
+                                        and section.settings.enable_mobile_menu_images
+                                      -%}
                                         {%- assign link_collection = childlink.object -%}
                                         {%- if link_collection.metafields.custom.mobile_menu_image -%}
                                           <div class="menu__image">
@@ -128,7 +132,9 @@
                                         aria-expanded="true"
                                       >
                                         {% render 'icon-arrow' %}
-                                        {%- if childlink.type == 'collection_link' -%}
+                                        {%- if childlink.type == 'collection_link'
+                                          and section.settings.enable_mobile_menu_images
+                                        -%}
                                           {%- assign link_collection = childlink.object -%}
                                           {%- if link_collection.metafields.custom.mobile_menu_image -%}
                                             <div class="menu__image">
@@ -158,7 +164,9 @@
                                                 aria-current="page"
                                               {% endif %}
                                             >
-                                              {%- if grandchildlink.type == 'collection_link' -%}
+                                              {%- if grandchildlink.type == 'collection_link'
+                                                and section.settings.enable_mobile_menu_images
+                                              -%}
                                                 {%- assign link_collection = grandchildlink.object -%}
                                                 {%- if link_collection.metafields.custom.mobile_menu_image -%}
                                                   <div class="menu__image">
@@ -194,7 +202,7 @@
                         aria-current="page"
                       {% endif %}
                     >
-                      {%- if link.type == 'collection_link' -%}
+                      {%- if link.type == 'collection_link' and section.settings.enable_mobile_menu_images -%}
                         {%- assign link_collection = link.object -%}
                         {%- if link_collection.metafields.custom.mobile_menu_image -%}
                           <div class="menu__image">
