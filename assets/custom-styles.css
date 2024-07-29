@@ -73,3 +73,7 @@
 .product__media-icon--lightbox {
     pointer-events: none;
 }
+
+.complementary-products__container .card__custom-badges {
+    display: none !important;
+}
