@@ -26,8 +26,9 @@
     Photoswipe
 */
 
-.pswp__scroll-wrap {
-    background-color: white
+
+.pswp__bg:empty {
+    display: block !important;
 }
 .pswp--touch .pswp__button--arrow {
     visibility: visible !important;

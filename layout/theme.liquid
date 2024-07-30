@@ -334,6 +334,7 @@
         const lightbox = new PhotoSwipeLightbox({
           gallery: '.product__media-list',
           children: 'a',
+          bgOpacity: 1,
           pswpModule: () => import('{{ 'photoswipe.esm.js' | asset_url }}'),
           initialZoomLevel: isMobile() ? 'fill' : 'fit',
         });
