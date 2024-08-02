@@ -10,6 +10,7 @@
     "page_width": 1400,
     "spacing_sections": 0,
     "animations_reveal_on_scroll": false,
+    "variant_pills_radius": 0,
     "card_title_font_size_desktop": 13,
     "card_title_font_size_mobile": 12,
     "badge_corner_radius": 0,
@@ -132,12 +133,6 @@
       "13768625480086291342": {
         "type": "shopify:\/\/apps\/forms\/blocks\/forms\/8744a304-fcb1-4347-b211-bb6b4759a76a",
         "disabled": true,
-        "settings": {
-        }
-      },
-      "17676059084223943535": {
-        "type": "shopify:\/\/apps\/triplewhale\/blocks\/triple_pixel_snippet\/483d496b-3f1a-4609-aea7-8eee3b6b7a2a",
-        "disabled": false,
         "settings": {
         }
       }

@@ -22,7 +22,7 @@
           "type": "variant_picker",
           "settings": {
             "picker_type": "button",
-            "swatch_shape": "circle"
+            "swatch_shape": "square"
           }
         },
         "buy_buttons": {
@@ -95,6 +95,9 @@
         "description",
         "a6e7a80b-c57f-4cdc-aa6f-5e15e24e3747",
         "576a2eb7-833f-45f5-a1ca-f507f429547d"
+      ],
+      "custom_css": [
+
       ],
       "settings": {
         "enable_sticky_info": false,

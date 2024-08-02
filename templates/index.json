@@ -3,9 +3,9 @@
     "2bce6a44-7d65-451b-aef9-8248e1111b73": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/banner-desktop-shorts-1NO.jpg",
-        "image_mobile": "shopify:\/\/shop_images\/banner-mobile-shorts-4NO.jpg",
-        "image_url": "shopify:\/\/collections\/treningsshorts",
+        "image": "shopify:\/\/shop_images\/banner-desktop-endorphin-shoes-1EN.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/banner-mobile-endorphin-shoes-1EN.jpg",
+        "image_url": "shopify:\/\/collections\/shoes",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "middle-center",
@@ -45,7 +45,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/usp-icons-product-05.png",
-            "title": "Fri frakt over 599",
+            "title": "Fri frakt over 699",
             "text": "",
             "link_label": "",
             "link": ""
@@ -151,11 +151,29 @@
         "padding_bottom": 36
       }
     },
+    "image_banner_3ApigY": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/banner-desktop-4flex-1NO.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/banner-mobile-4flex-2NO.jpg",
+        "image_url": "shopify:\/\/collections\/4flex",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "9b125fe3-645c-4e1d-ba53-95e8639d56aa": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/banner-desktop-scrunch-gym-2-1NO.jpg",
-        "image_mobile": "shopify:\/\/shop_images\/banner-mobile-scrunch-gym-2-1NO.jpg",
+        "image": "shopify:\/\/shop_images\/banner-desktop-scrunch-new-photos-1EN_8dd75989-33e4-4539-b5a3-ea69622f9bf2.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/banner-mobile-scrunch-new-photos-1EN.jpg",
         "image_url": "\/collections\/scrunch",
         "image_overlay_opacity": 0,
         "image_height": "large",
@@ -190,7 +208,7 @@
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
-        "enable_quick_add": false,
+        "quick_add": "none",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 36,
@@ -236,7 +254,7 @@
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
-        "enable_quick_add": false,
+        "quick_add": "none",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 36,
@@ -285,7 +303,7 @@
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
-        "enable_quick_add": false,
+        "quick_add": "none",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 36,
@@ -325,6 +343,7 @@
     "2bce6a44-7d65-451b-aef9-8248e1111b73",
     "1660654738369bfdd0",
     "166057046086c544fd",
+    "image_banner_3ApigY",
     "9b125fe3-645c-4e1d-ba53-95e8639d56aa",
     "featured_collection_9XMyp9",
     "image_banner_Vtp4MY",
