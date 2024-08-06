@@ -78,3 +78,9 @@
 .complementary-products__container .card__custom-badges {
     display: none !important;
 }
+
+
+
+.product__media--video, .product__media--external_video {
+    display: none;
+}
